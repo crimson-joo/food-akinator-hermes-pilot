@@ -11,11 +11,21 @@ describe('Korean food oracle game UI', () => {
     expect(screen.getByAltText(/아무거나 탐정단 캐릭터/)).toBeInTheDocument();
   });
 
+  it('renders a premium detective game scene instead of a plain questionnaire', () => {
+    render(<App />);
+    expect(screen.getByTestId('app-shell')).toHaveAttribute('data-visual-tier', 'premium-detective-board');
+    expect(screen.getByTestId('case-board')).toBeInTheDocument();
+    expect(screen.getByText(/사건명: 아무거나 실종 사건/)).toBeInTheDocument();
+    expect(screen.getByText(/미식 탐정의 사건 수첩/)).toBeInTheDocument();
+    expect(screen.getByText(/비밀 목표/)).toBeInTheDocument();
+  });
+
   it('shows one short question and exactly five answer controls', async () => {
     render(<App />);
     await userEvent.click(screen.getByRole('button', { name: /탐정 시작/ }));
     expect(screen.getByTestId('question-card')).toBeInTheDocument();
     expect(screen.getAllByTestId('answer-button')).toHaveLength(5);
+    expect(screen.getByTestId('evidence-meter')).toBeInTheDocument();
   });
 
   it('changes character state immediately after an answer', async () => {
