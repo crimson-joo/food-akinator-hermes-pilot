@@ -1,5 +1,21 @@
-# 아무거나 지니 — fresh restart
+# 아무거나 탐정단
 
-Korean food Akinator rebuilt from first principles.
+Korean food guessing game rebuilt from first principles.
 
-This repository intentionally restarts the previous pilot after concluding that the original foundation was wrong. Build only after reference research, product thesis, design system, game engine, and character pipeline are specified.
+The player secretly chooses a food. The app asks one short Korean question at a time, updates an original food-detective character state, and reveals a guess within a short game loop.
+
+## Local development
+
+```bash
+npm ci
+npm run test:run
+npm run lint
+npm run build
+npm run dev
+```
+
+## Release
+
+- Branch policy: `feature/*` → `develop` fan-in → `develop` → `main` PR.
+- CI gate: `test-lint-build`.
+- Deploy target: GitHub Pages at https://crimson-joo.github.io/food-akinator-hermes-pilot/
