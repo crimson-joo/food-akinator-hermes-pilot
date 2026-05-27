@@ -1,0 +1,3602 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config_js",
+      "community": 15,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 16,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "canary.mjs",
+      "file_type": "code",
+      "source_file": "scripts/canary.mjs",
+      "source_location": "L1",
+      "id": "scripts_canary_mjs",
+      "community": 14,
+      "norm_label": "canary.mjs"
+    },
+    {
+      "label": "get()",
+      "file_type": "code",
+      "source_file": "scripts/canary.mjs",
+      "source_location": "L4",
+      "id": "scripts_canary_get",
+      "community": 14,
+      "norm_label": "get()"
+    },
+    {
+      "label": "checks",
+      "file_type": "code",
+      "source_file": "scripts/canary.mjs",
+      "source_location": "L6",
+      "id": "scripts_canary_checks",
+      "community": 14,
+      "norm_label": "checks"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app_tsx",
+      "community": 1,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "ANSWERS",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L8",
+      "id": "src_app_answers",
+      "community": 1,
+      "norm_label": "answers"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L16",
+      "id": "src_app_app",
+      "community": 1,
+      "norm_label": "app()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": "L1",
+      "id": "src_main_tsx",
+      "community": 1,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "App.test.tsx",
+      "file_type": "code",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L1",
+      "id": "src_app_test_tsx",
+      "community": 1,
+      "norm_label": "app.test.tsx"
+    },
+    {
+      "label": "before",
+      "file_type": "code",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L24",
+      "id": "src_app_test_before",
+      "community": 1,
+      "norm_label": "before"
+    },
+    {
+      "label": "after",
+      "file_type": "code",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L26",
+      "id": "src_app_test_after",
+      "community": 1,
+      "norm_label": "after"
+    },
+    {
+      "label": "vite-env.d.ts",
+      "file_type": "code",
+      "source_file": "src/vite-env.d.ts",
+      "source_location": "L1",
+      "id": "src_vite_env_d_ts",
+      "community": 17,
+      "norm_label": "vite-env.d.ts"
+    },
+    {
+      "label": "setup.ts",
+      "file_type": "code",
+      "source_file": "src/test/setup.ts",
+      "source_location": "L1",
+      "id": "src_test_setup_ts",
+      "community": 18,
+      "norm_label": "setup.ts"
+    },
+    {
+      "label": "CharacterController.tsx",
+      "file_type": "code",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L1",
+      "id": "src_character_charactercontroller_tsx",
+      "community": 5,
+      "norm_label": "charactercontroller.tsx"
+    },
+    {
+      "label": "CharacterController()",
+      "file_type": "code",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L4",
+      "id": "character_charactercontroller_charactercontroller",
+      "community": 5,
+      "norm_label": "charactercontroller()"
+    },
+    {
+      "label": "characterStateMap.test.ts",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L1",
+      "id": "src_character_characterstatemap_test_ts",
+      "community": 5,
+      "norm_label": "characterstatemap.test.ts"
+    },
+    {
+      "label": "entry",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L15",
+      "id": "character_characterstatemap_test_entry",
+      "community": 5,
+      "norm_label": "entry"
+    },
+    {
+      "label": "asking",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L16",
+      "id": "character_characterstatemap_test_asking",
+      "community": 5,
+      "norm_label": "asking"
+    },
+    {
+      "label": "characterStateMap.ts",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L1",
+      "id": "src_character_characterstatemap_ts",
+      "community": 5,
+      "norm_label": "characterstatemap.ts"
+    },
+    {
+      "label": "CharacterState",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L3",
+      "id": "character_characterstatemap_characterstate",
+      "community": 5,
+      "norm_label": "characterstate"
+    },
+    {
+      "label": "CHARACTER_STATES",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L4",
+      "id": "character_characterstatemap_character_states",
+      "community": 5,
+      "norm_label": "character_states"
+    },
+    {
+      "label": "stateForSession()",
+      "file_type": "code",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L14",
+      "id": "character_characterstatemap_stateforsession",
+      "community": 5,
+      "norm_label": "stateforsession()"
+    },
+    {
+      "label": "session.ts",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L1",
+      "id": "src_game_session_ts",
+      "community": 1,
+      "norm_label": "session.ts"
+    },
+    {
+      "label": "Phase",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L6",
+      "id": "game_session_phase",
+      "community": 1,
+      "norm_label": "phase"
+    },
+    {
+      "label": "Session",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L7",
+      "id": "game_session_session",
+      "community": 5,
+      "norm_label": "session"
+    },
+    {
+      "label": "createSession()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L9",
+      "id": "game_session_createsession",
+      "community": 1,
+      "norm_label": "createsession()"
+    },
+    {
+      "label": "startSession()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L14",
+      "id": "game_session_startsession",
+      "community": 1,
+      "norm_label": "startsession()"
+    },
+    {
+      "label": "answerCurrentQuestion()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L16",
+      "id": "game_session_answercurrentquestion",
+      "community": 1,
+      "norm_label": "answercurrentquestion()"
+    },
+    {
+      "label": "reveal()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L28",
+      "id": "game_session_reveal",
+      "community": 1,
+      "norm_label": "reveal()"
+    },
+    {
+      "label": "markGuessCorrect()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L29",
+      "id": "game_session_markguesscorrect",
+      "community": 1,
+      "norm_label": "markguesscorrect()"
+    },
+    {
+      "label": "markGuessWrong()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L30",
+      "id": "game_session_markguesswrong",
+      "community": 1,
+      "norm_label": "markguesswrong()"
+    },
+    {
+      "label": "restartSession()",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L40",
+      "id": "game_session_restartsession",
+      "community": 1,
+      "norm_label": "restartsession()"
+    },
+    {
+      "label": "session.test.ts",
+      "file_type": "code",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L1",
+      "id": "src_game_session_test_ts",
+      "community": 1,
+      "norm_label": "session.test.ts"
+    },
+    {
+      "label": "session",
+      "file_type": "code",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L6",
+      "id": "game_session_test_session",
+      "community": 1,
+      "norm_label": "session"
+    },
+    {
+      "label": "correct",
+      "file_type": "code",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L28",
+      "id": "game_session_test_correct",
+      "community": 1,
+      "norm_label": "correct"
+    },
+    {
+      "label": "foods.ts",
+      "file_type": "code",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L1",
+      "id": "src_data_foods_ts",
+      "community": 0,
+      "norm_label": "foods.ts"
+    },
+    {
+      "label": "TraitKey",
+      "file_type": "code",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L1",
+      "id": "data_foods_traitkey",
+      "community": 0,
+      "norm_label": "traitkey"
+    },
+    {
+      "label": "Food",
+      "file_type": "code",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L2",
+      "id": "data_foods_food",
+      "community": 0,
+      "norm_label": "food"
+    },
+    {
+      "label": "TRAITS",
+      "file_type": "code",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L3",
+      "id": "data_foods_traits",
+      "community": 0,
+      "norm_label": "traits"
+    },
+    {
+      "label": "FOODS",
+      "file_type": "code",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L4",
+      "id": "data_foods_foods",
+      "community": 0,
+      "norm_label": "foods"
+    },
+    {
+      "label": "questions.ts",
+      "file_type": "code",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L1",
+      "id": "src_data_questions_ts",
+      "community": 0,
+      "norm_label": "questions.ts"
+    },
+    {
+      "label": "Question",
+      "file_type": "code",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L2",
+      "id": "data_questions_question",
+      "community": 0,
+      "norm_label": "question"
+    },
+    {
+      "label": "QUESTIONS",
+      "file_type": "code",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L3",
+      "id": "data_questions_questions",
+      "community": 0,
+      "norm_label": "questions"
+    },
+    {
+      "label": "score.ts",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L1",
+      "id": "src_engine_score_ts",
+      "community": 0,
+      "norm_label": "score.ts"
+    },
+    {
+      "label": "Answer",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L4",
+      "id": "engine_score_answer",
+      "community": 1,
+      "norm_label": "answer"
+    },
+    {
+      "label": "Posterior",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L5",
+      "id": "engine_score_posterior",
+      "community": 0,
+      "norm_label": "posterior"
+    },
+    {
+      "label": "ANSWER_STRENGTH",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L6",
+      "id": "engine_score_answer_strength",
+      "community": 0,
+      "norm_label": "answer_strength"
+    },
+    {
+      "label": "initializePosterior()",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L8",
+      "id": "engine_score_initializeposterior",
+      "community": 0,
+      "norm_label": "initializeposterior()"
+    },
+    {
+      "label": "applyAnswer()",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L14",
+      "id": "engine_score_applyanswer",
+      "community": 0,
+      "norm_label": "applyanswer()"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L28",
+      "id": "engine_score_normalize",
+      "community": 0,
+      "norm_label": "normalize()"
+    },
+    {
+      "label": "topCandidates()",
+      "file_type": "code",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L33",
+      "id": "engine_score_topcandidates",
+      "community": 1,
+      "norm_label": "topcandidates()"
+    },
+    {
+      "label": "selectQuestion.test.ts",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L1",
+      "id": "src_engine_selectquestion_test_ts",
+      "community": 0,
+      "norm_label": "selectquestion.test.ts"
+    },
+    {
+      "label": "posterior",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L9",
+      "id": "engine_selectquestion_test_posterior",
+      "community": 0,
+      "norm_label": "posterior"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L10",
+      "id": "engine_selectquestion_test_next",
+      "community": 0,
+      "norm_label": "next"
+    },
+    {
+      "label": "score.test.ts",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L1",
+      "id": "src_engine_score_test_ts",
+      "community": 0,
+      "norm_label": "score.test.ts"
+    },
+    {
+      "label": "prior",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L21",
+      "id": "engine_score_test_prior",
+      "community": 0,
+      "norm_label": "prior"
+    },
+    {
+      "label": "yes",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L22",
+      "id": "engine_score_test_yes",
+      "community": 0,
+      "norm_label": "yes"
+    },
+    {
+      "label": "maybeYes",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L23",
+      "id": "engine_score_test_maybeyes",
+      "community": 0,
+      "norm_label": "maybeyes"
+    },
+    {
+      "label": "unknown",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L24",
+      "id": "engine_score_test_unknown",
+      "community": 0,
+      "norm_label": "unknown"
+    },
+    {
+      "label": "no",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L25",
+      "id": "engine_score_test_no",
+      "community": 0,
+      "norm_label": "no"
+    },
+    {
+      "label": "posterior",
+      "file_type": "code",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L34",
+      "id": "engine_score_test_posterior",
+      "community": 0,
+      "norm_label": "posterior"
+    },
+    {
+      "label": "selectQuestion.ts",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L1",
+      "id": "src_engine_selectquestion_ts",
+      "community": 0,
+      "norm_label": "selectquestion.ts"
+    },
+    {
+      "label": "QuestionChoice",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L5",
+      "id": "engine_selectquestion_questionchoice",
+      "community": 0,
+      "norm_label": "questionchoice"
+    },
+    {
+      "label": "selectNextQuestion()",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L7",
+      "id": "engine_selectquestion_selectnextquestion",
+      "community": 1,
+      "norm_label": "selectnextquestion()"
+    },
+    {
+      "label": "informationGainProxy()",
+      "file_type": "code",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L16",
+      "id": "engine_selectquestion_informationgainproxy",
+      "community": 0,
+      "norm_label": "informationgainproxy()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 10,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "\uc544\ubb34\uac70\ub098 \ud0d0\uc815\ub2e8",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "food_akinator_hermes_pilot_readme",
+      "community": 10,
+      "norm_label": "\u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u1110\u1161\u11b7\u110c\u1165\u11bc\u1103\u1161\u11ab"
+    },
+    {
+      "label": "Local development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "id": "food_akinator_hermes_pilot_readme_local_development",
+      "community": 10,
+      "norm_label": "local development"
+    },
+    {
+      "label": "code:bash (npm ci)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "id": "food_akinator_hermes_pilot_readme_codeblock_1",
+      "community": 10,
+      "norm_label": "code:bash (npm ci)"
+    },
+    {
+      "label": "Release",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "id": "food_akinator_hermes_pilot_readme_release",
+      "community": 10,
+      "norm_label": "release"
+    },
+    {
+      "label": "changelog.md",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L1",
+      "id": "docs_changelog_md",
+      "community": 12,
+      "norm_label": "changelog.md"
+    },
+    {
+      "label": "Changelog",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L1",
+      "id": "docs_changelog_changelog",
+      "community": 12,
+      "norm_label": "changelog"
+    },
+    {
+      "label": "Fresh repository restart",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "id": "docs_changelog_fresh_repository_restart",
+      "community": 12,
+      "norm_label": "fresh repository restart"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L1",
+      "id": "docs_readme_md",
+      "community": 11,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Docs index",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L1",
+      "id": "docs_readme_docs_index",
+      "community": 11,
+      "norm_label": "docs index"
+    },
+    {
+      "label": "Current truth",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L3",
+      "id": "docs_readme_current_truth",
+      "community": 11,
+      "norm_label": "current truth"
+    },
+    {
+      "label": "Research",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L11",
+      "id": "docs_readme_research",
+      "community": 11,
+      "norm_label": "research"
+    },
+    {
+      "label": "Changelog",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L17",
+      "id": "docs_readme_changelog",
+      "community": 11,
+      "norm_label": "changelog"
+    },
+    {
+      "label": "inference-question-model.md",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L1",
+      "id": "docs_research_inference_question_model_md",
+      "community": 2,
+      "norm_label": "inference-question-model.md"
+    },
+    {
+      "label": "Inference and question narrowing model",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L1",
+      "id": "research_inference_question_model_inference_and_question_narrowing_model",
+      "community": 2,
+      "norm_label": "inference and question narrowing model"
+    },
+    {
+      "label": "Core claim",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L3",
+      "id": "research_inference_question_model_core_claim",
+      "community": 2,
+      "norm_label": "core claim"
+    },
+    {
+      "label": "Candidate model",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L7",
+      "id": "research_inference_question_model_candidate_model",
+      "community": 2,
+      "norm_label": "candidate model"
+    },
+    {
+      "label": "code:ts (type Candidate = {)",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L13",
+      "id": "research_inference_question_model_codeblock_1",
+      "community": 2,
+      "norm_label": "code:ts (type candidate = {)"
+    },
+    {
+      "label": "code:ts (type FoodCandidate = {)",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L24",
+      "id": "research_inference_question_model_codeblock_2",
+      "community": 2,
+      "norm_label": "code:ts (type foodcandidate = {)"
+    },
+    {
+      "label": "Five answer weights",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L44",
+      "id": "research_inference_question_model_five_answer_weights",
+      "community": 2,
+      "norm_label": "five answer weights"
+    },
+    {
+      "label": "code:ts (type Answer = 'yes' | 'probably' | 'unknown' | 'probablyNot')",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L46",
+      "id": "research_inference_question_model_codeblock_3",
+      "community": 2,
+      "norm_label": "code:ts (type answer = 'yes' | 'probably' | 'unknown' | 'probablynot')"
+    },
+    {
+      "label": "Scoring model",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L62",
+      "id": "research_inference_question_model_scoring_model",
+      "community": 2,
+      "norm_label": "scoring model"
+    },
+    {
+      "label": "code:text (candidateScore += questionWeight * similarity(answerEvidence)",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L66",
+      "id": "research_inference_question_model_codeblock_4",
+      "community": 2,
+      "norm_label": "code:text (candidatescore += questionweight * similarity(answerevidence)"
+    },
+    {
+      "label": "Question selection",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L72",
+      "id": "research_inference_question_model_question_selection",
+      "community": 2,
+      "norm_label": "question selection"
+    },
+    {
+      "label": "Food adaptation",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L87",
+      "id": "research_inference_question_model_food_adaptation",
+      "community": 2,
+      "norm_label": "food adaptation"
+    },
+    {
+      "label": "code:text (\ub9e4\uc6b4\ub9db \ud0dc\uadf8\ub97c \uc120\ud0dd\ud558\uc138\uc694.)",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L93",
+      "id": "research_inference_question_model_codeblock_5",
+      "community": 2,
+      "norm_label": "code:text (\u1106\u1162\u110b\u116e\u11ab\u1106\u1161\u11ba \u1110\u1162\u1100\u1173\u1105\u1173\u11af \u1109\u1165\u11ab\u1110\u1162\u11a8\u1112\u1161\u1109\u1166\u110b\u116d.)"
+    },
+    {
+      "label": "code:text (\uc624\ub298\uc740 \uc5bc\ud070\ud558\uac8c \ub540\uc774 \uc880 \ub098\ub3c4 \uad1c\ucc2e\uc544\uc694?)",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L100",
+      "id": "research_inference_question_model_codeblock_6",
+      "community": 2,
+      "norm_label": "code:text (\u110b\u1169\u1102\u1173\u11af\u110b\u1173\u11ab \u110b\u1165\u11af\u110f\u1173\u11ab\u1112\u1161\u1100\u1166 \u1104\u1161\u11b7\u110b\u1175 \u110c\u1169\u11b7 \u1102\u1161\u1103\u1169 \u1100\u116b\u11ab\u110e\u1161\u11ad\u110b\u1161\u110b\u116d?)"
+    },
+    {
+      "label": "Reveal threshold",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L106",
+      "id": "research_inference_question_model_reveal_threshold",
+      "community": 2,
+      "norm_label": "reveal threshold"
+    },
+    {
+      "label": "Wrong guess recovery",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L115",
+      "id": "research_inference_question_model_wrong_guess_recovery",
+      "community": 2,
+      "norm_label": "wrong guess recovery"
+    },
+    {
+      "label": "MVP architecture implication",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L123",
+      "id": "research_inference_question_model_mvp_architecture_implication",
+      "community": 2,
+      "norm_label": "mvp architecture implication"
+    },
+    {
+      "label": "QA scenarios",
+      "file_type": "document",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L132",
+      "id": "research_inference_question_model_qa_scenarios",
+      "community": 2,
+      "norm_label": "qa scenarios"
+    },
+    {
+      "label": "character-animation-pipeline.md",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L1",
+      "id": "docs_research_character_animation_pipeline_md",
+      "community": 3,
+      "norm_label": "character-animation-pipeline.md"
+    },
+    {
+      "label": "Character animation pipeline research",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L1",
+      "id": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "community": 3,
+      "norm_label": "character animation pipeline research"
+    },
+    {
+      "label": "Problem",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L3",
+      "id": "research_character_animation_pipeline_problem",
+      "community": 3,
+      "norm_label": "problem"
+    },
+    {
+      "label": "Likely approaches in Akinator-like products",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L7",
+      "id": "research_character_animation_pipeline_likely_approaches_in_akinator_like_products",
+      "community": 3,
+      "norm_label": "likely approaches in akinator-like products"
+    },
+    {
+      "label": "Pipeline options",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L18",
+      "id": "research_character_animation_pipeline_pipeline_options",
+      "community": 3,
+      "norm_label": "pipeline options"
+    },
+    {
+      "label": "Option A \u2014 pre-rendered sprite / WebP sequence",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L20",
+      "id": "research_character_animation_pipeline_option_a_pre_rendered_sprite_webp_sequence",
+      "community": 3,
+      "norm_label": "option a \u2014 pre-rendered sprite / webp sequence"
+    },
+    {
+      "label": "Option B \u2014 layered WebP/PNG rig",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L34",
+      "id": "research_character_animation_pipeline_option_b_layered_webp_png_rig",
+      "community": 3,
+      "norm_label": "option b \u2014 layered webp/png rig"
+    },
+    {
+      "label": "Option C \u2014 Rive state machine",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L50",
+      "id": "research_character_animation_pipeline_option_c_rive_state_machine",
+      "community": 3,
+      "norm_label": "option c \u2014 rive state machine"
+    },
+    {
+      "label": "Option D \u2014 Spine / Live2D",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L64",
+      "id": "research_character_animation_pipeline_option_d_spine_live2d",
+      "community": 3,
+      "norm_label": "option d \u2014 spine / live2d"
+    },
+    {
+      "label": "Recommended path",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L76",
+      "id": "research_character_animation_pipeline_recommended_path",
+      "community": 3,
+      "norm_label": "recommended path"
+    },
+    {
+      "label": "Minimum character state set",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L89",
+      "id": "research_character_animation_pipeline_minimum_character_state_set",
+      "community": 3,
+      "norm_label": "minimum character state set"
+    },
+    {
+      "label": "Organic motion rules",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L99",
+      "id": "research_character_animation_pipeline_organic_motion_rules",
+      "community": 3,
+      "norm_label": "organic motion rules"
+    },
+    {
+      "label": "Non-copy rule",
+      "file_type": "document",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L107",
+      "id": "research_character_animation_pipeline_non_copy_rule",
+      "community": 3,
+      "norm_label": "non-copy rule"
+    },
+    {
+      "label": "akinator-gameplay-analysis.md",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L1",
+      "id": "docs_research_akinator_gameplay_analysis_md",
+      "community": 6,
+      "norm_label": "akinator-gameplay-analysis.md"
+    },
+    {
+      "label": "Akinator gameplay reference analysis",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L1",
+      "id": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "community": 6,
+      "norm_label": "akinator gameplay reference analysis"
+    },
+    {
+      "label": "Scope / limitation",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L3",
+      "id": "research_akinator_gameplay_analysis_scope_limitation",
+      "community": 6,
+      "norm_label": "scope / limitation"
+    },
+    {
+      "label": "Core play loop",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L7",
+      "id": "research_akinator_gameplay_analysis_core_play_loop",
+      "community": 6,
+      "norm_label": "core play loop"
+    },
+    {
+      "label": "Five-answer semantics",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L17",
+      "id": "research_akinator_gameplay_analysis_five_answer_semantics",
+      "community": 6,
+      "norm_label": "five-answer semantics"
+    },
+    {
+      "label": "Tension curve",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L27",
+      "id": "research_akinator_gameplay_analysis_tension_curve",
+      "community": 6,
+      "norm_label": "tension curve"
+    },
+    {
+      "label": "Character role",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L33",
+      "id": "research_akinator_gameplay_analysis_character_role",
+      "community": 6,
+      "norm_label": "character role"
+    },
+    {
+      "label": "Repeat-play pattern",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L46",
+      "id": "research_akinator_gameplay_analysis_repeat_play_pattern",
+      "community": 6,
+      "norm_label": "repeat-play pattern"
+    },
+    {
+      "label": "Do not copy",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L55",
+      "id": "research_akinator_gameplay_analysis_do_not_copy",
+      "community": 6,
+      "norm_label": "do not copy"
+    },
+    {
+      "label": "Principles to borrow",
+      "file_type": "document",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L63",
+      "id": "research_akinator_gameplay_analysis_principles_to_borrow",
+      "community": 6,
+      "norm_label": "principles to borrow"
+    },
+    {
+      "label": "product.md",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L1",
+      "id": "docs_current_product_md",
+      "community": 7,
+      "norm_label": "product.md"
+    },
+    {
+      "label": "Product brief \u2014 \uc544\ubb34\uac70\ub098 \uc9c0\ub2c8 fresh restart",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L1",
+      "id": "current_product_product_brief_fresh_restart",
+      "community": 7,
+      "norm_label": "product brief \u2014 \u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u110c\u1175\u1102\u1175 fresh restart"
+    },
+    {
+      "label": "Decision",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L3",
+      "id": "current_product_decision",
+      "community": 7,
+      "norm_label": "decision"
+    },
+    {
+      "label": "Product thesis",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L7",
+      "id": "current_product_product_thesis",
+      "community": 7,
+      "norm_label": "product thesis"
+    },
+    {
+      "label": "Target use case",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L13",
+      "id": "current_product_target_use_case",
+      "community": 7,
+      "norm_label": "target use case"
+    },
+    {
+      "label": "Non-goals",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L19",
+      "id": "current_product_non_goals",
+      "community": 7,
+      "norm_label": "non-goals"
+    },
+    {
+      "label": "Product principles",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L27",
+      "id": "current_product_product_principles",
+      "community": 7,
+      "norm_label": "product principles"
+    },
+    {
+      "label": "Current phase",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L37",
+      "id": "current_product_current_phase",
+      "community": 7,
+      "norm_label": "current phase"
+    },
+    {
+      "label": "architecture.md",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L1",
+      "id": "docs_current_architecture_md",
+      "community": 4,
+      "norm_label": "architecture.md"
+    },
+    {
+      "label": "Architecture baseline \u2014 restart",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L1",
+      "id": "current_architecture_architecture_baseline_restart",
+      "community": 4,
+      "norm_label": "architecture baseline \u2014 restart"
+    },
+    {
+      "label": "Current status",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L3",
+      "id": "current_architecture_current_status",
+      "community": 4,
+      "norm_label": "current status"
+    },
+    {
+      "label": "Recommended stack candidate",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L7",
+      "id": "current_architecture_recommended_stack_candidate",
+      "community": 4,
+      "norm_label": "recommended stack candidate"
+    },
+    {
+      "label": "Core modules to build later",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L17",
+      "id": "current_architecture_core_modules_to_build_later",
+      "community": 4,
+      "norm_label": "core modules to build later"
+    },
+    {
+      "label": "code:text (src/)",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L19",
+      "id": "current_architecture_codeblock_1",
+      "community": 4,
+      "norm_label": "code:text (src/)"
+    },
+    {
+      "label": "State machine draft",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L41",
+      "id": "current_architecture_state_machine_draft",
+      "community": 4,
+      "norm_label": "state machine draft"
+    },
+    {
+      "label": "code:text (entry)",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L43",
+      "id": "current_architecture_codeblock_2",
+      "community": 4,
+      "norm_label": "code:text (entry)"
+    },
+    {
+      "label": "Build rule",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L54",
+      "id": "current_architecture_build_rule",
+      "community": 4,
+      "norm_label": "build rule"
+    },
+    {
+      "label": "First implementation milestone",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L64",
+      "id": "current_architecture_first_implementation_milestone",
+      "community": 4,
+      "norm_label": "first implementation milestone"
+    },
+    {
+      "label": "qa.md",
+      "file_type": "document",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L1",
+      "id": "docs_current_qa_md",
+      "community": 13,
+      "norm_label": "qa.md"
+    },
+    {
+      "label": "QA acceptance",
+      "file_type": "document",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L1",
+      "id": "current_qa_qa_acceptance",
+      "community": 13,
+      "norm_label": "qa acceptance"
+    },
+    {
+      "label": "Fresh vertical-slice acceptance",
+      "file_type": "document",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L3",
+      "id": "current_qa_fresh_vertical_slice_acceptance",
+      "community": 13,
+      "norm_label": "fresh vertical-slice acceptance"
+    },
+    {
+      "label": "release.md",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L1",
+      "id": "docs_current_release_md",
+      "community": 9,
+      "norm_label": "release.md"
+    },
+    {
+      "label": "Release contract",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L1",
+      "id": "current_release_release_contract",
+      "community": 9,
+      "norm_label": "release contract"
+    },
+    {
+      "label": "Branch policy",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L3",
+      "id": "current_release_branch_policy",
+      "community": 9,
+      "norm_label": "branch policy"
+    },
+    {
+      "label": "CI",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L12",
+      "id": "current_release_ci",
+      "community": 9,
+      "norm_label": "ci"
+    },
+    {
+      "label": "Deploy",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L23",
+      "id": "current_release_deploy",
+      "community": 9,
+      "norm_label": "deploy"
+    },
+    {
+      "label": "Canary",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L29",
+      "id": "current_release_canary",
+      "community": 9,
+      "norm_label": "canary"
+    },
+    {
+      "label": "design.md",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L1",
+      "id": "docs_current_design_md",
+      "community": 8,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Design direction \u2014 restart baseline",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L1",
+      "id": "current_design_design_direction_restart_baseline",
+      "community": 8,
+      "norm_label": "design direction \u2014 restart baseline"
+    },
+    {
+      "label": "Direction name",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L3",
+      "id": "current_design_direction_name",
+      "community": 8,
+      "norm_label": "direction name"
+    },
+    {
+      "label": "Design stance",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L7",
+      "id": "current_design_design_stance",
+      "community": 8,
+      "norm_label": "design stance"
+    },
+    {
+      "label": "Visual non-negotiables",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L11",
+      "id": "current_design_visual_non_negotiables",
+      "community": 8,
+      "norm_label": "visual non-negotiables"
+    },
+    {
+      "label": "Candidate character concepts to explore",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L19",
+      "id": "current_design_candidate_character_concepts_to_explore",
+      "community": 8,
+      "norm_label": "candidate character concepts to explore"
+    },
+    {
+      "label": "Required states",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L31",
+      "id": "current_design_required_states",
+      "community": 8,
+      "norm_label": "required states"
+    },
+    {
+      "label": "QA acceptance draft",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L45",
+      "id": "current_design_qa_acceptance_draft",
+      "community": 8,
+      "norm_label": "qa acceptance draft"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/canary.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_canary_mjs",
+      "target": "scripts_canary_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/canary.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scripts_canary_mjs",
+      "target": "scripts_canary_checks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_character_charactercontroller_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "character_charactercontroller_charactercontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_game_session_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_answercurrentquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_createsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_markguesscorrect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_markguesswrong",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_restartsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_startsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_engine_score_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "engine_score_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_answers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_tsx",
+      "target": "src_app_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_test_tsx",
+      "target": "src_app_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_app_test_tsx",
+      "target": "src_app_test_before",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_app_test_tsx",
+      "target": "src_app_test_after",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_character_charactercontroller_tsx",
+      "target": "src_character_characterstatemap_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_character_charactercontroller_tsx",
+      "target": "character_characterstatemap_stateforsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_character_charactercontroller_tsx",
+      "target": "src_game_session_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_character_charactercontroller_tsx",
+      "target": "game_session_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_character_charactercontroller_tsx",
+      "target": "character_charactercontroller_charactercontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/character/CharacterController.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "character_charactercontroller_charactercontroller",
+      "target": "character_characterstatemap_stateforsession"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "src_character_characterstatemap_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "character_characterstatemap_character_states",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "character_characterstatemap_stateforsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "src_game_session_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "game_session_createsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "game_session_answercurrentquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "character_characterstatemap_test_entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.test.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_test_ts",
+      "target": "character_characterstatemap_test_asking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_ts",
+      "target": "src_game_session_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_ts",
+      "target": "game_session_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_ts",
+      "target": "character_characterstatemap_characterstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_ts",
+      "target": "character_characterstatemap_character_states",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/character/characterStateMap.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_character_characterstatemap_ts",
+      "target": "character_characterstatemap_stateforsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "src_data_foods_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "data_foods_foods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "src_data_questions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "data_questions_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "data_questions_question",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "src_engine_score_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "engine_score_applyanswer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "engine_score_initializeposterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "engine_score_topcandidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "engine_score_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "engine_score_posterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "src_engine_selectquestion_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "engine_selectquestion_selectnextquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_phase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_createsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_startsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_answercurrentquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_markguesscorrect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_markguesswrong",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_restartsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "src_game_session_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "game_session_restartsession",
+      "target": "game_session_createsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_createsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "game_session_createsession",
+      "target": "engine_score_initializeposterior"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "game_session_createsession",
+      "target": "engine_selectquestion_selectnextquestion"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "game_session_answercurrentquestion",
+      "target": "game_session_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_answercurrentquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "game_session_answercurrentquestion",
+      "target": "engine_selectquestion_selectnextquestion"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "game_session_answercurrentquestion",
+      "target": "engine_score_applyanswer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "game_session_answercurrentquestion",
+      "target": "engine_score_topcandidates"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "game_session_reveal",
+      "target": "engine_score_topcandidates"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_markguesscorrect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_markguesswrong",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "game_session_markguesswrong",
+      "target": "engine_selectquestion_selectnextquestion"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "game_session_markguesswrong",
+      "target": "engine_score_topcandidates"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_restartsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_test_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.test.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_game_session_test_ts",
+      "target": "game_session_test_correct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_foods_ts",
+      "target": "data_foods_traitkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_data_foods_ts",
+      "target": "data_foods_food",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_data_foods_ts",
+      "target": "data_foods_traits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_data_foods_ts",
+      "target": "data_foods_foods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_questions_ts",
+      "target": "src_data_foods_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "src_data_foods_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "src_data_foods_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "src_data_foods_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "src_data_foods_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_questions_ts",
+      "target": "data_foods_traitkey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "data_foods_food",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "data_foods_foods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "data_foods_foods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "data_foods_foods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "data_foods_foods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_data_questions_ts",
+      "target": "data_questions_question",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/questions.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_data_questions_ts",
+      "target": "data_questions_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "src_data_questions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "src_data_questions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "src_data_questions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "src_data_questions_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "data_questions_question",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "data_questions_question",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "data_questions_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "data_questions_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_posterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_answer_strength",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_initializeposterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_applyanswer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_normalize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_engine_score_ts",
+      "target": "engine_score_topcandidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "src_engine_score_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "src_engine_score_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "src_engine_score_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "engine_score_posterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "engine_score_initializeposterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_initializeposterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "engine_score_applyanswer",
+      "target": "engine_score_normalize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_applyanswer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_topcandidates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "src_engine_selectquestion_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "engine_selectquestion_selectnextquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "engine_selectquestion_test_posterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_test_ts",
+      "target": "engine_selectquestion_test_next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_test_prior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_test_yes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_test_maybeyes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_test_unknown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_test_no",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/score.test.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_engine_score_test_ts",
+      "target": "engine_score_test_posterior",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "engine_selectquestion_questionchoice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "engine_selectquestion_selectnextquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/selectQuestion.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_engine_selectquestion_ts",
+      "target": "engine_selectquestion_informationgainproxy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "food_akinator_hermes_pilot_readme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "food_akinator_hermes_pilot_readme",
+      "target": "food_akinator_hermes_pilot_readme_local_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "food_akinator_hermes_pilot_readme",
+      "target": "food_akinator_hermes_pilot_readme_release",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "food_akinator_hermes_pilot_readme_local_development",
+      "target": "food_akinator_hermes_pilot_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_changelog_md",
+      "target": "docs_changelog_changelog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_changelog_changelog",
+      "target": "docs_changelog_fresh_repository_restart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_readme_md",
+      "target": "docs_readme_docs_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_readme_docs_index",
+      "target": "docs_readme_current_truth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "docs_readme_docs_index",
+      "target": "docs_readme_research",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "docs_readme_docs_index",
+      "target": "docs_readme_changelog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_inference_question_model_md",
+      "target": "research_inference_question_model_inference_and_question_narrowing_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_core_claim",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_candidate_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_five_answer_weights",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_scoring_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_question_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_food_adaptation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_reveal_threshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_wrong_guess_recovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_mvp_architecture_implication",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "research_inference_question_model_inference_and_question_narrowing_model",
+      "target": "research_inference_question_model_qa_scenarios",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "research_inference_question_model_candidate_model",
+      "target": "research_inference_question_model_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "research_inference_question_model_candidate_model",
+      "target": "research_inference_question_model_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "research_inference_question_model_five_answer_weights",
+      "target": "research_inference_question_model_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "research_inference_question_model_scoring_model",
+      "target": "research_inference_question_model_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "research_inference_question_model_food_adaptation",
+      "target": "research_inference_question_model_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/inference-question-model.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "research_inference_question_model_food_adaptation",
+      "target": "research_inference_question_model_codeblock_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_character_animation_pipeline_md",
+      "target": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_problem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_likely_approaches_in_akinator_like_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_pipeline_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_recommended_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_minimum_character_state_set",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_organic_motion_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_character_animation_pipeline_research",
+      "target": "research_character_animation_pipeline_non_copy_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_pipeline_options",
+      "target": "research_character_animation_pipeline_option_a_pre_rendered_sprite_webp_sequence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_pipeline_options",
+      "target": "research_character_animation_pipeline_option_b_layered_webp_png_rig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_pipeline_options",
+      "target": "research_character_animation_pipeline_option_c_rive_state_machine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/character-animation-pipeline.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "research_character_animation_pipeline_pipeline_options",
+      "target": "research_character_animation_pipeline_option_d_spine_live2d",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_akinator_gameplay_analysis_md",
+      "target": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_scope_limitation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_core_play_loop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_five_answer_semantics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_tension_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_character_role",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_repeat_play_pattern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_do_not_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research/akinator-gameplay-analysis.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
+      "target": "research_akinator_gameplay_analysis_principles_to_borrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_current_product_md",
+      "target": "current_product_product_brief_fresh_restart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_decision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_product_thesis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_target_use_case",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_non_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_product_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_current_phase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_current_architecture_md",
+      "target": "current_architecture_architecture_baseline_restart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_current_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_recommended_stack_candidate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_core_modules_to_build_later",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_state_machine_draft",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_build_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_first_implementation_milestone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "current_architecture_core_modules_to_build_later",
+      "target": "current_architecture_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "current_architecture_state_machine_draft",
+      "target": "current_architecture_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_current_qa_md",
+      "target": "current_qa_qa_acceptance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "current_qa_qa_acceptance",
+      "target": "current_qa_fresh_vertical_slice_acceptance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_current_release_md",
+      "target": "current_release_release_contract",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "current_release_release_contract",
+      "target": "current_release_branch_policy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "current_release_release_contract",
+      "target": "current_release_ci",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "current_release_release_contract",
+      "target": "current_release_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "current_release_release_contract",
+      "target": "current_release_canary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_current_design_md",
+      "target": "current_design_design_direction_restart_baseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_direction_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_design_stance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_visual_non_negotiables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_candidate_character_concepts_to_explore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_required_states",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_qa_acceptance_draft",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4faba4a4224c0268a2b3501af17a1ca97889a1e0"
+}

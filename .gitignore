@@ -5,3 +5,4 @@ dist
 .env.*
 .DS_Store
 .hermes/runs/
+graphify-out/cache/
