@@ -32,4 +32,6 @@
 - `docs/research/akinator-reference-observations.md`
 - `docs/research/korean-food-decision-product-research.md`
 - `docs/research/inference-motion-research.md`
+- `docs/research/designer-gate.md`
+- `docs/research/architect-gate.md`
 - `docs/research/zero-to-one-team-synthesis.md`
