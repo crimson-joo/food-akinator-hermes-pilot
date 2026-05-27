@@ -1,7 +1,7 @@
 node_modules
 dist
+.vite
 .env
 .env.*
 .DS_Store
-.hermes/runs/*/evidence/*.png
-.hermes/runs/*/evidence/*.webm
+.hermes/runs/
