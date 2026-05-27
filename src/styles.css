@@ -216,10 +216,24 @@ button:hover { transform: rotate(-1.5deg) translateY(-2px); box-shadow: #000 -7p
 .hint { display: inline-flex; align-items: center; gap: 7px; font-size: 14px !important; color: #725f54 !important; }
 .confidence { align-self: flex-start; padding: 8px 12px; background: var(--lemon); color: #301a10; }
 
+.mode-switch { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+.mode-switch button { background: rgba(255,255,255,.72); }
+.mode-switch button.selected { background: var(--lemon); transform: rotate(-1deg); }
+.service-progress { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 10px; }
+.service-progress span, .candidate-board span { border: 1px solid rgba(42,25,16,.16); border-radius: 16px; background: rgba(255,255,255,.62); padding: 8px 10px; font-size: 13px; font-weight: 900; }
+.candidate-board { position: relative; z-index: 2; display: grid; gap: 8px; margin-bottom: 14px; border: 1px dashed rgba(42,25,16,.24); border-radius: 22px; background: rgba(255,248,235,.64); padding: 12px; }
+.candidate-board strong { display: inline-flex; align-items: center; gap: 7px; }
+.case-stamp.danger { background: #ffe1e1; color: #8e2222; border-color: #8e2222; }
+.confidence-breakdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.confidence-breakdown span { border-radius: 14px; padding: 10px; background: #fffaf0; border: 1px solid var(--oat); font-weight: 900; font-size: 13px; }
+.actual-answer-note { display: grid; gap: 7px; margin: 12px 0; font-weight: 900; }
+.actual-answer-note input { border: 1px solid var(--oat); border-radius: 16px; padding: 13px 14px; background: #fff; color: var(--ink); font: inherit; }
+
 @keyframes float { 50% { transform: translateY(-10px) rotate(1deg); } }
 @keyframes pulse { 50% { transform: scale(1.05); opacity: .75; } }
 
 @media (max-width: 860px) {
+  .service-progress, .confidence-breakdown { grid-template-columns: 1fr; }
   .app-shell { grid-template-columns: 1fr; padding: 14px; gap: 16px; }
   .hero-panel, .game-panel { padding: 20px; border-radius: 28px; }
   .case-board { grid-template-columns: 1fr; }

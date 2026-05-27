@@ -1,154 +1,190 @@
 {
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/eslint.config.js": {
-    "mtime": 1779895491.3712833,
-    "hash": "5b76c4391f2fc2fb548f14e017caa5e7"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/eslint.config.js": {
+    "mtime": 1779922981.464973,
+    "hash": "7b1854f7d4bdb93a2fa8cfb15d390422"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/vite.config.ts": {
-    "mtime": 1779895509.2626367,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/vite.config.ts": {
+    "mtime": 1779922981.4752567,
     "hash": "d726632b41f201b3ca603faeb2aa0ac0"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/scripts/canary.mjs": {
-    "mtime": 1779895459.0730598,
-    "hash": "ee655c32edb5dc9bc881a1209c701588"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/scripts/canary.mjs": {
+    "mtime": 1779922981.4698076,
+    "hash": "56fda319ba756a9a4ee59fe94e520422"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/App.tsx": {
-    "mtime": 1779895456.4370687,
-    "hash": "cfb88f59484c9c514747b73d1f7aa35a"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/App.tsx": {
+    "mtime": 1779923277.4749255,
+    "hash": "db50250a5301764c9d87a44b47147491"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/main.tsx": {
-    "mtime": 1779895456.5111468,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/main.tsx": {
+    "mtime": 1779922981.474091,
     "hash": "1d507d274178a0042f2612e48eaea0d9"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/App.test.tsx": {
-    "mtime": 1779895211.6291878,
-    "hash": "f368797d978acc196a45f3865152c070"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/App.test.tsx": {
+    "mtime": 1779922981.47003,
+    "hash": "aaf85d1a9824c2c579f5c8a11c1bdb66"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/vite-env.d.ts": {
-    "mtime": 1779895491.6154077,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/App.final.test.tsx": {
+    "mtime": 1779923046.8035655,
+    "hash": "edd3e73144124635d474d26729043be7"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/vite-env.d.ts": {
+    "mtime": 1779922981.4746768,
     "hash": "db266f67270495e5478804f291146e99"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/test/setup.ts": {
-    "mtime": 1779895209.1271455,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/test/setup.ts": {
+    "mtime": 1779922981.4744885,
     "hash": "b6047cb48430aab17d0c9a3cec1e4bb5"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/character/CharacterController.tsx": {
-    "mtime": 1779895455.9056509,
-    "hash": "8205ab6e9acebb7c8c6d57769563fa3e"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/character/CharacterController.tsx": {
+    "mtime": 1779922981.471491,
+    "hash": "b8bfec080893aa5635a1c244abff76d0"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/character/characterStateMap.test.ts": {
-    "mtime": 1779896278.6032498,
-    "hash": "b3fffd9194c112a304f4f90cad72fd47"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/character/characterStateMap.test.ts": {
+    "mtime": 1779922981.4716442,
+    "hash": "d24500be88f71f77b7df9dcf2454b878"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/character/characterStateMap.ts": {
-    "mtime": 1779896278.285745,
-    "hash": "40e358bbc2a55f0fdf8b041e3efe2ec7"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/character/characterStateMap.ts": {
+    "mtime": 1779922981.4718263,
+    "hash": "99a8896657bc30934b117a41bb6f7129"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/game/session.ts": {
-    "mtime": 1779895454.8532805,
-    "hash": "33a839e6f3c961ac2f0ab58eda693425"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/game/session.ts": {
+    "mtime": 1779923179.7406576,
+    "hash": "6545ed6ce59cf4ee059f431e63224ad7"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/game/session.test.ts": {
-    "mtime": 1779895210.6276155,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/game/session.test.ts": {
+    "mtime": 1779922981.4736903,
     "hash": "89392f88e6b86c3b24710f0066aa1a4d"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/data/foods.ts": {
-    "mtime": 1779895452.6652348,
-    "hash": "7c6dd9ac298fff4d2f382b122cdc10b2"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/game/finalServiceAcceptance.test.ts": {
+    "mtime": 1779923046.8011281,
+    "hash": "30752335279a52009d2827bc92742750"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/data/questions.ts": {
-    "mtime": 1779895453.22557,
-    "hash": "b7d1a6295ebdba9fa59ebb2b14800012"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/data/foods.ts": {
+    "mtime": 1779923114.1910207,
+    "hash": "f84590ebe4cedec41b2873cc1d598966"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/engine/score.ts": {
-    "mtime": 1779895453.7821808,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/data/questions.ts": {
+    "mtime": 1779923151.9682996,
+    "hash": "12d857758b7b71bd3448679bb47c50fd"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/engine/score.ts": {
+    "mtime": 1779922981.4729152,
     "hash": "e32e920f858c3d56311bd62596376ee7"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/engine/selectQuestion.test.ts": {
-    "mtime": 1779895210.1259866,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/engine/selectQuestion.test.ts": {
+    "mtime": 1779922981.473109,
     "hash": "24e810d8b4c860109947fe4e03e1747c"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/engine/score.test.ts": {
-    "mtime": 1779895209.5930495,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/engine/score.test.ts": {
+    "mtime": 1779922981.4727156,
     "hash": "3cd2af106a3beef3053ba6c630309af8"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/src/engine/selectQuestion.ts": {
-    "mtime": 1779895454.2811353,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/engine/selectQuestion.ts": {
+    "mtime": 1779922981.4734318,
     "hash": "a696227eded2928537b53cad82af0dcc"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/index.html": {
-    "mtime": 1779895208.9847891,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/index.html": {
+    "mtime": 1779922981.4669507,
     "hash": "7fa07d3f8a3d999a8ee1a41117a29c43"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/README.md": {
-    "mtime": 1779896360.2202873,
-    "hash": "8a2d7fd972bb736458bacd1bf8d93567"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/README.md": {
+    "mtime": 1779923533.2045,
+    "hash": "15b371fa58a39e2789d7aae496b975f4"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/changelog.md": {
-    "mtime": 1779889329.901359,
-    "hash": "8b8cfe52c2016009e6aa2a9aa6baaca2"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/changelog.md": {
+    "mtime": 1779923542.9976099,
+    "hash": "ca5f93b7538003cd17b0ceaad1c30b84"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/README.md": {
-    "mtime": 1779889338.6773725,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/README.md": {
+    "mtime": 1779922981.4613538,
     "hash": "6678064e832db41a31019e7b99be9da9"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/research/inference-question-model.md": {
-    "mtime": 1779889253.228789,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/research/inference-question-model.md": {
+    "mtime": 1779922981.4648094,
     "hash": "1936c30f30921b169b0f2dce61ee1115"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/research/character-animation-pipeline.md": {
-    "mtime": 1779889225.581524,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/research/character-animation-pipeline.md": {
+    "mtime": 1779922981.4645913,
     "hash": "695a246176ee246b106b030b8dbd1432"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/research/akinator-gameplay-analysis.md": {
-    "mtime": 1779889196.0454912,
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/research/akinator-gameplay-analysis.md": {
+    "mtime": 1779922981.4643774,
     "hash": "2298de660439e32ac12810d1e9a2681d"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/current/product.md": {
-    "mtime": 1779889172.7783139,
-    "hash": "8c222e8d31f6769732b932a3d4f0e249"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/current/product.md": {
+    "mtime": 1779923474.921029,
+    "hash": "ebae1ab09b252151a4f8b29d3efab1a9"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/current/architecture.md": {
-    "mtime": 1779889288.409071,
-    "hash": "0c89a440fbd16a87957ea6c12e3d30d6"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/current/architecture.md": {
+    "mtime": 1779923506.1227164,
+    "hash": "306f225405e9eb84984125756bb55fbc"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/current/qa.md": {
-    "mtime": 1779895459.610881,
-    "hash": "0bcb3bb7ea4dc7e43154685da4325bc1"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/current/qa.md": {
+    "mtime": 1779923515.512078,
+    "hash": "94d64383be51e04194f1f30561f01a80"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/current/release.md": {
-    "mtime": 1779895459.5530336,
-    "hash": "b318efe8eaa24e900b68df93d330c505"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/current/release.md": {
+    "mtime": 1779923523.5276794,
+    "hash": "b8796e0648701aeef6e77cddd7f5e343"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/docs/current/design.md": {
-    "mtime": 1779889271.3143766,
-    "hash": "e89a80a9702acaa44070c2712b5c3257"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/docs/current/design.md": {
+    "mtime": 1779923491.797583,
+    "hash": "2209e703a9923a2c5dc22959a009a3c8"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-reveal.svg": {
-    "mtime": 1779895457.6666746,
-    "hash": "2d4db9b37ce5027b6036810ea2418464"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-reveal.svg": {
+    "mtime": 1779922981.4689426,
+    "hash": "fb0327d975ebdd776106503bf627ff39"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-asking.svg": {
-    "mtime": 1779895457.2487462,
-    "hash": "cb1755966f84b5740a9aeae0bb1cc586"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-asking.svg": {
+    "mtime": 1779922981.4681723,
+    "hash": "a516f2c92aac332dc6a76a88348d587b"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-entry.svg": {
-    "mtime": 1779895457.0944407,
-    "hash": "144fe9f8c710ad056fa74a621b512f64"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-entry.svg": {
+    "mtime": 1779922981.4687839,
+    "hash": "d47844a476e6f27ba2310c76cc2251e2"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-confidence.svg": {
-    "mtime": 1779895457.500373,
-    "hash": "15984a17f651cb8119cdd65e16f25ee5"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-confidence.svg": {
+    "mtime": 1779922981.4684687,
+    "hash": "2b936ee5fb8658241119fb82fc2c074e"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-wrong.svg": {
-    "mtime": 1779895457.9795144,
-    "hash": "3a93350110b0fd39a677eca84ff2b21c"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-wrong.svg": {
+    "mtime": 1779922981.4693854,
+    "hash": "313fdc5b7790c3ee7443709a6f03f16f"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-thinking.svg": {
-    "mtime": 1779895457.4123366,
-    "hash": "d36441916a0131a296edf043af5bf6e3"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-thinking.svg": {
+    "mtime": 1779922981.4690936,
+    "hash": "a2835ca346f39373ab814050d958110a"
   },
-  "/Users/crimson/Projects/food-akinator-hermes-pilot/public/characters/food-detective-correct.svg": {
-    "mtime": 1779895457.8514206,
-    "hash": "c6f02ded9d5382a943faa524cd8fc311"
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/public/characters/food-detective-correct.svg": {
+    "mtime": 1779922981.4686236,
+    "hash": "e4029ebc1de881f64ab622c88d5c5ce0"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-reveal.svg": {
+    "mtime": 1779922981.4710069,
+    "hash": "fb0327d975ebdd776106503bf627ff39"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-asking.svg": {
+    "mtime": 1779922981.470465,
+    "hash": "a516f2c92aac332dc6a76a88348d587b"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-entry.svg": {
+    "mtime": 1779922981.4708748,
+    "hash": "d47844a476e6f27ba2310c76cc2251e2"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-confidence.svg": {
+    "mtime": 1779922981.4706004,
+    "hash": "2b936ee5fb8658241119fb82fc2c074e"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-wrong.svg": {
+    "mtime": 1779922981.4712763,
+    "hash": "313fdc5b7790c3ee7443709a6f03f16f"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-thinking.svg": {
+    "mtime": 1779922981.4711397,
+    "hash": "a2835ca346f39373ab814050d958110a"
+  },
+  "/Users/crimson/worktrees/food-akinator-hermes-pilot/final-service-completion/src/assets/characters/food-detective-correct.svg": {
+    "mtime": 1779922981.4707413,
+    "hash": "e4029ebc1de881f64ab622c88d5c5ce0"
   }
 }

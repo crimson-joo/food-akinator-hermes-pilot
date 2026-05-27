@@ -9,7 +9,7 @@
       "source_file": "eslint.config.js",
       "source_location": "L1",
       "id": "eslint_config_js",
-      "community": 15,
+      "community": 16,
       "norm_label": "eslint.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "vite.config.ts",
       "source_location": "L1",
       "id": "vite_config_ts",
-      "community": 16,
+      "community": 17,
       "norm_label": "vite.config.ts"
     },
     {
@@ -43,7 +43,7 @@
       "label": "checks",
       "file_type": "code",
       "source_file": "scripts/canary.mjs",
-      "source_location": "L6",
+      "source_location": "L9",
       "id": "scripts_canary_checks",
       "community": 14,
       "norm_label": "checks"
@@ -61,7 +61,7 @@
       "label": "ANSWERS",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L8",
+      "source_location": "L11",
       "id": "src_app_answers",
       "community": 1,
       "norm_label": "answers"
@@ -70,7 +70,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L16",
+      "source_location": "L19",
       "id": "src_app_app",
       "community": 1,
       "norm_label": "app()"
@@ -90,26 +90,35 @@
       "source_file": "src/App.test.tsx",
       "source_location": "L1",
       "id": "src_app_test_tsx",
-      "community": 1,
+      "community": 15,
       "norm_label": "app.test.tsx"
     },
     {
       "label": "before",
       "file_type": "code",
       "source_file": "src/App.test.tsx",
-      "source_location": "L24",
+      "source_location": "L34",
       "id": "src_app_test_before",
-      "community": 1,
+      "community": 15,
       "norm_label": "before"
     },
     {
       "label": "after",
       "file_type": "code",
       "source_file": "src/App.test.tsx",
-      "source_location": "L26",
+      "source_location": "L36",
       "id": "src_app_test_after",
-      "community": 1,
+      "community": 15,
       "norm_label": "after"
+    },
+    {
+      "label": "App.final.test.tsx",
+      "file_type": "code",
+      "source_file": "src/App.final.test.tsx",
+      "source_location": "L1",
+      "id": "src_app_final_test_tsx",
+      "community": 1,
+      "norm_label": "app.final.test.tsx"
     },
     {
       "label": "vite-env.d.ts",
@@ -117,7 +126,7 @@
       "source_file": "src/vite-env.d.ts",
       "source_location": "L1",
       "id": "src_vite_env_d_ts",
-      "community": 17,
+      "community": 18,
       "norm_label": "vite-env.d.ts"
     },
     {
@@ -126,7 +135,7 @@
       "source_file": "src/test/setup.ts",
       "source_location": "L1",
       "id": "src_test_setup_ts",
-      "community": 18,
+      "community": 19,
       "norm_label": "setup.ts"
     },
     {
@@ -135,16 +144,16 @@
       "source_file": "src/character/CharacterController.tsx",
       "source_location": "L1",
       "id": "src_character_charactercontroller_tsx",
-      "community": 5,
+      "community": 9,
       "norm_label": "charactercontroller.tsx"
     },
     {
       "label": "CharacterController()",
       "file_type": "code",
       "source_file": "src/character/CharacterController.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "id": "character_charactercontroller_charactercontroller",
-      "community": 5,
+      "community": 9,
       "norm_label": "charactercontroller()"
     },
     {
@@ -153,7 +162,7 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L1",
       "id": "src_character_characterstatemap_test_ts",
-      "community": 5,
+      "community": 9,
       "norm_label": "characterstatemap.test.ts"
     },
     {
@@ -162,7 +171,7 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L15",
       "id": "character_characterstatemap_test_entry",
-      "community": 5,
+      "community": 9,
       "norm_label": "entry"
     },
     {
@@ -171,7 +180,7 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L16",
       "id": "character_characterstatemap_test_asking",
-      "community": 5,
+      "community": 9,
       "norm_label": "asking"
     },
     {
@@ -180,34 +189,34 @@
       "source_file": "src/character/characterStateMap.ts",
       "source_location": "L1",
       "id": "src_character_characterstatemap_ts",
-      "community": 5,
+      "community": 9,
       "norm_label": "characterstatemap.ts"
     },
     {
       "label": "CharacterState",
       "file_type": "code",
       "source_file": "src/character/characterStateMap.ts",
-      "source_location": "L3",
+      "source_location": "L10",
       "id": "character_characterstatemap_characterstate",
-      "community": 5,
+      "community": 9,
       "norm_label": "characterstate"
     },
     {
       "label": "CHARACTER_STATES",
       "file_type": "code",
       "source_file": "src/character/characterStateMap.ts",
-      "source_location": "L4",
+      "source_location": "L21",
       "id": "character_characterstatemap_character_states",
-      "community": 5,
+      "community": 9,
       "norm_label": "character_states"
     },
     {
       "label": "stateForSession()",
       "file_type": "code",
       "source_file": "src/character/characterStateMap.ts",
-      "source_location": "L14",
+      "source_location": "L31",
       "id": "character_characterstatemap_stateforsession",
-      "community": 5,
+      "community": 9,
       "norm_label": "stateforsession()"
     },
     {
@@ -234,14 +243,23 @@
       "source_file": "src/game/session.ts",
       "source_location": "L7",
       "id": "game_session_session",
-      "community": 5,
+      "community": 9,
       "norm_label": "session"
+    },
+    {
+      "label": "RevealReadiness",
+      "file_type": "code",
+      "source_file": "src/game/session.ts",
+      "source_location": "L19",
+      "id": "game_session_revealreadiness",
+      "community": 1,
+      "norm_label": "revealreadiness"
     },
     {
       "label": "createSession()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L9",
+      "source_location": "L21",
       "id": "game_session_createsession",
       "community": 1,
       "norm_label": "createsession()"
@@ -250,7 +268,7 @@
       "label": "startSession()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L14",
+      "source_location": "L26",
       "id": "game_session_startsession",
       "community": 1,
       "norm_label": "startsession()"
@@ -259,7 +277,7 @@
       "label": "answerCurrentQuestion()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L16",
+      "source_location": "L39",
       "id": "game_session_answercurrentquestion",
       "community": 1,
       "norm_label": "answercurrentquestion()"
@@ -268,7 +286,7 @@
       "label": "reveal()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L28",
+      "source_location": "L53",
       "id": "game_session_reveal",
       "community": 1,
       "norm_label": "reveal()"
@@ -277,7 +295,7 @@
       "label": "markGuessCorrect()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L29",
+      "source_location": "L54",
       "id": "game_session_markguesscorrect",
       "community": 1,
       "norm_label": "markguesscorrect()"
@@ -286,7 +304,7 @@
       "label": "markGuessWrong()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L30",
+      "source_location": "L55",
       "id": "game_session_markguesswrong",
       "community": 1,
       "norm_label": "markguesswrong()"
@@ -295,7 +313,7 @@
       "label": "restartSession()",
       "file_type": "code",
       "source_file": "src/game/session.ts",
-      "source_location": "L40",
+      "source_location": "L65",
       "id": "game_session_restartsession",
       "community": 1,
       "norm_label": "restartsession()"
@@ -326,6 +344,42 @@
       "id": "game_session_test_correct",
       "community": 1,
       "norm_label": "correct"
+    },
+    {
+      "label": "finalServiceAcceptance.test.ts",
+      "file_type": "code",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L1",
+      "id": "src_game_finalserviceacceptance_test_ts",
+      "community": 1,
+      "norm_label": "finalserviceacceptance.test.ts"
+    },
+    {
+      "label": "session",
+      "file_type": "code",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L15",
+      "id": "game_finalserviceacceptance_test_session",
+      "community": 1,
+      "norm_label": "session"
+    },
+    {
+      "label": "seen",
+      "file_type": "code",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L16",
+      "id": "game_finalserviceacceptance_test_seen",
+      "community": 1,
+      "norm_label": "seen"
+    },
+    {
+      "label": "readiness",
+      "file_type": "code",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L31",
+      "id": "game_finalserviceacceptance_test_readiness",
+      "community": 1,
+      "norm_label": "readiness"
     },
     {
       "label": "foods.ts",
@@ -364,10 +418,19 @@
       "norm_label": "traits"
     },
     {
+      "label": "baseTraits",
+      "file_type": "code",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L5",
+      "id": "data_foods_basetraits",
+      "community": 0,
+      "norm_label": "basetraits"
+    },
+    {
       "label": "FOODS",
       "file_type": "code",
       "source_file": "src/data/foods.ts",
-      "source_location": "L4",
+      "source_location": "L12",
       "id": "data_foods_foods",
       "community": 0,
       "norm_label": "foods"
@@ -603,7 +666,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 10,
+      "community": 7,
       "norm_label": "readme.md"
     },
     {
@@ -611,35 +674,44 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
-      "id": "food_akinator_hermes_pilot_readme",
-      "community": 10,
+      "id": "final_service_completion_readme",
+      "community": 7,
       "norm_label": "\u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u1110\u1161\u11b7\u110c\u1165\u11bc\u1103\u1161\u11ab"
+    },
+    {
+      "label": "What it is",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "id": "final_service_completion_readme_what_it_is",
+      "community": 7,
+      "norm_label": "what it is"
     },
     {
       "label": "Local development",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L7",
-      "id": "food_akinator_hermes_pilot_readme_local_development",
-      "community": 10,
+      "source_location": "L19",
+      "id": "final_service_completion_readme_local_development",
+      "community": 7,
       "norm_label": "local development"
     },
     {
       "label": "code:bash (npm ci)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L9",
-      "id": "food_akinator_hermes_pilot_readme_codeblock_1",
-      "community": 10,
+      "source_location": "L21",
+      "id": "final_service_completion_readme_codeblock_1",
+      "community": 7,
       "norm_label": "code:bash (npm ci)"
     },
     {
       "label": "Release",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L17",
-      "id": "food_akinator_hermes_pilot_readme_release",
-      "community": 10,
+      "source_location": "L29",
+      "id": "final_service_completion_readme_release",
+      "community": 7,
       "norm_label": "release"
     },
     {
@@ -661,10 +733,19 @@
       "norm_label": "changelog"
     },
     {
-      "label": "Fresh repository restart",
+      "label": "Final service MVP",
       "file_type": "document",
       "source_file": "docs/changelog.md",
       "source_location": "L3",
+      "id": "docs_changelog_final_service_mvp",
+      "community": 12,
+      "norm_label": "final service mvp"
+    },
+    {
+      "label": "Fresh repository restart",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L11",
       "id": "docs_changelog_fresh_repository_restart",
       "community": 12,
       "norm_label": "fresh repository restart"
@@ -882,7 +963,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L1",
       "id": "docs_research_character_animation_pipeline_md",
-      "community": 3,
+      "community": 4,
       "norm_label": "character-animation-pipeline.md"
     },
     {
@@ -891,7 +972,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L1",
       "id": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "community": 3,
+      "community": 4,
       "norm_label": "character animation pipeline research"
     },
     {
@@ -900,7 +981,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L3",
       "id": "research_character_animation_pipeline_problem",
-      "community": 3,
+      "community": 4,
       "norm_label": "problem"
     },
     {
@@ -909,7 +990,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L7",
       "id": "research_character_animation_pipeline_likely_approaches_in_akinator_like_products",
-      "community": 3,
+      "community": 4,
       "norm_label": "likely approaches in akinator-like products"
     },
     {
@@ -918,7 +999,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L18",
       "id": "research_character_animation_pipeline_pipeline_options",
-      "community": 3,
+      "community": 4,
       "norm_label": "pipeline options"
     },
     {
@@ -927,7 +1008,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L20",
       "id": "research_character_animation_pipeline_option_a_pre_rendered_sprite_webp_sequence",
-      "community": 3,
+      "community": 4,
       "norm_label": "option a \u2014 pre-rendered sprite / webp sequence"
     },
     {
@@ -936,7 +1017,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L34",
       "id": "research_character_animation_pipeline_option_b_layered_webp_png_rig",
-      "community": 3,
+      "community": 4,
       "norm_label": "option b \u2014 layered webp/png rig"
     },
     {
@@ -945,7 +1026,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L50",
       "id": "research_character_animation_pipeline_option_c_rive_state_machine",
-      "community": 3,
+      "community": 4,
       "norm_label": "option c \u2014 rive state machine"
     },
     {
@@ -954,7 +1035,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L64",
       "id": "research_character_animation_pipeline_option_d_spine_live2d",
-      "community": 3,
+      "community": 4,
       "norm_label": "option d \u2014 spine / live2d"
     },
     {
@@ -963,7 +1044,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L76",
       "id": "research_character_animation_pipeline_recommended_path",
-      "community": 3,
+      "community": 4,
       "norm_label": "recommended path"
     },
     {
@@ -972,7 +1053,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L89",
       "id": "research_character_animation_pipeline_minimum_character_state_set",
-      "community": 3,
+      "community": 4,
       "norm_label": "minimum character state set"
     },
     {
@@ -981,7 +1062,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L99",
       "id": "research_character_animation_pipeline_organic_motion_rules",
-      "community": 3,
+      "community": 4,
       "norm_label": "organic motion rules"
     },
     {
@@ -990,7 +1071,7 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L107",
       "id": "research_character_animation_pipeline_non_copy_rule",
-      "community": 3,
+      "community": 4,
       "norm_label": "non-copy rule"
     },
     {
@@ -1089,17 +1170,17 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 7,
+      "community": 8,
       "norm_label": "product.md"
     },
     {
-      "label": "Product brief \u2014 \uc544\ubb34\uac70\ub098 \uc9c0\ub2c8 fresh restart",
+      "label": "Product brief \u2014 \uc544\ubb34\uac70\ub098 \ud0d0\uc815\ub2e8 final service",
       "file_type": "document",
       "source_file": "docs/current/product.md",
       "source_location": "L1",
-      "id": "current_product_product_brief_fresh_restart",
-      "community": 7,
-      "norm_label": "product brief \u2014 \u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u110c\u1175\u1102\u1175 fresh restart"
+      "id": "current_product_product_brief_final_service",
+      "community": 8,
+      "norm_label": "product brief \u2014 \u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u1110\u1161\u11b7\u110c\u1165\u11bc\u1103\u1161\u11ab final service"
     },
     {
       "label": "Decision",
@@ -1107,7 +1188,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product_decision",
-      "community": 7,
+      "community": 8,
       "norm_label": "decision"
     },
     {
@@ -1116,7 +1197,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_product_thesis",
-      "community": 7,
+      "community": 8,
       "norm_label": "product thesis"
     },
     {
@@ -1125,34 +1206,43 @@
       "source_file": "docs/current/product.md",
       "source_location": "L13",
       "id": "current_product_target_use_case",
-      "community": 7,
+      "community": 8,
       "norm_label": "target use case"
+    },
+    {
+      "label": "Final service scope",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L19",
+      "id": "current_product_final_service_scope",
+      "community": 8,
+      "norm_label": "final service scope"
     },
     {
       "label": "Non-goals",
       "file_type": "document",
       "source_file": "docs/current/product.md",
-      "source_location": "L19",
+      "source_location": "L29",
       "id": "current_product_non_goals",
-      "community": 7,
+      "community": 8,
       "norm_label": "non-goals"
     },
     {
       "label": "Product principles",
       "file_type": "document",
       "source_file": "docs/current/product.md",
-      "source_location": "L27",
+      "source_location": "L36",
       "id": "current_product_product_principles",
-      "community": 7,
+      "community": 8,
       "norm_label": "product principles"
     },
     {
       "label": "Current phase",
       "file_type": "document",
       "source_file": "docs/current/product.md",
-      "source_location": "L37",
+      "source_location": "L46",
       "id": "current_product_current_phase",
-      "community": 7,
+      "community": 8,
       "norm_label": "current phase"
     },
     {
@@ -1161,89 +1251,89 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 4,
+      "community": 3,
       "norm_label": "architecture.md"
     },
     {
-      "label": "Architecture baseline \u2014 restart",
+      "label": "Architecture baseline \u2014 final service",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
-      "id": "current_architecture_architecture_baseline_restart",
-      "community": 4,
-      "norm_label": "architecture baseline \u2014 restart"
+      "id": "current_architecture_architecture_baseline_final_service",
+      "community": 3,
+      "norm_label": "architecture baseline \u2014 final service"
     },
     {
-      "label": "Current status",
+      "label": "Stack",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
       "source_location": "L3",
-      "id": "current_architecture_current_status",
-      "community": 4,
-      "norm_label": "current status"
+      "id": "current_architecture_stack",
+      "community": 3,
+      "norm_label": "stack"
     },
     {
-      "label": "Recommended stack candidate",
+      "label": "Core modules",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L7",
-      "id": "current_architecture_recommended_stack_candidate",
-      "community": 4,
-      "norm_label": "recommended stack candidate"
-    },
-    {
-      "label": "Core modules to build later",
-      "file_type": "document",
-      "source_file": "docs/current/architecture.md",
-      "source_location": "L17",
-      "id": "current_architecture_core_modules_to_build_later",
-      "community": 4,
-      "norm_label": "core modules to build later"
+      "source_location": "L13",
+      "id": "current_architecture_core_modules",
+      "community": 3,
+      "norm_label": "core modules"
     },
     {
       "label": "code:text (src/)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L19",
+      "source_location": "L15",
       "id": "current_architecture_codeblock_1",
-      "community": 4,
+      "community": 3,
       "norm_label": "code:text (src/)"
     },
     {
-      "label": "State machine draft",
+      "label": "State machine",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L41",
-      "id": "current_architecture_state_machine_draft",
-      "community": 4,
-      "norm_label": "state machine draft"
+      "source_location": "L31",
+      "id": "current_architecture_state_machine",
+      "community": 3,
+      "norm_label": "state machine"
     },
     {
       "label": "code:text (entry)",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L43",
+      "source_location": "L33",
       "id": "current_architecture_codeblock_2",
-      "community": 4,
+      "community": 3,
       "norm_label": "code:text (entry)"
+    },
+    {
+      "label": "Reveal rule",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L43",
+      "id": "current_architecture_reveal_rule",
+      "community": 3,
+      "norm_label": "reveal rule"
     },
     {
       "label": "Build rule",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L54",
+      "source_location": "L56",
       "id": "current_architecture_build_rule",
-      "community": 4,
+      "community": 3,
       "norm_label": "build rule"
     },
     {
-      "label": "First implementation milestone",
+      "label": "Current status",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L64",
-      "id": "current_architecture_first_implementation_milestone",
-      "community": 4,
-      "norm_label": "first implementation milestone"
+      "source_location": "L63",
+      "id": "current_architecture_current_status",
+      "community": 3,
+      "norm_label": "current status"
     },
     {
       "label": "qa.md",
@@ -1264,13 +1354,13 @@
       "norm_label": "qa acceptance"
     },
     {
-      "label": "Fresh vertical-slice acceptance",
+      "label": "Final service acceptance",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
-      "id": "current_qa_fresh_vertical_slice_acceptance",
+      "id": "current_qa_final_service_acceptance",
       "community": 13,
-      "norm_label": "fresh vertical-slice acceptance"
+      "norm_label": "final service acceptance"
     },
     {
       "label": "release.md",
@@ -1278,7 +1368,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "docs_current_release_md",
-      "community": 9,
+      "community": 10,
       "norm_label": "release.md"
     },
     {
@@ -1287,7 +1377,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "current_release_release_contract",
-      "community": 9,
+      "community": 10,
       "norm_label": "release contract"
     },
     {
@@ -1296,7 +1386,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "id": "current_release_branch_policy",
-      "community": 9,
+      "community": 10,
       "norm_label": "branch policy"
     },
     {
@@ -1305,7 +1395,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L12",
       "id": "current_release_ci",
-      "community": 9,
+      "community": 10,
       "norm_label": "ci"
     },
     {
@@ -1314,7 +1404,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L23",
       "id": "current_release_deploy",
-      "community": 9,
+      "community": 10,
       "norm_label": "deploy"
     },
     {
@@ -1323,7 +1413,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L29",
       "id": "current_release_canary",
-      "community": 9,
+      "community": 10,
       "norm_label": "canary"
     },
     {
@@ -1332,17 +1422,17 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "docs_current_design_md",
-      "community": 8,
+      "community": 5,
       "norm_label": "design.md"
     },
     {
-      "label": "Design direction \u2014 restart baseline",
+      "label": "Design direction \u2014 final service",
       "file_type": "document",
       "source_file": "docs/current/design.md",
       "source_location": "L1",
-      "id": "current_design_design_direction_restart_baseline",
-      "community": 8,
-      "norm_label": "design direction \u2014 restart baseline"
+      "id": "current_design_design_direction_final_service",
+      "community": 5,
+      "norm_label": "design direction \u2014 final service"
     },
     {
       "label": "Direction name",
@@ -1350,7 +1440,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L3",
       "id": "current_design_direction_name",
-      "community": 8,
+      "community": 5,
       "norm_label": "direction name"
     },
     {
@@ -1359,7 +1449,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L7",
       "id": "current_design_design_stance",
-      "community": 8,
+      "community": 5,
       "norm_label": "design stance"
     },
     {
@@ -1368,35 +1458,179 @@
       "source_file": "docs/current/design.md",
       "source_location": "L11",
       "id": "current_design_visual_non_negotiables",
-      "community": 8,
+      "community": 5,
       "norm_label": "visual non-negotiables"
+    },
+    {
+      "label": "Final character concept",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L19",
+      "id": "current_design_final_character_concept",
+      "community": 5,
+      "norm_label": "final character concept"
+    },
+    {
+      "label": "Screen/state inventory",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L32",
+      "id": "current_design_screen_state_inventory",
+      "community": 5,
+      "norm_label": "screen/state inventory"
+    },
+    {
+      "label": "Tokens / visual system",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L41",
+      "id": "current_design_tokens_visual_system",
+      "community": 5,
+      "norm_label": "tokens / visual system"
+    },
+    {
+      "label": "QA acceptance",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L48",
+      "id": "current_design_qa_acceptance",
+      "community": 5,
+      "norm_label": "qa acceptance"
+    },
+    {
+      "label": "\uc544\ubb34\uac70\ub098 \ud0d0\uc815\ub2e8",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "\u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u1110\u1161\u11b7\u110c\u1165\u11bc\u1103\u1161\u11ab",
+      "id": "food_akinator_hermes_pilot_readme"
+    },
+    {
+      "label": "Local development",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "community": 7,
+      "norm_label": "local development",
+      "id": "food_akinator_hermes_pilot_readme_local_development"
+    },
+    {
+      "label": "code:bash (npm ci)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "community": 7,
+      "norm_label": "code:bash (npm ci)",
+      "id": "food_akinator_hermes_pilot_readme_codeblock_1"
+    },
+    {
+      "label": "Release",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "community": 7,
+      "norm_label": "release",
+      "id": "food_akinator_hermes_pilot_readme_release"
+    },
+    {
+      "label": "Product brief \u2014 \uc544\ubb34\uac70\ub098 \uc9c0\ub2c8 fresh restart",
+      "file_type": "document",
+      "source_file": "docs/current/product.md",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "product brief \u2014 \u110b\u1161\u1106\u116e\u1100\u1165\u1102\u1161 \u110c\u1175\u1102\u1175 fresh restart",
+      "id": "current_product_product_brief_fresh_restart"
+    },
+    {
+      "label": "Architecture baseline \u2014 restart",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "architecture baseline \u2014 restart",
+      "id": "current_architecture_architecture_baseline_restart"
+    },
+    {
+      "label": "Recommended stack candidate",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L7",
+      "community": 3,
+      "norm_label": "recommended stack candidate",
+      "id": "current_architecture_recommended_stack_candidate"
+    },
+    {
+      "label": "Core modules to build later",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L17",
+      "community": 3,
+      "norm_label": "core modules to build later",
+      "id": "current_architecture_core_modules_to_build_later"
+    },
+    {
+      "label": "State machine draft",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L41",
+      "community": 3,
+      "norm_label": "state machine draft",
+      "id": "current_architecture_state_machine_draft"
+    },
+    {
+      "label": "First implementation milestone",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L64",
+      "community": 3,
+      "norm_label": "first implementation milestone",
+      "id": "current_architecture_first_implementation_milestone"
+    },
+    {
+      "label": "Fresh vertical-slice acceptance",
+      "file_type": "document",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L3",
+      "community": 13,
+      "norm_label": "fresh vertical-slice acceptance",
+      "id": "current_qa_fresh_vertical_slice_acceptance"
+    },
+    {
+      "label": "Design direction \u2014 restart baseline",
+      "file_type": "document",
+      "source_file": "docs/current/design.md",
+      "source_location": "L1",
+      "community": 5,
+      "norm_label": "design direction \u2014 restart baseline",
+      "id": "current_design_design_direction_restart_baseline"
     },
     {
       "label": "Candidate character concepts to explore",
       "file_type": "document",
       "source_file": "docs/current/design.md",
       "source_location": "L19",
-      "id": "current_design_candidate_character_concepts_to_explore",
-      "community": 8,
-      "norm_label": "candidate character concepts to explore"
+      "community": 5,
+      "norm_label": "candidate character concepts to explore",
+      "id": "current_design_candidate_character_concepts_to_explore"
     },
     {
       "label": "Required states",
       "file_type": "document",
       "source_file": "docs/current/design.md",
       "source_location": "L31",
-      "id": "current_design_required_states",
-      "community": 8,
-      "norm_label": "required states"
+      "community": 5,
+      "norm_label": "required states",
+      "id": "current_design_required_states"
     },
     {
       "label": "QA acceptance draft",
       "file_type": "document",
       "source_file": "docs/current/design.md",
       "source_location": "L45",
-      "id": "current_design_qa_acceptance_draft",
-      "community": 8,
-      "norm_label": "qa acceptance draft"
+      "community": 5,
+      "norm_label": "qa acceptance draft",
+      "id": "current_design_qa_acceptance_draft"
     }
   ],
   "links": [
@@ -1406,9 +1640,9 @@
       "source_file": "scripts/canary.mjs",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_canary_mjs",
-      "target": "scripts_canary_get",
-      "confidence_score": 1.0
+      "target": "scripts_canary_get"
     },
     {
       "relation": "contains",
@@ -1416,9 +1650,9 @@
       "source_file": "scripts/canary.mjs",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_canary_mjs",
-      "target": "scripts_canary_checks",
-      "confidence_score": 1.0
+      "target": "scripts_canary_checks"
     },
     {
       "relation": "imports_from",
@@ -1427,9 +1661,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_character_charactercontroller_tsx",
-      "confidence_score": 1.0
+      "target": "src_character_charactercontroller_tsx"
     },
     {
       "relation": "imports",
@@ -1438,9 +1672,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "character_charactercontroller_charactercontroller",
-      "confidence_score": 1.0
+      "target": "character_charactercontroller_charactercontroller"
     },
     {
       "relation": "imports_from",
@@ -1449,9 +1683,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_game_session_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports",
@@ -1460,75 +1694,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "game_session_answercurrentquestion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app_tsx",
-      "target": "game_session_createsession",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app_tsx",
-      "target": "game_session_markguesscorrect",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app_tsx",
-      "target": "game_session_markguesswrong",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app_tsx",
-      "target": "game_session_restartsession",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app_tsx",
-      "target": "game_session_startsession",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "src_app_tsx",
-      "target": "game_session_session",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "imports_from",
@@ -1537,9 +1705,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_engine_score_ts",
-      "confidence_score": 1.0
+      "target": "src_data_questions_ts"
     },
     {
       "relation": "imports",
@@ -1548,9 +1716,141 @@
       "source_file": "src/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "engine_score_answer",
-      "confidence_score": 1.0
+      "target": "data_questions_questions"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_engine_score_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "engine_score_topcandidates"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_game_session_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_answercurrentquestion"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_createsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_markguesscorrect"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_markguesswrong"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_restartsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_revealreadiness"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_startsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "game_session_session"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "engine_score_answer"
     },
     {
       "relation": "contains",
@@ -1558,9 +1858,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_app_answers",
-      "confidence_score": 1.0
+      "target": "src_app_answers"
     },
     {
       "relation": "contains",
@@ -1568,9 +1868,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -1579,9 +1879,9 @@
       "source_file": "src/main.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_main_tsx",
-      "target": "src_app_tsx",
-      "confidence_score": 1.0
+      "target": "src_app_tsx"
     },
     {
       "relation": "imports_from",
@@ -1590,9 +1890,31 @@
       "source_file": "src/App.test.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_test_tsx",
-      "target": "src_app_tsx",
-      "confidence_score": 1.0
+      "target": "src_app_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.final.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_final_test_tsx",
+      "target": "src_app_tsx"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/App.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "game_session_revealreadiness"
     },
     {
       "relation": "contains",
@@ -1600,9 +1922,9 @@
       "source_file": "src/App.test.tsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_test_tsx",
-      "target": "src_app_test_before",
-      "confidence_score": 1.0
+      "target": "src_app_test_before"
     },
     {
       "relation": "contains",
@@ -1610,9 +1932,9 @@
       "source_file": "src/App.test.tsx",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_test_tsx",
-      "target": "src_app_test_after",
-      "confidence_score": 1.0
+      "target": "src_app_test_after"
     },
     {
       "relation": "imports_from",
@@ -1621,9 +1943,9 @@
       "source_file": "src/character/CharacterController.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_charactercontroller_tsx",
-      "target": "src_character_characterstatemap_ts",
-      "confidence_score": 1.0
+      "target": "src_character_characterstatemap_ts"
     },
     {
       "relation": "imports",
@@ -1632,9 +1954,9 @@
       "source_file": "src/character/CharacterController.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_charactercontroller_tsx",
-      "target": "character_characterstatemap_stateforsession",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_stateforsession"
     },
     {
       "relation": "imports_from",
@@ -1643,9 +1965,9 @@
       "source_file": "src/character/CharacterController.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_charactercontroller_tsx",
-      "target": "src_game_session_ts",
-      "confidence_score": 1.0
+      "target": "src_game_session_ts"
     },
     {
       "relation": "imports",
@@ -1654,9 +1976,9 @@
       "source_file": "src/character/CharacterController.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_charactercontroller_tsx",
-      "target": "game_session_session",
-      "confidence_score": 1.0
+      "target": "game_session_session"
     },
     {
       "relation": "contains",
@@ -1664,9 +1986,9 @@
       "source_file": "src/character/CharacterController.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_charactercontroller_tsx",
-      "target": "character_charactercontroller_charactercontroller",
-      "confidence_score": 1.0
+      "target": "character_charactercontroller_charactercontroller"
     },
     {
       "relation": "calls",
@@ -1686,9 +2008,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "src_character_characterstatemap_ts",
-      "confidence_score": 1.0
+      "target": "src_character_characterstatemap_ts"
     },
     {
       "relation": "imports",
@@ -1697,9 +2019,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "character_characterstatemap_character_states",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_character_states"
     },
     {
       "relation": "imports",
@@ -1708,9 +2030,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "character_characterstatemap_stateforsession",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_stateforsession"
     },
     {
       "relation": "imports_from",
@@ -1719,9 +2041,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "src_game_session_ts",
-      "confidence_score": 1.0
+      "target": "src_game_session_ts"
     },
     {
       "relation": "imports",
@@ -1730,9 +2052,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "game_session_createsession",
-      "confidence_score": 1.0
+      "target": "game_session_createsession"
     },
     {
       "relation": "imports",
@@ -1741,9 +2063,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "game_session_answercurrentquestion",
-      "confidence_score": 1.0
+      "target": "game_session_answercurrentquestion"
     },
     {
       "relation": "contains",
@@ -1751,9 +2073,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "character_characterstatemap_test_entry",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_test_entry"
     },
     {
       "relation": "contains",
@@ -1761,9 +2083,9 @@
       "source_file": "src/character/characterStateMap.test.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_test_ts",
-      "target": "character_characterstatemap_test_asking",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_test_asking"
     },
     {
       "relation": "imports_from",
@@ -1772,9 +2094,9 @@
       "source_file": "src/character/characterStateMap.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_ts",
-      "target": "src_game_session_ts",
-      "confidence_score": 1.0
+      "target": "src_game_session_ts"
     },
     {
       "relation": "imports",
@@ -1783,9 +2105,9 @@
       "source_file": "src/character/characterStateMap.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_ts",
-      "target": "game_session_session",
-      "confidence_score": 1.0
+      "target": "game_session_session"
     },
     {
       "relation": "contains",
@@ -1793,9 +2115,9 @@
       "source_file": "src/character/characterStateMap.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_ts",
-      "target": "character_characterstatemap_characterstate",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_characterstate"
     },
     {
       "relation": "contains",
@@ -1803,9 +2125,9 @@
       "source_file": "src/character/characterStateMap.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_ts",
-      "target": "character_characterstatemap_character_states",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_character_states"
     },
     {
       "relation": "contains",
@@ -1813,9 +2135,9 @@
       "source_file": "src/character/characterStateMap.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_character_characterstatemap_ts",
-      "target": "character_characterstatemap_stateforsession",
-      "confidence_score": 1.0
+      "target": "character_characterstatemap_stateforsession"
     },
     {
       "relation": "imports_from",
@@ -1824,9 +2146,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "src_data_foods_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports",
@@ -1835,9 +2157,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "data_foods_foods",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "imports_from",
@@ -1846,9 +2168,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "src_data_questions_ts",
-      "confidence_score": 1.0
+      "target": "src_data_questions_ts"
     },
     {
       "relation": "imports",
@@ -1857,9 +2179,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "data_questions_questions",
-      "confidence_score": 1.0
+      "target": "data_questions_questions"
     },
     {
       "relation": "imports",
@@ -1868,9 +2190,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "data_questions_question",
-      "confidence_score": 1.0
+      "target": "data_questions_question"
     },
     {
       "relation": "imports_from",
@@ -1879,9 +2201,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "src_engine_score_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_score_ts"
     },
     {
       "relation": "imports",
@@ -1890,9 +2212,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "engine_score_applyanswer",
-      "confidence_score": 1.0
+      "target": "engine_score_applyanswer"
     },
     {
       "relation": "imports",
@@ -1901,9 +2223,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "engine_score_initializeposterior",
-      "confidence_score": 1.0
+      "target": "engine_score_initializeposterior"
     },
     {
       "relation": "imports",
@@ -1912,9 +2234,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "engine_score_topcandidates",
-      "confidence_score": 1.0
+      "target": "engine_score_topcandidates"
     },
     {
       "relation": "imports",
@@ -1923,9 +2245,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "engine_score_answer",
-      "confidence_score": 1.0
+      "target": "engine_score_answer"
     },
     {
       "relation": "imports",
@@ -1934,9 +2256,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "engine_score_posterior",
-      "confidence_score": 1.0
+      "target": "engine_score_posterior"
     },
     {
       "relation": "imports_from",
@@ -1945,9 +2267,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "src_engine_selectquestion_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_selectquestion_ts"
     },
     {
       "relation": "imports",
@@ -1956,9 +2278,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "engine_selectquestion_selectnextquestion",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_selectnextquestion"
     },
     {
       "relation": "contains",
@@ -1966,9 +2288,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "game_session_phase",
-      "confidence_score": 1.0
+      "target": "game_session_phase"
     },
     {
       "relation": "contains",
@@ -1976,39 +2298,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "game_session_session",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/game/session.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "src_game_session_ts",
-      "target": "game_session_createsession",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/game/session.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "src_game_session_ts",
-      "target": "game_session_startsession",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/game/session.ts",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "src_game_session_ts",
-      "target": "game_session_answercurrentquestion",
-      "confidence_score": 1.0
+      "target": "game_session_session"
     },
     {
       "relation": "contains",
@@ -2016,9 +2308,49 @@
       "source_file": "src/game/session.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "game_session_reveal",
-      "confidence_score": 1.0
+      "target": "game_session_revealreadiness"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_createsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_startsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_answercurrentquestion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_session_ts",
+      "target": "game_session_reveal"
     },
     {
       "relation": "contains",
@@ -2026,9 +2358,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "game_session_markguesscorrect",
-      "confidence_score": 1.0
+      "target": "game_session_markguesscorrect"
     },
     {
       "relation": "contains",
@@ -2036,9 +2368,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "game_session_markguesswrong",
-      "confidence_score": 1.0
+      "target": "game_session_markguesswrong"
     },
     {
       "relation": "contains",
@@ -2046,9 +2378,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_ts",
-      "target": "game_session_restartsession",
-      "confidence_score": 1.0
+      "target": "game_session_restartsession"
     },
     {
       "relation": "imports_from",
@@ -2057,9 +2389,53 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "src_game_session_ts",
-      "confidence_score": 1.0
+      "target": "src_game_session_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "src_game_session_ts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/session.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "game_session_answercurrentquestion",
+      "target": "game_session_revealreadiness"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_session_revealreadiness"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/game/session.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "game_session_revealreadiness",
+      "target": "engine_score_topcandidates"
     },
     {
       "relation": "calls",
@@ -2068,9 +2444,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "game_session_restartsession",
-      "target": "game_session_createsession",
-      "confidence_score": 1.0
+      "target": "game_session_createsession"
     },
     {
       "relation": "imports",
@@ -2079,9 +2455,20 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_createsession",
-      "confidence_score": 1.0
+      "target": "game_session_createsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_session_createsession"
     },
     {
       "relation": "calls",
@@ -2112,9 +2499,9 @@
       "source_file": "src/game/session.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "game_session_answercurrentquestion",
-      "target": "game_session_reveal",
-      "confidence_score": 1.0
+      "target": "game_session_reveal"
     },
     {
       "relation": "imports",
@@ -2123,9 +2510,20 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_answercurrentquestion",
-      "confidence_score": 1.0
+      "target": "game_session_answercurrentquestion"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_session_answercurrentquestion"
     },
     {
       "relation": "calls",
@@ -2178,9 +2576,9 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_markguesscorrect",
-      "confidence_score": 1.0
+      "target": "game_session_markguesscorrect"
     },
     {
       "relation": "imports",
@@ -2189,9 +2587,20 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_markguesswrong",
-      "confidence_score": 1.0
+      "target": "game_session_markguesswrong"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_session_markguesswrong"
     },
     {
       "relation": "calls",
@@ -2222,9 +2631,9 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_restartsession",
-      "confidence_score": 1.0
+      "target": "game_session_restartsession"
     },
     {
       "relation": "contains",
@@ -2232,9 +2641,9 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_test_session",
-      "confidence_score": 1.0
+      "target": "game_session_test_session"
     },
     {
       "relation": "contains",
@@ -2242,9 +2651,83 @@
       "source_file": "src/game/session.test.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_game_session_test_ts",
-      "target": "game_session_test_correct",
-      "confidence_score": 1.0
+      "target": "game_session_test_correct"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "src_data_foods_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "data_foods_foods"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "src_data_questions_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "data_questions_questions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_finalserviceacceptance_test_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_finalserviceacceptance_test_seen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/game/finalServiceAcceptance.test.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_game_finalserviceacceptance_test_ts",
+      "target": "game_finalserviceacceptance_test_readiness"
     },
     {
       "relation": "contains",
@@ -2252,9 +2735,9 @@
       "source_file": "src/data/foods.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_foods_ts",
-      "target": "data_foods_traitkey",
-      "confidence_score": 1.0
+      "target": "data_foods_traitkey"
     },
     {
       "relation": "contains",
@@ -2262,9 +2745,9 @@
       "source_file": "src/data/foods.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_foods_ts",
-      "target": "data_foods_food",
-      "confidence_score": 1.0
+      "target": "data_foods_food"
     },
     {
       "relation": "contains",
@@ -2272,9 +2755,19 @@
       "source_file": "src/data/foods.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_foods_ts",
-      "target": "data_foods_traits",
-      "confidence_score": 1.0
+      "target": "data_foods_traits"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/foods.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_data_foods_ts",
+      "target": "data_foods_basetraits"
     },
     {
       "relation": "contains",
@@ -2282,9 +2775,9 @@
       "source_file": "src/data/foods.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_foods_ts",
-      "target": "data_foods_foods",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "imports_from",
@@ -2293,9 +2786,9 @@
       "source_file": "src/data/questions.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_questions_ts",
-      "target": "src_data_foods_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports_from",
@@ -2304,9 +2797,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "src_data_foods_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports_from",
@@ -2315,9 +2808,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "src_data_foods_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports_from",
@@ -2326,9 +2819,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "src_data_foods_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports_from",
@@ -2337,9 +2830,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "src_data_foods_ts",
-      "confidence_score": 1.0
+      "target": "src_data_foods_ts"
     },
     {
       "relation": "imports",
@@ -2348,9 +2841,9 @@
       "source_file": "src/data/questions.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_questions_ts",
-      "target": "data_foods_traitkey",
-      "confidence_score": 1.0
+      "target": "data_foods_traitkey"
     },
     {
       "relation": "imports",
@@ -2359,9 +2852,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "data_foods_food",
-      "confidence_score": 1.0
+      "target": "data_foods_food"
     },
     {
       "relation": "imports",
@@ -2370,9 +2863,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "data_foods_foods",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "imports",
@@ -2381,9 +2874,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "data_foods_foods",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "imports",
@@ -2392,9 +2885,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "data_foods_foods",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "imports",
@@ -2403,9 +2896,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "data_foods_foods",
-      "confidence_score": 1.0
+      "target": "data_foods_foods"
     },
     {
       "relation": "contains",
@@ -2413,9 +2906,9 @@
       "source_file": "src/data/questions.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_questions_ts",
-      "target": "data_questions_question",
-      "confidence_score": 1.0
+      "target": "data_questions_question"
     },
     {
       "relation": "contains",
@@ -2423,9 +2916,9 @@
       "source_file": "src/data/questions.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_data_questions_ts",
-      "target": "data_questions_questions",
-      "confidence_score": 1.0
+      "target": "data_questions_questions"
     },
     {
       "relation": "imports_from",
@@ -2434,9 +2927,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "src_data_questions_ts",
-      "confidence_score": 1.0
+      "target": "src_data_questions_ts"
     },
     {
       "relation": "imports_from",
@@ -2445,9 +2938,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "src_data_questions_ts",
-      "confidence_score": 1.0
+      "target": "src_data_questions_ts"
     },
     {
       "relation": "imports_from",
@@ -2456,9 +2949,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "src_data_questions_ts",
-      "confidence_score": 1.0
+      "target": "src_data_questions_ts"
     },
     {
       "relation": "imports_from",
@@ -2467,9 +2960,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "src_data_questions_ts",
-      "confidence_score": 1.0
+      "target": "src_data_questions_ts"
     },
     {
       "relation": "imports",
@@ -2478,9 +2971,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "data_questions_question",
-      "confidence_score": 1.0
+      "target": "data_questions_question"
     },
     {
       "relation": "imports",
@@ -2489,9 +2982,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "data_questions_question",
-      "confidence_score": 1.0
+      "target": "data_questions_question"
     },
     {
       "relation": "imports",
@@ -2500,9 +2993,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "data_questions_questions",
-      "confidence_score": 1.0
+      "target": "data_questions_questions"
     },
     {
       "relation": "imports",
@@ -2511,9 +3004,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "data_questions_questions",
-      "confidence_score": 1.0
+      "target": "data_questions_questions"
     },
     {
       "relation": "contains",
@@ -2521,9 +3014,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_answer",
-      "confidence_score": 1.0
+      "target": "engine_score_answer"
     },
     {
       "relation": "contains",
@@ -2531,9 +3024,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_posterior",
-      "confidence_score": 1.0
+      "target": "engine_score_posterior"
     },
     {
       "relation": "contains",
@@ -2541,9 +3034,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_answer_strength",
-      "confidence_score": 1.0
+      "target": "engine_score_answer_strength"
     },
     {
       "relation": "contains",
@@ -2551,9 +3044,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_initializeposterior",
-      "confidence_score": 1.0
+      "target": "engine_score_initializeposterior"
     },
     {
       "relation": "contains",
@@ -2561,9 +3054,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_applyanswer",
-      "confidence_score": 1.0
+      "target": "engine_score_applyanswer"
     },
     {
       "relation": "contains",
@@ -2571,9 +3064,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_normalize",
-      "confidence_score": 1.0
+      "target": "engine_score_normalize"
     },
     {
       "relation": "contains",
@@ -2581,9 +3074,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_ts",
-      "target": "engine_score_topcandidates",
-      "confidence_score": 1.0
+      "target": "engine_score_topcandidates"
     },
     {
       "relation": "imports_from",
@@ -2592,9 +3085,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "src_engine_score_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_score_ts"
     },
     {
       "relation": "imports_from",
@@ -2603,9 +3096,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "src_engine_score_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_score_ts"
     },
     {
       "relation": "imports_from",
@@ -2614,9 +3107,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "src_engine_score_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_score_ts"
     },
     {
       "relation": "imports",
@@ -2625,9 +3118,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "engine_score_posterior",
-      "confidence_score": 1.0
+      "target": "engine_score_posterior"
     },
     {
       "relation": "imports",
@@ -2636,9 +3129,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "engine_score_initializeposterior",
-      "confidence_score": 1.0
+      "target": "engine_score_initializeposterior"
     },
     {
       "relation": "imports",
@@ -2647,9 +3140,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_initializeposterior",
-      "confidence_score": 1.0
+      "target": "engine_score_initializeposterior"
     },
     {
       "relation": "calls",
@@ -2658,9 +3151,9 @@
       "source_file": "src/engine/score.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "engine_score_applyanswer",
-      "target": "engine_score_normalize",
-      "confidence_score": 1.0
+      "target": "engine_score_normalize"
     },
     {
       "relation": "imports",
@@ -2669,9 +3162,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_applyanswer",
-      "confidence_score": 1.0
+      "target": "engine_score_applyanswer"
     },
     {
       "relation": "imports",
@@ -2680,9 +3173,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_topcandidates",
-      "confidence_score": 1.0
+      "target": "engine_score_topcandidates"
     },
     {
       "relation": "imports_from",
@@ -2691,9 +3184,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "src_engine_selectquestion_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_selectquestion_ts"
     },
     {
       "relation": "imports",
@@ -2702,9 +3195,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "engine_selectquestion_selectnextquestion",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_selectnextquestion"
     },
     {
       "relation": "contains",
@@ -2712,9 +3205,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "engine_selectquestion_test_posterior",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_test_posterior"
     },
     {
       "relation": "contains",
@@ -2722,9 +3215,9 @@
       "source_file": "src/engine/selectQuestion.test.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_test_ts",
-      "target": "engine_selectquestion_test_next",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_test_next"
     },
     {
       "relation": "contains",
@@ -2732,9 +3225,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_test_prior",
-      "confidence_score": 1.0
+      "target": "engine_score_test_prior"
     },
     {
       "relation": "contains",
@@ -2742,9 +3235,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_test_yes",
-      "confidence_score": 1.0
+      "target": "engine_score_test_yes"
     },
     {
       "relation": "contains",
@@ -2752,9 +3245,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_test_maybeyes",
-      "confidence_score": 1.0
+      "target": "engine_score_test_maybeyes"
     },
     {
       "relation": "contains",
@@ -2762,9 +3255,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_test_unknown",
-      "confidence_score": 1.0
+      "target": "engine_score_test_unknown"
     },
     {
       "relation": "contains",
@@ -2772,9 +3265,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_test_no",
-      "confidence_score": 1.0
+      "target": "engine_score_test_no"
     },
     {
       "relation": "contains",
@@ -2782,9 +3275,9 @@
       "source_file": "src/engine/score.test.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_score_test_ts",
-      "target": "engine_score_test_posterior",
-      "confidence_score": 1.0
+      "target": "engine_score_test_posterior"
     },
     {
       "relation": "contains",
@@ -2792,9 +3285,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "engine_selectquestion_questionchoice",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_questionchoice"
     },
     {
       "relation": "contains",
@@ -2802,9 +3295,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "engine_selectquestion_selectnextquestion",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_selectnextquestion"
     },
     {
       "relation": "contains",
@@ -2812,9 +3305,9 @@
       "source_file": "src/engine/selectQuestion.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_engine_selectquestion_ts",
-      "target": "engine_selectquestion_informationgainproxy",
-      "confidence_score": 1.0
+      "target": "engine_selectquestion_informationgainproxy"
     },
     {
       "relation": "contains",
@@ -2822,9 +3315,19 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "food_akinator_hermes_pilot_readme",
-      "confidence_score": 1.0
+      "target": "final_service_completion_readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_md",
+      "target": "food_akinator_hermes_pilot_readme"
     },
     {
       "relation": "contains",
@@ -2832,29 +3335,39 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "food_akinator_hermes_pilot_readme",
-      "target": "food_akinator_hermes_pilot_readme_local_development",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "final_service_completion_readme",
+      "target": "final_service_completion_readme_what_it_is"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0,
-      "source": "food_akinator_hermes_pilot_readme",
-      "target": "food_akinator_hermes_pilot_readme_release",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "final_service_completion_readme",
+      "target": "final_service_completion_readme_local_development"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L9",
+      "source_location": "L29",
       "weight": 1.0,
-      "source": "food_akinator_hermes_pilot_readme_local_development",
-      "target": "food_akinator_hermes_pilot_readme_codeblock_1",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "final_service_completion_readme",
+      "target": "final_service_completion_readme_release"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "final_service_completion_readme_local_development",
+      "target": "final_service_completion_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -2862,9 +3375,9 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_changelog_md",
-      "target": "docs_changelog_changelog",
-      "confidence_score": 1.0
+      "target": "docs_changelog_changelog"
     },
     {
       "relation": "contains",
@@ -2872,9 +3385,19 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_changelog_changelog",
-      "target": "docs_changelog_fresh_repository_restart",
-      "confidence_score": 1.0
+      "target": "docs_changelog_final_service_mvp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_changelog_changelog",
+      "target": "docs_changelog_fresh_repository_restart"
     },
     {
       "relation": "contains",
@@ -2882,9 +3405,9 @@
       "source_file": "docs/README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_readme_md",
-      "target": "docs_readme_docs_index",
-      "confidence_score": 1.0
+      "target": "docs_readme_docs_index"
     },
     {
       "relation": "contains",
@@ -2892,9 +3415,9 @@
       "source_file": "docs/README.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_readme_docs_index",
-      "target": "docs_readme_current_truth",
-      "confidence_score": 1.0
+      "target": "docs_readme_current_truth"
     },
     {
       "relation": "contains",
@@ -2902,9 +3425,9 @@
       "source_file": "docs/README.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_readme_docs_index",
-      "target": "docs_readme_research",
-      "confidence_score": 1.0
+      "target": "docs_readme_research"
     },
     {
       "relation": "contains",
@@ -2912,9 +3435,9 @@
       "source_file": "docs/README.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_readme_docs_index",
-      "target": "docs_readme_changelog",
-      "confidence_score": 1.0
+      "target": "docs_readme_changelog"
     },
     {
       "relation": "contains",
@@ -2922,9 +3445,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_inference_question_model_md",
-      "target": "research_inference_question_model_inference_and_question_narrowing_model",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_inference_and_question_narrowing_model"
     },
     {
       "relation": "contains",
@@ -2932,9 +3455,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_core_claim",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_core_claim"
     },
     {
       "relation": "contains",
@@ -2942,9 +3465,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_candidate_model",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_candidate_model"
     },
     {
       "relation": "contains",
@@ -2952,9 +3475,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_five_answer_weights",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_five_answer_weights"
     },
     {
       "relation": "contains",
@@ -2962,9 +3485,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_scoring_model",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_scoring_model"
     },
     {
       "relation": "contains",
@@ -2972,9 +3495,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_question_selection",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_question_selection"
     },
     {
       "relation": "contains",
@@ -2982,9 +3505,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_food_adaptation",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_food_adaptation"
     },
     {
       "relation": "contains",
@@ -2992,9 +3515,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_reveal_threshold",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_reveal_threshold"
     },
     {
       "relation": "contains",
@@ -3002,9 +3525,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_wrong_guess_recovery",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_wrong_guess_recovery"
     },
     {
       "relation": "contains",
@@ -3012,9 +3535,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_mvp_architecture_implication",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_mvp_architecture_implication"
     },
     {
       "relation": "contains",
@@ -3022,9 +3545,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_inference_and_question_narrowing_model",
-      "target": "research_inference_question_model_qa_scenarios",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_qa_scenarios"
     },
     {
       "relation": "contains",
@@ -3032,9 +3555,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_candidate_model",
-      "target": "research_inference_question_model_codeblock_1",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_codeblock_1"
     },
     {
       "relation": "contains",
@@ -3042,9 +3565,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_candidate_model",
-      "target": "research_inference_question_model_codeblock_2",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_codeblock_2"
     },
     {
       "relation": "contains",
@@ -3052,9 +3575,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_five_answer_weights",
-      "target": "research_inference_question_model_codeblock_3",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_codeblock_3"
     },
     {
       "relation": "contains",
@@ -3062,9 +3585,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_scoring_model",
-      "target": "research_inference_question_model_codeblock_4",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_codeblock_4"
     },
     {
       "relation": "contains",
@@ -3072,9 +3595,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_food_adaptation",
-      "target": "research_inference_question_model_codeblock_5",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_codeblock_5"
     },
     {
       "relation": "contains",
@@ -3082,9 +3605,9 @@
       "source_file": "docs/research/inference-question-model.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_inference_question_model_food_adaptation",
-      "target": "research_inference_question_model_codeblock_6",
-      "confidence_score": 1.0
+      "target": "research_inference_question_model_codeblock_6"
     },
     {
       "relation": "contains",
@@ -3092,9 +3615,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_character_animation_pipeline_md",
-      "target": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_character_animation_pipeline_research"
     },
     {
       "relation": "contains",
@@ -3102,9 +3625,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_problem",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_problem"
     },
     {
       "relation": "contains",
@@ -3112,9 +3635,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_likely_approaches_in_akinator_like_products",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_likely_approaches_in_akinator_like_products"
     },
     {
       "relation": "contains",
@@ -3122,9 +3645,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_pipeline_options",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_pipeline_options"
     },
     {
       "relation": "contains",
@@ -3132,9 +3655,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_recommended_path",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_recommended_path"
     },
     {
       "relation": "contains",
@@ -3142,9 +3665,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_minimum_character_state_set",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_minimum_character_state_set"
     },
     {
       "relation": "contains",
@@ -3152,9 +3675,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_organic_motion_rules",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_organic_motion_rules"
     },
     {
       "relation": "contains",
@@ -3162,9 +3685,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_character_animation_pipeline_research",
-      "target": "research_character_animation_pipeline_non_copy_rule",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_non_copy_rule"
     },
     {
       "relation": "contains",
@@ -3172,9 +3695,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_pipeline_options",
-      "target": "research_character_animation_pipeline_option_a_pre_rendered_sprite_webp_sequence",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_option_a_pre_rendered_sprite_webp_sequence"
     },
     {
       "relation": "contains",
@@ -3182,9 +3705,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_pipeline_options",
-      "target": "research_character_animation_pipeline_option_b_layered_webp_png_rig",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_option_b_layered_webp_png_rig"
     },
     {
       "relation": "contains",
@@ -3192,9 +3715,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_pipeline_options",
-      "target": "research_character_animation_pipeline_option_c_rive_state_machine",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_option_c_rive_state_machine"
     },
     {
       "relation": "contains",
@@ -3202,9 +3725,9 @@
       "source_file": "docs/research/character-animation-pipeline.md",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_character_animation_pipeline_pipeline_options",
-      "target": "research_character_animation_pipeline_option_d_spine_live2d",
-      "confidence_score": 1.0
+      "target": "research_character_animation_pipeline_option_d_spine_live2d"
     },
     {
       "relation": "contains",
@@ -3212,9 +3735,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_akinator_gameplay_analysis_md",
-      "target": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis"
     },
     {
       "relation": "contains",
@@ -3222,9 +3745,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_scope_limitation",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_scope_limitation"
     },
     {
       "relation": "contains",
@@ -3232,9 +3755,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_core_play_loop",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_core_play_loop"
     },
     {
       "relation": "contains",
@@ -3242,9 +3765,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_five_answer_semantics",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_five_answer_semantics"
     },
     {
       "relation": "contains",
@@ -3252,9 +3775,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_tension_curve",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_tension_curve"
     },
     {
       "relation": "contains",
@@ -3262,9 +3785,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_character_role",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_character_role"
     },
     {
       "relation": "contains",
@@ -3272,9 +3795,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_repeat_play_pattern",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_repeat_play_pattern"
     },
     {
       "relation": "contains",
@@ -3282,9 +3805,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_do_not_copy",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_do_not_copy"
     },
     {
       "relation": "contains",
@@ -3292,9 +3815,9 @@
       "source_file": "docs/research/akinator-gameplay-analysis.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "research_akinator_gameplay_analysis_akinator_gameplay_reference_analysis",
-      "target": "research_akinator_gameplay_analysis_principles_to_borrow",
-      "confidence_score": 1.0
+      "target": "research_akinator_gameplay_analysis_principles_to_borrow"
     },
     {
       "relation": "contains",
@@ -3302,9 +3825,19 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_current_product_md",
-      "target": "current_product_product_brief_fresh_restart",
-      "confidence_score": 1.0
+      "target": "current_product_product_brief_final_service"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_current_product_md",
+      "target": "current_product_product_brief_fresh_restart"
     },
     {
       "relation": "contains",
@@ -3312,9 +3845,9 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "current_product_product_brief_fresh_restart",
-      "target": "current_product_decision",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_decision"
     },
     {
       "relation": "contains",
@@ -3322,9 +3855,9 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "current_product_product_brief_fresh_restart",
-      "target": "current_product_product_thesis",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_product_thesis"
     },
     {
       "relation": "contains",
@@ -3332,9 +3865,9 @@
       "source_file": "docs/current/product.md",
       "source_location": "L13",
       "weight": 1.0,
-      "source": "current_product_product_brief_fresh_restart",
-      "target": "current_product_target_use_case",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_target_use_case"
     },
     {
       "relation": "contains",
@@ -3342,9 +3875,79 @@
       "source_file": "docs/current/product.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_final_service_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_non_goals"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_product_principles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_final_service",
+      "target": "current_product_current_phase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_product_product_brief_fresh_restart",
-      "target": "current_product_non_goals",
-      "confidence_score": 1.0
+      "target": "current_product_decision"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_product_thesis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_target_use_case"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/product.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_product_product_brief_fresh_restart",
+      "target": "current_product_non_goals"
     },
     {
       "relation": "contains",
@@ -3352,9 +3955,9 @@
       "source_file": "docs/current/product.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_product_product_brief_fresh_restart",
-      "target": "current_product_product_principles",
-      "confidence_score": 1.0
+      "target": "current_product_product_principles"
     },
     {
       "relation": "contains",
@@ -3362,9 +3965,9 @@
       "source_file": "docs/current/product.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_product_product_brief_fresh_restart",
-      "target": "current_product_current_phase",
-      "confidence_score": 1.0
+      "target": "current_product_current_phase"
     },
     {
       "relation": "contains",
@@ -3372,9 +3975,19 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_current_architecture_md",
-      "target": "current_architecture_architecture_baseline_restart",
-      "confidence_score": 1.0
+      "target": "current_architecture_architecture_baseline_final_service"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_current_architecture_md",
+      "target": "current_architecture_architecture_baseline_restart"
     },
     {
       "relation": "contains",
@@ -3382,69 +3995,29 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "current_architecture_architecture_baseline_restart",
-      "target": "current_architecture_current_status",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_final_service",
+      "target": "current_architecture_stack"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L7",
+      "source_location": "L13",
       "weight": 1.0,
-      "source": "current_architecture_architecture_baseline_restart",
-      "target": "current_architecture_recommended_stack_candidate",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_final_service",
+      "target": "current_architecture_core_modules"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L17",
+      "source_location": "L31",
       "weight": 1.0,
-      "source": "current_architecture_architecture_baseline_restart",
-      "target": "current_architecture_core_modules_to_build_later",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/architecture.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "current_architecture_architecture_baseline_restart",
-      "target": "current_architecture_state_machine_draft",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/architecture.md",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "current_architecture_architecture_baseline_restart",
-      "target": "current_architecture_build_rule",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/architecture.md",
-      "source_location": "L64",
-      "weight": 1.0,
-      "source": "current_architecture_architecture_baseline_restart",
-      "target": "current_architecture_first_implementation_milestone",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "docs/current/architecture.md",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "current_architecture_core_modules_to_build_later",
-      "target": "current_architecture_codeblock_1",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_final_service",
+      "target": "current_architecture_state_machine"
     },
     {
       "relation": "contains",
@@ -3452,9 +4025,89 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_final_service",
+      "target": "current_architecture_reveal_rule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_final_service",
+      "target": "current_architecture_build_rule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_final_service",
+      "target": "current_architecture_current_status"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_core_modules",
+      "target": "current_architecture_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_core_modules_to_build_later",
+      "target": "current_architecture_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_state_machine",
+      "target": "current_architecture_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_architecture_state_machine_draft",
-      "target": "current_architecture_codeblock_2",
-      "confidence_score": 1.0
+      "target": "current_architecture_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_build_rule"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_current_status"
     },
     {
       "relation": "contains",
@@ -3462,9 +4115,9 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_current_qa_md",
-      "target": "current_qa_qa_acceptance",
-      "confidence_score": 1.0
+      "target": "current_qa_qa_acceptance"
     },
     {
       "relation": "contains",
@@ -3472,9 +4125,19 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_qa_qa_acceptance",
-      "target": "current_qa_fresh_vertical_slice_acceptance",
-      "confidence_score": 1.0
+      "target": "current_qa_final_service_acceptance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_qa_qa_acceptance",
+      "target": "current_qa_fresh_vertical_slice_acceptance"
     },
     {
       "relation": "contains",
@@ -3482,9 +4145,9 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_current_release_md",
-      "target": "current_release_release_contract",
-      "confidence_score": 1.0
+      "target": "current_release_release_contract"
     },
     {
       "relation": "contains",
@@ -3492,9 +4155,9 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_release_release_contract",
-      "target": "current_release_branch_policy",
-      "confidence_score": 1.0
+      "target": "current_release_branch_policy"
     },
     {
       "relation": "contains",
@@ -3502,9 +4165,9 @@
       "source_file": "docs/current/release.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_release_release_contract",
-      "target": "current_release_ci",
-      "confidence_score": 1.0
+      "target": "current_release_ci"
     },
     {
       "relation": "contains",
@@ -3512,9 +4175,9 @@
       "source_file": "docs/current/release.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_release_release_contract",
-      "target": "current_release_deploy",
-      "confidence_score": 1.0
+      "target": "current_release_deploy"
     },
     {
       "relation": "contains",
@@ -3522,9 +4185,9 @@
       "source_file": "docs/current/release.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_release_release_contract",
-      "target": "current_release_canary",
-      "confidence_score": 1.0
+      "target": "current_release_canary"
     },
     {
       "relation": "contains",
@@ -3532,9 +4195,19 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_current_design_md",
-      "target": "current_design_design_direction_restart_baseline",
-      "confidence_score": 1.0
+      "target": "current_design_design_direction_final_service"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_current_design_md",
+      "target": "current_design_design_direction_restart_baseline"
     },
     {
       "relation": "contains",
@@ -3542,9 +4215,9 @@
       "source_file": "docs/current/design.md",
       "source_location": "L3",
       "weight": 1.0,
-      "source": "current_design_design_direction_restart_baseline",
-      "target": "current_design_direction_name",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_direction_name"
     },
     {
       "relation": "contains",
@@ -3552,9 +4225,9 @@
       "source_file": "docs/current/design.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "current_design_design_direction_restart_baseline",
-      "target": "current_design_design_stance",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_design_stance"
     },
     {
       "relation": "contains",
@@ -3562,9 +4235,9 @@
       "source_file": "docs/current/design.md",
       "source_location": "L11",
       "weight": 1.0,
-      "source": "current_design_design_direction_restart_baseline",
-      "target": "current_design_visual_non_negotiables",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_visual_non_negotiables"
     },
     {
       "relation": "contains",
@@ -3572,9 +4245,149 @@
       "source_file": "docs/current/design.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_final_character_concept"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_screen_state_inventory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_tokens_visual_system"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_final_service",
+      "target": "current_design_qa_acceptance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_design_design_direction_restart_baseline",
-      "target": "current_design_candidate_character_concepts_to_explore",
-      "confidence_score": 1.0
+      "target": "current_design_direction_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_design_stance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_visual_non_negotiables"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_akinator_hermes_pilot_readme",
+      "target": "food_akinator_hermes_pilot_readme_local_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_akinator_hermes_pilot_readme",
+      "target": "food_akinator_hermes_pilot_readme_release"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "food_akinator_hermes_pilot_readme_local_development",
+      "target": "food_akinator_hermes_pilot_readme_codeblock_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_recommended_stack_candidate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_core_modules_to_build_later"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_state_machine_draft"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_baseline_restart",
+      "target": "current_architecture_first_implementation_milestone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/design.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_design_design_direction_restart_baseline",
+      "target": "current_design_candidate_character_concepts_to_explore"
     },
     {
       "relation": "contains",
@@ -3582,9 +4395,9 @@
       "source_file": "docs/current/design.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_design_design_direction_restart_baseline",
-      "target": "current_design_required_states",
-      "confidence_score": 1.0
+      "target": "current_design_required_states"
     },
     {
       "relation": "contains",
@@ -3592,11 +4405,11 @@
       "source_file": "docs/current/design.md",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "current_design_design_direction_restart_baseline",
-      "target": "current_design_qa_acceptance_draft",
-      "confidence_score": 1.0
+      "target": "current_design_qa_acceptance_draft"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4faba4a4224c0268a2b3501af17a1ca97889a1e0"
+  "built_at_commit": "ecc44a0fb1d667f00d52c4e802647a7f1978df48"
 }

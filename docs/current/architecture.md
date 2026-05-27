@@ -1,76 +1,65 @@
-# Architecture baseline — restart
+# Architecture baseline — final service
 
-## Current status
+## Stack
 
-No app scaffold yet. This is intentional. Implementation starts only after the first research/design/architecture gate is accepted.
+- Frontend: Vite + React + TypeScript.
+- State: explicit finite game session state in `src/game/session.ts`.
+- Data: static menu/question catalogue in `src/data/*`.
+- Engine: weighted posterior scoring and information-gain-ish question selection in `src/engine/*`.
+- Character: state mapping and SVG asset pipeline in `src/character/*` and `src/assets/characters/*`.
+- Testing: Vitest + React Testing Library.
+- Deploy: GitHub Pages from `dist`.
 
-## Recommended stack candidate
-
-- Frontend: Vite + React + TypeScript or Next.js if routing/content grows.
-- State: explicit finite game session state, not ad hoc component booleans.
-- Animation: one of:
-  - Layered WebP/PNG + Framer Motion/GSAP
-  - Rive state machine
-- Testing: Vitest + React Testing Library for engine/UI state; Playwright for full game flow.
-- Docs: `docs/current/*` canonical docs, `docs/research/*` research notes, `.hermes/runs/*` local run artifacts.
-
-## Core modules to build later
+## Core modules
 
 ```text
 src/
   data/
-    foods.ts
-    questions.ts
+    foods.ts          # 46 menu candidates
+    questions.ts      # 46 natural Korean questions
   engine/
-    score.ts
-    selectQuestion.ts
-    reveal.ts
+    score.ts          # answer likelihood and top candidates
+    selectQuestion.ts # next-question selection by candidate split
   game/
-    session.ts
-    states.ts
+    session.ts        # finite session/reveal/recovery state
   character/
     CharacterController.tsx
     characterStateMap.ts
-  ui/
-    EntryScreen.tsx
-    QuestionScreen.tsx
-    RevealScreen.tsx
-    RecoveryScreen.tsx
+  App.tsx             # final service UI shell/flow
 ```
 
-## State machine draft
+## State machine
 
 ```text
 entry
 → asking
-→ answerAccepted
-→ thinking
-→ asking | guessAnticipation
+→ thinking | guessAnticipation | asking
 → reveal
 → correct | wrongRecovery
-→ entry | asking
+→ asking | reveal
+→ entry on restart
 ```
+
+## Reveal rule
+
+`revealReadiness()` exposes:
+- `answeredCount`
+- top confidence
+- top1/top2 gap
+- reason: too-early, confident, max-turns, no-question
+
+Reveal occurs when:
+- at least 6 questions and confidence/gap are sufficient, or
+- max 12 questions reached, or
+- no useful question remains.
 
 ## Build rule
 
-Strict TDD once implementation begins:
+Strict TDD remains the default:
+1. Data/engine/session acceptance tests first.
+2. UI flow tests for visible final-service elements.
+3. Browser QA / canary after build.
 
-1. Engine tests first.
-2. State machine tests.
-3. Character state mapping tests.
-4. UI flow tests.
-5. Browser QA / canary.
+## Current status
 
-## First implementation milestone
-
-Do not build full UI first. Build a vertical slice:
-
-1. 20 food candidates.
-2. 25 discriminating questions.
-3. 5-answer scoring.
-4. adaptive next question selection.
-5. reveal threshold.
-6. wrong guess suppression.
-7. placeholder character state contract, but no crude CSS mascot.
-
-Character art pipeline can use temporary neutral placeholders only if visually hidden from public release; public demo requires accepted asset direction.
+Final service MVP implemented with local test/lint/build passing. Public release requires PR/merge, GitHub Pages deploy, and live canary.

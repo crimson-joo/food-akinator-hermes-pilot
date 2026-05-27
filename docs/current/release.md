@@ -33,7 +33,10 @@ After deploy, verify:
 - canonical URL returns 200
 - cache-busted URL serves the new app shell
 - first screen says the user should secretly choose a food
+- final-service frame shows mode switch, progress, candidate board, 46 foods, and 46 question cards
 - one question plus five answer controls appears after start
+- reveal appears in 6–12 answers and includes confidence breakdown
+- wrong-answer recovery shows actual-answer memo input
 - character state changes after an answer
 - browser console has no app errors
 - no visible Akinator/genie/lamp/turban/blue-skin motif
