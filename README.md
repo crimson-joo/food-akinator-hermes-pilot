@@ -30,6 +30,7 @@
 - `docs/current/qa.md`
 - `docs/current/release.md`
 - `docs/research/akinator-reference-observations.md`
+- `docs/research/akinator-direct-play-blocker-and-protocol.md`
 - `docs/research/korean-food-decision-product-research.md`
 - `docs/research/inference-motion-research.md`
 - `docs/research/designer-gate.md`

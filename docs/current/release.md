@@ -11,6 +11,8 @@
 이 프로젝트는 현재 public demo 성격이지만, 이전 실패를 반복하지 않기 위해 다음 gate를 둔다.
 
 1. Research gate
+   - Akinator direct-play blocker must be cleared before Builder.
+   - If direct play remains blocked, user must explicitly approve public video/screenshot observation as substitute.
 2. Product/design gate
 3. Architecture gate
 4. TDD Builder gate
