@@ -1,3 +1,6 @@
+# Dependencies
+/node_modules/
+
 # Graphify local/cache artifacts
 /graphify-out/cache/
 /graphify-out/manifest.json
