@@ -2,7 +2,11 @@
 
 ## 현재 판정
 
-Builder는 계속 blocked다. Akinator 실제 플레이 관찰 로그가 아직 없다.
+Builder는 계속 blocked다. Akinator 실제 플레이 관찰 로그는 1개 확보했지만, gate 기준인 3개 이상에는 아직 부족하다.
+
+확보된 직접 플레이 로그:
+
+- `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
 
 ## 시도한 경로
 
@@ -30,11 +34,11 @@ Builder는 계속 blocked다. Akinator 실제 플레이 관찰 로그가 아직 
 ### 4. macOS local browser/computer-use
 
 - `cua-driver` 설치/도구 존재 확인
-- Chrome/Brave window 감지 가능
-- 그러나 Accessibility permission 미승인으로 window state/action 불가
-- `page` Apple Events도 permission dialog로 timeout
-- 보이는 상태: `universalAccessAuthWarn` permission dialog
-- 판정: 사용자의 명시적 권한 승인 없이는 로컬 브라우저 직접 플레이 불가
+- 사용자가 `CuaDriver.app` Accessibility + Screen Recording permission 승인
+- `cua-driver serve` daemon 정상화 확인
+- local isolated Chrome에서 공식 Akinator 직접 플레이 성공
+- 확보 로그: Harry Potter run 1개
+- 판정: 직접 플레이 경로는 열렸고, 최소 3개 로그 확보까지 추가 플레이 필요
 
 ## 하지 않은 것
 
@@ -51,7 +55,7 @@ Builder는 계속 blocked다. Akinator 실제 플레이 관찰 로그가 아직 
 
 ## 필요한 사용자 입력/권한
 
-다음 중 하나가 필요하다.
+사용자 권한 승인은 완료됐다. 추가 사용자 입력 없이 Orchestrator가 local Chrome에서 직접 플레이 로그를 계속 확보한다.
 
 ### Option A — 사용자가 macOS permission 승인
 
