@@ -66,8 +66,27 @@ describe('engine domain validation', () => {
     expect(validateQuestion(question).success).toBe(true);
     expect(validateQuestion({ ...question, clarity: -1 }).success).toBe(false);
     expect(validateQuestion({ ...question, clarity: 4 }).success).toBe(false);
+    expect(validateQuestion({ ...question, clarity: Number.NaN }).success).toBe(false);
     expect(validateQuestion({ ...question, revealRisk: -1 }).success).toBe(false);
     expect(validateQuestion({ ...question, revealRisk: 4 }).success).toBe(false);
+    expect(validateQuestion({ ...question, revealRisk: Number.NaN }).success).toBe(false);
+  });
+
+  it('requires question cost to be finite', () => {
+    const question: Question = {
+      id: 'q-spicy',
+      textKo: '매콤한 게 괜찮나요?',
+      axis: 'taste',
+      role: 'family_lock',
+      clarity: 2,
+      revealRisk: 1,
+      cost: 1,
+      status: 'active',
+    };
+
+    expect(validateQuestion(question).success).toBe(true);
+    expect(validateQuestion({ ...question, cost: Number.NaN }).success).toBe(false);
+    expect(validateQuestion({ ...question, cost: Number.POSITIVE_INFINITY }).success).toBe(false);
   });
 
   it('bounds candidate attributes to -1..1 and requires reveal reason seeds', () => {
@@ -91,8 +110,10 @@ describe('engine domain validation', () => {
     };
 
     expect(validateCandidate(candidate).success).toBe(true);
+    expect(validateCandidate({ ...candidate, prior: Number.NaN }).success).toBe(false);
     expect(validateCandidate({ ...candidate, attributes: { 'q-soup': 1.1 } }).success).toBe(false);
     expect(validateCandidate({ ...candidate, attributes: { 'q-soup': -1.1 } }).success).toBe(false);
+    expect(validateCandidate({ ...candidate, attributes: { 'q-soup': Number.NaN } }).success).toBe(false);
     expect(validateCandidate({ ...candidate, reveal: { ...candidate.reveal, reasonSeeds: [] } }).success).toBe(false);
   });
 });

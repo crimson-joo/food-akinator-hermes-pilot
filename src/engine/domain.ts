@@ -94,8 +94,8 @@ export function validateQuestion(question: unknown): ValidationResult {
   if (!LEVELS.includes(record.revealRisk as number)) {
     errors.push('revealRisk must be 0, 1, 2, or 3');
   }
-  if (typeof record.cost !== 'number' || Number.isNaN(record.cost)) {
-    errors.push('cost must be a number');
+  if (typeof record.cost !== 'number' || !Number.isFinite(record.cost)) {
+    errors.push('cost must be a finite number');
   }
   if (!STATUS_VALUES.includes(record.status as Status)) {
     errors.push('status must be active, draft, or disabled');
@@ -120,7 +120,7 @@ export function validateCandidate(candidate: unknown): ValidationResult {
   if (!STATUS_VALUES.includes(record.status as Status)) {
     errors.push('status must be active, draft, or disabled');
   }
-  if (record.prior !== undefined && (typeof record.prior !== 'number' || record.prior < 0.7 || record.prior > 1.3)) {
+  if (record.prior !== undefined && (typeof record.prior !== 'number' || !Number.isFinite(record.prior) || record.prior < 0.7 || record.prior > 1.3)) {
     errors.push('prior must be between 0.7 and 1.3 when present');
   }
 
@@ -132,7 +132,7 @@ export function validateCandidate(candidate: unknown): ValidationResult {
       if (questionId.length === 0) {
         errors.push('attribute question id must not be empty');
       }
-      if (typeof value !== 'number' || value < -1 || value > 1) {
+      if (typeof value !== 'number' || !Number.isFinite(value) || value < -1 || value > 1) {
         errors.push(`attribute ${questionId} must be between -1 and 1`);
       }
     }
