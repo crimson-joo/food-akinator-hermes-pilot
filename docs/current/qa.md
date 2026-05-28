@@ -28,6 +28,18 @@ Fail 조건:
 - 이유가 `clue: yes` 같은 내부값 노출임
 - 기존 실패 UI/데이터/구조가 남아 있음
 
+## Direct-play derived QA
+
+5회 직접 플레이 synthesis에서 추가된 must-pass:
+
+- Broad split divergence: 같은 시작이라도 핵심 답변이 다르면 2~3턴 내 질문 path가 달라진다.
+- Family lock-in: 국밥/찌개/분식/면/치킨 등 후보 family로 좁혀지는 순간이 체감된다.
+- Signature discriminator: reveal 직전 질문은 정답 납득에 직접 기여한다.
+- Negative pruning: `아니요`가 실제 후보 제거와 다음 질문 선택에 영향을 준다.
+- Noise recovery: 애매한 질문/unknown 후에도 반복 없이 고신호 질문으로 돌아온다.
+- Character agency: 캐릭터가 추론을 하는 주체로 느껴진다.
+- Reveal reason quality: 내부 score가 아니라 사용자가 이해할 단서로 설명한다.
+
 ## Data tests
 
 - active candidate 50개 이상

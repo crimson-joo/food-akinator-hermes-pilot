@@ -2,11 +2,15 @@
 
 ## 현재 판정
 
-Builder는 계속 blocked다. Akinator 실제 플레이 관찰 로그는 1개 확보했지만, gate 기준인 3개 이상에는 아직 부족하다.
+Akinator 실제 플레이 관찰 로그 5개를 확보했고, v0 제품/추론/디자인/QA synthesis로 넘어가기에 충분하다. 10회 직접 플레이는 고도화 리서치 backlog로 남긴다.
 
 확보된 직접 플레이 로그:
 
 - `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
 
 ## 시도한 경로
 
@@ -37,8 +41,8 @@ Builder는 계속 blocked다. Akinator 실제 플레이 관찰 로그는 1개 �
 - 사용자가 `CuaDriver.app` Accessibility + Screen Recording permission 승인
 - `cua-driver serve` daemon 정상화 확인
 - local isolated Chrome에서 공식 Akinator 직접 플레이 성공
-- 확보 로그: Harry Potter run 1개
-- 판정: 직접 플레이 경로는 열렸고, 최소 3개 로그 확보까지 추가 플레이 필요
+- 확보 로그: Harry Potter, Pikachu, Heung-min Son, Naruto Uzumaki, Elon Musk 총 5개
+- 판정: 직접 플레이 경로는 열렸고, gate 최소 기준은 해소. 5개 로그로 핵심 추론/UX 패턴은 충분히 보였으며, 이후 synthesis로 전환 가능
 
 ## 하지 않은 것
 
@@ -124,9 +128,11 @@ Does it continue questions or end?
 
 ## Builder gate
 
-이 blocker가 해소되기 전 Builder 시작 금지.
+Gate 최소 기준은 해소됐다. 5회 직접 플레이 synthesis까지 완료했으므로 Builder는 테스트/데이터/엔진부터 시작 가능하다.
 
-해소 조건:
+현재 상태:
 
-- 실제 플레이 로그 3개 이상, 또는
-- 사용자가 Option C를 명시 승인하고 공개 자료 관찰 artifact를 보강
+- 실제 플레이 로그 5개 확보
+- 목표 10개 중 5개 완료
+- 현재 판단: 제품 방향/추론 구조/디자인 반응/QA 관점 synthesis로 넘어가기에 충분
+- 추가 5개는 고도화 리서치로 남길 수 있음

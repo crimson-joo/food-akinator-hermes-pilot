@@ -45,10 +45,26 @@
 
 ## Builder 시작 조건
 
-Builder는 다음 문서가 통과되기 전까지 시작하지 않는다.
+Builder gate는 통과했다. 직접 플레이 5회 synthesis 기준으로 구현 단계로 넘어가되, 첫 production code는 UI가 아니라 테스트/데이터/엔진부터 시작한다.
+
+통과 근거:
 
 - Akinator reference observations
+- 직접 플레이 5회 로그 + synthesis
 - Product thesis
 - Design state inventory + visual direction
 - Inference architecture
 - QA acceptance criteria
+
+## 구현 우선순위
+
+1. domain types + mini fixtures
+2. candidate/question validation tests
+3. scoring + adaptive selector tests
+4. threshold/recovery/state machine tests
+5. golden path 20 foods
+6. UI scaffold + character stage
+
+## v0 성공 기준
+
+v0는 “추천 리스트”가 아니라 **한 메뉴를 추리해 선언하는 게임**이어야 한다. 질문이 진행될수록 후보군이 좁혀지는 체감, 캐릭터의 thinking/confidence/reveal 상태, 오답 후 회복 루프가 없으면 ship 불가.

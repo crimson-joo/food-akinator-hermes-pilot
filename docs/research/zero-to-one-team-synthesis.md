@@ -38,11 +38,12 @@
 
 ## 다음 agent graph
 
-### T1 Researcher — 실제 Akinator 플레이 로그 보강
+### T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅
 
-- 사람 브라우저/접근 가능한 환경에서 3~5타깃 플레이
-- 질문 수, 질문 종류, answer transition, wrong path, character state 기록
-- Cloudflare 우회 금지
+- 5타깃 직접 플레이 완료: Harry Potter, Pikachu, Heung-min Son, Naruto Uzumaki, Elon Musk
+- 질문 수, 질문 종류, narrowing pattern, noisy question recovery, reveal discriminator 기록
+- Cloudflare 우회 없이 local macOS Chrome/CuaDriver로 관찰
+- 산출물: `docs/research/akinator-direct-play-synthesis.md`
 
 ### T2 Designer — product feel/design handoff
 
@@ -58,10 +59,10 @@
 - threshold/recovery rules
 - test matrix
 
-### T4 Builder Lead — blocked until T2/T3 pass
+### T4 Builder Lead — ready after T2/T3 pass
 
 - TDD로 데이터 검증부터 시작
-- app scaffold는 gate 후 시작
+- app scaffold는 data/engine/state tests와 golden path 후 시작
 
 ### T5 Reviewer/QA — gate owner
 
@@ -70,6 +71,8 @@
 
 ## 현재 next step
 
-- clean foundation docs committed
+- Builder gate 통과
+- 다음 작업은 TDD build: domain types + fixtures → data validation → scoring/selector/recovery/state tests
+- UI scaffold는 engine/data/golden path 이후 시작
 - old implementation absent from working tree
 - remote main reset 여부는 Orchestrator가 destructive ship gate에서 처리

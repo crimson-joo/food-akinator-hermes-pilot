@@ -29,7 +29,8 @@ type Candidate = {
 type Question = {
   id: string;
   textKo: string;
-  axis: 'taste' | 'ingredient' | 'form' | 'temperature' | 'cuisine' | 'occasion' | 'cooking' | 'texture';
+  axis: 'taste' | 'ingredient' | 'form' | 'temperature' | 'cuisine' | 'occasion' | 'cooking' | 'texture' | 'context' | 'visual';
+  role: 'broad_split' | 'family_lock' | 'sibling_elimination' | 'signature_discriminator' | 'false_path_guardrail' | 'recovery_disambiguation';
   clarity: 0 | 1 | 2 | 3;
   revealRisk: 0 | 1 | 2 | 3;
   cost: number;
@@ -58,7 +59,10 @@ Sprint 1:
 
 - 현재 후보 확률에서 질문별 weighted variance/split score 계산.
 - 이미 물은 질문 제외.
-- 초반에는 revealRisk 높은 직접 질문 제외.
+- 1~3턴에는 `broad_split` 우선, revealRisk 높은 직접 질문 제외.
+- family confidence가 생기면 `family_lock` / `sibling_elimination` 우선.
+- top 후보가 2~4개로 좁혀지면 `signature_discriminator` 우선.
+- reveal 직전 top2가 비슷하면 `false_path_guardrail` 또는 sibling elimination.
 - unknown이 많으면 clarity 높은 쉬운 질문 우선.
 
 Sprint 3:

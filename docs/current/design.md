@@ -6,6 +6,16 @@
 
 사용자가 설문을 채우는 화면이 아니라, 캐릭터가 앞에서 직접 추리하는 게임 무대처럼 보여야 한다.
 
+## Reference principles from direct play
+
+5회 직접 플레이에서 확인한 핵심 UX:
+
+- 초반은 큰 분기, 중반은 family/domain lock-in, 후반은 signature discriminator로 좁힌다.
+- 확률 숫자보다 질문이 구체화되는 체감이 confidence 역할을 한다.
+- `No / Probably not / Don't know`가 흐름을 끊지 않고 후보 제거/회복 단서가 된다.
+- 틀리거나 애매한 질문이 있어도 캐릭터가 다음 고신호 질문으로 회복하면 경험이 유지된다.
+- Reveal은 단순 결과 카드가 아니라 “내가 이렇게 추리했다”는 선언 장면이어야 한다.
+
 ## Reference principles from Akinator
 
 - 사용자가 비밀 타깃을 마음속에 정한다.

@@ -4,15 +4,16 @@
 
 - 구현 없음
 - 배포 대상 없음
-- Builder blocked
+- Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료
+- 다음 단계: TDD Builder가 데이터/엔진부터 시작
 
 ## Release policy
 
 이 프로젝트는 현재 public demo 성격이지만, 이전 실패를 반복하지 않기 위해 다음 gate를 둔다.
 
-1. Research gate
-   - Akinator direct-play blocker must be cleared before Builder.
-   - If direct play remains blocked, user must explicitly approve public video/screenshot observation as substitute.
+1. Research gate ✅
+   - Akinator direct-play blocker cleared with 5 direct-play logs.
+   - Public video/screenshot substitute not used.
 2. Product/design gate
 3. Architecture gate
 4. TDD Builder gate
