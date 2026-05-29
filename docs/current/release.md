@@ -4,9 +4,10 @@
 
 - 로컬 엔진 foundation 구현 있음: domain validation, candidate scoring, adaptive selector MVP, threshold/reveal/wrong-recovery session state machine, golden scenario fixture, minimal browser UI scaffold.
 - adaptive selector pilot local gate: PASS. Initial unknown turn-4 high reveal-risk blocker는 remediation/re-review/QA rerun으로 해결됨.
+- threshold/golden UI pilot local gate: PASS. Session threshold/reveal/wrong-recovery, golden scenarios, sanitized UI error copy, minimal browser flow QA가 통과됨.
 - 배포 대상 없음: PR/merge/deploy/live canary는 수행하지 않음.
 - Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료.
-- 다음 단계: integrated review, browser QA/perceptual QA, Librarian closeout. PR/merge/deploy/live canary는 아직 수행하지 않음.
+- 다음 단계: release planning 또는 PR 준비. Public release 전에는 실제 mobile viewport/perceptual QA, 최종 mascot/brand polish, deploy/live canary가 별도 gate로 필요함.
 
 ## Release policy
 

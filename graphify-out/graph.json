@@ -9,7 +9,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L1",
       "id": "vitest_config_ts",
-      "community": 27,
+      "community": 34,
       "norm_label": "vitest.config.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L4",
       "id": "food_akinator_hermes_pilot_vitest_config_isexplicithermesrun",
-      "community": 27,
+      "community": 34,
       "norm_label": "isexplicithermesrun"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L1",
       "id": "tests_engine_session_test_ts",
-      "community": 4,
+      "community": 2,
       "norm_label": "engine-session.test.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L5",
       "id": "tests_engine_session_test_candidate",
-      "community": 4,
+      "community": 2,
       "norm_label": "candidate()"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L20",
       "id": "tests_engine_session_test_question",
-      "community": 4,
+      "community": 2,
       "norm_label": "question()"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L34",
       "id": "tests_engine_session_test_answeroptions",
-      "community": 4,
+      "community": 2,
       "norm_label": "answeroptions"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L36",
       "id": "tests_engine_session_test_corequestions",
-      "community": 4,
+      "community": 2,
       "norm_label": "corequestions"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L46",
       "id": "tests_engine_session_test_corecandidates",
-      "community": 4,
+      "community": 2,
       "norm_label": "corecandidates"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L76",
       "id": "tests_engine_session_test_dataset",
-      "community": 4,
+      "community": 2,
       "norm_label": "dataset()"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L80",
       "id": "tests_engine_session_test_answercurrent",
-      "community": 4,
+      "community": 2,
       "norm_label": "answercurrent()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L87",
       "id": "tests_engine_session_test_session",
-      "community": 4,
+      "community": 2,
       "norm_label": "session"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L99",
       "id": "tests_engine_session_test_next",
-      "community": 4,
+      "community": 2,
       "norm_label": "next"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L138",
       "id": "tests_engine_session_test_questions",
-      "community": 4,
+      "community": 2,
       "norm_label": "questions"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L139",
       "id": "tests_engine_session_test_candidates",
-      "community": 4,
+      "community": 2,
       "norm_label": "candidates"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L144",
       "id": "tests_engine_session_test_data",
-      "community": 4,
+      "community": 2,
       "norm_label": "data"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L184",
       "id": "tests_engine_session_test_recovered",
-      "community": 4,
+      "community": 2,
       "norm_label": "recovered"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L203",
       "id": "tests_engine_session_test_asked",
-      "community": 4,
+      "community": 2,
       "norm_label": "asked"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L236",
       "id": "tests_engine_session_test_first",
-      "community": 4,
+      "community": 2,
       "norm_label": "first"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L239",
       "id": "tests_engine_session_test_second",
-      "community": 4,
+      "community": 2,
       "norm_label": "second"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L244",
       "id": "tests_engine_session_test_asking",
-      "community": 4,
+      "community": 2,
       "norm_label": "asking"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L245",
       "id": "tests_engine_session_test_confident",
-      "community": 4,
+      "community": 2,
       "norm_label": "confident"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L250",
       "id": "tests_engine_session_test_recover",
-      "community": 4,
+      "community": 2,
       "norm_label": "recover"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L252",
       "id": "tests_engine_session_test_unknownquestions",
-      "community": 4,
+      "community": 2,
       "norm_label": "unknownquestions"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L253",
       "id": "tests_engine_session_test_unknowncandidates",
-      "community": 4,
+      "community": 2,
       "norm_label": "unknowncandidates"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L257",
       "id": "tests_engine_session_test_unknowndata",
-      "community": 4,
+      "community": 2,
       "norm_label": "unknowndata"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L258",
       "id": "tests_engine_session_test_exhausted",
-      "community": 4,
+      "community": 2,
       "norm_label": "exhausted"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L1",
       "id": "tests_engine_domain_test_ts",
-      "community": 3,
+      "community": 5,
       "norm_label": "engine-domain.test.ts"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L38",
       "id": "tests_engine_domain_test_validquestion",
-      "community": 3,
+      "community": 5,
       "norm_label": "validquestion"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L55",
       "id": "tests_engine_domain_test_question",
-      "community": 3,
+      "community": 5,
       "norm_label": "question"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L93",
       "id": "tests_engine_domain_test_candidate",
-      "community": 3,
+      "community": 5,
       "norm_label": "candidate"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L1",
       "id": "tests_ui_app_test_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "ui-app.test.ts"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L5",
       "id": "tests_ui_app_test_answerlabels",
-      "community": 2,
+      "community": 1,
       "norm_label": "answerlabels"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L6",
       "id": "tests_ui_app_test_answerkeys",
-      "community": 2,
+      "community": 1,
       "norm_label": "answerkeys"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L10",
       "id": "tests_ui_app_test_html",
-      "community": 2,
+      "community": 1,
       "norm_label": "html"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L21",
       "id": "tests_ui_app_test_session",
-      "community": 2,
+      "community": 1,
       "norm_label": "session"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L28",
       "id": "tests_ui_app_test_buttonmatches",
-      "community": 2,
+      "community": 1,
       "norm_label": "buttonmatches"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L36",
       "id": "tests_ui_app_test_accepted",
-      "community": 2,
+      "community": 1,
       "norm_label": "accepted"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L37",
       "id": "tests_ui_app_test_thinking",
-      "community": 2,
+      "community": 1,
       "norm_label": "thinking"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L50",
       "id": "tests_ui_app_test_guessingsession",
-      "community": 2,
+      "community": 1,
       "norm_label": "guessingsession"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L51",
       "id": "tests_ui_app_test_guessing",
-      "community": 2,
+      "community": 1,
       "norm_label": "guessing"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L52",
       "id": "tests_ui_app_test_revealed",
-      "community": 2,
+      "community": 1,
       "norm_label": "revealed"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L71",
       "id": "tests_ui_app_test_recovering",
-      "community": 2,
+      "community": 1,
       "norm_label": "recovering"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L97",
       "id": "tests_ui_app_test_afteranswer",
-      "community": 2,
+      "community": 1,
       "norm_label": "afteranswer"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L98",
       "id": "tests_ui_app_test_afterthinking",
-      "community": 2,
+      "community": 1,
       "norm_label": "afterthinking"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L116",
       "id": "tests_ui_app_test_fakeguessingsession",
-      "community": 2,
+      "community": 1,
       "norm_label": "fakeguessingsession()"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "tests/ui-app.test.ts",
       "source_location": "L134",
       "id": "tests_ui_app_test_satisfiesuimodel",
-      "community": 2,
+      "community": 1,
       "norm_label": "_satisfiesuimodel"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "tests/engine-golden-scenarios.test.ts",
       "source_location": "L1",
       "id": "tests_engine_golden_scenarios_test_ts",
-      "community": 3,
+      "community": 2,
       "norm_label": "engine-golden-scenarios.test.ts"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "tests/engine-golden-scenarios.test.ts",
       "source_location": "L6",
       "id": "tests_engine_golden_scenarios_test_answercurrent",
-      "community": 3,
+      "community": 2,
       "norm_label": "answercurrent()"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "tests/engine-golden-scenarios.test.ts",
       "source_location": "L11",
       "id": "tests_engine_golden_scenarios_test_playscenario",
-      "community": 3,
+      "community": 2,
       "norm_label": "playscenario()"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "tests/engine-golden-scenarios.test.ts",
       "source_location": "L79",
       "id": "tests_engine_golden_scenarios_test_session_askedquestionids_rejectedfirstguess_recoveryquestionid",
-      "community": 3,
+      "community": 2,
       "norm_label": "{ session, askedquestionids, rejectedfirstguess, recoveryquestionid }"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L1",
       "id": "tests_fixtures_golden_scenarios_ts",
-      "community": 3,
+      "community": 2,
       "norm_label": "golden-scenarios.ts"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L3",
       "id": "fixtures_golden_scenarios_goldenscenario",
-      "community": 3,
+      "community": 2,
       "norm_label": "goldenscenario"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L31",
       "id": "fixtures_golden_scenarios_question",
-      "community": 3,
+      "community": 2,
       "norm_label": "question()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L45",
       "id": "fixtures_golden_scenarios_candidate",
-      "community": 3,
+      "community": 2,
       "norm_label": "candidate()"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L68",
       "id": "fixtures_golden_scenarios_goldenquestions",
-      "community": 3,
+      "community": 2,
       "norm_label": "goldenquestions"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L85",
       "id": "fixtures_golden_scenarios_goldencandidates",
-      "community": 3,
+      "community": 2,
       "norm_label": "goldencandidates"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L200",
       "id": "fixtures_golden_scenarios_goldendataset",
-      "community": 3,
+      "community": 2,
       "norm_label": "goldendataset"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "tests/fixtures/golden-scenarios.ts",
       "source_location": "L205",
       "id": "fixtures_golden_scenarios_goldenscenarios",
-      "community": 3,
+      "community": 2,
       "norm_label": "goldenscenarios"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L1",
       "id": "src_ui_app_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "app.ts"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L4",
       "id": "ui_app_answerorder",
-      "community": 2,
+      "community": 1,
       "norm_label": "answerorder"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L5",
       "id": "ui_app_answerlabel",
-      "community": 2,
+      "community": 1,
       "norm_label": "answerlabel"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L13",
       "id": "ui_app_cuelabel",
-      "community": 2,
+      "community": 1,
       "norm_label": "cuelabel"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L24",
       "id": "ui_app_uiphase",
-      "community": 2,
+      "community": 1,
       "norm_label": "uiphase"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L26",
       "id": "ui_app_uimodel",
-      "community": 2,
+      "community": 1,
       "norm_label": "uimodel"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L35",
       "id": "ui_app_uievent",
-      "community": 2,
+      "community": 1,
       "norm_label": "uievent"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L46",
       "id": "ui_app_createdemosession",
-      "community": 2,
+      "community": 1,
       "norm_label": "createdemosession()"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L50",
       "id": "ui_app_transitionui",
-      "community": 2,
+      "community": 1,
       "norm_label": "transitionui()"
     },
     {
@@ -792,7 +792,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L86",
       "id": "ui_app_mapsessiontoui",
-      "community": 2,
+      "community": 1,
       "norm_label": "mapsessiontoui()"
     },
     {
@@ -801,7 +801,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L96",
       "id": "ui_app_renderapp",
-      "community": 2,
+      "community": 1,
       "norm_label": "renderapp()"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L129",
       "id": "ui_app_cuefor",
-      "community": 2,
+      "community": 1,
       "norm_label": "cuefor()"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L140",
       "id": "ui_app_renderpanel",
-      "community": 2,
+      "community": 1,
       "norm_label": "renderpanel()"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L211",
       "id": "ui_app_renderquestion",
-      "community": 2,
+      "community": 1,
       "norm_label": "renderquestion()"
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L220",
       "id": "ui_app_renderanswerbuttons",
-      "community": 2,
+      "community": 1,
       "norm_label": "renderanswerbuttons()"
     },
     {
@@ -846,7 +846,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L224",
       "id": "ui_app_renderrejectedchips",
-      "community": 2,
+      "community": 1,
       "norm_label": "renderrejectedchips()"
     },
     {
@@ -855,7 +855,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L229",
       "id": "ui_app_progresscopy",
-      "community": 2,
+      "community": 1,
       "norm_label": "progresscopy()"
     },
     {
@@ -864,7 +864,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L236",
       "id": "ui_app_escapehtml",
-      "community": 2,
+      "community": 1,
       "norm_label": "escapehtml()"
     },
     {
@@ -873,7 +873,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L240",
       "id": "ui_app_escapeattr",
-      "community": 2,
+      "community": 1,
       "norm_label": "escapeattr()"
     },
     {
@@ -882,7 +882,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L244",
       "id": "ui_app_styleblock",
-      "community": 2,
+      "community": 1,
       "norm_label": "styleblock()"
     },
     {
@@ -891,7 +891,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L291",
       "id": "ui_app_demoquestions",
-      "community": 2,
+      "community": 1,
       "norm_label": "demoquestions"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L300",
       "id": "ui_app_democandidates",
-      "community": 2,
+      "community": 1,
       "norm_label": "democandidates"
     },
     {
@@ -909,7 +909,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L306",
       "id": "ui_app_demodataset",
-      "community": 2,
+      "community": 1,
       "norm_label": "demodataset"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L308",
       "id": "ui_app_q",
-      "community": 2,
+      "community": 1,
       "norm_label": "q()"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L312",
       "id": "ui_app_c",
-      "community": 2,
+      "community": 1,
       "norm_label": "c()"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L316",
       "id": "ui_app_mountapp",
-      "community": 2,
+      "community": 1,
       "norm_label": "mountapp()"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L360",
       "id": "ui_app_root",
-      "community": 2,
+      "community": 1,
       "norm_label": "root"
     },
     {
@@ -999,7 +999,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L23",
       "id": "engine_session_enginesession",
-      "community": 2,
+      "community": 1,
       "norm_label": "enginesession"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L69",
       "id": "engine_session_startsession",
-      "community": 2,
+      "community": 1,
       "norm_label": "startsession()"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L81",
       "id": "engine_session_submitanswer",
-      "community": 4,
+      "community": 2,
       "norm_label": "submitanswer()"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L116",
       "id": "engine_session_submitguessfeedback",
-      "community": 3,
+      "community": 2,
       "norm_label": "submitguessfeedback()"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "src_engine_domain_ts",
-      "community": 3,
+      "community": 5,
       "norm_label": "domain.ts"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "engine_domain_answer_values",
-      "community": 3,
+      "community": 5,
       "norm_label": "answer_values"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L9",
       "id": "engine_domain_answerkey",
-      "community": 0,
+      "community": 2,
       "norm_label": "answerkey"
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L10",
       "id": "engine_domain_answervalue",
-      "community": 3,
+      "community": 5,
       "norm_label": "answervalue"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L12",
       "id": "engine_domain_question_roles",
-      "community": 3,
+      "community": 5,
       "norm_label": "question_roles"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L22",
       "id": "engine_domain_questionrole",
-      "community": 3,
+      "community": 2,
       "norm_label": "questionrole"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L24",
       "id": "engine_domain_question_axes",
-      "community": 3,
+      "community": 5,
       "norm_label": "question_axes"
     },
     {
@@ -1377,7 +1377,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L37",
       "id": "engine_domain_questionaxis",
-      "community": 3,
+      "community": 5,
       "norm_label": "questionaxis"
     },
     {
@@ -1386,7 +1386,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L38",
       "id": "engine_domain_status",
-      "community": 3,
+      "community": 5,
       "norm_label": "status"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L39",
       "id": "engine_domain_questionid",
-      "community": 3,
+      "community": 5,
       "norm_label": "questionid"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L41",
       "id": "engine_domain_question",
-      "community": 3,
+      "community": 5,
       "norm_label": "question"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L68",
       "id": "engine_domain_validationresult",
-      "community": 3,
+      "community": 5,
       "norm_label": "validationresult"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L72",
       "id": "engine_domain_status_values",
-      "community": 3,
+      "community": 5,
       "norm_label": "status_values"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L73",
       "id": "engine_domain_levels",
-      "community": 3,
+      "community": 5,
       "norm_label": "levels"
     },
     {
@@ -1449,7 +1449,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L75",
       "id": "engine_domain_validatequestion",
-      "community": 3,
+      "community": 5,
       "norm_label": "validatequestion()"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L107",
       "id": "engine_domain_validatecandidate",
-      "community": 3,
+      "community": 5,
       "norm_label": "validatecandidate()"
     },
     {
@@ -1467,7 +1467,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L155",
       "id": "engine_domain_asrecord",
-      "community": 3,
+      "community": 5,
       "norm_label": "asrecord()"
     },
     {
@@ -1476,7 +1476,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L161",
       "id": "engine_domain_requirestring",
-      "community": 3,
+      "community": 5,
       "norm_label": "requirestring()"
     },
     {
@@ -1485,7 +1485,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L167",
       "id": "engine_domain_requirestringarray",
-      "community": 3,
+      "community": 5,
       "norm_label": "requirestringarray()"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 25,
+      "community": 28,
       "norm_label": "readme.md"
     },
     {
@@ -1503,7 +1503,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "food_akinator_hermes_pilot_readme_food_akinator_zero_to_one_research_foundation",
-      "community": 25,
+      "community": 28,
       "norm_label": "food akinator \u2014 zero-to-one research foundation"
     },
     {
@@ -1512,7 +1512,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "food_akinator_hermes_pilot_readme",
-      "community": 25,
+      "community": 28,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "README.md",
       "source_location": "L12",
       "id": "food_akinator_hermes_pilot_readme_12",
-      "community": 25,
+      "community": 28,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "README.md",
       "source_location": "L16",
       "id": "food_akinator_hermes_pilot_readme_16",
-      "community": 25,
+      "community": 28,
       "norm_label": "\u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "README.md",
       "source_location": "L25",
       "id": "food_akinator_hermes_pilot_readme_25",
-      "community": 25,
+      "community": 28,
       "norm_label": "\u1106\u116e\u11ab\u1109\u1165"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_md",
-      "community": 26,
+      "community": 33,
       "norm_label": "changelog.md"
     },
     {
@@ -1557,25 +1557,25 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_changelog",
-      "community": 26,
+      "community": 33,
       "norm_label": "changelog"
     },
     {
-      "label": "2026-05-30 \u2014 Threshold / golden paths / minimal UI scaffold pilot local progress",
+      "label": "2026-05-30 \u2014 Threshold / golden paths / minimal UI scaffold pilot local PASS",
       "file_type": "document",
       "source_file": "docs/changelog.md",
       "source_location": "L3",
-      "id": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_progress",
-      "community": 26,
-      "norm_label": "2026-05-30 \u2014 threshold / golden paths / minimal ui scaffold pilot local progress"
+      "id": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_pass",
+      "community": 33,
+      "norm_label": "2026-05-30 \u2014 threshold / golden paths / minimal ui scaffold pilot local pass"
     },
     {
       "label": "2026-05-29 \u2014 Adaptive selector pilot local PASS",
       "file_type": "document",
       "source_file": "docs/changelog.md",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "docs_changelog_2026_05_29_adaptive_selector_pilot_local_pass",
-      "community": 26,
+      "community": 33,
       "norm_label": "2026-05-29 \u2014 adaptive selector pilot local pass"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L1",
       "id": "docs_research_architect_gate_md",
-      "community": 6,
+      "community": 4,
       "norm_label": "architect-gate.md"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L1",
       "id": "research_architect_gate_architect_gate_food_akinator_v0",
-      "community": 6,
+      "community": 4,
       "norm_label": "architect gate \u2014 food akinator v0"
     },
     {
@@ -1674,7 +1674,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L3",
       "id": "research_architect_gate_gate",
-      "community": 6,
+      "community": 4,
       "norm_label": "gate \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L7",
       "id": "research_architect_gate",
-      "community": 6,
+      "community": 4,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L18",
       "id": "research_architect_gate_v0_file_layout",
-      "community": 6,
+      "community": 4,
       "norm_label": "v0 file layout"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L20",
       "id": "research_architect_gate_codeblock_1",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:txt (data/)"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L60",
       "id": "research_architect_gate_data_minimums",
-      "community": 6,
+      "community": 4,
       "norm_label": "data minimums"
     },
     {
@@ -1719,7 +1719,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L68",
       "id": "research_architect_gate_answer_semantics",
-      "community": 6,
+      "community": 4,
       "norm_label": "answer semantics"
     },
     {
@@ -1728,7 +1728,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L70",
       "id": "research_architect_gate_codeblock_2",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:ts (type answervalue = 1 | 0.5 | 0 | -0.5 | -1;)"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L80",
       "id": "research_architect_gate_scoring",
-      "community": 6,
+      "community": 4,
       "norm_label": "scoring"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L82",
       "id": "research_architect_gate_codeblock_3",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:txt (logscore(candidate))"
     },
     {
@@ -1755,7 +1755,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L89",
       "id": "research_architect_gate_codeblock_4",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:txt (similarity = - ((answervalue - expectedvalue)^2) / (2 * sigm)"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L100",
       "id": "research_architect_gate_selector",
-      "community": 6,
+      "community": 4,
       "norm_label": "selector"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L104",
       "id": "research_architect_gate_codeblock_5",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:txt (mean(q) = \u03c3 p(c) * expected(c, q))"
     },
     {
@@ -1782,7 +1782,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L118",
       "id": "research_architect_gate_guess_reveal_threshold",
-      "community": 6,
+      "community": 4,
       "norm_label": "guess / reveal threshold"
     },
     {
@@ -1791,7 +1791,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L129",
       "id": "research_architect_gate_wrong_recovery",
-      "community": 6,
+      "community": 4,
       "norm_label": "wrong recovery"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L139",
       "id": "research_architect_gate_state_machine",
-      "community": 6,
+      "community": 4,
       "norm_label": "state machine"
     },
     {
@@ -1809,7 +1809,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L141",
       "id": "research_architect_gate_codeblock_6",
-      "community": 6,
+      "community": 4,
       "norm_label": "code:txt (entry \u2192 asking)"
     },
     {
@@ -1818,7 +1818,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L148",
       "id": "research_architect_gate_character_boundary",
-      "community": 6,
+      "community": 4,
       "norm_label": "character boundary"
     },
     {
@@ -1827,7 +1827,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L166",
       "id": "research_architect_gate_test_first_build_sequence",
-      "community": 6,
+      "community": 4,
       "norm_label": "test-first build sequence"
     },
     {
@@ -1836,7 +1836,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L180",
       "id": "research_architect_gate_builder",
-      "community": 6,
+      "community": 4,
       "norm_label": "builder \u1100\u1173\u11b7\u110c\u1175"
     },
     {
@@ -1845,7 +1845,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_synthesis_md",
-      "community": 5,
+      "community": 3,
       "norm_label": "akinator-direct-play-synthesis.md"
     },
     {
@@ -1854,7 +1854,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_synthesis_akinator_direct_play_synthesis_builder_handoff",
-      "community": 5,
+      "community": 3,
       "norm_label": "akinator direct play synthesis \u2014 builder handoff"
     },
     {
@@ -1863,7 +1863,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_synthesis",
-      "community": 5,
+      "community": 3,
       "norm_label": "\u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -1872,7 +1872,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_synthesis_15",
-      "community": 5,
+      "community": 3,
       "norm_label": "\u1100\u1169\u11bc\u1110\u1169\u11bc \u1100\u1166\u110b\u1175\u11b7 \u1105\u116e\u1111\u1173"
     },
     {
@@ -1881,7 +1881,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_synthesis_codeblock_1",
-      "community": 5,
+      "community": 3,
       "norm_label": "code:txt (entry prompt)"
     },
     {
@@ -1890,7 +1890,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L31",
       "id": "research_akinator_direct_play_synthesis_31",
-      "community": 5,
+      "community": 3,
       "norm_label": "\u110c\u1175\u11af\u1106\u116e\u11ab \u110c\u1165\u11ab\u1105\u1163\u11a8 \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -1899,7 +1899,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L33",
       "id": "research_akinator_direct_play_synthesis_1_broad_split",
-      "community": 5,
+      "community": 3,
       "norm_label": "1. broad split"
     },
     {
@@ -1908,7 +1908,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L52",
       "id": "research_akinator_direct_play_synthesis_2_family_domain_lock_in",
-      "community": 5,
+      "community": 3,
       "norm_label": "2. family/domain lock-in"
     },
     {
@@ -1917,7 +1917,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L67",
       "id": "research_akinator_direct_play_synthesis_3_signature_discriminator",
-      "community": 5,
+      "community": 3,
       "norm_label": "3. signature discriminator"
     },
     {
@@ -1926,7 +1926,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L86",
       "id": "research_akinator_direct_play_synthesis_4_negative_answer_as_active_pruning",
-      "community": 5,
+      "community": 3,
       "norm_label": "4. negative answer as active pruning"
     },
     {
@@ -1935,7 +1935,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L97",
       "id": "research_akinator_direct_play_synthesis_5_noise_tolerance",
-      "community": 5,
+      "community": 3,
       "norm_label": "5. noise tolerance"
     },
     {
@@ -1944,7 +1944,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L113",
       "id": "research_akinator_direct_play_synthesis_designer_handoff",
-      "community": 5,
+      "community": 3,
       "norm_label": "designer handoff"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L115",
       "id": "research_akinator_direct_play_synthesis_115",
-      "community": 5,
+      "community": 3,
       "norm_label": "\u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u110b\u1167\u11a8\u1112\u1161\u11af"
     },
     {
@@ -1962,7 +1962,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L130",
       "id": "research_akinator_direct_play_synthesis_130",
-      "community": 5,
+      "community": 3,
       "norm_label": "\u110c\u1175\u11ab\u1112\u1162\u11bc\u1100\u1161\u11b7 \u1111\u116d\u1112\u1167\u11ab"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L141",
       "id": "research_akinator_direct_play_synthesis_reveal",
-      "community": 5,
+      "community": 3,
       "norm_label": "reveal"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L153",
       "id": "research_akinator_direct_play_synthesis_researcher_handoff",
-      "community": 5,
+      "community": 3,
       "norm_label": "researcher handoff"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L169",
       "id": "research_akinator_direct_play_synthesis_developer_architect_handoff",
-      "community": 5,
+      "community": 3,
       "norm_label": "developer / architect handoff"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L171",
       "id": "research_akinator_direct_play_synthesis_engine_rule_updates",
-      "community": 5,
+      "community": 3,
       "norm_label": "engine rule updates"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L175",
       "id": "research_akinator_direct_play_synthesis_codeblock_2",
-      "community": 5,
+      "community": 3,
       "norm_label": "code:ts (type questionrole =)"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L187",
       "id": "research_akinator_direct_play_synthesis_codeblock_3",
-      "community": 5,
+      "community": 3,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L209",
       "id": "research_akinator_direct_play_synthesis_reveal_threshold_adjustment",
-      "community": 5,
+      "community": 3,
       "norm_label": "reveal threshold adjustment"
     },
     {
@@ -2034,7 +2034,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L220",
       "id": "research_akinator_direct_play_synthesis_qa_handoff",
-      "community": 5,
+      "community": 3,
       "norm_label": "qa handoff"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L224",
       "id": "research_akinator_direct_play_synthesis_must_pass_scenario_tests",
-      "community": 5,
+      "community": 3,
       "norm_label": "must-pass scenario tests"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L243",
       "id": "research_akinator_direct_play_synthesis_builder_gate_update",
-      "community": 5,
+      "community": 3,
       "norm_label": "builder gate update"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_blocker_and_protocol_md",
-      "community": 7,
+      "community": 6,
       "norm_label": "akinator-direct-play-blocker-and-protocol.md"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_blocker_and_protocol_akinator_direct_play_blocker_manual_observation_protocol",
-      "community": 7,
+      "community": 6,
       "norm_label": "akinator direct play blocker + manual observation protocol"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_blocker_and_protocol",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_blocker_and_protocol_15",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1109\u1175\u1103\u1169\u1112\u1161\u11ab \u1100\u1167\u11bc\u1105\u1169"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_blocker_and_protocol_1_headless_browser",
-      "community": 7,
+      "community": 6,
       "norm_label": "1. headless/browser \u1100\u1169\u11bc\u1109\u1175\u11a8 \u110b\u1170\u11b8"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L23",
       "id": "research_akinator_direct_play_blocker_and_protocol_2_silvergames_embedded_route",
-      "community": 7,
+      "community": 6,
       "norm_label": "2. silvergames embedded route"
     },
     {
@@ -2115,7 +2115,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L30",
       "id": "research_akinator_direct_play_blocker_and_protocol_3_npm_api_wrapper",
-      "community": 7,
+      "community": 6,
       "norm_label": "3. npm/api wrapper"
     },
     {
@@ -2124,7 +2124,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L38",
       "id": "research_akinator_direct_play_blocker_and_protocol_4_macos_local_browser_computer_use",
-      "community": 7,
+      "community": 6,
       "norm_label": "4. macos local browser/computer-use"
     },
     {
@@ -2133,7 +2133,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_blocker_and_protocol_47",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1112\u1161\u110c\u1175 \u110b\u1161\u11ad\u110b\u1173\u11ab \u1100\u1165\u11ba"
     },
     {
@@ -2142,7 +2142,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_blocker_and_protocol_blocker",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u110b\u116b blocker\u110b\u1175\u11ab\u1100\u1161"
     },
     {
@@ -2151,7 +2151,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_blocker_and_protocol_60",
-      "community": 7,
+      "community": 6,
       "norm_label": "\u1111\u1175\u11af\u110b\u116d\u1112\u1161\u11ab \u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u110b\u1175\u11b8\u1105\u1167\u11a8/\u1100\u116f\u11ab\u1112\u1161\u11ab"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L64",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_a_macos_permission",
-      "community": 7,
+      "community": 6,
       "norm_label": "option a \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 macos permission \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L70",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_b",
-      "community": 7,
+      "community": 6,
       "norm_label": "option b \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1105\u1169\u1100\u1173 \u110c\u1166\u1100\u1169\u11bc"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L74",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_c",
-      "community": 7,
+      "community": 6,
       "norm_label": "option c \u2014 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u110b\u116d\u1100\u116e\u1105\u1173\u11af \u1100\u1169\u11bc\u1100\u1162 \u110b\u1167\u11bc\u1109\u1161\u11bc/\u1109\u1173\u110f\u1173\u1105\u1175\u11ab\u1109\u1163\u11ba \u1100\u116a\u11ab\u110e\u1161\u11af\u1105\u1169 \u1103\u1162\u110e\u1166 \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L78",
       "id": "research_akinator_direct_play_blocker_and_protocol_manual_play_protocol",
-      "community": 7,
+      "community": 6,
       "norm_label": "manual play protocol"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L88",
       "id": "research_akinator_direct_play_blocker_and_protocol_codeblock_1",
-      "community": 7,
+      "community": 6,
       "norm_label": "code:txt (target:)"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L116",
       "id": "research_akinator_direct_play_blocker_and_protocol_observation_checklist",
-      "community": 7,
+      "community": 6,
       "norm_label": "observation checklist"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L129",
       "id": "research_akinator_direct_play_blocker_and_protocol_builder_gate",
-      "community": 7,
+      "community": 6,
       "norm_label": "builder gate"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L1",
       "id": "docs_research_designer_gate_md",
-      "community": 10,
+      "community": 7,
       "norm_label": "designer-gate.md"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L1",
       "id": "research_designer_gate_designer_gate_food_akinator_zero_to_one",
-      "community": 10,
+      "community": 7,
       "norm_label": "designer gate \u2014 food akinator zero-to-one"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L3",
       "id": "research_designer_gate_gate",
-      "community": 10,
+      "community": 7,
       "norm_label": "gate \u1106\u1169\u11a8\u110c\u1165\u11a8"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L7",
       "id": "research_designer_gate",
-      "community": 10,
+      "community": 7,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L13",
       "id": "research_designer_gate_13",
-      "community": 10,
+      "community": 7,
       "norm_label": "\u1112\u116e\u1107\u1169 \u1107\u1175\u1100\u116d"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L15",
       "id": "research_designer_gate_a",
-      "community": 10,
+      "community": 7,
       "norm_label": "a. \u110b\u1175\u11b8\u1106\u1161\u11ba \u1110\u1161\u11b7\u110c\u1165\u11bc \u201c\u1106\u1161\u11ba\u110c\u1165\u11bc\u110b\u1175\u201d"
     },
     {
@@ -2277,7 +2277,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L20",
       "id": "research_designer_gate_b",
-      "community": 10,
+      "community": 7,
       "norm_label": "b. \u1107\u1169\u1100\u1173\u11af \u1109\u1168\u1111\u1173"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L25",
       "id": "research_designer_gate_c",
-      "community": 10,
+      "community": 7,
       "norm_label": "c. \u110b\u1175\u11b8\u1106\u1161\u11ba \u1105\u1166\u110b\u1175\u1103\u1165 \u201c\u1102\u1163\u11b7\u1110\u1166\u1102\u1161\u201d"
     },
     {
@@ -2295,7 +2295,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L30",
       "id": "research_designer_gate_30",
-      "community": 10,
+      "community": 7,
       "norm_label": "\u110e\u116c\u110c\u1169\u11bc \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -2304,7 +2304,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L39",
       "id": "research_designer_gate_screen_states",
-      "community": 10,
+      "community": 7,
       "norm_label": "screen states"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L51",
       "id": "research_designer_gate_5_answer_rhythm",
-      "community": 10,
+      "community": 7,
       "norm_label": "5-answer rhythm"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L67",
       "id": "research_designer_gate_character_motion_spec",
-      "community": 10,
+      "community": 7,
       "norm_label": "character motion spec"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L87",
       "id": "research_designer_gate_microcopy",
-      "community": 10,
+      "community": 7,
       "norm_label": "microcopy \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L102",
       "id": "research_designer_gate_visual_acceptance",
-      "community": 10,
+      "community": 7,
       "norm_label": "visual acceptance"
     },
     {
@@ -2349,7 +2349,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L120",
       "id": "research_designer_gate_builder_handoff",
-      "community": 10,
+      "community": 7,
       "norm_label": "builder handoff"
     },
     {
@@ -2358,7 +2358,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L124",
       "id": "research_designer_gate_codeblock_1",
-      "community": 10,
+      "community": 7,
       "norm_label": "code:ts (type charactercue =)"
     },
     {
@@ -2367,7 +2367,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_pikachu_md",
-      "community": 23,
+      "community": 22,
       "norm_label": "akinator-direct-play-log-2026-05-28-pikachu.md"
     },
     {
@@ -2376,7 +2376,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_akinator_direct_play_log_pikachu",
-      "community": 23,
+      "community": 22,
       "norm_label": "akinator direct play log \u2014 pikachu"
     },
     {
@@ -2385,7 +2385,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_run_metadata",
-      "community": 23,
+      "community": 22,
       "norm_label": "run metadata"
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_question_answer_trace",
-      "community": 23,
+      "community": 22,
       "norm_label": "question/answer trace"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_interaction_insights",
-      "community": 23,
+      "community": 22,
       "norm_label": "interaction insights"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L48",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_product_implications_for_korean_food_akinator",
-      "community": 23,
+      "community": 22,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L55",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_gate_status",
-      "community": 23,
+      "community": 22,
       "norm_label": "gate status"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "docs_research_akinator_reference_observations_md",
-      "community": 22,
+      "community": 23,
       "norm_label": "akinator-reference-observations.md"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "research_akinator_reference_observations_akinator_reference_observations",
-      "community": 22,
+      "community": 23,
       "norm_label": "akinator reference observations"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L3",
       "id": "research_akinator_reference_observations",
-      "community": 22,
+      "community": 23,
       "norm_label": "\u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -2457,7 +2457,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L9",
       "id": "research_akinator_reference_observations_9",
-      "community": 22,
+      "community": 23,
       "norm_label": "\u1100\u116a\u11ab\u110e\u1161\u11af\u1103\u116c\u11ab \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u116f\u11ab\u1105\u1175"
     },
     {
@@ -2466,7 +2466,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L26",
       "id": "research_akinator_reference_observations_food",
-      "community": 22,
+      "community": 23,
       "norm_label": "food \u1109\u1165\u1107\u1175\u1109\u1173 \u110c\u1165\u11a8\u110b\u116d\u11bc \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -2475,7 +2475,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L35",
       "id": "research_akinator_reference_observations_non_copy_boundary",
-      "community": 22,
+      "community": 23,
       "norm_label": "non-copy boundary"
     },
     {
@@ -2484,7 +2484,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L42",
       "id": "research_akinator_reference_observations_todo",
-      "community": 22,
+      "community": 23,
       "norm_label": "\u110e\u116e\u1100\u1161 \u1105\u1175\u1109\u1165\u110e\u1175 todo"
     },
     {
@@ -2493,7 +2493,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_md",
-      "community": 19,
+      "community": 25,
       "norm_label": "akinator-direct-play-log-2026-05-28-naruto-uzumaki.md"
     },
     {
@@ -2502,7 +2502,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_akinator_direct_play_log_naruto_uzumaki",
-      "community": 19,
+      "community": 25,
       "norm_label": "akinator direct play log \u2014 naruto uzumaki"
     },
     {
@@ -2511,7 +2511,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_run_metadata",
-      "community": 19,
+      "community": 25,
       "norm_label": "run metadata"
     },
     {
@@ -2520,7 +2520,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_question_answer_trace",
-      "community": 19,
+      "community": 25,
       "norm_label": "question/answer trace"
     },
     {
@@ -2529,7 +2529,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L37",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_interaction_insights",
-      "community": 19,
+      "community": 25,
       "norm_label": "interaction insights"
     },
     {
@@ -2538,7 +2538,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L44",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_product_implications_for_korean_food_akinator",
-      "community": 19,
+      "community": 25,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2547,7 +2547,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L50",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_gate_status",
-      "community": 19,
+      "community": 25,
       "norm_label": "gate status"
     },
     {
@@ -2556,7 +2556,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L1",
       "id": "docs_research_inference_motion_research_md",
-      "community": 1,
+      "community": 17,
       "norm_label": "inference-motion-research.md"
     },
     {
@@ -2565,7 +2565,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L1",
       "id": "research_inference_motion_research_akinator_like",
-      "community": 1,
+      "community": 17,
       "norm_label": "\u110c\u1161\u11a8\u110b\u1173\u11ab \u110b\u1173\u11b7\u1109\u1175\u11a8 \u1103\u1169\u1106\u1166\u110b\u1175\u11ab akinator-like \u110e\u116e\u1105\u1169\u11ab \u110b\u1166\u11ab\u110c\u1175\u11ab + \u110f\u1162\u1105\u1175\u11a8\u1110\u1165/\u1106\u1169\u1109\u1167\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab \u110c\u1166\u110b\u1161\u11ab"
     },
     {
@@ -2574,7 +2574,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L8",
       "id": "research_inference_motion_research_1",
-      "community": 1,
+      "community": 17,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110c\u1166\u1111\u116e\u11b7 \u1100\u1167\u11bc\u1112\u1165\u11b7"
     },
     {
@@ -2583,7 +2583,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L20",
       "id": "research_inference_motion_research_2",
-      "community": 1,
+      "community": 32,
       "norm_label": "2. \u1103\u1169\u1106\u1166\u110b\u1175\u11ab \u1103\u1166\u110b\u1175\u1110\u1165 \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -2592,7 +2592,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L22",
       "id": "research_inference_motion_research_2_1_candidate_schema",
-      "community": 1,
+      "community": 32,
       "norm_label": "2.1 candidate schema: \u110b\u1173\u11b7\u1109\u1175\u11a8 \u1112\u116e\u1107\u1169"
     },
     {
@@ -2601,7 +2601,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L28",
       "id": "research_inference_motion_research_codeblock_1",
-      "community": 1,
+      "community": 32,
       "norm_label": "code:ts (type candidate = {)"
     },
     {
@@ -2610,7 +2610,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L62",
       "id": "research_inference_motion_research_2_2_question_bank_schema",
-      "community": 1,
+      "community": 32,
       "norm_label": "2.2 question bank schema"
     },
     {
@@ -2619,7 +2619,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L66",
       "id": "research_inference_motion_research_codeblock_2",
-      "community": 1,
+      "community": 32,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -2691,7 +2691,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L163",
       "id": "research_inference_motion_research_4_adaptive_next_question_selection",
-      "community": 16,
+      "community": 13,
       "norm_label": "4. adaptive next-question selection"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L167",
       "id": "research_inference_motion_research_4_1",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.1 \u1112\u116e\u1107\u1169 \u1112\u116a\u11a8\u1105\u1172\u11af \u110c\u1165\u11bc\u1100\u1172\u1112\u116a"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L171",
       "id": "research_inference_motion_research_codeblock_7",
-      "community": 16,
+      "community": 13,
       "norm_label": "code:txt (p(c) = exp(logscore(c) / t) / \u03c3 exp(logscore(i) / t))"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L179",
       "id": "research_inference_motion_research_4_2_expected_information_gain",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.2 expected information gain"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L183",
       "id": "research_inference_motion_research_codeblock_8",
-      "community": 16,
+      "community": 13,
       "norm_label": "code:txt (h(c) = -\u03c3 p(c) log2 p(c))"
     },
     {
@@ -2736,7 +2736,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L189",
       "id": "research_inference_motion_research_codeblock_9",
-      "community": 16,
+      "community": 13,
       "norm_label": "code:txt (p(a | q) = \u03c3 p(c) * p(a | c, q))"
     },
     {
@@ -2745,7 +2745,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L195",
       "id": "research_inference_motion_research_codeblock_10",
-      "community": 16,
+      "community": 13,
       "norm_label": "code:txt (ig(q) = h(c) - \u03c3_a p(a | q) * h(c | answer=a, q))"
     },
     {
@@ -2754,7 +2754,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L201",
       "id": "research_inference_motion_research_codeblock_11",
-      "community": 16,
+      "community": 13,
       "norm_label": "code:txt (questionscore(q) = ig(q))"
     },
     {
@@ -2763,7 +2763,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L216",
       "id": "research_inference_motion_research_4_3",
-      "community": 16,
+      "community": 13,
       "norm_label": "4.3 \u110c\u1161\u11a8\u110b\u1173\u11ab \u1103\u1169\u1106\u1166\u110b\u1175\u11ab\u110b\u1166\u1109\u1165\u110b\u1174 \u1100\u1161\u11ab\u1103\u1161\u11ab \u1103\u1162\u110b\u1161\u11ab"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L220",
       "id": "research_inference_motion_research_codeblock_12",
-      "community": 16,
+      "community": 13,
       "norm_label": "code:txt (mean = \u03c3 p(c) * expected(c,q))"
     },
     {
@@ -2781,7 +2781,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L236",
       "id": "research_inference_motion_research_5_confidence_reveal_threshold",
-      "community": 1,
+      "community": 17,
       "norm_label": "5. confidence/reveal threshold"
     },
     {
@@ -2790,7 +2790,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L238",
       "id": "research_inference_motion_research_5_1",
-      "community": 1,
+      "community": 17,
       "norm_label": "5.1 \u110e\u116e\u110e\u1173\u11a8 \u110c\u1169\u1100\u1165\u11ab"
     },
     {
@@ -2799,7 +2799,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L248",
       "id": "research_inference_motion_research_5_2_reveal_vs_tentative_guess",
-      "community": 1,
+      "community": 17,
       "norm_label": "5.2 reveal vs tentative guess"
     },
     {
@@ -2808,7 +2808,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L258",
       "id": "research_inference_motion_research_5_3_confidence_messaging",
-      "community": 1,
+      "community": 17,
       "norm_label": "5.3 confidence messaging"
     },
     {
@@ -2817,7 +2817,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L269",
       "id": "research_inference_motion_research_6_wrong_guess_suppression_recovery",
-      "community": 1,
+      "community": 27,
       "norm_label": "6. wrong guess suppression/recovery"
     },
     {
@@ -2826,7 +2826,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L273",
       "id": "research_inference_motion_research_6_1_suppression",
-      "community": 1,
+      "community": 27,
       "norm_label": "6.1 suppression \u1103\u1166\u110b\u1175\u1110\u1165"
     },
     {
@@ -2835,7 +2835,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L277",
       "id": "research_inference_motion_research_codeblock_13",
-      "community": 1,
+      "community": 27,
       "norm_label": "code:ts (type sessionstate = {)"
     },
     {
@@ -2844,7 +2844,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L292",
       "id": "research_inference_motion_research_6_2_recovery_strategy",
-      "community": 1,
+      "community": 27,
       "norm_label": "6.2 recovery strategy"
     },
     {
@@ -2853,7 +2853,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L304",
       "id": "research_inference_motion_research_6_3_learning_hook",
-      "community": 1,
+      "community": 27,
       "norm_label": "6.3 learning hook"
     },
     {
@@ -2862,7 +2862,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L309",
       "id": "research_inference_motion_research_codeblock_14",
-      "community": 1,
+      "community": 27,
       "norm_label": "code:json ({)"
     },
     {
@@ -2979,7 +2979,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L415",
       "id": "research_inference_motion_research_8",
-      "community": 1,
+      "community": 19,
       "norm_label": "8. \u110f\u1162\u1105\u1175\u11a8\u1110\u1165/\u1106\u1169\u1109\u1167\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab \u1109\u1165\u11ab\u1110\u1162\u11a8\u110c\u1175"
     },
     {
@@ -2988,7 +2988,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L419",
       "id": "research_inference_motion_research_8_1_rive",
-      "community": 1,
+      "community": 19,
       "norm_label": "8.1 rive"
     },
     {
@@ -2997,7 +2997,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L433",
       "id": "research_inference_motion_research_8_2_spine",
-      "community": 1,
+      "community": 19,
       "norm_label": "8.2 spine"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L447",
       "id": "research_inference_motion_research_8_3_lottie",
-      "community": 1,
+      "community": 19,
       "norm_label": "8.3 lottie"
     },
     {
@@ -3015,7 +3015,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L461",
       "id": "research_inference_motion_research_8_4_layered_raster_rig",
-      "community": 1,
+      "community": 19,
       "norm_label": "8.4 layered raster rig"
     },
     {
@@ -3024,7 +3024,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L477",
       "id": "research_inference_motion_research_8_5_css_procedural_rig",
-      "community": 1,
+      "community": 19,
       "norm_label": "8.5 css procedural rig"
     },
     {
@@ -3033,7 +3033,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L493",
       "id": "research_inference_motion_research_8_6_canvas_webgl_custom_rig",
-      "community": 1,
+      "community": 19,
       "norm_label": "8.6 canvas/webgl custom rig"
     },
     {
@@ -3042,7 +3042,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L508",
       "id": "research_inference_motion_research_9_mvp",
-      "community": 1,
+      "community": 29,
       "norm_label": "9. \u110e\u116e\u110e\u1165\u11ab mvp \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab"
     },
     {
@@ -3051,7 +3051,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L510",
       "id": "research_inference_motion_research_9_1_1_rive_state_machine",
-      "community": 1,
+      "community": 29,
       "norm_label": "9.1 1\u1109\u116e\u11ab\u110b\u1171: rive state machine"
     },
     {
@@ -3060,7 +3060,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L530",
       "id": "research_inference_motion_research_codeblock_23",
-      "community": 1,
+      "community": 29,
       "norm_label": "code:ts (function cuefromengine(state, confidence, lastanswer, wrongg)"
     },
     {
@@ -3069,7 +3069,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L540",
       "id": "research_inference_motion_research_9_2_2_lottie_clips_light_state_controller",
-      "community": 1,
+      "community": 29,
       "norm_label": "9.2 2\u1109\u116e\u11ab\u110b\u1171: lottie clips + light state controller"
     },
     {
@@ -3078,7 +3078,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L547",
       "id": "research_inference_motion_research_9_3_fallback_layered_raster",
-      "community": 1,
+      "community": 29,
       "norm_label": "9.3 fallback: layered raster"
     },
     {
@@ -3087,7 +3087,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L556",
       "id": "research_inference_motion_research_10_mvp",
-      "community": 1,
+      "community": 30,
       "norm_label": "10. \u110c\u1165\u11ab\u110e\u1166 mvp \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -3096,7 +3096,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L558",
       "id": "research_inference_motion_research_10_1",
-      "community": 1,
+      "community": 30,
       "norm_label": "10.1 \u110f\u1173\u11af\u1105\u1161\u110b\u1175\u110b\u1165\u11ab\u1110\u1173"
     },
     {
@@ -3105,7 +3105,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L565",
       "id": "research_inference_motion_research_10_2",
-      "community": 1,
+      "community": 30,
       "norm_label": "10.2 \u1109\u1165\u1107\u1165 \u1104\u1169\u1102\u1173\u11ab \u1105\u1169\u110f\u1165\u11af \u110b\u1166\u11ab\u110c\u1175\u11ab"
     },
     {
@@ -3114,7 +3114,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L577",
       "id": "research_inference_motion_research_10_3",
-      "community": 1,
+      "community": 30,
       "norm_label": "10.3 \u1103\u1166\u110b\u1175\u1110\u1165 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169 \u110b\u1168"
     },
     {
@@ -3123,7 +3123,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L579",
       "id": "research_inference_motion_research_codeblock_24",
-      "community": 1,
+      "community": 30,
       "norm_label": "code:txt (/data)"
     },
     {
@@ -3132,7 +3132,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L598",
       "id": "research_inference_motion_research_11",
-      "community": 1,
+      "community": 26,
       "norm_label": "11. \u110c\u116e\u110b\u116d \u1105\u1175\u1109\u1173\u110f\u1173\u110b\u116a \u1103\u1162\u110b\u1173\u11bc"
     },
     {
@@ -3141,7 +3141,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L600",
       "id": "research_inference_motion_research_1_600",
-      "community": 1,
+      "community": 26,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 1: \u110c\u1175\u11af\u1106\u116e\u11ab \u1103\u1166\u110b\u1175\u1110\u1165 \u1111\u116e\u11b7\u110c\u1175\u11af \u1107\u116e\u110c\u1169\u11a8"
     },
     {
@@ -3150,7 +3150,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L615",
       "id": "research_inference_motion_research_2_615",
-      "community": 1,
+      "community": 26,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 2: \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u1109\u1169\u11a8\u1109\u1165\u11bc\u110b\u1173\u11af \u1106\u1169\u1105\u1173\u11b7"
     },
     {
@@ -3159,7 +3159,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L625",
       "id": "research_inference_motion_research_3",
-      "community": 1,
+      "community": 26,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 3: \u1102\u1165\u1106\u116e \u1108\u1161\u11af\u1105\u1175 \u110c\u1165\u11bc\u1103\u1161\u11b8\u110b\u1173\u11af \u110d\u1175\u11a8\u110b\u1165 \u1110\u1173\u11af\u1105\u1175\u11b7"
     },
     {
@@ -3168,7 +3168,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L632",
       "id": "research_inference_motion_research_4",
-      "community": 1,
+      "community": 26,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 4: \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u110c\u1166\u110c\u1161\u11a8 \u1107\u1167\u11bc\u1106\u1169\u11a8"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L639",
       "id": "research_inference_motion_research_5",
-      "community": 1,
+      "community": 26,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 5: \u110b\u1162\u1102\u1175\u1106\u1166\u110b\u1175\u1109\u1167\u11ab\u110b\u1175 \u110e\u116e\u1105\u1169\u11ab \u1109\u1161\u11bc\u1110\u1162\u110b\u116a \u110b\u1165\u1100\u1173\u11ba\u1102\u1161\u11b7"
     },
     {
@@ -3186,7 +3186,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L648",
       "id": "research_inference_motion_research_12_acceptance_tests",
-      "community": 1,
+      "community": 31,
       "norm_label": "12. acceptance tests"
     },
     {
@@ -3195,7 +3195,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L650",
       "id": "research_inference_motion_research_12_1",
-      "community": 1,
+      "community": 31,
       "norm_label": "12.1 \u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u1165\u11b7\u110c\u1173\u11bc \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -3204,7 +3204,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L667",
       "id": "research_inference_motion_research_12_2",
-      "community": 1,
+      "community": 31,
       "norm_label": "12.2 \u110e\u116e\u1105\u1169\u11ab \u110b\u1166\u11ab\u110c\u1175\u11ab \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -3213,7 +3213,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L709",
       "id": "research_inference_motion_research_12_3_ux",
-      "community": 1,
+      "community": 31,
       "norm_label": "12.3 ux/\u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -3222,7 +3222,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L735",
       "id": "research_inference_motion_research_12_4",
-      "community": 1,
+      "community": 31,
       "norm_label": "12.4 \u110c\u1166\u1111\u116e\u11b7 \u1111\u116e\u11b7\u110c\u1175\u11af \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -3231,7 +3231,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L751",
       "id": "research_inference_motion_research_13",
-      "community": 1,
+      "community": 17,
       "norm_label": "13. \u1112\u116c\u110b\u1174\u110b\u116d\u11bc \u1100\u116f\u11ab\u110c\u1161\u11bc \u1100\u1167\u11af\u1105\u1169\u11ab"
     },
     {
@@ -3240,7 +3240,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L1",
       "id": "docs_research_zero_to_one_team_synthesis_md",
-      "community": 12,
+      "community": 10,
       "norm_label": "zero-to-one-team-synthesis.md"
     },
     {
@@ -3249,7 +3249,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L1",
       "id": "research_zero_to_one_team_synthesis_zero_to_one_team_synthesis",
-      "community": 12,
+      "community": 10,
       "norm_label": "zero-to-one team synthesis"
     },
     {
@@ -3258,7 +3258,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L3",
       "id": "research_zero_to_one_team_synthesis",
-      "community": 12,
+      "community": 10,
       "norm_label": "\u1112\u116c\u110b\u1174 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -3267,7 +3267,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L13",
       "id": "research_zero_to_one_team_synthesis_13",
-      "community": 12,
+      "community": 10,
       "norm_label": "\u1112\u1161\u11b8\u110b\u1174\u1103\u116c\u11ab \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -3276,7 +3276,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L24",
       "id": "research_zero_to_one_team_synthesis_24",
-      "community": 12,
+      "community": 10,
       "norm_label": "\u1100\u1175\u110c\u1169\u11ab \u1109\u1175\u11af\u1111\u1162\u110b\u116a\u110b\u1174 \u1103\u1161\u11ab\u110c\u1165\u11af"
     },
     {
@@ -3285,7 +3285,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L39",
       "id": "research_zero_to_one_team_synthesis_agent_graph",
-      "community": 12,
+      "community": 10,
       "norm_label": "\u1103\u1161\u110b\u1173\u11b7 agent graph"
     },
     {
@@ -3294,7 +3294,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L41",
       "id": "research_zero_to_one_team_synthesis_t1_researcher_akinator",
-      "community": 12,
+      "community": 10,
       "norm_label": "t1 researcher \u2014 \u1109\u1175\u11af\u110c\u1166 akinator \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1105\u1169\u1100\u1173 \u1107\u1169\u1100\u1161\u11bc \u2705"
     },
     {
@@ -3303,7 +3303,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L48",
       "id": "research_zero_to_one_team_synthesis_t2_designer_product_feel_design_handoff",
-      "community": 12,
+      "community": 10,
       "norm_label": "t2 designer \u2014 product feel/design handoff"
     },
     {
@@ -3312,7 +3312,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L55",
       "id": "research_zero_to_one_team_synthesis_t3_architect_engine_data_architecture",
-      "community": 12,
+      "community": 10,
       "norm_label": "t3 architect \u2014 engine/data architecture"
     },
     {
@@ -3321,7 +3321,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L62",
       "id": "research_zero_to_one_team_synthesis_t4_builder_lead_ready_after_t2_t3_pass",
-      "community": 12,
+      "community": 10,
       "norm_label": "t4 builder lead \u2014 ready after t2/t3 pass"
     },
     {
@@ -3330,7 +3330,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L67",
       "id": "research_zero_to_one_team_synthesis_t5_reviewer_qa_gate_owner",
-      "community": 12,
+      "community": 10,
       "norm_label": "t5 reviewer/qa \u2014 gate owner"
     },
     {
@@ -3339,7 +3339,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L72",
       "id": "research_zero_to_one_team_synthesis_next_step",
-      "community": 12,
+      "community": 10,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 next step"
     },
     {
@@ -3411,7 +3411,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "docs_research_korean_food_decision_product_research_md",
-      "community": 9,
+      "community": 8,
       "norm_label": "korean-food-decision-product-research.md"
     },
     {
@@ -3420,7 +3420,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "research_korean_food_decision_product_research_korean_food_decision_product_research",
-      "community": 9,
+      "community": 8,
       "norm_label": "korean food decision product research"
     },
     {
@@ -3429,7 +3429,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L3",
       "id": "research_korean_food_decision_product_research",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u1175\u11ab\u1109\u1161\u110b\u1175\u1110\u1173"
     },
     {
@@ -3438,7 +3438,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L16",
       "id": "research_korean_food_decision_product_research_16",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u110c\u116e\u110b\u116d \u1106\u1162\u11a8\u1105\u1161\u11a8"
     },
     {
@@ -3447,7 +3447,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L18",
       "id": "research_korean_food_decision_product_research_18",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1107\u1162\u1103\u1161\u11af"
     },
     {
@@ -3456,7 +3456,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L24",
       "id": "research_korean_food_decision_product_research_24",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u110b\u116c\u1109\u1175\u11a8"
     },
     {
@@ -3465,7 +3465,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L30",
       "id": "research_korean_food_decision_product_research_30",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u110b\u1163\u1109\u1175\u11a8"
     },
     {
@@ -3474,7 +3474,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L36",
       "id": "research_korean_food_decision_product_research_36",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1112\u1169\u11ab\u1107\u1161\u11b8"
     },
     {
@@ -3483,7 +3483,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L42",
       "id": "research_korean_food_decision_product_research_42",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1173"
     },
     {
@@ -3492,7 +3492,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L48",
       "id": "research_korean_food_decision_product_research_product_thesis",
-      "community": 9,
+      "community": 8,
       "norm_label": "product thesis"
     },
     {
@@ -3501,7 +3501,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L50",
       "id": "research_korean_food_decision_product_research_thesis_1",
-      "community": 9,
+      "community": 8,
       "norm_label": "thesis 1 \u2014 \u1100\u1167\u11af\u110c\u1165\u11bc \u110e\u1162\u11a8\u110b\u1175\u11b7\u110b\u1173\u11af \u1100\u1161\u110c\u1167\u1100\u1161\u1102\u1173\u11ab \u1100\u1166\u110b\u1175\u11b7"
     },
     {
@@ -3510,7 +3510,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L54",
       "id": "research_korean_food_decision_product_research_thesis_2",
-      "community": 9,
+      "community": 8,
       "norm_label": "thesis 2 \u2014 \u110b\u1169\u1102\u1173\u11af\u110b\u1174 \u1100\u1165\u1107\u116e\u1100\u1161\u11b7\u110b\u1173\u11af \u110b\u1175\u11b0\u1102\u1173\u11ab\u1103\u1161"
     },
     {
@@ -3519,7 +3519,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L58",
       "id": "research_korean_food_decision_product_research_thesis_3_reveal",
-      "community": 9,
+      "community": 8,
       "norm_label": "thesis 3 \u2014 \u1102\u1161\u11b8\u1103\u1173\u11a8 \u1100\u1161\u1102\u1173\u11bc\u1112\u1161\u11ab reveal"
     },
     {
@@ -3528,7 +3528,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L70",
       "id": "research_korean_food_decision_product_research_70",
-      "community": 9,
+      "community": 8,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110c\u1166\u1111\u116e\u11b7\u110b\u1161\u11ab"
     },
     {
@@ -3537,7 +3537,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L76",
       "id": "research_korean_food_decision_product_research_mvp_scope",
-      "community": 9,
+      "community": 8,
       "norm_label": "mvp scope"
     },
     {
@@ -3546,7 +3546,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L84",
       "id": "research_korean_food_decision_product_research_non_goals",
-      "community": 9,
+      "community": 8,
       "norm_label": "non-goals"
     },
     {
@@ -3618,7 +3618,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 14,
+      "community": 15,
       "norm_label": "product.md"
     },
     {
@@ -3627,7 +3627,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "current_product_product_food_akinator_zero_to_one",
-      "community": 14,
+      "community": 15,
       "norm_label": "product \u2014 food akinator zero-to-one"
     },
     {
@@ -3636,7 +3636,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u110c\u1166\u1111\u116e\u11b7 \u1112\u1161\u11ab \u110c\u116e\u11af \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -3645,7 +3645,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_7",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1106\u116e\u11ab\u110c\u1166"
     },
     {
@@ -3654,7 +3654,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L11",
       "id": "current_product_thesis",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u110c\u1166\u1111\u116e\u11b7 thesis"
     },
     {
@@ -3663,7 +3663,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L25",
       "id": "current_product_mvp",
-      "community": 14,
+      "community": 15,
       "norm_label": "mvp \u1107\u1165\u11b7\u110b\u1171"
     },
     {
@@ -3672,7 +3672,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L35",
       "id": "current_product_non_goals",
-      "community": 14,
+      "community": 15,
       "norm_label": "non-goals"
     },
     {
@@ -3681,7 +3681,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L46",
       "id": "current_product_builder",
-      "community": 14,
+      "community": 15,
       "norm_label": "builder \u1109\u1175\u110c\u1161\u11a8 \u110c\u1169\u1100\u1165\u11ab"
     },
     {
@@ -3690,7 +3690,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L59",
       "id": "current_product_59",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u110b\u116e\u1109\u1165\u11ab\u1109\u116e\u11ab\u110b\u1171"
     },
     {
@@ -3699,7 +3699,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L68",
       "id": "current_product_v0",
-      "community": 14,
+      "community": 15,
       "norm_label": "v0 \u1109\u1165\u11bc\u1100\u1169\u11bc \u1100\u1175\u110c\u116e\u11ab"
     },
     {
@@ -3708,7 +3708,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 8,
+      "community": 9,
       "norm_label": "architecture.md"
     },
     {
@@ -3717,7 +3717,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "current_architecture_architecture_zero_to_one",
-      "community": 8,
+      "community": 9,
       "norm_label": "architecture \u2014 zero-to-one"
     },
     {
@@ -3726,7 +3726,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L3",
       "id": "current_architecture",
-      "community": 8,
+      "community": 9,
       "norm_label": "\u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -3735,7 +3735,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L7",
       "id": "current_architecture_candidate_schema",
-      "community": 8,
+      "community": 9,
       "norm_label": "candidate schema"
     },
     {
@@ -3744,7 +3744,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L9",
       "id": "current_architecture_codeblock_1",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:ts (type candidate = {)"
     },
     {
@@ -3753,7 +3753,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L26",
       "id": "current_architecture_question_schema",
-      "community": 8,
+      "community": 9,
       "norm_label": "question schema"
     },
     {
@@ -3762,7 +3762,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L28",
       "id": "current_architecture_codeblock_2",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -3771,7 +3771,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L42",
       "id": "current_architecture_answer_semantics",
-      "community": 8,
+      "community": 9,
       "norm_label": "answer semantics"
     },
     {
@@ -3780,7 +3780,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L50",
       "id": "current_architecture_scoring_mvp",
-      "community": 8,
+      "community": 9,
       "norm_label": "scoring mvp"
     },
     {
@@ -3789,7 +3789,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L56",
       "id": "current_architecture_adaptive_selector",
-      "community": 8,
+      "community": 9,
       "norm_label": "adaptive selector"
     },
     {
@@ -3798,7 +3798,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L83",
       "id": "current_architecture_reveal_threshold",
-      "community": 8,
+      "community": 9,
       "norm_label": "reveal threshold"
     },
     {
@@ -3807,7 +3807,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L93",
       "id": "current_architecture_wrong_recovery",
-      "community": 8,
+      "community": 9,
       "norm_label": "wrong recovery"
     },
     {
@@ -3816,7 +3816,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L102",
       "id": "current_architecture_character_cue_contract",
-      "community": 8,
+      "community": 9,
       "norm_label": "character cue contract"
     },
     {
@@ -3825,7 +3825,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L123",
       "id": "current_architecture_builder_gate",
-      "community": 8,
+      "community": 9,
       "norm_label": "builder gate"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L132",
       "id": "current_architecture_golden_path_fixture_contract",
-      "community": 8,
+      "community": 9,
       "norm_label": "golden path fixture contract"
     },
     {
@@ -3843,7 +3843,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L142",
       "id": "current_architecture_minimal_browser_ui_scaffold",
-      "community": 8,
+      "community": 9,
       "norm_label": "minimal browser ui scaffold"
     },
     {
@@ -3852,7 +3852,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "docs_current_qa_md",
-      "community": 13,
+      "community": 12,
       "norm_label": "qa.md"
     },
     {
@@ -3861,7 +3861,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "current_qa_qa_zero_to_one_acceptance",
-      "community": 13,
+      "community": 12,
       "norm_label": "qa \u2014 zero-to-one acceptance"
     },
     {
@@ -3870,79 +3870,79 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "id": "current_qa",
-      "community": 13,
+      "community": 12,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
       "label": "Product acceptance",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "current_qa_product_acceptance",
-      "community": 13,
+      "community": 12,
       "norm_label": "product acceptance"
     },
     {
       "label": "Direct-play derived QA",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L31",
+      "source_location": "L33",
       "id": "current_qa_direct_play_derived_qa",
-      "community": 13,
+      "community": 12,
       "norm_label": "direct-play derived qa"
     },
     {
       "label": "Data tests",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "current_qa_data_tests",
-      "community": 13,
+      "community": 12,
       "norm_label": "data tests"
     },
     {
       "label": "Engine tests",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L51",
+      "source_location": "L53",
       "id": "current_qa_engine_tests",
-      "community": 13,
+      "community": 12,
       "norm_label": "engine tests"
     },
     {
       "label": "Golden scenario tests",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L67",
+      "source_location": "L69",
       "id": "current_qa_golden_scenario_tests",
-      "community": 13,
+      "community": 12,
       "norm_label": "golden scenario tests"
     },
     {
       "label": "Browser QA",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L78",
+      "source_location": "L80",
       "id": "current_qa_browser_qa",
-      "community": 13,
+      "community": 12,
       "norm_label": "browser qa"
     },
     {
       "label": "Live canary",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L89",
+      "source_location": "L91",
       "id": "current_qa_live_canary",
-      "community": 13,
+      "community": 12,
       "norm_label": "live canary"
     },
     {
       "label": "Minimal UI scaffold DOM checks",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L100",
+      "source_location": "L102",
       "id": "current_qa_minimal_ui_scaffold_dom_checks",
-      "community": 13,
+      "community": 12,
       "norm_label": "minimal ui scaffold dom checks"
     },
     {
@@ -3951,7 +3951,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "docs_current_release_md",
-      "community": 17,
+      "community": 16,
       "norm_label": "release.md"
     },
     {
@@ -3960,7 +3960,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "current_release_release_zero_to_one",
-      "community": 17,
+      "community": 16,
       "norm_label": "release \u2014 zero-to-one"
     },
     {
@@ -3969,43 +3969,43 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "id": "current_release_release",
-      "community": 17,
+      "community": 16,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 release \u1109\u1161\u11bc\u1110\u1162"
     },
     {
       "label": "Release policy",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "current_release_release_policy",
-      "community": 17,
+      "community": 16,
       "norm_label": "release policy"
     },
     {
       "label": "Repository artifact policy",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "current_release_repository_artifact_policy",
-      "community": 17,
+      "community": 16,
       "norm_label": "repository artifact policy"
     },
     {
       "label": "\uae08\uc9c0",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "current_release",
-      "community": 17,
+      "community": 16,
       "norm_label": "\u1100\u1173\u11b7\u110c\u1175"
     },
     {
       "label": "\ubc30\ud3ec \uc644\ub8cc \uc815\uc758",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L40",
-      "id": "current_release_40",
-      "community": 17,
+      "source_location": "L41",
+      "id": "current_release_41",
+      "community": 16,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -4014,7 +4014,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "docs_current_design_md",
-      "community": 15,
+      "community": 14,
       "norm_label": "design.md"
     },
     {
@@ -4023,7 +4023,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "current_design_design_zero_to_one_direction",
-      "community": 15,
+      "community": 14,
       "norm_label": "design \u2014 zero-to-one direction"
     },
     {
@@ -4032,7 +4032,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L3",
       "id": "current_design",
-      "community": 15,
+      "community": 14,
       "norm_label": "\u1103\u1175\u110c\u1161\u110b\u1175\u11ab \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -4041,7 +4041,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L9",
       "id": "current_design_reference_principles_from_direct_play",
-      "community": 15,
+      "community": 14,
       "norm_label": "reference principles from direct play"
     },
     {
@@ -4050,7 +4050,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L19",
       "id": "current_design_reference_principles_from_akinator",
-      "community": 15,
+      "community": 14,
       "norm_label": "reference principles from akinator"
     },
     {
@@ -4059,7 +4059,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L28",
       "id": "current_design_non_copy_boundary",
-      "community": 15,
+      "community": 14,
       "norm_label": "non-copy boundary"
     },
     {
@@ -4068,7 +4068,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L42",
       "id": "current_design_screen_state_inventory",
-      "community": 15,
+      "community": 14,
       "norm_label": "screen/state inventory"
     },
     {
@@ -4077,7 +4077,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L78",
       "id": "current_design_character_requirement",
-      "community": 15,
+      "community": 14,
       "norm_label": "character requirement"
     },
     {
@@ -4086,7 +4086,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L92",
       "id": "current_design_visual_acceptance",
-      "community": 15,
+      "community": 14,
       "norm_label": "visual acceptance"
     },
     {
@@ -4095,15 +4095,33 @@
       "source_file": "docs/current/design.md",
       "source_location": "L109",
       "id": "current_design_current_minimal_ui_scaffold",
-      "community": 15,
+      "community": 14,
       "norm_label": "current minimal ui scaffold"
+    },
+    {
+      "label": "2026-05-30 \u2014 Threshold / golden paths / minimal UI scaffold pilot local progress",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "community": 33,
+      "norm_label": "2026-05-30 \u2014 threshold / golden paths / minimal ui scaffold pilot local progress",
+      "id": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_progress"
+    },
+    {
+      "label": "\ubc30\ud3ec \uc644\ub8cc \uc815\uc758",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L40",
+      "community": 16,
+      "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
+      "id": "current_release_40"
     },
     {
       "label": "{ session, askedQuestionIds }",
       "file_type": "code",
       "source_file": "tests/engine-golden-scenarios.test.ts",
       "source_location": "L62",
-      "community": 3,
+      "community": 2,
       "norm_label": "{ session, askedquestionids }",
       "id": "tests_engine_golden_scenarios_test_session_askedquestionids"
     },
@@ -4112,7 +4130,7 @@
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L33",
-      "community": 17,
+      "community": 16,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
       "id": "current_release_33"
     },
@@ -4121,7 +4139,7 @@
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L32",
-      "community": 17,
+      "community": 16,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
       "id": "current_release_32"
     }
@@ -7164,9 +7182,9 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_changelog_changelog",
-      "target": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_progress"
+      "target": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_pass",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -7177,6 +7195,16 @@
       "confidence_score": 1.0,
       "source": "docs_changelog_changelog",
       "target": "docs_changelog_2026_05_29_adaptive_selector_pilot_local_pass"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_changelog_changelog",
+      "target": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_progress"
     },
     {
       "relation": "contains",
@@ -9702,6 +9730,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/release.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "current_release_release_zero_to_one",
+      "target": "current_release_41",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
       "source_location": "L40",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9820,5 +9858,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f8aadfb9f560a8400b9c5dcd92aba8cfeb223e83"
+  "built_at_commit": "92c6139c0cd886cb32a760c810bf38bba60165ac"
 }

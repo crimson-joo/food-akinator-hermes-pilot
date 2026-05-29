@@ -4,6 +4,8 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
+현재 threshold/golden UI pilot의 local QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check다. PR/merge/deploy/live canary와 실제 mobile viewport QA는 아직 수행하지 않았다.
+
 ## Product acceptance
 
 Pass 조건:

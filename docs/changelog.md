@@ -1,12 +1,14 @@
 # Changelog
 
-## 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local progress
+## 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local PASS
 
 - Added threshold/reveal/wrong-recovery session state machine and golden Korean food scenario acceptance fixtures.
 - Added minimal Vite browser scaffold with Entry → Asking → Answer accepted → Thinking → Guessing → Reveal → Wrong recovery states.
 - Added visible CSS/DOM character stage placeholder with QA hooks for `idle`, `ask`, `thinking`, `confident`, `surprised`, `recover`, and `reveal` cues.
 - Added UI render/transition tests that verify fixed 5-answer controls, Korean question/reveal/recovery copy, no internal score/probability copy, reduced-motion CSS, and recovered `recover` cue preservation.
-- Not done: PR, merge, deploy, live canary, final mascot/brand polish, large catalogue expansion.
+- Fixed reviewer-blocking UI error trust-boundary issue: raw engine errors/question ids are no longer rendered to users; safe Korean recovery copy is shown instead.
+- Final local gates passed: integrated review remediation, QA browser flow, `npm test`, `npm run typecheck`, `npm run build`, focused CLI acceptance probe.
+- Not done: PR, merge, deploy, live canary, actual mobile viewport QA, final mascot/brand polish, large catalogue expansion.
 
 
 ## 2026-05-29 — Adaptive selector pilot local PASS
