@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c5f1981c`
+- Built from commit: `9ad58e2a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,12 +64,12 @@
 ## Communities (27 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.05
-Nodes (41): 1. 목표와 핵심 제품 경험, 11. 주요 리스크와 대응, 12.1 데이터 검증 테스트, 12.2 추론 엔진 테스트, 12.3 UX/캐릭터 테스트, 12.4 제품 품질 테스트, 12. Acceptance tests, 13. 회의용 권장 결론 (+33 more)
+Cohesion: 0.07
+Nodes (34): AnswerKey, Candidate, QuestionRole, AnsweredQuestion, CandidateScore, scoreCandidates(), FOLLOWUP_ROLES, getActiveCandidates() (+26 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.07
-Nodes (34): ANSWER_VALUES, AnswerKey, Candidate, AnsweredQuestion, CandidateScore, scoreCandidates(), FOLLOWUP_ROLES, getActiveCandidates() (+26 more)
+Cohesion: 0.05
+Nodes (41): 1. 목표와 핵심 제품 경험, 10.1 클라이언트, 10.2 서버 또는 로컬 엔진, 10.3 데이터 파일 구조 예, 10. 전체 MVP 아키텍처, 11. 주요 리스크와 대응, 12.1 데이터 검증 테스트, 12.2 추론 엔진 테스트 (+33 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.08
@@ -77,7 +77,7 @@ Nodes (23): 판정, 캐릭터 역할, 진행감 표현, 공통 게임 루프, 1.
 
 ### Community 3 - "Community 3"
 Cohesion: 0.14
-Nodes (19): AnswerValue, asRecord(), LEVELS, Question, QUESTION_AXES, QUESTION_ROLES, QuestionAxis, QuestionId (+11 more)
+Nodes (19): ANSWER_VALUES, AnswerValue, asRecord(), LEVELS, Question, QUESTION_AXES, QUESTION_ROLES, QuestionAxis (+11 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.1
@@ -101,23 +101,23 @@ Nodes (13): 원칙, Adaptive selector, Answer semantics, Architecture — Zero-t
 
 ### Community 9 - "Community 9"
 Cohesion: 0.17
-Nodes (11): 회의 판정, 합의된 방향, 기존 실패와의 단절, 다음 agent graph, 현재 next step, T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅, T2 Designer — product feel/design handoff, T3 Architect — engine/data architecture (+3 more)
+Nodes (12): 7.1 세션 시작, 7.2 답변 제출, 7.3 추측 피드백, 7. 엔진 API 초안, code:http (POST /sessions), code:json ({), code:http (POST /sessions/{id}/answers), code:json ({) (+4 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.17
-Nodes (12): 7.1 세션 시작, 7.2 답변 제출, 7.3 추측 피드백, 7. 엔진 API 초안, code:http (POST /sessions), code:json ({), code:http (POST /sessions/{id}/answers), code:json ({) (+4 more)
+Nodes (11): 회의 판정, 합의된 방향, 기존 실패와의 단절, 다음 agent graph, 현재 next step, T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅, T2 Designer — product feel/design handoff, T3 Architect — engine/data architecture (+3 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.2
-Nodes (9): 제품 한 줄 정의, 구현 우선순위, 핵심 문제, Builder 시작 조건, MVP 범위, Non-goals, Product — Food Akinator Zero-to-One, 제품 thesis (+1 more)
+Nodes (10): 4.1 후보 확률 정규화, 4.2 Expected information gain, 4.3 작은 도메인에서의 간단 대안, 4. Adaptive next-question selection, code:txt (IG(q) = H(C) - Σ_a P(a | q) * H(C | answer=a, q)), code:txt (questionScore(q) = IG(q)), code:txt (mean = Σ P(c) * expected(c,q)), code:txt (P(c) = exp(logScore(c) / T) / Σ exp(logScore(i) / T)) (+2 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.2
-Nodes (10): 4.1 후보 확률 정규화, 4.2 Expected information gain, 4.3 작은 도메인에서의 간단 대안, 4. Adaptive next-question selection, code:txt (IG(q) = H(C) - Σ_a P(a | q) * H(C | answer=a, q)), code:txt (questionScore(q) = IG(q)), code:txt (mean = Σ P(c) * expected(c,q)), code:txt (P(c) = exp(logScore(c) / T) / Σ exp(logScore(i) / T)) (+2 more)
+Nodes (9): 제품 한 줄 정의, 구현 우선순위, 핵심 문제, Builder 시작 조건, MVP 범위, Non-goals, Product — Food Akinator Zero-to-One, 제품 thesis (+1 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.22
-Nodes (8): 금지, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 현재 release 상태, Release policy, Release — Zero-to-One, Repository artifact policy
+Nodes (8): 핵심 판정, Browser QA, Data tests, Direct-play derived QA, Engine tests, Live canary, Product acceptance, QA — Zero-to-One Acceptance
 
 ### Community 14 - "Community 14"
 Cohesion: 0.22
@@ -125,7 +125,7 @@ Nodes (8): 디자인 방향, Character requirement, Design — Zero-to-One Direc
 
 ### Community 15 - "Community 15"
 Cohesion: 0.22
-Nodes (8): 핵심 판정, Browser QA, Data tests, Direct-play derived QA, Engine tests, Live canary, Product acceptance, QA — Zero-to-One Acceptance
+Nodes (8): 금지, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 현재 release 상태, Release policy, Release — Zero-to-One, Repository artifact policy
 
 ### Community 16 - "Community 16"
 Cohesion: 0.25
@@ -133,7 +133,7 @@ Nodes (7): Akinator Direct Play Log — Harry Potter, Entry flow observations, G
 
 ### Community 17 - "Community 17"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Pikachu, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Elon Musk, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 18 - "Community 18"
 Cohesion: 0.29
@@ -145,11 +145,11 @@ Nodes (6): 직접 플레이 상태, 관찰된 핵심 원리, Akinator Reference 
 
 ### Community 20 - "Community 20"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Heung-min Son, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Pikachu, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 21 - "Community 21"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Elon Musk, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Heung-min Son, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 22 - "Community 22"
 Cohesion: 0.29
@@ -161,7 +161,7 @@ Nodes (5): 현재 상태, 목표, 원칙, 문서, Food Akinator — Zero-to-One 
 
 ### Community 24 - "Community 24"
 Cohesion: 0.4
-Nodes (5): 10.1 클라이언트, 10.2 서버 또는 로컬 엔진, 10.3 데이터 파일 구조 예, 10. 전체 MVP 아키텍처, code:txt (/data)
+Nodes (5): 9.1 1순위: Rive state machine, 9.2 2순위: Lottie clips + light state controller, 9.3 Fallback: layered raster, 9. 추천 MVP 캐릭터 파이프라인, code:ts (function cueFromEngine(state, confidence, lastAnswer, wrongG)
 
 ## Knowledge Gaps
 - **231 isolated node(s):** `isExplicitHermesRun`, `validQuestion`, `question`, `candidate`, `candidates` (+226 more)
@@ -171,17 +171,17 @@ Nodes (5): 10.1 클라이언트, 10.2 서버 또는 로컬 엔진, 10.3 데이�
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안` connect `Community 0` to `Community 24`, `Community 18`, `Community 10`, `Community 12`?**
+- **Why does `작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안` connect `Community 1` to `Community 24`, `Community 9`, `Community 18`, `Community 11`?**
   _High betweenness centrality (0.042) - this node is a cross-community bridge._
-- **Why does `7. 엔진 API 초안` connect `Community 10` to `Community 0`?**
+- **Why does `7. 엔진 API 초안` connect `Community 9` to `Community 1`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `4. Adaptive next-question selection` connect `Community 12` to `Community 0`?**
+- **Why does `4. Adaptive next-question selection` connect `Community 11` to `Community 1`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `isExplicitHermesRun`, `validQuestion`, `question` to the rest of the system?**
   _231 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
-- **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
