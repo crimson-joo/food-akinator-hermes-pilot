@@ -96,3 +96,15 @@ Fail 조건:
 - animation/reduced-motion fallback 확인
 - old implementation markers absence 확인
 - acceptance flow 1회 이상 실제 플레이
+
+### Minimal UI scaffold DOM checks
+
+현재 minimal UI scaffold에서 자동/수동으로 확인할 수 있는 DOM 기준:
+
+- Entry: `data-ui-state="entry"`, `data-character-cue="idle"`, headline `오늘 뭐 먹을지 제가 맞혀볼게요.`, CTA `시작하기`.
+- Asking: `data-ui-state="asking"`, 질문 하나, `[data-answer-key]` 5개, 버튼 label 순서 고정.
+- Answer accepted / Thinking: `data-ui-state="answerAccepted"`와 `data-ui-state="thinking"`이 별도로 나타나며, thinking은 `data-character-cue="thinking"`과 disabled controls를 보여준다.
+- Guessing: `data-ui-state="guessing"`, `data-character-cue="confident"`, `혹시… {menu}인가요?`, `맞아요` / `아니에요`.
+- Wrong recovery: `data-ui-state="recovering"`, `data-character-cue="surprised"`, `data-rejected-candidate-ids`, `제외됨: {menu}` chip. 이후 recovered asking screen은 engine `recover` cue를 유지한다.
+- Reveal: `data-ui-state="revealed"`, `data-character-cue="reveal"`, one menu declaration + 2~3 Korean reason seeds; visible text must not include `score`, `probability`, `top1`, `top3`, `attribute`, `clue:`.
+- Reduced motion: CSS includes `@media (prefers-reduced-motion: reduce)` and flow remains usable without large motion.

@@ -138,3 +138,13 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - 필수 path coverage: soup/stew, fried/crispy, spicy snack, rice/mixed bowl, noodle/comfort.
 - scenario runner는 session API만 사용하며 selector/scoring private helper에 직접 의존하지 않는다.
 - 각 path는 answered question 반복 금지, 6~9턴 reveal 또는 graceful exhausted/recovery, 한국어 reason seed 품질을 검증한다.
+
+## Minimal browser UI scaffold
+
+현재 UI scaffold는 Vite entrypoint `index.html`에서 `src/ui/app.ts`를 로드하는 로컬-only browser app이다.
+
+- `renderApp(model)`은 테스트 가능한 pure renderer로, `data-ui-state`, `data-character-cue`, `data-answer-key`, `data-question-id`, `data-guess-candidate-id`, `data-result-candidate-id`, `data-rejected-candidate-ids` QA hook을 출력한다.
+- `mountApp(root)`은 presentation transition만 관리한다: answer click → `answerAccepted` → `thinking` → engine `submitAnswer()` 결과를 `asking` 또는 `guessing`으로 매핑한다.
+- Engine은 `thinking`/`surprised` timer를 갖지 않는다. UI가 transient state로 suspense와 wrong reaction을 표현한 뒤 session API 결과를 소비한다.
+- Demo browser dataset은 `src/ui/app.ts` 안의 작은 active 후보/질문 set이며, canonical golden acceptance fixture(`tests/fixtures/golden-scenarios.ts`)와 bulk catalogue를 대체하지 않는다.
+- Production build는 `npm run build`로 `dist/`에 생성되며, `dist/`는 local generated artifact로 gitignore한다.
