@@ -1,8 +1,7 @@
-# Graph Report - food-akinator-hermes-pilot  (2026-05-29)
+# Graph Report - .  (2026-05-29)
 
 ## Corpus Check
-- 23 files · ~12,466 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
 - 315 nodes · 312 edges · 25 communities
@@ -10,7 +9,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0f1d3da7`
+- Built from commit: `e8fa39a3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -80,11 +79,11 @@ Nodes (17): 현재 판정, 시도한 경로, 1. Headless/browser 공식 웹, 2. 
 
 ### Community 5 - "Community 5"
 Cohesion: 0.12
-Nodes (15): 추천 캐릭터 방향, 후보 비교, 최종 추천, 5-answer rhythm, A. 입맛 탐정 “맛정이”, B. 보글 셰프, Builder handoff, C. 입맛 레이더 “냠테나” (+7 more)
+Nodes (15): 핵심 인사이트, 주요 맥락, 배달, 외식, 야식, 혼밥, 데이트, 추천 제품안 (+7 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.12
-Nodes (15): 핵심 인사이트, 주요 맥락, 배달, 외식, 야식, 혼밥, 데이트, 추천 제품안 (+7 more)
+Nodes (15): 추천 캐릭터 방향, 후보 비교, 최종 추천, 5-answer rhythm, A. 입맛 탐정 “맛정이”, B. 보글 셰프, Builder handoff, C. 입맛 레이더 “냠테나” (+7 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.14
@@ -92,11 +91,11 @@ Nodes (13): 원칙, Adaptive selector, Answer semantics, Architecture — Zero-t
 
 ### Community 8 - "Community 8"
 Cohesion: 0.17
-Nodes (11): 회의 판정, 합의된 방향, 기존 실패와의 단절, 다음 agent graph, 현재 next step, T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅, T2 Designer — product feel/design handoff, T3 Architect — engine/data architecture (+3 more)
+Nodes (12): 7.1 세션 시작, 7.2 답변 제출, 7.3 추측 피드백, 7. 엔진 API 초안, code:http (POST /sessions), code:json ({), code:http (POST /sessions/{id}/answers), code:json ({) (+4 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.17
-Nodes (12): 7.1 세션 시작, 7.2 답변 제출, 7.3 추측 피드백, 7. 엔진 API 초안, code:http (POST /sessions), code:json ({), code:http (POST /sessions/{id}/answers), code:json ({) (+4 more)
+Nodes (11): 회의 판정, 합의된 방향, 기존 실패와의 단절, 다음 agent graph, 현재 next step, T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅, T2 Designer — product feel/design handoff, T3 Architect — engine/data architecture (+3 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.2
@@ -108,11 +107,11 @@ Nodes (9): 제품 한 줄 정의, 구현 우선순위, 핵심 문제, Builder �
 
 ### Community 12 - "Community 12"
 Cohesion: 0.22
-Nodes (8): 핵심 판정, Browser QA, Data tests, Direct-play derived QA, Engine tests, Live canary, Product acceptance, QA — Zero-to-One Acceptance
+Nodes (8): 디자인 방향, Character requirement, Design — Zero-to-One Direction, Non-copy boundary, Reference principles from Akinator, Reference principles from direct play, Screen/state inventory, Visual acceptance
 
 ### Community 13 - "Community 13"
 Cohesion: 0.22
-Nodes (8): 디자인 방향, Character requirement, Design — Zero-to-One Direction, Non-copy boundary, Reference principles from Akinator, Reference principles from direct play, Screen/state inventory, Visual acceptance
+Nodes (8): 핵심 판정, Browser QA, Data tests, Direct-play derived QA, Engine tests, Live canary, Product acceptance, QA — Zero-to-One Acceptance
 
 ### Community 14 - "Community 14"
 Cohesion: 0.25
@@ -120,27 +119,27 @@ Nodes (7): Akinator Direct Play Log — Harry Potter, Entry flow observations, G
 
 ### Community 15 - "Community 15"
 Cohesion: 0.29
-Nodes (6): 직접 플레이 상태, 관찰된 핵심 원리, Akinator Reference Observations, Food 서비스 적용 원칙, Non-copy boundary, 추가 리서치 TODO
+Nodes (6): Akinator Direct Play Log — Elon Musk, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 16 - "Community 16"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Pikachu, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (7): 3.1 점수 갱신 방식 A: soft distance scoring, MVP 추천, 3.2 점수 갱신 방식 B: naive Bayes, 3. 5-answer weight semantics, code:txt (logScore(c) = log(prior(c)) + Σ answered q [ weight(q, answe), code:txt (similarity(a, e) = 1 - abs(a - e)        // 범위 대략 -1~1), code:txt (similarity(a, e) = - ((a - e)^2) / (2σ²)), code:txt (answerConfidence = abs(answerValue)      // yes/no는 1, proba)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Heung-min Son, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Naruto Uzumaki, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 18 - "Community 18"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Elon Musk, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): 직접 플레이 상태, 관찰된 핵심 원리, Akinator Reference Observations, Food 서비스 적용 원칙, Non-copy boundary, 추가 리서치 TODO
 
 ### Community 19 - "Community 19"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Naruto Uzumaki, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Heung-min Son, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 20 - "Community 20"
 Cohesion: 0.29
-Nodes (7): 3.1 점수 갱신 방식 A: soft distance scoring, MVP 추천, 3.2 점수 갱신 방식 B: naive Bayes, 3. 5-answer weight semantics, code:txt (logScore(c) = log(prior(c)) + Σ answered q [ weight(q, answe), code:txt (similarity(a, e) = 1 - abs(a - e)        // 범위 대략 -1~1), code:txt (similarity(a, e) = - ((a - e)^2) / (2σ²)), code:txt (answerConfidence = abs(answerValue)      // yes/no는 1, proba)
+Nodes (6): Akinator Direct Play Log — Pikachu, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 21 - "Community 21"
 Cohesion: 0.33
@@ -165,9 +164,9 @@ Nodes (5): 2. 도메인 데이터 모델, 2.1 Candidate schema: 음식 후보, 2
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안` connect `Community 0` to `Community 9`, `Community 10`, `Community 20`, `Community 21`, `Community 24`?**
+- **Why does `작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안` connect `Community 0` to `Community 8`, `Community 10`, `Community 16`, `Community 21`, `Community 24`?**
   _High betweenness centrality (0.052) - this node is a cross-community bridge._
-- **Why does `7. 엔진 API 초안` connect `Community 9` to `Community 0`?**
+- **Why does `7. 엔진 API 초안` connect `Community 8` to `Community 0`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
 - **Why does `4. Adaptive next-question selection` connect `Community 10` to `Community 0`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
