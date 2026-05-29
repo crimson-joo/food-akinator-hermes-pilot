@@ -9,7 +9,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L1",
       "id": "vitest_config_ts",
-      "community": 26,
+      "community": 27,
       "norm_label": "vitest.config.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L4",
       "id": "food_akinator_hermes_pilot_vitest_config_isexplicithermesrun",
-      "community": 26,
+      "community": 27,
       "norm_label": "isexplicithermesrun"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L1",
       "id": "tests_engine_session_test_ts",
-      "community": 2,
+      "community": 5,
       "norm_label": "engine-session.test.ts"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L5",
       "id": "tests_engine_session_test_candidate",
-      "community": 2,
+      "community": 5,
       "norm_label": "candidate()"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L20",
       "id": "tests_engine_session_test_question",
-      "community": 2,
+      "community": 5,
       "norm_label": "question()"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L34",
       "id": "tests_engine_session_test_answeroptions",
-      "community": 2,
+      "community": 5,
       "norm_label": "answeroptions"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L36",
       "id": "tests_engine_session_test_corequestions",
-      "community": 2,
+      "community": 5,
       "norm_label": "corequestions"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L46",
       "id": "tests_engine_session_test_corecandidates",
-      "community": 2,
+      "community": 5,
       "norm_label": "corecandidates"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L76",
       "id": "tests_engine_session_test_dataset",
-      "community": 2,
+      "community": 5,
       "norm_label": "dataset()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L87",
       "id": "tests_engine_session_test_session",
-      "community": 2,
+      "community": 5,
       "norm_label": "session"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L99",
       "id": "tests_engine_session_test_next",
-      "community": 2,
+      "community": 5,
       "norm_label": "next"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L138",
       "id": "tests_engine_session_test_questions",
-      "community": 2,
+      "community": 5,
       "norm_label": "questions"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L139",
       "id": "tests_engine_session_test_candidates",
-      "community": 2,
+      "community": 5,
       "norm_label": "candidates"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L144",
       "id": "tests_engine_session_test_data",
-      "community": 2,
+      "community": 5,
       "norm_label": "data"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L184",
       "id": "tests_engine_session_test_recovered",
-      "community": 2,
+      "community": 5,
       "norm_label": "recovered"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L203",
       "id": "tests_engine_session_test_asked",
-      "community": 2,
+      "community": 5,
       "norm_label": "asked"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L236",
       "id": "tests_engine_session_test_first",
-      "community": 2,
+      "community": 5,
       "norm_label": "first"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L239",
       "id": "tests_engine_session_test_second",
-      "community": 2,
+      "community": 5,
       "norm_label": "second"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L244",
       "id": "tests_engine_session_test_asking",
-      "community": 2,
+      "community": 5,
       "norm_label": "asking"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L245",
       "id": "tests_engine_session_test_confident",
-      "community": 2,
+      "community": 5,
       "norm_label": "confident"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L250",
       "id": "tests_engine_session_test_recover",
-      "community": 2,
+      "community": 5,
       "norm_label": "recover"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L252",
       "id": "tests_engine_session_test_unknownquestions",
-      "community": 2,
+      "community": 5,
       "norm_label": "unknownquestions"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L253",
       "id": "tests_engine_session_test_unknowncandidates",
-      "community": 2,
+      "community": 5,
       "norm_label": "unknowncandidates"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L257",
       "id": "tests_engine_session_test_unknowndata",
-      "community": 2,
+      "community": 5,
       "norm_label": "unknowndata"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "tests/engine-session.test.ts",
       "source_location": "L258",
       "id": "tests_engine_session_test_exhausted",
-      "community": 2,
+      "community": 5,
       "norm_label": "exhausted"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L1",
       "id": "tests_engine_domain_test_ts",
-      "community": 0,
+      "community": 3,
       "norm_label": "engine-domain.test.ts"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L38",
       "id": "tests_engine_domain_test_validquestion",
-      "community": 0,
+      "community": 3,
       "norm_label": "validquestion"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L55",
       "id": "tests_engine_domain_test_question",
-      "community": 0,
+      "community": 3,
       "norm_label": "question"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L93",
       "id": "tests_engine_domain_test_candidate",
-      "community": 0,
+      "community": 3,
       "norm_label": "candidate"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L1",
       "id": "tests_engine_selector_test_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "engine-selector.test.ts"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L6",
       "id": "tests_engine_selector_test_candidate",
-      "community": 0,
+      "community": 1,
       "norm_label": "candidate()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L20",
       "id": "tests_engine_selector_test_question",
-      "community": 0,
+      "community": 1,
       "norm_label": "question()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L37",
       "id": "tests_engine_selector_test_ids",
-      "community": 0,
+      "community": 1,
       "norm_label": "ids()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L43",
       "id": "tests_engine_selector_test_candidates",
-      "community": 0,
+      "community": 1,
       "norm_label": "candidates"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L48",
       "id": "tests_engine_selector_test_questions",
-      "community": 0,
+      "community": 1,
       "norm_label": "questions"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L56",
       "id": "tests_engine_selector_test_ranked",
-      "community": 0,
+      "community": 1,
       "norm_label": "ranked"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L89",
       "id": "tests_engine_selector_test_neartie",
-      "community": 0,
+      "community": 1,
       "norm_label": "neartie"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L99",
       "id": "tests_engine_selector_test_strongsignal",
-      "community": 0,
+      "community": 1,
       "norm_label": "strongsignal"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L119",
       "id": "tests_engine_selector_test_selected",
-      "community": 0,
+      "community": 1,
       "norm_label": "selected"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L129",
       "id": "tests_engine_selector_test_fallback",
-      "community": 0,
+      "community": 1,
       "norm_label": "fallback"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L262",
       "id": "tests_engine_selector_test_pick",
-      "community": 0,
+      "community": 1,
       "norm_label": "pick()"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L271",
       "id": "tests_engine_selector_test_soupyes",
-      "community": 0,
+      "community": 1,
       "norm_label": "soupyes"
     },
     {
@@ -396,8 +396,44 @@
       "source_file": "tests/engine-selector.test.ts",
       "source_location": "L272",
       "id": "tests_engine_selector_test_soupno",
-      "community": 0,
+      "community": 1,
       "norm_label": "soupno"
+    },
+    {
+      "label": "engine-golden-scenarios.test.ts",
+      "file_type": "code",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L1",
+      "id": "tests_engine_golden_scenarios_test_ts",
+      "community": 2,
+      "norm_label": "engine-golden-scenarios.test.ts"
+    },
+    {
+      "label": "answerCurrent()",
+      "file_type": "code",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L6",
+      "id": "tests_engine_golden_scenarios_test_answercurrent",
+      "community": 2,
+      "norm_label": "answercurrent()"
+    },
+    {
+      "label": "playScenario()",
+      "file_type": "code",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L11",
+      "id": "tests_engine_golden_scenarios_test_playscenario",
+      "community": 2,
+      "norm_label": "playscenario()"
+    },
+    {
+      "label": "{ session, askedQuestionIds, rejectedFirstGuess, recoveryQuestionId }",
+      "file_type": "code",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L79",
+      "id": "tests_engine_golden_scenarios_test_session_askedquestionids_rejectedfirstguess_recoveryquestionid",
+      "community": 2,
+      "norm_label": "{ session, askedquestionids, rejectedfirstguess, recoveryquestionid }"
     },
     {
       "label": "engine-scoring.test.ts",
@@ -405,7 +441,7 @@
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L1",
       "id": "tests_engine_scoring_test_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "engine-scoring.test.ts"
     },
     {
@@ -414,7 +450,7 @@
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L5",
       "id": "tests_engine_scoring_test_soupcandidate",
-      "community": 0,
+      "community": 1,
       "norm_label": "soupcandidate"
     },
     {
@@ -423,7 +459,7 @@
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L17",
       "id": "tests_engine_scoring_test_crispycandidate",
-      "community": 0,
+      "community": 1,
       "norm_label": "crispycandidate"
     },
     {
@@ -432,7 +468,7 @@
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L31",
       "id": "tests_engine_scoring_test_yesscores",
-      "community": 0,
+      "community": 1,
       "norm_label": "yesscores"
     },
     {
@@ -441,7 +477,7 @@
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L34",
       "id": "tests_engine_scoring_test_probablyscores",
-      "community": 0,
+      "community": 1,
       "norm_label": "probablyscores"
     },
     {
@@ -450,8 +486,80 @@
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L54",
       "id": "tests_engine_scoring_test_scores",
-      "community": 0,
+      "community": 1,
       "norm_label": "scores"
+    },
+    {
+      "label": "golden-scenarios.ts",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L1",
+      "id": "tests_fixtures_golden_scenarios_ts",
+      "community": 3,
+      "norm_label": "golden-scenarios.ts"
+    },
+    {
+      "label": "GoldenScenario",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L3",
+      "id": "fixtures_golden_scenarios_goldenscenario",
+      "community": 3,
+      "norm_label": "goldenscenario"
+    },
+    {
+      "label": "question()",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L31",
+      "id": "fixtures_golden_scenarios_question",
+      "community": 3,
+      "norm_label": "question()"
+    },
+    {
+      "label": "candidate()",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L45",
+      "id": "fixtures_golden_scenarios_candidate",
+      "community": 3,
+      "norm_label": "candidate()"
+    },
+    {
+      "label": "goldenQuestions",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L68",
+      "id": "fixtures_golden_scenarios_goldenquestions",
+      "community": 3,
+      "norm_label": "goldenquestions"
+    },
+    {
+      "label": "goldenCandidates",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L85",
+      "id": "fixtures_golden_scenarios_goldencandidates",
+      "community": 3,
+      "norm_label": "goldencandidates"
+    },
+    {
+      "label": "goldenDataset",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L200",
+      "id": "fixtures_golden_scenarios_goldendataset",
+      "community": 2,
+      "norm_label": "goldendataset"
+    },
+    {
+      "label": "goldenScenarios",
+      "file_type": "code",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L205",
+      "id": "fixtures_golden_scenarios_goldenscenarios",
+      "community": 2,
+      "norm_label": "goldenscenarios"
     },
     {
       "label": "session.ts",
@@ -459,7 +567,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L1",
       "id": "src_engine_session_ts",
-      "community": 5,
+      "community": 2,
       "norm_label": "session.ts"
     },
     {
@@ -468,7 +576,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L5",
       "id": "engine_session_sessionstatus",
-      "community": 5,
+      "community": 2,
       "norm_label": "sessionstatus"
     },
     {
@@ -477,7 +585,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L6",
       "id": "engine_session_charactercue",
-      "community": 5,
+      "community": 2,
       "norm_label": "charactercue"
     },
     {
@@ -486,7 +594,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L8",
       "id": "engine_session_revealpolicy",
-      "community": 5,
+      "community": 2,
       "norm_label": "revealpolicy"
     },
     {
@@ -495,7 +603,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L18",
       "id": "engine_session_revealguess",
-      "community": 5,
+      "community": 2,
       "norm_label": "revealguess"
     },
     {
@@ -504,7 +612,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L23",
       "id": "engine_session_enginesession",
-      "community": 5,
+      "community": 2,
       "norm_label": "enginesession"
     },
     {
@@ -513,7 +621,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L48",
       "id": "engine_session_sessiondataset",
-      "community": 5,
+      "community": 2,
       "norm_label": "sessiondataset"
     },
     {
@@ -522,7 +630,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L53",
       "id": "engine_session_default_policy",
-      "community": 5,
+      "community": 2,
       "norm_label": "default_policy"
     },
     {
@@ -531,7 +639,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L63",
       "id": "engine_session_answer_options",
-      "community": 5,
+      "community": 2,
       "norm_label": "answer_options"
     },
     {
@@ -540,7 +648,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L65",
       "id": "engine_session_answeroptions",
-      "community": 5,
+      "community": 2,
       "norm_label": "answeroptions()"
     },
     {
@@ -549,7 +657,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L69",
       "id": "engine_session_startsession",
-      "community": 5,
+      "community": 2,
       "norm_label": "startsession()"
     },
     {
@@ -567,7 +675,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L116",
       "id": "engine_session_submitguessfeedback",
-      "community": 5,
+      "community": 2,
       "norm_label": "submitguessfeedback()"
     },
     {
@@ -576,7 +684,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L148",
       "id": "engine_session_buildinput",
-      "community": 5,
+      "community": 2,
       "norm_label": "buildinput"
     },
     {
@@ -585,7 +693,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L158",
       "id": "engine_session_buildnextsession",
-      "community": 5,
+      "community": 2,
       "norm_label": "buildnextsession()"
     },
     {
@@ -594,7 +702,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L203",
       "id": "engine_session_askingsession",
-      "community": 5,
+      "community": 2,
       "norm_label": "askingsession()"
     },
     {
@@ -603,7 +711,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L244",
       "id": "engine_session_picknextquestion",
-      "community": 5,
+      "community": 1,
       "norm_label": "picknextquestion()"
     },
     {
@@ -612,7 +720,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L264",
       "id": "engine_session_revealed",
-      "community": 5,
+      "community": 2,
       "norm_label": "revealed()"
     },
     {
@@ -621,7 +729,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L300",
       "id": "engine_session_exhausted",
-      "community": 5,
+      "community": 2,
       "norm_label": "exhausted()"
     },
     {
@@ -630,7 +738,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L330",
       "id": "engine_session_probabilityscore",
-      "community": 5,
+      "community": 2,
       "norm_label": "probabilityscore"
     },
     {
@@ -639,7 +747,7 @@
       "source_file": "src/engine/session.ts",
       "source_location": "L335",
       "id": "engine_session_normalizeprobabilities",
-      "community": 5,
+      "community": 2,
       "norm_label": "normalizeprobabilities()"
     },
     {
@@ -648,7 +756,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L1",
       "id": "src_engine_selector_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "selector.ts"
     },
     {
@@ -657,7 +765,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L4",
       "id": "engine_selector_selectorcontext",
-      "community": 0,
+      "community": 1,
       "norm_label": "selectorcontext"
     },
     {
@@ -666,7 +774,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L13",
       "id": "engine_selector_questionselection",
-      "community": 0,
+      "community": 1,
       "norm_label": "questionselection"
     },
     {
@@ -675,7 +783,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L19",
       "id": "engine_selector_weightedcandidate",
-      "community": 0,
+      "community": 1,
       "norm_label": "weightedcandidate"
     },
     {
@@ -684,7 +792,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L31",
       "id": "engine_selector_followup_roles",
-      "community": 0,
+      "community": 1,
       "norm_label": "followup_roles"
     },
     {
@@ -693,7 +801,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L37",
       "id": "engine_selector_ranknextquestions",
-      "community": 0,
+      "community": 1,
       "norm_label": "ranknextquestions()"
     },
     {
@@ -702,7 +810,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L76",
       "id": "engine_selector_selectnextquestion",
-      "community": 0,
+      "community": 1,
       "norm_label": "selectnextquestion()"
     },
     {
@@ -711,7 +819,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L80",
       "id": "engine_selector_getactivecandidates",
-      "community": 0,
+      "community": 1,
       "norm_label": "getactivecandidates()"
     },
     {
@@ -720,7 +828,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L85",
       "id": "engine_selector_geteligiblequestions",
-      "community": 0,
+      "community": 1,
       "norm_label": "geteligiblequestions()"
     },
     {
@@ -729,7 +837,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L100",
       "id": "engine_selector_normalizeweights",
-      "community": 0,
+      "community": 1,
       "norm_label": "normalizeweights()"
     },
     {
@@ -738,7 +846,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L127",
       "id": "engine_selector_scorequestion",
-      "community": 0,
+      "community": 1,
       "norm_label": "scorequestion()"
     },
     {
@@ -747,7 +855,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L154",
       "id": "engine_selector_weightedvariance",
-      "community": 0,
+      "community": 1,
       "norm_label": "weightedvariance()"
     },
     {
@@ -756,7 +864,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L166",
       "id": "engine_selector_policybonus",
-      "community": 0,
+      "community": 1,
       "norm_label": "policybonus()"
     },
     {
@@ -765,7 +873,7 @@
       "source_file": "src/engine/selector.ts",
       "source_location": "L212",
       "id": "engine_selector_round",
-      "community": 0,
+      "community": 1,
       "norm_label": "round()"
     },
     {
@@ -774,7 +882,7 @@
       "source_file": "src/engine/scoring.ts",
       "source_location": "L1",
       "id": "src_engine_scoring_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "scoring.ts"
     },
     {
@@ -783,7 +891,7 @@
       "source_file": "src/engine/scoring.ts",
       "source_location": "L3",
       "id": "engine_scoring_answeredquestion",
-      "community": 0,
+      "community": 1,
       "norm_label": "answeredquestion"
     },
     {
@@ -792,7 +900,7 @@
       "source_file": "src/engine/scoring.ts",
       "source_location": "L8",
       "id": "engine_scoring_candidatescore",
-      "community": 0,
+      "community": 1,
       "norm_label": "candidatescore"
     },
     {
@@ -801,7 +909,7 @@
       "source_file": "src/engine/scoring.ts",
       "source_location": "L13",
       "id": "engine_scoring_scorecandidates",
-      "community": 0,
+      "community": 1,
       "norm_label": "scorecandidates()"
     },
     {
@@ -810,7 +918,7 @@
       "source_file": "src/engine/scoring.ts",
       "source_location": "L27",
       "id": "engine_scoring_scorecandidate",
-      "community": 0,
+      "community": 1,
       "norm_label": "scorecandidate()"
     },
     {
@@ -819,7 +927,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "src_engine_domain_ts",
-      "community": 0,
+      "community": 3,
       "norm_label": "domain.ts"
     },
     {
@@ -828,7 +936,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "engine_domain_answer_values",
-      "community": 0,
+      "community": 3,
       "norm_label": "answer_values"
     },
     {
@@ -837,7 +945,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L9",
       "id": "engine_domain_answerkey",
-      "community": 0,
+      "community": 2,
       "norm_label": "answerkey"
     },
     {
@@ -846,7 +954,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L10",
       "id": "engine_domain_answervalue",
-      "community": 0,
+      "community": 3,
       "norm_label": "answervalue"
     },
     {
@@ -855,7 +963,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L12",
       "id": "engine_domain_question_roles",
-      "community": 0,
+      "community": 3,
       "norm_label": "question_roles"
     },
     {
@@ -864,7 +972,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L22",
       "id": "engine_domain_questionrole",
-      "community": 0,
+      "community": 3,
       "norm_label": "questionrole"
     },
     {
@@ -873,7 +981,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L24",
       "id": "engine_domain_question_axes",
-      "community": 0,
+      "community": 3,
       "norm_label": "question_axes"
     },
     {
@@ -882,7 +990,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L37",
       "id": "engine_domain_questionaxis",
-      "community": 0,
+      "community": 3,
       "norm_label": "questionaxis"
     },
     {
@@ -891,7 +999,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L38",
       "id": "engine_domain_status",
-      "community": 0,
+      "community": 3,
       "norm_label": "status"
     },
     {
@@ -900,7 +1008,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L39",
       "id": "engine_domain_questionid",
-      "community": 0,
+      "community": 3,
       "norm_label": "questionid"
     },
     {
@@ -909,7 +1017,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L41",
       "id": "engine_domain_question",
-      "community": 0,
+      "community": 3,
       "norm_label": "question"
     },
     {
@@ -918,7 +1026,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L53",
       "id": "engine_domain_candidate",
-      "community": 0,
+      "community": 3,
       "norm_label": "candidate"
     },
     {
@@ -927,7 +1035,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L68",
       "id": "engine_domain_validationresult",
-      "community": 0,
+      "community": 3,
       "norm_label": "validationresult"
     },
     {
@@ -936,7 +1044,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L72",
       "id": "engine_domain_status_values",
-      "community": 0,
+      "community": 3,
       "norm_label": "status_values"
     },
     {
@@ -945,7 +1053,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L73",
       "id": "engine_domain_levels",
-      "community": 0,
+      "community": 3,
       "norm_label": "levels"
     },
     {
@@ -954,7 +1062,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L75",
       "id": "engine_domain_validatequestion",
-      "community": 0,
+      "community": 3,
       "norm_label": "validatequestion()"
     },
     {
@@ -963,7 +1071,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L107",
       "id": "engine_domain_validatecandidate",
-      "community": 0,
+      "community": 3,
       "norm_label": "validatecandidate()"
     },
     {
@@ -972,7 +1080,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L155",
       "id": "engine_domain_asrecord",
-      "community": 0,
+      "community": 3,
       "norm_label": "asrecord()"
     },
     {
@@ -981,7 +1089,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L161",
       "id": "engine_domain_requirestring",
-      "community": 0,
+      "community": 3,
       "norm_label": "requirestring()"
     },
     {
@@ -990,7 +1098,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L167",
       "id": "engine_domain_requirestringarray",
-      "community": 0,
+      "community": 3,
       "norm_label": "requirestringarray()"
     },
     {
@@ -999,7 +1107,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 24,
+      "community": 25,
       "norm_label": "readme.md"
     },
     {
@@ -1008,7 +1116,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "food_akinator_hermes_pilot_readme_food_akinator_zero_to_one_research_foundation",
-      "community": 24,
+      "community": 25,
       "norm_label": "food akinator \u2014 zero-to-one research foundation"
     },
     {
@@ -1017,7 +1125,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "food_akinator_hermes_pilot_readme",
-      "community": 24,
+      "community": 25,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -1026,7 +1134,7 @@
       "source_file": "README.md",
       "source_location": "L12",
       "id": "food_akinator_hermes_pilot_readme_12",
-      "community": 24,
+      "community": 25,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -1035,7 +1143,7 @@
       "source_file": "README.md",
       "source_location": "L16",
       "id": "food_akinator_hermes_pilot_readme_16",
-      "community": 24,
+      "community": 25,
       "norm_label": "\u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -1044,7 +1152,7 @@
       "source_file": "README.md",
       "source_location": "L25",
       "id": "food_akinator_hermes_pilot_readme_25",
-      "community": 24,
+      "community": 25,
       "norm_label": "\u1106\u116e\u11ab\u1109\u1165"
     },
     {
@@ -1053,7 +1161,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_md",
-      "community": 25,
+      "community": 26,
       "norm_label": "changelog.md"
     },
     {
@@ -1062,7 +1170,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_changelog",
-      "community": 25,
+      "community": 26,
       "norm_label": "changelog"
     },
     {
@@ -1071,7 +1179,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "id": "docs_changelog_2026_05_29_adaptive_selector_pilot_local_pass",
-      "community": 25,
+      "community": 26,
       "norm_label": "2026-05-29 \u2014 adaptive selector pilot local pass"
     },
     {
@@ -1080,7 +1188,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_harry_potter_md",
-      "community": 17,
+      "community": 18,
       "norm_label": "akinator-direct-play-log-2026-05-28-harry-potter.md"
     },
     {
@@ -1089,7 +1197,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_akinator_direct_play_log_harry_potter",
-      "community": 17,
+      "community": 18,
       "norm_label": "akinator direct play log \u2014 harry potter"
     },
     {
@@ -1098,7 +1206,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_run_metadata",
-      "community": 17,
+      "community": 18,
       "norm_label": "run metadata"
     },
     {
@@ -1107,7 +1215,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L21",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_entry_flow_observations",
-      "community": 17,
+      "community": 18,
       "norm_label": "entry flow observations"
     },
     {
@@ -1116,7 +1224,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_question_answer_trace",
-      "community": 17,
+      "community": 18,
       "norm_label": "question/answer trace"
     },
     {
@@ -1125,7 +1233,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_interaction_insights",
-      "community": 17,
+      "community": 18,
       "norm_label": "interaction insights"
     },
     {
@@ -1134,7 +1242,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L69",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_product_implications_for_korean_food_akinator",
-      "community": 17,
+      "community": 18,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -1143,7 +1251,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L77",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_gate_status",
-      "community": 17,
+      "community": 18,
       "norm_label": "gate status"
     },
     {
@@ -1152,7 +1260,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L1",
       "id": "docs_research_architect_gate_md",
-      "community": 4,
+      "community": 6,
       "norm_label": "architect-gate.md"
     },
     {
@@ -1161,7 +1269,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L1",
       "id": "research_architect_gate_architect_gate_food_akinator_v0",
-      "community": 4,
+      "community": 6,
       "norm_label": "architect gate \u2014 food akinator v0"
     },
     {
@@ -1170,7 +1278,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L3",
       "id": "research_architect_gate_gate",
-      "community": 4,
+      "community": 6,
       "norm_label": "gate \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -1179,7 +1287,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L7",
       "id": "research_architect_gate",
-      "community": 4,
+      "community": 6,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1100\u1167\u11af\u110c\u1165\u11bc"
     },
     {
@@ -1188,7 +1296,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L18",
       "id": "research_architect_gate_v0_file_layout",
-      "community": 4,
+      "community": 6,
       "norm_label": "v0 file layout"
     },
     {
@@ -1197,7 +1305,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L20",
       "id": "research_architect_gate_codeblock_1",
-      "community": 4,
+      "community": 6,
       "norm_label": "code:txt (data/)"
     },
     {
@@ -1206,7 +1314,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L60",
       "id": "research_architect_gate_data_minimums",
-      "community": 4,
+      "community": 6,
       "norm_label": "data minimums"
     },
     {
@@ -1215,7 +1323,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L68",
       "id": "research_architect_gate_answer_semantics",
-      "community": 4,
+      "community": 6,
       "norm_label": "answer semantics"
     },
     {
@@ -1224,7 +1332,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L70",
       "id": "research_architect_gate_codeblock_2",
-      "community": 4,
+      "community": 6,
       "norm_label": "code:ts (type answervalue = 1 | 0.5 | 0 | -0.5 | -1;)"
     },
     {
@@ -1233,7 +1341,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L80",
       "id": "research_architect_gate_scoring",
-      "community": 4,
+      "community": 6,
       "norm_label": "scoring"
     },
     {
@@ -1242,7 +1350,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L82",
       "id": "research_architect_gate_codeblock_3",
-      "community": 4,
+      "community": 6,
       "norm_label": "code:txt (logscore(candidate))"
     },
     {
@@ -1251,7 +1359,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L89",
       "id": "research_architect_gate_codeblock_4",
-      "community": 4,
+      "community": 6,
       "norm_label": "code:txt (similarity = - ((answervalue - expectedvalue)^2) / (2 * sigm)"
     },
     {
@@ -1260,7 +1368,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L100",
       "id": "research_architect_gate_selector",
-      "community": 4,
+      "community": 6,
       "norm_label": "selector"
     },
     {
@@ -1269,7 +1377,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L104",
       "id": "research_architect_gate_codeblock_5",
-      "community": 4,
+      "community": 6,
       "norm_label": "code:txt (mean(q) = \u03c3 p(c) * expected(c, q))"
     },
     {
@@ -1278,7 +1386,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L118",
       "id": "research_architect_gate_guess_reveal_threshold",
-      "community": 4,
+      "community": 6,
       "norm_label": "guess / reveal threshold"
     },
     {
@@ -1287,7 +1395,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L129",
       "id": "research_architect_gate_wrong_recovery",
-      "community": 4,
+      "community": 6,
       "norm_label": "wrong recovery"
     },
     {
@@ -1296,7 +1404,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L139",
       "id": "research_architect_gate_state_machine",
-      "community": 4,
+      "community": 6,
       "norm_label": "state machine"
     },
     {
@@ -1305,7 +1413,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L141",
       "id": "research_architect_gate_codeblock_6",
-      "community": 4,
+      "community": 6,
       "norm_label": "code:txt (entry \u2192 asking)"
     },
     {
@@ -1314,7 +1422,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L148",
       "id": "research_architect_gate_character_boundary",
-      "community": 4,
+      "community": 6,
       "norm_label": "character boundary"
     },
     {
@@ -1323,7 +1431,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L166",
       "id": "research_architect_gate_test_first_build_sequence",
-      "community": 4,
+      "community": 6,
       "norm_label": "test-first build sequence"
     },
     {
@@ -1332,7 +1440,7 @@
       "source_file": "docs/research/architect-gate.md",
       "source_location": "L180",
       "id": "research_architect_gate_builder",
-      "community": 4,
+      "community": 6,
       "norm_label": "builder \u1100\u1173\u11b7\u110c\u1175"
     },
     {
@@ -1341,7 +1449,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_synthesis_md",
-      "community": 3,
+      "community": 4,
       "norm_label": "akinator-direct-play-synthesis.md"
     },
     {
@@ -1350,7 +1458,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_synthesis_akinator_direct_play_synthesis_builder_handoff",
-      "community": 3,
+      "community": 4,
       "norm_label": "akinator direct play synthesis \u2014 builder handoff"
     },
     {
@@ -1359,7 +1467,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_synthesis",
-      "community": 3,
+      "community": 4,
       "norm_label": "\u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -1368,7 +1476,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_synthesis_15",
-      "community": 3,
+      "community": 4,
       "norm_label": "\u1100\u1169\u11bc\u1110\u1169\u11bc \u1100\u1166\u110b\u1175\u11b7 \u1105\u116e\u1111\u1173"
     },
     {
@@ -1377,7 +1485,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_synthesis_codeblock_1",
-      "community": 3,
+      "community": 4,
       "norm_label": "code:txt (entry prompt)"
     },
     {
@@ -1386,7 +1494,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L31",
       "id": "research_akinator_direct_play_synthesis_31",
-      "community": 3,
+      "community": 4,
       "norm_label": "\u110c\u1175\u11af\u1106\u116e\u11ab \u110c\u1165\u11ab\u1105\u1163\u11a8 \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -1395,7 +1503,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L33",
       "id": "research_akinator_direct_play_synthesis_1_broad_split",
-      "community": 3,
+      "community": 4,
       "norm_label": "1. broad split"
     },
     {
@@ -1404,7 +1512,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L52",
       "id": "research_akinator_direct_play_synthesis_2_family_domain_lock_in",
-      "community": 3,
+      "community": 4,
       "norm_label": "2. family/domain lock-in"
     },
     {
@@ -1413,7 +1521,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L67",
       "id": "research_akinator_direct_play_synthesis_3_signature_discriminator",
-      "community": 3,
+      "community": 4,
       "norm_label": "3. signature discriminator"
     },
     {
@@ -1422,7 +1530,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L86",
       "id": "research_akinator_direct_play_synthesis_4_negative_answer_as_active_pruning",
-      "community": 3,
+      "community": 4,
       "norm_label": "4. negative answer as active pruning"
     },
     {
@@ -1431,7 +1539,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L97",
       "id": "research_akinator_direct_play_synthesis_5_noise_tolerance",
-      "community": 3,
+      "community": 4,
       "norm_label": "5. noise tolerance"
     },
     {
@@ -1440,7 +1548,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L113",
       "id": "research_akinator_direct_play_synthesis_designer_handoff",
-      "community": 3,
+      "community": 4,
       "norm_label": "designer handoff"
     },
     {
@@ -1449,7 +1557,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L115",
       "id": "research_akinator_direct_play_synthesis_115",
-      "community": 3,
+      "community": 4,
       "norm_label": "\u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u110b\u1167\u11a8\u1112\u1161\u11af"
     },
     {
@@ -1458,7 +1566,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L130",
       "id": "research_akinator_direct_play_synthesis_130",
-      "community": 3,
+      "community": 4,
       "norm_label": "\u110c\u1175\u11ab\u1112\u1162\u11bc\u1100\u1161\u11b7 \u1111\u116d\u1112\u1167\u11ab"
     },
     {
@@ -1467,7 +1575,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L141",
       "id": "research_akinator_direct_play_synthesis_reveal",
-      "community": 3,
+      "community": 4,
       "norm_label": "reveal"
     },
     {
@@ -1476,7 +1584,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L153",
       "id": "research_akinator_direct_play_synthesis_researcher_handoff",
-      "community": 3,
+      "community": 4,
       "norm_label": "researcher handoff"
     },
     {
@@ -1485,7 +1593,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L169",
       "id": "research_akinator_direct_play_synthesis_developer_architect_handoff",
-      "community": 3,
+      "community": 4,
       "norm_label": "developer / architect handoff"
     },
     {
@@ -1494,7 +1602,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L171",
       "id": "research_akinator_direct_play_synthesis_engine_rule_updates",
-      "community": 3,
+      "community": 4,
       "norm_label": "engine rule updates"
     },
     {
@@ -1503,7 +1611,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L175",
       "id": "research_akinator_direct_play_synthesis_codeblock_2",
-      "community": 3,
+      "community": 4,
       "norm_label": "code:ts (type questionrole =)"
     },
     {
@@ -1512,7 +1620,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L187",
       "id": "research_akinator_direct_play_synthesis_codeblock_3",
-      "community": 3,
+      "community": 4,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -1521,7 +1629,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L209",
       "id": "research_akinator_direct_play_synthesis_reveal_threshold_adjustment",
-      "community": 3,
+      "community": 4,
       "norm_label": "reveal threshold adjustment"
     },
     {
@@ -1530,7 +1638,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L220",
       "id": "research_akinator_direct_play_synthesis_qa_handoff",
-      "community": 3,
+      "community": 4,
       "norm_label": "qa handoff"
     },
     {
@@ -1539,7 +1647,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L224",
       "id": "research_akinator_direct_play_synthesis_must_pass_scenario_tests",
-      "community": 3,
+      "community": 4,
       "norm_label": "must-pass scenario tests"
     },
     {
@@ -1548,7 +1656,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L243",
       "id": "research_akinator_direct_play_synthesis_builder_gate_update",
-      "community": 3,
+      "community": 4,
       "norm_label": "builder gate update"
     },
     {
@@ -1557,7 +1665,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_blocker_and_protocol_md",
-      "community": 6,
+      "community": 7,
       "norm_label": "akinator-direct-play-blocker-and-protocol.md"
     },
     {
@@ -1566,7 +1674,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_blocker_and_protocol_akinator_direct_play_blocker_manual_observation_protocol",
-      "community": 6,
+      "community": 7,
       "norm_label": "akinator direct play blocker + manual observation protocol"
     },
     {
@@ -1575,7 +1683,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_blocker_and_protocol",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -1584,7 +1692,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_blocker_and_protocol_15",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1109\u1175\u1103\u1169\u1112\u1161\u11ab \u1100\u1167\u11bc\u1105\u1169"
     },
     {
@@ -1593,7 +1701,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_blocker_and_protocol_1_headless_browser",
-      "community": 6,
+      "community": 7,
       "norm_label": "1. headless/browser \u1100\u1169\u11bc\u1109\u1175\u11a8 \u110b\u1170\u11b8"
     },
     {
@@ -1602,7 +1710,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L23",
       "id": "research_akinator_direct_play_blocker_and_protocol_2_silvergames_embedded_route",
-      "community": 6,
+      "community": 7,
       "norm_label": "2. silvergames embedded route"
     },
     {
@@ -1611,7 +1719,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L30",
       "id": "research_akinator_direct_play_blocker_and_protocol_3_npm_api_wrapper",
-      "community": 6,
+      "community": 7,
       "norm_label": "3. npm/api wrapper"
     },
     {
@@ -1620,7 +1728,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L38",
       "id": "research_akinator_direct_play_blocker_and_protocol_4_macos_local_browser_computer_use",
-      "community": 6,
+      "community": 7,
       "norm_label": "4. macos local browser/computer-use"
     },
     {
@@ -1629,7 +1737,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_blocker_and_protocol_47",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1112\u1161\u110c\u1175 \u110b\u1161\u11ad\u110b\u1173\u11ab \u1100\u1165\u11ba"
     },
     {
@@ -1638,7 +1746,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_blocker_and_protocol_blocker",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u110b\u116b blocker\u110b\u1175\u11ab\u1100\u1161"
     },
     {
@@ -1647,7 +1755,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_blocker_and_protocol_60",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1111\u1175\u11af\u110b\u116d\u1112\u1161\u11ab \u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u110b\u1175\u11b8\u1105\u1167\u11a8/\u1100\u116f\u11ab\u1112\u1161\u11ab"
     },
     {
@@ -1656,7 +1764,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L64",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_a_macos_permission",
-      "community": 6,
+      "community": 7,
       "norm_label": "option a \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 macos permission \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -1665,7 +1773,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L70",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_b",
-      "community": 6,
+      "community": 7,
       "norm_label": "option b \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1105\u1169\u1100\u1173 \u110c\u1166\u1100\u1169\u11bc"
     },
     {
@@ -1674,7 +1782,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L74",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_c",
-      "community": 6,
+      "community": 7,
       "norm_label": "option c \u2014 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u110b\u116d\u1100\u116e\u1105\u1173\u11af \u1100\u1169\u11bc\u1100\u1162 \u110b\u1167\u11bc\u1109\u1161\u11bc/\u1109\u1173\u110f\u1173\u1105\u1175\u11ab\u1109\u1163\u11ba \u1100\u116a\u11ab\u110e\u1161\u11af\u1105\u1169 \u1103\u1162\u110e\u1166 \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -1683,7 +1791,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L78",
       "id": "research_akinator_direct_play_blocker_and_protocol_manual_play_protocol",
-      "community": 6,
+      "community": 7,
       "norm_label": "manual play protocol"
     },
     {
@@ -1692,7 +1800,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L88",
       "id": "research_akinator_direct_play_blocker_and_protocol_codeblock_1",
-      "community": 6,
+      "community": 7,
       "norm_label": "code:txt (target:)"
     },
     {
@@ -1701,7 +1809,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L116",
       "id": "research_akinator_direct_play_blocker_and_protocol_observation_checklist",
-      "community": 6,
+      "community": 7,
       "norm_label": "observation checklist"
     },
     {
@@ -1710,7 +1818,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L129",
       "id": "research_akinator_direct_play_blocker_and_protocol_builder_gate",
-      "community": 6,
+      "community": 7,
       "norm_label": "builder gate"
     },
     {
@@ -1863,7 +1971,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_pikachu_md",
-      "community": 20,
+      "community": 19,
       "norm_label": "akinator-direct-play-log-2026-05-28-pikachu.md"
     },
     {
@@ -1872,7 +1980,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_akinator_direct_play_log_pikachu",
-      "community": 20,
+      "community": 19,
       "norm_label": "akinator direct play log \u2014 pikachu"
     },
     {
@@ -1881,7 +1989,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_run_metadata",
-      "community": 20,
+      "community": 19,
       "norm_label": "run metadata"
     },
     {
@@ -1890,7 +1998,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_question_answer_trace",
-      "community": 20,
+      "community": 19,
       "norm_label": "question/answer trace"
     },
     {
@@ -1899,7 +2007,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_interaction_insights",
-      "community": 20,
+      "community": 19,
       "norm_label": "interaction insights"
     },
     {
@@ -1908,7 +2016,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L48",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_product_implications_for_korean_food_akinator",
-      "community": 20,
+      "community": 19,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -1917,7 +2025,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L55",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_gate_status",
-      "community": 20,
+      "community": 19,
       "norm_label": "gate status"
     },
     {
@@ -1926,7 +2034,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "docs_research_akinator_reference_observations_md",
-      "community": 23,
+      "community": 24,
       "norm_label": "akinator-reference-observations.md"
     },
     {
@@ -1935,7 +2043,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "research_akinator_reference_observations_akinator_reference_observations",
-      "community": 23,
+      "community": 24,
       "norm_label": "akinator reference observations"
     },
     {
@@ -1944,7 +2052,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L3",
       "id": "research_akinator_reference_observations",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -1953,7 +2061,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L9",
       "id": "research_akinator_reference_observations_9",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1100\u116a\u11ab\u110e\u1161\u11af\u1103\u116c\u11ab \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u116f\u11ab\u1105\u1175"
     },
     {
@@ -1962,7 +2070,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L26",
       "id": "research_akinator_reference_observations_food",
-      "community": 23,
+      "community": 24,
       "norm_label": "food \u1109\u1165\u1107\u1175\u1109\u1173 \u110c\u1165\u11a8\u110b\u116d\u11bc \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -1971,7 +2079,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L35",
       "id": "research_akinator_reference_observations_non_copy_boundary",
-      "community": 23,
+      "community": 24,
       "norm_label": "non-copy boundary"
     },
     {
@@ -1980,7 +2088,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L42",
       "id": "research_akinator_reference_observations_todo",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110e\u116e\u1100\u1161 \u1105\u1175\u1109\u1165\u110e\u1175 todo"
     },
     {
@@ -1989,7 +2097,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_md",
-      "community": 21,
+      "community": 20,
       "norm_label": "akinator-direct-play-log-2026-05-28-naruto-uzumaki.md"
     },
     {
@@ -1998,7 +2106,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_akinator_direct_play_log_naruto_uzumaki",
-      "community": 21,
+      "community": 20,
       "norm_label": "akinator direct play log \u2014 naruto uzumaki"
     },
     {
@@ -2007,7 +2115,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_run_metadata",
-      "community": 21,
+      "community": 20,
       "norm_label": "run metadata"
     },
     {
@@ -2016,7 +2124,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_question_answer_trace",
-      "community": 21,
+      "community": 20,
       "norm_label": "question/answer trace"
     },
     {
@@ -2025,7 +2133,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L37",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_interaction_insights",
-      "community": 21,
+      "community": 20,
       "norm_label": "interaction insights"
     },
     {
@@ -2034,7 +2142,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L44",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_product_implications_for_korean_food_akinator",
-      "community": 21,
+      "community": 20,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2043,7 +2151,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L50",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_gate_status",
-      "community": 21,
+      "community": 20,
       "norm_label": "gate status"
     },
     {
@@ -2052,7 +2160,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L1",
       "id": "docs_research_inference_motion_research_md",
-      "community": 1,
+      "community": 0,
       "norm_label": "inference-motion-research.md"
     },
     {
@@ -2061,7 +2169,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L1",
       "id": "research_inference_motion_research_akinator_like",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u110c\u1161\u11a8\u110b\u1173\u11ab \u110b\u1173\u11b7\u1109\u1175\u11a8 \u1103\u1169\u1106\u1166\u110b\u1175\u11ab akinator-like \u110e\u116e\u1105\u1169\u11ab \u110b\u1166\u11ab\u110c\u1175\u11ab + \u110f\u1162\u1105\u1175\u11a8\u1110\u1165/\u1106\u1169\u1109\u1167\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab \u110c\u1166\u110b\u1161\u11ab"
     },
     {
@@ -2070,7 +2178,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L8",
       "id": "research_inference_motion_research_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110c\u1166\u1111\u116e\u11b7 \u1100\u1167\u11bc\u1112\u1165\u11b7"
     },
     {
@@ -2079,7 +2187,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L20",
       "id": "research_inference_motion_research_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "2. \u1103\u1169\u1106\u1166\u110b\u1175\u11ab \u1103\u1166\u110b\u1175\u1110\u1165 \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -2088,7 +2196,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L22",
       "id": "research_inference_motion_research_2_1_candidate_schema",
-      "community": 1,
+      "community": 0,
       "norm_label": "2.1 candidate schema: \u110b\u1173\u11b7\u1109\u1175\u11a8 \u1112\u116e\u1107\u1169"
     },
     {
@@ -2097,7 +2205,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L28",
       "id": "research_inference_motion_research_codeblock_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:ts (type candidate = {)"
     },
     {
@@ -2106,7 +2214,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L62",
       "id": "research_inference_motion_research_2_2_question_bank_schema",
-      "community": 1,
+      "community": 0,
       "norm_label": "2.2 question bank schema"
     },
     {
@@ -2115,7 +2223,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L66",
       "id": "research_inference_motion_research_codeblock_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -2124,7 +2232,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L104",
       "id": "research_inference_motion_research_3_5_answer_weight_semantics",
-      "community": 18,
+      "community": 23,
       "norm_label": "3. 5-answer weight semantics"
     },
     {
@@ -2133,7 +2241,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L117",
       "id": "research_inference_motion_research_3_1_a_soft_distance_scoring_mvp",
-      "community": 18,
+      "community": 23,
       "norm_label": "3.1 \u110c\u1165\u11b7\u1109\u116e \u1100\u1162\u11bc\u1109\u1175\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 a: soft distance scoring, mvp \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -2142,7 +2250,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L121",
       "id": "research_inference_motion_research_codeblock_3",
-      "community": 18,
+      "community": 23,
       "norm_label": "code:txt (logscore(c) = log(prior(c)) + \u03c3 answered q [ weight(q, answe)"
     },
     {
@@ -2151,7 +2259,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L127",
       "id": "research_inference_motion_research_codeblock_4",
-      "community": 18,
+      "community": 23,
       "norm_label": "code:txt (similarity(a, e) = 1 - abs(a - e)        // \u1107\u1165\u11b7\u110b\u1171 \u1103\u1162\u1105\u1163\u11a8 -1~1)"
     },
     {
@@ -2160,7 +2268,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L133",
       "id": "research_inference_motion_research_codeblock_5",
-      "community": 18,
+      "community": 23,
       "norm_label": "code:txt (similarity(a, e) = - ((a - e)^2) / (2\u03c32))"
     },
     {
@@ -2169,7 +2277,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L142",
       "id": "research_inference_motion_research_codeblock_6",
-      "community": 18,
+      "community": 23,
       "norm_label": "code:txt (answerconfidence = abs(answervalue)      // yes/no\u1102\u1173\u11ab 1, proba)"
     },
     {
@@ -2178,7 +2286,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L148",
       "id": "research_inference_motion_research_3_2_b_naive_bayes",
-      "community": 18,
+      "community": 23,
       "norm_label": "3.2 \u110c\u1165\u11b7\u1109\u116e \u1100\u1162\u11bc\u1109\u1175\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 b: naive bayes"
     },
     {
@@ -2187,7 +2295,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L163",
       "id": "research_inference_motion_research_4_adaptive_next_question_selection",
-      "community": 13,
+      "community": 14,
       "norm_label": "4. adaptive next-question selection"
     },
     {
@@ -2196,7 +2304,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L167",
       "id": "research_inference_motion_research_4_1",
-      "community": 13,
+      "community": 14,
       "norm_label": "4.1 \u1112\u116e\u1107\u1169 \u1112\u116a\u11a8\u1105\u1172\u11af \u110c\u1165\u11bc\u1100\u1172\u1112\u116a"
     },
     {
@@ -2205,7 +2313,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L171",
       "id": "research_inference_motion_research_codeblock_7",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:txt (p(c) = exp(logscore(c) / t) / \u03c3 exp(logscore(i) / t))"
     },
     {
@@ -2214,7 +2322,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L179",
       "id": "research_inference_motion_research_4_2_expected_information_gain",
-      "community": 13,
+      "community": 14,
       "norm_label": "4.2 expected information gain"
     },
     {
@@ -2223,7 +2331,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L183",
       "id": "research_inference_motion_research_codeblock_8",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:txt (h(c) = -\u03c3 p(c) log2 p(c))"
     },
     {
@@ -2232,7 +2340,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L189",
       "id": "research_inference_motion_research_codeblock_9",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:txt (p(a | q) = \u03c3 p(c) * p(a | c, q))"
     },
     {
@@ -2241,7 +2349,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L195",
       "id": "research_inference_motion_research_codeblock_10",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:txt (ig(q) = h(c) - \u03c3_a p(a | q) * h(c | answer=a, q))"
     },
     {
@@ -2250,7 +2358,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L201",
       "id": "research_inference_motion_research_codeblock_11",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:txt (questionscore(q) = ig(q))"
     },
     {
@@ -2259,7 +2367,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L216",
       "id": "research_inference_motion_research_4_3",
-      "community": 13,
+      "community": 14,
       "norm_label": "4.3 \u110c\u1161\u11a8\u110b\u1173\u11ab \u1103\u1169\u1106\u1166\u110b\u1175\u11ab\u110b\u1166\u1109\u1165\u110b\u1174 \u1100\u1161\u11ab\u1103\u1161\u11ab \u1103\u1162\u110b\u1161\u11ab"
     },
     {
@@ -2268,7 +2376,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L220",
       "id": "research_inference_motion_research_codeblock_12",
-      "community": 13,
+      "community": 14,
       "norm_label": "code:txt (mean = \u03c3 p(c) * expected(c,q))"
     },
     {
@@ -2277,7 +2385,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L236",
       "id": "research_inference_motion_research_5_confidence_reveal_threshold",
-      "community": 1,
+      "community": 0,
       "norm_label": "5. confidence/reveal threshold"
     },
     {
@@ -2286,7 +2394,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L238",
       "id": "research_inference_motion_research_5_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "5.1 \u110e\u116e\u110e\u1173\u11a8 \u110c\u1169\u1100\u1165\u11ab"
     },
     {
@@ -2295,7 +2403,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L248",
       "id": "research_inference_motion_research_5_2_reveal_vs_tentative_guess",
-      "community": 1,
+      "community": 0,
       "norm_label": "5.2 reveal vs tentative guess"
     },
     {
@@ -2304,7 +2412,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L258",
       "id": "research_inference_motion_research_5_3_confidence_messaging",
-      "community": 1,
+      "community": 0,
       "norm_label": "5.3 confidence messaging"
     },
     {
@@ -2313,7 +2421,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L269",
       "id": "research_inference_motion_research_6_wrong_guess_suppression_recovery",
-      "community": 1,
+      "community": 0,
       "norm_label": "6. wrong guess suppression/recovery"
     },
     {
@@ -2322,7 +2430,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L273",
       "id": "research_inference_motion_research_6_1_suppression",
-      "community": 1,
+      "community": 0,
       "norm_label": "6.1 suppression \u1103\u1166\u110b\u1175\u1110\u1165"
     },
     {
@@ -2331,7 +2439,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L277",
       "id": "research_inference_motion_research_codeblock_13",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:ts (type sessionstate = {)"
     },
     {
@@ -2340,7 +2448,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L292",
       "id": "research_inference_motion_research_6_2_recovery_strategy",
-      "community": 1,
+      "community": 0,
       "norm_label": "6.2 recovery strategy"
     },
     {
@@ -2349,7 +2457,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L304",
       "id": "research_inference_motion_research_6_3_learning_hook",
-      "community": 1,
+      "community": 0,
       "norm_label": "6.3 learning hook"
     },
     {
@@ -2358,7 +2466,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L309",
       "id": "research_inference_motion_research_codeblock_14",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:json ({)"
     },
     {
@@ -2367,7 +2475,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L327",
       "id": "research_inference_motion_research_7_api",
-      "community": 10,
+      "community": 12,
       "norm_label": "7. \u110b\u1166\u11ab\u110c\u1175\u11ab api \u110e\u1169\u110b\u1161\u11ab"
     },
     {
@@ -2376,7 +2484,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L329",
       "id": "research_inference_motion_research_7_1",
-      "community": 10,
+      "community": 12,
       "norm_label": "7.1 \u1109\u1166\u1109\u1167\u11ab \u1109\u1175\u110c\u1161\u11a8"
     },
     {
@@ -2385,7 +2493,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L331",
       "id": "research_inference_motion_research_codeblock_15",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:http (post /sessions)"
     },
     {
@@ -2394,7 +2502,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L336",
       "id": "research_inference_motion_research_codeblock_16",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -2403,7 +2511,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L349",
       "id": "research_inference_motion_research_7_2",
-      "community": 10,
+      "community": 12,
       "norm_label": "7.2 \u1103\u1161\u11b8\u1107\u1167\u11ab \u110c\u1166\u110e\u116e\u11af"
     },
     {
@@ -2412,7 +2520,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L351",
       "id": "research_inference_motion_research_codeblock_17",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:http (post /sessions/{id}/answers)"
     },
     {
@@ -2421,7 +2529,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L361",
       "id": "research_inference_motion_research_codeblock_18",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -2430,7 +2538,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L372",
       "id": "research_inference_motion_research_codeblock_19",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -2439,7 +2547,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L381",
       "id": "research_inference_motion_research_7_3",
-      "community": 10,
+      "community": 12,
       "norm_label": "7.3 \u110e\u116e\u110e\u1173\u11a8 \u1111\u1175\u1103\u1173\u1107\u1162\u11a8"
     },
     {
@@ -2448,7 +2556,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L383",
       "id": "research_inference_motion_research_codeblock_20",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:http (post /sessions/{id}/guess-feedback)"
     },
     {
@@ -2457,7 +2565,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L392",
       "id": "research_inference_motion_research_codeblock_21",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -2466,7 +2574,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L402",
       "id": "research_inference_motion_research_codeblock_22",
-      "community": 10,
+      "community": 12,
       "norm_label": "code:json ({)"
     },
     {
@@ -2475,7 +2583,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L415",
       "id": "research_inference_motion_research_8",
-      "community": 1,
+      "community": 0,
       "norm_label": "8. \u110f\u1162\u1105\u1175\u11a8\u1110\u1165/\u1106\u1169\u1109\u1167\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab \u1109\u1165\u11ab\u1110\u1162\u11a8\u110c\u1175"
     },
     {
@@ -2484,7 +2592,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L419",
       "id": "research_inference_motion_research_8_1_rive",
-      "community": 1,
+      "community": 0,
       "norm_label": "8.1 rive"
     },
     {
@@ -2493,7 +2601,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L433",
       "id": "research_inference_motion_research_8_2_spine",
-      "community": 1,
+      "community": 0,
       "norm_label": "8.2 spine"
     },
     {
@@ -2502,7 +2610,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L447",
       "id": "research_inference_motion_research_8_3_lottie",
-      "community": 1,
+      "community": 0,
       "norm_label": "8.3 lottie"
     },
     {
@@ -2511,7 +2619,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L461",
       "id": "research_inference_motion_research_8_4_layered_raster_rig",
-      "community": 1,
+      "community": 0,
       "norm_label": "8.4 layered raster rig"
     },
     {
@@ -2520,7 +2628,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L477",
       "id": "research_inference_motion_research_8_5_css_procedural_rig",
-      "community": 1,
+      "community": 0,
       "norm_label": "8.5 css procedural rig"
     },
     {
@@ -2529,7 +2637,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L493",
       "id": "research_inference_motion_research_8_6_canvas_webgl_custom_rig",
-      "community": 1,
+      "community": 0,
       "norm_label": "8.6 canvas/webgl custom rig"
     },
     {
@@ -2538,7 +2646,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L508",
       "id": "research_inference_motion_research_9_mvp",
-      "community": 1,
+      "community": 0,
       "norm_label": "9. \u110e\u116e\u110e\u1165\u11ab mvp \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab"
     },
     {
@@ -2547,7 +2655,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L510",
       "id": "research_inference_motion_research_9_1_1_rive_state_machine",
-      "community": 1,
+      "community": 0,
       "norm_label": "9.1 1\u1109\u116e\u11ab\u110b\u1171: rive state machine"
     },
     {
@@ -2556,7 +2664,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L530",
       "id": "research_inference_motion_research_codeblock_23",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:ts (function cuefromengine(state, confidence, lastanswer, wrongg)"
     },
     {
@@ -2565,7 +2673,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L540",
       "id": "research_inference_motion_research_9_2_2_lottie_clips_light_state_controller",
-      "community": 1,
+      "community": 0,
       "norm_label": "9.2 2\u1109\u116e\u11ab\u110b\u1171: lottie clips + light state controller"
     },
     {
@@ -2574,7 +2682,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L547",
       "id": "research_inference_motion_research_9_3_fallback_layered_raster",
-      "community": 1,
+      "community": 0,
       "norm_label": "9.3 fallback: layered raster"
     },
     {
@@ -2583,7 +2691,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L556",
       "id": "research_inference_motion_research_10_mvp",
-      "community": 1,
+      "community": 0,
       "norm_label": "10. \u110c\u1165\u11ab\u110e\u1166 mvp \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -2592,7 +2700,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L558",
       "id": "research_inference_motion_research_10_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "10.1 \u110f\u1173\u11af\u1105\u1161\u110b\u1175\u110b\u1165\u11ab\u1110\u1173"
     },
     {
@@ -2601,7 +2709,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L565",
       "id": "research_inference_motion_research_10_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "10.2 \u1109\u1165\u1107\u1165 \u1104\u1169\u1102\u1173\u11ab \u1105\u1169\u110f\u1165\u11af \u110b\u1166\u11ab\u110c\u1175\u11ab"
     },
     {
@@ -2610,7 +2718,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L577",
       "id": "research_inference_motion_research_10_3",
-      "community": 1,
+      "community": 0,
       "norm_label": "10.3 \u1103\u1166\u110b\u1175\u1110\u1165 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169 \u110b\u1168"
     },
     {
@@ -2619,7 +2727,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L579",
       "id": "research_inference_motion_research_codeblock_24",
-      "community": 1,
+      "community": 0,
       "norm_label": "code:txt (/data)"
     },
     {
@@ -2628,7 +2736,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L598",
       "id": "research_inference_motion_research_11",
-      "community": 1,
+      "community": 0,
       "norm_label": "11. \u110c\u116e\u110b\u116d \u1105\u1175\u1109\u1173\u110f\u1173\u110b\u116a \u1103\u1162\u110b\u1173\u11bc"
     },
     {
@@ -2637,7 +2745,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L600",
       "id": "research_inference_motion_research_1_600",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 1: \u110c\u1175\u11af\u1106\u116e\u11ab \u1103\u1166\u110b\u1175\u1110\u1165 \u1111\u116e\u11b7\u110c\u1175\u11af \u1107\u116e\u110c\u1169\u11a8"
     },
     {
@@ -2646,7 +2754,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L615",
       "id": "research_inference_motion_research_2_615",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 2: \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u1109\u1169\u11a8\u1109\u1165\u11bc\u110b\u1173\u11af \u1106\u1169\u1105\u1173\u11b7"
     },
     {
@@ -2655,7 +2763,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L625",
       "id": "research_inference_motion_research_3",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 3: \u1102\u1165\u1106\u116e \u1108\u1161\u11af\u1105\u1175 \u110c\u1165\u11bc\u1103\u1161\u11b8\u110b\u1173\u11af \u110d\u1175\u11a8\u110b\u1165 \u1110\u1173\u11af\u1105\u1175\u11b7"
     },
     {
@@ -2664,7 +2772,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L632",
       "id": "research_inference_motion_research_4",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 4: \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u110c\u1166\u110c\u1161\u11a8 \u1107\u1167\u11bc\u1106\u1169\u11a8"
     },
     {
@@ -2673,7 +2781,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L639",
       "id": "research_inference_motion_research_5",
-      "community": 1,
+      "community": 0,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 5: \u110b\u1162\u1102\u1175\u1106\u1166\u110b\u1175\u1109\u1167\u11ab\u110b\u1175 \u110e\u116e\u1105\u1169\u11ab \u1109\u1161\u11bc\u1110\u1162\u110b\u116a \u110b\u1165\u1100\u1173\u11ba\u1102\u1161\u11b7"
     },
     {
@@ -2682,7 +2790,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L648",
       "id": "research_inference_motion_research_12_acceptance_tests",
-      "community": 1,
+      "community": 0,
       "norm_label": "12. acceptance tests"
     },
     {
@@ -2691,7 +2799,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L650",
       "id": "research_inference_motion_research_12_1",
-      "community": 1,
+      "community": 0,
       "norm_label": "12.1 \u1103\u1166\u110b\u1175\u1110\u1165 \u1100\u1165\u11b7\u110c\u1173\u11bc \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -2700,7 +2808,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L667",
       "id": "research_inference_motion_research_12_2",
-      "community": 1,
+      "community": 0,
       "norm_label": "12.2 \u110e\u116e\u1105\u1169\u11ab \u110b\u1166\u11ab\u110c\u1175\u11ab \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -2709,7 +2817,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L709",
       "id": "research_inference_motion_research_12_3_ux",
-      "community": 1,
+      "community": 0,
       "norm_label": "12.3 ux/\u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -2718,7 +2826,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L735",
       "id": "research_inference_motion_research_12_4",
-      "community": 1,
+      "community": 0,
       "norm_label": "12.4 \u110c\u1166\u1111\u116e\u11b7 \u1111\u116e\u11b7\u110c\u1175\u11af \u1110\u1166\u1109\u1173\u1110\u1173"
     },
     {
@@ -2727,7 +2835,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L751",
       "id": "research_inference_motion_research_13",
-      "community": 1,
+      "community": 0,
       "norm_label": "13. \u1112\u116c\u110b\u1174\u110b\u116d\u11bc \u1100\u116f\u11ab\u110c\u1161\u11bc \u1100\u1167\u11af\u1105\u1169\u11ab"
     },
     {
@@ -2907,7 +3015,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "docs_research_korean_food_decision_product_research_md",
-      "community": 7,
+      "community": 9,
       "norm_label": "korean-food-decision-product-research.md"
     },
     {
@@ -2916,7 +3024,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "research_korean_food_decision_product_research_korean_food_decision_product_research",
-      "community": 7,
+      "community": 9,
       "norm_label": "korean food decision product research"
     },
     {
@@ -2925,7 +3033,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L3",
       "id": "research_korean_food_decision_product_research",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u1175\u11ab\u1109\u1161\u110b\u1175\u1110\u1173"
     },
     {
@@ -2934,7 +3042,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L16",
       "id": "research_korean_food_decision_product_research_16",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u110c\u116e\u110b\u116d \u1106\u1162\u11a8\u1105\u1161\u11a8"
     },
     {
@@ -2943,7 +3051,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L18",
       "id": "research_korean_food_decision_product_research_18",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u1107\u1162\u1103\u1161\u11af"
     },
     {
@@ -2952,7 +3060,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L24",
       "id": "research_korean_food_decision_product_research_24",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u110b\u116c\u1109\u1175\u11a8"
     },
     {
@@ -2961,7 +3069,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L30",
       "id": "research_korean_food_decision_product_research_30",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u110b\u1163\u1109\u1175\u11a8"
     },
     {
@@ -2970,7 +3078,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L36",
       "id": "research_korean_food_decision_product_research_36",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u1112\u1169\u11ab\u1107\u1161\u11b8"
     },
     {
@@ -2979,7 +3087,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L42",
       "id": "research_korean_food_decision_product_research_42",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1173"
     },
     {
@@ -2988,7 +3096,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L48",
       "id": "research_korean_food_decision_product_research_product_thesis",
-      "community": 7,
+      "community": 9,
       "norm_label": "product thesis"
     },
     {
@@ -2997,7 +3105,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L50",
       "id": "research_korean_food_decision_product_research_thesis_1",
-      "community": 7,
+      "community": 9,
       "norm_label": "thesis 1 \u2014 \u1100\u1167\u11af\u110c\u1165\u11bc \u110e\u1162\u11a8\u110b\u1175\u11b7\u110b\u1173\u11af \u1100\u1161\u110c\u1167\u1100\u1161\u1102\u1173\u11ab \u1100\u1166\u110b\u1175\u11b7"
     },
     {
@@ -3006,7 +3114,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L54",
       "id": "research_korean_food_decision_product_research_thesis_2",
-      "community": 7,
+      "community": 9,
       "norm_label": "thesis 2 \u2014 \u110b\u1169\u1102\u1173\u11af\u110b\u1174 \u1100\u1165\u1107\u116e\u1100\u1161\u11b7\u110b\u1173\u11af \u110b\u1175\u11b0\u1102\u1173\u11ab\u1103\u1161"
     },
     {
@@ -3015,7 +3123,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L58",
       "id": "research_korean_food_decision_product_research_thesis_3_reveal",
-      "community": 7,
+      "community": 9,
       "norm_label": "thesis 3 \u2014 \u1102\u1161\u11b8\u1103\u1173\u11a8 \u1100\u1161\u1102\u1173\u11bc\u1112\u1161\u11ab reveal"
     },
     {
@@ -3024,7 +3132,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L70",
       "id": "research_korean_food_decision_product_research_70",
-      "community": 7,
+      "community": 9,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110c\u1166\u1111\u116e\u11b7\u110b\u1161\u11ab"
     },
     {
@@ -3033,7 +3141,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L76",
       "id": "research_korean_food_decision_product_research_mvp_scope",
-      "community": 7,
+      "community": 9,
       "norm_label": "mvp scope"
     },
     {
@@ -3042,7 +3150,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L84",
       "id": "research_korean_food_decision_product_research_non_goals",
-      "community": 7,
+      "community": 9,
       "norm_label": "non-goals"
     },
     {
@@ -3051,7 +3159,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_elon_musk_md",
-      "community": 19,
+      "community": 21,
       "norm_label": "akinator-direct-play-log-2026-05-28-elon-musk.md"
     },
     {
@@ -3060,7 +3168,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_akinator_direct_play_log_elon_musk",
-      "community": 19,
+      "community": 21,
       "norm_label": "akinator direct play log \u2014 elon musk"
     },
     {
@@ -3069,7 +3177,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_run_metadata",
-      "community": 19,
+      "community": 21,
       "norm_label": "run metadata"
     },
     {
@@ -3078,7 +3186,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_question_answer_trace",
-      "community": 19,
+      "community": 21,
       "norm_label": "question/answer trace"
     },
     {
@@ -3087,7 +3195,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_interaction_insights",
-      "community": 19,
+      "community": 21,
       "norm_label": "interaction insights"
     },
     {
@@ -3096,7 +3204,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_product_implications_for_korean_food_akinator",
-      "community": 19,
+      "community": 21,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -3105,7 +3213,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_gate_status",
-      "community": 19,
+      "community": 21,
       "norm_label": "gate status"
     },
     {
@@ -3114,7 +3222,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 12,
+      "community": 13,
       "norm_label": "product.md"
     },
     {
@@ -3123,7 +3231,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "current_product_product_food_akinator_zero_to_one",
-      "community": 12,
+      "community": 13,
       "norm_label": "product \u2014 food akinator zero-to-one"
     },
     {
@@ -3132,7 +3240,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110c\u1166\u1111\u116e\u11b7 \u1112\u1161\u11ab \u110c\u116e\u11af \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -3141,7 +3249,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_7",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1106\u116e\u11ab\u110c\u1166"
     },
     {
@@ -3150,7 +3258,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L11",
       "id": "current_product_thesis",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u110c\u1166\u1111\u116e\u11b7 thesis"
     },
     {
@@ -3159,7 +3267,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L25",
       "id": "current_product_mvp",
-      "community": 12,
+      "community": 13,
       "norm_label": "mvp \u1107\u1165\u11b7\u110b\u1171"
     },
     {
@@ -3168,7 +3276,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L35",
       "id": "current_product_non_goals",
-      "community": 12,
+      "community": 13,
       "norm_label": "non-goals"
     },
     {
@@ -3177,7 +3285,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L46",
       "id": "current_product_builder",
-      "community": 12,
+      "community": 13,
       "norm_label": "builder \u1109\u1175\u110c\u1161\u11a8 \u110c\u1169\u1100\u1165\u11ab"
     },
     {
@@ -3186,7 +3294,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L59",
       "id": "current_product_59",
-      "community": 12,
+      "community": 13,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u110b\u116e\u1109\u1165\u11ab\u1109\u116e\u11ab\u110b\u1171"
     },
     {
@@ -3195,7 +3303,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L68",
       "id": "current_product_v0",
-      "community": 12,
+      "community": 13,
       "norm_label": "v0 \u1109\u1165\u11bc\u1100\u1169\u11bc \u1100\u1175\u110c\u116e\u11ab"
     },
     {
@@ -3204,7 +3312,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 9,
+      "community": 10,
       "norm_label": "architecture.md"
     },
     {
@@ -3213,7 +3321,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "current_architecture_architecture_zero_to_one",
-      "community": 9,
+      "community": 10,
       "norm_label": "architecture \u2014 zero-to-one"
     },
     {
@@ -3222,7 +3330,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L3",
       "id": "current_architecture",
-      "community": 9,
+      "community": 10,
       "norm_label": "\u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -3231,7 +3339,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L7",
       "id": "current_architecture_candidate_schema",
-      "community": 9,
+      "community": 10,
       "norm_label": "candidate schema"
     },
     {
@@ -3240,7 +3348,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L9",
       "id": "current_architecture_codeblock_1",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:ts (type candidate = {)"
     },
     {
@@ -3249,7 +3357,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L26",
       "id": "current_architecture_question_schema",
-      "community": 9,
+      "community": 10,
       "norm_label": "question schema"
     },
     {
@@ -3258,7 +3366,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L28",
       "id": "current_architecture_codeblock_2",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -3267,7 +3375,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L42",
       "id": "current_architecture_answer_semantics",
-      "community": 9,
+      "community": 10,
       "norm_label": "answer semantics"
     },
     {
@@ -3276,7 +3384,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L50",
       "id": "current_architecture_scoring_mvp",
-      "community": 9,
+      "community": 10,
       "norm_label": "scoring mvp"
     },
     {
@@ -3285,7 +3393,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L56",
       "id": "current_architecture_adaptive_selector",
-      "community": 9,
+      "community": 10,
       "norm_label": "adaptive selector"
     },
     {
@@ -3294,7 +3402,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L83",
       "id": "current_architecture_reveal_threshold",
-      "community": 9,
+      "community": 10,
       "norm_label": "reveal threshold"
     },
     {
@@ -3303,7 +3411,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L93",
       "id": "current_architecture_wrong_recovery",
-      "community": 9,
+      "community": 10,
       "norm_label": "wrong recovery"
     },
     {
@@ -3312,7 +3420,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L102",
       "id": "current_architecture_character_cue_contract",
-      "community": 9,
+      "community": 10,
       "norm_label": "character cue contract"
     },
     {
@@ -3321,8 +3429,17 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L123",
       "id": "current_architecture_builder_gate",
-      "community": 9,
+      "community": 10,
       "norm_label": "builder gate"
+    },
+    {
+      "label": "Golden path fixture contract",
+      "file_type": "document",
+      "source_file": "docs/current/architecture.md",
+      "source_location": "L132",
+      "id": "current_architecture_golden_path_fixture_contract",
+      "community": 10,
+      "norm_label": "golden path fixture contract"
     },
     {
       "label": "qa.md",
@@ -3388,10 +3505,19 @@
       "norm_label": "engine tests"
     },
     {
-      "label": "Browser QA",
+      "label": "Golden scenario tests",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
       "source_location": "L67",
+      "id": "current_qa_golden_scenario_tests",
+      "community": 15,
+      "norm_label": "golden scenario tests"
+    },
+    {
+      "label": "Browser QA",
+      "file_type": "document",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L78",
       "id": "current_qa_browser_qa",
       "community": 15,
       "norm_label": "browser qa"
@@ -3400,7 +3526,7 @@
       "label": "Live canary",
       "file_type": "document",
       "source_file": "docs/current/qa.md",
-      "source_location": "L78",
+      "source_location": "L89",
       "id": "current_qa_live_canary",
       "community": 15,
       "norm_label": "live canary"
@@ -3474,7 +3600,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "docs_current_design_md",
-      "community": 14,
+      "community": 17,
       "norm_label": "design.md"
     },
     {
@@ -3483,7 +3609,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "current_design_design_zero_to_one_direction",
-      "community": 14,
+      "community": 17,
       "norm_label": "design \u2014 zero-to-one direction"
     },
     {
@@ -3492,7 +3618,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L3",
       "id": "current_design",
-      "community": 14,
+      "community": 17,
       "norm_label": "\u1103\u1175\u110c\u1161\u110b\u1175\u11ab \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -3501,7 +3627,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L9",
       "id": "current_design_reference_principles_from_direct_play",
-      "community": 14,
+      "community": 17,
       "norm_label": "reference principles from direct play"
     },
     {
@@ -3510,7 +3636,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L19",
       "id": "current_design_reference_principles_from_akinator",
-      "community": 14,
+      "community": 17,
       "norm_label": "reference principles from akinator"
     },
     {
@@ -3519,7 +3645,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L28",
       "id": "current_design_non_copy_boundary",
-      "community": 14,
+      "community": 17,
       "norm_label": "non-copy boundary"
     },
     {
@@ -3528,7 +3654,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L42",
       "id": "current_design_screen_state_inventory",
-      "community": 14,
+      "community": 17,
       "norm_label": "screen/state inventory"
     },
     {
@@ -3537,7 +3663,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L78",
       "id": "current_design_character_requirement",
-      "community": 14,
+      "community": 17,
       "norm_label": "character requirement"
     },
     {
@@ -3546,8 +3672,17 @@
       "source_file": "docs/current/design.md",
       "source_location": "L92",
       "id": "current_design_visual_acceptance",
-      "community": 14,
+      "community": 17,
       "norm_label": "visual acceptance"
+    },
+    {
+      "label": "{ session, askedQuestionIds }",
+      "file_type": "code",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L62",
+      "community": 2,
+      "norm_label": "{ session, askedquestionids }",
+      "id": "tests_engine_golden_scenarios_test_session_askedquestionids"
     },
     {
       "label": "\ubc30\ud3ec \uc644\ub8cc \uc815\uc758",
@@ -4248,6 +4383,189 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "src_engine_domain_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "engine_domain_answerkey"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "src_engine_session_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "engine_session_startsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "engine_session_submitanswer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "engine_session_submitguessfeedback"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "tests_fixtures_golden_scenarios_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "fixtures_golden_scenarios_goldendataset"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "fixtures_golden_scenarios_goldenscenarios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "tests_engine_golden_scenarios_test_answercurrent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "tests_engine_golden_scenarios_test_playscenario"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "tests_engine_golden_scenarios_test_session_askedquestionids_rejectedfirstguess_recoveryquestionid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_ts",
+      "target": "tests_engine_golden_scenarios_test_session_askedquestionids"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_golden_scenarios_test_playscenario",
+      "target": "tests_engine_golden_scenarios_test_answercurrent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_engine_golden_scenarios_test_answercurrent",
+      "target": "engine_session_submitanswer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_engine_golden_scenarios_test_playscenario",
+      "target": "engine_session_startsession"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/engine-golden-scenarios.test.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tests_engine_golden_scenarios_test_playscenario",
+      "target": "engine_session_submitguessfeedback"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/engine-scoring.test.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -4337,6 +4655,131 @@
       "confidence_score": 1.0,
       "source": "tests_engine_scoring_test_ts",
       "target": "tests_engine_scoring_test_scores"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "src_engine_domain_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "engine_domain_answerkey"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "engine_domain_candidate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "engine_domain_question"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "engine_domain_questionrole"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_goldenscenario"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_question"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_candidate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_goldenquestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_goldencandidates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_goldendataset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/fixtures/golden-scenarios.ts",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_fixtures_golden_scenarios_ts",
+      "target": "fixtures_golden_scenarios_goldenscenarios"
     },
     {
       "relation": "imports_from",
@@ -7852,6 +8295,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/architecture.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_architecture_architecture_zero_to_one",
+      "target": "current_architecture_golden_path_fixture_contract"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/architecture.md",
       "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -7927,6 +8380,16 @@
       "confidence_score": 1.0,
       "source": "current_qa_qa_zero_to_one_acceptance",
       "target": "current_qa_engine_tests"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/qa.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_qa_qa_zero_to_one_acceptance",
+      "target": "current_qa_golden_scenario_tests"
     },
     {
       "relation": "contains",
@@ -8110,5 +8573,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "67b6a4c9a4c9af5f25fa701c24791273129c8ed0"
+  "built_at_commit": "e66ed57e5e59f39d50b73f802dc87ed47ff68a32"
 }

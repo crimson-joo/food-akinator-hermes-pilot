@@ -128,3 +128,13 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - Rive/Lottie/layered pipeline 선택
 - golden path 20개 음식 답변 시나리오 정의
 - QA가 “설문 폼 + 장식 캐릭터”를 실패로 판정할 수 있는 기준 확정
+
+## Golden path fixture contract
+
+현재 golden path Builder 단계는 bulk catalogue가 아니라 `tests/fixtures/golden-scenarios.ts`의 작은 deterministic acceptance fixture로 고정한다.
+
+- 후보 7개: 김치찌개, 된장찌개, 치킨, 떡볶이, 비빔밥, 라면, 돈까스.
+- 질문 14개: broad split, family lock, signature discriminator, false-path guardrail, low-risk recovery question을 포함한다.
+- 필수 path coverage: soup/stew, fried/crispy, spicy snack, rice/mixed bowl, noodle/comfort.
+- scenario runner는 session API만 사용하며 selector/scoring private helper에 직접 의존하지 않는다.
+- 각 path는 answered question 반복 금지, 6~9턴 reveal 또는 graceful exhausted/recovery, 한국어 reason seed 품질을 검증한다.

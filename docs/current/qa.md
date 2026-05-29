@@ -64,6 +64,17 @@ Fail 조건:
 - recovery는 오답 후보와 남은 후보를 구분하는 질문을 고름
 - all-unknown path도 무한루프 없이 graceful 종료
 
+## Golden scenario tests
+
+현재 golden scenario fixture는 bulk catalogue가 아니라 7개 후보 / 14개 질문의 작은 acceptance set으로 유지한다.
+
+- 필수 coverage: soup/stew, fried/crispy, spicy snack, rice/mixed bowl, noodle/comfort.
+- 각 reveal path는 질문 반복 없이 5개 이상 질문을 거치고 6~9턴 안에 기대 후보를 reveal한다.
+- soup/stew와 fried/crispy는 같은 시작 질문 이후 2~3턴 안에 질문 path가 갈라져야 한다.
+- reveal reason은 `reasonSeeds` 기반 한국어 단서여야 하며 내부 score/probability/question id를 노출하지 않는다.
+- wrong guess path는 거절 후보를 suppression하고 low-risk `recovery_disambiguation` 질문으로 회복한다.
+- all-unknown path는 반복 질문이나 fake reveal 없이 `exhausted`로 종료한다.
+
 ## Browser QA
 
 필수 캡처:
