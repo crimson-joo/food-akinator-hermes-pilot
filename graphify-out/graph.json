@@ -22,12 +22,228 @@
       "norm_label": "isexplicithermesrun"
     },
     {
+      "label": "engine-session.test.ts",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L1",
+      "id": "tests_engine_session_test_ts",
+      "community": 2,
+      "norm_label": "engine-session.test.ts"
+    },
+    {
+      "label": "candidate()",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L5",
+      "id": "tests_engine_session_test_candidate",
+      "community": 2,
+      "norm_label": "candidate()"
+    },
+    {
+      "label": "question()",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L20",
+      "id": "tests_engine_session_test_question",
+      "community": 2,
+      "norm_label": "question()"
+    },
+    {
+      "label": "answerOptions",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L34",
+      "id": "tests_engine_session_test_answeroptions",
+      "community": 2,
+      "norm_label": "answeroptions"
+    },
+    {
+      "label": "coreQuestions",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L36",
+      "id": "tests_engine_session_test_corequestions",
+      "community": 2,
+      "norm_label": "corequestions"
+    },
+    {
+      "label": "coreCandidates",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L46",
+      "id": "tests_engine_session_test_corecandidates",
+      "community": 2,
+      "norm_label": "corecandidates"
+    },
+    {
+      "label": "dataset()",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L76",
+      "id": "tests_engine_session_test_dataset",
+      "community": 2,
+      "norm_label": "dataset()"
+    },
+    {
+      "label": "answerCurrent()",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L80",
+      "id": "tests_engine_session_test_answercurrent",
+      "community": 2,
+      "norm_label": "answercurrent()"
+    },
+    {
+      "label": "session",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L87",
+      "id": "tests_engine_session_test_session",
+      "community": 2,
+      "norm_label": "session"
+    },
+    {
+      "label": "next",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L99",
+      "id": "tests_engine_session_test_next",
+      "community": 2,
+      "norm_label": "next"
+    },
+    {
+      "label": "questions",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L138",
+      "id": "tests_engine_session_test_questions",
+      "community": 2,
+      "norm_label": "questions"
+    },
+    {
+      "label": "candidates",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L139",
+      "id": "tests_engine_session_test_candidates",
+      "community": 2,
+      "norm_label": "candidates"
+    },
+    {
+      "label": "data",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L144",
+      "id": "tests_engine_session_test_data",
+      "community": 2,
+      "norm_label": "data"
+    },
+    {
+      "label": "recovered",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L184",
+      "id": "tests_engine_session_test_recovered",
+      "community": 2,
+      "norm_label": "recovered"
+    },
+    {
+      "label": "asked",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L203",
+      "id": "tests_engine_session_test_asked",
+      "community": 2,
+      "norm_label": "asked"
+    },
+    {
+      "label": "first",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L236",
+      "id": "tests_engine_session_test_first",
+      "community": 2,
+      "norm_label": "first"
+    },
+    {
+      "label": "second",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L239",
+      "id": "tests_engine_session_test_second",
+      "community": 2,
+      "norm_label": "second"
+    },
+    {
+      "label": "asking",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L244",
+      "id": "tests_engine_session_test_asking",
+      "community": 2,
+      "norm_label": "asking"
+    },
+    {
+      "label": "confident",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L245",
+      "id": "tests_engine_session_test_confident",
+      "community": 2,
+      "norm_label": "confident"
+    },
+    {
+      "label": "recover",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L250",
+      "id": "tests_engine_session_test_recover",
+      "community": 2,
+      "norm_label": "recover"
+    },
+    {
+      "label": "unknownQuestions",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L252",
+      "id": "tests_engine_session_test_unknownquestions",
+      "community": 2,
+      "norm_label": "unknownquestions"
+    },
+    {
+      "label": "unknownCandidates",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L253",
+      "id": "tests_engine_session_test_unknowncandidates",
+      "community": 2,
+      "norm_label": "unknowncandidates"
+    },
+    {
+      "label": "unknownData",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L257",
+      "id": "tests_engine_session_test_unknowndata",
+      "community": 2,
+      "norm_label": "unknowndata"
+    },
+    {
+      "label": "exhausted",
+      "file_type": "code",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L258",
+      "id": "tests_engine_session_test_exhausted",
+      "community": 2,
+      "norm_label": "exhausted"
+    },
+    {
       "label": "engine-domain.test.ts",
       "file_type": "code",
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L1",
       "id": "tests_engine_domain_test_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "engine-domain.test.ts"
     },
     {
@@ -36,7 +252,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L38",
       "id": "tests_engine_domain_test_validquestion",
-      "community": 3,
+      "community": 0,
       "norm_label": "validquestion"
     },
     {
@@ -45,7 +261,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L55",
       "id": "tests_engine_domain_test_question",
-      "community": 3,
+      "community": 0,
       "norm_label": "question"
     },
     {
@@ -54,7 +270,7 @@
       "source_file": "tests/engine-domain.test.ts",
       "source_location": "L93",
       "id": "tests_engine_domain_test_candidate",
-      "community": 3,
+      "community": 0,
       "norm_label": "candidate"
     },
     {
@@ -238,6 +454,195 @@
       "norm_label": "scores"
     },
     {
+      "label": "session.ts",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L1",
+      "id": "src_engine_session_ts",
+      "community": 5,
+      "norm_label": "session.ts"
+    },
+    {
+      "label": "SessionStatus",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L5",
+      "id": "engine_session_sessionstatus",
+      "community": 5,
+      "norm_label": "sessionstatus"
+    },
+    {
+      "label": "CharacterCue",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L6",
+      "id": "engine_session_charactercue",
+      "community": 5,
+      "norm_label": "charactercue"
+    },
+    {
+      "label": "RevealPolicy",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L8",
+      "id": "engine_session_revealpolicy",
+      "community": 5,
+      "norm_label": "revealpolicy"
+    },
+    {
+      "label": "RevealGuess",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L18",
+      "id": "engine_session_revealguess",
+      "community": 5,
+      "norm_label": "revealguess"
+    },
+    {
+      "label": "EngineSession",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L23",
+      "id": "engine_session_enginesession",
+      "community": 5,
+      "norm_label": "enginesession"
+    },
+    {
+      "label": "SessionDataset",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L48",
+      "id": "engine_session_sessiondataset",
+      "community": 5,
+      "norm_label": "sessiondataset"
+    },
+    {
+      "label": "DEFAULT_POLICY",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L53",
+      "id": "engine_session_default_policy",
+      "community": 5,
+      "norm_label": "default_policy"
+    },
+    {
+      "label": "ANSWER_OPTIONS",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L63",
+      "id": "engine_session_answer_options",
+      "community": 5,
+      "norm_label": "answer_options"
+    },
+    {
+      "label": "answerOptions()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L65",
+      "id": "engine_session_answeroptions",
+      "community": 5,
+      "norm_label": "answeroptions()"
+    },
+    {
+      "label": "startSession()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L69",
+      "id": "engine_session_startsession",
+      "community": 5,
+      "norm_label": "startsession()"
+    },
+    {
+      "label": "submitAnswer()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L81",
+      "id": "engine_session_submitanswer",
+      "community": 2,
+      "norm_label": "submitanswer()"
+    },
+    {
+      "label": "submitGuessFeedback()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L116",
+      "id": "engine_session_submitguessfeedback",
+      "community": 5,
+      "norm_label": "submitguessfeedback()"
+    },
+    {
+      "label": "BuildInput",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L148",
+      "id": "engine_session_buildinput",
+      "community": 5,
+      "norm_label": "buildinput"
+    },
+    {
+      "label": "buildNextSession()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L158",
+      "id": "engine_session_buildnextsession",
+      "community": 5,
+      "norm_label": "buildnextsession()"
+    },
+    {
+      "label": "askingSession()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L203",
+      "id": "engine_session_askingsession",
+      "community": 5,
+      "norm_label": "askingsession()"
+    },
+    {
+      "label": "pickNextQuestion()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L244",
+      "id": "engine_session_picknextquestion",
+      "community": 5,
+      "norm_label": "picknextquestion()"
+    },
+    {
+      "label": "revealed()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L264",
+      "id": "engine_session_revealed",
+      "community": 5,
+      "norm_label": "revealed()"
+    },
+    {
+      "label": "exhausted()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L300",
+      "id": "engine_session_exhausted",
+      "community": 5,
+      "norm_label": "exhausted()"
+    },
+    {
+      "label": "ProbabilityScore",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L330",
+      "id": "engine_session_probabilityscore",
+      "community": 5,
+      "norm_label": "probabilityscore"
+    },
+    {
+      "label": "normalizeProbabilities()",
+      "file_type": "code",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L335",
+      "id": "engine_session_normalizeprobabilities",
+      "community": 5,
+      "norm_label": "normalizeprobabilities()"
+    },
+    {
       "label": "selector.ts",
       "file_type": "code",
       "source_file": "src/engine/selector.ts",
@@ -414,7 +819,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "src_engine_domain_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "domain.ts"
     },
     {
@@ -423,7 +828,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "engine_domain_answer_values",
-      "community": 3,
+      "community": 0,
       "norm_label": "answer_values"
     },
     {
@@ -441,7 +846,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L10",
       "id": "engine_domain_answervalue",
-      "community": 3,
+      "community": 0,
       "norm_label": "answervalue"
     },
     {
@@ -450,7 +855,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L12",
       "id": "engine_domain_question_roles",
-      "community": 3,
+      "community": 0,
       "norm_label": "question_roles"
     },
     {
@@ -468,7 +873,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L24",
       "id": "engine_domain_question_axes",
-      "community": 3,
+      "community": 0,
       "norm_label": "question_axes"
     },
     {
@@ -477,7 +882,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L37",
       "id": "engine_domain_questionaxis",
-      "community": 3,
+      "community": 0,
       "norm_label": "questionaxis"
     },
     {
@@ -486,7 +891,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L38",
       "id": "engine_domain_status",
-      "community": 3,
+      "community": 0,
       "norm_label": "status"
     },
     {
@@ -495,7 +900,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L39",
       "id": "engine_domain_questionid",
-      "community": 3,
+      "community": 0,
       "norm_label": "questionid"
     },
     {
@@ -504,7 +909,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L41",
       "id": "engine_domain_question",
-      "community": 3,
+      "community": 0,
       "norm_label": "question"
     },
     {
@@ -522,7 +927,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L68",
       "id": "engine_domain_validationresult",
-      "community": 3,
+      "community": 0,
       "norm_label": "validationresult"
     },
     {
@@ -531,7 +936,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L72",
       "id": "engine_domain_status_values",
-      "community": 3,
+      "community": 0,
       "norm_label": "status_values"
     },
     {
@@ -540,7 +945,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L73",
       "id": "engine_domain_levels",
-      "community": 3,
+      "community": 0,
       "norm_label": "levels"
     },
     {
@@ -549,7 +954,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L75",
       "id": "engine_domain_validatequestion",
-      "community": 3,
+      "community": 0,
       "norm_label": "validatequestion()"
     },
     {
@@ -558,7 +963,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L107",
       "id": "engine_domain_validatecandidate",
-      "community": 3,
+      "community": 0,
       "norm_label": "validatecandidate()"
     },
     {
@@ -567,7 +972,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L155",
       "id": "engine_domain_asrecord",
-      "community": 3,
+      "community": 0,
       "norm_label": "asrecord()"
     },
     {
@@ -576,7 +981,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L161",
       "id": "engine_domain_requirestring",
-      "community": 3,
+      "community": 0,
       "norm_label": "requirestring()"
     },
     {
@@ -585,7 +990,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L167",
       "id": "engine_domain_requirestringarray",
-      "community": 3,
+      "community": 0,
       "norm_label": "requirestringarray()"
     },
     {
@@ -594,7 +999,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 23,
+      "community": 24,
       "norm_label": "readme.md"
     },
     {
@@ -603,7 +1008,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "food_akinator_hermes_pilot_readme_food_akinator_zero_to_one_research_foundation",
-      "community": 23,
+      "community": 24,
       "norm_label": "food akinator \u2014 zero-to-one research foundation"
     },
     {
@@ -612,7 +1017,7 @@
       "source_file": "README.md",
       "source_location": "L5",
       "id": "food_akinator_hermes_pilot_readme",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -621,7 +1026,7 @@
       "source_file": "README.md",
       "source_location": "L12",
       "id": "food_akinator_hermes_pilot_readme_12",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1106\u1169\u11a8\u1111\u116d"
     },
     {
@@ -630,7 +1035,7 @@
       "source_file": "README.md",
       "source_location": "L16",
       "id": "food_akinator_hermes_pilot_readme_16",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -639,7 +1044,7 @@
       "source_file": "README.md",
       "source_location": "L25",
       "id": "food_akinator_hermes_pilot_readme_25",
-      "community": 23,
+      "community": 24,
       "norm_label": "\u1106\u116e\u11ab\u1109\u1165"
     },
     {
@@ -675,7 +1080,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_harry_potter_md",
-      "community": 16,
+      "community": 17,
       "norm_label": "akinator-direct-play-log-2026-05-28-harry-potter.md"
     },
     {
@@ -684,7 +1089,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_akinator_direct_play_log_harry_potter",
-      "community": 16,
+      "community": 17,
       "norm_label": "akinator direct play log \u2014 harry potter"
     },
     {
@@ -693,7 +1098,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_run_metadata",
-      "community": 16,
+      "community": 17,
       "norm_label": "run metadata"
     },
     {
@@ -702,7 +1107,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L21",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_entry_flow_observations",
-      "community": 16,
+      "community": 17,
       "norm_label": "entry flow observations"
     },
     {
@@ -711,7 +1116,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_question_answer_trace",
-      "community": 16,
+      "community": 17,
       "norm_label": "question/answer trace"
     },
     {
@@ -720,7 +1125,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_interaction_insights",
-      "community": 16,
+      "community": 17,
       "norm_label": "interaction insights"
     },
     {
@@ -729,7 +1134,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L69",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_product_implications_for_korean_food_akinator",
-      "community": 16,
+      "community": 17,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -738,7 +1143,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L77",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_gate_status",
-      "community": 16,
+      "community": 17,
       "norm_label": "gate status"
     },
     {
@@ -936,7 +1341,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_synthesis_md",
-      "community": 2,
+      "community": 3,
       "norm_label": "akinator-direct-play-synthesis.md"
     },
     {
@@ -945,7 +1350,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_synthesis_akinator_direct_play_synthesis_builder_handoff",
-      "community": 2,
+      "community": 3,
       "norm_label": "akinator direct play synthesis \u2014 builder handoff"
     },
     {
@@ -954,7 +1359,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_synthesis",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -963,7 +1368,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_synthesis_15",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u1100\u1169\u11bc\u1110\u1169\u11bc \u1100\u1166\u110b\u1175\u11b7 \u1105\u116e\u1111\u1173"
     },
     {
@@ -972,7 +1377,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_synthesis_codeblock_1",
-      "community": 2,
+      "community": 3,
       "norm_label": "code:txt (entry prompt)"
     },
     {
@@ -981,7 +1386,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L31",
       "id": "research_akinator_direct_play_synthesis_31",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u110c\u1175\u11af\u1106\u116e\u11ab \u110c\u1165\u11ab\u1105\u1163\u11a8 \u1111\u1162\u1110\u1165\u11ab"
     },
     {
@@ -990,7 +1395,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L33",
       "id": "research_akinator_direct_play_synthesis_1_broad_split",
-      "community": 2,
+      "community": 3,
       "norm_label": "1. broad split"
     },
     {
@@ -999,7 +1404,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L52",
       "id": "research_akinator_direct_play_synthesis_2_family_domain_lock_in",
-      "community": 2,
+      "community": 3,
       "norm_label": "2. family/domain lock-in"
     },
     {
@@ -1008,7 +1413,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L67",
       "id": "research_akinator_direct_play_synthesis_3_signature_discriminator",
-      "community": 2,
+      "community": 3,
       "norm_label": "3. signature discriminator"
     },
     {
@@ -1017,7 +1422,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L86",
       "id": "research_akinator_direct_play_synthesis_4_negative_answer_as_active_pruning",
-      "community": 2,
+      "community": 3,
       "norm_label": "4. negative answer as active pruning"
     },
     {
@@ -1026,7 +1431,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L97",
       "id": "research_akinator_direct_play_synthesis_5_noise_tolerance",
-      "community": 2,
+      "community": 3,
       "norm_label": "5. noise tolerance"
     },
     {
@@ -1035,7 +1440,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L113",
       "id": "research_akinator_direct_play_synthesis_designer_handoff",
-      "community": 2,
+      "community": 3,
       "norm_label": "designer handoff"
     },
     {
@@ -1044,7 +1449,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L115",
       "id": "research_akinator_direct_play_synthesis_115",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u110b\u1167\u11a8\u1112\u1161\u11af"
     },
     {
@@ -1053,7 +1458,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L130",
       "id": "research_akinator_direct_play_synthesis_130",
-      "community": 2,
+      "community": 3,
       "norm_label": "\u110c\u1175\u11ab\u1112\u1162\u11bc\u1100\u1161\u11b7 \u1111\u116d\u1112\u1167\u11ab"
     },
     {
@@ -1062,7 +1467,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L141",
       "id": "research_akinator_direct_play_synthesis_reveal",
-      "community": 2,
+      "community": 3,
       "norm_label": "reveal"
     },
     {
@@ -1071,7 +1476,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L153",
       "id": "research_akinator_direct_play_synthesis_researcher_handoff",
-      "community": 2,
+      "community": 3,
       "norm_label": "researcher handoff"
     },
     {
@@ -1080,7 +1485,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L169",
       "id": "research_akinator_direct_play_synthesis_developer_architect_handoff",
-      "community": 2,
+      "community": 3,
       "norm_label": "developer / architect handoff"
     },
     {
@@ -1089,7 +1494,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L171",
       "id": "research_akinator_direct_play_synthesis_engine_rule_updates",
-      "community": 2,
+      "community": 3,
       "norm_label": "engine rule updates"
     },
     {
@@ -1098,7 +1503,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L175",
       "id": "research_akinator_direct_play_synthesis_codeblock_2",
-      "community": 2,
+      "community": 3,
       "norm_label": "code:ts (type questionrole =)"
     },
     {
@@ -1107,7 +1512,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L187",
       "id": "research_akinator_direct_play_synthesis_codeblock_3",
-      "community": 2,
+      "community": 3,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -1116,7 +1521,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L209",
       "id": "research_akinator_direct_play_synthesis_reveal_threshold_adjustment",
-      "community": 2,
+      "community": 3,
       "norm_label": "reveal threshold adjustment"
     },
     {
@@ -1125,7 +1530,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L220",
       "id": "research_akinator_direct_play_synthesis_qa_handoff",
-      "community": 2,
+      "community": 3,
       "norm_label": "qa handoff"
     },
     {
@@ -1134,7 +1539,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L224",
       "id": "research_akinator_direct_play_synthesis_must_pass_scenario_tests",
-      "community": 2,
+      "community": 3,
       "norm_label": "must-pass scenario tests"
     },
     {
@@ -1143,7 +1548,7 @@
       "source_file": "docs/research/akinator-direct-play-synthesis.md",
       "source_location": "L243",
       "id": "research_akinator_direct_play_synthesis_builder_gate_update",
-      "community": 2,
+      "community": 3,
       "norm_label": "builder gate update"
     },
     {
@@ -1152,7 +1557,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_blocker_and_protocol_md",
-      "community": 5,
+      "community": 6,
       "norm_label": "akinator-direct-play-blocker-and-protocol.md"
     },
     {
@@ -1161,7 +1566,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_blocker_and_protocol_akinator_direct_play_blocker_manual_observation_protocol",
-      "community": 5,
+      "community": 6,
       "norm_label": "akinator direct play blocker + manual observation protocol"
     },
     {
@@ -1170,7 +1575,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_blocker_and_protocol",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -1179,7 +1584,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_blocker_and_protocol_15",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u1109\u1175\u1103\u1169\u1112\u1161\u11ab \u1100\u1167\u11bc\u1105\u1169"
     },
     {
@@ -1188,7 +1593,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_blocker_and_protocol_1_headless_browser",
-      "community": 5,
+      "community": 6,
       "norm_label": "1. headless/browser \u1100\u1169\u11bc\u1109\u1175\u11a8 \u110b\u1170\u11b8"
     },
     {
@@ -1197,7 +1602,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L23",
       "id": "research_akinator_direct_play_blocker_and_protocol_2_silvergames_embedded_route",
-      "community": 5,
+      "community": 6,
       "norm_label": "2. silvergames embedded route"
     },
     {
@@ -1206,7 +1611,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L30",
       "id": "research_akinator_direct_play_blocker_and_protocol_3_npm_api_wrapper",
-      "community": 5,
+      "community": 6,
       "norm_label": "3. npm/api wrapper"
     },
     {
@@ -1215,7 +1620,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L38",
       "id": "research_akinator_direct_play_blocker_and_protocol_4_macos_local_browser_computer_use",
-      "community": 5,
+      "community": 6,
       "norm_label": "4. macos local browser/computer-use"
     },
     {
@@ -1224,7 +1629,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_blocker_and_protocol_47",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u1112\u1161\u110c\u1175 \u110b\u1161\u11ad\u110b\u1173\u11ab \u1100\u1165\u11ba"
     },
     {
@@ -1233,7 +1638,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_blocker_and_protocol_blocker",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u110b\u116b blocker\u110b\u1175\u11ab\u1100\u1161"
     },
     {
@@ -1242,7 +1647,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_blocker_and_protocol_60",
-      "community": 5,
+      "community": 6,
       "norm_label": "\u1111\u1175\u11af\u110b\u116d\u1112\u1161\u11ab \u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u110b\u1175\u11b8\u1105\u1167\u11a8/\u1100\u116f\u11ab\u1112\u1161\u11ab"
     },
     {
@@ -1251,7 +1656,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L64",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_a_macos_permission",
-      "community": 5,
+      "community": 6,
       "norm_label": "option a \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 macos permission \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -1260,7 +1665,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L70",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_b",
-      "community": 5,
+      "community": 6,
       "norm_label": "option b \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1105\u1169\u1100\u1173 \u110c\u1166\u1100\u1169\u11bc"
     },
     {
@@ -1269,7 +1674,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L74",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_c",
-      "community": 5,
+      "community": 6,
       "norm_label": "option c \u2014 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u110b\u116d\u1100\u116e\u1105\u1173\u11af \u1100\u1169\u11bc\u1100\u1162 \u110b\u1167\u11bc\u1109\u1161\u11bc/\u1109\u1173\u110f\u1173\u1105\u1175\u11ab\u1109\u1163\u11ba \u1100\u116a\u11ab\u110e\u1161\u11af\u1105\u1169 \u1103\u1162\u110e\u1166 \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -1278,7 +1683,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L78",
       "id": "research_akinator_direct_play_blocker_and_protocol_manual_play_protocol",
-      "community": 5,
+      "community": 6,
       "norm_label": "manual play protocol"
     },
     {
@@ -1287,7 +1692,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L88",
       "id": "research_akinator_direct_play_blocker_and_protocol_codeblock_1",
-      "community": 5,
+      "community": 6,
       "norm_label": "code:txt (target:)"
     },
     {
@@ -1296,7 +1701,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L116",
       "id": "research_akinator_direct_play_blocker_and_protocol_observation_checklist",
-      "community": 5,
+      "community": 6,
       "norm_label": "observation checklist"
     },
     {
@@ -1305,7 +1710,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L129",
       "id": "research_akinator_direct_play_blocker_and_protocol_builder_gate",
-      "community": 5,
+      "community": 6,
       "norm_label": "builder gate"
     },
     {
@@ -1314,7 +1719,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L1",
       "id": "docs_research_designer_gate_md",
-      "community": 7,
+      "community": 8,
       "norm_label": "designer-gate.md"
     },
     {
@@ -1323,7 +1728,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L1",
       "id": "research_designer_gate_designer_gate_food_akinator_zero_to_one",
-      "community": 7,
+      "community": 8,
       "norm_label": "designer gate \u2014 food akinator zero-to-one"
     },
     {
@@ -1332,7 +1737,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L3",
       "id": "research_designer_gate_gate",
-      "community": 7,
+      "community": 8,
       "norm_label": "gate \u1106\u1169\u11a8\u110c\u1165\u11a8"
     },
     {
@@ -1341,7 +1746,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L7",
       "id": "research_designer_gate",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -1350,7 +1755,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L13",
       "id": "research_designer_gate_13",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u1112\u116e\u1107\u1169 \u1107\u1175\u1100\u116d"
     },
     {
@@ -1359,7 +1764,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L15",
       "id": "research_designer_gate_a",
-      "community": 7,
+      "community": 8,
       "norm_label": "a. \u110b\u1175\u11b8\u1106\u1161\u11ba \u1110\u1161\u11b7\u110c\u1165\u11bc \u201c\u1106\u1161\u11ba\u110c\u1165\u11bc\u110b\u1175\u201d"
     },
     {
@@ -1368,7 +1773,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L20",
       "id": "research_designer_gate_b",
-      "community": 7,
+      "community": 8,
       "norm_label": "b. \u1107\u1169\u1100\u1173\u11af \u1109\u1168\u1111\u1173"
     },
     {
@@ -1377,7 +1782,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L25",
       "id": "research_designer_gate_c",
-      "community": 7,
+      "community": 8,
       "norm_label": "c. \u110b\u1175\u11b8\u1106\u1161\u11ba \u1105\u1166\u110b\u1175\u1103\u1165 \u201c\u1102\u1163\u11b7\u1110\u1166\u1102\u1161\u201d"
     },
     {
@@ -1386,7 +1791,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L30",
       "id": "research_designer_gate_30",
-      "community": 7,
+      "community": 8,
       "norm_label": "\u110e\u116c\u110c\u1169\u11bc \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -1395,7 +1800,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L39",
       "id": "research_designer_gate_screen_states",
-      "community": 7,
+      "community": 8,
       "norm_label": "screen states"
     },
     {
@@ -1404,7 +1809,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L51",
       "id": "research_designer_gate_5_answer_rhythm",
-      "community": 7,
+      "community": 8,
       "norm_label": "5-answer rhythm"
     },
     {
@@ -1413,7 +1818,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L67",
       "id": "research_designer_gate_character_motion_spec",
-      "community": 7,
+      "community": 8,
       "norm_label": "character motion spec"
     },
     {
@@ -1422,7 +1827,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L87",
       "id": "research_designer_gate_microcopy",
-      "community": 7,
+      "community": 8,
       "norm_label": "microcopy \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -1431,7 +1836,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L102",
       "id": "research_designer_gate_visual_acceptance",
-      "community": 7,
+      "community": 8,
       "norm_label": "visual acceptance"
     },
     {
@@ -1440,7 +1845,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L120",
       "id": "research_designer_gate_builder_handoff",
-      "community": 7,
+      "community": 8,
       "norm_label": "builder handoff"
     },
     {
@@ -1449,7 +1854,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L124",
       "id": "research_designer_gate_codeblock_1",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:ts (type charactercue =)"
     },
     {
@@ -1521,7 +1926,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "docs_research_akinator_reference_observations_md",
-      "community": 19,
+      "community": 23,
       "norm_label": "akinator-reference-observations.md"
     },
     {
@@ -1530,7 +1935,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "research_akinator_reference_observations_akinator_reference_observations",
-      "community": 19,
+      "community": 23,
       "norm_label": "akinator reference observations"
     },
     {
@@ -1539,7 +1944,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L3",
       "id": "research_akinator_reference_observations",
-      "community": 19,
+      "community": 23,
       "norm_label": "\u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -1548,7 +1953,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L9",
       "id": "research_akinator_reference_observations_9",
-      "community": 19,
+      "community": 23,
       "norm_label": "\u1100\u116a\u11ab\u110e\u1161\u11af\u1103\u116c\u11ab \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u116f\u11ab\u1105\u1175"
     },
     {
@@ -1557,7 +1962,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L26",
       "id": "research_akinator_reference_observations_food",
-      "community": 19,
+      "community": 23,
       "norm_label": "food \u1109\u1165\u1107\u1175\u1109\u1173 \u110c\u1165\u11a8\u110b\u116d\u11bc \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -1566,7 +1971,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L35",
       "id": "research_akinator_reference_observations_non_copy_boundary",
-      "community": 19,
+      "community": 23,
       "norm_label": "non-copy boundary"
     },
     {
@@ -1575,7 +1980,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L42",
       "id": "research_akinator_reference_observations_todo",
-      "community": 19,
+      "community": 23,
       "norm_label": "\u110e\u116e\u1100\u1161 \u1105\u1175\u1109\u1165\u110e\u1175 todo"
     },
     {
@@ -1584,7 +1989,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_md",
-      "community": 22,
+      "community": 21,
       "norm_label": "akinator-direct-play-log-2026-05-28-naruto-uzumaki.md"
     },
     {
@@ -1593,7 +1998,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_akinator_direct_play_log_naruto_uzumaki",
-      "community": 22,
+      "community": 21,
       "norm_label": "akinator direct play log \u2014 naruto uzumaki"
     },
     {
@@ -1602,7 +2007,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_run_metadata",
-      "community": 22,
+      "community": 21,
       "norm_label": "run metadata"
     },
     {
@@ -1611,7 +2016,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_question_answer_trace",
-      "community": 22,
+      "community": 21,
       "norm_label": "question/answer trace"
     },
     {
@@ -1620,7 +2025,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L37",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_interaction_insights",
-      "community": 22,
+      "community": 21,
       "norm_label": "interaction insights"
     },
     {
@@ -1629,7 +2034,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L44",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_product_implications_for_korean_food_akinator",
-      "community": 22,
+      "community": 21,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -1638,7 +2043,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L50",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_gate_status",
-      "community": 22,
+      "community": 21,
       "norm_label": "gate status"
     },
     {
@@ -1782,7 +2187,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L163",
       "id": "research_inference_motion_research_4_adaptive_next_question_selection",
-      "community": 11,
+      "community": 13,
       "norm_label": "4. adaptive next-question selection"
     },
     {
@@ -1791,7 +2196,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L167",
       "id": "research_inference_motion_research_4_1",
-      "community": 11,
+      "community": 13,
       "norm_label": "4.1 \u1112\u116e\u1107\u1169 \u1112\u116a\u11a8\u1105\u1172\u11af \u110c\u1165\u11bc\u1100\u1172\u1112\u116a"
     },
     {
@@ -1800,7 +2205,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L171",
       "id": "research_inference_motion_research_codeblock_7",
-      "community": 11,
+      "community": 13,
       "norm_label": "code:txt (p(c) = exp(logscore(c) / t) / \u03c3 exp(logscore(i) / t))"
     },
     {
@@ -1809,7 +2214,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L179",
       "id": "research_inference_motion_research_4_2_expected_information_gain",
-      "community": 11,
+      "community": 13,
       "norm_label": "4.2 expected information gain"
     },
     {
@@ -1818,7 +2223,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L183",
       "id": "research_inference_motion_research_codeblock_8",
-      "community": 11,
+      "community": 13,
       "norm_label": "code:txt (h(c) = -\u03c3 p(c) log2 p(c))"
     },
     {
@@ -1827,7 +2232,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L189",
       "id": "research_inference_motion_research_codeblock_9",
-      "community": 11,
+      "community": 13,
       "norm_label": "code:txt (p(a | q) = \u03c3 p(c) * p(a | c, q))"
     },
     {
@@ -1836,7 +2241,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L195",
       "id": "research_inference_motion_research_codeblock_10",
-      "community": 11,
+      "community": 13,
       "norm_label": "code:txt (ig(q) = h(c) - \u03c3_a p(a | q) * h(c | answer=a, q))"
     },
     {
@@ -1845,7 +2250,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L201",
       "id": "research_inference_motion_research_codeblock_11",
-      "community": 11,
+      "community": 13,
       "norm_label": "code:txt (questionscore(q) = ig(q))"
     },
     {
@@ -1854,7 +2259,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L216",
       "id": "research_inference_motion_research_4_3",
-      "community": 11,
+      "community": 13,
       "norm_label": "4.3 \u110c\u1161\u11a8\u110b\u1173\u11ab \u1103\u1169\u1106\u1166\u110b\u1175\u11ab\u110b\u1166\u1109\u1165\u110b\u1174 \u1100\u1161\u11ab\u1103\u1161\u11ab \u1103\u1162\u110b\u1161\u11ab"
     },
     {
@@ -1863,7 +2268,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L220",
       "id": "research_inference_motion_research_codeblock_12",
-      "community": 11,
+      "community": 13,
       "norm_label": "code:txt (mean = \u03c3 p(c) * expected(c,q))"
     },
     {
@@ -1962,7 +2367,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L327",
       "id": "research_inference_motion_research_7_api",
-      "community": 9,
+      "community": 10,
       "norm_label": "7. \u110b\u1166\u11ab\u110c\u1175\u11ab api \u110e\u1169\u110b\u1161\u11ab"
     },
     {
@@ -1971,7 +2376,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L329",
       "id": "research_inference_motion_research_7_1",
-      "community": 9,
+      "community": 10,
       "norm_label": "7.1 \u1109\u1166\u1109\u1167\u11ab \u1109\u1175\u110c\u1161\u11a8"
     },
     {
@@ -1980,7 +2385,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L331",
       "id": "research_inference_motion_research_codeblock_15",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:http (post /sessions)"
     },
     {
@@ -1989,7 +2394,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L336",
       "id": "research_inference_motion_research_codeblock_16",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:json ({)"
     },
     {
@@ -1998,7 +2403,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L349",
       "id": "research_inference_motion_research_7_2",
-      "community": 9,
+      "community": 10,
       "norm_label": "7.2 \u1103\u1161\u11b8\u1107\u1167\u11ab \u110c\u1166\u110e\u116e\u11af"
     },
     {
@@ -2007,7 +2412,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L351",
       "id": "research_inference_motion_research_codeblock_17",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:http (post /sessions/{id}/answers)"
     },
     {
@@ -2016,7 +2421,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L361",
       "id": "research_inference_motion_research_codeblock_18",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:json ({)"
     },
     {
@@ -2025,7 +2430,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L372",
       "id": "research_inference_motion_research_codeblock_19",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:json ({)"
     },
     {
@@ -2034,7 +2439,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L381",
       "id": "research_inference_motion_research_7_3",
-      "community": 9,
+      "community": 10,
       "norm_label": "7.3 \u110e\u116e\u110e\u1173\u11a8 \u1111\u1175\u1103\u1173\u1107\u1162\u11a8"
     },
     {
@@ -2043,7 +2448,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L383",
       "id": "research_inference_motion_research_codeblock_20",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:http (post /sessions/{id}/guess-feedback)"
     },
     {
@@ -2052,7 +2457,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L392",
       "id": "research_inference_motion_research_codeblock_21",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:json ({)"
     },
     {
@@ -2061,7 +2466,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L402",
       "id": "research_inference_motion_research_codeblock_22",
-      "community": 9,
+      "community": 10,
       "norm_label": "code:json ({)"
     },
     {
@@ -2133,7 +2538,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L508",
       "id": "research_inference_motion_research_9_mvp",
-      "community": 24,
+      "community": 1,
       "norm_label": "9. \u110e\u116e\u110e\u1165\u11ab mvp \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab"
     },
     {
@@ -2142,7 +2547,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L510",
       "id": "research_inference_motion_research_9_1_1_rive_state_machine",
-      "community": 24,
+      "community": 1,
       "norm_label": "9.1 1\u1109\u116e\u11ab\u110b\u1171: rive state machine"
     },
     {
@@ -2151,7 +2556,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L530",
       "id": "research_inference_motion_research_codeblock_23",
-      "community": 24,
+      "community": 1,
       "norm_label": "code:ts (function cuefromengine(state, confidence, lastanswer, wrongg)"
     },
     {
@@ -2160,7 +2565,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L540",
       "id": "research_inference_motion_research_9_2_2_lottie_clips_light_state_controller",
-      "community": 24,
+      "community": 1,
       "norm_label": "9.2 2\u1109\u116e\u11ab\u110b\u1171: lottie clips + light state controller"
     },
     {
@@ -2169,7 +2574,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L547",
       "id": "research_inference_motion_research_9_3_fallback_layered_raster",
-      "community": 24,
+      "community": 1,
       "norm_label": "9.3 fallback: layered raster"
     },
     {
@@ -2331,7 +2736,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L1",
       "id": "docs_research_zero_to_one_team_synthesis_md",
-      "community": 10,
+      "community": 11,
       "norm_label": "zero-to-one-team-synthesis.md"
     },
     {
@@ -2340,7 +2745,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L1",
       "id": "research_zero_to_one_team_synthesis_zero_to_one_team_synthesis",
-      "community": 10,
+      "community": 11,
       "norm_label": "zero-to-one team synthesis"
     },
     {
@@ -2349,7 +2754,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L3",
       "id": "research_zero_to_one_team_synthesis",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u1112\u116c\u110b\u1174 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -2358,7 +2763,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L13",
       "id": "research_zero_to_one_team_synthesis_13",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u1112\u1161\u11b8\u110b\u1174\u1103\u116c\u11ab \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -2367,7 +2772,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L24",
       "id": "research_zero_to_one_team_synthesis_24",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u1100\u1175\u110c\u1169\u11ab \u1109\u1175\u11af\u1111\u1162\u110b\u116a\u110b\u1174 \u1103\u1161\u11ab\u110c\u1165\u11af"
     },
     {
@@ -2376,7 +2781,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L39",
       "id": "research_zero_to_one_team_synthesis_agent_graph",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u1103\u1161\u110b\u1173\u11b7 agent graph"
     },
     {
@@ -2385,7 +2790,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L41",
       "id": "research_zero_to_one_team_synthesis_t1_researcher_akinator",
-      "community": 10,
+      "community": 11,
       "norm_label": "t1 researcher \u2014 \u1109\u1175\u11af\u110c\u1166 akinator \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1105\u1169\u1100\u1173 \u1107\u1169\u1100\u1161\u11bc \u2705"
     },
     {
@@ -2394,7 +2799,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L48",
       "id": "research_zero_to_one_team_synthesis_t2_designer_product_feel_design_handoff",
-      "community": 10,
+      "community": 11,
       "norm_label": "t2 designer \u2014 product feel/design handoff"
     },
     {
@@ -2403,7 +2808,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L55",
       "id": "research_zero_to_one_team_synthesis_t3_architect_engine_data_architecture",
-      "community": 10,
+      "community": 11,
       "norm_label": "t3 architect \u2014 engine/data architecture"
     },
     {
@@ -2412,7 +2817,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L62",
       "id": "research_zero_to_one_team_synthesis_t4_builder_lead_ready_after_t2_t3_pass",
-      "community": 10,
+      "community": 11,
       "norm_label": "t4 builder lead \u2014 ready after t2/t3 pass"
     },
     {
@@ -2421,7 +2826,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L67",
       "id": "research_zero_to_one_team_synthesis_t5_reviewer_qa_gate_owner",
-      "community": 10,
+      "community": 11,
       "norm_label": "t5 reviewer/qa \u2014 gate owner"
     },
     {
@@ -2430,7 +2835,7 @@
       "source_file": "docs/research/zero-to-one-team-synthesis.md",
       "source_location": "L72",
       "id": "research_zero_to_one_team_synthesis_next_step",
-      "community": 10,
+      "community": 11,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 next step"
     },
     {
@@ -2439,7 +2844,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_heung_min_son_md",
-      "community": 21,
+      "community": 22,
       "norm_label": "akinator-direct-play-log-2026-05-28-heung-min-son.md"
     },
     {
@@ -2448,7 +2853,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_akinator_direct_play_log_heung_min_son",
-      "community": 21,
+      "community": 22,
       "norm_label": "akinator direct play log \u2014 heung-min son"
     },
     {
@@ -2457,7 +2862,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_run_metadata",
-      "community": 21,
+      "community": 22,
       "norm_label": "run metadata"
     },
     {
@@ -2466,7 +2871,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_question_answer_trace",
-      "community": 21,
+      "community": 22,
       "norm_label": "question/answer trace"
     },
     {
@@ -2475,7 +2880,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L45",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_interaction_insights",
-      "community": 21,
+      "community": 22,
       "norm_label": "interaction insights"
     },
     {
@@ -2484,7 +2889,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L53",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_product_implications_for_korean_food_akinator",
-      "community": 21,
+      "community": 22,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2493,7 +2898,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_gate_status",
-      "community": 21,
+      "community": 22,
       "norm_label": "gate status"
     },
     {
@@ -2502,7 +2907,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "docs_research_korean_food_decision_product_research_md",
-      "community": 6,
+      "community": 7,
       "norm_label": "korean-food-decision-product-research.md"
     },
     {
@@ -2511,7 +2916,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "research_korean_food_decision_product_research_korean_food_decision_product_research",
-      "community": 6,
+      "community": 7,
       "norm_label": "korean food decision product research"
     },
     {
@@ -2520,7 +2925,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L3",
       "id": "research_korean_food_decision_product_research",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u1175\u11ab\u1109\u1161\u110b\u1175\u1110\u1173"
     },
     {
@@ -2529,7 +2934,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L16",
       "id": "research_korean_food_decision_product_research_16",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u110c\u116e\u110b\u116d \u1106\u1162\u11a8\u1105\u1161\u11a8"
     },
     {
@@ -2538,7 +2943,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L18",
       "id": "research_korean_food_decision_product_research_18",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1107\u1162\u1103\u1161\u11af"
     },
     {
@@ -2547,7 +2952,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L24",
       "id": "research_korean_food_decision_product_research_24",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u110b\u116c\u1109\u1175\u11a8"
     },
     {
@@ -2556,7 +2961,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L30",
       "id": "research_korean_food_decision_product_research_30",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u110b\u1163\u1109\u1175\u11a8"
     },
     {
@@ -2565,7 +2970,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L36",
       "id": "research_korean_food_decision_product_research_36",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1112\u1169\u11ab\u1107\u1161\u11b8"
     },
     {
@@ -2574,7 +2979,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L42",
       "id": "research_korean_food_decision_product_research_42",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1173"
     },
     {
@@ -2583,7 +2988,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L48",
       "id": "research_korean_food_decision_product_research_product_thesis",
-      "community": 6,
+      "community": 7,
       "norm_label": "product thesis"
     },
     {
@@ -2592,7 +2997,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L50",
       "id": "research_korean_food_decision_product_research_thesis_1",
-      "community": 6,
+      "community": 7,
       "norm_label": "thesis 1 \u2014 \u1100\u1167\u11af\u110c\u1165\u11bc \u110e\u1162\u11a8\u110b\u1175\u11b7\u110b\u1173\u11af \u1100\u1161\u110c\u1167\u1100\u1161\u1102\u1173\u11ab \u1100\u1166\u110b\u1175\u11b7"
     },
     {
@@ -2601,7 +3006,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L54",
       "id": "research_korean_food_decision_product_research_thesis_2",
-      "community": 6,
+      "community": 7,
       "norm_label": "thesis 2 \u2014 \u110b\u1169\u1102\u1173\u11af\u110b\u1174 \u1100\u1165\u1107\u116e\u1100\u1161\u11b7\u110b\u1173\u11af \u110b\u1175\u11b0\u1102\u1173\u11ab\u1103\u1161"
     },
     {
@@ -2610,7 +3015,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L58",
       "id": "research_korean_food_decision_product_research_thesis_3_reveal",
-      "community": 6,
+      "community": 7,
       "norm_label": "thesis 3 \u2014 \u1102\u1161\u11b8\u1103\u1173\u11a8 \u1100\u1161\u1102\u1173\u11bc\u1112\u1161\u11ab reveal"
     },
     {
@@ -2619,7 +3024,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L70",
       "id": "research_korean_food_decision_product_research_70",
-      "community": 6,
+      "community": 7,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110c\u1166\u1111\u116e\u11b7\u110b\u1161\u11ab"
     },
     {
@@ -2628,7 +3033,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L76",
       "id": "research_korean_food_decision_product_research_mvp_scope",
-      "community": 6,
+      "community": 7,
       "norm_label": "mvp scope"
     },
     {
@@ -2637,7 +3042,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L84",
       "id": "research_korean_food_decision_product_research_non_goals",
-      "community": 6,
+      "community": 7,
       "norm_label": "non-goals"
     },
     {
@@ -2646,7 +3051,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_elon_musk_md",
-      "community": 17,
+      "community": 19,
       "norm_label": "akinator-direct-play-log-2026-05-28-elon-musk.md"
     },
     {
@@ -2655,7 +3060,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_akinator_direct_play_log_elon_musk",
-      "community": 17,
+      "community": 19,
       "norm_label": "akinator direct play log \u2014 elon musk"
     },
     {
@@ -2664,7 +3069,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_run_metadata",
-      "community": 17,
+      "community": 19,
       "norm_label": "run metadata"
     },
     {
@@ -2673,7 +3078,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_question_answer_trace",
-      "community": 17,
+      "community": 19,
       "norm_label": "question/answer trace"
     },
     {
@@ -2682,7 +3087,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_interaction_insights",
-      "community": 17,
+      "community": 19,
       "norm_label": "interaction insights"
     },
     {
@@ -2691,7 +3096,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_product_implications_for_korean_food_akinator",
-      "community": 17,
+      "community": 19,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2700,7 +3105,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_gate_status",
-      "community": 17,
+      "community": 19,
       "norm_label": "gate status"
     },
     {
@@ -2799,7 +3204,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "docs_current_architecture_md",
-      "community": 8,
+      "community": 9,
       "norm_label": "architecture.md"
     },
     {
@@ -2808,7 +3213,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L1",
       "id": "current_architecture_architecture_zero_to_one",
-      "community": 8,
+      "community": 9,
       "norm_label": "architecture \u2014 zero-to-one"
     },
     {
@@ -2817,7 +3222,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L3",
       "id": "current_architecture",
-      "community": 8,
+      "community": 9,
       "norm_label": "\u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -2826,7 +3231,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L7",
       "id": "current_architecture_candidate_schema",
-      "community": 8,
+      "community": 9,
       "norm_label": "candidate schema"
     },
     {
@@ -2835,7 +3240,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L9",
       "id": "current_architecture_codeblock_1",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:ts (type candidate = {)"
     },
     {
@@ -2844,7 +3249,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L26",
       "id": "current_architecture_question_schema",
-      "community": 8,
+      "community": 9,
       "norm_label": "question schema"
     },
     {
@@ -2853,7 +3258,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L28",
       "id": "current_architecture_codeblock_2",
-      "community": 8,
+      "community": 9,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -2862,7 +3267,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L42",
       "id": "current_architecture_answer_semantics",
-      "community": 8,
+      "community": 9,
       "norm_label": "answer semantics"
     },
     {
@@ -2871,7 +3276,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L50",
       "id": "current_architecture_scoring_mvp",
-      "community": 8,
+      "community": 9,
       "norm_label": "scoring mvp"
     },
     {
@@ -2880,7 +3285,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L56",
       "id": "current_architecture_adaptive_selector",
-      "community": 8,
+      "community": 9,
       "norm_label": "adaptive selector"
     },
     {
@@ -2889,7 +3294,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L83",
       "id": "current_architecture_reveal_threshold",
-      "community": 8,
+      "community": 9,
       "norm_label": "reveal threshold"
     },
     {
@@ -2898,7 +3303,7 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L93",
       "id": "current_architecture_wrong_recovery",
-      "community": 8,
+      "community": 9,
       "norm_label": "wrong recovery"
     },
     {
@@ -2907,16 +3312,16 @@
       "source_file": "docs/current/architecture.md",
       "source_location": "L102",
       "id": "current_architecture_character_cue_contract",
-      "community": 8,
+      "community": 9,
       "norm_label": "character cue contract"
     },
     {
       "label": "Builder gate",
       "file_type": "document",
       "source_file": "docs/current/architecture.md",
-      "source_location": "L114",
+      "source_location": "L123",
       "id": "current_architecture_builder_gate",
-      "community": 8,
+      "community": 9,
       "norm_label": "builder gate"
     },
     {
@@ -2925,7 +3330,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "docs_current_qa_md",
-      "community": 13,
+      "community": 15,
       "norm_label": "qa.md"
     },
     {
@@ -2934,7 +3339,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "current_qa_qa_zero_to_one_acceptance",
-      "community": 13,
+      "community": 15,
       "norm_label": "qa \u2014 zero-to-one acceptance"
     },
     {
@@ -2943,7 +3348,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "id": "current_qa",
-      "community": 13,
+      "community": 15,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -2952,7 +3357,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L7",
       "id": "current_qa_product_acceptance",
-      "community": 13,
+      "community": 15,
       "norm_label": "product acceptance"
     },
     {
@@ -2961,7 +3366,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L31",
       "id": "current_qa_direct_play_derived_qa",
-      "community": 13,
+      "community": 15,
       "norm_label": "direct-play derived qa"
     },
     {
@@ -2970,7 +3375,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L43",
       "id": "current_qa_data_tests",
-      "community": 13,
+      "community": 15,
       "norm_label": "data tests"
     },
     {
@@ -2979,7 +3384,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L51",
       "id": "current_qa_engine_tests",
-      "community": 13,
+      "community": 15,
       "norm_label": "engine tests"
     },
     {
@@ -2988,7 +3393,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L67",
       "id": "current_qa_browser_qa",
-      "community": 13,
+      "community": 15,
       "norm_label": "browser qa"
     },
     {
@@ -2997,7 +3402,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L78",
       "id": "current_qa_live_canary",
-      "community": 13,
+      "community": 15,
       "norm_label": "live canary"
     },
     {
@@ -3006,7 +3411,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "docs_current_release_md",
-      "community": 15,
+      "community": 16,
       "norm_label": "release.md"
     },
     {
@@ -3015,7 +3420,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "current_release_release_zero_to_one",
-      "community": 15,
+      "community": 16,
       "norm_label": "release \u2014 zero-to-one"
     },
     {
@@ -3024,7 +3429,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "id": "current_release_release",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 release \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -3033,7 +3438,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L11",
       "id": "current_release_release_policy",
-      "community": 15,
+      "community": 16,
       "norm_label": "release policy"
     },
     {
@@ -3042,7 +3447,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L26",
       "id": "current_release_repository_artifact_policy",
-      "community": 15,
+      "community": 16,
       "norm_label": "repository artifact policy"
     },
     {
@@ -3051,7 +3456,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L33",
       "id": "current_release",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1100\u1173\u11b7\u110c\u1175"
     },
     {
@@ -3060,7 +3465,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L40",
       "id": "current_release_40",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -3149,7 +3554,7 @@
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L33",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
       "id": "current_release_33"
     },
@@ -3158,7 +3563,7 @@
       "file_type": "document",
       "source_file": "docs/current/release.md",
       "source_location": "L32",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
       "id": "current_release_32"
     }
@@ -3173,6 +3578,335 @@
       "confidence_score": 1.0,
       "source": "vitest_config_ts",
       "target": "food_akinator_hermes_pilot_vitest_config_isexplicithermesrun"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "src_engine_domain_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "engine_domain_answerkey"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "engine_domain_candidate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "engine_domain_question"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "src_engine_session_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "engine_session_startsession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "engine_session_submitanswer"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "engine_session_submitguessfeedback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_candidate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_question"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_answeroptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_corequestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_corecandidates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_dataset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_answercurrent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L217",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_session"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L220",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_next"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L195",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_questions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L196",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_candidates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L200",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_data"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L184",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_recovered"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_asked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_first"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_second"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_asking"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L227",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_confident"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L232",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_recover"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L234",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_unknownquestions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L235",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_unknowncandidates"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_unknowndata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L240",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_engine_session_test_ts",
+      "target": "tests_engine_session_test_exhausted"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/engine-session.test.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "tests_engine_session_test_answercurrent",
+      "target": "engine_session_submitanswer"
     },
     {
       "relation": "imports_from",
@@ -3603,6 +4337,470 @@
       "confidence_score": 1.0,
       "source": "tests_engine_scoring_test_ts",
       "target": "tests_engine_scoring_test_scores"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "src_engine_domain_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_domain_answer_values"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_domain_answerkey"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_domain_candidate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_domain_question"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "src_engine_scoring_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_scoring_scorecandidates"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_scoring_answeredquestion"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_scoring_candidatescore"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "src_engine_selector_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_selector_selectnextquestion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_sessionstatus"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_charactercue"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_revealpolicy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_revealguess"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_enginesession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_sessiondataset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_default_policy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_answer_options"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_answeroptions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_startsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_submitanswer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_submitguessfeedback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L144",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_buildinput"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_buildnextsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L199",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_askingsession"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L240",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_picknextquestion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L260",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_revealed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L296",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_exhausted"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L326",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_probabilityscore"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L331",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_engine_session_ts",
+      "target": "engine_session_normalizeprobabilities"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L221",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_askingsession",
+      "target": "engine_session_answeroptions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L276",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_revealed",
+      "target": "engine_session_answeroptions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_exhausted",
+      "target": "engine_session_answeroptions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_startsession",
+      "target": "engine_session_buildnextsession"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_submitanswer",
+      "target": "engine_session_buildnextsession"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_submitguessfeedback",
+      "target": "engine_session_buildnextsession"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_buildnextsession",
+      "target": "engine_session_normalizeprobabilities"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_buildnextsession",
+      "target": "engine_session_exhausted"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L175",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_buildnextsession",
+      "target": "engine_session_picknextquestion"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L185",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_buildnextsession",
+      "target": "engine_session_askingsession"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/engine/session.ts",
+      "source_location": "L189",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_session_buildnextsession",
+      "target": "engine_session_revealed"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/engine/session.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "engine_session_buildnextsession",
+      "target": "engine_scoring_scorecandidates"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/engine/session.ts",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "engine_session_picknextquestion",
+      "target": "engine_selector_selectnextquestion"
     },
     {
       "relation": "imports_from",
@@ -6912,5 +8110,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9ad58e2ac08b5610e28976997d3836532dc2420d"
+  "built_at_commit": "67b6a4c9a4c9af5f25fa701c24791273129c8ed0"
 }

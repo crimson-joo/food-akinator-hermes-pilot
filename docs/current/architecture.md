@@ -111,6 +111,15 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - `recover`
 - `reveal`
 
+현재 session 구현:
+
+- `src/engine/session.ts`는 `startSession()`, `submitAnswer()`, `submitGuessFeedback()` 순수 동기 API를 제공한다.
+- session snapshot은 `status`, `characterCue`, `turn`, `currentQuestion`, 고정 5답변 `answerOptions`, `guess`, `rejectedCandidateIds`, `topCandidate`, `copy`, UI action 가능 여부를 포함한다.
+- reveal은 기본값 `minRevealTurn: 5`, `confidenceThreshold: 0.72`, `marginThreshold: 0.18`, `softCapTurn: 10`, `softCapConfidence: 0.55`, `hardCapTurn: 14`, `maxUnknownBeforeExhausted: 5`를 사용한다.
+- 오답 feedback은 현재 guess candidate를 `rejectedCandidateIds`에 한 번만 추가하고, 같은 후보를 다음 reveal/top candidate에서 제외하며 low-risk `recovery_disambiguation` 질문을 우선한다.
+- all-unknown/flat evidence는 내부 점수나 가짜 확신을 노출하지 않고 `exhausted` + `characterCue: exhausted`로 종료한다.
+- MVP 엔진 cue는 `ask`, `confident`, `reveal`, `recover`, `exhausted`를 실제 snapshot으로 보장한다. `thinking`/`surprised`의 시간 기반 전환은 UI scaffold presentation layer에서 semantic metadata로 표현한다.
+
 ## Builder gate
 
 코드 시작 전 필요한 것:
