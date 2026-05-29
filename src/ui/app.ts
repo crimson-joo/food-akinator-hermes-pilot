@@ -201,7 +201,7 @@ ${renderQuestion(model.session, false)}`;
   if (model.phase === 'error') {
     return `<p class="eyebrow">단서 오류</p>
 <h2>단서가 잠깐 엉켰어요. 다시 시도해볼게요.</h2>
-<p class="helper">${escapeHtml(model.errorMessage ?? '')}</p>
+<p class="helper">보글이 다시 안전하게 시작할 수 있게 준비했어요.</p>
 <button class="primary" data-action="restart" type="button">다시 시작하기</button>`;
   }
 

@@ -102,6 +102,15 @@ describe('minimal browser UI scaffold', () => {
     expect(afterThinking.phase).toBe('thinking');
     expect(renderApp(afterThinking)).toContain('prefers-reduced-motion: reduce');
   });
+
+  it('renders safe Korean recovery copy for errors without leaking raw engine messages', () => {
+    const html = renderApp({ phase: 'error', errorMessage: 'Question q-broth is already answered; Unknown answer key for current question' });
+
+    expect(html).toContain('data-ui-state="error"');
+    expect(html).toContain('단서가 잠깐 엉켰어요. 다시 시도해볼게요.');
+    expect(html).toContain('다시 시작하기');
+    expect(html).not.toMatch(/Question q-|q-broth|already answered|current question|Unknown answer key/i);
+  });
 });
 
 function fakeGuessingSession(): EngineSession {
