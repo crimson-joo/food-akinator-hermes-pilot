@@ -157,6 +157,26 @@ describe('adaptive question selector', () => {
     expect(selected?.question.id).toBe('q-clear');
   });
 
+  it('keeps unknown recovery low-risk after turn 3 when a safer clear question exists', () => {
+    const candidates = [
+      candidate('a', { 'q-start': 0, 'q-risky': 1, 'q-safe': 0.1 }),
+      candidate('b', { 'q-start': 0, 'q-risky': -1, 'q-safe': -0.1 }),
+    ];
+
+    const selected = selectNextQuestion({
+      candidates,
+      questions: [
+        question('q-start', { clarity: 3 }),
+        question('q-risky', { role: 'signature_discriminator', revealRisk: 3, clarity: 3, cost: 1 }),
+        question('q-safe', { role: 'recovery_disambiguation', revealRisk: 0, clarity: 3, cost: 1 }),
+      ],
+      answers: [{ questionId: 'q-start', answer: 'unknown' }],
+      turn: 4,
+    });
+
+    expect(selected?.question.id).toBe('q-safe');
+  });
+
   it('prefers recovery disambiguation when rejected candidate ids are present', () => {
     const candidates = [
       candidate('a', { 'q-ordinary': 1, 'q-recovery': 1 }),

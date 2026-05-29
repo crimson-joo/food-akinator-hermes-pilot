@@ -87,8 +87,9 @@ function getEligibleQuestions(questions: Question[], answers: AnsweredQuestion[]
   const activeUnanswered = questions.filter(
     (question) => question.status === 'active' && !answeredIds.has(question.id),
   );
+  const lastAnswerWasUnknown = answers.at(-1)?.answer === 'unknown';
 
-  if (turn > 3) {
+  if (turn > 3 && !lastAnswerWasUnknown) {
     return activeUnanswered;
   }
 
