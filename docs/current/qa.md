@@ -55,6 +55,10 @@ Fail 조건:
 - unknown은 ranking을 왜곡하지 않고 질문 반복을 막음
 - selector는 이미 물은 질문을 제외함
 - selector는 high-split 질문을 우선함
+- selector는 동일/유사 split에서 낮은 marginal cost 질문을 고르되, 충분히 높은 split 신호는 낮은 cost를 이길 수 있음
+- selector는 초반에 낮은 risk 대안이 있으면 high reveal-risk 직접 질문을 피함
+- selector는 unknown 직후 같은 질문을 반복하지 않고 clarity 높은 available question으로 회복함
+- selector scenario pilot은 `국물 yes`와 `국물 no` path가 2턴 내 다른 질문으로 갈라지는지 검증함
 - reveal은 confidence와 margin을 모두 요구함
 - wrong guess suppression이 같은 후보 재추측을 막음
 - recovery는 오답 후보와 남은 후보를 구분하는 질문을 고름

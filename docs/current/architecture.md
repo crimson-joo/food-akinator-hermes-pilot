@@ -65,6 +65,17 @@ Sprint 1:
 - reveal 직전 top2가 비슷하면 `false_path_guardrail` 또는 sibling elimination.
 - unknown이 많으면 clarity 높은 쉬운 질문 우선.
 
+현재 구현:
+
+- `src/engine/selector.ts`는 순수 동기 selector API `rankNextQuestions(context)` / `selectNextQuestion(context)`를 제공한다.
+- 입력은 기존 `Candidate`, `Question`, `AnsweredQuestion` shape를 그대로 사용하고, `candidateScores` 주입과 `rejectedCandidateIds`를 선택적으로 받는다.
+- active candidate만 softmax-normalize한 뒤 질문별 weighted variance를 split signal로 계산한다.
+- 이미 답한 질문, 비활성 질문, 비활성/거절 후보는 제외한다.
+- 1~3턴에는 더 안전한 질문이 있으면 `revealRisk >= 3` 직접 질문을 제외하고, 모두 고위험이면 dead-end 대신 최선 질문을 허용한다.
+- selector score는 `split + policyBonus - 0.03 * max(0, cost)`이며, cost는 near-tie에서만 낮은 비용 질문을 고르는 작은 marginal penalty다.
+- unknown 직후에는 같은 질문을 반복하지 않고 clarity/recovery 성격의 질문으로 회복한다.
+- 동점은 원래 질문 배열 순서를 보존한다.
+
 Sprint 3:
 
 - expected information gain으로 고도화.
