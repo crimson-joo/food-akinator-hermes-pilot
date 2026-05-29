@@ -4,6 +4,24 @@
   "graph": {},
   "nodes": [
     {
+      "label": "vitest.config.ts",
+      "file_type": "code",
+      "source_file": "vitest.config.ts",
+      "source_location": "L1",
+      "id": "vitest_config_ts",
+      "community": 26,
+      "norm_label": "vitest.config.ts"
+    },
+    {
+      "label": "isExplicitHermesRun",
+      "file_type": "code",
+      "source_file": "vitest.config.ts",
+      "source_location": "L4",
+      "id": "food_akinator_hermes_pilot_vitest_config_isexplicithermesrun",
+      "community": 26,
+      "norm_label": "isexplicithermesrun"
+    },
+    {
       "label": "engine-domain.test.ts",
       "file_type": "code",
       "source_file": "tests/engine-domain.test.ts",
@@ -405,7 +423,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "engine_domain_answer_values",
-      "community": 3,
+      "community": 1,
       "norm_label": "answer_values"
     },
     {
@@ -625,12 +643,39 @@
       "norm_label": "\u1106\u116e\u11ab\u1109\u1165"
     },
     {
+      "label": "changelog.md",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L1",
+      "id": "docs_changelog_md",
+      "community": 25,
+      "norm_label": "changelog.md"
+    },
+    {
+      "label": "Changelog",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L1",
+      "id": "docs_changelog_changelog",
+      "community": 25,
+      "norm_label": "changelog"
+    },
+    {
+      "label": "2026-05-29 \u2014 Adaptive selector pilot local PASS",
+      "file_type": "document",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "id": "docs_changelog_2026_05_29_adaptive_selector_pilot_local_pass",
+      "community": 25,
+      "norm_label": "2026-05-29 \u2014 adaptive selector pilot local pass"
+    },
+    {
       "label": "akinator-direct-play-log-2026-05-28-harry-potter.md",
       "file_type": "document",
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_harry_potter_md",
-      "community": 15,
+      "community": 16,
       "norm_label": "akinator-direct-play-log-2026-05-28-harry-potter.md"
     },
     {
@@ -639,7 +684,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_akinator_direct_play_log_harry_potter",
-      "community": 15,
+      "community": 16,
       "norm_label": "akinator direct play log \u2014 harry potter"
     },
     {
@@ -648,7 +693,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_run_metadata",
-      "community": 15,
+      "community": 16,
       "norm_label": "run metadata"
     },
     {
@@ -657,7 +702,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L21",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_entry_flow_observations",
-      "community": 15,
+      "community": 16,
       "norm_label": "entry flow observations"
     },
     {
@@ -666,7 +711,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_question_answer_trace",
-      "community": 15,
+      "community": 16,
       "norm_label": "question/answer trace"
     },
     {
@@ -675,7 +720,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_interaction_insights",
-      "community": 15,
+      "community": 16,
       "norm_label": "interaction insights"
     },
     {
@@ -684,7 +729,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L69",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_product_implications_for_korean_food_akinator",
-      "community": 15,
+      "community": 16,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -693,7 +738,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L77",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_gate_status",
-      "community": 15,
+      "community": 16,
       "norm_label": "gate status"
     },
     {
@@ -1413,7 +1458,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_pikachu_md",
-      "community": 19,
+      "community": 17,
       "norm_label": "akinator-direct-play-log-2026-05-28-pikachu.md"
     },
     {
@@ -1422,7 +1467,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_akinator_direct_play_log_pikachu",
-      "community": 19,
+      "community": 17,
       "norm_label": "akinator direct play log \u2014 pikachu"
     },
     {
@@ -1431,7 +1476,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_run_metadata",
-      "community": 19,
+      "community": 17,
       "norm_label": "run metadata"
     },
     {
@@ -1440,7 +1485,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_question_answer_trace",
-      "community": 19,
+      "community": 17,
       "norm_label": "question/answer trace"
     },
     {
@@ -1449,7 +1494,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_interaction_insights",
-      "community": 19,
+      "community": 17,
       "norm_label": "interaction insights"
     },
     {
@@ -1458,7 +1503,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L48",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_product_implications_for_korean_food_akinator",
-      "community": 19,
+      "community": 17,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -1467,7 +1512,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L55",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_gate_status",
-      "community": 19,
+      "community": 17,
       "norm_label": "gate status"
     },
     {
@@ -1476,7 +1521,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "docs_research_akinator_reference_observations_md",
-      "community": 18,
+      "community": 19,
       "norm_label": "akinator-reference-observations.md"
     },
     {
@@ -1485,7 +1530,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L1",
       "id": "research_akinator_reference_observations_akinator_reference_observations",
-      "community": 18,
+      "community": 19,
       "norm_label": "akinator reference observations"
     },
     {
@@ -1494,7 +1539,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L3",
       "id": "research_akinator_reference_observations",
-      "community": 18,
+      "community": 19,
       "norm_label": "\u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1109\u1161\u11bc\u1110\u1162"
     },
     {
@@ -1503,7 +1548,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L9",
       "id": "research_akinator_reference_observations_9",
-      "community": 18,
+      "community": 19,
       "norm_label": "\u1100\u116a\u11ab\u110e\u1161\u11af\u1103\u116c\u11ab \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u116f\u11ab\u1105\u1175"
     },
     {
@@ -1512,7 +1557,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L26",
       "id": "research_akinator_reference_observations_food",
-      "community": 18,
+      "community": 19,
       "norm_label": "food \u1109\u1165\u1107\u1175\u1109\u1173 \u110c\u1165\u11a8\u110b\u116d\u11bc \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -1521,7 +1566,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L35",
       "id": "research_akinator_reference_observations_non_copy_boundary",
-      "community": 18,
+      "community": 19,
       "norm_label": "non-copy boundary"
     },
     {
@@ -1530,7 +1575,7 @@
       "source_file": "docs/research/akinator-reference-observations.md",
       "source_location": "L42",
       "id": "research_akinator_reference_observations_todo",
-      "community": 18,
+      "community": 19,
       "norm_label": "\u110e\u116e\u1100\u1161 \u1105\u1175\u1109\u1165\u110e\u1175 todo"
     },
     {
@@ -1539,7 +1584,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_md",
-      "community": 17,
+      "community": 22,
       "norm_label": "akinator-direct-play-log-2026-05-28-naruto-uzumaki.md"
     },
     {
@@ -1548,7 +1593,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_akinator_direct_play_log_naruto_uzumaki",
-      "community": 17,
+      "community": 22,
       "norm_label": "akinator direct play log \u2014 naruto uzumaki"
     },
     {
@@ -1557,7 +1602,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_run_metadata",
-      "community": 17,
+      "community": 22,
       "norm_label": "run metadata"
     },
     {
@@ -1566,7 +1611,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_question_answer_trace",
-      "community": 17,
+      "community": 22,
       "norm_label": "question/answer trace"
     },
     {
@@ -1575,7 +1620,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L37",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_interaction_insights",
-      "community": 17,
+      "community": 22,
       "norm_label": "interaction insights"
     },
     {
@@ -1584,7 +1629,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L44",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_product_implications_for_korean_food_akinator",
-      "community": 17,
+      "community": 22,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -1593,7 +1638,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L50",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_gate_status",
-      "community": 17,
+      "community": 22,
       "norm_label": "gate status"
     },
     {
@@ -1674,7 +1719,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L104",
       "id": "research_inference_motion_research_3_5_answer_weight_semantics",
-      "community": 21,
+      "community": 18,
       "norm_label": "3. 5-answer weight semantics"
     },
     {
@@ -1683,7 +1728,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L117",
       "id": "research_inference_motion_research_3_1_a_soft_distance_scoring_mvp",
-      "community": 21,
+      "community": 18,
       "norm_label": "3.1 \u110c\u1165\u11b7\u1109\u116e \u1100\u1162\u11bc\u1109\u1175\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 a: soft distance scoring, mvp \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -1692,7 +1737,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L121",
       "id": "research_inference_motion_research_codeblock_3",
-      "community": 21,
+      "community": 18,
       "norm_label": "code:txt (logscore(c) = log(prior(c)) + \u03c3 answered q [ weight(q, answe)"
     },
     {
@@ -1701,7 +1746,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L127",
       "id": "research_inference_motion_research_codeblock_4",
-      "community": 21,
+      "community": 18,
       "norm_label": "code:txt (similarity(a, e) = 1 - abs(a - e)        // \u1107\u1165\u11b7\u110b\u1171 \u1103\u1162\u1105\u1163\u11a8 -1~1)"
     },
     {
@@ -1710,7 +1755,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L133",
       "id": "research_inference_motion_research_codeblock_5",
-      "community": 21,
+      "community": 18,
       "norm_label": "code:txt (similarity(a, e) = - ((a - e)^2) / (2\u03c32))"
     },
     {
@@ -1719,7 +1764,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L142",
       "id": "research_inference_motion_research_codeblock_6",
-      "community": 21,
+      "community": 18,
       "norm_label": "code:txt (answerconfidence = abs(answervalue)      // yes/no\u1102\u1173\u11ab 1, proba)"
     },
     {
@@ -1728,7 +1773,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L148",
       "id": "research_inference_motion_research_3_2_b_naive_bayes",
-      "community": 21,
+      "community": 18,
       "norm_label": "3.2 \u110c\u1165\u11b7\u1109\u116e \u1100\u1162\u11bc\u1109\u1175\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 b: naive bayes"
     },
     {
@@ -1737,7 +1782,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L163",
       "id": "research_inference_motion_research_4_adaptive_next_question_selection",
-      "community": 11,
+      "community": 12,
       "norm_label": "4. adaptive next-question selection"
     },
     {
@@ -1746,7 +1791,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L167",
       "id": "research_inference_motion_research_4_1",
-      "community": 11,
+      "community": 12,
       "norm_label": "4.1 \u1112\u116e\u1107\u1169 \u1112\u116a\u11a8\u1105\u1172\u11af \u110c\u1165\u11bc\u1100\u1172\u1112\u116a"
     },
     {
@@ -1755,7 +1800,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L171",
       "id": "research_inference_motion_research_codeblock_7",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:txt (p(c) = exp(logscore(c) / t) / \u03c3 exp(logscore(i) / t))"
     },
     {
@@ -1764,7 +1809,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L179",
       "id": "research_inference_motion_research_4_2_expected_information_gain",
-      "community": 11,
+      "community": 12,
       "norm_label": "4.2 expected information gain"
     },
     {
@@ -1773,7 +1818,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L183",
       "id": "research_inference_motion_research_codeblock_8",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:txt (h(c) = -\u03c3 p(c) log2 p(c))"
     },
     {
@@ -1782,7 +1827,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L189",
       "id": "research_inference_motion_research_codeblock_9",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:txt (p(a | q) = \u03c3 p(c) * p(a | c, q))"
     },
     {
@@ -1791,7 +1836,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L195",
       "id": "research_inference_motion_research_codeblock_10",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:txt (ig(q) = h(c) - \u03c3_a p(a | q) * h(c | answer=a, q))"
     },
     {
@@ -1800,7 +1845,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L201",
       "id": "research_inference_motion_research_codeblock_11",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:txt (questionscore(q) = ig(q))"
     },
     {
@@ -1809,7 +1854,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L216",
       "id": "research_inference_motion_research_4_3",
-      "community": 11,
+      "community": 12,
       "norm_label": "4.3 \u110c\u1161\u11a8\u110b\u1173\u11ab \u1103\u1169\u1106\u1166\u110b\u1175\u11ab\u110b\u1166\u1109\u1165\u110b\u1174 \u1100\u1161\u11ab\u1103\u1161\u11ab \u1103\u1162\u110b\u1161\u11ab"
     },
     {
@@ -1818,7 +1863,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L220",
       "id": "research_inference_motion_research_codeblock_12",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:txt (mean = \u03c3 p(c) * expected(c,q))"
     },
     {
@@ -2394,7 +2439,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_heung_min_son_md",
-      "community": 16,
+      "community": 20,
       "norm_label": "akinator-direct-play-log-2026-05-28-heung-min-son.md"
     },
     {
@@ -2403,7 +2448,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_akinator_direct_play_log_heung_min_son",
-      "community": 16,
+      "community": 20,
       "norm_label": "akinator direct play log \u2014 heung-min son"
     },
     {
@@ -2412,7 +2457,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_run_metadata",
-      "community": 16,
+      "community": 20,
       "norm_label": "run metadata"
     },
     {
@@ -2421,7 +2466,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_question_answer_trace",
-      "community": 16,
+      "community": 20,
       "norm_label": "question/answer trace"
     },
     {
@@ -2430,7 +2475,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L45",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_interaction_insights",
-      "community": 16,
+      "community": 20,
       "norm_label": "interaction insights"
     },
     {
@@ -2439,7 +2484,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L53",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_product_implications_for_korean_food_akinator",
-      "community": 16,
+      "community": 20,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2448,7 +2493,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_gate_status",
-      "community": 16,
+      "community": 20,
       "norm_label": "gate status"
     },
     {
@@ -2601,7 +2646,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_elon_musk_md",
-      "community": 20,
+      "community": 21,
       "norm_label": "akinator-direct-play-log-2026-05-28-elon-musk.md"
     },
     {
@@ -2610,7 +2655,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_akinator_direct_play_log_elon_musk",
-      "community": 20,
+      "community": 21,
       "norm_label": "akinator direct play log \u2014 elon musk"
     },
     {
@@ -2619,7 +2664,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_run_metadata",
-      "community": 20,
+      "community": 21,
       "norm_label": "run metadata"
     },
     {
@@ -2628,7 +2673,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_question_answer_trace",
-      "community": 20,
+      "community": 21,
       "norm_label": "question/answer trace"
     },
     {
@@ -2637,7 +2682,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_interaction_insights",
-      "community": 20,
+      "community": 21,
       "norm_label": "interaction insights"
     },
     {
@@ -2646,7 +2691,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_product_implications_for_korean_food_akinator",
-      "community": 20,
+      "community": 21,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2655,7 +2700,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_gate_status",
-      "community": 20,
+      "community": 21,
       "norm_label": "gate status"
     },
     {
@@ -2664,7 +2709,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "docs_current_product_md",
-      "community": 12,
+      "community": 11,
       "norm_label": "product.md"
     },
     {
@@ -2673,7 +2718,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L1",
       "id": "current_product_product_food_akinator_zero_to_one",
-      "community": 12,
+      "community": 11,
       "norm_label": "product \u2014 food akinator zero-to-one"
     },
     {
@@ -2682,7 +2727,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L3",
       "id": "current_product",
-      "community": 12,
+      "community": 11,
       "norm_label": "\u110c\u1166\u1111\u116e\u11b7 \u1112\u1161\u11ab \u110c\u116e\u11af \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -2691,7 +2736,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L7",
       "id": "current_product_7",
-      "community": 12,
+      "community": 11,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1106\u116e\u11ab\u110c\u1166"
     },
     {
@@ -2700,7 +2745,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L11",
       "id": "current_product_thesis",
-      "community": 12,
+      "community": 11,
       "norm_label": "\u110c\u1166\u1111\u116e\u11b7 thesis"
     },
     {
@@ -2709,7 +2754,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L25",
       "id": "current_product_mvp",
-      "community": 12,
+      "community": 11,
       "norm_label": "mvp \u1107\u1165\u11b7\u110b\u1171"
     },
     {
@@ -2718,7 +2763,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L35",
       "id": "current_product_non_goals",
-      "community": 12,
+      "community": 11,
       "norm_label": "non-goals"
     },
     {
@@ -2727,7 +2772,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L46",
       "id": "current_product_builder",
-      "community": 12,
+      "community": 11,
       "norm_label": "builder \u1109\u1175\u110c\u1161\u11a8 \u110c\u1169\u1100\u1165\u11ab"
     },
     {
@@ -2736,7 +2781,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L59",
       "id": "current_product_59",
-      "community": 12,
+      "community": 11,
       "norm_label": "\u1100\u116e\u1112\u1167\u11ab \u110b\u116e\u1109\u1165\u11ab\u1109\u116e\u11ab\u110b\u1171"
     },
     {
@@ -2745,7 +2790,7 @@
       "source_file": "docs/current/product.md",
       "source_location": "L68",
       "id": "current_product_v0",
-      "community": 12,
+      "community": 11,
       "norm_label": "v0 \u1109\u1165\u11bc\u1100\u1169\u11bc \u1100\u1175\u110c\u116e\u11ab"
     },
     {
@@ -2880,7 +2925,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "docs_current_qa_md",
-      "community": 14,
+      "community": 15,
       "norm_label": "qa.md"
     },
     {
@@ -2889,7 +2934,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L1",
       "id": "current_qa_qa_zero_to_one_acceptance",
-      "community": 14,
+      "community": 15,
       "norm_label": "qa \u2014 zero-to-one acceptance"
     },
     {
@@ -2898,7 +2943,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L3",
       "id": "current_qa",
-      "community": 14,
+      "community": 15,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -2907,7 +2952,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L7",
       "id": "current_qa_product_acceptance",
-      "community": 14,
+      "community": 15,
       "norm_label": "product acceptance"
     },
     {
@@ -2916,7 +2961,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L31",
       "id": "current_qa_direct_play_derived_qa",
-      "community": 14,
+      "community": 15,
       "norm_label": "direct-play derived qa"
     },
     {
@@ -2925,7 +2970,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L43",
       "id": "current_qa_data_tests",
-      "community": 14,
+      "community": 15,
       "norm_label": "data tests"
     },
     {
@@ -2934,7 +2979,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L51",
       "id": "current_qa_engine_tests",
-      "community": 14,
+      "community": 15,
       "norm_label": "engine tests"
     },
     {
@@ -2943,7 +2988,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L67",
       "id": "current_qa_browser_qa",
-      "community": 14,
+      "community": 15,
       "norm_label": "browser qa"
     },
     {
@@ -2952,7 +2997,7 @@
       "source_file": "docs/current/qa.md",
       "source_location": "L78",
       "id": "current_qa_live_canary",
-      "community": 14,
+      "community": 15,
       "norm_label": "live canary"
     },
     {
@@ -2961,7 +3006,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "docs_current_release_md",
-      "community": 22,
+      "community": 13,
       "norm_label": "release.md"
     },
     {
@@ -2970,7 +3015,7 @@
       "source_file": "docs/current/release.md",
       "source_location": "L1",
       "id": "current_release_release_zero_to_one",
-      "community": 22,
+      "community": 13,
       "norm_label": "release \u2014 zero-to-one"
     },
     {
@@ -2979,34 +3024,43 @@
       "source_file": "docs/current/release.md",
       "source_location": "L3",
       "id": "current_release_release",
-      "community": 22,
+      "community": 13,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 release \u1109\u1161\u11bc\u1110\u1162"
     },
     {
       "label": "Release policy",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "current_release_release_policy",
-      "community": 22,
+      "community": 13,
       "norm_label": "release policy"
+    },
+    {
+      "label": "Repository artifact policy",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L26",
+      "id": "current_release_repository_artifact_policy",
+      "community": 13,
+      "norm_label": "repository artifact policy"
     },
     {
       "label": "\uae08\uc9c0",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L25",
+      "source_location": "L33",
       "id": "current_release",
-      "community": 22,
+      "community": 13,
       "norm_label": "\u1100\u1173\u11b7\u110c\u1175"
     },
     {
       "label": "\ubc30\ud3ec \uc644\ub8cc \uc815\uc758",
       "file_type": "document",
       "source_file": "docs/current/release.md",
-      "source_location": "L32",
-      "id": "current_release_32",
-      "community": 22,
+      "source_location": "L40",
+      "id": "current_release_40",
+      "community": 13,
       "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174"
     },
     {
@@ -3015,7 +3069,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "docs_current_design_md",
-      "community": 13,
+      "community": 14,
       "norm_label": "design.md"
     },
     {
@@ -3024,7 +3078,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L1",
       "id": "current_design_design_zero_to_one_direction",
-      "community": 13,
+      "community": 14,
       "norm_label": "design \u2014 zero-to-one direction"
     },
     {
@@ -3033,7 +3087,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L3",
       "id": "current_design",
-      "community": 13,
+      "community": 14,
       "norm_label": "\u1103\u1175\u110c\u1161\u110b\u1175\u11ab \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -3042,7 +3096,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L9",
       "id": "current_design_reference_principles_from_direct_play",
-      "community": 13,
+      "community": 14,
       "norm_label": "reference principles from direct play"
     },
     {
@@ -3051,7 +3105,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L19",
       "id": "current_design_reference_principles_from_akinator",
-      "community": 13,
+      "community": 14,
       "norm_label": "reference principles from akinator"
     },
     {
@@ -3060,7 +3114,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L28",
       "id": "current_design_non_copy_boundary",
-      "community": 13,
+      "community": 14,
       "norm_label": "non-copy boundary"
     },
     {
@@ -3069,7 +3123,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L42",
       "id": "current_design_screen_state_inventory",
-      "community": 13,
+      "community": 14,
       "norm_label": "screen/state inventory"
     },
     {
@@ -3078,7 +3132,7 @@
       "source_file": "docs/current/design.md",
       "source_location": "L78",
       "id": "current_design_character_requirement",
-      "community": 13,
+      "community": 14,
       "norm_label": "character requirement"
     },
     {
@@ -3087,11 +3141,39 @@
       "source_file": "docs/current/design.md",
       "source_location": "L92",
       "id": "current_design_visual_acceptance",
-      "community": 13,
+      "community": 14,
       "norm_label": "visual acceptance"
+    },
+    {
+      "label": "\ubc30\ud3ec \uc644\ub8cc \uc815\uc758",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L33",
+      "community": 13,
+      "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
+      "id": "current_release_33"
+    },
+    {
+      "label": "\ubc30\ud3ec \uc644\ub8cc \uc815\uc758",
+      "file_type": "document",
+      "source_file": "docs/current/release.md",
+      "source_location": "L32",
+      "community": 13,
+      "norm_label": "\u1107\u1162\u1111\u1169 \u110b\u116a\u11ab\u1105\u116d \u110c\u1165\u11bc\u110b\u1174",
+      "id": "current_release_32"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vitest.config.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "vitest_config_ts",
+      "target": "food_akinator_hermes_pilot_vitest_config_isexplicithermesrun",
+      "confidence_score": 1.0
+    },
     {
       "relation": "imports_from",
       "context": "import",
@@ -4217,6 +4299,26 @@
       "confidence_score": 1.0,
       "source": "food_akinator_hermes_pilot_readme_food_akinator_zero_to_one_research_foundation",
       "target": "food_akinator_hermes_pilot_readme_25"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_changelog_md",
+      "target": "docs_changelog_changelog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/changelog.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_changelog_changelog",
+      "target": "docs_changelog_2026_05_29_adaptive_selector_pilot_local_pass"
     },
     {
       "relation": "contains",
@@ -6682,11 +6784,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/current/release.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "current_release_release_zero_to_one",
+      "target": "current_release_repository_artifact_policy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
       "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "current_release_release_zero_to_one",
       "target": "current_release"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "current_release_release_zero_to_one",
+      "target": "current_release_40",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/current/release.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "current_release_release_zero_to_one",
+      "target": "current_release_33"
     },
     {
       "relation": "contains",
@@ -6780,5 +6912,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a4509865ce57afc65f3d5f58d417372ccf28a213"
+  "built_at_commit": "c5f1981cd730f8d7a56e5e01ed51466038856a57"
 }
