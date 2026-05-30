@@ -1,3 +1,16 @@
+# Dependencies
+/node_modules/
+
+# Build output
+/dist/
+
+# Playwright local artifacts
+/test-results/
+/playwright-report/
+
+# Local Hermes run artifacts
+/.hermes/
+
 # Graphify local/cache artifacts
 /graphify-out/cache/
 /graphify-out/manifest.json

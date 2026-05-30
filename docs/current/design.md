@@ -105,3 +105,14 @@ MVP 권장: Rive state machine. 일정상 어려우면 Lottie clips. 최후 fall
 - 캐릭터가 각 상태에서 다른 감정/자세를 보임
 - 질문이 진행될수록 긴장감이 쌓임
 - 틀렸을 때도 계속하고 싶음
+
+## Current minimal UI scaffold
+
+현재 로컬 browser scaffold는 `index.html` + `src/ui/app.ts`의 Vite 기반 단일 화면 앱이다.
+
+- Entry는 `오늘 뭐 먹을지 제가 맞혀볼게요.`와 `시작하기` CTA로 “마음속 메뉴를 맞히는 게임”임을 먼저 보여준다.
+- Asking은 한 화면 한 질문과 고정 5답변(`네`, `아마도요`, `모르겠어요`, `아마 아닐걸요`, `아니요`)만 노출한다.
+- Answer accepted와 Thinking은 별도 `data-ui-state`로 렌더링되어, 답변 직후 다음 질문으로 즉시 튀는 설문 폼 회귀를 막는다.
+- Guessing은 `혹시… {menu}인가요?`와 `맞아요` / `아니에요`를 먼저 보여주고, Success reveal은 한 메뉴 선언 + 한국어 reason seed만 표시한다.
+- Wrong recovery는 `surprised` 반응, `제외됨: {menu}` chip, recovery 질문으로 이어진다.
+- 캐릭터 stage는 최종 mascot이 아니라 CSS/DOM placeholder지만 `idle`, `ask`, `thinking`, `confident`, `surprised`, `recover`, `reveal` cue가 visible label과 posture 변화로 구분된다.
