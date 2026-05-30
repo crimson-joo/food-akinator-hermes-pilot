@@ -6,6 +6,8 @@
 - Added minimal Vite browser scaffold with Entry → Asking → Answer accepted → Thinking → Guessing → Reveal → Wrong recovery states.
 - Added visible CSS/DOM character stage placeholder with QA hooks for `idle`, `ask`, `thinking`, `confident`, `surprised`, `recover`, and `reveal` cues.
 - Added UI render/transition tests that verify fixed 5-answer controls, Korean question/reveal/recovery copy, no internal score/probability copy, reduced-motion CSS, and recovered `recover` cue preservation.
+- Added release automation bootstrap: PR `test-lint-build` CI, GitHub Pages deploy workflow, Playwright e2e smoke, post-deploy scripted asset canary, optional Hermes webhook notification, Vite Pages base config.
+- Updated release/QA docs with workflow contract and quantitative Playwright gate.
 - Fixed reviewer-blocking UI error trust-boundary issue: raw engine errors/question ids are no longer rendered to users; safe Korean recovery copy is shown instead.
 - Final local gates passed: integrated review remediation, QA browser flow, `npm test`, `npm run typecheck`, `npm run build`, focused CLI acceptance probe.
 - Not done: PR, merge, deploy, live canary, actual mobile viewport QA, final mascot/brand polish, large catalogue expansion.

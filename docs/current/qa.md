@@ -4,7 +4,7 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
-현재 threshold/golden UI pilot의 local QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check다. PR/merge/deploy/live canary와 실제 mobile viewport QA는 아직 수행하지 않았다.
+현재 threshold/golden UI pilot의 local QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. 실제 mobile viewport QA와 perceptual polish는 아직 별도 gate로 남아 있다.
 
 ## Product acceptance
 
@@ -76,6 +76,19 @@ Fail 조건:
 - reveal reason은 `reasonSeeds` 기반 한국어 단서여야 하며 내부 score/probability/question id를 노출하지 않는다.
 - wrong guess path는 거절 후보를 suppression하고 low-risk `recovery_disambiguation` 질문으로 회복한다.
 - all-unknown path는 반복 질문이나 fake reveal 없이 `exhausted`로 종료한다.
+
+## Quantitative Playwright gate
+
+PR/deploy gate에서 자동 확인하는 기준:
+
+- Entry: `data-ui-state="entry"`, character idle, headline/CTA visible.
+- Asking: one question card, exactly five `[data-answer-key]` controls.
+- Transition: answer click 후 `answerAccepted`/`thinking`을 거쳐 다음 state로 진행.
+- Wrong recovery: tentative guess reject 후 `recovering`, rejected candidate marker, recovery asking flow.
+- Reveal: confirmed guess 후 `data-ui-state="revealed"`, `data-character-cue="reveal"`, reason copy visible.
+- Trust boundary: visible text에 `score`, `probability`, `top1`, `top3`, `attribute`, `clue:`, raw `q-*` id 노출 없음.
+- Mobile smoke: Pixel-sized viewport에서 horizontal overflow 없음, answer controls usable.
+- Browser health: page console error/pageerror 없음.
 
 ## Browser QA
 

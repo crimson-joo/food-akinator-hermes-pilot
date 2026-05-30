@@ -109,12 +109,22 @@ jobs:
         if: steps.app.outputs.present == 'true'
         run: npm ci
 
+      - name: Install Playwright browsers for live canary
+        if: steps.app.outputs.present == 'true'
+        run: npx playwright install --with-deps chromium
+
       - name: Post-deploy scripted canary
         if: steps.app.outputs.present == 'true'
         env:
           CANARY_URL: ${{ steps.deployment.outputs.page_url }}
           CANARY_SHA: ${{ github.sha }}
         run: npm run canary:deployed --if-present
+
+      - name: Post-deploy Playwright live smoke
+        if: steps.app.outputs.present == 'true'
+        env:
+          BASE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: npm run test:e2e:live --if-present
 
       - name: Optional Hermes webhook notification
         if: steps.app.outputs.present == 'true' && always()

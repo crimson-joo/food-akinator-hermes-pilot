@@ -4,6 +4,10 @@
 # Build output
 /dist/
 
+# Playwright local artifacts
+/test-results/
+/playwright-report/
+
 # Local Hermes run artifacts
 /.hermes/
 

@@ -8,5 +8,6 @@ const isExplicitHermesRun = process.argv.some(
 export default defineConfig({
   test: {
     include: isExplicitHermesRun ? [TEST_FILE_GLOB] : [`tests/${TEST_FILE_GLOB}`],
+    exclude: ['**/node_modules/**', '**/dist/**', '**/.hermes/**', 'tests/e2e/**'],
   },
 });
