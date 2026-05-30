@@ -1,6 +1,9 @@
 import { expect, test, type Page } from '@playwright/test';
 
+declare const process: { env: Record<string, string | undefined> };
+
 const forbiddenUserVisibleMarkers = [/score/i, /probability/i, /top1/i, /top3/i, /attribute/i, /clue:/i, /q-[a-z-]+/i];
+const appUrl = process.env.BASE_URL ?? '/';
 
 async function expectNoConsoleErrors(page: Page): Promise<void> {
   const errors: string[] = [];
@@ -42,7 +45,7 @@ async function answerUntilGuess(page: Page, sequence: string[]): Promise<void> {
 }
 
 test('minimal scaffold supports entry → adaptive answers → wrong recovery → reveal without console errors', async ({ page }) => {
-  await page.goto('/');
+  await page.goto(appUrl);
   await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', 'entry');
   await expectNoForbiddenVisibleMarkers(page);
   await expect(page.locator('[data-testid="character-stage"]')).toHaveAttribute('data-character-cue', 'idle');
@@ -87,7 +90,7 @@ test('minimal scaffold supports entry → adaptive answers → wrong recovery �
 });
 
 test('mobile viewport remains usable without horizontal overflow', async ({ page }) => {
-  await page.goto('/');
+  await page.goto(appUrl);
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   expect(overflow).toBeLessThanOrEqual(1);
   await page.getByRole('button', { name: '시작하기' }).click();
