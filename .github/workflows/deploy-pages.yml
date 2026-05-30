@@ -1,0 +1,134 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build-and-predeploy-canary
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect deployable Node app
+        id: app
+        shell: bash
+        run: |
+          if [ -f package.json ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "No package.json on this ref; deploy is skipped."
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.app.outputs.present == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.app.outputs.present == 'true'
+        run: npm ci
+
+      - name: Unit tests
+        if: steps.app.outputs.present == 'true'
+        run: npm test
+
+      - name: Typecheck
+        if: steps.app.outputs.present == 'true'
+        run: npm run typecheck
+
+      - name: Build
+        if: steps.app.outputs.present == 'true'
+        run: npm run build
+
+      - name: Install Playwright browsers
+        if: steps.app.outputs.present == 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Pre-deploy Playwright smoke
+        if: steps.app.outputs.present == 'true'
+        run: npm run test:e2e --if-present
+
+      - name: Configure Pages
+        if: steps.app.outputs.present == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: steps.app.outputs.present == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    name: deploy-and-scripted-canary
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect deployable Node app
+        id: app
+        shell: bash
+        run: |
+          if [ -f package.json ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "No package.json on this ref; deploy is skipped."
+          fi
+
+      - name: Deploy to GitHub Pages
+        if: steps.app.outputs.present == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - uses: actions/setup-node@v4
+        if: steps.app.outputs.present == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies for live canary
+        if: steps.app.outputs.present == 'true'
+        run: npm ci
+
+      - name: Post-deploy scripted canary
+        if: steps.app.outputs.present == 'true'
+        env:
+          CANARY_URL: ${{ steps.deployment.outputs.page_url }}
+          CANARY_SHA: ${{ github.sha }}
+        run: npm run canary:deployed --if-present
+
+      - name: Optional Hermes webhook notification
+        if: steps.app.outputs.present == 'true' && always()
+        env:
+          HERMES_WEBHOOK_URL: ${{ secrets.HERMES_WEBHOOK_URL }}
+          DEPLOY_URL: ${{ steps.deployment.outputs.page_url }}
+          DEPLOY_SHA: ${{ github.sha }}
+          DEPLOY_RUN_ID: ${{ github.run_id }}
+          DEPLOY_STATUS: ${{ job.status }}
+        shell: bash
+        run: |
+          if [ -z "$HERMES_WEBHOOK_URL" ]; then
+            echo "HERMES_WEBHOOK_URL is not set; skipping Hermes webhook notification."
+            exit 0
+          fi
+          payload=$(node -e 'console.log(JSON.stringify({event:"food_akinator_pages_deploy", status:process.env.DEPLOY_STATUS, url:process.env.DEPLOY_URL, sha:process.env.DEPLOY_SHA, runId:process.env.DEPLOY_RUN_ID, repo:process.env.GITHUB_REPOSITORY}))')
+          curl -fsS -X POST -H 'Content-Type: application/json' --data "$payload" "$HERMES_WEBHOOK_URL"
