@@ -13,7 +13,7 @@ jobs:
     name: test-lint-build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Detect Node app
         id: app
@@ -26,7 +26,7 @@ jobs:
             echo "No package.json on this ref; bootstrap workflow installed only."
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         if: steps.app.outputs.present == 'true'
         with:
           node-version: 22
