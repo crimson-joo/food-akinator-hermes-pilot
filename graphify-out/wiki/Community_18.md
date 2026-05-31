@@ -1,38 +1,31 @@
 # Community 18
 
-> 8 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안** (14 connections) — `docs/research/inference-motion-research.md`
-- **5. Confidence/reveal threshold** (4 connections) — `docs/research/inference-motion-research.md`
-- **inference-motion-research.md** (1 connections) — `docs/research/inference-motion-research.md`
-- **1. 목표와 핵심 제품 경험** (1 connections) — `docs/research/inference-motion-research.md`
-- **5.1 추측 조건** (1 connections) — `docs/research/inference-motion-research.md`
-- **5.2 Reveal vs tentative guess** (1 connections) — `docs/research/inference-motion-research.md`
-- **5.3 Confidence messaging** (1 connections) — `docs/research/inference-motion-research.md`
-- **13. 회의용 권장 결론** (1 connections) — `docs/research/inference-motion-research.md`
+- **post_deploy_canary.mjs** (9 connections) — `scripts/post_deploy_canary.mjs`
+- **url** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **requiredHtmlPatterns** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **requiredJsPatterns** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **forbiddenJsPatterns** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **fetchText()** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **assertPatterns()** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **assertForbidden()** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **assetMatch** (1 connections) — `scripts/post_deploy_canary.mjs`
+- **assetUrl** (1 connections) — `scripts/post_deploy_canary.mjs`
 
 ## Relationships
 
-- [[Community 31]] (1 shared connections)
-- [[Community 20]] (1 shared connections)
-- [[Community 15]] (1 shared connections)
-- [[Community 29]] (1 shared connections)
-- [[Community 11]] (1 shared connections)
-- [[Community 21]] (1 shared connections)
-- [[Community 34]] (1 shared connections)
-- [[Community 33]] (1 shared connections)
-- [[Community 27]] (1 shared connections)
-- [[Community 32]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `scripts/post_deploy_canary.mjs`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

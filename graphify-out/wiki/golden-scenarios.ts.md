@@ -2,7 +2,7 @@
 
 > God node · 13 connections · `tests/fixtures/golden-scenarios.ts`
 
-**Community:** [[Community 0]]
+**Community:** [[Community 2]]
 
 ## Connections by Relation
 

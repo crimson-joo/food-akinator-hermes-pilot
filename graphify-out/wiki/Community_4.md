@@ -4,39 +4,45 @@
 
 ## Key Concepts
 
-- **Architect Gate — Food Akinator v0** (14 connections) — `docs/research/architect-gate.md`
-- **Scoring** (3 connections) — `docs/research/architect-gate.md`
-- **v0 file layout** (2 connections) — `docs/research/architect-gate.md`
-- **Answer semantics** (2 connections) — `docs/research/architect-gate.md`
-- **Selector** (2 connections) — `docs/research/architect-gate.md`
-- **State machine** (2 connections) — `docs/research/architect-gate.md`
-- **architect-gate.md** (1 connections) — `docs/research/architect-gate.md`
-- **Gate 판정** (1 connections) — `docs/research/architect-gate.md`
-- **핵심 결정** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (data/)** (1 connections) — `docs/research/architect-gate.md`
-- **Data minimums** (1 connections) — `docs/research/architect-gate.md`
-- **code:ts (type AnswerValue = 1 | 0.5 | 0 | -0.5 | -1;)** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (logScore(candidate))** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (similarity = - ((answerValue - expectedValue)^2) / (2 * sigm)** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (mean(q) = Σ P(c) * expected(c, q))** (1 connections) — `docs/research/architect-gate.md`
-- **Guess / reveal threshold** (1 connections) — `docs/research/architect-gate.md`
-- **Wrong recovery** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (entry → asking)** (1 connections) — `docs/research/architect-gate.md`
-- **Character boundary** (1 connections) — `docs/research/architect-gate.md`
-- **Test-first build sequence** (1 connections) — `docs/research/architect-gate.md`
-- **Builder 금지** (1 connections) — `docs/research/architect-gate.md`
+- **domain.ts** (29 connections) — `src/engine/domain.ts`
+- **engine-domain.test.ts** (10 connections) — `tests/engine-domain.test.ts`
+- **Question** (8 connections) — `src/engine/domain.ts`
+- **validateCandidate()** (5 connections) — `src/engine/domain.ts`
+- **ANSWER_VALUES** (4 connections) — `src/engine/domain.ts`
+- **validateQuestion()** (4 connections) — `src/engine/domain.ts`
+- **asRecord()** (3 connections) — `src/engine/domain.ts`
+- **requireString()** (3 connections) — `src/engine/domain.ts`
+- **QUESTION_ROLES** (2 connections) — `src/engine/domain.ts`
+- **requireStringArray()** (2 connections) — `src/engine/domain.ts`
+- **validQuestion** (1 connections) — `tests/engine-domain.test.ts`
+- **question** (1 connections) — `tests/engine-domain.test.ts`
+- **candidate** (1 connections) — `tests/engine-domain.test.ts`
+- **AnswerValue** (1 connections) — `src/engine/domain.ts`
+- **QUESTION_AXES** (1 connections) — `src/engine/domain.ts`
+- **QuestionAxis** (1 connections) — `src/engine/domain.ts`
+- **Status** (1 connections) — `src/engine/domain.ts`
+- **QuestionId** (1 connections) — `src/engine/domain.ts`
+- **ValidationResult** (1 connections) — `src/engine/domain.ts`
+- **STATUS_VALUES** (1 connections) — `src/engine/domain.ts`
+- **LEVELS** (1 connections) — `src/engine/domain.ts`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 2]] (7 shared connections)
+- [[Community 17]] (5 shared connections)
+- [[Community 6]] (3 shared connections)
+- [[Community 12]] (2 shared connections)
+- [[Community 1]] (2 shared connections)
+- [[Community 11]] (2 shared connections)
 
 ## Source Files
 
-- `docs/research/architect-gate.md`
+- `src/engine/domain.ts`
+- `tests/engine-domain.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 81 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -2,7 +2,7 @@
 
 > God node · 35 connections · `src/engine/session.ts`
 
-**Community:** [[Community 5]]
+**Community:** [[Community 6]]
 
 ## Connections by Relation
 

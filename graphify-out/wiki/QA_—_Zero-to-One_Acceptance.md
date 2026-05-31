@@ -2,7 +2,7 @@
 
 > God node · 10 connections · `docs/current/qa.md`
 
-**Community:** [[Community 12]]
+**Community:** [[Community 14]]
 
 ## Connections by Relation
 

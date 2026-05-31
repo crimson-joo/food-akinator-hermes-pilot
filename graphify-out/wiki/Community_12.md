@@ -1,33 +1,37 @@
 # Community 12
 
-> 12 nodes
+> 13 nodes
 
 ## Key Concepts
 
-- **QA — Zero-to-One Acceptance** (10 connections) — `docs/current/qa.md`
-- **Live canary** (2 connections) — `docs/current/qa.md`
-- **qa.md** (1 connections) — `docs/current/qa.md`
-- **핵심 판정** (1 connections) — `docs/current/qa.md`
-- **Product acceptance** (1 connections) — `docs/current/qa.md`
-- **Direct-play derived QA** (1 connections) — `docs/current/qa.md`
-- **Data tests** (1 connections) — `docs/current/qa.md`
-- **Engine tests** (1 connections) — `docs/current/qa.md`
-- **Golden scenario tests** (1 connections) — `docs/current/qa.md`
-- **Quantitative Playwright gate** (1 connections) — `docs/current/qa.md`
-- **Browser QA** (1 connections) — `docs/current/qa.md`
-- **Minimal UI scaffold DOM checks** (1 connections) — `docs/current/qa.md`
+- **engine-selector.test.ts** (21 connections) — `tests/engine-selector.test.ts`
+- **candidate()** (1 connections) — `tests/engine-selector.test.ts`
+- **question()** (1 connections) — `tests/engine-selector.test.ts`
+- **ids()** (1 connections) — `tests/engine-selector.test.ts`
+- **candidates** (1 connections) — `tests/engine-selector.test.ts`
+- **questions** (1 connections) — `tests/engine-selector.test.ts`
+- **ranked** (1 connections) — `tests/engine-selector.test.ts`
+- **nearTie** (1 connections) — `tests/engine-selector.test.ts`
+- **strongSignal** (1 connections) — `tests/engine-selector.test.ts`
+- **selected** (1 connections) — `tests/engine-selector.test.ts`
+- **fallback** (1 connections) — `tests/engine-selector.test.ts`
+- **soupYes** (1 connections) — `tests/engine-selector.test.ts`
+- **soupNo** (1 connections) — `tests/engine-selector.test.ts`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 17]] (3 shared connections)
+- [[Community 4]] (2 shared connections)
+- [[Community 11]] (2 shared connections)
+- [[Community 6]] (2 shared connections)
 
 ## Source Files
 
-- `docs/current/qa.md`
+- `tests/engine-selector.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 33 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

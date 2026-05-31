@@ -1,31 +1,39 @@
 # Community 17
 
-> 10 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **Product — Food Akinator Zero-to-One** (9 connections) — `docs/current/product.md`
-- **product.md** (1 connections) — `docs/current/product.md`
-- **제품 한 줄 정의** (1 connections) — `docs/current/product.md`
-- **핵심 문제** (1 connections) — `docs/current/product.md`
-- **제품 thesis** (1 connections) — `docs/current/product.md`
-- **MVP 범위** (1 connections) — `docs/current/product.md`
-- **Non-goals** (1 connections) — `docs/current/product.md`
-- **Builder 시작 조건** (1 connections) — `docs/current/product.md`
-- **구현 우선순위** (1 connections) — `docs/current/product.md`
-- **v0 성공 기준** (1 connections) — `docs/current/product.md`
+- **scoring.ts** (12 connections) — `src/engine/scoring.ts`
+- **Candidate** (10 connections) — `src/engine/domain.ts`
+- **engine-scoring.test.ts** (9 connections) — `tests/engine-scoring.test.ts`
+- **AnsweredQuestion** (4 connections) — `src/engine/scoring.ts`
+- **CandidateScore** (3 connections) — `src/engine/scoring.ts`
+- **soupCandidate** (1 connections) — `tests/engine-scoring.test.ts`
+- **crispyCandidate** (1 connections) — `tests/engine-scoring.test.ts`
+- **yesScores** (1 connections) — `tests/engine-scoring.test.ts`
+- **probablyScores** (1 connections) — `tests/engine-scoring.test.ts`
+- **scores** (1 connections) — `tests/engine-scoring.test.ts`
+- **scoreCandidate()** (1 connections) — `src/engine/scoring.ts`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 11]] (6 shared connections)
+- [[Community 4]] (5 shared connections)
+- [[Community 6]] (4 shared connections)
+- [[Community 12]] (3 shared connections)
+- [[Community 2]] (3 shared connections)
+- [[Community 1]] (1 shared connections)
 
 ## Source Files
 
-- `docs/current/product.md`
+- `src/engine/domain.ts`
+- `src/engine/scoring.ts`
+- `tests/engine-scoring.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (100%)
+- EXTRACTED: 44 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

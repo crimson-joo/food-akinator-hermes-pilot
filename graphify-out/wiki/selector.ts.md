@@ -2,7 +2,7 @@
 
 > God node · 23 connections · `src/engine/selector.ts`
 
-**Community:** [[Community 0]]
+**Community:** [[Community 11]]
 
 ## Connections by Relation
 

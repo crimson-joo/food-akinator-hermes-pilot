@@ -4,12 +4,12 @@
 
 ## Key Concepts
 
-- **Food Akinator — Zero-to-One Research Foundation** (5 connections) — `README.md`
-- **README.md** (1 connections) — `README.md`
-- **현재 상태** (1 connections) — `README.md`
-- **목표** (1 connections) — `README.md`
-- **원칙** (1 connections) — `README.md`
-- **문서** (1 connections) — `README.md`
+- **food-akinator-flow.spec.ts** (5 connections) — `tests/e2e/food-akinator-flow.spec.ts`
+- **answer()** (3 connections) — `tests/e2e/food-akinator-flow.spec.ts`
+- **expectNoForbiddenVisibleMarkers()** (2 connections) — `tests/e2e/food-akinator-flow.spec.ts`
+- **answerUntilGuess()** (2 connections) — `tests/e2e/food-akinator-flow.spec.ts`
+- **forbiddenUserVisibleMarkers** (1 connections) — `tests/e2e/food-akinator-flow.spec.ts`
+- **expectNoConsoleErrors()** (1 connections) — `tests/e2e/food-akinator-flow.spec.ts`
 
 ## Relationships
 
@@ -17,11 +17,11 @@
 
 ## Source Files
 
-- `README.md`
+- `tests/e2e/food-akinator-flow.spec.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

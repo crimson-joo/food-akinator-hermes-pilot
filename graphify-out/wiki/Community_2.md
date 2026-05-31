@@ -1,15 +1,18 @@
 # Community 2
 
-> 33 nodes
+> 41 nodes
 
 ## Key Concepts
 
 - **engine-session.test.ts** (31 connections) — `tests/engine-session.test.ts`
 - **engine-golden-scenarios.test.ts** (13 connections) — `tests/engine-golden-scenarios.test.ts`
+- **golden-scenarios.ts** (13 connections) — `tests/fixtures/golden-scenarios.ts`
 - **submitAnswer()** (7 connections) — `src/engine/session.ts`
+- **AnswerKey** (7 connections) — `src/engine/domain.ts`
 - **submitGuessFeedback()** (6 connections) — `src/engine/session.ts`
 - **playScenario()** (4 connections) — `tests/engine-golden-scenarios.test.ts`
 - **answerCurrent()** (3 connections) — `tests/engine-golden-scenarios.test.ts`
+- **QuestionRole** (3 connections) — `src/engine/domain.ts`
 - **answerCurrent()** (2 connections) — `tests/engine-session.test.ts`
 - **goldenDataset** (2 connections) — `tests/fixtures/golden-scenarios.ts`
 - **goldenScenarios** (2 connections) — `tests/fixtures/golden-scenarios.ts`
@@ -26,19 +29,19 @@
 - **data** (1 connections) — `tests/engine-session.test.ts`
 - **recovered** (1 connections) — `tests/engine-session.test.ts`
 - **asked** (1 connections) — `tests/engine-session.test.ts`
-- **first** (1 connections) — `tests/engine-session.test.ts`
-- **second** (1 connections) — `tests/engine-session.test.ts`
-- **asking** (1 connections) — `tests/engine-session.test.ts`
-- *... and 8 more nodes in this community*
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
-- [[Community 0]] (9 shared connections)
-- [[Community 5]] (6 shared connections)
-- [[Community 1]] (5 shared connections)
+- [[Community 4]] (7 shared connections)
+- [[Community 6]] (7 shared connections)
+- [[Community 1]] (6 shared connections)
+- [[Community 17]] (3 shared connections)
+- [[Community 11]] (1 shared connections)
 
 ## Source Files
 
+- `src/engine/domain.ts`
 - `src/engine/session.ts`
 - `tests/engine-golden-scenarios.test.ts`
 - `tests/engine-session.test.ts`
@@ -46,7 +49,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 94 (100%)
+- EXTRACTED: 122 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

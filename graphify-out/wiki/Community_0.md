@@ -1,55 +1,49 @@
 # Community 0
 
-> 67 nodes
+> 47 nodes
 
 ## Key Concepts
 
-- **domain.ts** (29 connections) — `src/engine/domain.ts`
-- **selector.ts** (23 connections) — `src/engine/selector.ts`
-- **engine-selector.test.ts** (21 connections) — `tests/engine-selector.test.ts`
-- **golden-scenarios.ts** (13 connections) — `tests/fixtures/golden-scenarios.ts`
-- **scoring.ts** (12 connections) — `src/engine/scoring.ts`
-- **engine-domain.test.ts** (10 connections) — `tests/engine-domain.test.ts`
-- **Candidate** (10 connections) — `src/engine/domain.ts`
-- **engine-scoring.test.ts** (9 connections) — `tests/engine-scoring.test.ts`
-- **Question** (8 connections) — `src/engine/domain.ts`
-- **AnswerKey** (7 connections) — `src/engine/domain.ts`
-- **rankNextQuestions()** (6 connections) — `src/engine/selector.ts`
-- **scoreCandidates()** (6 connections) — `src/engine/scoring.ts`
-- **validateCandidate()** (5 connections) — `src/engine/domain.ts`
-- **scoreQuestion()** (4 connections) — `src/engine/selector.ts`
-- **AnsweredQuestion** (4 connections) — `src/engine/scoring.ts`
-- **ANSWER_VALUES** (4 connections) — `src/engine/domain.ts`
-- **validateQuestion()** (4 connections) — `src/engine/domain.ts`
-- **normalizeWeights()** (3 connections) — `src/engine/selector.ts`
-- **policyBonus()** (3 connections) — `src/engine/selector.ts`
-- **round()** (3 connections) — `src/engine/selector.ts`
-- **CandidateScore** (3 connections) — `src/engine/scoring.ts`
-- **QuestionRole** (3 connections) — `src/engine/domain.ts`
-- **asRecord()** (3 connections) — `src/engine/domain.ts`
-- **requireString()** (3 connections) — `src/engine/domain.ts`
-- **getActiveCandidates()** (2 connections) — `src/engine/selector.ts`
-- *... and 42 more nodes in this community*
+- **작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안** (14 connections) — `docs/research/inference-motion-research.md`
+- **8. 캐릭터/모션 파이프라인 선택지** (7 connections) — `docs/research/inference-motion-research.md`
+- **11. 주요 리스크와 대응** (6 connections) — `docs/research/inference-motion-research.md`
+- **12. Acceptance tests** (5 connections) — `docs/research/inference-motion-research.md`
+- **5. Confidence/reveal threshold** (4 connections) — `docs/research/inference-motion-research.md`
+- **6. Wrong guess suppression/recovery** (4 connections) — `docs/research/inference-motion-research.md`
+- **9. 추천 MVP 캐릭터 파이프라인** (4 connections) — `docs/research/inference-motion-research.md`
+- **10. 전체 MVP 아키텍처** (4 connections) — `docs/research/inference-motion-research.md`
+- **2. 도메인 데이터 모델** (3 connections) — `docs/research/inference-motion-research.md`
+- **2.1 Candidate schema: 음식 후보** (2 connections) — `docs/research/inference-motion-research.md`
+- **2.2 Question bank schema** (2 connections) — `docs/research/inference-motion-research.md`
+- **6.1 Suppression 데이터** (2 connections) — `docs/research/inference-motion-research.md`
+- **6.3 Learning hook** (2 connections) — `docs/research/inference-motion-research.md`
+- **9.1 1순위: Rive state machine** (2 connections) — `docs/research/inference-motion-research.md`
+- **10.3 데이터 파일 구조 예** (2 connections) — `docs/research/inference-motion-research.md`
+- **inference-motion-research.md** (1 connections) — `docs/research/inference-motion-research.md`
+- **1. 목표와 핵심 제품 경험** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:ts (type Candidate = {)** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:ts (type Question = {)** (1 connections) — `docs/research/inference-motion-research.md`
+- **5.1 추측 조건** (1 connections) — `docs/research/inference-motion-research.md`
+- **5.2 Reveal vs tentative guess** (1 connections) — `docs/research/inference-motion-research.md`
+- **5.3 Confidence messaging** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:ts (type SessionState = {)** (1 connections) — `docs/research/inference-motion-research.md`
+- **6.2 Recovery strategy** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- [[Community 5]] (15 shared connections)
-- [[Community 2]] (9 shared connections)
-- [[Community 1]] (4 shared connections)
+- [[Community 23]] (1 shared connections)
+- [[Community 19]] (1 shared connections)
+- [[Community 13]] (1 shared connections)
 
 ## Source Files
 
-- `src/engine/domain.ts`
-- `src/engine/scoring.ts`
-- `src/engine/selector.ts`
-- `tests/engine-domain.test.ts`
-- `tests/engine-scoring.test.ts`
-- `tests/engine-selector.test.ts`
-- `tests/fixtures/golden-scenarios.ts`
+- `docs/research/inference-motion-research.md`
 
 ## Audit Trail
 
-- EXTRACTED: 244 (100%)
+- EXTRACTED: 95 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
