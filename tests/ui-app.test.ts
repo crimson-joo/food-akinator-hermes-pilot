@@ -166,6 +166,26 @@ describe('premium culinary oracle UI', () => {
     expect(expressions).toEqual(expect.arrayContaining(['warm-blink', 'curious-focus', 'focused-smile', 'soft-smile', 'maybe-smirk', 'puzzled-open', 'skeptical-narrow', 'decisive-prune', 'narrow-thinking', 'spark-confidence', 'oops-open', 'calm-detective', 'bright-payoff']));
   });
 
+  it('renders the production puppet as separate vector layers with state-specific transforms and visible thought status', () => {
+    const session = createDemoSession();
+    const thinking = renderApp({ phase: 'thinking', session, lastAnswer: 'probably_not' });
+    const reveal = renderApp({ phase: 'revealed', session: fakeGuessingSession() });
+    const layerMatches = [...thinking.matchAll(/data-layer-id="([^"]+)"/g)].map((match) => match[1]);
+
+    expect(thinking).toContain('data-puppet-format="inline-svg-layer-rig"');
+    expect(thinking).toContain('data-emotion="deep-analysis"');
+    expect(thinking).toContain('data-confidence-tone="blocked-but-working"');
+    expect(thinking).toContain('data-thought-process="단서가 잠깐 엇갈려요. 메모장과 향의 흐름을 다시 맞춰보고 있어요."');
+    expect(thinking).toContain('data-visible-signals="narrowed eyes|note scan line|spiraling steam|pulled-in shoulders"');
+    expect(layerMatches.length).toBeGreaterThanOrEqual(34);
+    expect(new Set(layerMatches).size).toBe(layerMatches.length);
+    expect(layerMatches).toEqual(expect.arrayContaining(['head_base', 'brow_left', 'brow_right', 'pupil_left', 'mouth_thinking', 'arm_spoon_lower', 'spoon_bowl', 'note_pages', 'note_ink_check', 'plate_lid', 'steam_1']));
+    expect(thinking).toMatch(/data-layer-id="head_base"[^>]+style="[^"]*--tx:-2px;--ty:6px;--rot:4deg/);
+    expect(thinking).toMatch(/data-layer-id="note_pages"[^>]+data-vector-role="active-clue-scan"/);
+    expect(reveal).toContain('data-emotion="payoff-joy"');
+    expect(reveal).toMatch(/data-layer-id="plate_lid"[^>]+--ty:-42px;--rot:-18deg/);
+  });
+
   it('renders guessing, reveal, wrong recovery, and safe errors without internal scoring leakage', () => {
     const guessingSession = fakeGuessingSession();
     const guessing = renderApp({ phase: 'guessing', session: guessingSession });

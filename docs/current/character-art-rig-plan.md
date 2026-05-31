@@ -168,6 +168,35 @@ Decision:
 3. Refactor current inline character constants into a character module boundary. ✅
 4. Keep CSS fallback but rename it honestly as fallback, not final art. ✅
 5. Generate/commission canonical character source art. ✅ first source-art board generated
-6. Convert Concept A into simplified vector/transparent layer exports.
-7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API.
-8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal.
+6. Convert Concept A into simplified vector/transparent layer exports. ✅ inline SVG layer rig v1 now exposes 50+ individually addressable `data-layer-id` parts with pivots, z-order, vector roles, and state transforms in `src/ui/character/characterAssets.ts`.
+7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API. ⏳ production web fallback now mirrors the target state-machine contract; external `.riv` authoring can replace the inline SVG without changing app logic.
+8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal. ⏳ automated and live QA required after merge.
+
+## Production inline vector rig v1
+
+This pass is no longer a list of composite pose images. The app renders one persistent Bogle puppet as a set of independent SVG parts:
+
+- body/costume: torso, cape, jacket panels, scarf, belt, pouch, medallion
+- face acting: head, ears, hair masses, steam curl, brows, eyes, pupils, eyelids, cheeks, five mouth shapes
+- articulated arms: spoon upper/lower/hand and notebook upper/lower/hand
+- props: spoon handle/bowl, clue notebook cover/pages/ink check, plate base/lid/knob/dish glow
+- atmosphere: steam strands, sparks, rim light, ground shadow
+
+Runtime hooks:
+
+- `data-puppet-format="inline-svg-layer-rig"`
+- every part has `data-layer-id`, `data-layer-group`, `data-vector-role`, `data-pivot`, and transform CSS variables
+- every cue has `data-emotion`, `data-confidence-tone`, `data-thought-process`, and `data-visible-signals`
+
+State acting packages:
+
+| Cue | Emotion | Confidence tone | Visible signals |
+|---|---|---|---|
+| `idle` | `warm-ready` | `open-start` | breathing, blink, idle steam |
+| `ask` | `curious-detective` | `gathering-first-clues` | forward lean, spoon point, curious brows |
+| `answerAccepted` | `clue-captured` | `signal-updated` | ink check, nod, focused smile |
+| `thinking` | `deep-analysis` | `blocked-but-working` | narrowed eyes, note scan, spiraling steam, pulled-in shoulders |
+| `confident` | `evidence-lock` | `nearly-solved` | plate forward, spark eyes, upright chest |
+| `surprised` | `oops-recoil` | `wrong-turn` | wide mouth, dropped spoon, recoil body |
+| `recover` | `calm-reframe` | `finding-new-path` | calm brows, reopened notebook, discarded candidate chip |
+| `reveal` | `payoff-joy` | `solved` | lid lift, dish glow, celebration sparks |
