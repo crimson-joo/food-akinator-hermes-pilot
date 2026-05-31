@@ -151,12 +151,23 @@ Pass only if:
 7. Reduced motion still exposes state through pose/copy/light, not hidden animation.
 8. Tests verify both new contract and absence of old `bogle-*` / `hero-stage` foundation.
 
+## Source art board
+
+The first source-art board is now committed at `docs/current/character-source-art.md` with three generated concept assets under `docs/current/character-art/`.
+
+Decision:
+
+- **Canonical**: Concept A / detective-oracle.
+- **Borrow from B**: chef utility-belt density, clean apron contrast, confident food-service posture.
+- **Borrow from C only lightly**: warm folk trim and steam swirl language; do not adopt the elderly sage/mustache direction.
+
 ## Next build sequence
 
-1. Lock this document as the art/rig contract.
-2. Add tests for `v3` DOM hooks and fallback runtime.
-3. Refactor current inline character constants into a character module boundary.
-4. Keep CSS fallback but rename it honestly as fallback, not final art.
-5. Generate/commission canonical character source art.
-6. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API.
-7. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal.
+1. Lock this document as the art/rig contract. ✅
+2. Add tests for `v3` DOM hooks and fallback runtime. ✅
+3. Refactor current inline character constants into a character module boundary. ✅
+4. Keep CSS fallback but rename it honestly as fallback, not final art. ✅
+5. Generate/commission canonical character source art. ✅ first source-art board generated
+6. Convert Concept A into simplified vector/transparent layer exports.
+7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API.
+8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal.
