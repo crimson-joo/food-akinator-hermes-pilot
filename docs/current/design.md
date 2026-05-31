@@ -192,7 +192,7 @@ State contract:
 | recover | `steady-reframe` | `calm-detective` | `note-reopen` | `recovery-focus` |
 | reveal | `celebration-open` | `bright-payoff` | `lid-lift` | `celebration` |
 
-Current limitation: v2 is a high-fidelity CSS/DOM layered rig, not a true Rive/Lottie asset pipeline. If the design bar rises again, next pass should generate or commission canonical character art and rigged animation assets instead of adding more CSS polish.
+Current limitation: v2 is a high-fidelity CSS/DOM layered rig, not a true Rive/Lottie asset pipeline. User feedback on 2026-05-31 confirms the v2 CSS/procedural host still reads too low-detail and toy-like versus the original Akinator benchmark. The next pass must follow `docs/current/character-art-rig-plan.md`: canonical illustrated source art, production rig-ready layer naming, Rive state-machine preference, Lottie fallback, and CSS only as a contract-preserving fallback.
 
 ## Interactive Character Animation v3 contract
 

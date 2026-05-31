@@ -185,7 +185,7 @@ function policyBonus(
     reasons.push('narrowFollowup');
   }
 
-  if (turn <= 3 && hasAnswers && question.role !== 'broad_split' && (topCandidate.attributes[question.id] ?? 0) > 0.5) {
+  if (turn <= 3 && hasAnswers && (topCandidate.attributes[question.id] ?? 0) > 0.5) {
     value += ANSWER_ALIGNED_FOLLOWUP_BONUS;
     reasons.push('answerAlignedFollowup');
   }
