@@ -4,7 +4,7 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
-현재 threshold/golden UI pilot의 local QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. 실제 mobile viewport QA와 perceptual polish는 아직 별도 gate로 남아 있다.
+현재 threshold/golden UI pilot의 자동화/live smoke QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check, GitHub Pages live canary, Pixel 7 크기 mobile viewport smoke를 포함한다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. Perceptual polish와 최종 mascot/brand는 아직 별도 product/design gate로 남아 있다.
 
 ## Product acceptance
 

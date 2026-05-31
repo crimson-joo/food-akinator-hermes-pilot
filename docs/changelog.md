@@ -10,7 +10,8 @@
 - Updated release/QA docs with workflow contract and quantitative Playwright gate.
 - Fixed reviewer-blocking UI error trust-boundary issue: raw engine errors/question ids are no longer rendered to users; safe Korean recovery copy is shown instead.
 - Final local gates passed: integrated review remediation, QA browser flow, `npm test`, `npm run typecheck`, `npm run build`, focused CLI acceptance probe.
-- Not done: PR, merge, deploy, live canary, actual mobile viewport QA, final mascot/brand polish, large catalogue expansion.
+- Final ship gates later completed: PR #5 merge, PR #6 live smoke base URL fix, main CI, GitHub Pages deploy, scripted asset canary, live Playwright smoke, and Pixel 7 mobile viewport smoke.
+- Not done: final mascot/brand polish, perceptual QA polish, large catalogue expansion, optional Hermes webhook secret wiring.
 
 
 ## 2026-05-29 — Adaptive selector pilot local PASS

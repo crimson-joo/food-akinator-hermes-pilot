@@ -1,18 +1,21 @@
 # Community 12
 
-> 9 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **Design — Zero-to-One Direction** (8 connections) — `docs/current/design.md`
-- **design.md** (1 connections) — `docs/current/design.md`
-- **디자인 방향** (1 connections) — `docs/current/design.md`
-- **Reference principles from direct play** (1 connections) — `docs/current/design.md`
-- **Reference principles from Akinator** (1 connections) — `docs/current/design.md`
-- **Non-copy boundary** (1 connections) — `docs/current/design.md`
-- **Screen/state inventory** (1 connections) — `docs/current/design.md`
-- **Character requirement** (1 connections) — `docs/current/design.md`
-- **Visual acceptance** (1 connections) — `docs/current/design.md`
+- **QA — Zero-to-One Acceptance** (10 connections) — `docs/current/qa.md`
+- **Live canary** (2 connections) — `docs/current/qa.md`
+- **qa.md** (1 connections) — `docs/current/qa.md`
+- **핵심 판정** (1 connections) — `docs/current/qa.md`
+- **Product acceptance** (1 connections) — `docs/current/qa.md`
+- **Direct-play derived QA** (1 connections) — `docs/current/qa.md`
+- **Data tests** (1 connections) — `docs/current/qa.md`
+- **Engine tests** (1 connections) — `docs/current/qa.md`
+- **Golden scenario tests** (1 connections) — `docs/current/qa.md`
+- **Quantitative Playwright gate** (1 connections) — `docs/current/qa.md`
+- **Browser QA** (1 connections) — `docs/current/qa.md`
+- **Minimal UI scaffold DOM checks** (1 connections) — `docs/current/qa.md`
 
 ## Relationships
 
@@ -20,11 +23,11 @@
 
 ## Source Files
 
-- `docs/current/design.md`
+- `docs/current/qa.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

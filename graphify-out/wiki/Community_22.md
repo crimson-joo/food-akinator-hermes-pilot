@@ -1,15 +1,16 @@
 # Community 22
 
-> 6 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **Release — Zero-to-One** (5 connections) — `docs/current/release.md`
-- **release.md** (1 connections) — `docs/current/release.md`
-- **현재 release 상태** (1 connections) — `docs/current/release.md`
-- **Release policy** (1 connections) — `docs/current/release.md`
-- **금지** (1 connections) — `docs/current/release.md`
-- **배포 완료 정의** (1 connections) — `docs/current/release.md`
+- **Akinator Direct Play Log — Pikachu** (6 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- **akinator-direct-play-log-2026-05-28-pikachu.md** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- **Run metadata** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- **Question/answer trace** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- **Interaction insights** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- **Product implications for Korean food Akinator** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
+- **Gate status** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
 
 ## Relationships
 
@@ -17,11 +18,11 @@
 
 ## Source Files
 
-- `docs/current/release.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-pikachu.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 12 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,26 +1,28 @@
 # Community 24
 
-> 5 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **2. 도메인 데이터 모델** (3 connections) — `docs/research/inference-motion-research.md`
-- **2.1 Candidate schema: 음식 후보** (2 connections) — `docs/research/inference-motion-research.md`
-- **2.2 Question bank schema** (2 connections) — `docs/research/inference-motion-research.md`
-- **code:ts (type Candidate = {)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:ts (type Question = {)** (1 connections) — `docs/research/inference-motion-research.md`
+- **Akinator Direct Play Log — Heung-min Son** (6 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- **akinator-direct-play-log-2026-05-28-heung-min-son.md** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- **Run metadata** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- **Question/answer trace** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- **Interaction insights** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- **Product implications for Korean food Akinator** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
+- **Gate status** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
 
 ## Relationships
 
-- [[Community 0]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
+- EXTRACTED: 12 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

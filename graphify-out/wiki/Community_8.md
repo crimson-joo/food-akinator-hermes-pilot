@@ -1,33 +1,37 @@
 # Community 8
 
-> 12 nodes
+> 16 nodes
 
 ## Key Concepts
 
-- **7. 엔진 API 초안** (4 connections) — `docs/research/inference-motion-research.md`
-- **7.2 답변 제출** (4 connections) — `docs/research/inference-motion-research.md`
-- **7.3 추측 피드백** (4 connections) — `docs/research/inference-motion-research.md`
-- **7.1 세션 시작** (3 connections) — `docs/research/inference-motion-research.md`
-- **code:http (POST /sessions)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:http (POST /sessions/{id}/answers)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:http (POST /sessions/{id}/guess-feedback)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
+- **Designer Gate — Food Akinator Zero-to-One** (11 connections) — `docs/research/designer-gate.md`
+- **후보 비교** (4 connections) — `docs/research/designer-gate.md`
+- **Builder handoff** (2 connections) — `docs/research/designer-gate.md`
+- **designer-gate.md** (1 connections) — `docs/research/designer-gate.md`
+- **Gate 목적** (1 connections) — `docs/research/designer-gate.md`
+- **추천 캐릭터 방향** (1 connections) — `docs/research/designer-gate.md`
+- **A. 입맛 탐정 “맛정이”** (1 connections) — `docs/research/designer-gate.md`
+- **B. 보글 셰프** (1 connections) — `docs/research/designer-gate.md`
+- **C. 입맛 레이더 “냠테나”** (1 connections) — `docs/research/designer-gate.md`
+- **최종 추천** (1 connections) — `docs/research/designer-gate.md`
+- **Screen states** (1 connections) — `docs/research/designer-gate.md`
+- **5-answer rhythm** (1 connections) — `docs/research/designer-gate.md`
+- **Character motion spec** (1 connections) — `docs/research/designer-gate.md`
+- **Microcopy 원칙** (1 connections) — `docs/research/designer-gate.md`
+- **Visual acceptance** (1 connections) — `docs/research/designer-gate.md`
+- **code:ts (type CharacterCue =)** (1 connections) — `docs/research/designer-gate.md`
 
 ## Relationships
 
-- [[Community 0]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `docs/research/designer-gate.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

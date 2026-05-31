@@ -1,8 +1,8 @@
 # Architecture — Zero-to-One
 
-> God node · 11 connections · `docs/current/architecture.md`
+> God node · 13 connections · `docs/current/architecture.md`
 
-**Community:** [[Community 7]]
+**Community:** [[Community 9]]
 
 ## Connections by Relation
 
@@ -18,6 +18,8 @@
 - [[Wrong recovery]] `EXTRACTED`
 - [[Character cue contract]] `EXTRACTED`
 - [[Builder gate]] `EXTRACTED`
+- [[Golden path fixture contract]] `EXTRACTED`
+- [[Minimal browser UI scaffold]] `EXTRACTED`
 
 ---
 
