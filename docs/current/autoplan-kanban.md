@@ -2,6 +2,7 @@
 
 Updated: 2026-06-01
 Repo HEAD at synthesis: `6bcef0f` / PR #21
+Docs alignment baseline: `0db5df7` / PR #22 autoplan merged to `main`
 Live URL: https://crimson-joo.github.io/food-akinator-hermes-pilot/
 Board: `food-akinator-rebuild`
 
@@ -132,6 +133,7 @@ Escalate to user only if:
 ## Evidence index
 
 - PR #21: https://github.com/crimson-joo/food-akinator-hermes-pilot/pull/21
+- PR #22: https://github.com/crimson-joo/food-akinator-hermes-pilot/pull/22
 - Live cache-busted canary used: https://crimson-joo.github.io/food-akinator-hermes-pilot/?v=1780244268797
 - Local screenshot inspected: `/Users/crimson/.hermes/cache/screenshots/browser_screenshot_0680642bc7d842cd89a97cd013d4e4e9.png`
 - Current Graphify outputs: `graphify-out/GRAPH_REPORT.md`, `graphify-out/graph.json`, `graphify-out/graph.html`

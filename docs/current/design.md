@@ -164,6 +164,8 @@ Pass:
 
 ## Premium Oracle Theater v2 contract
 
+Current public demo verdict: the live app now has an interactive Bogle host, answer-specific reaction hooks, state-specific SVG/CSS acting, and motion metadata from PR #21. This is enough for a controlled demo, but not enough for full production launch: the runtime remains an inline SVG/CSS fallback rather than authored Rive/Lottie/equivalent character animation, and perceptual QA has not approved it against the Akinator-level benchmark.
+
 사용자 피드백상 기존 procedural `bogle-*` mascot foundation은 “저급한 디자인/모션”으로 간주한다. 이후 구현은 단순 색상/그림자 polish가 아니라 새 visual-system 계약을 유지해야 한다.
 
 Required DOM contract:

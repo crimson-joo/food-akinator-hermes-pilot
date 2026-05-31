@@ -4,6 +4,8 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
+현재 판정: controlled demo / alpha smoke는 가능하지만, full public production launch는 blocked다. PR #21 이후 live canary와 DOM/console smoke는 통과했으나, PR #22 autoplan 기준 production gate는 Rive/Lottie/equivalent runtime, Akinator-like reasoning/reveal/recovery UX, perceptual screenshot evidence, mobile/reduced-motion coverage, Reviewer + QA production gates가 남아 있다.
+
 현재 threshold/golden UI pilot의 자동화/live smoke QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check, GitHub Pages live canary, Pixel 7 크기 mobile viewport smoke를 포함한다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. Perceptual polish와 최종 mascot/brand는 아직 별도 product/design gate로 남아 있다.
 
 ## Product acceptance
@@ -112,6 +114,11 @@ PR/deploy gate에서 자동 확인하는 기준:
 - animation/reduced-motion fallback 확인
 - old implementation markers absence 확인
 - acceptance flow 1회 이상 실제 플레이
+
+Recent evidence references:
+
+- PR #21 live/demo evidence: Bogle motion state machine, production layer sheet hooks, main CI, Pages deploy, scripted canary, browser DOM/console smoke.
+- PR #22 evidence: production completion autoplan and explicit production-blocked verdict in `docs/current/autoplan-kanban.md`.
 
 ### Minimal UI scaffold DOM checks
 
