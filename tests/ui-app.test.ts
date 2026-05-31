@@ -186,6 +186,29 @@ describe('premium culinary oracle UI', () => {
     expect(reveal).toMatch(/data-layer-id="plate_lid"[^>]+--ty:-42px;--rot:-18deg/);
   });
 
+  it('renders the upgraded vector layer sheet and motion state-machine hooks into the visible SVG puppet', () => {
+    const session = createDemoSession();
+    const thinking = renderApp({ phase: 'thinking', session, lastAnswer: 'probably_not' });
+    const reveal = renderApp({ phase: 'revealed', session: fakeGuessingSession() });
+
+    expect(thinking).toContain('data-layer-sheet="brand-vector-layer-sheet"');
+    expect(thinking).toContain('data-art-quality="public-beta-minimum"');
+    expect(thinking).toContain('data-source-concept-id="concept-a"');
+    expect(thinking).toContain('<defs data-layer-sheet-defs="bogle-v2">');
+    expect(thinking).toContain('id="bogle-skin-warmth"');
+    expect(thinking).toContain('id="bogle-dish-glow"');
+    expect(thinking).toContain('data-motion-state="thinking"');
+    expect(thinking).toContain('data-motion-clip="thinking-scan-v2"');
+    expect(thinking).toContain('data-motion-duration-ms="1180"');
+    expect(thinking).toMatch(/data-layer-id="steam_1"[^>]+data-motion-beat-count="3"/);
+    expect(thinking).toMatch(/data-layer-id="note_pages"[^>]+data-motion-beat-count="3"/);
+    expect(thinking).toMatch(/data-layer-id="head_base"[^>]+data-motion-beat-count="3"/);
+    expect(reveal).toContain('data-motion-clip="lid-reveal-payoff-v2"');
+    expect(reveal).toMatch(/data-layer-id="dish_glow"[^>]+data-motion-beat-count="3"/);
+    expect(reveal).toContain('@keyframes puppet-thinking-breath');
+    expect(reveal).toContain('@keyframes puppet-reveal-spark');
+  });
+
   it('renders guessing, reveal, wrong recovery, and safe errors without internal scoring leakage', () => {
     const guessingSession = fakeGuessingSession();
     const guessing = renderApp({ phase: 'guessing', session: guessingSession });

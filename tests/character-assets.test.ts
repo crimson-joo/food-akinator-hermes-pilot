@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { canonicalCharacterConcept, characterConcepts, productionRigLayers, productionStateActing, riveLayerBreakdown, riveStateInputs } from '../src/ui/character/characterAssets.js';
+import { animationStateMachine, canonicalCharacterConcept, characterConcepts, productionLayerSheet, productionRigLayers, productionStateActing, riveLayerBreakdown, riveStateInputs } from '../src/ui/character/characterAssets.js';
 
 describe('canonical Bogle source art contract', () => {
   it('keeps three generated concept assets in the repository with integrity metadata', () => {
@@ -28,6 +28,19 @@ describe('canonical Bogle source art contract', () => {
     expect(riveLayerBreakdown.revealStage).toEqual(expect.arrayContaining(['plate_base', 'plate_lid', 'lid_knob', 'dish_glow']));
     expect(riveLayerBreakdown.atmosphere).toEqual(expect.arrayContaining(['steam_1', 'steam_2', 'steam_3', 'rim_light']));
     expect(riveStateInputs).toEqual(['cue', 'answerReaction', 'confidence', 'reducedMotion']);
+  });
+
+  it('locks a production vector layer sheet with art-direction, shading, and mobile readability metadata', () => {
+    expect(productionLayerSheet.sourceConceptId).toBe('concept-a');
+    expect(productionLayerSheet.assetKind).toBe('brand-vector-layer-sheet');
+    expect(productionLayerSheet.qualityBar).toBe('public-beta-minimum');
+    expect(productionLayerSheet.nonCopyBoundary).toContain('no Akinator genie silhouette');
+    expect(productionLayerSheet.palette.primaryInk).toMatch(/^#/);
+    expect(productionLayerSheet.palette.steamHighlight).toMatch(/^#/);
+    expect(productionLayerSheet.lineArt.outerStrokePx).toBeGreaterThanOrEqual(3);
+    expect(productionLayerSheet.shading).toEqual(expect.arrayContaining(['warm rim light', 'face blush', 'prop specular highlights', 'dish glow bloom']));
+    expect(productionLayerSheet.mobileReadability.minViewportPx).toBe(320);
+    expect(productionLayerSheet.layerExportGroups).toEqual(expect.arrayContaining(['body', 'face', 'arms', 'props', 'atmosphere']));
   });
 
   it('defines production part layers as individually addressable puppet pieces rather than flat pose images', () => {
@@ -76,5 +89,24 @@ describe('canonical Bogle source art contract', () => {
     expect(fingerprints.size).toBe(requiredStates.length);
     expect(productionStateActing.thinking!.visibleSignals).toEqual(expect.arrayContaining(['narrowed eyes', 'note scan line', 'spiraling steam']));
     expect(productionStateActing.recover!.visibleSignals).toEqual(expect.arrayContaining(['calm brows', 'reopened notebook', 'discarded-candidate chip']));
+  });
+
+  it('defines a Rive/Lottie-ready animation state machine with multi-step timelines instead of static transforms', () => {
+    expect(animationStateMachine.version).toBe('bogle-motion-v2');
+    expect(animationStateMachine.inputs).toEqual(['cue', 'answerReaction', 'confidence', 'reducedMotion']);
+    expect(Object.keys(animationStateMachine.states)).toEqual(expect.arrayContaining(['idle', 'ask', 'answerAccepted', 'thinking', 'confident', 'surprised', 'recover', 'reveal']));
+    for (const [state, clip] of Object.entries(animationStateMachine.states)) {
+      expect(clip.name).toMatch(/^[a-z0-9-]+$/);
+      expect(clip.durationMs).toBeGreaterThanOrEqual(520);
+      expect(clip.durationMs).toBeLessThanOrEqual(1800);
+      expect(clip.easing).toMatch(/cubic-bezier|ease/);
+      expect(clip.timeline.length, state).toBeGreaterThanOrEqual(3);
+      expect(new Set(clip.timeline.map((step) => step.at)).size, state).toBeGreaterThanOrEqual(3);
+      expect(clip.timeline.map((step) => step.layerId)).toEqual(expect.arrayContaining(['head_base']));
+    }
+    expect(animationStateMachine.states.thinking.timeline.map((step) => step.layerId)).toEqual(expect.arrayContaining(['steam_1', 'steam_2', 'note_pages']));
+    expect(animationStateMachine.states.reveal.timeline.map((step) => step.layerId)).toEqual(expect.arrayContaining(['plate_lid', 'lid_knob', 'dish_glow', 'spark_1']));
+    expect(animationStateMachine.answerReactions.no).toEqual(expect.objectContaining({ clipName: 'prune-swipe', emotionalBeat: 'decisive rejection' }));
+    expect(animationStateMachine.answerReactions.unknown).toEqual(expect.objectContaining({ clipName: 'puzzled-shrug', emotionalBeat: 'safe uncertainty' }));
   });
 });
