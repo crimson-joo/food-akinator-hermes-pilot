@@ -34,6 +34,7 @@
 - Post-deploy canary: `npm run canary:deployed --if-present`가 canonical/cache-busted URL, built JS asset reachability, required UI markers, old/internal marker absence를 검증한다.
 - Live Playwright smoke: deploy 후 `BASE_URL=<Pages URL> npm run test:e2e:live --if-present`로 실제 URL에서 entry → answer → wrong recovery → reveal flow와 mobile overflow를 확인한다.
 - Hermes follow-up: `HERMES_WEBHOOK_URL`과 `HERMES_WEBHOOK_SECRET` repo secret이 있으면 deploy/canary 결과 payload를 `X-GitHub-Event: github_pages_post_deploy_canary` + HMAC signature로 Hermes webhook에 보낸다. Secret이 없으면 Actions log에 skip을 남기며, 이 경우 context-aware Hermes QA는 자동 수행된 것으로 보지 않는다.
+- Action runtime compatibility: GitHub-hosted actions are pinned to Node.js 24-compatible majors where available: `actions/checkout@v6`, `actions/setup-node@v6`, `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, `actions/deploy-pages@v5`. App runtime remains `node-version: 22`; this pinning only addresses GitHub Actions' internal action runtime deprecation window.
 
 ## Repository artifact policy
 

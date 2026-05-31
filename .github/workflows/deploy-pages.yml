@@ -19,7 +19,7 @@ jobs:
     name: build-and-predeploy-canary
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Detect deployable Node app
         id: app
@@ -32,7 +32,7 @@ jobs:
             echo "No package.json on this ref; deploy is skipped."
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         if: steps.app.outputs.present == 'true'
         with:
           node-version: 22
@@ -64,11 +64,11 @@ jobs:
 
       - name: Configure Pages
         if: steps.app.outputs.present == 'true'
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
         if: steps.app.outputs.present == 'true'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
@@ -81,7 +81,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Detect deployable Node app
         id: app
@@ -97,9 +97,9 @@ jobs:
       - name: Deploy to GitHub Pages
         if: steps.app.outputs.present == 'true'
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         if: steps.app.outputs.present == 'true'
         with:
           node-version: 22
