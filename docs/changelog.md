@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-05-31 — Character/brand interaction slice local PASS
+
+- Refined the UI scaffold from a placeholder stage into a lightweight CSS/DOM procedural host for “입맛 탐정 보글” with visible arms, ladle, notebook check mark, plate lid, steam, face, and state-specific cue selectors.
+- Added non-numeric “단서 진행” clue progress expression without exposing score/probability/topN internals.
+- Added UI regression tests for visible host rig parts, every required cue having multiple visible CSS changes, and exhausted/error recover-family contracts.
+- Preserved reduced-motion CSS, keyboard focus styles, fixed five-answer controls, wrong recovery, reveal copy, and current engine/session behavior.
+- Final local gates passed: `npm test`, `npm run typecheck`, `npm run build`, `npm run test:e2e --if-present`.
+- Not done in this Builder slice: perceptual QA approval, PR CI, main deploy, live canary, Hermes webhook QA.
+
 ## 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local PASS
 
 - Added threshold/reveal/wrong-recovery session state machine and golden Korean food scenario acceptance fixtures.
