@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-06-01 — Bogle motion state machine + production completion autoplan
+
+- Merged PR #21 with `productionLayerSheet` and `animationStateMachine` v2 for Bogle: source-art quality bar, non-copy boundary, layer export groups, clip names, timings, easing, and per-layer motion beats.
+- Exposed runtime hooks through the visible SVG puppet: `data-layer-sheet`, `data-art-quality`, `data-source-concept-id`, `data-motion-state`, `data-motion-clip`, `data-motion-duration-ms`, and `data-motion-beat-count`.
+- Passed PR CI, main CI, GitHub Pages deploy, scripted live canary, and browser DOM/console smoke.
+- Ran Designer, Researcher/Product Critic, Architect, Reviewer, QA Lead, and Librarian self-review; verdict is controlled demo OK, full public production blocked.
+- Added `docs/current/autoplan-kanban.md` as the next self-improvement plan for production completion.
+- Remaining blockers: real Rive/Lottie or accepted-equivalent runtime, README/docs alignment, perceptual/screenshot QA, stronger Akinator-like reasoning/reveal/recovery UX, and character boundary extraction.
+
 ## 2026-05-31 — Akinator-level canonical knowledge base local PASS
 
 - Ran a Product/Engine, Design/Service, and QA/Release gap-review meeting for the user's “actual Akinator-level” target.
