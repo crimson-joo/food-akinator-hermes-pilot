@@ -10,9 +10,9 @@ describe('premium culinary oracle UI', () => {
     const html = renderApp({ phase: 'entry' });
 
     expect(html).toContain('data-ui-state="entry"');
-    expect(html).toContain('data-visual-system="culinary-oracle-theater-v2"');
-    expect(html).toContain('data-character-tier="premium-oracle-host"');
-    expect(html).toContain('data-motion-system="layered-oracle-rig"');
+    expect(html).toContain('data-visual-system="culinary-oracle-theater-v3"');
+    expect(html).toContain('data-character-tier="production-rig-ready"');
+    expect(html).toContain('data-motion-system="rive-state-machine-or-fallback"');
     expect(html).toContain('오늘 뭐 먹을지 제가 맞혀볼게요.');
     expect(html).toContain('마음속 메뉴를 하나 정하고, 보글에게 단서를 주세요.');
     expect(html).toContain('class="oracle-theater"');
@@ -63,6 +63,8 @@ describe('premium culinary oracle UI', () => {
     for (const layer of requiredLayers) {
       expect(html).toContain(`class="${layer}`);
     }
+    expect(html).toContain('data-character-runtime="css-fallback"');
+    expect(html).toContain('data-rig-layer-contract="body-head-face-arms-props-atmosphere"');
     expect(html).toContain('data-silhouette="lean-forward"');
     expect(html).toContain('data-expression="curious-focus"');
     expect(html).toContain('data-prop-motion="spoon-point"');
