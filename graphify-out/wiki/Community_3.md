@@ -1,30 +1,33 @@
 # Community 3
 
-> 21 nodes
+> 24 nodes
 
 ## Key Concepts
 
-- **Architect Gate — Food Akinator v0** (14 connections) — `docs/research/architect-gate.md`
-- **Scoring** (3 connections) — `docs/research/architect-gate.md`
-- **v0 file layout** (2 connections) — `docs/research/architect-gate.md`
-- **Answer semantics** (2 connections) — `docs/research/architect-gate.md`
-- **Selector** (2 connections) — `docs/research/architect-gate.md`
-- **State machine** (2 connections) — `docs/research/architect-gate.md`
-- **architect-gate.md** (1 connections) — `docs/research/architect-gate.md`
-- **Gate 판정** (1 connections) — `docs/research/architect-gate.md`
-- **핵심 결정** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (data/)** (1 connections) — `docs/research/architect-gate.md`
-- **Data minimums** (1 connections) — `docs/research/architect-gate.md`
-- **code:ts (type AnswerValue = 1 | 0.5 | 0 | -0.5 | -1;)** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (logScore(candidate))** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (similarity = - ((answerValue - expectedValue)^2) / (2 * sigm)** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (mean(q) = Σ P(c) * expected(c, q))** (1 connections) — `docs/research/architect-gate.md`
-- **Guess / reveal threshold** (1 connections) — `docs/research/architect-gate.md`
-- **Wrong recovery** (1 connections) — `docs/research/architect-gate.md`
-- **code:txt (entry → asking)** (1 connections) — `docs/research/architect-gate.md`
-- **Character boundary** (1 connections) — `docs/research/architect-gate.md`
-- **Test-first build sequence** (1 connections) — `docs/research/architect-gate.md`
-- **Builder 금지** (1 connections) — `docs/research/architect-gate.md`
+- **Akinator Direct Play Synthesis — Builder Handoff** (9 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **질문 전략 패턴** (6 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Designer handoff** (4 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Developer / Architect handoff** (3 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Engine rule updates** (3 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **공통 게임 루프** (2 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **QA handoff** (2 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **akinator-direct-play-synthesis.md** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **판정** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **code:txt (entry prompt)** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **1. Broad split** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **2. Family/domain lock-in** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **3. Signature discriminator** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **4. Negative answer as active pruning** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **5. Noise tolerance** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **캐릭터 역할** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **진행감 표현** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Reveal** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Researcher handoff** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **code:ts (type QuestionRole =)** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **code:ts (type Question = {)** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Reveal threshold adjustment** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Must-pass scenario tests** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **Builder gate update** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
 
 ## Relationships
 
@@ -32,11 +35,11 @@
 
 ## Source Files
 
-- `docs/research/architect-gate.md`
+- `docs/research/akinator-direct-play-synthesis.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 46 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,8 +1,8 @@
 # scoring.ts
 
-> God node · 9 connections · `src/engine/scoring.ts`
+> God node · 12 connections · `src/engine/scoring.ts`
 
-**Community:** [[Community 1]]
+**Community:** [[Community 0]]
 
 ## Connections by Relation
 
@@ -14,11 +14,14 @@
 
 ### imports
 - [[Candidate]] `EXTRACTED`
-- [[ANSWER_VALUES]] `EXTRACTED`
 - [[AnswerKey]] `EXTRACTED`
+- [[ANSWER_VALUES]] `EXTRACTED`
 
 ### imports_from
+- [[session.ts]] `EXTRACTED`
 - [[domain.ts]] `EXTRACTED`
+- [[selector.ts]] `EXTRACTED`
+- [[engine-selector.test.ts]] `EXTRACTED`
 - [[engine-scoring.test.ts]] `EXTRACTED`
 
 ---

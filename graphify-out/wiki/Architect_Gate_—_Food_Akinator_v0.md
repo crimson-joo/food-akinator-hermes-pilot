@@ -2,7 +2,7 @@
 
 > God node · 14 connections · `docs/research/architect-gate.md`
 
-**Community:** [[Community 3]]
+**Community:** [[Community 4]]
 
 ## Connections by Relation
 

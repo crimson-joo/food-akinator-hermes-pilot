@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `docs/research/akinator-direct-play-synthesis.md`
 
-**Community:** [[Community 2]]
+**Community:** [[Community 3]]
 
 ## Connections by Relation
 

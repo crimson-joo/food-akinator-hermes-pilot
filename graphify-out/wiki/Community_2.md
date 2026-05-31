@@ -1,45 +1,52 @@
 # Community 2
 
-> 24 nodes
+> 33 nodes
 
 ## Key Concepts
 
-- **Akinator Direct Play Synthesis — Builder Handoff** (9 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **질문 전략 패턴** (6 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Designer handoff** (4 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Developer / Architect handoff** (3 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Engine rule updates** (3 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **공통 게임 루프** (2 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **QA handoff** (2 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **akinator-direct-play-synthesis.md** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **판정** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **code:txt (entry prompt)** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **1. Broad split** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **2. Family/domain lock-in** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **3. Signature discriminator** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **4. Negative answer as active pruning** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **5. Noise tolerance** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **캐릭터 역할** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **진행감 표현** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Reveal** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Researcher handoff** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **code:ts (type QuestionRole =)** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **code:ts (type Question = {)** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Reveal threshold adjustment** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Must-pass scenario tests** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
-- **Builder gate update** (1 connections) — `docs/research/akinator-direct-play-synthesis.md`
+- **engine-session.test.ts** (31 connections) — `tests/engine-session.test.ts`
+- **engine-golden-scenarios.test.ts** (13 connections) — `tests/engine-golden-scenarios.test.ts`
+- **submitAnswer()** (7 connections) — `src/engine/session.ts`
+- **submitGuessFeedback()** (6 connections) — `src/engine/session.ts`
+- **playScenario()** (4 connections) — `tests/engine-golden-scenarios.test.ts`
+- **answerCurrent()** (3 connections) — `tests/engine-golden-scenarios.test.ts`
+- **answerCurrent()** (2 connections) — `tests/engine-session.test.ts`
+- **goldenDataset** (2 connections) — `tests/fixtures/golden-scenarios.ts`
+- **goldenScenarios** (2 connections) — `tests/fixtures/golden-scenarios.ts`
+- **candidate()** (1 connections) — `tests/engine-session.test.ts`
+- **question()** (1 connections) — `tests/engine-session.test.ts`
+- **answerOptions** (1 connections) — `tests/engine-session.test.ts`
+- **coreQuestions** (1 connections) — `tests/engine-session.test.ts`
+- **coreCandidates** (1 connections) — `tests/engine-session.test.ts`
+- **dataset()** (1 connections) — `tests/engine-session.test.ts`
+- **session** (1 connections) — `tests/engine-session.test.ts`
+- **next** (1 connections) — `tests/engine-session.test.ts`
+- **questions** (1 connections) — `tests/engine-session.test.ts`
+- **candidates** (1 connections) — `tests/engine-session.test.ts`
+- **data** (1 connections) — `tests/engine-session.test.ts`
+- **recovered** (1 connections) — `tests/engine-session.test.ts`
+- **asked** (1 connections) — `tests/engine-session.test.ts`
+- **first** (1 connections) — `tests/engine-session.test.ts`
+- **second** (1 connections) — `tests/engine-session.test.ts`
+- **asking** (1 connections) — `tests/engine-session.test.ts`
+- *... and 8 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 0]] (9 shared connections)
+- [[Community 5]] (6 shared connections)
+- [[Community 1]] (5 shared connections)
 
 ## Source Files
 
-- `docs/research/akinator-direct-play-synthesis.md`
+- `src/engine/session.ts`
+- `tests/engine-golden-scenarios.test.ts`
+- `tests/engine-session.test.ts`
+- `tests/fixtures/golden-scenarios.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 46 (100%)
+- EXTRACTED: 94 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,27 +1,30 @@
 # Community 4
 
-> 18 nodes
+> 21 nodes
 
 ## Key Concepts
 
-- **Akinator Direct Play Blocker + Manual Observation Protocol** (9 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **시도한 경로** (5 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **필요한 사용자 입력/권한** (4 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **Manual play protocol** (2 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **akinator-direct-play-blocker-and-protocol.md** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **현재 판정** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **1. Headless/browser 공식 웹** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **2. SilverGames embedded route** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **3. npm/API wrapper** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **4. macOS local browser/computer-use** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **하지 않은 것** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **왜 blocker인가** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **Option A — 사용자가 macOS permission 승인** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **Option B — 사용자가 직접 플레이 로그 제공** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **Option C — 직접 플레이 요구를 공개 영상/스크린샷 관찰로 대체 승인** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **code:txt (Target:)** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **Observation checklist** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
-- **Builder gate** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Architect Gate — Food Akinator v0** (14 connections) — `docs/research/architect-gate.md`
+- **Scoring** (3 connections) — `docs/research/architect-gate.md`
+- **v0 file layout** (2 connections) — `docs/research/architect-gate.md`
+- **Answer semantics** (2 connections) — `docs/research/architect-gate.md`
+- **Selector** (2 connections) — `docs/research/architect-gate.md`
+- **State machine** (2 connections) — `docs/research/architect-gate.md`
+- **architect-gate.md** (1 connections) — `docs/research/architect-gate.md`
+- **Gate 판정** (1 connections) — `docs/research/architect-gate.md`
+- **핵심 결정** (1 connections) — `docs/research/architect-gate.md`
+- **code:txt (data/)** (1 connections) — `docs/research/architect-gate.md`
+- **Data minimums** (1 connections) — `docs/research/architect-gate.md`
+- **code:ts (type AnswerValue = 1 | 0.5 | 0 | -0.5 | -1;)** (1 connections) — `docs/research/architect-gate.md`
+- **code:txt (logScore(candidate))** (1 connections) — `docs/research/architect-gate.md`
+- **code:txt (similarity = - ((answerValue - expectedValue)^2) / (2 * sigm)** (1 connections) — `docs/research/architect-gate.md`
+- **code:txt (mean(q) = Σ P(c) * expected(c, q))** (1 connections) — `docs/research/architect-gate.md`
+- **Guess / reveal threshold** (1 connections) — `docs/research/architect-gate.md`
+- **Wrong recovery** (1 connections) — `docs/research/architect-gate.md`
+- **code:txt (entry → asking)** (1 connections) — `docs/research/architect-gate.md`
+- **Character boundary** (1 connections) — `docs/research/architect-gate.md`
+- **Test-first build sequence** (1 connections) — `docs/research/architect-gate.md`
+- **Builder 금지** (1 connections) — `docs/research/architect-gate.md`
 
 ## Relationships
 
@@ -29,11 +32,11 @@
 
 ## Source Files
 
-- `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- `docs/research/architect-gate.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

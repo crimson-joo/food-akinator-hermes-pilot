@@ -1,24 +1,24 @@
 # domain.ts
 
-> God node · 22 connections · `src/engine/domain.ts`
+> God node · 29 connections · `src/engine/domain.ts`
 
-**Community:** [[Community 1]]
+**Community:** [[Community 0]]
 
 ## Connections by Relation
 
 ### contains
-- [[validateCandidate()]] `EXTRACTED`
 - [[Candidate]] `EXTRACTED`
-- [[validateQuestion()]] `EXTRACTED`
+- [[Question]] `EXTRACTED`
+- [[AnswerKey]] `EXTRACTED`
+- [[validateCandidate()]] `EXTRACTED`
 - [[ANSWER_VALUES]] `EXTRACTED`
+- [[validateQuestion()]] `EXTRACTED`
+- [[QuestionRole]] `EXTRACTED`
 - [[asRecord()]] `EXTRACTED`
 - [[requireString()]] `EXTRACTED`
-- [[AnswerKey]] `EXTRACTED`
 - [[QUESTION_ROLES]] `EXTRACTED`
-- [[Question]] `EXTRACTED`
 - [[requireStringArray()]] `EXTRACTED`
 - [[AnswerValue]] `EXTRACTED`
-- [[QuestionRole]] `EXTRACTED`
 - [[QUESTION_AXES]] `EXTRACTED`
 - [[QuestionAxis]] `EXTRACTED`
 - [[Status]] `EXTRACTED`
@@ -28,9 +28,16 @@
 - [[LEVELS]] `EXTRACTED`
 
 ### imports_from
+- [[app.ts]] `EXTRACTED`
+- [[session.ts]] `EXTRACTED`
+- [[engine-session.test.ts]] `EXTRACTED`
+- [[selector.ts]] `EXTRACTED`
+- [[engine-selector.test.ts]] `EXTRACTED`
+- [[engine-golden-scenarios.test.ts]] `EXTRACTED`
+- [[golden-scenarios.ts]] `EXTRACTED`
+- [[scoring.ts]] `EXTRACTED`
 - [[engine-domain.test.ts]] `EXTRACTED`
 - [[engine-scoring.test.ts]] `EXTRACTED`
-- [[scoring.ts]] `EXTRACTED`
 
 ---
 

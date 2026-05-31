@@ -2,7 +2,7 @@
 
 > God node · 10 connections · `tests/engine-domain.test.ts`
 
-**Community:** [[Community 1]]
+**Community:** [[Community 0]]
 
 ## Connections by Relation
 
@@ -12,12 +12,12 @@
 - [[candidate]] `EXTRACTED`
 
 ### imports
-- [[validateCandidate()]] `EXTRACTED`
-- [[validateQuestion()]] `EXTRACTED`
 - [[Candidate]] `EXTRACTED`
-- [[ANSWER_VALUES]] `EXTRACTED`
-- [[QUESTION_ROLES]] `EXTRACTED`
 - [[Question]] `EXTRACTED`
+- [[validateCandidate()]] `EXTRACTED`
+- [[ANSWER_VALUES]] `EXTRACTED`
+- [[validateQuestion()]] `EXTRACTED`
+- [[QUESTION_ROLES]] `EXTRACTED`
 
 ### imports_from
 - [[domain.ts]] `EXTRACTED`

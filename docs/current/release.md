@@ -6,9 +6,9 @@
 - adaptive selector pilot local gate: PASS. Initial unknown turn-4 high reveal-risk blocker는 remediation/re-review/QA rerun으로 해결됨.
 - threshold/golden UI pilot local gate: PASS. Session threshold/reveal/wrong-recovery, golden scenarios, sanitized UI error copy, minimal browser flow QA가 통과됨.
 - Release automation bootstrap: PR CI, GitHub Pages deploy, pre/post-deploy Playwright smoke, scripted asset canary, optional Hermes webhook notification을 workflow contract로 추가함.
-- 배포 대상 준비 중: current branch PR/merge/deploy/live canary는 release gate에서 수행한다.
+- main 배포 완료: PR #5 merge 후 PR #6에서 live smoke base URL 문제를 수정했고, 이후 main CI, GitHub Pages deploy, scripted canary, live Playwright smoke가 통과했다.
 - Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료.
-- 다음 단계: PR checks → merge → Pages deploy → live canary. Public release 전에는 실제 mobile viewport/perceptual QA와 최종 mascot/brand polish가 별도 gate로 계속 필요함.
+- 다음 단계: 제품 iteration. Public release 전에는 perceptual QA와 최종 mascot/brand polish가 별도 gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했다.
 
 ## Release policy
 

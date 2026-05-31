@@ -1,37 +1,44 @@
 # Community 5
 
-> 16 nodes
+> 19 nodes
 
 ## Key Concepts
 
-- **Korean Food Decision Product Research** (7 connections) — `docs/research/korean-food-decision-product-research.md`
-- **주요 맥락** (6 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Product thesis** (4 connections) — `docs/research/korean-food-decision-product-research.md`
-- **korean-food-decision-product-research.md** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **핵심 인사이트** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **배달** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **외식** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **야식** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **혼밥** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **데이트** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Thesis 1 — 결정 책임을 가져가는 게임** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Thesis 2 — 오늘의 거부감을 읽는다** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Thesis 3 — 납득 가능한 reveal** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **추천 제품안** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **MVP scope** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Non-goals** (1 connections) — `docs/research/korean-food-decision-product-research.md`
+- **session.ts** (35 connections) — `src/engine/session.ts`
+- **buildNextSession()** (10 connections) — `src/engine/session.ts`
+- **selectNextQuestion()** (6 connections) — `src/engine/selector.ts`
+- **answerOptions()** (4 connections) — `src/engine/session.ts`
+- **askingSession()** (3 connections) — `src/engine/session.ts`
+- **pickNextQuestion()** (3 connections) — `src/engine/session.ts`
+- **revealed()** (3 connections) — `src/engine/session.ts`
+- **exhausted()** (3 connections) — `src/engine/session.ts`
+- **pick()** (2 connections) — `tests/engine-selector.test.ts`
+- **normalizeProbabilities()** (2 connections) — `src/engine/session.ts`
+- **SessionStatus** (1 connections) — `src/engine/session.ts`
+- **CharacterCue** (1 connections) — `src/engine/session.ts`
+- **RevealPolicy** (1 connections) — `src/engine/session.ts`
+- **RevealGuess** (1 connections) — `src/engine/session.ts`
+- **SessionDataset** (1 connections) — `src/engine/session.ts`
+- **DEFAULT_POLICY** (1 connections) — `src/engine/session.ts`
+- **ANSWER_OPTIONS** (1 connections) — `src/engine/session.ts`
+- **BuildInput** (1 connections) — `src/engine/session.ts`
+- **ProbabilityScore** (1 connections) — `src/engine/session.ts`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 0]] (15 shared connections)
+- [[Community 2]] (6 shared connections)
+- [[Community 1]] (5 shared connections)
 
 ## Source Files
 
-- `docs/research/korean-food-decision-product-research.md`
+- `src/engine/selector.ts`
+- `src/engine/session.ts`
+- `tests/engine-selector.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
+- EXTRACTED: 80 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

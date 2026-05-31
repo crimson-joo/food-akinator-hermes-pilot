@@ -1,21 +1,25 @@
 # Community 9
 
-> 12 nodes
+> 16 nodes
 
 ## Key Concepts
 
-- **Zero-to-One Team Synthesis** (6 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **다음 agent graph** (6 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **zero-to-one-team-synthesis.md** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **회의 판정** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **합의된 방향** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **기존 실패와의 단절** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **T2 Designer — product feel/design handoff** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **T3 Architect — engine/data architecture** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **T4 Builder Lead — ready after T2/T3 pass** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **T5 Reviewer/QA — gate owner** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
-- **현재 next step** (1 connections) — `docs/research/zero-to-one-team-synthesis.md`
+- **Architecture — Zero-to-One** (13 connections) — `docs/current/architecture.md`
+- **Candidate schema** (2 connections) — `docs/current/architecture.md`
+- **Question schema** (2 connections) — `docs/current/architecture.md`
+- **architecture.md** (1 connections) — `docs/current/architecture.md`
+- **원칙** (1 connections) — `docs/current/architecture.md`
+- **code:ts (type Candidate = {)** (1 connections) — `docs/current/architecture.md`
+- **code:ts (type Question = {)** (1 connections) — `docs/current/architecture.md`
+- **Answer semantics** (1 connections) — `docs/current/architecture.md`
+- **Scoring MVP** (1 connections) — `docs/current/architecture.md`
+- **Adaptive selector** (1 connections) — `docs/current/architecture.md`
+- **Reveal threshold** (1 connections) — `docs/current/architecture.md`
+- **Wrong recovery** (1 connections) — `docs/current/architecture.md`
+- **Character cue contract** (1 connections) — `docs/current/architecture.md`
+- **Builder gate** (1 connections) — `docs/current/architecture.md`
+- **Golden path fixture contract** (1 connections) — `docs/current/architecture.md`
+- **Minimal browser UI scaffold** (1 connections) — `docs/current/architecture.md`
 
 ## Relationships
 
@@ -23,11 +27,11 @@
 
 ## Source Files
 
-- `docs/research/zero-to-one-team-synthesis.md`
+- `docs/current/architecture.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

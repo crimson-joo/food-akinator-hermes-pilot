@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `tests/engine-scoring.test.ts`
 
-**Community:** [[Community 1]]
+**Community:** [[Community 0]]
 
 ## Connections by Relation
 

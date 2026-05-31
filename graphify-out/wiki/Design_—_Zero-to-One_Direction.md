@@ -1,8 +1,8 @@
 # Design — Zero-to-One Direction
 
-> God node · 8 connections · `docs/current/design.md`
+> God node · 9 connections · `docs/current/design.md`
 
-**Community:** [[Community 12]]
+**Community:** [[Community 16]]
 
 ## Connections by Relation
 
@@ -15,6 +15,7 @@
 - [[Screen/state inventory]] `EXTRACTED`
 - [[Character requirement]] `EXTRACTED`
 - [[Visual acceptance]] `EXTRACTED`
+- [[Current minimal UI scaffold]] `EXTRACTED`
 
 ---
 
