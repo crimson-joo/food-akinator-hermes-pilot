@@ -193,3 +193,33 @@ State contract:
 | reveal | `celebration-open` | `bright-payoff` | `lid-lift` | `celebration` |
 
 Current limitation: v2 is a high-fidelity CSS/DOM layered rig, not a true Rive/Lottie asset pipeline. If the design bar rises again, next pass should generate or commission canonical character art and rigged animation assets instead of adding more CSS polish.
+
+## Interactive Character Animation v3 contract
+
+사용자가 답을 누를 때마다 캐릭터의 관절/표정/소품/피드백 카피가 즉시 반응해야 한다. 단순히 다음 질문으로 넘어가는 것은 실패다.
+
+Required interaction contract:
+
+- 최소 10개 이상의 named animations and 10개 이상의 named expressions를 DOM contract로 노출한다.
+- `oracle-host`는 `data-joint-rig="shoulder-elbow-wrist"`를 가진다.
+- visible joint anchors: left/right `shoulder`, `elbow`, `wrist` 총 6개.
+- `answerAccepted` 상태는 최소 700ms 유지되어 사용자가 반응을 인지할 수 있어야 한다.
+- `thinking` 상태는 짧은 suspense 이후 다음 질문으로 이어지며, “단서들을 다시 섞어보는 중이에요.” 같은 진행 피드백을 보여준다.
+
+Required answer reactions:
+
+| Answer | sentiment | motion | expression | visible copy |
+|---|---|---|---|---|
+| yes | `positive` | `approve-nod` | `soft-smile` | `좋아요, 방향이 꽤 선명해졌어요.` |
+| probably | `soft-positive` | `maybe-tilt` | `maybe-smirk` | `아마도군요. 그쪽 후보를 살짝 올려볼게요.` |
+| unknown | `uncertain` | `puzzled-shrug` | `puzzled-open` | `모르겠으면 괜찮아요. 애매한 단서는 잠시 보류할게요.` |
+| probably_not | `soft-negative` | `narrow-away` | `skeptical-narrow` | `아마 아니군요. 그 후보군은 조금 낮춰볼게요.` |
+| no | `negative` | `prune-swipe` | `decisive-prune` | `아니군요. 그 길은 과감히 지워둘게요.` |
+
+Required animation catalog:
+
+`idle-breath`, `blink-gaze`, `spoon-point`, `approve-nod`, `maybe-tilt`, `puzzled-shrug`, `narrow-away`, `prune-swipe`, `thinking-scan`, `confidence-rise`, `oops-recoil`, `recovery-reset`, `lid-reveal`.
+
+Required expression catalog:
+
+`warm-blink`, `curious-focus`, `focused-smile`, `soft-smile`, `maybe-smirk`, `puzzled-open`, `skeptical-narrow`, `decisive-prune`, `narrow-thinking`, `spark-confidence`, `oops-open`, `calm-detective`, `bright-payoff`.
