@@ -33,7 +33,7 @@
 - Main deploy: `.github/workflows/deploy-pages.yml`가 main push/workflow_dispatch에서 동일한 pre-deploy gate 후 `dist`를 GitHub Pages에 배포한다.
 - Post-deploy canary: `npm run canary:deployed --if-present`가 canonical/cache-busted URL, built JS asset reachability, required UI markers, old/internal marker absence를 검증한다.
 - Live Playwright smoke: deploy 후 `BASE_URL=<Pages URL> npm run test:e2e:live --if-present`로 실제 URL에서 entry → answer → wrong recovery → reveal flow와 mobile overflow를 확인한다.
-- Optional Hermes follow-up: `HERMES_WEBHOOK_URL` secret이 있으면 deploy/canary 결과 payload를 Hermes webhook으로 보낸다. Secret이 없으면 Actions log에 skip을 남기며, 이 경우 context-aware Hermes QA는 자동 수행된 것으로 보지 않는다.
+- Hermes follow-up: `HERMES_WEBHOOK_URL`과 `HERMES_WEBHOOK_SECRET` repo secret이 있으면 deploy/canary 결과 payload를 `X-GitHub-Event: github_pages_post_deploy_canary` + HMAC signature로 Hermes webhook에 보낸다. Secret이 없으면 Actions log에 skip을 남기며, 이 경우 context-aware Hermes QA는 자동 수행된 것으로 보지 않는다.
 
 ## Repository artifact policy
 

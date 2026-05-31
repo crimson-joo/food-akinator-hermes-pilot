@@ -114,6 +114,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Post-deploy scripted canary
+        id: scripted_canary
         if: steps.app.outputs.present == 'true'
         env:
           CANARY_URL: ${{ steps.deployment.outputs.page_url }}
@@ -121,6 +122,7 @@ jobs:
         run: npm run canary:deployed --if-present
 
       - name: Post-deploy Playwright live smoke
+        id: live_smoke
         if: steps.app.outputs.present == 'true'
         env:
           BASE_URL: ${{ steps.deployment.outputs.page_url }}
@@ -130,15 +132,53 @@ jobs:
         if: steps.app.outputs.present == 'true' && always()
         env:
           HERMES_WEBHOOK_URL: ${{ secrets.HERMES_WEBHOOK_URL }}
+          HERMES_WEBHOOK_SECRET: ${{ secrets.HERMES_WEBHOOK_SECRET }}
           DEPLOY_URL: ${{ steps.deployment.outputs.page_url }}
           DEPLOY_SHA: ${{ github.sha }}
           DEPLOY_RUN_ID: ${{ github.run_id }}
           DEPLOY_STATUS: ${{ job.status }}
+          SCRIPTED_CANARY_STATUS: ${{ steps.scripted_canary.outcome }}
+          LIVE_SMOKE_STATUS: ${{ steps.live_smoke.outcome }}
         shell: bash
         run: |
           if [ -z "$HERMES_WEBHOOK_URL" ]; then
             echo "HERMES_WEBHOOK_URL is not set; skipping Hermes webhook notification."
             exit 0
           fi
-          payload=$(node -e 'console.log(JSON.stringify({event:"food_akinator_pages_deploy", status:process.env.DEPLOY_STATUS, url:process.env.DEPLOY_URL, sha:process.env.DEPLOY_SHA, runId:process.env.DEPLOY_RUN_ID, repo:process.env.GITHUB_REPOSITORY}))')
-          curl -fsS -X POST -H 'Content-Type: application/json' --data "$payload" "$HERMES_WEBHOOK_URL"
+          payload=$(node - <<'NODE'
+          const payload = {
+            event: 'github_pages_post_deploy_canary',
+            repo: process.env.GITHUB_REPOSITORY,
+            status: process.env.DEPLOY_STATUS,
+            canaryStatus: process.env.SCRIPTED_CANARY_STATUS || 'unknown',
+            liveSmokeStatus: process.env.LIVE_SMOKE_STATUS || 'unknown',
+            liveUrl: process.env.DEPLOY_URL,
+            sha: process.env.DEPLOY_SHA,
+            runId: process.env.DEPLOY_RUN_ID,
+            runUrl: `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.DEPLOY_RUN_ID}`,
+          };
+          process.stdout.write(JSON.stringify(payload));
+          NODE
+          )
+          if [ -n "$HERMES_WEBHOOK_SECRET" ]; then
+            signature=$(PAYLOAD="$payload" node - <<'NODE'
+            const crypto = require('crypto');
+            process.stdout.write('sha256=' + crypto
+              .createHmac('sha256', process.env.HERMES_WEBHOOK_SECRET)
+              .update(process.env.PAYLOAD)
+              .digest('hex'));
+            NODE
+            )
+            curl -fsS -X POST \
+              -H 'Content-Type: application/json' \
+              -H 'X-GitHub-Event: github_pages_post_deploy_canary' \
+              -H "X-Hub-Signature-256: $signature" \
+              --data "$payload" \
+              "$HERMES_WEBHOOK_URL"
+          else
+            curl -fsS -X POST \
+              -H 'Content-Type: application/json' \
+              -H 'X-GitHub-Event: github_pages_post_deploy_canary' \
+              --data "$payload" \
+              "$HERMES_WEBHOOK_URL"
+          fi
