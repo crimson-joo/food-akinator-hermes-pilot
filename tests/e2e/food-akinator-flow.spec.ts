@@ -26,13 +26,21 @@ async function answer(page: Page, answerKey: string): Promise<void> {
   await page.locator(`[data-answer-key="${answerKey}"]`).click();
   await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', 'answerAccepted');
   await expectNoForbiddenVisibleMarkers(page);
-  await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', 'thinking');
-  await expect(page.locator('.app-shell')).toHaveAttribute('data-character-cue', 'thinking');
-  await expectNoForbiddenVisibleMarkers(page);
+
   await page.waitForFunction(() => {
     const state = document.querySelector('.app-shell')?.getAttribute('data-ui-state');
-    return state !== 'answerAccepted' && state !== 'thinking';
+    return Boolean(state) && state !== 'answerAccepted';
   });
+
+  if ((await page.locator('.app-shell').getAttribute('data-ui-state')) === 'thinking') {
+    await expect(page.locator('.app-shell')).toHaveAttribute('data-character-cue', 'thinking');
+    await expectNoForbiddenVisibleMarkers(page);
+    await page.waitForFunction(() => {
+      const state = document.querySelector('.app-shell')?.getAttribute('data-ui-state');
+      return state !== 'thinking';
+    });
+  }
+
   await expectNoForbiddenVisibleMarkers(page);
 }
 

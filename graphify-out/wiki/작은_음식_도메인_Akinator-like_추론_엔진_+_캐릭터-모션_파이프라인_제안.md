@@ -2,7 +2,7 @@
 
 > God node · 14 connections · `docs/research/inference-motion-research.md`
 
-**Community:** [[Community 18]]
+**Community:** [[Community 0]]
 
 ## Connections by Relation
 

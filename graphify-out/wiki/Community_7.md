@@ -1,25 +1,27 @@
 # Community 7
 
-> 16 nodes
+> 18 nodes
 
 ## Key Concepts
 
-- **Korean Food Decision Product Research** (7 connections) — `docs/research/korean-food-decision-product-research.md`
-- **주요 맥락** (6 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Product thesis** (4 connections) — `docs/research/korean-food-decision-product-research.md`
-- **korean-food-decision-product-research.md** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **핵심 인사이트** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **배달** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **외식** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **야식** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **혼밥** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **데이트** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Thesis 1 — 결정 책임을 가져가는 게임** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Thesis 2 — 오늘의 거부감을 읽는다** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Thesis 3 — 납득 가능한 reveal** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **추천 제품안** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **MVP scope** (1 connections) — `docs/research/korean-food-decision-product-research.md`
-- **Non-goals** (1 connections) — `docs/research/korean-food-decision-product-research.md`
+- **Akinator Direct Play Blocker + Manual Observation Protocol** (9 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **시도한 경로** (5 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **필요한 사용자 입력/권한** (4 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Manual play protocol** (2 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **akinator-direct-play-blocker-and-protocol.md** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **현재 판정** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **1. Headless/browser 공식 웹** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **2. SilverGames embedded route** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **3. npm/API wrapper** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **4. macOS local browser/computer-use** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **하지 않은 것** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **왜 blocker인가** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Option A — 사용자가 macOS permission 승인** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Option B — 사용자가 직접 플레이 로그 제공** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Option C — 직접 플레이 요구를 공개 영상/스크린샷 관찰로 대체 승인** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **code:txt (Target:)** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Observation checklist** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
+- **Builder gate** (1 connections) — `docs/research/akinator-direct-play-blocker-and-protocol.md`
 
 ## Relationships
 
@@ -27,11 +29,11 @@
 
 ## Source Files
 
-- `docs/research/korean-food-decision-product-research.md`
+- `docs/research/akinator-direct-play-blocker-and-protocol.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

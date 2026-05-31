@@ -1,29 +1,31 @@
 # Community 19
 
-> 8 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **Akinator Direct Play Log — Harry Potter** (7 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **akinator-direct-play-log-2026-05-28-harry-potter.md** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **Run metadata** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **Entry flow observations** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **Question/answer trace** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **Interaction insights** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **Product implications for Korean food Akinator** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
-- **Gate status** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
+- **4.2 Expected information gain** (5 connections) — `docs/research/inference-motion-research.md`
+- **4. Adaptive next-question selection** (4 connections) — `docs/research/inference-motion-research.md`
+- **4.1 후보 확률 정규화** (2 connections) — `docs/research/inference-motion-research.md`
+- **4.3 작은 도메인에서의 간단 대안** (2 connections) — `docs/research/inference-motion-research.md`
+- **code:txt (P(c) = exp(logScore(c) / T) / Σ exp(logScore(i) / T))** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:txt (H(C) = -Σ P(c) log2 P(c))** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:txt (P(a | q) = Σ P(c) * P(a | c, q))** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:txt (IG(q) = H(C) - Σ_a P(a | q) * H(C | answer=a, q))** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:txt (questionScore(q) = IG(q))** (1 connections) — `docs/research/inference-motion-research.md`
+- **code:txt (mean = Σ P(c) * expected(c,q))** (1 connections) — `docs/research/inference-motion-research.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 0]] (1 shared connections)
 
 ## Source Files
 
-- `docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md`
+- `docs/research/inference-motion-research.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

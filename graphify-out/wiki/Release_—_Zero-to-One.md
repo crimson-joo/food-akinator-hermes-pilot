@@ -2,7 +2,7 @@
 
 > God node · 11 connections · `docs/current/release.md`
 
-**Community:** [[Community 10]]
+**Community:** [[Community 15]]
 
 ## Connections by Relation
 

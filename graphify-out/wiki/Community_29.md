@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **6. Wrong guess suppression/recovery** (4 connections) — `docs/research/inference-motion-research.md`
-- **6.1 Suppression 데이터** (2 connections) — `docs/research/inference-motion-research.md`
-- **6.3 Learning hook** (2 connections) — `docs/research/inference-motion-research.md`
-- **code:ts (type SessionState = {)** (1 connections) — `docs/research/inference-motion-research.md`
-- **6.2 Recovery strategy** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
+- **Food Akinator — Zero-to-One Research Foundation** (5 connections) — `README.md`
+- **README.md** (1 connections) — `README.md`
+- **현재 상태** (1 connections) — `README.md`
+- **목표** (1 connections) — `README.md`
+- **원칙** (1 connections) — `README.md`
+- **문서** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[Community 18]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 10 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

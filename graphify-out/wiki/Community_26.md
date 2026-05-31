@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **Akinator Reference Observations** (6 connections) — `docs/research/akinator-reference-observations.md`
-- **akinator-reference-observations.md** (1 connections) — `docs/research/akinator-reference-observations.md`
-- **직접 플레이 상태** (1 connections) — `docs/research/akinator-reference-observations.md`
-- **관찰된 핵심 원리** (1 connections) — `docs/research/akinator-reference-observations.md`
-- **Food 서비스 적용 원칙** (1 connections) — `docs/research/akinator-reference-observations.md`
-- **Non-copy boundary** (1 connections) — `docs/research/akinator-reference-observations.md`
-- **추가 리서치 TODO** (1 connections) — `docs/research/akinator-reference-observations.md`
+- **Akinator Direct Play Log — Naruto Uzumaki** (6 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- **akinator-direct-play-log-2026-05-28-naruto-uzumaki.md** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- **Run metadata** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- **Question/answer trace** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- **Interaction insights** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- **Product implications for Korean food Akinator** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
+- **Gate status** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
 
 ## Relationships
 
@@ -18,7 +18,7 @@
 
 ## Source Files
 
-- `docs/research/akinator-reference-observations.md`
+- `docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md`
 
 ## Audit Trail
 

@@ -1,33 +1,40 @@
 # Community 11
 
-> 12 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **7. 엔진 API 초안** (4 connections) — `docs/research/inference-motion-research.md`
-- **7.2 답변 제출** (4 connections) — `docs/research/inference-motion-research.md`
-- **7.3 추측 피드백** (4 connections) — `docs/research/inference-motion-research.md`
-- **7.1 세션 시작** (3 connections) — `docs/research/inference-motion-research.md`
-- **code:http (POST /sessions)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:http (POST /sessions/{id}/answers)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:http (POST /sessions/{id}/guess-feedback)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:json ({)** (1 connections) — `docs/research/inference-motion-research.md`
+- **selector.ts** (23 connections) — `src/engine/selector.ts`
+- **rankNextQuestions()** (6 connections) — `src/engine/selector.ts`
+- **scoreCandidates()** (6 connections) — `src/engine/scoring.ts`
+- **scoreQuestion()** (4 connections) — `src/engine/selector.ts`
+- **normalizeWeights()** (3 connections) — `src/engine/selector.ts`
+- **policyBonus()** (3 connections) — `src/engine/selector.ts`
+- **round()** (3 connections) — `src/engine/selector.ts`
+- **getActiveCandidates()** (2 connections) — `src/engine/selector.ts`
+- **getEligibleQuestions()** (2 connections) — `src/engine/selector.ts`
+- **weightedVariance()** (2 connections) — `src/engine/selector.ts`
+- **SelectorContext** (1 connections) — `src/engine/selector.ts`
+- **QuestionSelection** (1 connections) — `src/engine/selector.ts`
+- **WeightedCandidate** (1 connections) — `src/engine/selector.ts`
+- **FOLLOWUP_ROLES** (1 connections) — `src/engine/selector.ts`
 
 ## Relationships
 
-- [[Community 18]] (1 shared connections)
+- [[Community 17]] (6 shared connections)
+- [[Community 6]] (5 shared connections)
+- [[Community 12]] (2 shared connections)
+- [[Community 4]] (2 shared connections)
+- [[Community 2]] (1 shared connections)
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `src/engine/scoring.ts`
+- `src/engine/selector.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 58 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

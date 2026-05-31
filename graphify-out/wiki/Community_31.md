@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **2. 도메인 데이터 모델** (3 connections) — `docs/research/inference-motion-research.md`
-- **2.1 Candidate schema: 음식 후보** (2 connections) — `docs/research/inference-motion-research.md`
-- **2.2 Question bank schema** (2 connections) — `docs/research/inference-motion-research.md`
-- **code:ts (type Candidate = {)** (1 connections) — `docs/research/inference-motion-research.md`
-- **code:ts (type Question = {)** (1 connections) — `docs/research/inference-motion-research.md`
+- **Changelog** (4 connections) — `docs/changelog.md`
+- **changelog.md** (1 connections) — `docs/changelog.md`
+- **2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local PASS** (1 connections) — `docs/changelog.md`
+- **2026-05-29 — Adaptive selector pilot local PASS** (1 connections) — `docs/changelog.md`
+- **2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local progress** (1 connections) — `docs/changelog.md`
 
 ## Relationships
 
-- [[Community 18]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `docs/changelog.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

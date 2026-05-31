@@ -1,28 +1,31 @@
 # Community 21
 
-> 7 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **8. 캐릭터/모션 파이프라인 선택지** (7 connections) — `docs/research/inference-motion-research.md`
-- **8.1 Rive** (1 connections) — `docs/research/inference-motion-research.md`
-- **8.2 Spine** (1 connections) — `docs/research/inference-motion-research.md`
-- **8.3 Lottie** (1 connections) — `docs/research/inference-motion-research.md`
-- **8.4 Layered raster rig** (1 connections) — `docs/research/inference-motion-research.md`
-- **8.5 CSS procedural rig** (1 connections) — `docs/research/inference-motion-research.md`
-- **8.6 Canvas/WebGL custom rig** (1 connections) — `docs/research/inference-motion-research.md`
+- **Product — Food Akinator Zero-to-One** (9 connections) — `docs/current/product.md`
+- **product.md** (1 connections) — `docs/current/product.md`
+- **제품 한 줄 정의** (1 connections) — `docs/current/product.md`
+- **핵심 문제** (1 connections) — `docs/current/product.md`
+- **제품 thesis** (1 connections) — `docs/current/product.md`
+- **MVP 범위** (1 connections) — `docs/current/product.md`
+- **Non-goals** (1 connections) — `docs/current/product.md`
+- **Builder 시작 조건** (1 connections) — `docs/current/product.md`
+- **구현 우선순위** (1 connections) — `docs/current/product.md`
+- **v0 성공 기준** (1 connections) — `docs/current/product.md`
 
 ## Relationships
 
-- [[Community 18]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/research/inference-motion-research.md`
+- `docs/current/product.md`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `docs/research/akinator-direct-play-blocker-and-protocol.md`
 
-**Community:** [[Community 6]]
+**Community:** [[Community 7]]
 
 ## Connections by Relation
 

@@ -1,15 +1,16 @@
 # Community 28
 
-> 6 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **food-akinator-flow.spec.ts** (5 connections) — `tests/e2e/food-akinator-flow.spec.ts`
-- **answer()** (3 connections) — `tests/e2e/food-akinator-flow.spec.ts`
-- **expectNoForbiddenVisibleMarkers()** (2 connections) — `tests/e2e/food-akinator-flow.spec.ts`
-- **answerUntilGuess()** (2 connections) — `tests/e2e/food-akinator-flow.spec.ts`
-- **forbiddenUserVisibleMarkers** (1 connections) — `tests/e2e/food-akinator-flow.spec.ts`
-- **expectNoConsoleErrors()** (1 connections) — `tests/e2e/food-akinator-flow.spec.ts`
+- **Akinator Direct Play Log — Elon Musk** (6 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
+- **akinator-direct-play-log-2026-05-28-elon-musk.md** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
+- **Run metadata** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
+- **Question/answer trace** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
+- **Interaction insights** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
+- **Product implications for Korean food Akinator** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
+- **Gate status** (1 connections) — `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
 
 ## Relationships
 
@@ -17,11 +18,11 @@
 
 ## Source Files
 
-- `tests/e2e/food-akinator-flow.spec.ts`
+- `docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 12 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

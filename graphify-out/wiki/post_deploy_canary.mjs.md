@@ -2,7 +2,7 @@
 
 > God node · 9 connections · `scripts/post_deploy_canary.mjs`
 
-**Community:** [[Community 14]]
+**Community:** [[Community 18]]
 
 ## Connections by Relation
 
