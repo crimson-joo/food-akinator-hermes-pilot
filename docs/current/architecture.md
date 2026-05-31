@@ -146,5 +146,6 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - `renderApp(model)`은 테스트 가능한 pure renderer로, `data-ui-state`, `data-character-cue`, `data-answer-key`, `data-question-id`, `data-guess-candidate-id`, `data-result-candidate-id`, `data-rejected-candidate-ids` QA hook을 출력한다.
 - `mountApp(root)`은 presentation transition만 관리한다: answer click → `answerAccepted` → `thinking` → engine `submitAnswer()` 결과를 `asking` 또는 `guessing`으로 매핑한다.
 - Engine은 `thinking`/`surprised` timer를 갖지 않는다. UI가 transient state로 suspense와 wrong reaction을 표현한 뒤 session API 결과를 소비한다.
-- Demo browser dataset은 `src/ui/app.ts` 안의 작은 active 후보/질문 set이며, canonical golden acceptance fixture(`tests/fixtures/golden-scenarios.ts`)와 bulk catalogue를 대체하지 않는다.
+- Demo browser dataset은 이제 `src/data/food-knowledge-base.ts`의 canonical `foodKnowledgeBase`를 사용한다. 이전 `src/ui/app.ts` 내부 3-candidate toy fixture는 제거되었고, `demoDataset` export는 canonical dataset compatibility alias다.
+- Canonical data v1은 50 active candidates, 42 active questions, candidate당 20+ non-neutral attribute coverage, role/split quality tests를 가진다.
 - Production build는 `npm run build`로 `dist/`에 생성되며, `dist/`는 local generated artifact로 gitignore한다.

@@ -1,4 +1,5 @@
-import type { AnswerKey, Candidate, Question } from '../engine/domain.js';
+import type { AnswerKey } from '../engine/domain.js';
+import { foodKnowledgeBase } from '../data/food-knowledge-base.js';
 import { startSession, submitAnswer, submitGuessFeedback, type EngineSession } from '../engine/session.js';
 
 const answerOrder: AnswerKey[] = ['yes', 'probably', 'unknown', 'probably_not', 'no'];
@@ -67,7 +68,7 @@ export type UiEvent =
   | { type: 'error'; message: string };
 
 export function createDemoSession(): EngineSession {
-  return startSession(demoDataset);
+  return startSession(foodKnowledgeBase);
 }
 
 export function transitionUi(model: UiModel, event: UiEvent): UiModel {
@@ -413,30 +414,7 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 </style>`;
 }
 
-const demoQuestions: Question[] = [
-  q('q-broth', '국물이 있는 음식인가요?', { role: 'broad_split', axis: 'form', clarity: 3, cost: 0 }),
-  q('q-crispy', '바삭하게 씹히는 게 좋나요?', { role: 'broad_split', axis: 'texture', clarity: 3, cost: 0 }),
-  q('q-spicy', '매콤한 맛이 오늘 끌리나요?', { role: 'family_lock', axis: 'taste', clarity: 3 }),
-  q('q-rice', '밥이 같이 있어야 든든할 것 같나요?', { role: 'family_lock', axis: 'form', clarity: 3 }),
-  q('q-kimchi', '김치의 새콤하고 빨간 국물이 핵심인가요?', { role: 'signature_discriminator', axis: 'ingredient', clarity: 3, revealRisk: 2 }),
-  q('q-recovery-nonkimchi', '그럼 김치찌개는 빼고, 구수한 국물 쪽으로 다시 볼까요?', { role: 'recovery_disambiguation', axis: 'taste', clarity: 3, revealRisk: 0 }),
-];
-
-const demoCandidates: Candidate[] = [
-  c('kimchi-jjigae', '김치찌개', { 'q-broth': 1, 'q-crispy': -1, 'q-spicy': 1, 'q-rice': 0.8, 'q-kimchi': 1, 'q-recovery-nonkimchi': -1 }, ['국물', '매콤함', '김치 단서']),
-  c('doenjang-jjigae', '된장찌개', { 'q-broth': 1, 'q-crispy': -1, 'q-spicy': -0.8, 'q-rice': 0.8, 'q-kimchi': -1, 'q-recovery-nonkimchi': 1 }, ['구수한 국물', '밥과 어울림', '뜨끈한 위로감']),
-  c('fried-chicken', '치킨', { 'q-broth': -1, 'q-crispy': 1, 'q-spicy': -0.2, 'q-rice': -1, 'q-kimchi': -1, 'q-recovery-nonkimchi': -1 }, ['국물 아님', '바삭함', '야식 보상감']),
-];
-
-export const demoDataset = { candidates: demoCandidates, questions: demoQuestions };
-
-function q(id: string, textKo: string, overrides: Partial<Question>): Question {
-  return { id, textKo, axis: 'form', role: 'family_lock', clarity: 2, revealRisk: 0, cost: 1, status: 'active', ...overrides };
-}
-
-function c(id: string, nameKo: string, attributes: Record<string, number>, reasonSeeds: string[]): Candidate {
-  return { id, nameKo, aliases: [], category: 'demo', tags: ['demo'], attributes, prior: 1, reveal: { oneLiner: `${nameKo} 쪽으로 볼게요.`, reasonSeeds }, status: 'active' };
-}
+export const demoDataset = foodKnowledgeBase;
 
 export function mountApp(root: HTMLElement): void {
   let model: UiModel = { phase: 'entry' };
@@ -454,7 +432,7 @@ export function mountApp(root: HTMLElement): void {
       if (button.dataset.action === 'reject-guess' && model.session?.guess) {
         const candidate = model.session.guess.candidate;
         dispatch({ type: 'rejectGuess', candidateId: candidate.id, candidateName: candidate.nameKo });
-        window.setTimeout(() => dispatch({ type: 'recovered', session: submitGuessFeedback(model.session!, { candidateId: candidate.id, accepted: false }, demoDataset) }), 520);
+        window.setTimeout(() => dispatch({ type: 'recovered', session: submitGuessFeedback(model.session!, { candidateId: candidate.id, accepted: false }, foodKnowledgeBase) }), 520);
         return;
       }
       const answer = button.dataset.answerKey as AnswerKey | undefined;
@@ -462,7 +440,7 @@ export function mountApp(root: HTMLElement): void {
         const questionId = model.session.currentQuestion.id;
         dispatch({ type: 'answer', answer });
         window.setTimeout(() => dispatch({ type: 'thinking' }), 700);
-        window.setTimeout(() => dispatch({ type: 'engineReady', session: submitAnswer(model.session!, { questionId, answer }, demoDataset) }), 1550);
+        window.setTimeout(() => dispatch({ type: 'engineReady', session: submitAnswer(model.session!, { questionId, answer }, foodKnowledgeBase) }), 1550);
       }
     } catch (error) {
       dispatch({ type: 'error', message: error instanceof Error ? error.message : '알 수 없는 오류' });

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-05-31 — Akinator-level canonical knowledge base local PASS
+
+- Ran a Product/Engine, Design/Service, and QA/Release gap-review meeting for the user's “actual Akinator-level” target.
+- Added canonical `src/data/food-knowledge-base.ts` with 50 active Korean food candidates and 42 active adaptive questions.
+- Switched the public UI demo from the old 3-candidate `src/ui/app.ts` toy fixture to canonical `foodKnowledgeBase`; `demoDataset` remains a compatibility alias.
+- Added `tests/food-knowledge-base.test.ts` to gate domain validation, 50+/35+ scale, 20+ non-neutral candidate coverage, question split quality, role coverage, and trust-boundary reason copy.
+- Updated e2e flow to tolerate deeper canonical search space while preserving entry → answerAccepted/thinking → guess → wrong recovery → reveal coverage.
+- Final local gates passed: `npm test` 56 tests, `npm run typecheck`, `npm run build`, `npm run test:e2e` 4 tests.
+- Not done: representative 20-food aggregate simulation, branch entropy matrix, Rive/Lottie-ready character runtime, scene choreography split, PR/CI/merge/deploy/live canary.
+
 ## 2026-05-31 — Character/brand interaction slice local PASS
 
 - Refined the UI scaffold from a placeholder stage into a lightweight CSS/DOM procedural host for “입맛 탐정 보글” with visible arms, ladle, notebook check mark, plate lid, steam, face, and state-specific cue selectors.

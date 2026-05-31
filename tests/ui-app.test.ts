@@ -178,7 +178,7 @@ describe('premium culinary oracle UI', () => {
     expect(revealed).toContain('data-result-candidate-id="kimchi-jjigae"');
     expect(revealed).toContain('제가 이렇게 본 이유는요.');
     expect(revealed).toContain('국물');
-    expect(revealed).toContain('김치 단서');
+    expect(revealed).toContain('김치');
     expect(recovering).toContain('data-character-cue="surprised"');
     expect(recovering).toContain('제외됨: 김치찌개');
     expect(error).toContain('단서가 잠깐 엉켰어요. 다시 시도해볼게요.');

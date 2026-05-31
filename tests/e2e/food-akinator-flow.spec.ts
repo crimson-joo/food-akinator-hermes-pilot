@@ -65,7 +65,7 @@ test('minimal scaffold supports entry → adaptive answers → wrong recovery �
   await expect(page.locator('[data-answer-key]')).toHaveCount(5);
   await expect(page.locator('article.question-card')).toHaveCount(1);
 
-  await answerUntilGuess(page, ['yes', 'yes', 'yes', 'yes', 'yes']);
+  await answerUntilGuess(page, ['yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']);
   await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', 'guessing');
   await expectNoForbiddenVisibleMarkers(page);
   await expect(page.getByRole('button', { name: '아니에요' })).toBeVisible();
@@ -80,7 +80,7 @@ test('minimal scaffold supports entry → adaptive answers → wrong recovery �
   await expectNoForbiddenVisibleMarkers(page);
   await expect(page.locator('.app-shell')).toHaveAttribute('data-rejected-candidate-ids', /.+/);
 
-  await answerUntilGuess(page, ['yes', 'probably', 'no', 'unknown', 'yes']);
+  await answerUntilGuess(page, ['yes', 'probably', 'no', 'unknown', 'yes', 'probably', 'yes', 'no', 'probably', 'yes', 'probably_not', 'yes', 'no', 'yes']);
   await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', /guessing|revealed|exhausted/);
   if ((await page.locator('.app-shell').getAttribute('data-ui-state')) === 'guessing') {
     await page.getByRole('button', { name: '맞아요' }).click();
