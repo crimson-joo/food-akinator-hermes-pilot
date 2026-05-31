@@ -161,14 +161,7 @@ jobs:
           NODE
           )
           if [ -n "$HERMES_WEBHOOK_SECRET" ]; then
-            signature=$(PAYLOAD="$payload" node - <<'NODE'
-            const crypto = require('crypto');
-            process.stdout.write('sha256=' + crypto
-              .createHmac('sha256', process.env.HERMES_WEBHOOK_SECRET)
-              .update(process.env.PAYLOAD)
-              .digest('hex'));
-            NODE
-            )
+            signature=$(PAYLOAD="$payload" node -e "const crypto=require('crypto'); process.stdout.write('sha256=' + crypto.createHmac('sha256', process.env.HERMES_WEBHOOK_SECRET).update(process.env.PAYLOAD).digest('hex'))")
             curl -fsS -X POST \
               -H 'Content-Type: application/json' \
               -H 'X-GitHub-Event: github_pages_post_deploy_canary' \
