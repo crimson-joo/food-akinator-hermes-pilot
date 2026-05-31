@@ -114,11 +114,54 @@ describe('premium culinary oracle UI', () => {
     expect(accepted).toContain('data-ui-state="answerAccepted"');
     expect(accepted).toContain('data-last-answer="unknown"');
     expect(accepted).toContain('괜찮아요. 애매한 단서는 건너뛰고 볼게요.');
+    expect(accepted).toContain('data-answer-reaction="unknown"');
+    expect(accepted).toContain('모르겠으면 괜찮아요');
     expect((accepted.match(/disabled/g) ?? []).length).toBeGreaterThanOrEqual(5);
     expect(thinking).toContain('data-ui-state="thinking"');
     expect(thinking).toContain('data-character-cue="thinking"');
     expect(thinking).toContain('보글이 메모장을 보는 중');
+    expect(thinking).toContain('data-interaction-feedback="thinking"');
+    expect(thinking).toContain('단서들을 다시 섞어보는 중이에요.');
     expect(thinking).toContain('aria-live="polite"');
+  });
+
+  it('renders distinct answer-click feedback for all five answer choices', () => {
+    const session = createDemoSession();
+    const expected: Record<string, { sentiment: string; copy: string; motion: string }> = {
+      yes: { sentiment: 'positive', copy: '좋아요, 방향이 꽤 선명해졌어요.', motion: 'approve-nod' },
+      probably: { sentiment: 'soft-positive', copy: '아마도군요. 그쪽 후보를 살짝 올려볼게요.', motion: 'maybe-tilt' },
+      unknown: { sentiment: 'uncertain', copy: '모르겠으면 괜찮아요. 애매한 단서는 잠시 보류할게요.', motion: 'puzzled-shrug' },
+      probably_not: { sentiment: 'soft-negative', copy: '아마 아니군요. 그 후보군은 조금 낮춰볼게요.', motion: 'narrow-away' },
+      no: { sentiment: 'negative', copy: '아니군요. 그 길은 과감히 지워둘게요.', motion: 'prune-swipe' },
+    };
+
+    for (const key of answerKeys) {
+      const html = renderApp({ phase: 'answerAccepted', session, lastAnswer: key as never });
+      expect(html, key).toContain(`data-answer-reaction="${key}"`);
+      expect(html, key).toContain(`data-answer-sentiment="${expected[key]!.sentiment}"`);
+      expect(html, key).toContain(`data-reaction-motion="${expected[key]!.motion}"`);
+      expect(html, key).toContain(expected[key]!.copy);
+    }
+  });
+
+  it('exposes at least ten named animations, ten expressions, and a visible joint rig for articulated motion', () => {
+    const html = renderApp({ phase: 'entry' });
+    const animations = [...html.matchAll(/data-animation-name="([^"]+)"/g)].map((match) => match[1]);
+    const expressions = [...html.matchAll(/data-expression-name="([^"]+)"/g)].map((match) => match[1]);
+    const keyframes = [...html.matchAll(/@keyframes ([a-z0-9-]+)/g)].map((match) => match[1]);
+
+    expect(new Set(animations).size).toBeGreaterThanOrEqual(10);
+    expect(new Set(expressions).size).toBeGreaterThanOrEqual(10);
+    expect(new Set(keyframes).size).toBeGreaterThanOrEqual(10);
+    expect(html).toContain('data-joint-rig="shoulder-elbow-wrist"');
+    expect(html).toContain('class="oracle-joint shoulder left"');
+    expect(html).toContain('class="oracle-joint elbow left"');
+    expect(html).toContain('class="oracle-joint wrist left"');
+    expect(html).toContain('class="oracle-joint shoulder right"');
+    expect(html).toContain('class="oracle-joint elbow right"');
+    expect(html).toContain('class="oracle-joint wrist right"');
+    expect(animations).toEqual(expect.arrayContaining(['idle-breath', 'blink-gaze', 'spoon-point', 'approve-nod', 'maybe-tilt', 'puzzled-shrug', 'narrow-away', 'prune-swipe', 'thinking-scan', 'confidence-rise', 'oops-recoil', 'recovery-reset', 'lid-reveal']));
+    expect(expressions).toEqual(expect.arrayContaining(['warm-blink', 'curious-focus', 'focused-smile', 'soft-smile', 'maybe-smirk', 'puzzled-open', 'skeptical-narrow', 'decisive-prune', 'narrow-thinking', 'spark-confidence', 'oops-open', 'calm-detective', 'bright-payoff']));
   });
 
   it('renders guessing, reveal, wrong recovery, and safe errors without internal scoring leakage', () => {
