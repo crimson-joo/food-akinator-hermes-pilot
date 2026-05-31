@@ -44,11 +44,12 @@ Fail 조건:
 
 ## Data tests
 
-- active candidate 50개 이상
-- active question 35개 이상
-- 각 후보는 최소 20개 질문 attribute coverage
-- 각 질문은 yes/no 양쪽 후보를 충분히 가름
+- active candidate 50개 이상 ✅ canonical `foodKnowledgeBase` v1: 50개
+- active question 35개 이상 ✅ canonical `foodKnowledgeBase` v1: 42개
+- 각 후보는 최소 20개 질문 attribute coverage ✅ non-neutral active attribute 기준 자동 검증
+- 각 질문은 yes/no 양쪽 후보를 충분히 가름 ✅ active question split quality 자동 검증
 - 모든 attribute는 `-1 <= value <= 1`
+- reveal copy/reason seed는 내부 score/probability/question id를 노출하지 않는다.
 
 ## Engine tests
 

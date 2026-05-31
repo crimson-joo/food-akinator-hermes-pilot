@@ -8,7 +8,8 @@
 - Release automation bootstrap: PR CI, GitHub Pages deploy, pre/post-deploy Playwright smoke, scripted asset canary, optional Hermes webhook notification을 workflow contract로 추가함.
 - main 배포 완료: PR #5 merge 후 PR #6에서 live smoke base URL 문제를 수정했고, 이후 main CI, GitHub Pages deploy, scripted canary, live Playwright smoke가 통과했다.
 - Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료.
-- 다음 단계: 제품 iteration. Public release 전에는 perceptual QA와 최종 mascot/brand polish가 별도 gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했다.
+- Akinator-level self-review loop 시작: Product/Engine, Design/Service, QA/Release 관점 gap review 후 canonical `foodKnowledgeBase` v1(50 candidates / 42 questions / data readiness gate)을 도입했다. 다음 major gap은 representative simulation, branch entropy, asset-backed character runtime, scene choreography다.
+- 다음 단계: 제품 iteration. Public release 전에는 perceptual QA와 최종 mascot/brand polish가 별도 product/design gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했다.
 
 ## Release policy
 

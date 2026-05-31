@@ -68,3 +68,15 @@ Builder gate는 통과했다. 직접 플레이 5회 synthesis 기준으로 구�
 ## v0 성공 기준
 
 v0는 “추천 리스트”가 아니라 **한 메뉴를 추리해 선언하는 게임**이어야 한다. 질문이 진행될수록 후보군이 좁혀지는 체감, 캐릭터의 thinking/confidence/reveal 상태, 오답 후 회복 루프가 없으면 ship 불가.
+
+## Akinator-level loop — canonical knowledge base v1
+
+사용자 기준은 “원본 Akinator 수준”에 도달할 때까지 자가 검증/회의를 반복하는 것이다. 2026-05-31 gap review의 결론은, 현재 engine/UI scaffold보다 **지식베이스 규모와 서비스 구조**가 원본 수준 체감의 다음 병목이라는 점이다.
+
+이번 iteration의 제품 기준:
+
+- public demo는 더 이상 3개 후보 toy fixture가 아니다.
+- canonical `foodKnowledgeBase`는 active candidate 50개와 active question 42개를 제공한다.
+- 각 후보는 20개 이상 non-neutral active attributes와 3개 이상 reveal reason seed를 가진다.
+- 질문은 broad split, family lock, sibling elimination, signature discriminator, false-path guardrail, recovery disambiguation role을 모두 포함한다.
+- 계속 남은 큰 다음 단계는 20개 대표 음식 scenario simulation, branch entropy 검증, Rive/Lottie-ready character runtime, scene choreography 분리다.
