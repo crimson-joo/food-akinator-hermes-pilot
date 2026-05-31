@@ -26,11 +26,13 @@ const answerLabel: Record<AnswerKey, string> = {
 
 
 export type UiPhase = 'entry' | 'asking' | 'answerAccepted' | 'thinking' | 'guessing' | 'revealed' | 'recovering' | 'exhausted' | 'error';
+export type RecoveryBeat = 'surprise' | 'remove' | 'refocus';
 
 export type UiModel = {
   phase: UiPhase;
   session?: EngineSession;
   lastAnswer?: AnswerKey;
+  recoveryBeat?: RecoveryBeat;
   rejectedCandidateIds?: string[];
   rejectedCandidateNames?: string[];
   errorMessage?: string;
@@ -43,6 +45,7 @@ export type UiEvent =
   | { type: 'engineReady'; session: EngineSession }
   | { type: 'confirmGuess' }
   | { type: 'rejectGuess'; candidateId: string; candidateName: string }
+  | { type: 'advanceRecoveryBeat'; beat: RecoveryBeat; session?: EngineSession }
   | { type: 'recovered'; session: EngineSession }
   | { type: 'restart' }
   | { type: 'error'; message: string };
@@ -62,9 +65,14 @@ export function transitionUi(model: UiModel, event: UiEvent): UiModel {
     return {
       ...model,
       phase: 'recovering',
+      recoveryBeat: 'surprise',
       rejectedCandidateIds: Array.from(new Set([...(model.rejectedCandidateIds ?? []), event.candidateId])),
       rejectedCandidateNames: Array.from(new Set([...(model.rejectedCandidateNames ?? []), event.candidateName])),
     };
+  }
+  if (event.type === 'advanceRecoveryBeat') {
+    if (event.session) return { ...model, phase: 'recovering', recoveryBeat: event.beat, session: event.session };
+    return { ...model, phase: 'recovering', recoveryBeat: event.beat };
   }
   if (event.type === 'recovered') return mapSessionToUi(event.session, model);
   if (event.type === 'error') return { phase: 'error', errorMessage: event.message };
@@ -99,6 +107,7 @@ export function renderApp(model: UiModel): string {
     attrs.push(`data-reaction-motion="${reaction.motion}"`);
   }
   if (model.rejectedCandidateIds?.length) attrs.push(`data-rejected-candidate-ids="${escapeAttr(model.rejectedCandidateIds.join(','))}"`);
+  if (uiState === 'recovering') attrs.push(`data-recovery-beat="${model.recoveryBeat ?? 'surprise'}"`);
   if (uiState === 'guessing' && session?.guess) attrs.push(`data-guess-candidate-id="${escapeAttr(session.guess.candidate.id)}"`);
   if (uiState === 'revealed' && session?.guess) attrs.push(`data-result-candidate-id="${escapeAttr(session.guess.candidate.id)}"`);
 
@@ -242,7 +251,7 @@ function cueFor(model: UiModel): string {
   if (model.phase === 'thinking') return 'thinking';
   if (model.phase === 'guessing') return 'confident';
   if (model.phase === 'revealed') return 'reveal';
-  if (model.phase === 'recovering') return 'surprised';
+  if (model.phase === 'recovering') return model.recoveryBeat === 'refocus' ? 'recover' : 'surprised';
   if (model.phase === 'exhausted') return 'recover';
   if (model.phase === 'error') return 'recover';
   return model.session?.characterCue ?? 'ask';
@@ -286,11 +295,23 @@ ${renderAnswerButtons(true, model.lastAnswer)}`;
 <div class="guess-actions"><button class="primary" data-action="restart" type="button">다시 맞혀보기</button><button class="secondary" data-action="reject-guess" type="button">아닌데요</button></div>`;
   }
   if (model.phase === 'recovering') {
-    return `<p class="eyebrow">다시 좁히는 중</p>
-<h2>앗, 제가 너무 성급했네요.</h2>
-<p class="helper">그 메뉴는 빼고 단서판을 다시 정렬할게요.</p>
-${renderRejectedChips(model.rejectedCandidateNames)}
+    const beat = model.recoveryBeat ?? 'surprise';
+    if (beat === 'remove') {
+      return `<p class="eyebrow">후보 정리</p>
+<h2>그 메뉴는 후보에서 뺄게요.</h2>
+<p class="helper">단서판에서 틀린 접시를 지우고 있어요.</p>
+${renderRejectedChips(model.rejectedCandidateNames, beat)}`;
+    }
+    if (beat === 'refocus') {
+      return `<p class="eyebrow">다시 좁히는 중</p>
+<h2>다시 단서를 좁혀볼게요.</h2>
+<p class="helper">제외한 후보는 옆에 남겨두고, 더 안전한 질문으로 이어갈게요.</p>
+${renderRejectedChips(model.rejectedCandidateNames, beat)}
 ${renderQuestion(model.session, false)}`;
+    }
+    return `<p class="eyebrow">앗, 바로잡는 중</p>
+<h2>앗, 제가 너무 성급했네요.</h2>
+<p class="helper">잠깐 멈추고 틀린 추측부터 인정할게요.</p>`;
   }
   if (model.phase === 'exhausted') {
     return `<p class="eyebrow">정직한 멈춤</p>
@@ -326,9 +347,9 @@ function renderAnswerButtons(disabled: boolean, selected?: AnswerKey): string {
   return `<div class="answer-grid">${answerOrder.map((key) => `<button class="answer${selected === key ? ' selected' : ''}" data-answer-key="${key}" type="button"${disabled ? ' disabled' : ''}>${answerLabel[key]}</button>`).join('')}</div>`;
 }
 
-function renderRejectedChips(names: string[] = []): string {
+function renderRejectedChips(names: string[] = [], beat: RecoveryBeat = 'surprise'): string {
   if (names.length === 0) return '';
-  return `<div class="rejected-list">${names.map((name) => `<span class="rejected-chip">제외됨: ${escapeHtml(name)}</span>`).join('')}</div>`;
+  return `<div class="rejected-list" data-testid="rejected-candidate-list" data-recovery-beat="${beat}">${names.map((name) => `<span class="rejected-chip" data-testid="rejected-candidate-chip" data-rejected-candidate-name="${escapeAttr(name)}" data-removal-treatment="crossed-off"><span class="rejected-chip-label">제외됨: ${escapeHtml(name)}</span><span class="rejected-chip-mark" aria-hidden="true">지움</span></span>`).join('')}</div>`;
 }
 
 function renderClueProgress(session?: EngineSession): string {
@@ -390,7 +411,7 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 .answer { min-height: 54px; } .answer.selected { border-color: rgba(217,61,39,.7); background: linear-gradient(#fff7e9, #ffe0bf); box-shadow: inset 0 0 0 2px rgba(217,61,39,.16); }
 .guess-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .reason-list { display: grid; gap: 10px; padding-left: 22px; font-weight: 800; line-height: 1.55; }
-.rejected-list { margin: 16px 0; display: flex; flex-wrap: wrap; gap: 8px; } .rejected-chip { border: 1px solid rgba(217,61,39,.28); background: #fff1ee; color: #8d2d20; border-radius: var(--radius-pill); padding: 8px 12px; font-weight: 900; }
+.rejected-list { margin: 16px 0; display: flex; flex-wrap: wrap; gap: 8px; } .rejected-chip { position: relative; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(217,61,39,.28); background: #fff1ee; color: #8d2d20; border-radius: var(--radius-pill); padding: 8px 12px; font-weight: 900; overflow: hidden; } .rejected-chip[data-removal-treatment='crossed-off']::after { content: ''; position: absolute; left: 10px; right: 10px; top: 50%; height: 2px; border-radius: 999px; background: rgba(159,36,24,.78); transform: rotate(-3deg); } .rejected-chip-mark { position: relative; z-index: 1; padding: 2px 7px; border-radius: 999px; color: #fff7ef; background: var(--gochu); font-size: .72rem; } .rejected-chip-label { position: relative; z-index: 1; }
 .clue-progress { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 20px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.58); color: var(--muted); font-weight: 900; }
 .clue-dots { display: inline-flex; gap: 7px; } .clue-dot { width: 10px; height: 10px; border-radius: 999px; background: rgba(123,75,40,.22); } .clue-dot.active { background: var(--gochu); box-shadow: 0 0 0 5px rgba(217,61,39,.10); }
 .interaction-feedback { margin: 16px 0 18px; padding: 13px 15px; border: 1px solid rgba(103,57,30,.20); border-radius: 20px; background: rgba(255,255,255,.66); box-shadow: 0 10px 24px rgba(75,38,15,.08); display: grid; gap: 4px; }
@@ -437,7 +458,7 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 [data-character-cue='idle'] .oracle-particle { opacity: .72; }
 [data-character-cue='idle'] .oracle-spoon { transform: rotate(-34deg); }
 [data-character-cue='ask'] .oracle-host { transform: translateY(-6px) rotate(-1.5deg); }
-[data-character-cue='ask'] .spoon-arm { transform: translate(18px,-22px) rotate(-12deg); }
+[data-character-cue='ask'] .spoon-arm { transform: translate(-8px,-22px) rotate(-12deg); }
 [data-character-cue='ask'] .oracle-brow.left { transform: translateY(-4px) rotate(-10deg); }
 [data-character-cue='ask'] .oracle-aura { filter: saturate(1.12); }
 [data-character-cue='answerAccepted'] .oracle-host { transform: translateY(-3px) rotate(1deg); }
@@ -501,7 +522,7 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 @keyframes oops-recoil { 0% { transform: translateX(0) rotate(0); } 55% { transform: translateX(-16px) rotate(-7deg); } 100% { transform: translateX(-8px) rotate(-4deg); } }
 @keyframes recovery-reset { 0% { transform: rotate(-5deg); } 100% { transform: rotate(.5deg); } }
 @keyframes lid-reveal { 0% { transform: translateX(-50%); } 100% { transform: translateX(-50%) translateY(-54px) rotate(-14deg); } }
-@media (max-width: 820px) { .app-shell { grid-template-columns: 1fr; padding: 16px 12px 28px; } .oracle-theater { min-height: 410px; } .oracle-host { width: min(310px, 86vw); height: 330px; } .answer-grid { grid-template-columns: 1fr; } .clue-progress { align-items: flex-start; flex-direction: column; } h1 { font-size: clamp(31px, 10vw, 44px); } }
+@media (max-width: 820px) { .app-shell { grid-template-columns: 1fr; padding: 16px 12px 28px; } .oracle-theater { min-height: 410px; } .oracle-host { width: min(300px, 82vw); height: 330px; } .answer-grid { grid-template-columns: 1fr; } .clue-progress { align-items: flex-start; flex-direction: column; } h1 { font-size: clamp(31px, 10vw, 44px); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } [data-reduced-motion-note] { display: inline; } .oracle-host { transform: none !important; } }
 </style>`;
 }
@@ -523,8 +544,13 @@ export function mountApp(root: HTMLElement): void {
       if (button.dataset.action === 'confirm-guess') { dispatch({ type: 'confirmGuess' }); return; }
       if (button.dataset.action === 'reject-guess' && model.session?.guess) {
         const candidate = model.session.guess.candidate;
+        const guessingSession = model.session;
         dispatch({ type: 'rejectGuess', candidateId: candidate.id, candidateName: candidate.nameKo });
-        window.setTimeout(() => dispatch({ type: 'recovered', session: submitGuessFeedback(model.session!, { candidateId: candidate.id, accepted: false }, foodKnowledgeBase) }), 520);
+        window.setTimeout(() => dispatch({ type: 'advanceRecoveryBeat', beat: 'remove' }), 520);
+        window.setTimeout(() => dispatch({ type: 'advanceRecoveryBeat', beat: 'refocus', session: submitGuessFeedback(guessingSession, { candidateId: candidate.id, accepted: false }, foodKnowledgeBase) }), 1040);
+        window.setTimeout(() => {
+          if (model.phase === 'recovering' && model.recoveryBeat === 'refocus' && model.session) dispatch({ type: 'recovered', session: model.session });
+        }, 1760);
         return;
       }
       const answer = button.dataset.answerKey as AnswerKey | undefined;

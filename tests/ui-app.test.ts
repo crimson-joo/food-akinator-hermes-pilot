@@ -213,7 +213,7 @@ describe('premium culinary oracle UI', () => {
     const guessingSession = fakeGuessingSession();
     const guessing = renderApp({ phase: 'guessing', session: guessingSession });
     const revealed = renderApp({ phase: 'revealed', session: { ...guessingSession, status: 'revealed', characterCue: 'reveal' } });
-    const recovering = renderApp({ phase: 'recovering', session: createDemoSession(), rejectedCandidateIds: ['kimchi-jjigae'], rejectedCandidateNames: ['김치찌개'] });
+    const recovering = renderApp({ phase: 'recovering', recoveryBeat: 'remove', session: createDemoSession(), rejectedCandidateIds: ['kimchi-jjigae'], rejectedCandidateNames: ['김치찌개'] });
     const error = renderApp({ phase: 'error', errorMessage: 'Question q-broth is already answered; Unknown answer key for current question' });
 
     expect(guessing).toContain('data-guess-candidate-id="kimchi-jjigae"');
@@ -231,6 +231,44 @@ describe('premium culinary oracle UI', () => {
       const visibleHtml = html.replace(/<style>[\s\S]*?<\/style>/, '');
       expect(visibleHtml).not.toMatch(/score|probability|top1|top3|clue:|Question q-|current question|Unknown answer key/i);
     }
+  });
+
+  it('stages wrong recovery as surprise, removal, then refocus before returning to normal asking', () => {
+    const session = createDemoSession();
+    const rejected = transitionUi(
+      { phase: 'guessing', session: fakeGuessingSession() },
+      { type: 'rejectGuess', candidateId: 'kimchi-jjigae', candidateName: '김치찌개' },
+    );
+    const removal = transitionUi(rejected, { type: 'advanceRecoveryBeat', beat: 'remove' });
+    const refocus = transitionUi(removal, { type: 'advanceRecoveryBeat', beat: 'refocus', session });
+
+    expect(rejected).toMatchObject({ phase: 'recovering', recoveryBeat: 'surprise' });
+    expect(removal).toMatchObject({ phase: 'recovering', recoveryBeat: 'remove' });
+    expect(refocus).toMatchObject({ phase: 'recovering', recoveryBeat: 'refocus' });
+
+    const surpriseHtml = renderApp(rejected);
+    expect(surpriseHtml).toContain('data-ui-state="recovering"');
+    expect(surpriseHtml).toContain('data-recovery-beat="surprise"');
+    expect(surpriseHtml).toContain('data-character-cue="surprised"');
+    expect(surpriseHtml).toContain('앗, 제가 너무 성급했네요.');
+    expect(surpriseHtml).not.toContain('class="question-card"');
+
+    const removalHtml = renderApp(removal);
+    expect(removalHtml).toContain('data-recovery-beat="remove"');
+    expect(removalHtml).toContain('data-testid="rejected-candidate-list"');
+    expect(removalHtml).toContain('data-testid="rejected-candidate-chip"');
+    expect(removalHtml).toContain('data-rejected-candidate-name="김치찌개"');
+    expect(removalHtml).toContain('data-removal-treatment="crossed-off"');
+    expect(removalHtml).toContain('그 메뉴는 후보에서 뺄게요.');
+    expect(removalHtml).not.toContain('class="question-card"');
+
+    const refocusHtml = renderApp(refocus);
+    expect(refocusHtml).toContain('data-recovery-beat="refocus"');
+    expect(refocusHtml).toContain('data-character-cue="recover"');
+    expect(refocusHtml).toContain('다시 단서를 좁혀볼게요.');
+    expect(refocusHtml).toContain('class="question-card"');
+    expect([...refocusHtml.matchAll(/data-answer-key="/g)]).toHaveLength(5);
+    expect(refocusHtml).toContain('data-testid="rejected-candidate-list"');
   });
 
   it('includes high-fidelity motion tokens, reduced-motion fallback, and multiple cue-specific visual selectors', () => {

@@ -119,6 +119,26 @@ Recent evidence references:
 
 - PR #21 live/demo evidence: Bogle motion state machine, production layer sheet hooks, main CI, Pages deploy, scripted canary, browser DOM/console smoke.
 - PR #22 evidence: production completion autoplan and explicit production-blocked verdict in `docs/current/autoplan-kanban.md`.
+- `t_2c0c169f` live baseline browser/perceptual QA evidence: `.hermes/runs/t_2c0c169f/qa-baseline-report.md` and `.hermes/runs/t_2c0c169f/browser-qa-evidence.json`.
+
+## Baseline browser/perceptual QA gate — 2026-06-01
+
+Current live controlled demo/alpha smoke is PASS, but full public production launch remains BLOCKED.
+
+Validated against `https://crimson-joo.github.io/food-akinator-hermes-pilot/` with cache-busted QA URLs:
+
+- Live Playwright e2e: desktop/mobile entry → answering → wrong recovery → reveal passed with no console errors.
+- Post-deploy canary: `html-200`, module asset reachable, required markers present, old markers absent.
+- Screenshot evidence captured entry, asking, answerAccepted, thinking, guessing, wrong recovery, recovered asking, reveal, five answer reactions, 360/390/412 mobile entry/asking, and reduced-motion entry/asking/answerAccepted.
+- Mobile horizontal overflow was 0px at 360/390/412 entry and asking.
+- Forbidden visible internals (`score`, `probability`, `top1`, `top3`, `attribute`, `clue:`, raw `q-*`) were not observed.
+
+Production-blocking observations:
+
+- Character runtime is still `css-fallback` in every captured state, not Rive/Lottie/equivalent.
+- Current visual quality is acceptable only as fallback demo evidence; production still requires authored/runtime-backed character acting or explicit user acceptance of fallback quality.
+- 360px mobile screenshot shows a visual clipping risk: the spoon prop is pressed against / appears cut by the right stage edge even though measured horizontal overflow is 0.
+- Wrong recovery has rejected-candidate copy/chip, but production target still needs a clearer 3-beat surprise → removal → refocus moment.
 
 ### Minimal UI scaffold DOM checks
 
@@ -131,3 +151,22 @@ Recent evidence references:
 - Wrong recovery: `data-ui-state="recovering"`, `data-character-cue="surprised"`, `data-rejected-candidate-ids`, `제외됨: {menu}` chip. 이후 recovered asking screen은 engine `recover` cue를 유지한다.
 - Reveal: `data-ui-state="revealed"`, `data-character-cue="reveal"`, one menu declaration + 2~3 Korean reason seeds; visible text must not include `score`, `probability`, `top1`, `top3`, `attribute`, `clue:`.
 - Reduced motion: CSS includes `@media (prefers-reduced-motion: reduce)` and flow remains usable without large motion.
+
+### Visual QA follow-up acceptance — mobile stage + wrong recovery
+
+Builder/QA must add visual/DOM evidence for the two P1 perceptual issues from `t_2c0c169f` before the next production QA pass.
+
+Mobile asking stage:
+
+- Capture 360/390/412px asking screenshots.
+- Horizontal overflow remains 0px.
+- Bogle's spoon bowl is fully inside `data-testid="character-stage"` and keeps right-edge safe area: 16px at 360, 20px at 390, 24px at 412.
+- Answer controls remain usable with at least 44px hit height.
+
+Wrong recovery staging:
+
+- Rejecting a tentative guess exposes three observable beats in order inside `data-ui-state="recovering"`: `data-recovery-beat="surprise"`, then `remove`, then `refocus`.
+- Surprise beat uses `data-character-cue="surprised"` and admission copy; next question is not yet primary.
+- Remove beat exposes stable rejected-candidate list/chip hooks and a visible removed/crossed-off treatment.
+- Refocus beat uses `data-character-cue="recover"`, keeps rejected candidate context, and shows exactly five answer controls for the recovery question.
+- Reduced-motion mode preserves the three semantic beats through DOM/copy/chip treatment even if large transforms are disabled.
