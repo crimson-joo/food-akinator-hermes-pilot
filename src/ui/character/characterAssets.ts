@@ -164,6 +164,76 @@ const acting = (emotion: string, confidenceTone: string, thoughtProcessCopy: str
   layerTransforms: [...baseTransforms, ...layerTransforms],
 });
 
+export const productionLayerSheet = {
+  sourceConceptId: 'concept-a',
+  assetKind: 'brand-vector-layer-sheet',
+  qualityBar: 'public-beta-minimum',
+  nonCopyBoundary: 'original Korean food oracle host; no Akinator genie silhouette, costume, copy, or layout clone',
+  palette: {
+    primaryInk: '#5c321d',
+    skinWarmth: '#ffd395',
+    jacketCream: '#fff4df',
+    gochuAccent: '#d9422b',
+    brassProp: '#f3bd55',
+    steamHighlight: '#fff5db',
+  },
+  lineArt: {
+    outerStrokePx: 4,
+    innerStrokePx: 3,
+    terminal: 'round',
+  },
+  shading: ['warm rim light', 'face blush', 'prop specular highlights', 'dish glow bloom'],
+  mobileReadability: {
+    minViewportPx: 320,
+    silhouetteReadsAtPx: 164,
+    protectedFeatures: ['steam curl', 'spoon pointer', 'notebook', 'covered dish', 'brow/eye/mouth triangle'],
+  },
+  layerExportGroups: ['body', 'face', 'arms', 'props', 'atmosphere'],
+} as const;
+
+export type MotionTimelineStep = {
+  at: number;
+  layerId: string;
+  tx: number;
+  ty: number;
+  rot: number;
+  sx?: number;
+  sy?: number;
+  opacity?: number;
+};
+
+export type AnimationClip = {
+  name: string;
+  durationMs: number;
+  easing: string;
+  timeline: MotionTimelineStep[];
+};
+
+const clip = (name: string, durationMs: number, easing: string, timeline: MotionTimelineStep[]): AnimationClip => ({ name, durationMs, easing, timeline });
+const step = (at: number, layerId: string, tx: number, ty: number, rot: number, sx = 1, sy = 1, opacity = 1): MotionTimelineStep => ({ at, layerId, tx, ty, rot, sx, sy, opacity });
+
+export const animationStateMachine = {
+  version: 'bogle-motion-v2',
+  inputs: riveStateInputs,
+  states: {
+    idle: clip('idle-life-v2', 1480, 'ease-in-out', [step(0, 'head_base', 0, 0, 0), step(0.5, 'head_base', 0, -3, 0), step(1, 'steam_2', 0, -10, 4, 1, 1, 0.8)]),
+    ask: clip('ask-spoon-point-v2', 820, 'cubic-bezier(.2,.9,.18,1)', [step(0, 'head_base', 0, 0, 0), step(0.46, 'arm_spoon_lower', 13, -14, -24), step(1, 'spoon_bowl', 20, -15, -18)]),
+    answerAccepted: clip('answer-ink-capture-v2', 720, 'cubic-bezier(.16,.9,.2,1)', [step(0, 'head_base', 0, 0, 0), step(0.42, 'note_ink_check', 12, -10, 0, 1.28, 1.28, 1), step(1, 'note_pages', 12, -9, -9)]),
+    thinking: clip('thinking-scan-v2', 1180, 'ease-in-out', [step(0, 'head_base', -1, 3, 2), step(0.28, 'head_base', -2, 6, 4), step(0.5, 'head_base', -1, 4, 3), step(0.2, 'steam_1', -7, -12, -18), step(0.5, 'steam_1', -9, -15, -22), step(0.86, 'steam_1', -5, -11, -16), step(0.22, 'steam_2', 3, -13, 14), step(0.72, 'steam_2', 5, -17, 17), step(1, 'steam_2', 4, -15, 16), step(0.18, 'note_pages', 13, -10, -10), step(0.66, 'note_pages', 18, -14, -14), step(1, 'note_pages', 17, -13, -13)]),
+    confident: clip('confidence-lock-v2', 780, 'cubic-bezier(.18,.9,.2,1)', [step(0, 'head_base', 0, 0, 0), step(0.55, 'plate_base', 0, -12, 0, 1.08, 1.08), step(1, 'dish_glow', 0, -12, 0, 1.25, 1.25, 0.86)]),
+    surprised: clip('oops-recoil-v2', 680, 'cubic-bezier(.28,1.4,.3,1)', [step(0, 'head_base', 0, 0, 0), step(0.42, 'head_base', -9, 4, -8), step(1, 'arm_spoon_lower', 19, 19, 34)]),
+    recover: clip('reframe-reset-v2', 760, 'ease-out', [step(0, 'head_base', -3, 2, -2), step(0.52, 'note_pages', 12, -7, -8, 1.06, 1.06), step(1, 'head_base', 1, 2, 1)]),
+    reveal: clip('lid-reveal-payoff-v2', 1120, 'cubic-bezier(.16,.9,.18,1)', [step(0, 'head_base', 0, -2, 0), step(0.34, 'head_base', 0, -6, 1), step(0.7, 'head_base', 0, -4, 1), step(0.2, 'plate_lid', 0, -10, -5), step(0.38, 'plate_lid', 0, -42, -18), step(1, 'plate_lid', 0, -42, -18), step(0.22, 'lid_knob', 0, -11, -5), step(0.58, 'lid_knob', -3, -43, -18), step(1, 'lid_knob', -3, -43, -18), step(0.34, 'dish_glow', 0, -4, 0, 1.1, 1.1, 0.6), step(0.8, 'dish_glow', 0, -11, 0, 1.7, 1.7, 1), step(1, 'dish_glow', 0, -11, 0, 1.35, 1.35, 0.92), step(0.45, 'spark_1', -2, -3, 8, 0.8, 0.8, 0.5), step(0.72, 'spark_1', -5, -10, 18, 1.2, 1.2, 1), step(1, 'spark_1', -5, -10, 18, 1, 1, 1)]),
+  },
+  answerReactions: {
+    yes: { clipName: 'approve-nod', emotionalBeat: 'clear confirmation' },
+    probably: { clipName: 'maybe-tilt', emotionalBeat: 'soft confirmation' },
+    unknown: { clipName: 'puzzled-shrug', emotionalBeat: 'safe uncertainty' },
+    probably_not: { clipName: 'narrow-away', emotionalBeat: 'soft rejection' },
+    no: { clipName: 'prune-swipe', emotionalBeat: 'decisive rejection' },
+  },
+} as const;
+
 export const productionStateActing: Record<string, ProductionStateActing> = {
   idle: acting('warm-ready', 'open-start', '사용자가 마음속 메뉴를 고르는 동안 보글은 숨을 고르고 향을 살피고 있어요.', ['soft breathing', 'slow blink', 'idle steam'], [
     { layerId: 'steam_1', tx: -2, ty: -6, rot: -8, opacity: 0.72 },

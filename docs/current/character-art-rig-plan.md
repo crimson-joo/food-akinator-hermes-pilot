@@ -171,6 +171,29 @@ Decision:
 6. Convert Concept A into simplified vector/transparent layer exports. ✅ inline SVG layer rig v1 now exposes 50+ individually addressable `data-layer-id` parts with pivots, z-order, vector roles, and state transforms in `src/ui/character/characterAssets.ts`.
 7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API. ⏳ production web fallback now mirrors the target state-machine contract; external `.riv` authoring can replace the inline SVG without changing app logic.
 8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal. ⏳ automated and live QA required after merge.
+9. Add production vector layer-sheet metadata and multi-beat animation state-machine hooks. ✅ `productionLayerSheet` and `animationStateMachine` now encode source-art quality bar, non-copy boundary, layer export groups, clip names, timings, easing, and per-layer motion beats.
+
+## Production inline vector rig v2 — layer sheet + motion state machine
+
+The latest pass raises the fallback from “static transform contract” to a more production-shaped animation source of truth:
+
+- `productionLayerSheet`
+  - `assetKind="brand-vector-layer-sheet"`
+  - `qualityBar="public-beta-minimum"`
+  - Concept A remains the source identity while explicitly excluding Akinator genie silhouette/costume/copy/layout cloning.
+  - Palette, line-art stroke width, shading notes, mobile readability constraints, and export groups are now committed as data, not only prose.
+- `animationStateMachine`
+  - version: `bogle-motion-v2`
+  - inputs remain `cue`, `answerReaction`, `confidence`, `reducedMotion`
+  - every major cue maps to a named clip with duration/easing and multiple timeline beats.
+  - `thinking` includes repeated head/steam/notebook scan beats; `reveal` includes lid/knob/dish glow/spark payoff beats.
+- Runtime SVG hooks
+  - `data-layer-sheet`, `data-art-quality`, `data-source-concept-id`
+  - `data-motion-state`, `data-motion-clip`, `data-motion-duration-ms`
+  - per layer `data-motion-beat-count`
+  - SVG `<defs data-layer-sheet-defs="bogle-v2">` gradients for skin, jacket, and dish glow.
+
+This still is not a hand-authored external `.riv` file. It is a stricter web vector layer sheet + motion contract that makes the next Rive/Lottie authoring step lower-risk and testable.
 
 ## Production inline vector rig v1
 

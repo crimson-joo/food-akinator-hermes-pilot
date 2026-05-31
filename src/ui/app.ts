@@ -13,7 +13,7 @@ import {
   cueLabel,
   expressionNames,
 } from './character/characterContract.js';
-import { productionRigLayers, productionStateActing, type ProductionLayerTransform } from './character/characterAssets.js';
+import { animationStateMachine, productionLayerSheet, productionRigLayers, productionStateActing, type ProductionLayerTransform } from './character/characterAssets.js';
 
 const answerOrder: AnswerKey[] = ['yes', 'probably', 'unknown', 'probably_not', 'no'];
 const answerLabel: Record<AnswerKey, string> = {
@@ -122,7 +122,8 @@ function renderOracleHost(cue: string, contract: { silhouette: string; expressio
   const expression = reaction?.expression ?? contract.expression;
   const propMotion = reaction?.motion ?? contract.propMotion;
   const acting = productionStateActing[cue] ?? productionStateActing.ask!;
-  return `<div class="oracle-host" aria-hidden="true" data-character-runtime="${CHARACTER_RUNTIME}" data-rig-layer-contract="${RIG_LAYER_CONTRACT}" data-character-cue="${cue}" data-silhouette="${contract.silhouette}" data-expression="${contract.expression}" data-current-expression="${expression}" data-prop-motion="${contract.propMotion}" data-current-prop-motion="${propMotion}" data-stage-tone="${contract.stageTone}" data-joint-rig="shoulder-elbow-wrist" data-puppet-format="inline-svg-layer-rig" data-emotion="${acting.emotion}" data-confidence-tone="${acting.confidenceTone}" data-thought-process="${escapeAttr(acting.thoughtProcessCopy)}" data-visible-signals="${escapeAttr(acting.visibleSignals.join('|'))}">
+  const clip = animationStateMachine.states[cue as keyof typeof animationStateMachine.states] ?? animationStateMachine.states.ask;
+  return `<div class="oracle-host" aria-hidden="true" data-character-runtime="${CHARACTER_RUNTIME}" data-rig-layer-contract="${RIG_LAYER_CONTRACT}" data-character-cue="${cue}" data-silhouette="${contract.silhouette}" data-expression="${contract.expression}" data-current-expression="${expression}" data-prop-motion="${contract.propMotion}" data-current-prop-motion="${propMotion}" data-stage-tone="${contract.stageTone}" data-joint-rig="shoulder-elbow-wrist" data-puppet-format="inline-svg-layer-rig" data-layer-sheet="${productionLayerSheet.assetKind}" data-art-quality="${productionLayerSheet.qualityBar}" data-source-concept-id="${productionLayerSheet.sourceConceptId}" data-motion-state="${cue}" data-motion-clip="${clip.name}" data-motion-duration-ms="${clip.durationMs}" data-emotion="${acting.emotion}" data-confidence-tone="${acting.confidenceTone}" data-thought-process="${escapeAttr(acting.thoughtProcessCopy)}" data-visible-signals="${escapeAttr(acting.visibleSignals.join('|'))}">
     ${renderMotionCatalog()}
     ${renderProductionPuppet(cue, expression)}
     <span class="oracle-aura"></span>
@@ -142,6 +143,7 @@ function renderMotionCatalog(): string {
 
 function renderProductionPuppet(cue: string, expression: string): string {
   const acting = productionStateActing[cue] ?? productionStateActing.ask!;
+  const clip = animationStateMachine.states[cue as keyof typeof animationStateMachine.states] ?? animationStateMachine.states.ask;
   const activeMouthLayer = mouthLayerFor(expression);
   const transformMap = new Map<string, ProductionLayerTransform>();
   for (const transform of acting.layerTransforms) transformMap.set(transform.layerId, transform);
@@ -151,11 +153,16 @@ function renderProductionPuppet(cue: string, expression: string): string {
       const defaultOpacity = layer.id.startsWith('spark_') || (layer.id.startsWith('mouth_') && layer.id !== activeMouthLayer) ? 0 : 1;
       const transform = transformMap.get(layer.id) ?? { layerId: layer.id, tx: 0, ty: 0, rot: 0, sx: 1, sy: 1, opacity: defaultOpacity };
       const opacity = layer.id.startsWith('mouth_') && layer.id !== activeMouthLayer ? 0 : (transform.opacity ?? defaultOpacity);
-      const style = `--tx:${transform.tx}px;--ty:${transform.ty}px;--rot:${transform.rot}deg;--sx:${transform.sx ?? 1};--sy:${transform.sy ?? 1};--opacity:${opacity};--z:${layer.zIndex};`;
-      return `<g class="puppet-layer puppet-${layer.group}" data-layer-id="${layer.id}" data-layer-group="${layer.group}" data-vector-role="${escapeAttr(layer.vectorRole)}" data-pivot="${escapeAttr(layer.pivot)}" style="${style}">${renderLayerShape(layer.id)}</g>`;
+      const style = `--tx:${transform.tx}px;--ty:${transform.ty}px;--rot:${transform.rot}deg;--sx:${transform.sx ?? 1};--sy:${transform.sy ?? 1};--opacity:${opacity};--z:${layer.zIndex};--motion-duration:${clip.durationMs}ms;--motion-easing:${clip.easing};`;
+      const beatCount = clip.timeline.filter((step) => step.layerId === layer.id).length;
+      return `<g class="puppet-layer puppet-${layer.group}" data-layer-id="${layer.id}" data-layer-group="${layer.group}" data-vector-role="${escapeAttr(layer.vectorRole)}" data-pivot="${escapeAttr(layer.pivot)}" data-motion-beat-count="${beatCount}" style="${style}">${renderLayerShape(layer.id)}</g>`;
     })
     .join('');
-  return `<svg class="production-puppet" viewBox="0 0 320 340" role="img" aria-label="입맛 탐정 보글 파츠 리깅" data-puppet-format="inline-svg-layer-rig" data-puppet-state="${cue}" data-emotion="${acting.emotion}" data-confidence-tone="${acting.confidenceTone}" data-thought-process="${escapeAttr(acting.thoughtProcessCopy)}" data-visible-signals="${escapeAttr(acting.visibleSignals.join('|'))}">${layers}</svg>`;
+  return `<svg class="production-puppet" viewBox="0 0 320 340" role="img" aria-label="입맛 탐정 보글 파츠 리깅" data-puppet-format="inline-svg-layer-rig" data-layer-sheet="${productionLayerSheet.assetKind}" data-art-quality="${productionLayerSheet.qualityBar}" data-source-concept-id="${productionLayerSheet.sourceConceptId}" data-motion-state="${cue}" data-motion-clip="${clip.name}" data-motion-duration-ms="${clip.durationMs}" data-puppet-state="${cue}" data-emotion="${acting.emotion}" data-confidence-tone="${acting.confidenceTone}" data-thought-process="${escapeAttr(acting.thoughtProcessCopy)}" data-visible-signals="${escapeAttr(acting.visibleSignals.join('|'))}">${renderLayerSheetDefs()}${layers}</svg>`;
+}
+
+function renderLayerSheetDefs(): string {
+  return `<defs data-layer-sheet-defs="bogle-v2"><linearGradient id="bogle-skin-warmth" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe5b8"/><stop offset="1" stop-color="#ffc378"/></linearGradient><linearGradient id="bogle-jacket-cream" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf1"/><stop offset="1" stop-color="#ffd18d"/></linearGradient><radialGradient id="bogle-dish-glow"><stop offset="0" stop-color="#fff2a4" stop-opacity=".95"/><stop offset="1" stop-color="#ffc64b" stop-opacity=".34"/></radialGradient></defs>`;
 }
 
 function mouthLayerFor(expression: string): string {
@@ -173,7 +180,7 @@ function renderLayerShape(id: string): string {
     case 'steam_1': return '<path d="M116 78 C96 58,130 44,112 24" fill="none" stroke="#fff3d3" stroke-width="8" stroke-linecap="round"/>';
     case 'steam_2': return '<path d="M160 66 C140 44,178 35,162 14" fill="none" stroke="#fff5db" stroke-width="7" stroke-linecap="round"/>';
     case 'steam_3': return '<path d="M204 80 C226 56,188 46,210 24" fill="none" stroke="#fff0ca" stroke-width="8" stroke-linecap="round"/>';
-    case 'body_torso': return '<path d="M96 198 C112 174,208 174,224 198 L236 292 C208 314,112 314,84 292 Z" fill="#fff4df" stroke="#5c321d" stroke-width="4"/>';
+    case 'body_torso': return '<path d="M96 198 C112 174,208 174,224 198 L236 292 C208 314,112 314,84 292 Z" fill="url(#bogle-jacket-cream)" stroke="#5c321d" stroke-width="4"/>';
     case 'cape_left': return '<path d="M104 194 C64 216,58 270,88 310 C100 276,110 234,128 198 Z" fill="#7b3a2b" stroke="#5c321d" stroke-width="3"/>';
     case 'cape_right': return '<path d="M216 194 C256 216,262 270,232 310 C220 276,210 234,192 198 Z" fill="#7b3a2b" stroke="#5c321d" stroke-width="3"/>';
     case 'jacket_front': return '<path d="M138 190 L160 286 L184 190" fill="none" stroke="#d9b879" stroke-width="5" stroke-linecap="round"/>';
@@ -196,10 +203,10 @@ function renderLayerShape(id: string): string {
     case 'spoon_bowl': return '<ellipse cx="296" cy="185" rx="18" ry="24" fill="#f3bd55" stroke="#5c321d" stroke-width="3" transform="rotate(42 296 185)"/>';
     case 'plate_base': return '<ellipse cx="160" cy="304" rx="72" ry="24" fill="#fff9ed" stroke="#5c321d" stroke-width="4"/>';
     case 'dish_shadow': return '<ellipse cx="160" cy="298" rx="45" ry="12" fill="rgba(84,44,20,.18)"/>';
-    case 'dish_glow': return '<ellipse cx="160" cy="292" rx="44" ry="17" fill="rgba(255,198,75,.55)"/>';
+    case 'dish_glow': return '<ellipse cx="160" cy="292" rx="44" ry="17" fill="url(#bogle-dish-glow)"/>';
     case 'plate_lid': return '<path d="M108 284 C116 246,204 246,212 284 Z" fill="#ffe1a3" stroke="#5c321d" stroke-width="4"/>';
     case 'lid_knob': return '<circle cx="160" cy="250" r="10" fill="#f6b34f" stroke="#5c321d" stroke-width="3"/>';
-    case 'head_base': return '<path d="M102 120 C105 74,215 74,218 120 C222 174,198 196,160 198 C122 196,98 174,102 120 Z" fill="#ffd395" stroke="#5c321d" stroke-width="4"/>';
+    case 'head_base': return '<path d="M102 120 C105 74,215 74,218 120 C222 174,198 196,160 198 C122 196,98 174,102 120 Z" fill="url(#bogle-skin-warmth)" stroke="#5c321d" stroke-width="4"/>';
     case 'ear_left': return '<circle cx="102" cy="139" r="13" fill="#ffc987" stroke="#5c321d" stroke-width="3"/>';
     case 'ear_right': return '<circle cx="218" cy="139" r="13" fill="#ffc987" stroke="#5c321d" stroke-width="3"/>';
     case 'hair_back_mass': return '<path d="M109 104 C124 48,198 48,213 104 C185 91,135 91,109 104 Z" fill="#fff7ec" stroke="#5c321d" stroke-width="4"/>';
@@ -402,7 +409,10 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 .puppet-props, .puppet-arms, .puppet-face, .puppet-body { filter: drop-shadow(0 2px 0 rgba(255,255,255,.12)); }
 .production-puppet + .oracle-aura, .production-puppet ~ .oracle-shadow, .production-puppet ~ .oracle-particle, .production-puppet ~ .oracle-body, .production-puppet ~ .oracle-head, .production-puppet ~ .oracle-arm, .production-puppet ~ .oracle-plate-stage { opacity: .08; }
 [data-character-cue='thinking'] .production-puppet .puppet-atmosphere { animation: thinking-scan 1.2s ease-in-out infinite; }
+[data-character-cue='thinking'] [data-layer-id='head_base'] { animation: puppet-thinking-breath var(--motion-duration) var(--motion-easing) infinite; }
+[data-character-cue='thinking'] [data-layer-id='note_pages'] { animation: puppet-note-scan var(--motion-duration) var(--motion-easing) infinite; }
 [data-character-cue='reveal'] .production-puppet .puppet-atmosphere { animation: particle-drift 1.1s ease-in-out infinite; }
+[data-character-cue='reveal'] [data-layer-id='dish_glow'], [data-character-cue='reveal'] [data-layer-id^='spark_'] { animation: puppet-reveal-spark var(--motion-duration) var(--motion-easing) infinite; }
 [data-character-cue='answerAccepted'] [data-layer-id='note_ink_check'] { animation: note-ink .7s ease both; }
 .oracle-joint { width: 10px; height: 10px; border: 2px solid rgba(101,55,31,.62); border-radius: 999px; background: #ffe7bd; box-shadow: 0 0 0 3px rgba(255,255,255,.28); }
 .oracle-joint.shoulder.left { left: 62px; top: 8px; } .oracle-joint.elbow.left { left: 35px; top: 28px; } .oracle-joint.wrist.left { left: 4px; top: 44px; }
@@ -484,6 +494,9 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 @keyframes narrow-away { 0%,100% { transform: translate(0,0) rotate(0); } 50% { transform: translate(14px,2px) rotate(22deg); } }
 @keyframes prune-swipe { 0% { transform: translate(0,0) rotate(0); } 45% { transform: translate(-34px,8px) rotate(38deg); } 100% { transform: translate(10px,2px) rotate(-10deg); } }
 @keyframes thinking-scan { 0%,100% { filter: saturate(.92); } 50% { filter: saturate(1.16) drop-shadow(0 0 18px rgba(255,196,72,.30)); } }
+@keyframes puppet-thinking-breath { 0%,100% { transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(var(--sx), var(--sy)); } 50% { transform: translate(calc(var(--tx) - 1px), calc(var(--ty) - 4px)) rotate(calc(var(--rot) + 1deg)) scale(var(--sx), var(--sy)); } }
+@keyframes puppet-note-scan { 0%,100% { filter: brightness(1); } 48% { filter: brightness(1.12) drop-shadow(0 0 10px rgba(255,211,92,.42)); } }
+@keyframes puppet-reveal-spark { 0% { opacity: 0; transform: translate(var(--tx), calc(var(--ty) + 8px)) rotate(var(--rot)) scale(.75); } 52% { opacity: 1; transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(1.18); } 100% { opacity: var(--opacity); transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(var(--sx), var(--sy)); } }
 @keyframes confidence-rise { 0% { transform: translateY(0) scale(1); } 100% { transform: translateY(-10px) scale(1.04); } }
 @keyframes oops-recoil { 0% { transform: translateX(0) rotate(0); } 55% { transform: translateX(-16px) rotate(-7deg); } 100% { transform: translateX(-8px) rotate(-4deg); } }
 @keyframes recovery-reset { 0% { transform: rotate(-5deg); } 100% { transform: rotate(.5deg); } }
