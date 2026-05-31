@@ -161,3 +161,35 @@ Pass:
 - 최소 `idle/ask/answerAccepted/thinking/confident/surprised/recover/reveal`이 서로 다른 자세·소품·표정·카피로 구분된다.
 - reduced-motion에서도 상태 의미가 사라지지 않는다.
 - 사용자 visible text에는 `score`, `probability`, `top1`, `top3`, `attribute`, `clue:`, raw `q-*` id가 없다.
+
+## Premium Oracle Theater v2 contract
+
+사용자 피드백상 기존 procedural `bogle-*` mascot foundation은 “저급한 디자인/모션”으로 간주한다. 이후 구현은 단순 색상/그림자 polish가 아니라 새 visual-system 계약을 유지해야 한다.
+
+Required DOM contract:
+
+- `data-visual-system="culinary-oracle-theater-v2"`
+- `data-character-tier="premium-oracle-host"`
+- `data-motion-system="layered-oracle-rig"`
+- rendered path must not include old `hero-stage`, `bogle-figure`, `bogle-hat`, `bogle-face`, `bogle-arm`, `bogle-ladle` foundation.
+
+Required layered rig:
+
+- `oracle-theater` stage with cinematic backdrop and premium warm-table lighting.
+- `oracle-host` with aura, particles, shadow, body/head, brows/eyes/mouth, spoon arm, note arm, note card, plate stage, dish glow, lid.
+- Motion tokens/keyframes: `--motion-snap`, `--motion-suspense`, `aura-breathe`, `particle-drift`, `note-ink`, `oracle-blink`.
+
+State contract:
+
+| State | silhouette | expression | prop motion | stage tone |
+|---|---|---|---|---|
+| idle | `soft-idle` | `warm-blink` | `steam-orbit` | `warm-table` |
+| ask | `lean-forward` | `curious-focus` | `spoon-point` | `question-spotlight` |
+| answerAccepted | `note-capture` | `focused-smile` | `ink-check` | `clue-captured` |
+| thinking | `analysis-huddle` | `narrow-thinking` | `steam-spiral` | `suspense` |
+| confident | `reveal-ready` | `spark-confidence` | `plate-present` | `golden-reveal` |
+| surprised | `recoil-reset` | `oops-open` | `spoon-drop` | `correction` |
+| recover | `steady-reframe` | `calm-detective` | `note-reopen` | `recovery-focus` |
+| reveal | `celebration-open` | `bright-payoff` | `lid-lift` | `celebration` |
+
+Current limitation: v2 is a high-fidelity CSS/DOM layered rig, not a true Rive/Lottie asset pipeline. If the design bar rises again, next pass should generate or commission canonical character art and rigged animation assets instead of adding more CSS polish.
