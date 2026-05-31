@@ -1,16 +1,16 @@
 # Graph Report - food-akinator-hermes-pilot  (2026-05-31)
 
 ## Corpus Check
-- 37 files · ~22,617 words
+- 37 files · ~24,232 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 482 nodes · 578 edges · 40 communities (38 shown, 2 thin omitted)
+- 502 nodes · 602 edges · 40 communities (38 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bb345f77`
+- Built from commit: `70f79288`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,8 +64,8 @@
 6. `buildNextSession()` - 10 edges
 7. `Candidate` - 10 edges
 8. `QA — Zero-to-One Acceptance` - 10 edges
-9. `Akinator Direct Play Synthesis — Builder Handoff` - 9 edges
-10. `Akinator Direct Play Blocker + Manual Observation Protocol` - 9 edges
+9. `Design — Zero-to-One Direction` - 10 edges
+10. `Akinator Direct Play Synthesis — Builder Handoff` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `answerCurrent()` --calls--> `submitAnswer()`  [EXTRACTED]
@@ -82,28 +82,28 @@
 ## Communities (40 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.07
-Nodes (39): EngineSession, accepted, afterAnswer, afterThinking, answerKeys, answerLabels, buttonMatches, fakeGuessingSession() (+31 more)
+Cohesion: 0.06
+Nodes (45): ANSWER_VALUES, AnswerKey, AnsweredQuestion, CandidateScore, scoreCandidates(), FOLLOWUP_ROLES, getActiveCandidates(), getEligibleQuestions() (+37 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.08
-Nodes (29): ANSWER_VALUES, AnswerValue, asRecord(), Candidate, LEVELS, Question, QUESTION_AXES, QUESTION_ROLES (+21 more)
+Nodes (30): AnswerValue, asRecord(), Candidate, LEVELS, Question, QUESTION_AXES, QUESTION_ROLES, QuestionAxis (+22 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.1
-Nodes (30): AnswerKey, AnsweredQuestion, CandidateScore, scoreCandidates(), ANSWER_OPTIONS, answerOptions(), askingSession(), BuildInput (+22 more)
+Cohesion: 0.08
+Nodes (27): startSession(), submitAnswer(), submitGuessFeedback(), answerCurrent(), playScenario(), { session, askedQuestionIds }, { session, askedQuestionIds, rejectedFirstGuess, recoveryQuestionId }, answerCurrent() (+19 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.1
-Nodes (23): FOLLOWUP_ROLES, getActiveCandidates(), getEligibleQuestions(), normalizeWeights(), policyBonus(), QuestionSelection, rankNextQuestions(), round() (+15 more)
+Cohesion: 0.07
+Nodes (30): accepted, afterAnswer, afterThinking, answerKeys, answerLabels, askingSession, buttonMatches, cases (+22 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.08
-Nodes (23): 판정, 캐릭터 역할, 진행감 표현, 공통 게임 루프, 1. Broad split, 2. Family/domain lock-in, 질문 전략 패턴, 3. Signature discriminator (+15 more)
+Cohesion: 0.13
+Nodes (22): answerLabel, answerOrder, cueContract, cueFor(), cueLabel, demoCandidates, demoDataset, demoQuestions (+14 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.09
-Nodes (19): answerOptions, asked, asking, candidates, confident, coreCandidates, coreQuestions, data (+11 more)
+Cohesion: 0.08
+Nodes (23): 판정, 캐릭터 역할, 진행감 표현, 공통 게임 루프, 1. Broad split, 2. Family/domain lock-in, 질문 전략 패턴, 3. Signature discriminator (+15 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.1
@@ -115,19 +115,19 @@ Nodes (17): 현재 판정, 시도한 경로, 1. Headless/browser 공식 웹, 2. 
 
 ### Community 8 - "Community 8"
 Cohesion: 0.12
-Nodes (15): 핵심 인사이트, 주요 맥락, 배달, 외식, 야식, 혼밥, 데이트, 추천 제품안 (+7 more)
+Nodes (15): 추천 캐릭터 방향, 후보 비교, 최종 추천, 5-answer rhythm, A. 입맛 탐정 “맛정이”, B. 보글 셰프, Builder handoff, C. 입맛 레이더 “냠테나” (+7 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.12
-Nodes (15): 추천 캐릭터 방향, 후보 비교, 최종 추천, 5-answer rhythm, A. 입맛 탐정 “맛정이”, B. 보글 셰프, Builder handoff, C. 입맛 레이더 “냠테나” (+7 more)
+Nodes (15): 원칙, Adaptive selector, Answer semantics, Architecture — Zero-to-One, Builder gate, Candidate schema, Character cue contract, code:ts (type Candidate = {) (+7 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.12
-Nodes (15): 원칙, Adaptive selector, Answer semantics, Architecture — Zero-to-One, Builder gate, Candidate schema, Character cue contract, code:ts (type Candidate = {) (+7 more)
+Nodes (15): 핵심 인사이트, 주요 맥락, 배달, 외식, 야식, 혼밥, 데이트, 추천 제품안 (+7 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.17
-Nodes (12): 7.1 세션 시작, 7.2 답변 제출, 7.3 추측 피드백, 7. 엔진 API 초안, code:http (POST /sessions), code:json ({), code:http (POST /sessions/{id}/answers), code:json ({) (+4 more)
+Cohesion: 0.13
+Nodes (14): 디자인 방향, Canonical character/brand direction — 보글 탐정의 작은 식탁, Character requirement, Current minimal UI scaffold, Design — Zero-to-One Direction, Host identity, Non-copy boundary, QA criteria for this direction (+6 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.17
@@ -135,19 +135,19 @@ Nodes (11): 핵심 판정, Browser QA, Data tests, Direct-play derived QA, Engin
 
 ### Community 13 - "Community 13"
 Cohesion: 0.17
-Nodes (11): 금지, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 현재 release 상태, Release automation contract (+3 more)
+Nodes (12): 7.1 세션 시작, 7.2 답변 제출, 7.3 추측 피드백, 7. 엔진 API 초안, code:http (POST /sessions), code:json ({), code:http (POST /sessions/{id}/answers), code:json ({) (+4 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.17
 Nodes (11): 회의 판정, 합의된 방향, 기존 실패와의 단절, 다음 agent graph, 현재 next step, T1 Researcher — 실제 Akinator 플레이 로그 보강 ✅, T2 Designer — product feel/design handoff, T3 Architect — engine/data architecture (+3 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.2
-Nodes (10): 4.1 후보 확률 정규화, 4.2 Expected information gain, 4.3 작은 도메인에서의 간단 대안, 4. Adaptive next-question selection, code:txt (IG(q) = H(C) - Σ_a P(a | q) * H(C | answer=a, q)), code:txt (questionScore(q) = IG(q)), code:txt (mean = Σ P(c) * expected(c,q)), code:txt (P(c) = exp(logScore(c) / T) / Σ exp(logScore(i) / T)) (+2 more)
+Cohesion: 0.17
+Nodes (11): 금지, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 배포 완료 정의, 현재 release 상태, Release automation contract (+3 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.2
-Nodes (9): 디자인 방향, Character requirement, Current minimal UI scaffold, Design — Zero-to-One Direction, Non-copy boundary, Reference principles from Akinator, Reference principles from direct play, Screen/state inventory (+1 more)
+Nodes (10): 4.1 후보 확률 정규화, 4.2 Expected information gain, 4.3 작은 도메인에서의 간단 대안, 4. Adaptive next-question selection, code:txt (IG(q) = H(C) - Σ_a P(a | q) * H(C | answer=a, q)), code:txt (questionScore(q) = IG(q)), code:txt (mean = Σ P(c) * expected(c,q)), code:txt (P(c) = exp(logScore(c) / T) / Σ exp(logScore(i) / T)) (+2 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.2
@@ -167,7 +167,7 @@ Nodes (7): Akinator Direct Play Log — Harry Potter, Entry flow observations, G
 
 ### Community 21 - "Community 21"
 Cohesion: 0.29
-Nodes (6): 직접 플레이 상태, 관찰된 핵심 원리, Akinator Reference Observations, Food 서비스 적용 원칙, Non-copy boundary, 추가 리서치 TODO
+Nodes (7): 3.1 점수 갱신 방식 A: soft distance scoring, MVP 추천, 3.2 점수 갱신 방식 B: naive Bayes, 3. 5-answer weight semantics, code:txt (logScore(c) = log(prior(c)) + Σ answered q [ weight(q, answe), code:txt (similarity(a, e) = 1 - abs(a - e)        // 범위 대략 -1~1), code:txt (similarity(a, e) = - ((a - e)^2) / (2σ²)), code:txt (answerConfidence = abs(answerValue)      // yes/no는 1, proba)
 
 ### Community 22 - "Community 22"
 Cohesion: 0.29
@@ -175,31 +175,31 @@ Nodes (7): 8. 캐릭터/모션 파이프라인 선택지, 8.1 Rive, 8.2 Spine, 8
 
 ### Community 23 - "Community 23"
 Cohesion: 0.29
-Nodes (7): 3.1 점수 갱신 방식 A: soft distance scoring, MVP 추천, 3.2 점수 갱신 방식 B: naive Bayes, 3. 5-answer weight semantics, code:txt (logScore(c) = log(prior(c)) + Σ answered q [ weight(q, answe), code:txt (similarity(a, e) = 1 - abs(a - e)        // 범위 대략 -1~1), code:txt (similarity(a, e) = - ((a - e)^2) / (2σ²)), code:txt (answerConfidence = abs(answerValue)      // yes/no는 1, proba)
+Nodes (6): Akinator Direct Play Log — Pikachu, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 24 - "Community 24"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Heung-min Son, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Naruto Uzumaki, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 25 - "Community 25"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Elon Musk, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Heung-min Son, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 26 - "Community 26"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Naruto Uzumaki, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): Akinator Direct Play Log — Elon Musk, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
 
 ### Community 27 - "Community 27"
 Cohesion: 0.29
-Nodes (6): Akinator Direct Play Log — Pikachu, Gate status, Interaction insights, Product implications for Korean food Akinator, Question/answer trace, Run metadata
+Nodes (6): 직접 플레이 상태, 관찰된 핵심 원리, Akinator Reference Observations, Food 서비스 적용 원칙, Non-copy boundary, 추가 리서치 TODO
 
 ### Community 28 - "Community 28"
 Cohesion: 0.33
-Nodes (6): 11. 주요 리스크와 대응, 리스크 1: 질문 데이터 품질 부족, 리스크 2: 사용자가 속성을 모름, 리스크 3: 너무 빨리 정답을 찍어 틀림, 리스크 4: 캐릭터 제작 병목, 리스크 5: 애니메이션이 추론 상태와 어긋남
+Nodes (6): 6.1 Suppression 데이터, 6.2 Recovery strategy, 6.3 Learning hook, 6. Wrong guess suppression/recovery, code:ts (type SessionState = {), code:json ({)
 
 ### Community 29 - "Community 29"
 Cohesion: 0.33
-Nodes (6): 6.1 Suppression 데이터, 6.2 Recovery strategy, 6.3 Learning hook, 6. Wrong guess suppression/recovery, code:ts (type SessionState = {), code:json ({)
+Nodes (6): 11. 주요 리스크와 대응, 리스크 1: 질문 데이터 품질 부족, 리스크 2: 사용자가 속성을 모름, 리스크 3: 너무 빨리 정답을 찍어 틀림, 리스크 4: 캐릭터 제작 병목, 리스크 5: 애니메이션이 추론 상태와 어긋남
 
 ### Community 30 - "Community 30"
 Cohesion: 0.47
@@ -210,44 +210,44 @@ Cohesion: 0.33
 Nodes (5): 현재 상태, 목표, 원칙, 문서, Food Akinator — Zero-to-One Research Foundation
 
 ### Community 32 - "Community 32"
-Cohesion: 0.4
-Nodes (5): 12.1 데이터 검증 테스트, 12.2 추론 엔진 테스트, 12.3 UX/캐릭터 테스트, 12.4 제품 품질 테스트, 12. Acceptance tests
+Cohesion: 0.33
+Nodes (5): 2026-05-29 — Adaptive selector pilot local PASS, 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local PASS, 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local progress, 2026-05-31 — Character/brand interaction slice local PASS, Changelog
 
 ### Community 33 - "Community 33"
 Cohesion: 0.4
-Nodes (5): 9.1 1순위: Rive state machine, 9.2 2순위: Lottie clips + light state controller, 9.3 Fallback: layered raster, 9. 추천 MVP 캐릭터 파이프라인, code:ts (function cueFromEngine(state, confidence, lastAnswer, wrongG)
+Nodes (5): 2. 도메인 데이터 모델, 2.1 Candidate schema: 음식 후보, 2.2 Question bank schema, code:ts (type Candidate = {), code:ts (type Question = {)
 
 ### Community 34 - "Community 34"
 Cohesion: 0.4
-Nodes (5): 10.1 클라이언트, 10.2 서버 또는 로컬 엔진, 10.3 데이터 파일 구조 예, 10. 전체 MVP 아키텍처, code:txt (/data)
+Nodes (5): 9.1 1순위: Rive state machine, 9.2 2순위: Lottie clips + light state controller, 9.3 Fallback: layered raster, 9. 추천 MVP 캐릭터 파이프라인, code:ts (function cueFromEngine(state, confidence, lastAnswer, wrongG)
 
 ### Community 35 - "Community 35"
 Cohesion: 0.4
-Nodes (5): 2. 도메인 데이터 모델, 2.1 Candidate schema: 음식 후보, 2.2 Question bank schema, code:ts (type Candidate = {), code:ts (type Question = {)
+Nodes (5): 10.1 클라이언트, 10.2 서버 또는 로컬 엔진, 10.3 데이터 파일 구조 예, 10. 전체 MVP 아키텍처, code:txt (/data)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.4
-Nodes (4): 2026-05-29 — Adaptive selector pilot local PASS, 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local PASS, 2026-05-30 — Threshold / golden paths / minimal UI scaffold pilot local progress, Changelog
+Nodes (5): 12.1 데이터 검증 테스트, 12.2 추론 엔진 테스트, 12.3 UX/캐릭터 테스트, 12.4 제품 품질 테스트, 12. Acceptance tests
 
 ## Knowledge Gaps
-- **305 isolated node(s):** `useExistingServer`, `isExplicitHermesRun`, `answerOptions`, `coreQuestions`, `coreCandidates` (+300 more)
+- **322 isolated node(s):** `useExistingServer`, `isExplicitHermesRun`, `answerOptions`, `coreQuestions`, `coreCandidates` (+317 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안` connect `Community 19` to `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 11`, `Community 15`, `Community 22`, `Community 23`, `Community 28`, `Community 29`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `Candidate` connect `Community 1` to `Community 0`, `Community 2`, `Community 3`, `Community 5`?**
+- **Why does `작은 음식 도메인 Akinator-like 추론 엔진 + 캐릭터/모션 파이프라인 제안` connect `Community 19` to `Community 33`, `Community 34`, `Community 35`, `Community 36`, `Community 13`, `Community 16`, `Community 21`, `Community 22`, `Community 28`, `Community 29`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `Candidate` connect `Community 1` to `Community 0`, `Community 2`, `Community 4`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `Question` connect `Community 1` to `Community 0`, `Community 2`, `Community 3`, `Community 5`?**
+- **Why does `Question` connect `Community 1` to `Community 0`, `Community 2`, `Community 4`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
 - **What connects `useExistingServer`, `isExplicitHermesRun`, `answerOptions` to the rest of the system?**
-  _305 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _322 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._

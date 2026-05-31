@@ -13,12 +13,24 @@ const answerLabel: Record<AnswerKey, string> = {
 const cueLabel: Record<string, string> = {
   idle: '대기 중 · 메뉴를 떠올리는 시간',
   ask: '질문 중 · 단서를 건네는 시간',
+  answerAccepted: '단서 기록 · 메모장에 체크하는 시간',
   thinking: '추리 중',
   confident: '감이 왔어요',
   surprised: '놀람 · 성급함을 인정하는 시간',
   recover: '회복 중 · 후보를 다시 좁히는 시간',
   reveal: '공개 · 접시를 여는 시간',
   exhausted: '단서 부족 · 다시 시작하는 시간',
+};
+
+const cueContract: Record<string, { pose: string; face: string; prop: string }> = {
+  idle: { pose: 'breathing', face: 'soft-blink', prop: 'steam' },
+  ask: { pose: 'question-lean', face: 'curious', prop: 'ladle-point' },
+  answerAccepted: { pose: 'note-check', face: 'focused', prop: 'notebook-check' },
+  thinking: { pose: 'notebook-forward', face: 'narrow-eyes', prop: 'steam-pulse' },
+  confident: { pose: 'plate-forward', face: 'spark', prop: 'ladle-plate' },
+  surprised: { pose: 'recoil', face: 'o-mouth', prop: 'ladle-down' },
+  recover: { pose: 'steady-reset', face: 'calm', prop: 'notebook-open' },
+  reveal: { pose: 'celebrate', face: 'smile', prop: 'plate-lift' },
 };
 
 export type UiPhase = 'entry' | 'asking' | 'answerAccepted' | 'thinking' | 'guessing' | 'revealed' | 'recovering' | 'exhausted' | 'error';
@@ -97,6 +109,7 @@ export function renderApp(model: UiModel): string {
   const session = model.session;
   const uiState = model.phase;
   const cue = cueFor(model);
+  const contract = cueContract[cue] ?? cueContract.ask!;
   const attrs = [
     `class="app-shell"`,
     `data-ui-state="${uiState}"`,
@@ -110,17 +123,19 @@ export function renderApp(model: UiModel): string {
   return `${styleBlock()}
 <main ${attrs.join(' ')}>
   <section class="hero-stage" aria-label="입맛 탐정 보글 상태" data-testid="character-stage" data-character-cue="${cue}">
-    <div class="bogle-figure" aria-hidden="true">
+    <div class="bogle-figure" aria-hidden="true" data-bogle-pose="${contract.pose}" data-bogle-face="${contract.face}" data-bogle-prop="${contract.prop}">
       <span class="bogle-hat"></span>
       <span class="bogle-face"><span class="bogle-eye left"></span><span class="bogle-eye right"></span><span class="bogle-mouth"></span></span>
-      <span class="bogle-ladle"></span>
-      <span class="bogle-notebook"></span>
-      <span class="bogle-plate"></span>
+      <span class="bogle-arm ladle-arm"><span class="bogle-ladle"></span></span>
+      <span class="bogle-arm notebook-arm"><span class="bogle-notebook"><span class="bogle-note-mark">✓</span></span></span>
+      <span class="bogle-plate"><span class="plate-lid"></span></span>
       <span class="steam one"></span><span class="steam two"></span><span class="steam three"></span>
     </div>
-    <p data-testid="character-state-label" class="state-label">상태: ${cue} · ${escapeHtml(cueLabel[cue] ?? '상태 확인 중')}</p>
+    <p data-testid="character-state-label" class="state-label">보글 상태 · ${escapeHtml(cueLabel[cue] ?? '상태 확인 중')}</p>
+    <span class="reduced-motion-note" data-reduced-motion-note>움직임 없이도 단서 소품이 바뀌어요.</span>
   </section>
   <section class="dialogue-card" aria-live="polite">
+    ${renderClueProgress(session)}
     ${renderPanel(model)}
   </section>
 </main>`;
@@ -128,6 +143,7 @@ export function renderApp(model: UiModel): string {
 
 function cueFor(model: UiModel): string {
   if (model.phase === 'entry') return 'idle';
+  if (model.phase === 'answerAccepted') return 'answerAccepted';
   if (model.phase === 'thinking') return 'thinking';
   if (model.phase === 'guessing') return 'confident';
   if (model.phase === 'revealed') return 'reveal';
@@ -226,10 +242,29 @@ function renderRejectedChips(names: string[] = []): string {
   return `<div class="rejected-list">${names.map((name) => `<span class="rejected-chip">제외됨: ${escapeHtml(name)}</span>`).join('')}</div>`;
 }
 
+function renderClueProgress(session?: EngineSession): string {
+  if (!session) return '';
+  const tone = progressTone(session);
+  const label = progressCopy(session);
+  const filledDots = tone === 'confident' ? 4 : tone === 'mid' ? 3 : 2;
+  const dots = Array.from({ length: 4 }, (_, index) => `<span class="clue-dot${index < filledDots ? ' active' : ''}" aria-hidden="true"></span>`).join('');
+  return `<div class="clue-progress" aria-label="단서 진행" data-progress-tone="${tone}">
+    <span class="clue-progress-label">${label}</span>
+    <span class="clue-dots">${dots}</span>
+  </div>`;
+}
+
+function progressTone(session?: EngineSession): 'early' | 'mid' | 'confident' {
+  if (!session) return 'early';
+  if (session.guess || session.turn >= 5) return 'confident';
+  if (session.turn >= 3) return 'mid';
+  return 'early';
+}
+
 function progressCopy(session?: EngineSession): string {
-  if (!session) return '조금 더 물어볼게요.';
-  if (session.turn >= 5) return '감이 왔어요.';
-  if (session.turn >= 3) return '후보가 둘로 갈리네요.';
+  const tone = progressTone(session);
+  if (tone === 'confident') return '감이 왔어요.';
+  if (tone === 'mid') return '후보가 둘로 갈리네요.';
   return '큰 갈래는 잡혔어요.';
 }
 
@@ -243,7 +278,7 @@ function escapeAttr(value: string): string {
 
 function styleBlock(): string {
   return `<style>
-:root { --fa-bg: #fff7ea; --fa-surface: #ffffff; --fa-surface-warm: #fff1d8; --fa-ink: #2b2118; --fa-muted: #6f5948; --fa-border: #ead7bd; --fa-accent: #d9422b; --fa-accent-strong: #ad2d1c; --fa-focus: #1d6fd8; --fa-radius-lg: 28px; --fa-radius-pill: 999px; --fa-shadow-card: 0 1px 0 rgba(43, 33, 24, 0.05), 0 10px 30px rgba(80, 48, 20, 0.10); --fa-shadow-stage: 0 18px 50px rgba(115, 66, 22, 0.16); font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', system-ui, sans-serif; }
+:root { --fa-bg: #fff7ea; --fa-surface: #ffffff; --fa-surface-warm: #fff1d8; --fa-ink: #2b2118; --fa-muted: #6f5948; --fa-border: #ead7bd; --fa-accent: #d9422b; --fa-accent-strong: #ad2d1c; --fa-success: #2f7d46; --fa-focus: #1d6fd8; --fa-radius-lg: 28px; --fa-radius-pill: 999px; --fa-shadow-card: 0 1px 0 rgba(43, 33, 24, 0.05), 0 10px 30px rgba(80, 48, 20, 0.10); --fa-shadow-stage: 0 18px 50px rgba(115, 66, 22, 0.16); font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', system-ui, sans-serif; }
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; background: radial-gradient(circle at 20% 10%, #ffe7bb 0, transparent 30%), var(--fa-bg); color: var(--fa-ink); }
 .app-shell { min-height: 100vh; width: min(1080px, 100%); margin: 0 auto; padding: 32px 18px; display: grid; grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr); gap: 28px; align-items: center; }
@@ -265,26 +300,44 @@ button:disabled { cursor: not-allowed; opacity: 0.64; }
 .reason-list { display: grid; gap: 8px; padding-left: 22px; font-weight: 700; }
 .rejected-list { margin: 14px 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .rejected-chip { border: 1px solid #e5b6ac; background: #fff1ee; color: #8d2d20; border-radius: var(--fa-radius-pill); padding: 8px 12px; font-weight: 800; }
-.bogle-figure { position: relative; width: 210px; height: 210px; border-radius: 50% 50% 45% 45%; background: linear-gradient(#ffd98f, #ffb86a); transform-origin: bottom center; transition: transform 220ms ease, filter 220ms ease; }
-.bogle-face { position: absolute; inset: 64px 45px 44px; border-radius: 48% 48% 42% 42%; background: #fff4dc; border: 3px solid #75452a; }
+.clue-progress { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; padding: 10px 12px; border: 1px solid var(--fa-border); border-radius: 18px; background: var(--fa-surface-warm); color: var(--fa-muted); font-weight: 800; }
+.clue-dots { display: inline-flex; gap: 6px; } .clue-dot { width: 10px; height: 10px; border-radius: 999px; background: #ead7bd; } .clue-dot.active { background: var(--fa-accent); }
+.bogle-figure { position: relative; width: 210px; height: 210px; border-radius: 50% 50% 45% 45%; background: linear-gradient(#ffd98f, #ffb86a); transform-origin: bottom center; transition: transform 220ms ease, filter 220ms ease, background 220ms ease; animation: bogle-breathe 2.8s ease-in-out infinite; }
+.bogle-face { position: absolute; inset: 64px 45px 44px; border-radius: 48% 48% 42% 42%; background: #fff4dc; border: 3px solid #75452a; transition: transform 220ms ease; }
 .bogle-hat { position: absolute; left: 50px; top: 16px; width: 110px; height: 54px; border-radius: 50% 50% 22px 22px; background: #fff; border: 3px solid #75452a; }
-.bogle-eye { position: absolute; top: 34px; width: 12px; height: 18px; border-radius: 50%; background: #2b2118; } .bogle-eye.left { left: 36px; } .bogle-eye.right { right: 36px; }
-.bogle-mouth { position: absolute; left: 50%; bottom: 22px; width: 34px; height: 14px; transform: translateX(-50%); border-bottom: 4px solid #2b2118; border-radius: 0 0 999px 999px; }
-.bogle-ladle, .bogle-notebook, .bogle-plate { position: absolute; transition: transform 220ms ease, opacity 220ms ease; }
-.bogle-ladle { right: -10px; top: 88px; width: 54px; height: 12px; background: #75452a; border-radius: 999px; transform: rotate(-28deg); }
-.bogle-notebook { left: -10px; top: 118px; width: 52px; height: 42px; border-radius: 8px; background: #fff; border: 3px solid #75452a; }
-.bogle-plate { left: 65px; bottom: -8px; width: 88px; height: 28px; border-radius: 50%; background: #fff; border: 3px solid #75452a; opacity: 0.25; }
+.bogle-eye { position: absolute; top: 34px; width: 12px; height: 18px; border-radius: 50%; background: #2b2118; transition: height 160ms ease, transform 160ms ease; } .bogle-eye.left { left: 36px; } .bogle-eye.right { right: 36px; }
+.bogle-mouth { position: absolute; left: 50%; bottom: 22px; width: 34px; height: 14px; transform: translateX(-50%); border-bottom: 4px solid #2b2118; border-radius: 0 0 999px 999px; transition: height 160ms ease, border 160ms ease; }
+.bogle-arm, .bogle-ladle, .bogle-notebook, .bogle-plate, .plate-lid { position: absolute; transition: transform 220ms ease, opacity 220ms ease, background 220ms ease; }
+.ladle-arm { right: -14px; top: 82px; width: 70px; height: 42px; transform-origin: 4px 22px; } .notebook-arm { left: -18px; top: 112px; width: 68px; height: 58px; transform-origin: 58px 18px; }
+.bogle-ladle { right: 0; top: 12px; width: 58px; height: 12px; background: #75452a; border-radius: 999px; transform: rotate(-28deg); } .bogle-ladle::after { content: ''; position: absolute; right: -8px; top: -8px; width: 24px; height: 24px; border: 4px solid #75452a; border-radius: 50%; background: #fff1d8; }
+.bogle-notebook { left: 0; top: 0; width: 52px; height: 42px; border-radius: 8px; background: #fff; border: 3px solid #75452a; } .bogle-note-mark { position: absolute; right: 6px; top: 6px; color: var(--fa-success); font-weight: 900; opacity: 0; }
+.bogle-plate { left: 65px; bottom: -8px; width: 88px; height: 28px; border-radius: 50%; background: #fff; border: 3px solid #75452a; opacity: 0.35; } .plate-lid { left: 18px; bottom: 10px; width: 52px; height: 24px; border-radius: 999px 999px 8px 8px; background: #fff1d8; border: 3px solid #75452a; opacity: 0.7; }
 .steam { position: absolute; top: -8px; width: 8px; height: 30px; border-radius: 999px; background: rgba(255,255,255,.8); animation: steam 1.8s ease-in-out infinite; } .steam.one { left: 75px; } .steam.two { left: 101px; animation-delay: .25s; } .steam.three { left: 127px; animation-delay: .5s; }
+[data-character-cue='idle'] .bogle-figure { transform: translateY(0) scale(1); }
+[data-character-cue='idle'] .steam { opacity: .8; }
 [data-character-cue='ask'] .bogle-figure { transform: translateY(-4px) rotate(-2deg); }
-[data-character-cue='thinking'] .bogle-figure { transform: rotate(2deg); filter: saturate(0.95); } [data-character-cue='thinking'] .bogle-notebook { transform: translate(10px, -8px) rotate(-8deg); }
+[data-character-cue='ask'] .ladle-arm { transform: translate(8px, -8px) rotate(-18deg); }
+[data-character-cue='answerAccepted'] .bogle-figure { transform: translateY(-2px) rotate(1deg); }
+[data-character-cue='answerAccepted'] .bogle-note-mark { opacity: 1; transform: scale(1.18); }
+[data-character-cue='thinking'] .bogle-figure { transform: rotate(2deg); filter: saturate(0.95); }
+[data-character-cue='thinking'] .notebook-arm { transform: translate(18px, -12px) rotate(-8deg); }
 [data-character-cue='confident'] .bogle-figure { transform: scale(1.04); filter: drop-shadow(0 0 18px rgba(230,75,47,.22)); }
-[data-character-cue='surprised'] .bogle-figure { transform: translateX(-8px) rotate(-4deg); } [data-character-cue='surprised'] .bogle-mouth { height: 22px; border: 4px solid #2b2118; border-radius: 50%; }
-[data-character-cue='recover'] .bogle-notebook { transform: translate(8px, -6px); opacity: 1; }
+[data-character-cue='confident'] .bogle-plate { opacity: .85; transform: translateY(-6px); }
+[data-character-cue='surprised'] .bogle-figure { transform: translateX(-8px) rotate(-4deg); }
+[data-character-cue='surprised'] .bogle-mouth { height: 22px; border: 4px solid #2b2118; border-radius: 50%; }
+[data-character-cue='recover'] .notebook-arm { transform: translate(12px, -6px); opacity: 1; }
+[data-character-cue='recover'] .bogle-figure { filter: saturate(.9); background: linear-gradient(#ffe0a6, #ffc27a); }
 [data-character-cue='reveal'] .bogle-plate { opacity: 1; transform: translateY(-10px) scale(1.08); }
+[data-character-cue='reveal'] .plate-lid { transform: translateY(-28px) rotate(-12deg); opacity: 1; }
 .state-label { margin: 18px 0 0; font-weight: 800; color: var(--fa-muted); }
+.reduced-motion-note { margin-top: 8px; font-size: .78rem; color: var(--fa-muted); text-align: center; }
 @keyframes steam { 0%, 100% { opacity: .25; transform: translateY(4px); } 50% { opacity: .85; transform: translateY(-8px); } }
-@media (max-width: 760px) { .app-shell { grid-template-columns: 1fr; padding: 18px 14px; } .hero-stage { min-height: 30vh; } .answer-grid { grid-template-columns: 1fr; } }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms; animation-iteration-count: 1; transition-duration: 0.01ms; scroll-behavior: auto; } }
+@keyframes bogle-breathe {
+  0%, 100% { box-shadow: 0 0 0 rgba(255,255,255,0); }
+  50% { box-shadow: 0 8px 18px rgba(117,69,42,.08); }
+}
+@media (max-width: 760px) { .app-shell { grid-template-columns: 1fr; padding: 18px 14px; } .hero-stage { min-height: 30vh; } .answer-grid { grid-template-columns: 1fr; } .clue-progress { align-items: flex-start; flex-direction: column; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms; animation-iteration-count: 1; transition-duration: 0.01ms; scroll-behavior: auto; } [data-reduced-motion-note] { display: inline; } .bogle-figure { animation: none; } }
 </style>`;
 }
 
