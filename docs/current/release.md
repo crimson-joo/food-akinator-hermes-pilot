@@ -2,7 +2,7 @@
 
 ## 현재 release 상태
 
-- 현재 public URL은 controlled demo / alpha로만 취급한다. Full public production launch는 PR #22 autoplan 기준 production-blocked 상태이며, Rive/Lottie/equivalent runtime, Akinator-like UX 강화, perceptual/screenshot QA, production review/QA gates 전에는 launch 완료로 선언하지 않는다.
+- 현재 public URL은 controlled demo / alpha로만 취급한다. Full public production launch는 PR #22 autoplan 기준 production-blocked 상태였으며, `feat/lottie-authored-asset`에서 repo-local authored-equivalent Lottie runtime 후보가 Reviewer/QA gate를 통과했다. 단, main 배포/live canary 전에는 public URL에 반영됐다고 선언하지 않고, 최종 production launch는 release/deploy/live canary와 남은 Akinator-like UX/perceptual production gate까지 통과해야 한다.
 - 로컬 엔진 foundation 구현 있음: domain validation, candidate scoring, adaptive selector MVP, threshold/reveal/wrong-recovery session state machine, golden scenario fixture, minimal browser UI scaffold.
 - adaptive selector pilot local gate: PASS. Initial unknown turn-4 high reveal-risk blocker는 remediation/re-review/QA rerun으로 해결됨.
 - threshold/golden UI pilot local gate: PASS. Session threshold/reveal/wrong-recovery, golden scenarios, sanitized UI error copy, minimal browser flow QA가 통과됨.
@@ -11,7 +11,7 @@
 - Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료.
 - Akinator-level self-review loop 시작: Product/Engine, Design/Service, QA/Release 관점 gap review 후 canonical `foodKnowledgeBase` v1(50 candidates / 42 questions / data readiness gate)을 도입했다. 다음 major gap은 representative simulation, branch entropy, asset-backed character runtime, scene choreography다.
 - 다음 단계: 제품 iteration. Public release 전에는 perceptual QA와 최종 mascot/brand polish가 별도 product/design gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했다.
-- Rive-first runtime adapter slice implemented locally: `CharacterStage` can now expose manifest-selected `rive|lottie|css-fallback` and explicit `data-runtime-status="ready|fallback|failed"`. `ready` is only allowed when the authored Rive/Lottie asset probe succeeds; available-looking manifest strings with absent/unloadable assets fail closed to CSS fallback. Current checked-in asset state remains `css-fallback` with `data-runtime-status="fallback"` because no authored `.riv`/Lottie asset exists, so full production is still blocked.
+- Lottie authored-runtime candidate: `feat/lottie-authored-asset` adds repo-local `src/ui/character/assets/bogle-concept-a.lottie.json` and wires `CharacterStage` to report `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"` only after manifest validation plus rendered marker-state output. Missing/malformed/duplicate-marker/renderer failure paths fail closed to playable `css-fallback` with truthful failed/fallback metadata. This clears the prior “runtime is only css-fallback” blocker for the scoped candidate, but does not by itself approve full public production launch before PR/CI/merge/deploy/live canary evidence.
 - Evidence references: PR #21 added the Bogle motion state machine/layer-sheet contract and live smoke evidence; PR #22 added the production completion autoplan and current production-blocked verdict.
 
 ## Release policy

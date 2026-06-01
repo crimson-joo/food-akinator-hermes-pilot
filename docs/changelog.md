@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-06-01 — Authored-equivalent Lottie runtime candidate
+
+- Added repo-local `src/ui/character/assets/bogle-concept-a.lottie.json` and wired the character runtime to a truthful Lottie-ready path.
+- Lottie `ready` now requires manifest validation and rendered marker-state output; missing/malformed/duplicate-marker/renderer failures fail closed to CSS fallback with explicit metadata.
+- Local Reviewer/QA gates verified 8 distinct browser-rendered marker-state fingerprints, desktop/mobile/reduced-motion/recovery/reveal flows, and no internal marker leakage.
+- Not complete until PR CI, main deploy, cache-busted live canary, and webhook/closeout evidence confirm the same behavior on the public URL.
+
 ## 2026-06-01 — Public docs aligned with live demo / production-blocked state
 
 - Updated README from the stale “no app implementation” research-foundation state to the current live controlled-demo state.
