@@ -1,113 +1,122 @@
 import { describe, expect, it } from 'vitest';
-import { ANSWER_VALUES, type AnswerKey, type Candidate } from '../src/engine/domain.js';
-import { startSession, submitAnswer } from '../src/engine/session.js';
 import { foodCandidates, foodQuestions } from '../src/data/food-knowledge-base.js';
+import {
+  CONTROLLED_DEMO_THRESHOLDS,
+  FULL_LAUNCH_CANDIDATE_THRESHOLDS,
+  representativeSimulationCases,
+} from './fixtures/representative-simulation-matrix.js';
+import {
+  detectLeakMarkers,
+  runSimulationSuite,
+  writeSimulationQualityReport,
+} from '../src/engine/simulation-quality.js';
 
 const dataset = { candidates: foodCandidates, questions: foodQuestions };
-const representativeCandidateIds = [
-  'kimchi-jjigae',
-  'doenjang-jjigae',
-  'budae-jjigae',
-  'sundubu-jjigae',
-  'seolleongtang',
-  'haejangguk',
-  'ramyeon',
-  'janchi-guksu',
-  'naengmyeon',
-  'bibimbap',
-  'kimchi-fried-rice',
-  'jeyuk-deopbap',
-  'tteokbokki',
-  'gimbap',
-  'fried-chicken',
-  'donkatsu',
-  'pizza',
-  'hamburger',
-  'jajangmyeon',
-  'jjambbong',
-] as const;
 
-type SimulationResult = {
-  target: Candidate;
-  status: string;
-  guessId: string | undefined;
-  turn: number;
-  askedQuestionIds: string[];
-  topRankWhenStopped: number;
-};
+describe('representative simulation quality gate', () => {
+  it('produces reportable per-case results and aggregate metrics through the public session API', () => {
+    const suite = runSimulationSuite(dataset, representativeSimulationCases);
 
-function scriptedAnswer(target: Candidate, questionId: string): AnswerKey {
-  const expected = target.attributes[questionId] ?? 0;
-  if (expected >= 0.75) return 'yes';
-  if (expected >= 0.25) return 'probably';
-  if (expected <= -0.75) return 'no';
-  if (expected <= -0.25) return 'probably_not';
-  return 'unknown';
-}
+    expect(suite.cases).toHaveLength(32);
+    expect(suite.metrics.totalCases).toBe(32);
+    expect(suite.metrics.canonicalCases).toBe(20);
+    expect(suite.metrics.recoveryCases).toBeGreaterThanOrEqual(4);
+    expect(suite.metrics.unknownStressCases).toBeGreaterThanOrEqual(4);
+    expect(suite.thresholds.controlledDemo.passed).toBe(true);
 
-function branchEntropy(askedQuestionIds: string[][], turnIndex: number): number {
-  const counts = new Map<string, number>();
-  for (const path of askedQuestionIds) {
-    const key = path[turnIndex] ?? '__stopped__';
-    counts.set(key, (counts.get(key) ?? 0) + 1);
-  }
-  const total = askedQuestionIds.length;
-  return [...counts.values()].reduce((sum, count) => {
-    const p = count / total;
-    return sum - p * Math.log2(p);
-  }, 0);
-}
-
-function simulate(target: Candidate): SimulationResult {
-  let session = startSession(dataset);
-  const askedQuestionIds: string[] = [];
-
-  while (session.currentQuestion && session.status !== 'revealed' && session.status !== 'exhausted') {
-    const questionId = session.currentQuestion.id;
-    expect(askedQuestionIds, `${target.id} repeated ${questionId}`).not.toContain(questionId);
-    askedQuestionIds.push(questionId);
-    session = submitAnswer(session, { questionId, answer: scriptedAnswer(target, questionId) }, dataset);
-  }
-
-  const topRankWhenStopped = session.rankingPreview.findIndex((entry) => entry.candidateId === target.id) + 1;
-  return {
-    target,
-    status: session.status,
-    guessId: session.guess?.candidate.id,
-    turn: session.turn,
-    askedQuestionIds,
-    topRankWhenStopped,
-  };
-}
-
-describe('representative 20-food inference simulation', () => {
-  it('keeps a broad Korean menu set guessable instead of overfitting the seven golden paths', () => {
-    const targets = representativeCandidateIds.map((id) => {
-      const candidate = foodCandidates.find((item) => item.id === id);
-      expect(candidate, `missing representative candidate ${id}`).toBeDefined();
-      return candidate!;
-    });
-    const results = targets.map(simulate);
-    const exactHits = results.filter((result) => result.guessId === result.target.id);
-    const topThreeOrExact = results.filter(
-      (result) => result.guessId === result.target.id || (result.topRankWhenStopped > 0 && result.topRankWhenStopped <= 3),
-    );
-    const failedSummary = results
-      .filter((result) => result.guessId !== result.target.id && result.topRankWhenStopped > 3)
-      .map((result) => `${result.target.id}: guess=${result.guessId ?? result.status}, rank=${result.topRankWhenStopped}, path=${result.askedQuestionIds.join('>')}`);
-
-    expect(exactHits.length, `exact hits: ${exactHits.length}/20; failures: ${failedSummary.join(' | ')}`).toBeGreaterThanOrEqual(14);
-    expect(topThreeOrExact.length, `top3 coverage failures: ${failedSummary.join(' | ')}`).toBeGreaterThanOrEqual(18);
-    for (const result of results) {
-      expect(result.turn, `${result.target.id} took too many turns via ${result.askedQuestionIds.join('>')}`).toBeLessThanOrEqual(15);
+    for (const result of suite.cases) {
+      expect(result.caseId).toBeTruthy();
+      expect(result.targetCandidateId).toBeTruthy();
+      expect(result.targetNameKo).toBeTruthy();
+      expect(result.strategy).toMatch(/canonicalAttributes|mixedUncertainty|unknownHeavy|rejectedGuessRecovery/);
+      expect(result.finalStatus).toMatch(/revealed|exhausted|asking|confident/);
+      expect(result.finalTurn).toBeGreaterThanOrEqual(1);
+      expect(new Set(result.askedQuestionIds).size, `${result.caseId} repeated questions`).toBe(result.askedQuestionIds.length);
+      expect(result.answers.length).toBe(result.askedQuestionIds.length);
+      expect(Array.isArray(result.userVisibleCopy)).toBe(true);
+      expect(result.leakMarkers, `${result.caseId} leaked internals`).toEqual([]);
     }
+
+    expect(suite.metrics.exactFirstGuessRate).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.exactFirstGuessRate);
+    expect(suite.metrics.top3AtFirstStopRate).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.top3AtFirstStopRate);
+    expect(suite.metrics.maxFirstGuessTurn).toBeLessThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.maxFirstGuessTurn);
+    expect(suite.metrics.medianFirstGuessTurn).toBeLessThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.medianFirstGuessTurn);
+    expect(suite.metrics.branchEntropyByTurn['1']).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.minBranchEntropyByTurn['1']);
+    expect(suite.metrics.branchEntropyByTurn['2']).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.minBranchEntropyByTurn['2']);
+    expect(suite.metrics.uniquePrefix4Count).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.minUniquePrefix4Count);
+    expect(suite.metrics.leakFree).toBe(true);
   });
 
-  it('creates Akinator-like branch entropy after the shared opening question', () => {
-    const paths = representativeCandidateIds.map((id) => simulate(foodCandidates.find((candidate) => candidate.id === id)!).askedQuestionIds);
-    expect(new Set(paths.map((path) => path[0])).size).toBe(1);
-    expect(branchEntropy(paths, 1)).toBeGreaterThanOrEqual(0.85);
-    expect(branchEntropy(paths, 2)).toBeGreaterThanOrEqual(1.35);
-    expect(new Set(paths.map((path) => path.slice(0, 4).join('>'))).size).toBeGreaterThanOrEqual(8);
+  it('tracks stricter full-launch blockers without hiding failed thresholds', () => {
+    const suite = runSimulationSuite(dataset, representativeSimulationCases);
+
+    expect(suite.thresholds.fullLaunchCandidate.passed).toBe(false);
+    expect(suite.thresholds.fullLaunchCandidate.failedCriteria.length).toBeGreaterThan(0);
+    expect(suite.thresholds.fullLaunchCandidate.failedCriteria).toEqual(
+      expect.arrayContaining([
+        expect.stringMatching(/first guess|max first guess|p90|entropy|rationale|unknown|recovery|false confidence/i),
+      ]),
+    );
+    expect(suite.thresholds.fullLaunchCandidate.thresholds).toEqual(FULL_LAUNCH_CANDIDATE_THRESHOLDS);
+  });
+
+  it('gates answer-trace rationale, recovery, unknown-heavy behavior, false confidence, and leak safety', () => {
+    const suite = runSimulationSuite(dataset, representativeSimulationCases);
+    const canonicalReveals = suite.cases.filter(
+      (result) => result.strategy === 'canonicalAttributes' && result.finalStatus === 'revealed',
+    );
+
+    expect(canonicalReveals.length).toBeGreaterThanOrEqual(18);
+    for (const result of canonicalReveals) {
+      expect(result.answerTraceCount, `${result.caseId} answer trace too thin`).toBeGreaterThanOrEqual(2);
+      expect(result.answerTraceMatchesAnswers, `${result.caseId} lacks answer-derived trace`).toBeGreaterThanOrEqual(1);
+      expect(result.leakMarkers).toEqual([]);
+    }
+
+    const recoveryCases = suite.cases.filter((result) => result.strategy === 'rejectedGuessRecovery');
+    expect(recoveryCases.length).toBeGreaterThanOrEqual(4);
+    for (const result of recoveryCases) {
+      expect(result.recoveryCount, `${result.caseId} did not reject a guess`).toBeGreaterThanOrEqual(1);
+      expect(result.askedQuestionRoles[0], `${result.caseId} first recovery question`).toBe('recovery_disambiguation');
+      expect(result.finalGuessCandidateId, `${result.caseId} repeated rejected first guess`).not.toBe(result.firstGuessCandidateId);
+    }
+    expect(suite.metrics.recoverySuccessRate).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.minRecoverySuccessRate);
+
+    const unknownCases = suite.cases.filter((result) => result.strategy === 'unknownHeavy');
+    expect(unknownCases.length).toBeGreaterThanOrEqual(4);
+    for (const result of unknownCases) {
+      expect(result.unknownCount).toBeGreaterThanOrEqual(5);
+      expect(['exhausted', 'asking']).toContain(result.finalStatus);
+      expect(result.firstGuessCandidateId, `${result.caseId} made a blind guess`).toBeUndefined();
+    }
+    expect(suite.metrics.falseConfidenceRate).toBeLessThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.maxFalseConfidenceRate);
+    expect(suite.metrics.unknownGracefulRate).toBe(1);
+  });
+
+  it('scores rejected-guess recovery only when the final guess is the target, not merely different from the rejected guess', () => {
+    const suite = runSimulationSuite(dataset, representativeSimulationCases);
+    const recoveryCases = suite.cases.filter((result) => result.strategy === 'rejectedGuessRecovery');
+
+    expect(recoveryCases.length).toBeGreaterThanOrEqual(4);
+    expect(recoveryCases.every((result) => result.recoveryCount >= 1)).toBe(true);
+    expect(recoveryCases.every((result) => result.finalGuessCandidateId !== result.firstGuessCandidateId)).toBe(true);
+    expect(recoveryCases.every((result) => result.exactFinalGuess === false)).toBe(true);
+    expect(suite.metrics.recoverySuccessRate).toBe(0);
+    expect(suite.thresholds.fullLaunchCandidate.failedCriteria).toContain('recovery success below threshold');
+  });
+
+  it('generates JSON and Markdown reports with sanitized user-facing sections', async () => {
+    const suite = runSimulationSuite(dataset, representativeSimulationCases);
+    const report = await writeSimulationQualityReport(suite, {
+      outputJsonPath: '.hermes/runs/t_c72bfb98/test-simulation-quality-report.json',
+      outputMarkdownPath: '.hermes/runs/t_c72bfb98/test-simulation-quality-report.md',
+    });
+
+    expect(report.jsonPath).toContain('simulation-quality-report.json');
+    expect(report.markdownPath).toContain('simulation-quality-report.md');
+    expect(report.markdown).toContain('Controlled demo / alpha');
+    expect(report.markdown).toContain('Full-launch candidate');
+    expect(report.markdown).toContain('BLOCKED');
+    expect(detectLeakMarkers(report.markdown)).toEqual([]);
   });
 });
