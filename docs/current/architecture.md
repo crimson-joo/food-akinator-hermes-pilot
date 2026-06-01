@@ -122,6 +122,17 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - all-unknown/flat evidence는 내부 점수나 가짜 확신을 노출하지 않고 `exhausted` + `characterCue: exhausted`로 종료한다.
 - MVP 엔진 cue는 `ask`, `confident`, `reveal`, `recover`, `exhausted`를 실제 snapshot으로 보장한다. `thinking`/`surprised`의 시간 기반 전환은 UI scaffold presentation layer에서 semantic metadata로 표현한다.
 
+## Representative simulation quality gate
+
+현재 구현:
+
+- `src/engine/simulation-quality.ts`는 real session API(`startSession()`, `submitAnswer()`, `submitGuessFeedback()`)로 representative paths를 실행하고 reportable metrics를 산출한다.
+- `tests/fixtures/representative-simulation-matrix.ts`는 32개 case를 제공한다: 20 canonical, 4 mixed uncertainty, 4 unknown-heavy, 4 rejected-guess recovery.
+- `tests/engine-representative-simulation.test.ts`는 controlled demo threshold와 full-launch candidate threshold를 분리해서 검증한다.
+- Report artifacts는 `.hermes/runs/t_c72bfb98/test-simulation-quality-report.{md,json}`로 생성되며, visible copy/internal leak safety도 함께 검증한다.
+- PR #27 release 기준 current metrics: exact first/final guess 95%, top3 at first stop 100%, median first guess turn 9, max 15, branch entropy turn1/2/3 0.881/1.395/2.490, unique prefix4 8, rationale coverage 100%, unknown-heavy graceful 100%, recovery success 0%, leak-free true.
+- Controlled demo / alpha threshold는 PASS지만 full-launch candidate threshold는 BLOCKED다. 실패 criteria는 max/median first guess turn, entropy turn 1–2, unique prefix4 diversity, recovery success다.
+
 ## Builder gate
 
 코드 시작 전 필요한 것:
