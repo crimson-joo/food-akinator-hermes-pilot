@@ -4,7 +4,7 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
-현재 판정: controlled demo / alpha smoke는 가능하지만, full public production launch는 release/deploy/live canary 전까지 blocked다. PR #21 이후 live canary와 DOM/console smoke는 통과했고, `feat/lottie-authored-asset`의 Lottie authored-equivalent runtime 후보는 local Reviewer/QA gate에서 `data-character-runtime="lottie"`, `data-runtime-status="ready"`, 8개 marker-state fingerprint, mobile/reduced-motion/recovery/reveal evidence를 통과했다. 다음 판정은 PR CI, main deploy, cache-busted live canary가 public URL에서 같은 runtime/visible marker-state를 증명해야 한다.
+현재 판정: controlled demo / alpha smoke는 가능하지만, full public production launch는 여전히 blocked다. PR #24가 merge/deploy/live canary를 통과하면서 public URL에서 Lottie authored-equivalent runtime이 `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"`, `data-lottie-rendered="true"`, 8개 marker-state fingerprint로 검증되었다. 이제 production blocker는 배포 전 runtime 증명이 아니라 user-perceived intelligence, reasoning bridge, answer-tied progress tension, suspense/reveal payoff, 3-beat wrong recovery, mobile/perceptual quality, representative simulation/live QA gate다.
 
 현재 threshold/golden UI pilot의 자동화/live smoke QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check, GitHub Pages live canary, Pixel 7 크기 mobile viewport smoke를 포함한다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. Perceptual polish와 최종 mascot/brand는 아직 별도 product/design gate로 남아 있다.
 
@@ -119,6 +119,7 @@ Recent evidence references:
 
 - PR #21 live/demo evidence: Bogle motion state machine, production layer sheet hooks, main CI, Pages deploy, scripted canary, browser DOM/console smoke.
 - PR #22 evidence: production completion autoplan and explicit production-blocked verdict in `docs/current/autoplan-kanban.md`.
+- PR #24 evidence: live Lottie canary verified public URL runtime markers (`lottie`, `ready`, rendered asset, 8/8 distinct fingerprints) with CI/deploy success.
 - `t_2c0c169f` live baseline browser/perceptual QA evidence: `.hermes/runs/t_2c0c169f/qa-baseline-report.md` and `.hermes/runs/t_2c0c169f/browser-qa-evidence.json`.
 
 ## Baseline browser/perceptual QA gate — 2026-06-01
@@ -133,10 +134,12 @@ Validated against `https://crimson-joo.github.io/food-akinator-hermes-pilot/` wi
 - Mobile horizontal overflow was 0px at 360/390/412 entry and asking.
 - Forbidden visible internals (`score`, `probability`, `top1`, `top3`, `attribute`, `clue:`, raw `q-*`) were not observed.
 
-Production-blocking observations:
+Production-blocking observations after PR #24 live Lottie:
 
-- Current main/live URL must not be called upgraded until the Lottie authored-runtime PR is merged and cache-busted live canary observes `data-character-runtime="lottie"`, `data-runtime-status="ready"`, rendered Lottie asset, and distinct marker-state fingerprints.
-- The CSS fallback remains required as a fail-closed path for missing/malformed authored assets; it is no longer the target runtime for the Lottie candidate branch.
+- Lottie authored-equivalent runtime is live-verified on the public URL, so the prior deploy/runtime-readiness blocker is cleared for the controlled demo.
+- The CSS fallback remains required as a fail-closed path for missing/malformed authored assets; production QA must continue checking truthful `failed`/`fallback` metadata paths.
+- The product still needs stronger proof that the user experiences Bogle as actively reasoning, not merely asking a polished adaptive survey.
+- Reasoning bridge/progress tension/reveal reasons must tie visible clues to the user's actual answers without leaking score/probability/id internals.
 - 360px mobile screenshot shows a visual clipping risk: the spoon prop is pressed against / appears cut by the right stage edge even though measured horizontal overflow is 0.
 - Wrong recovery has rejected-candidate copy/chip, but production target still needs a clearer 3-beat surprise → removal → refocus moment.
 

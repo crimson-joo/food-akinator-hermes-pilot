@@ -164,7 +164,7 @@ Pass:
 
 ## Premium Oracle Theater v2 contract
 
-Current public demo verdict: the live app from PR #21 has an interactive Bogle host, answer-specific reaction hooks, state-specific SVG/CSS acting, and motion metadata. The Lottie authored-equivalent branch now adds a repo-local rendered Lottie candidate with marker-specific visible state fingerprints, but it must still pass PR/CI/merge/deploy/live canary before the public URL is called upgraded. Full production launch remains gated on deployed runtime evidence plus the broader Akinator-level perceptual benchmark.
+Current public demo verdict: the live app now includes PR #24's live-verified Lottie authored-equivalent runtime. Public URL canary observed `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"`, `data-lottie-rendered="true"`, and 8 distinct marker-state fingerprints. Full production launch remains gated not on pre-deploy Lottie proof, but on the broader Akinator-level benchmark: perceived intelligence, reasoning bridge, answer-tied progress tension, suspense/reveal payoff, wrong-recovery staging, mobile/perceptual quality, and production review/QA.
 
 사용자 피드백상 기존 procedural `bogle-*` mascot foundation은 “저급한 디자인/모션”으로 간주한다. 이후 구현은 단순 색상/그림자 polish가 아니라 새 visual-system 계약을 유지해야 한다.
 
