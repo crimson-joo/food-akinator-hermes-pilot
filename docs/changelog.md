@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-01 — Public docs aligned with live demo / production-blocked state
+
+- Updated README from the stale “no app implementation” research-foundation state to the current live controlled-demo state.
+- Added PR #21 and PR #22 evidence references to canonical docs.
+- Reconfirmed that full public production launch remains blocked until real/equivalent character runtime, stronger Akinator-like UX, perceptual QA, docs/evidence, and production review/QA gates pass.
+
 ## 2026-06-01 — Bogle motion state machine + production completion autoplan
 
 - Merged PR #21 with `productionLayerSheet` and `animationStateMachine` v2 for Bogle: source-art quality bar, non-copy boundary, layer export groups, clip names, timings, easing, and per-layer motion beats.

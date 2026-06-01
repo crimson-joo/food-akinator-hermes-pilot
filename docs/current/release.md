@@ -2,6 +2,7 @@
 
 ## 현재 release 상태
 
+- 현재 public URL은 controlled demo / alpha로만 취급한다. Full public production launch는 PR #22 autoplan 기준 production-blocked 상태이며, Rive/Lottie/equivalent runtime, Akinator-like UX 강화, perceptual/screenshot QA, production review/QA gates 전에는 launch 완료로 선언하지 않는다.
 - 로컬 엔진 foundation 구현 있음: domain validation, candidate scoring, adaptive selector MVP, threshold/reveal/wrong-recovery session state machine, golden scenario fixture, minimal browser UI scaffold.
 - adaptive selector pilot local gate: PASS. Initial unknown turn-4 high reveal-risk blocker는 remediation/re-review/QA rerun으로 해결됨.
 - threshold/golden UI pilot local gate: PASS. Session threshold/reveal/wrong-recovery, golden scenarios, sanitized UI error copy, minimal browser flow QA가 통과됨.
@@ -10,6 +11,7 @@
 - Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료.
 - Akinator-level self-review loop 시작: Product/Engine, Design/Service, QA/Release 관점 gap review 후 canonical `foodKnowledgeBase` v1(50 candidates / 42 questions / data readiness gate)을 도입했다. 다음 major gap은 representative simulation, branch entropy, asset-backed character runtime, scene choreography다.
 - 다음 단계: 제품 iteration. Public release 전에는 perceptual QA와 최종 mascot/brand polish가 별도 product/design gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했다.
+- Evidence references: PR #21 added the Bogle motion state machine/layer-sheet contract and live smoke evidence; PR #22 added the production completion autoplan and current production-blocked verdict.
 
 ## Release policy
 

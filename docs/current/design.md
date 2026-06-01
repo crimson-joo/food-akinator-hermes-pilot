@@ -164,6 +164,8 @@ Pass:
 
 ## Premium Oracle Theater v2 contract
 
+Current public demo verdict: the live app now has an interactive Bogle host, answer-specific reaction hooks, state-specific SVG/CSS acting, and motion metadata from PR #21. This is enough for a controlled demo, but not enough for full production launch: the runtime remains an inline SVG/CSS fallback rather than authored Rive/Lottie/equivalent character animation, and perceptual QA has not approved it against the Akinator-level benchmark.
+
 사용자 피드백상 기존 procedural `bogle-*` mascot foundation은 “저급한 디자인/모션”으로 간주한다. 이후 구현은 단순 색상/그림자 polish가 아니라 새 visual-system 계약을 유지해야 한다.
 
 Required DOM contract:
@@ -223,3 +225,30 @@ Required animation catalog:
 Required expression catalog:
 
 `warm-blink`, `curious-focus`, `focused-smile`, `soft-smile`, `maybe-smirk`, `puzzled-open`, `skeptical-narrow`, `decisive-prune`, `narrow-thinking`, `spark-confidence`, `oops-open`, `calm-detective`, `bright-payoff`.
+
+## Visual QA follow-up contract — mobile stage + wrong recovery
+
+Source evidence: `.hermes/runs/t_2c0c169f/screenshots/mobile-360-asking.png`, `.hermes/runs/t_2c0c169f/screenshots/mobile-390-asking.png`, `.hermes/runs/t_2c0c169f/screenshots/mobile-412-asking.png`, `.hermes/runs/t_2c0c169f/screenshots/desktop-05-wrong-recovery.png`.
+
+### Mobile character stage composition
+
+At 360/390/412px mobile widths, the character stage must preserve Bogle as a centered host while keeping every prop visually inside the rounded stage. The current issue is visual composition, not page overflow: the 360px asking screenshot has no horizontal overflow, but the spoon bowl appears pressed against/cut by the right stage edge.
+
+Required acceptance:
+
+- Spoon, notebook, steam, plate, shadow, and aura remain fully visible inside `data-testid="character-stage"`.
+- Spoon bowl must have visible right-edge breathing room: at least 16px at 360px, 20px at 390px, and 24px at 412px.
+- Do not solve by removing the spoon, cutting the prop, or introducing horizontal page overflow.
+- Preferred correction: rebalance mobile safe-area by slightly reducing host scale and/or rotating/shifting the `ask` spoon pose inward while keeping the stage visually full.
+
+### Wrong recovery 3-beat staging
+
+Wrong recovery must read as a short acted sequence, not a single apology card. Keep Bogle's detective-oracle identity; do not copy Akinator character assets, pose language, copy, or brand identity.
+
+Required sequence inside `data-ui-state="recovering"`:
+
+1. **Surprise** — `data-recovery-beat="surprise"`, `data-character-cue="surprised"`, oops/recoil acting, headline admission such as `앗, 제가 너무 성급했네요.`; next question is not yet visually primary.
+2. **Candidate removal** — `data-recovery-beat="remove"`, stable rejected-list/chip hooks, the rejected candidate is visibly crossed off/swept/marked as removed, with copy such as `그 메뉴는 후보에서 뺄게요.`
+3. **Refocus** — `data-recovery-beat="refocus"`, `data-character-cue="recover"`, calm notebook/reframe pose, next recovery question and exactly five answer controls visible.
+
+Reduced-motion mode may shorten transitions, but the three semantic beats must remain observable through DOM state, copy, and chip treatment.
