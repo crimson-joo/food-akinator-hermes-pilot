@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import type { QuestionRole } from '../src/engine/domain.js';
 import type { EngineSession } from '../src/engine/session.js';
 import { createDemoSession, renderApp, transitionUi, type UiModel } from '../src/ui/app.js';
 
@@ -119,12 +120,54 @@ describe('premium culinary oracle UI', () => {
     expect(accepted).toContain('data-answer-reaction="unknown"');
     expect(accepted).toContain('모르겠으면 괜찮아요');
     expect((accepted.match(/disabled/g) ?? []).length).toBeGreaterThanOrEqual(5);
+    expect(accepted).toContain('aria-busy="true"');
     expect(thinking).toContain('data-ui-state="thinking"');
     expect(thinking).toContain('data-character-cue="thinking"');
     expect(thinking).toContain('보글이 메모장을 보는 중');
     expect(thinking).toContain('data-interaction-feedback="thinking"');
     expect(thinking).toContain('단서들을 다시 섞어보는 중이에요.');
     expect(thinking).toContain('aria-live="polite"');
+    expect(thinking).toContain('aria-busy="true"');
+  });
+
+  it('exposes the canonical progress-stage contract for every reasoning tension stage', () => {
+    const cases = [
+      { role: 'broad_split', stage: 'orienting', copy: '처음엔 입맛의 큰 방향을 열어볼게요.' },
+      { role: 'family_lock', stage: 'narrowing', copy: '후보 묶음을 한 식탁 안으로 좁히고 있어요.' },
+      { role: 'sibling_elimination', stage: 'fork', copy: '비슷한 후보 둘의 갈림길을 비교하고 있어요.' },
+      { role: 'false_path_guardrail', stage: 'guardrail', copy: '성급한 추측을 막는 안전 단서를 확인해요.' },
+      { role: 'signature_discriminator', stage: 'lock', copy: '마지막 결정 단서를 잠그는 중이에요.' },
+      { role: 'recovery_disambiguation', stage: 'recovery', copy: '빗나간 접시는 빼고 다시 맞춰보고 있어요.' },
+    ] as const;
+
+    for (const item of cases) {
+      const session = sessionWithQuestionRole(item.role);
+      const html = renderApp({ phase: 'asking', session });
+      expect(html, item.role).toContain(`data-progress-stage="${item.stage}"`);
+      expect(html, item.role).toContain(item.copy);
+    }
+  });
+
+  it('uses role-aware reasoning bridge copy instead of repeated generic progress labels during thinking', () => {
+    const session = sessionWithQuestionRole('false_path_guardrail');
+    const html = renderApp({ phase: 'thinking', session, lastAnswer: 'no' });
+    const visibleHtml = html.replace(/<style>[\s\S]*?<\/style>/, '');
+
+    expect(html).toContain('data-progress-stage="guardrail"');
+    expect(html).toContain('아니요 답변을 반영해서, 성급한 추측을 막는 안전 단서를 확인해요.');
+    expect(visibleHtml).not.toMatch(/큰 갈래는 잡혔어요|후보가 둘로 갈리네요|감이 왔어요/);
+  });
+
+  it('does not let stale rejected candidates override the active question progress stage', () => {
+    const session = {
+      ...sessionWithQuestionRole('signature_discriminator'),
+      rejectedCandidateIds: ['kimchi-jjigae'],
+    };
+    const html = renderApp({ phase: 'asking', session, rejectedCandidateIds: ['kimchi-jjigae'] });
+
+    expect(html).toContain('data-progress-stage="lock"');
+    expect(html).toContain('마지막 결정 단서를 잠그는 중이에요.');
+    expect(html).not.toContain('data-progress-stage="recovery"');
   });
 
   it('renders distinct answer-click feedback for all five answer choices', () => {
@@ -314,6 +357,16 @@ function fakeGuessingSession(): EngineSession {
     canAnswer: false,
     canConfirmGuess: true,
     canRejectGuess: true,
+  };
+}
+
+function sessionWithQuestionRole(role: QuestionRole): EngineSession {
+  const session = createDemoSession();
+  return {
+    ...session,
+    currentQuestion: session.currentQuestion ? { ...session.currentQuestion, role } : undefined,
+    characterCue: role === 'recovery_disambiguation' ? 'recover' : session.characterCue,
+    rejectedCandidateIds: role === 'recovery_disambiguation' ? ['kimchi-jjigae'] : session.rejectedCandidateIds,
   };
 }
 

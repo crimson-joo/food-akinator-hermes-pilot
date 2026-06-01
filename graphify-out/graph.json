@@ -9,7 +9,7 @@
       "source_file": "playwright.config.ts",
       "source_location": "L1",
       "id": "playwright_config_ts",
-      "community": 41,
+      "community": 42,
       "norm_label": "playwright.config.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "playwright.config.ts",
       "source_location": "L4",
       "id": "feat_production_ux_runtime_wave_playwright_config_useexistingserver",
-      "community": 41,
+      "community": 42,
       "norm_label": "useexistingserver"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L1",
       "id": "vitest_config_ts",
-      "community": 42,
+      "community": 41,
       "norm_label": "vitest.config.ts"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "vitest.config.ts",
       "source_location": "L4",
       "id": "feat_production_ux_runtime_wave_vitest_config_isexplicithermesrun",
-      "community": 42,
+      "community": 41,
       "norm_label": "isexplicithermesrun"
     },
     {
@@ -74,6 +74,15 @@
       "id": "tests_character_runtime_test_html",
       "community": 1,
       "norm_label": "html"
+    },
+    {
+      "label": "manifest",
+      "file_type": "code",
+      "source_file": "tests/character-runtime.test.ts",
+      "source_location": "L25",
+      "id": "tests_character_runtime_test_manifest",
+      "community": 1,
+      "norm_label": "manifest"
     },
     {
       "label": "engine-session.test.ts",
@@ -520,7 +529,7 @@
       "label": "answerLabels",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "tests_ui_app_test_answerlabels",
       "community": 4,
       "norm_label": "answerlabels"
@@ -529,7 +538,7 @@
       "label": "answerKeys",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "tests_ui_app_test_answerkeys",
       "community": 4,
       "norm_label": "answerkeys"
@@ -538,7 +547,7 @@
       "label": "html",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "tests_ui_app_test_html",
       "community": 4,
       "norm_label": "html"
@@ -547,7 +556,7 @@
       "label": "session",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "tests_ui_app_test_session",
       "community": 4,
       "norm_label": "session"
@@ -556,7 +565,7 @@
       "label": "buttonMatches",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "tests_ui_app_test_buttonmatches",
       "community": 4,
       "norm_label": "buttonmatches"
@@ -565,7 +574,7 @@
       "label": "requiredLayers",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L43",
+      "source_location": "L44",
       "id": "tests_ui_app_test_requiredlayers",
       "community": 4,
       "norm_label": "requiredlayers"
@@ -574,7 +583,7 @@
       "label": "askingSession",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L74",
+      "source_location": "L75",
       "id": "tests_ui_app_test_askingsession",
       "community": 4,
       "norm_label": "askingsession"
@@ -583,7 +592,7 @@
       "label": "recoveringSession",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L75",
+      "source_location": "L76",
       "id": "tests_ui_app_test_recoveringsession",
       "community": 4,
       "norm_label": "recoveringsession"
@@ -592,7 +601,7 @@
       "label": "guessingSession",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L76",
+      "source_location": "L77",
       "id": "tests_ui_app_test_guessingsession",
       "community": 4,
       "norm_label": "guessingsession"
@@ -601,7 +610,7 @@
       "label": "cases",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L77",
+      "source_location": "L78",
       "id": "tests_ui_app_test_cases",
       "community": 4,
       "norm_label": "cases"
@@ -610,7 +619,7 @@
       "label": "contracts",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L97",
+      "source_location": "L98",
       "id": "tests_ui_app_test_contracts",
       "community": 4,
       "norm_label": "contracts"
@@ -619,7 +628,7 @@
       "label": "accepted",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L113",
+      "source_location": "L114",
       "id": "tests_ui_app_test_accepted",
       "community": 4,
       "norm_label": "accepted"
@@ -628,16 +637,25 @@
       "label": "thinking",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L114",
+      "source_location": "L115",
       "id": "tests_ui_app_test_thinking",
       "community": 4,
       "norm_label": "thinking"
     },
     {
+      "label": "visibleHtml",
+      "file_type": "code",
+      "source_file": "tests/ui-app.test.ts",
+      "source_location": "L154",
+      "id": "tests_ui_app_test_visiblehtml",
+      "community": 4,
+      "norm_label": "visiblehtml"
+    },
+    {
       "label": "expected",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L132",
+      "source_location": "L175",
       "id": "tests_ui_app_test_expected",
       "community": 4,
       "norm_label": "expected"
@@ -646,7 +664,7 @@
       "label": "animations",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L151",
+      "source_location": "L194",
       "id": "tests_ui_app_test_animations",
       "community": 4,
       "norm_label": "animations"
@@ -655,7 +673,7 @@
       "label": "expressions",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L152",
+      "source_location": "L195",
       "id": "tests_ui_app_test_expressions",
       "community": 4,
       "norm_label": "expressions"
@@ -664,7 +682,7 @@
       "label": "keyframes",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L153",
+      "source_location": "L196",
       "id": "tests_ui_app_test_keyframes",
       "community": 4,
       "norm_label": "keyframes"
@@ -673,7 +691,7 @@
       "label": "reveal",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L172",
+      "source_location": "L215",
       "id": "tests_ui_app_test_reveal",
       "community": 4,
       "norm_label": "reveal"
@@ -682,7 +700,7 @@
       "label": "layerMatches",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L173",
+      "source_location": "L216",
       "id": "tests_ui_app_test_layermatches",
       "community": 4,
       "norm_label": "layermatches"
@@ -691,7 +709,7 @@
       "label": "guessing",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L214",
+      "source_location": "L257",
       "id": "tests_ui_app_test_guessing",
       "community": 4,
       "norm_label": "guessing"
@@ -700,7 +718,7 @@
       "label": "revealed",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L215",
+      "source_location": "L258",
       "id": "tests_ui_app_test_revealed",
       "community": 4,
       "norm_label": "revealed"
@@ -709,7 +727,7 @@
       "label": "recovering",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L216",
+      "source_location": "L259",
       "id": "tests_ui_app_test_recovering",
       "community": 4,
       "norm_label": "recovering"
@@ -718,25 +736,16 @@
       "label": "error",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L217",
+      "source_location": "L260",
       "id": "tests_ui_app_test_error",
       "community": 4,
       "norm_label": "error"
     },
     {
-      "label": "visibleHtml",
-      "file_type": "code",
-      "source_file": "tests/ui-app.test.ts",
-      "source_location": "L231",
-      "id": "tests_ui_app_test_visiblehtml",
-      "community": 4,
-      "norm_label": "visiblehtml"
-    },
-    {
       "label": "rejected",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L238",
+      "source_location": "L281",
       "id": "tests_ui_app_test_rejected",
       "community": 4,
       "norm_label": "rejected"
@@ -745,7 +754,7 @@
       "label": "removal",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L242",
+      "source_location": "L285",
       "id": "tests_ui_app_test_removal",
       "community": 4,
       "norm_label": "removal"
@@ -754,7 +763,7 @@
       "label": "refocus",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L243",
+      "source_location": "L286",
       "id": "tests_ui_app_test_refocus",
       "community": 4,
       "norm_label": "refocus"
@@ -763,7 +772,7 @@
       "label": "surpriseHtml",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L249",
+      "source_location": "L292",
       "id": "tests_ui_app_test_surprisehtml",
       "community": 4,
       "norm_label": "surprisehtml"
@@ -772,7 +781,7 @@
       "label": "removalHtml",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L256",
+      "source_location": "L299",
       "id": "tests_ui_app_test_removalhtml",
       "community": 4,
       "norm_label": "removalhtml"
@@ -781,7 +790,7 @@
       "label": "refocusHtml",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L265",
+      "source_location": "L308",
       "id": "tests_ui_app_test_refocushtml",
       "community": 4,
       "norm_label": "refocushtml"
@@ -790,7 +799,7 @@
       "label": "requiredCues",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L276",
+      "source_location": "L319",
       "id": "tests_ui_app_test_requiredcues",
       "community": 4,
       "norm_label": "requiredcues"
@@ -799,7 +808,7 @@
       "label": "afterAnswer",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L293",
+      "source_location": "L336",
       "id": "tests_ui_app_test_afteranswer",
       "community": 4,
       "norm_label": "afteranswer"
@@ -808,7 +817,7 @@
       "label": "afterThinking",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L294",
+      "source_location": "L337",
       "id": "tests_ui_app_test_afterthinking",
       "community": 4,
       "norm_label": "afterthinking"
@@ -817,16 +826,25 @@
       "label": "fakeGuessingSession()",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L302",
+      "source_location": "L345",
       "id": "tests_ui_app_test_fakeguessingsession",
       "community": 4,
       "norm_label": "fakeguessingsession()"
     },
     {
+      "label": "sessionWithQuestionRole()",
+      "file_type": "code",
+      "source_file": "tests/ui-app.test.ts",
+      "source_location": "L363",
+      "id": "tests_ui_app_test_sessionwithquestionrole",
+      "community": 4,
+      "norm_label": "sessionwithquestionrole()"
+    },
+    {
       "label": "_satisfiesUiModel",
       "file_type": "code",
       "source_file": "tests/ui-app.test.ts",
-      "source_location": "L320",
+      "source_location": "L373",
       "id": "tests_ui_app_test_satisfiesuimodel",
       "community": 4,
       "norm_label": "_satisfiesuimodel"
@@ -1609,7 +1627,7 @@
       "label": "cueFor()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L121",
+      "source_location": "L122",
       "id": "ui_app_cuefor",
       "community": 3,
       "norm_label": "cuefor()"
@@ -1618,7 +1636,7 @@
       "label": "renderPanel()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L133",
+      "source_location": "L134",
       "id": "ui_app_renderpanel",
       "community": 3,
       "norm_label": "renderpanel()"
@@ -1627,7 +1645,7 @@
       "label": "renderAnswerFeedback()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L204",
+      "source_location": "L205",
       "id": "ui_app_renderanswerfeedback",
       "community": 3,
       "norm_label": "renderanswerfeedback()"
@@ -1636,7 +1654,7 @@
       "label": "renderQuestion()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L210",
+      "source_location": "L211",
       "id": "ui_app_renderquestion",
       "community": 3,
       "norm_label": "renderquestion()"
@@ -1645,7 +1663,7 @@
       "label": "renderAnswerButtons()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L219",
+      "source_location": "L220",
       "id": "ui_app_renderanswerbuttons",
       "community": 3,
       "norm_label": "renderanswerbuttons()"
@@ -1654,7 +1672,7 @@
       "label": "renderRejectedChips()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L223",
+      "source_location": "L224",
       "id": "ui_app_renderrejectedchips",
       "community": 3,
       "norm_label": "renderrejectedchips()"
@@ -1663,16 +1681,25 @@
       "label": "renderClueProgress()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L228",
+      "source_location": "L229",
       "id": "ui_app_renderclueprogress",
       "community": 3,
       "norm_label": "renderclueprogress()"
     },
     {
+      "label": "progressStage()",
+      "file_type": "code",
+      "source_file": "src/ui/app.ts",
+      "source_location": "L239",
+      "id": "ui_app_progressstage",
+      "community": 3,
+      "norm_label": "progressstage()"
+    },
+    {
       "label": "progressTone()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L237",
+      "source_location": "L249",
       "id": "ui_app_progresstone",
       "community": 3,
       "norm_label": "progresstone()"
@@ -1681,16 +1708,25 @@
       "label": "progressCopy()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L244",
+      "source_location": "L256",
       "id": "ui_app_progresscopy",
       "community": 3,
       "norm_label": "progresscopy()"
     },
     {
+      "label": "reasoningBridgeCopy()",
+      "file_type": "code",
+      "source_file": "src/ui/app.ts",
+      "source_location": "L266",
+      "id": "ui_app_reasoningbridgecopy",
+      "community": 3,
+      "norm_label": "reasoningbridgecopy()"
+    },
+    {
       "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L251",
+      "source_location": "L271",
       "id": "ui_app_escapehtml",
       "community": 3,
       "norm_label": "escapehtml()"
@@ -1699,7 +1735,7 @@
       "label": "escapeAttr()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L255",
+      "source_location": "L275",
       "id": "ui_app_escapeattr",
       "community": 3,
       "norm_label": "escapeattr()"
@@ -1708,7 +1744,7 @@
       "label": "styleBlock()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L259",
+      "source_location": "L279",
       "id": "ui_app_styleblock",
       "community": 3,
       "norm_label": "styleblock()"
@@ -1717,7 +1753,7 @@
       "label": "mountApp()",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L405",
+      "source_location": "L425",
       "id": "ui_app_mountapp",
       "community": 3,
       "norm_label": "mountapp()"
@@ -1726,7 +1762,7 @@
       "label": "root",
       "file_type": "code",
       "source_file": "src/ui/app.ts",
-      "source_location": "L464",
+      "source_location": "L484",
       "id": "ui_app_root",
       "community": 3,
       "norm_label": "root"
@@ -2131,7 +2167,7 @@
       "label": "renderCharacterRuntime()",
       "file_type": "code",
       "source_file": "src/ui/character/characterRuntime.ts",
-      "source_location": "L30",
+      "source_location": "L24",
       "id": "character_characterruntime_rendercharacterruntime",
       "community": 1,
       "norm_label": "rendercharacterruntime()"
@@ -2140,19 +2176,10 @@
       "label": "cssFallbackRuntime",
       "file_type": "code",
       "source_file": "src/ui/character/characterRuntime.ts",
-      "source_location": "L34",
+      "source_location": "L28",
       "id": "character_characterruntime_cssfallbackruntime",
       "community": 1,
       "norm_label": "cssfallbackruntime"
-    },
-    {
-      "label": "createUnavailableRuntime()",
-      "file_type": "code",
-      "source_file": "src/ui/character/characterRuntime.ts",
-      "source_location": "L40",
-      "id": "character_characterruntime_createunavailableruntime",
-      "community": 1,
-      "norm_label": "createunavailableruntime()"
     },
     {
       "label": "food-knowledge-base.ts",
@@ -2565,7 +2592,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L1",
       "id": "engine_domain_answer_values",
-      "community": 0,
+      "community": 5,
       "norm_label": "answer_values"
     },
     {
@@ -2574,7 +2601,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L9",
       "id": "engine_domain_answerkey",
-      "community": 2,
+      "community": 1,
       "norm_label": "answerkey"
     },
     {
@@ -2601,7 +2628,7 @@
       "source_file": "src/engine/domain.ts",
       "source_location": "L22",
       "id": "engine_domain_questionrole",
-      "community": 0,
+      "community": 2,
       "norm_label": "questionrole"
     },
     {
@@ -2835,7 +2862,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_md",
-      "community": 26,
+      "community": 25,
       "norm_label": "changelog.md"
     },
     {
@@ -2844,7 +2871,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L1",
       "id": "docs_changelog_changelog",
-      "community": 26,
+      "community": 25,
       "norm_label": "changelog"
     },
     {
@@ -2853,7 +2880,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L3",
       "id": "docs_changelog_2026_06_01_public_docs_aligned_with_live_demo_production_blocked_state",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-06-01 \u2014 public docs aligned with live demo / production-blocked state"
     },
     {
@@ -2862,7 +2889,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L9",
       "id": "docs_changelog_2026_06_01_bogle_motion_state_machine_production_completion_autoplan",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-06-01 \u2014 bogle motion state machine + production completion autoplan"
     },
     {
@@ -2871,7 +2898,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L18",
       "id": "docs_changelog_2026_05_31_akinator_level_canonical_knowledge_base_local_pass",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-05-31 \u2014 akinator-level canonical knowledge base local pass"
     },
     {
@@ -2880,7 +2907,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L28",
       "id": "docs_changelog_2026_05_31_character_brand_interaction_slice_local_pass",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-05-31 \u2014 character/brand interaction slice local pass"
     },
     {
@@ -2889,7 +2916,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L37",
       "id": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_pass",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-05-30 \u2014 threshold / golden paths / minimal ui scaffold pilot local pass"
     },
     {
@@ -2898,7 +2925,7 @@
       "source_file": "docs/changelog.md",
       "source_location": "L51",
       "id": "docs_changelog_2026_05_29_adaptive_selector_pilot_local_pass",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-05-29 \u2014 adaptive selector pilot local pass"
     },
     {
@@ -2907,7 +2934,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_harry_potter_md",
-      "community": 27,
+      "community": 26,
       "norm_label": "akinator-direct-play-log-2026-05-28-harry-potter.md"
     },
     {
@@ -2916,7 +2943,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_akinator_direct_play_log_harry_potter",
-      "community": 27,
+      "community": 26,
       "norm_label": "akinator direct play log \u2014 harry potter"
     },
     {
@@ -2925,7 +2952,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_run_metadata",
-      "community": 27,
+      "community": 26,
       "norm_label": "run metadata"
     },
     {
@@ -2934,7 +2961,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L21",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_entry_flow_observations",
-      "community": 27,
+      "community": 26,
       "norm_label": "entry flow observations"
     },
     {
@@ -2943,7 +2970,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_question_answer_trace",
-      "community": 27,
+      "community": 26,
       "norm_label": "question/answer trace"
     },
     {
@@ -2952,7 +2979,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_interaction_insights",
-      "community": 27,
+      "community": 26,
       "norm_label": "interaction insights"
     },
     {
@@ -2961,7 +2988,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L69",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_product_implications_for_korean_food_akinator",
-      "community": 27,
+      "community": 26,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -2970,7 +2997,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-harry-potter.md",
       "source_location": "L77",
       "id": "research_akinator_direct_play_log_2026_05_28_harry_potter_gate_status",
-      "community": 27,
+      "community": 26,
       "norm_label": "gate status"
     },
     {
@@ -3384,7 +3411,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_blocker_and_protocol_md",
-      "community": 13,
+      "community": 12,
       "norm_label": "akinator-direct-play-blocker-and-protocol.md"
     },
     {
@@ -3393,7 +3420,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_blocker_and_protocol_akinator_direct_play_blocker_manual_observation_protocol",
-      "community": 13,
+      "community": 12,
       "norm_label": "akinator direct play blocker + manual observation protocol"
     },
     {
@@ -3402,7 +3429,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_blocker_and_protocol",
-      "community": 13,
+      "community": 12,
       "norm_label": "\u1112\u1167\u11ab\u110c\u1162 \u1111\u1161\u11ab\u110c\u1165\u11bc"
     },
     {
@@ -3411,7 +3438,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L15",
       "id": "research_akinator_direct_play_blocker_and_protocol_15",
-      "community": 13,
+      "community": 12,
       "norm_label": "\u1109\u1175\u1103\u1169\u1112\u1161\u11ab \u1100\u1167\u11bc\u1105\u1169"
     },
     {
@@ -3420,7 +3447,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_blocker_and_protocol_1_headless_browser",
-      "community": 13,
+      "community": 12,
       "norm_label": "1. headless/browser \u1100\u1169\u11bc\u1109\u1175\u11a8 \u110b\u1170\u11b8"
     },
     {
@@ -3429,7 +3456,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L23",
       "id": "research_akinator_direct_play_blocker_and_protocol_2_silvergames_embedded_route",
-      "community": 13,
+      "community": 12,
       "norm_label": "2. silvergames embedded route"
     },
     {
@@ -3438,7 +3465,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L30",
       "id": "research_akinator_direct_play_blocker_and_protocol_3_npm_api_wrapper",
-      "community": 13,
+      "community": 12,
       "norm_label": "3. npm/api wrapper"
     },
     {
@@ -3447,7 +3474,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L38",
       "id": "research_akinator_direct_play_blocker_and_protocol_4_macos_local_browser_computer_use",
-      "community": 13,
+      "community": 12,
       "norm_label": "4. macos local browser/computer-use"
     },
     {
@@ -3456,7 +3483,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_blocker_and_protocol_47",
-      "community": 13,
+      "community": 12,
       "norm_label": "\u1112\u1161\u110c\u1175 \u110b\u1161\u11ad\u110b\u1173\u11ab \u1100\u1165\u11ba"
     },
     {
@@ -3465,7 +3492,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_blocker_and_protocol_blocker",
-      "community": 13,
+      "community": 12,
       "norm_label": "\u110b\u116b blocker\u110b\u1175\u11ab\u1100\u1161"
     },
     {
@@ -3474,7 +3501,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_blocker_and_protocol_60",
-      "community": 13,
+      "community": 12,
       "norm_label": "\u1111\u1175\u11af\u110b\u116d\u1112\u1161\u11ab \u1109\u1161\u110b\u116d\u11bc\u110c\u1161 \u110b\u1175\u11b8\u1105\u1167\u11a8/\u1100\u116f\u11ab\u1112\u1161\u11ab"
     },
     {
@@ -3483,7 +3510,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L64",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_a_macos_permission",
-      "community": 13,
+      "community": 12,
       "norm_label": "option a \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 macos permission \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -3492,7 +3519,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L70",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_b",
-      "community": 13,
+      "community": 12,
       "norm_label": "option b \u2014 \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u1105\u1169\u1100\u1173 \u110c\u1166\u1100\u1169\u11bc"
     },
     {
@@ -3501,7 +3528,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L74",
       "id": "research_akinator_direct_play_blocker_and_protocol_option_c",
-      "community": 13,
+      "community": 12,
       "norm_label": "option c \u2014 \u110c\u1175\u11a8\u110c\u1165\u11b8 \u1111\u1173\u11af\u1105\u1166\u110b\u1175 \u110b\u116d\u1100\u116e\u1105\u1173\u11af \u1100\u1169\u11bc\u1100\u1162 \u110b\u1167\u11bc\u1109\u1161\u11bc/\u1109\u1173\u110f\u1173\u1105\u1175\u11ab\u1109\u1163\u11ba \u1100\u116a\u11ab\u110e\u1161\u11af\u1105\u1169 \u1103\u1162\u110e\u1166 \u1109\u1173\u11bc\u110b\u1175\u11ab"
     },
     {
@@ -3510,7 +3537,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L78",
       "id": "research_akinator_direct_play_blocker_and_protocol_manual_play_protocol",
-      "community": 13,
+      "community": 12,
       "norm_label": "manual play protocol"
     },
     {
@@ -3519,7 +3546,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L88",
       "id": "research_akinator_direct_play_blocker_and_protocol_codeblock_1",
-      "community": 13,
+      "community": 12,
       "norm_label": "code:txt (target:)"
     },
     {
@@ -3528,7 +3555,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L116",
       "id": "research_akinator_direct_play_blocker_and_protocol_observation_checklist",
-      "community": 13,
+      "community": 12,
       "norm_label": "observation checklist"
     },
     {
@@ -3537,7 +3564,7 @@
       "source_file": "docs/research/akinator-direct-play-blocker-and-protocol.md",
       "source_location": "L129",
       "id": "research_akinator_direct_play_blocker_and_protocol_builder_gate",
-      "community": 13,
+      "community": 12,
       "norm_label": "builder gate"
     },
     {
@@ -3546,7 +3573,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L1",
       "id": "docs_research_designer_gate_md",
-      "community": 15,
+      "community": 16,
       "norm_label": "designer-gate.md"
     },
     {
@@ -3555,7 +3582,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L1",
       "id": "research_designer_gate_designer_gate_food_akinator_zero_to_one",
-      "community": 15,
+      "community": 16,
       "norm_label": "designer gate \u2014 food akinator zero-to-one"
     },
     {
@@ -3564,7 +3591,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L3",
       "id": "research_designer_gate_gate",
-      "community": 15,
+      "community": 16,
       "norm_label": "gate \u1106\u1169\u11a8\u110c\u1165\u11a8"
     },
     {
@@ -3573,7 +3600,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L7",
       "id": "research_designer_gate",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1107\u1161\u11bc\u1112\u1163\u11bc"
     },
     {
@@ -3582,7 +3609,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L13",
       "id": "research_designer_gate_13",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u1112\u116e\u1107\u1169 \u1107\u1175\u1100\u116d"
     },
     {
@@ -3591,7 +3618,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L15",
       "id": "research_designer_gate_a",
-      "community": 15,
+      "community": 16,
       "norm_label": "a. \u110b\u1175\u11b8\u1106\u1161\u11ba \u1110\u1161\u11b7\u110c\u1165\u11bc \u201c\u1106\u1161\u11ba\u110c\u1165\u11bc\u110b\u1175\u201d"
     },
     {
@@ -3600,7 +3627,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L20",
       "id": "research_designer_gate_b",
-      "community": 15,
+      "community": 16,
       "norm_label": "b. \u1107\u1169\u1100\u1173\u11af \u1109\u1168\u1111\u1173"
     },
     {
@@ -3609,7 +3636,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L25",
       "id": "research_designer_gate_c",
-      "community": 15,
+      "community": 16,
       "norm_label": "c. \u110b\u1175\u11b8\u1106\u1161\u11ba \u1105\u1166\u110b\u1175\u1103\u1165 \u201c\u1102\u1163\u11b7\u1110\u1166\u1102\u1161\u201d"
     },
     {
@@ -3618,7 +3645,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L30",
       "id": "research_designer_gate_30",
-      "community": 15,
+      "community": 16,
       "norm_label": "\u110e\u116c\u110c\u1169\u11bc \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -3627,7 +3654,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L39",
       "id": "research_designer_gate_screen_states",
-      "community": 15,
+      "community": 16,
       "norm_label": "screen states"
     },
     {
@@ -3636,7 +3663,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L51",
       "id": "research_designer_gate_5_answer_rhythm",
-      "community": 15,
+      "community": 16,
       "norm_label": "5-answer rhythm"
     },
     {
@@ -3645,7 +3672,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L67",
       "id": "research_designer_gate_character_motion_spec",
-      "community": 15,
+      "community": 16,
       "norm_label": "character motion spec"
     },
     {
@@ -3654,7 +3681,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L87",
       "id": "research_designer_gate_microcopy",
-      "community": 15,
+      "community": 16,
       "norm_label": "microcopy \u110b\u116f\u11ab\u110e\u1175\u11a8"
     },
     {
@@ -3663,7 +3690,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L102",
       "id": "research_designer_gate_visual_acceptance",
-      "community": 15,
+      "community": 16,
       "norm_label": "visual acceptance"
     },
     {
@@ -3672,7 +3699,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L120",
       "id": "research_designer_gate_builder_handoff",
-      "community": 15,
+      "community": 16,
       "norm_label": "builder handoff"
     },
     {
@@ -3681,7 +3708,7 @@
       "source_file": "docs/research/designer-gate.md",
       "source_location": "L124",
       "id": "research_designer_gate_codeblock_1",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:ts (type charactercue =)"
     },
     {
@@ -3690,7 +3717,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_pikachu_md",
-      "community": 34,
+      "community": 31,
       "norm_label": "akinator-direct-play-log-2026-05-28-pikachu.md"
     },
     {
@@ -3699,7 +3726,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_akinator_direct_play_log_pikachu",
-      "community": 34,
+      "community": 31,
       "norm_label": "akinator direct play log \u2014 pikachu"
     },
     {
@@ -3708,7 +3735,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_run_metadata",
-      "community": 34,
+      "community": 31,
       "norm_label": "run metadata"
     },
     {
@@ -3717,7 +3744,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_question_answer_trace",
-      "community": 34,
+      "community": 31,
       "norm_label": "question/answer trace"
     },
     {
@@ -3726,7 +3753,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_interaction_insights",
-      "community": 34,
+      "community": 31,
       "norm_label": "interaction insights"
     },
     {
@@ -3735,7 +3762,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L48",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_product_implications_for_korean_food_akinator",
-      "community": 34,
+      "community": 31,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -3744,7 +3771,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-pikachu.md",
       "source_location": "L55",
       "id": "research_akinator_direct_play_log_2026_05_28_pikachu_gate_status",
-      "community": 34,
+      "community": 31,
       "norm_label": "gate status"
     },
     {
@@ -3816,7 +3843,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_md",
-      "community": 28,
+      "community": 32,
       "norm_label": "akinator-direct-play-log-2026-05-28-naruto-uzumaki.md"
     },
     {
@@ -3825,7 +3852,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_akinator_direct_play_log_naruto_uzumaki",
-      "community": 28,
+      "community": 32,
       "norm_label": "akinator direct play log \u2014 naruto uzumaki"
     },
     {
@@ -3834,7 +3861,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_run_metadata",
-      "community": 28,
+      "community": 32,
       "norm_label": "run metadata"
     },
     {
@@ -3843,7 +3870,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_question_answer_trace",
-      "community": 28,
+      "community": 32,
       "norm_label": "question/answer trace"
     },
     {
@@ -3852,7 +3879,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L37",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_interaction_insights",
-      "community": 28,
+      "community": 32,
       "norm_label": "interaction insights"
     },
     {
@@ -3861,7 +3888,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L44",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_product_implications_for_korean_food_akinator",
-      "community": 28,
+      "community": 32,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -3870,7 +3897,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-naruto-uzumaki.md",
       "source_location": "L50",
       "id": "research_akinator_direct_play_log_2026_05_28_naruto_uzumaki_gate_status",
-      "community": 28,
+      "community": 32,
       "norm_label": "gate status"
     },
     {
@@ -3879,7 +3906,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L1",
       "id": "docs_research_inference_motion_research_md",
-      "community": 25,
+      "community": 27,
       "norm_label": "inference-motion-research.md"
     },
     {
@@ -3888,7 +3915,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L1",
       "id": "research_inference_motion_research_akinator_like",
-      "community": 25,
+      "community": 27,
       "norm_label": "\u110c\u1161\u11a8\u110b\u1173\u11ab \u110b\u1173\u11b7\u1109\u1175\u11a8 \u1103\u1169\u1106\u1166\u110b\u1175\u11ab akinator-like \u110e\u116e\u1105\u1169\u11ab \u110b\u1166\u11ab\u110c\u1175\u11ab + \u110f\u1162\u1105\u1175\u11a8\u1110\u1165/\u1106\u1169\u1109\u1167\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab \u110c\u1166\u110b\u1161\u11ab"
     },
     {
@@ -3897,7 +3924,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L8",
       "id": "research_inference_motion_research_1",
-      "community": 25,
+      "community": 27,
       "norm_label": "1. \u1106\u1169\u11a8\u1111\u116d\u110b\u116a \u1112\u1162\u11a8\u1109\u1175\u11b7 \u110c\u1166\u1111\u116e\u11b7 \u1100\u1167\u11bc\u1112\u1165\u11b7"
     },
     {
@@ -3906,7 +3933,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L20",
       "id": "research_inference_motion_research_2",
-      "community": 37,
+      "community": 39,
       "norm_label": "2. \u1103\u1169\u1106\u1166\u110b\u1175\u11ab \u1103\u1166\u110b\u1175\u1110\u1165 \u1106\u1169\u1103\u1166\u11af"
     },
     {
@@ -3915,7 +3942,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L22",
       "id": "research_inference_motion_research_2_1_candidate_schema",
-      "community": 37,
+      "community": 39,
       "norm_label": "2.1 candidate schema: \u110b\u1173\u11b7\u1109\u1175\u11a8 \u1112\u116e\u1107\u1169"
     },
     {
@@ -3924,7 +3951,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L28",
       "id": "research_inference_motion_research_codeblock_1",
-      "community": 37,
+      "community": 39,
       "norm_label": "code:ts (type candidate = {)"
     },
     {
@@ -3933,7 +3960,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L62",
       "id": "research_inference_motion_research_2_2_question_bank_schema",
-      "community": 37,
+      "community": 39,
       "norm_label": "2.2 question bank schema"
     },
     {
@@ -3942,7 +3969,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L66",
       "id": "research_inference_motion_research_codeblock_2",
-      "community": 37,
+      "community": 39,
       "norm_label": "code:ts (type question = {)"
     },
     {
@@ -3951,7 +3978,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L104",
       "id": "research_inference_motion_research_3_5_answer_weight_semantics",
-      "community": 31,
+      "community": 30,
       "norm_label": "3. 5-answer weight semantics"
     },
     {
@@ -3960,7 +3987,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L117",
       "id": "research_inference_motion_research_3_1_a_soft_distance_scoring_mvp",
-      "community": 31,
+      "community": 30,
       "norm_label": "3.1 \u110c\u1165\u11b7\u1109\u116e \u1100\u1162\u11bc\u1109\u1175\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 a: soft distance scoring, mvp \u110e\u116e\u110e\u1165\u11ab"
     },
     {
@@ -3969,7 +3996,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L121",
       "id": "research_inference_motion_research_codeblock_3",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:txt (logscore(c) = log(prior(c)) + \u03c3 answered q [ weight(q, answe)"
     },
     {
@@ -3978,7 +4005,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L127",
       "id": "research_inference_motion_research_codeblock_4",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:txt (similarity(a, e) = 1 - abs(a - e)        // \u1107\u1165\u11b7\u110b\u1171 \u1103\u1162\u1105\u1163\u11a8 -1~1)"
     },
     {
@@ -3987,7 +4014,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L133",
       "id": "research_inference_motion_research_codeblock_5",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:txt (similarity(a, e) = - ((a - e)^2) / (2\u03c32))"
     },
     {
@@ -3996,7 +4023,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L142",
       "id": "research_inference_motion_research_codeblock_6",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:txt (answerconfidence = abs(answervalue)      // yes/no\u1102\u1173\u11ab 1, proba)"
     },
     {
@@ -4005,7 +4032,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L148",
       "id": "research_inference_motion_research_3_2_b_naive_bayes",
-      "community": 31,
+      "community": 30,
       "norm_label": "3.2 \u110c\u1165\u11b7\u1109\u116e \u1100\u1162\u11bc\u1109\u1175\u11ab \u1107\u1161\u11bc\u1109\u1175\u11a8 b: naive bayes"
     },
     {
@@ -4104,7 +4131,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L236",
       "id": "research_inference_motion_research_5_confidence_reveal_threshold",
-      "community": 40,
+      "community": 27,
       "norm_label": "5. confidence/reveal threshold"
     },
     {
@@ -4113,7 +4140,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L238",
       "id": "research_inference_motion_research_5_1",
-      "community": 40,
+      "community": 27,
       "norm_label": "5.1 \u110e\u116e\u110e\u1173\u11a8 \u110c\u1169\u1100\u1165\u11ab"
     },
     {
@@ -4122,7 +4149,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L248",
       "id": "research_inference_motion_research_5_2_reveal_vs_tentative_guess",
-      "community": 40,
+      "community": 27,
       "norm_label": "5.2 reveal vs tentative guess"
     },
     {
@@ -4131,7 +4158,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L258",
       "id": "research_inference_motion_research_5_3_confidence_messaging",
-      "community": 40,
+      "community": 27,
       "norm_label": "5.3 confidence messaging"
     },
     {
@@ -4140,7 +4167,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L269",
       "id": "research_inference_motion_research_6_wrong_guess_suppression_recovery",
-      "community": 36,
+      "community": 35,
       "norm_label": "6. wrong guess suppression/recovery"
     },
     {
@@ -4149,7 +4176,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L273",
       "id": "research_inference_motion_research_6_1_suppression",
-      "community": 36,
+      "community": 35,
       "norm_label": "6.1 suppression \u1103\u1166\u110b\u1175\u1110\u1165"
     },
     {
@@ -4158,7 +4185,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L277",
       "id": "research_inference_motion_research_codeblock_13",
-      "community": 36,
+      "community": 35,
       "norm_label": "code:ts (type sessionstate = {)"
     },
     {
@@ -4167,7 +4194,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L292",
       "id": "research_inference_motion_research_6_2_recovery_strategy",
-      "community": 36,
+      "community": 35,
       "norm_label": "6.2 recovery strategy"
     },
     {
@@ -4176,7 +4203,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L304",
       "id": "research_inference_motion_research_6_3_learning_hook",
-      "community": 36,
+      "community": 35,
       "norm_label": "6.3 learning hook"
     },
     {
@@ -4185,7 +4212,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L309",
       "id": "research_inference_motion_research_codeblock_14",
-      "community": 36,
+      "community": 35,
       "norm_label": "code:json ({)"
     },
     {
@@ -4302,7 +4329,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L415",
       "id": "research_inference_motion_research_8",
-      "community": 30,
+      "community": 29,
       "norm_label": "8. \u110f\u1162\u1105\u1175\u11a8\u1110\u1165/\u1106\u1169\u1109\u1167\u11ab \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab \u1109\u1165\u11ab\u1110\u1162\u11a8\u110c\u1175"
     },
     {
@@ -4311,7 +4338,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L419",
       "id": "research_inference_motion_research_8_1_rive",
-      "community": 30,
+      "community": 29,
       "norm_label": "8.1 rive"
     },
     {
@@ -4320,7 +4347,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L433",
       "id": "research_inference_motion_research_8_2_spine",
-      "community": 30,
+      "community": 29,
       "norm_label": "8.2 spine"
     },
     {
@@ -4329,7 +4356,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L447",
       "id": "research_inference_motion_research_8_3_lottie",
-      "community": 30,
+      "community": 29,
       "norm_label": "8.3 lottie"
     },
     {
@@ -4338,7 +4365,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L461",
       "id": "research_inference_motion_research_8_4_layered_raster_rig",
-      "community": 30,
+      "community": 29,
       "norm_label": "8.4 layered raster rig"
     },
     {
@@ -4347,7 +4374,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L477",
       "id": "research_inference_motion_research_8_5_css_procedural_rig",
-      "community": 30,
+      "community": 29,
       "norm_label": "8.5 css procedural rig"
     },
     {
@@ -4356,7 +4383,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L493",
       "id": "research_inference_motion_research_8_6_canvas_webgl_custom_rig",
-      "community": 30,
+      "community": 29,
       "norm_label": "8.6 canvas/webgl custom rig"
     },
     {
@@ -4365,7 +4392,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L508",
       "id": "research_inference_motion_research_9_mvp",
-      "community": 25,
+      "community": 37,
       "norm_label": "9. \u110e\u116e\u110e\u1165\u11ab mvp \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab"
     },
     {
@@ -4374,7 +4401,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L510",
       "id": "research_inference_motion_research_9_1_1_rive_state_machine",
-      "community": 25,
+      "community": 37,
       "norm_label": "9.1 1\u1109\u116e\u11ab\u110b\u1171: rive state machine"
     },
     {
@@ -4383,7 +4410,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L530",
       "id": "research_inference_motion_research_codeblock_23",
-      "community": 25,
+      "community": 37,
       "norm_label": "code:ts (function cuefromengine(state, confidence, lastanswer, wrongg)"
     },
     {
@@ -4392,7 +4419,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L540",
       "id": "research_inference_motion_research_9_2_2_lottie_clips_light_state_controller",
-      "community": 25,
+      "community": 37,
       "norm_label": "9.2 2\u1109\u116e\u11ab\u110b\u1171: lottie clips + light state controller"
     },
     {
@@ -4401,7 +4428,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L547",
       "id": "research_inference_motion_research_9_3_fallback_layered_raster",
-      "community": 25,
+      "community": 37,
       "norm_label": "9.3 fallback: layered raster"
     },
     {
@@ -4410,7 +4437,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L556",
       "id": "research_inference_motion_research_10_mvp",
-      "community": 39,
+      "community": 40,
       "norm_label": "10. \u110c\u1165\u11ab\u110e\u1166 mvp \u110b\u1161\u110f\u1175\u1110\u1166\u11a8\u110e\u1165"
     },
     {
@@ -4419,7 +4446,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L558",
       "id": "research_inference_motion_research_10_1",
-      "community": 39,
+      "community": 40,
       "norm_label": "10.1 \u110f\u1173\u11af\u1105\u1161\u110b\u1175\u110b\u1165\u11ab\u1110\u1173"
     },
     {
@@ -4428,7 +4455,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L565",
       "id": "research_inference_motion_research_10_2",
-      "community": 39,
+      "community": 40,
       "norm_label": "10.2 \u1109\u1165\u1107\u1165 \u1104\u1169\u1102\u1173\u11ab \u1105\u1169\u110f\u1165\u11af \u110b\u1166\u11ab\u110c\u1175\u11ab"
     },
     {
@@ -4437,7 +4464,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L577",
       "id": "research_inference_motion_research_10_3",
-      "community": 39,
+      "community": 40,
       "norm_label": "10.3 \u1103\u1166\u110b\u1175\u1110\u1165 \u1111\u1161\u110b\u1175\u11af \u1100\u116e\u110c\u1169 \u110b\u1168"
     },
     {
@@ -4446,7 +4473,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L579",
       "id": "research_inference_motion_research_codeblock_24",
-      "community": 39,
+      "community": 40,
       "norm_label": "code:txt (/data)"
     },
     {
@@ -4455,7 +4482,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L598",
       "id": "research_inference_motion_research_11",
-      "community": 35,
+      "community": 36,
       "norm_label": "11. \u110c\u116e\u110b\u116d \u1105\u1175\u1109\u1173\u110f\u1173\u110b\u116a \u1103\u1162\u110b\u1173\u11bc"
     },
     {
@@ -4464,7 +4491,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L600",
       "id": "research_inference_motion_research_1_600",
-      "community": 35,
+      "community": 36,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 1: \u110c\u1175\u11af\u1106\u116e\u11ab \u1103\u1166\u110b\u1175\u1110\u1165 \u1111\u116e\u11b7\u110c\u1175\u11af \u1107\u116e\u110c\u1169\u11a8"
     },
     {
@@ -4473,7 +4500,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L615",
       "id": "research_inference_motion_research_2_615",
-      "community": 35,
+      "community": 36,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 2: \u1109\u1161\u110b\u116d\u11bc\u110c\u1161\u1100\u1161 \u1109\u1169\u11a8\u1109\u1165\u11bc\u110b\u1173\u11af \u1106\u1169\u1105\u1173\u11b7"
     },
     {
@@ -4482,7 +4509,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L625",
       "id": "research_inference_motion_research_3",
-      "community": 35,
+      "community": 36,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 3: \u1102\u1165\u1106\u116e \u1108\u1161\u11af\u1105\u1175 \u110c\u1165\u11bc\u1103\u1161\u11b8\u110b\u1173\u11af \u110d\u1175\u11a8\u110b\u1165 \u1110\u1173\u11af\u1105\u1175\u11b7"
     },
     {
@@ -4491,7 +4518,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L632",
       "id": "research_inference_motion_research_4",
-      "community": 35,
+      "community": 36,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 4: \u110f\u1162\u1105\u1175\u11a8\u1110\u1165 \u110c\u1166\u110c\u1161\u11a8 \u1107\u1167\u11bc\u1106\u1169\u11a8"
     },
     {
@@ -4500,7 +4527,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L639",
       "id": "research_inference_motion_research_5",
-      "community": 35,
+      "community": 36,
       "norm_label": "\u1105\u1175\u1109\u1173\u110f\u1173 5: \u110b\u1162\u1102\u1175\u1106\u1166\u110b\u1175\u1109\u1167\u11ab\u110b\u1175 \u110e\u116e\u1105\u1169\u11ab \u1109\u1161\u11bc\u1110\u1162\u110b\u116a \u110b\u1165\u1100\u1173\u11ba\u1102\u1161\u11b7"
     },
     {
@@ -4554,7 +4581,7 @@
       "source_file": "docs/research/inference-motion-research.md",
       "source_location": "L751",
       "id": "research_inference_motion_research_13",
-      "community": 25,
+      "community": 27,
       "norm_label": "13. \u1112\u116c\u110b\u1174\u110b\u116d\u11bc \u1100\u116f\u11ab\u110c\u1161\u11bc \u1100\u1167\u11af\u1105\u1169\u11ab"
     },
     {
@@ -4671,7 +4698,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_heung_min_son_md",
-      "community": 29,
+      "community": 34,
       "norm_label": "akinator-direct-play-log-2026-05-28-heung-min-son.md"
     },
     {
@@ -4680,7 +4707,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_akinator_direct_play_log_heung_min_son",
-      "community": 29,
+      "community": 34,
       "norm_label": "akinator direct play log \u2014 heung-min son"
     },
     {
@@ -4689,7 +4716,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_run_metadata",
-      "community": 29,
+      "community": 34,
       "norm_label": "run metadata"
     },
     {
@@ -4698,7 +4725,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L17",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_question_answer_trace",
-      "community": 29,
+      "community": 34,
       "norm_label": "question/answer trace"
     },
     {
@@ -4707,7 +4734,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L45",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_interaction_insights",
-      "community": 29,
+      "community": 34,
       "norm_label": "interaction insights"
     },
     {
@@ -4716,7 +4743,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L53",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_product_implications_for_korean_food_akinator",
-      "community": 29,
+      "community": 34,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -4725,7 +4752,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-heung-min-son.md",
       "source_location": "L60",
       "id": "research_akinator_direct_play_log_2026_05_28_heung_min_son_gate_status",
-      "community": 29,
+      "community": 34,
       "norm_label": "gate status"
     },
     {
@@ -4734,7 +4761,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "docs_research_korean_food_decision_product_research_md",
-      "community": 16,
+      "community": 15,
       "norm_label": "korean-food-decision-product-research.md"
     },
     {
@@ -4743,7 +4770,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L1",
       "id": "research_korean_food_decision_product_research_korean_food_decision_product_research",
-      "community": 16,
+      "community": 15,
       "norm_label": "korean food decision product research"
     },
     {
@@ -4752,7 +4779,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L3",
       "id": "research_korean_food_decision_product_research",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1112\u1162\u11a8\u1109\u1175\u11b7 \u110b\u1175\u11ab\u1109\u1161\u110b\u1175\u1110\u1173"
     },
     {
@@ -4761,7 +4788,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L16",
       "id": "research_korean_food_decision_product_research_16",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u110c\u116e\u110b\u116d \u1106\u1162\u11a8\u1105\u1161\u11a8"
     },
     {
@@ -4770,7 +4797,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L18",
       "id": "research_korean_food_decision_product_research_18",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1107\u1162\u1103\u1161\u11af"
     },
     {
@@ -4779,7 +4806,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L24",
       "id": "research_korean_food_decision_product_research_24",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u110b\u116c\u1109\u1175\u11a8"
     },
     {
@@ -4788,7 +4815,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L30",
       "id": "research_korean_food_decision_product_research_30",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u110b\u1163\u1109\u1175\u11a8"
     },
     {
@@ -4797,7 +4824,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L36",
       "id": "research_korean_food_decision_product_research_36",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1112\u1169\u11ab\u1107\u1161\u11b8"
     },
     {
@@ -4806,7 +4833,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L42",
       "id": "research_korean_food_decision_product_research_42",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u1103\u1166\u110b\u1175\u1110\u1173"
     },
     {
@@ -4815,7 +4842,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L48",
       "id": "research_korean_food_decision_product_research_product_thesis",
-      "community": 16,
+      "community": 15,
       "norm_label": "product thesis"
     },
     {
@@ -4824,7 +4851,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L50",
       "id": "research_korean_food_decision_product_research_thesis_1",
-      "community": 16,
+      "community": 15,
       "norm_label": "thesis 1 \u2014 \u1100\u1167\u11af\u110c\u1165\u11bc \u110e\u1162\u11a8\u110b\u1175\u11b7\u110b\u1173\u11af \u1100\u1161\u110c\u1167\u1100\u1161\u1102\u1173\u11ab \u1100\u1166\u110b\u1175\u11b7"
     },
     {
@@ -4833,7 +4860,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L54",
       "id": "research_korean_food_decision_product_research_thesis_2",
-      "community": 16,
+      "community": 15,
       "norm_label": "thesis 2 \u2014 \u110b\u1169\u1102\u1173\u11af\u110b\u1174 \u1100\u1165\u1107\u116e\u1100\u1161\u11b7\u110b\u1173\u11af \u110b\u1175\u11b0\u1102\u1173\u11ab\u1103\u1161"
     },
     {
@@ -4842,7 +4869,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L58",
       "id": "research_korean_food_decision_product_research_thesis_3_reveal",
-      "community": 16,
+      "community": 15,
       "norm_label": "thesis 3 \u2014 \u1102\u1161\u11b8\u1103\u1173\u11a8 \u1100\u1161\u1102\u1173\u11bc\u1112\u1161\u11ab reveal"
     },
     {
@@ -4851,7 +4878,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L70",
       "id": "research_korean_food_decision_product_research_70",
-      "community": 16,
+      "community": 15,
       "norm_label": "\u110e\u116e\u110e\u1165\u11ab \u110c\u1166\u1111\u116e\u11b7\u110b\u1161\u11ab"
     },
     {
@@ -4860,7 +4887,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L76",
       "id": "research_korean_food_decision_product_research_mvp_scope",
-      "community": 16,
+      "community": 15,
       "norm_label": "mvp scope"
     },
     {
@@ -4869,7 +4896,7 @@
       "source_file": "docs/research/korean-food-decision-product-research.md",
       "source_location": "L84",
       "id": "research_korean_food_decision_product_research_non_goals",
-      "community": 16,
+      "community": 15,
       "norm_label": "non-goals"
     },
     {
@@ -4878,7 +4905,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "docs_research_akinator_direct_play_log_2026_05_28_elon_musk_md",
-      "community": 32,
+      "community": 28,
       "norm_label": "akinator-direct-play-log-2026-05-28-elon-musk.md"
     },
     {
@@ -4887,7 +4914,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L1",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_akinator_direct_play_log_elon_musk",
-      "community": 32,
+      "community": 28,
       "norm_label": "akinator direct play log \u2014 elon musk"
     },
     {
@@ -4896,7 +4923,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L3",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_run_metadata",
-      "community": 32,
+      "community": 28,
       "norm_label": "run metadata"
     },
     {
@@ -4905,7 +4932,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L18",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_question_answer_trace",
-      "community": 32,
+      "community": 28,
       "norm_label": "question/answer trace"
     },
     {
@@ -4914,7 +4941,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L40",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_interaction_insights",
-      "community": 32,
+      "community": 28,
       "norm_label": "interaction insights"
     },
     {
@@ -4923,7 +4950,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L47",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_product_implications_for_korean_food_akinator",
-      "community": 32,
+      "community": 28,
       "norm_label": "product implications for korean food akinator"
     },
     {
@@ -4932,7 +4959,7 @@
       "source_file": "docs/research/akinator-direct-play-log-2026-05-28-elon-musk.md",
       "source_location": "L54",
       "id": "research_akinator_direct_play_log_2026_05_28_elon_musk_gate_status",
-      "community": 32,
+      "community": 28,
       "norm_label": "gate status"
     },
     {
@@ -5184,7 +5211,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L1",
       "id": "docs_current_autoplan_kanban_md",
-      "community": 12,
+      "community": 13,
       "norm_label": "autoplan-kanban.md"
     },
     {
@@ -5193,7 +5220,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L1",
       "id": "current_autoplan_kanban_autoplan_kanban_food_akinator_production_completion_loop",
-      "community": 12,
+      "community": 13,
       "norm_label": "autoplan kanban \u2014 food akinator production completion loop"
     },
     {
@@ -5202,7 +5229,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L9",
       "id": "current_autoplan_kanban_program_goal",
-      "community": 12,
+      "community": 13,
       "norm_label": "program goal"
     },
     {
@@ -5211,7 +5238,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L13",
       "id": "current_autoplan_kanban_current_verdict",
-      "community": 12,
+      "community": 13,
       "norm_label": "current verdict"
     },
     {
@@ -5220,7 +5247,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L26",
       "id": "current_autoplan_kanban_review_synthesis",
-      "community": 12,
+      "community": 13,
       "norm_label": "review synthesis"
     },
     {
@@ -5229,7 +5256,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L28",
       "id": "current_autoplan_kanban_designer",
-      "community": 12,
+      "community": 13,
       "norm_label": "designer"
     },
     {
@@ -5238,7 +5265,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L37",
       "id": "current_autoplan_kanban_researcher_product_critic",
-      "community": 12,
+      "community": 13,
       "norm_label": "researcher / product critic"
     },
     {
@@ -5247,7 +5274,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L46",
       "id": "current_autoplan_kanban_architect",
-      "community": 12,
+      "community": 13,
       "norm_label": "architect"
     },
     {
@@ -5256,7 +5283,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L54",
       "id": "current_autoplan_kanban_reviewer",
-      "community": 12,
+      "community": 13,
       "norm_label": "reviewer"
     },
     {
@@ -5265,7 +5292,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L63",
       "id": "current_autoplan_kanban_qa_lead",
-      "community": 12,
+      "community": 13,
       "norm_label": "qa lead"
     },
     {
@@ -5274,7 +5301,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L78",
       "id": "current_autoplan_kanban_librarian",
-      "community": 12,
+      "community": 13,
       "norm_label": "librarian"
     },
     {
@@ -5283,7 +5310,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L86",
       "id": "current_autoplan_kanban_auto_resolved_decisions",
-      "community": 12,
+      "community": 13,
       "norm_label": "auto-resolved decisions"
     },
     {
@@ -5292,7 +5319,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L94",
       "id": "current_autoplan_kanban_escalation_decisions",
-      "community": 12,
+      "community": 13,
       "norm_label": "escalation decisions"
     },
     {
@@ -5301,7 +5328,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L103",
       "id": "current_autoplan_kanban_kanban_graph",
-      "community": 12,
+      "community": 13,
       "norm_label": "kanban graph"
     },
     {
@@ -5310,7 +5337,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L105",
       "id": "current_autoplan_kanban_wave_1_unblock_production_foundation",
-      "community": 12,
+      "community": 13,
       "norm_label": "wave 1 \u2014 unblock production foundation"
     },
     {
@@ -5319,7 +5346,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L112",
       "id": "current_autoplan_kanban_wave_2_real_production_character_runtime",
-      "community": 12,
+      "community": 13,
       "norm_label": "wave 2 \u2014 real production character runtime"
     },
     {
@@ -5328,7 +5355,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L120",
       "id": "current_autoplan_kanban_acceptance_criteria_for_production_launch",
-      "community": 12,
+      "community": 13,
       "norm_label": "acceptance criteria for production launch"
     },
     {
@@ -5337,7 +5364,7 @@
       "source_file": "docs/current/autoplan-kanban.md",
       "source_location": "L133",
       "id": "current_autoplan_kanban_evidence_index",
-      "community": 12,
+      "community": 13,
       "norm_label": "evidence index"
     },
     {
@@ -6061,11 +6088,20 @@
       "norm_label": "wrong recovery 3-beat staging"
     },
     {
+      "label": "createUnavailableRuntime()",
+      "file_type": "code",
+      "source_file": "src/ui/character/characterRuntime.ts",
+      "source_location": "L40",
+      "community": 1,
+      "norm_label": "createunavailableruntime()",
+      "id": "character_characterruntime_createunavailableruntime"
+    },
+    {
       "label": "useExistingServer",
       "file_type": "code",
       "source_file": "playwright.config.ts",
       "source_location": "L4",
-      "community": 41,
+      "community": 42,
       "norm_label": "useexistingserver",
       "id": "food_akinator_hermes_pilot_playwright_config_useexistingserver"
     },
@@ -6074,7 +6110,7 @@
       "file_type": "code",
       "source_file": "vitest.config.ts",
       "source_location": "L4",
-      "community": 42,
+      "community": 41,
       "norm_label": "isexplicithermesrun",
       "id": "food_akinator_hermes_pilot_vitest_config_isexplicithermesrun"
     },
@@ -6434,7 +6470,7 @@
       "file_type": "document",
       "source_file": "docs/changelog.md",
       "source_location": "L3",
-      "community": 26,
+      "community": 25,
       "norm_label": "2026-05-30 \u2014 threshold / golden paths / minimal ui scaffold pilot local progress",
       "id": "docs_changelog_2026_05_30_threshold_golden_paths_minimal_ui_scaffold_pilot_local_progress"
     },
@@ -6482,9 +6518,9 @@
       "source_file": "playwright.config.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "playwright_config_ts",
-      "target": "feat_production_ux_runtime_wave_playwright_config_useexistingserver",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_playwright_config_useexistingserver"
     },
     {
       "relation": "contains",
@@ -6502,9 +6538,9 @@
       "source_file": "vitest.config.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "vitest_config_ts",
-      "target": "feat_production_ux_runtime_wave_vitest_config_isexplicithermesrun",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_vitest_config_isexplicithermesrun"
     },
     {
       "relation": "contains",
@@ -6523,9 +6559,9 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "src_ui_character_characterassetmanifest_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterassetmanifest_ts"
     },
     {
       "relation": "imports",
@@ -6534,9 +6570,9 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "character_characterassetmanifest_characterassetmanifest",
-      "confidence_score": 1.0
+      "target": "character_characterassetmanifest_characterassetmanifest"
     },
     {
       "relation": "imports_from",
@@ -6545,9 +6581,9 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "src_ui_character_characterruntime_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterruntime_ts"
     },
     {
       "relation": "imports",
@@ -6556,9 +6592,9 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "character_characterruntime_rendercharacterruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_rendercharacterruntime"
     },
     {
       "relation": "imports",
@@ -6567,9 +6603,9 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "character_characterruntime_selectcharacterruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_selectcharacterruntime"
     },
     {
       "relation": "contains",
@@ -6577,9 +6613,9 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "tests_character_runtime_test_runtime",
-      "confidence_score": 1.0
+      "target": "tests_character_runtime_test_runtime"
     },
     {
       "relation": "contains",
@@ -6587,9 +6623,19 @@
       "source_file": "tests/character-runtime.test.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_runtime_test_ts",
-      "target": "tests_character_runtime_test_html",
-      "confidence_score": 1.0
+      "target": "tests_character_runtime_test_html"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/character-runtime.test.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_character_runtime_test_ts",
+      "target": "tests_character_runtime_test_manifest"
     },
     {
       "relation": "imports_from",
@@ -7298,9 +7344,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "src_ui_motionscheduler_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_motionscheduler_ts"
     },
     {
       "relation": "imports",
@@ -7309,9 +7355,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "ui_motionscheduler_motiondurations",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_motiondurations"
     },
     {
       "relation": "imports",
@@ -7320,9 +7366,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "ui_motionscheduler_plananswermotion",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_plananswermotion"
     },
     {
       "relation": "imports",
@@ -7331,9 +7377,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "ui_motionscheduler_planwrongrecoverymotion",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_planwrongrecoverymotion"
     },
     {
       "relation": "imports",
@@ -7342,9 +7388,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "ui_motionscheduler_runmotionplan",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_runmotionplan"
     },
     {
       "relation": "imports",
@@ -7353,9 +7399,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "ui_motionscheduler_motiontransition",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_motiontransition"
     },
     {
       "relation": "contains",
@@ -7363,9 +7409,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "tests_ui_motion_scheduler_test_plan",
-      "confidence_score": 1.0
+      "target": "tests_ui_motion_scheduler_test_plan"
     },
     {
       "relation": "contains",
@@ -7373,9 +7419,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "tests_ui_motion_scheduler_test_scheduled",
-      "confidence_score": 1.0
+      "target": "tests_ui_motion_scheduler_test_scheduled"
     },
     {
       "relation": "contains",
@@ -7383,9 +7429,9 @@
       "source_file": "tests/ui-motion-scheduler.test.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_motion_scheduler_test_ts",
-      "target": "tests_ui_motion_scheduler_test_events",
-      "confidence_score": 1.0
+      "target": "tests_ui_motion_scheduler_test_events"
     },
     {
       "relation": "imports_from",
@@ -7493,6 +7539,28 @@
       "confidence_score": 1.0,
       "source": "tests_engine_domain_test_ts",
       "target": "tests_engine_domain_test_candidate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/ui-app.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_ui_app_test_ts",
+      "target": "src_engine_domain_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/ui-app.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_ui_app_test_ts",
+      "target": "engine_domain_questionrole"
     },
     {
       "relation": "imports_from",
@@ -7705,6 +7773,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/ui-app.test.ts",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_ui_app_test_ts",
+      "target": "tests_ui_app_test_visiblehtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/ui-app.test.ts",
       "source_location": "L130",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -7800,16 +7878,6 @@
       "confidence_score": 1.0,
       "source": "tests_ui_app_test_ts",
       "target": "tests_ui_app_test_error"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/ui-app.test.ts",
-      "source_location": "L159",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "tests_ui_app_test_ts",
-      "target": "tests_ui_app_test_visiblehtml"
     },
     {
       "relation": "contains",
@@ -7915,6 +7983,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/ui-app.test.ts",
+      "source_location": "L351",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_ui_app_test_ts",
+      "target": "tests_ui_app_test_sessionwithquestionrole"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/ui-app.test.ts",
       "source_location": "L125",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -7983,14 +8061,25 @@
       "target": "ui_app_createdemosession"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/ui-app.test.ts",
+      "source_location": "L352",
+      "weight": 1.0,
+      "source": "tests_ui_app_test_sessionwithquestionrole",
+      "target": "ui_app_createdemosession"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/ui-source-boundary.test.js",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_ui_source_boundary_test_js",
-      "target": "tests_ui_source_boundary_test_appsource",
-      "confidence_score": 1.0
+      "target": "tests_ui_source_boundary_test_appsource"
     },
     {
       "relation": "imports_from",
@@ -8664,9 +8753,9 @@
       "source_file": "tests/character-stage.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_stage_test_ts",
-      "target": "src_ui_character_characterstage_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterstage_ts"
     },
     {
       "relation": "imports",
@@ -8675,9 +8764,9 @@
       "source_file": "tests/character-stage.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_stage_test_ts",
-      "target": "character_characterstage_rendercharacterstage",
-      "confidence_score": 1.0
+      "target": "character_characterstage_rendercharacterstage"
     },
     {
       "relation": "contains",
@@ -8685,9 +8774,9 @@
       "source_file": "tests/character-stage.test.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_character_stage_test_ts",
-      "target": "tests_character_stage_test_html",
-      "confidence_score": 1.0
+      "target": "tests_character_stage_test_html"
     },
     {
       "relation": "imports_from",
@@ -9096,9 +9185,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "src_engine_domain_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_domain_ts"
     },
     {
       "relation": "imports",
@@ -9107,9 +9196,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "engine_domain_answerkey",
-      "confidence_score": 1.0
+      "target": "engine_domain_answerkey"
     },
     {
       "relation": "imports_from",
@@ -9118,9 +9207,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "src_ui_motionscheduler_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_motionscheduler_ts"
     },
     {
       "relation": "imports",
@@ -9129,9 +9218,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_app_recoverybeat",
-      "confidence_score": 1.0
+      "target": "ui_app_recoverybeat"
     },
     {
       "relation": "imports",
@@ -9140,9 +9229,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_app_uievent",
-      "confidence_score": 1.0
+      "target": "ui_app_uievent"
     },
     {
       "relation": "contains",
@@ -9150,9 +9239,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_motiondurations",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_motiondurations"
     },
     {
       "relation": "contains",
@@ -9160,9 +9249,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_scheduleduievent",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_scheduleduievent"
     },
     {
       "relation": "contains",
@@ -9170,9 +9259,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_motiontransition",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_motiontransition"
     },
     {
       "relation": "contains",
@@ -9180,9 +9269,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_schedulerclock",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_schedulerclock"
     },
     {
       "relation": "contains",
@@ -9190,9 +9279,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_plananswermotion",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_plananswermotion"
     },
     {
       "relation": "contains",
@@ -9200,9 +9289,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_planwrongrecoverymotion",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_planwrongrecoverymotion"
     },
     {
       "relation": "contains",
@@ -9210,9 +9299,9 @@
       "source_file": "src/ui/motionScheduler.ts",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_motionscheduler_ts",
-      "target": "ui_motionscheduler_runmotionplan",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_runmotionplan"
     },
     {
       "relation": "imports",
@@ -9221,9 +9310,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "ui_motionscheduler_scheduleduievent",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_scheduleduievent"
     },
     {
       "relation": "imports",
@@ -9232,9 +9321,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "ui_motionscheduler_plananswermotion",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_plananswermotion"
     },
     {
       "relation": "imports",
@@ -9243,9 +9332,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "ui_motionscheduler_planwrongrecoverymotion",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_planwrongrecoverymotion"
     },
     {
       "relation": "imports",
@@ -9254,9 +9343,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "ui_motionscheduler_runmotionplan",
-      "confidence_score": 1.0
+      "target": "ui_motionscheduler_runmotionplan"
     },
     {
       "relation": "imports_from",
@@ -9397,9 +9486,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "src_ui_character_characterstage_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterstage_ts"
     },
     {
       "relation": "imports",
@@ -9408,9 +9497,9 @@
       "source_file": "src/ui/app.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_app_ts",
-      "target": "character_characterstage_rendercharacterstage",
-      "confidence_score": 1.0
+      "target": "character_characterstage_rendercharacterstage"
     },
     {
       "relation": "contains",
@@ -9586,6 +9675,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/app.ts",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_ui_app_ts",
+      "target": "ui_app_progressstage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
       "source_location": "L257",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -9601,6 +9700,16 @@
       "confidence_score": 1.0,
       "source": "src_ui_app_ts",
       "target": "ui_app_progresscopy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_ui_app_ts",
+      "target": "ui_app_reasoningbridgecopy"
     },
     {
       "relation": "contains",
@@ -10081,11 +10190,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/app.ts",
-      "source_location": "L158",
+      "source_location": "L151",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ui_app_renderpanel",
-      "target": "ui_app_progresscopy"
+      "target": "ui_app_reasoningbridgecopy"
     },
     {
       "relation": "calls",
@@ -10119,6 +10228,17 @@
       "confidence_score": 1.0,
       "source": "ui_app_renderpanel",
       "target": "ui_app_renderrejectedchips"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_app_renderpanel",
+      "target": "ui_app_progresscopy"
     },
     {
       "relation": "calls",
@@ -10169,6 +10289,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/app.ts",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_app_renderclueprogress",
+      "target": "ui_app_progressstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
       "source_location": "L247",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -10191,11 +10322,44 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ui/app.ts",
+      "source_location": "L250",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_app_progresstone",
+      "target": "ui_app_progressstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
+      "source_location": "L257",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_app_progresscopy",
+      "target": "ui_app_progressstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
       "source_location": "L265",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ui_app_progresscopy",
       "target": "ui_app_progresstone"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/app.ts",
+      "source_location": "L268",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ui_app_reasoningbridgecopy",
+      "target": "ui_app_progresscopy"
     },
     {
       "relation": "calls",
@@ -10309,9 +10473,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "src_ui_character_charactercontract_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_charactercontract_ts"
     },
     {
       "relation": "imports_from",
@@ -10320,9 +10484,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "src_ui_character_charactercontract_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_charactercontract_ts"
     },
     {
       "relation": "imports",
@@ -10331,9 +10495,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_charactercontract_answerreaction",
-      "confidence_score": 1.0
+      "target": "character_charactercontract_answerreaction"
     },
     {
       "relation": "imports",
@@ -10342,9 +10506,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_charactercontract_animationnames",
-      "confidence_score": 1.0
+      "target": "character_charactercontract_animationnames"
     },
     {
       "relation": "imports",
@@ -10353,9 +10517,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_charactercontract_expressionnames",
-      "confidence_score": 1.0
+      "target": "character_charactercontract_expressionnames"
     },
     {
       "relation": "imports",
@@ -10364,9 +10528,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "character_charactercontract_cuelabel",
-      "confidence_score": 1.0
+      "target": "character_charactercontract_cuelabel"
     },
     {
       "relation": "imports",
@@ -10375,9 +10539,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "character_charactercontract_cuecontract",
-      "confidence_score": 1.0
+      "target": "character_charactercontract_cuecontract"
     },
     {
       "relation": "imports",
@@ -10386,9 +10550,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_charactercontract_cuecontract",
-      "confidence_score": 1.0
+      "target": "character_charactercontract_cuecontract"
     },
     {
       "relation": "contains",
@@ -10577,9 +10741,9 @@
       "source_file": "src/ui/character/characterAssetManifest.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterassetmanifest_ts",
-      "target": "src_ui_character_characterassets_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterassets_ts"
     },
     {
       "relation": "imports_from",
@@ -10588,9 +10752,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "src_ui_character_characterassets_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterassets_ts"
     },
     {
       "relation": "imports",
@@ -10599,9 +10763,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterassets_productionriglayers",
-      "confidence_score": 1.0
+      "target": "character_characterassets_productionriglayers"
     },
     {
       "relation": "imports",
@@ -10610,9 +10774,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterassets_productionlayertransform",
-      "confidence_score": 1.0
+      "target": "character_characterassets_productionlayertransform"
     },
     {
       "relation": "imports",
@@ -10621,9 +10785,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterassets_productionstateacting",
-      "confidence_score": 1.0
+      "target": "character_characterassets_productionstateacting"
     },
     {
       "relation": "imports",
@@ -10632,9 +10796,9 @@
       "source_file": "src/ui/character/characterAssetManifest.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterassetmanifest_ts",
-      "target": "character_characterassets_productionlayersheet",
-      "confidence_score": 1.0
+      "target": "character_characterassets_productionlayersheet"
     },
     {
       "relation": "imports",
@@ -10643,9 +10807,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterassets_productionlayersheet",
-      "confidence_score": 1.0
+      "target": "character_characterassets_productionlayersheet"
     },
     {
       "relation": "imports",
@@ -10654,9 +10818,9 @@
       "source_file": "src/ui/character/characterAssetManifest.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterassetmanifest_ts",
-      "target": "character_characterassets_animationstatemachine",
-      "confidence_score": 1.0
+      "target": "character_characterassets_animationstatemachine"
     },
     {
       "relation": "imports",
@@ -10665,9 +10829,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterassets_animationstatemachine",
-      "confidence_score": 1.0
+      "target": "character_characterassets_animationstatemachine"
     },
     {
       "relation": "imports_from",
@@ -10676,9 +10840,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "src_ui_character_characterassetmanifest_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterassetmanifest_ts"
     },
     {
       "relation": "imports",
@@ -10687,9 +10851,9 @@
       "source_file": "src/ui/character/characterAssetManifest.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterassetmanifest_ts",
-      "target": "character_characterruntime_characterruntimekind",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterruntimekind"
     },
     {
       "relation": "contains",
@@ -10697,9 +10861,9 @@
       "source_file": "src/ui/character/characterAssetManifest.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterassetmanifest_ts",
-      "target": "character_characterassetmanifest_characterassetmanifest",
-      "confidence_score": 1.0
+      "target": "character_characterassetmanifest_characterassetmanifest"
     },
     {
       "relation": "imports",
@@ -10708,9 +10872,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterassetmanifest_characterassetmanifest",
-      "confidence_score": 1.0
+      "target": "character_characterassetmanifest_characterassetmanifest"
     },
     {
       "relation": "imports_from",
@@ -10719,9 +10883,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "src_ui_character_characterruntime_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_characterruntime_ts"
     },
     {
       "relation": "imports",
@@ -10730,9 +10894,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "character_characterruntime_rendercharacterruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_rendercharacterruntime"
     },
     {
       "relation": "imports",
@@ -10741,9 +10905,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "character_characterruntime_characterstageinput",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterstageinput"
     },
     {
       "relation": "contains",
@@ -10751,9 +10915,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "character_characterstage_rendercharacterstage",
-      "confidence_score": 1.0
+      "target": "character_characterstage_rendercharacterstage"
     },
     {
       "relation": "contains",
@@ -10761,9 +10925,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterstage_ts",
-      "target": "character_characterstage_escapehtml",
-      "confidence_score": 1.0
+      "target": "character_characterstage_escapehtml"
     },
     {
       "relation": "calls",
@@ -10772,9 +10936,9 @@
       "source_file": "src/ui/character/CharacterStage.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_characterstage_rendercharacterstage",
-      "target": "character_characterstage_escapehtml",
-      "confidence_score": 1.0
+      "target": "character_characterstage_escapehtml"
     },
     {
       "relation": "calls",
@@ -10794,9 +10958,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "src_engine_domain_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_domain_ts"
     },
     {
       "relation": "imports",
@@ -10805,9 +10969,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "engine_domain_answerkey",
-      "confidence_score": 1.0
+      "target": "engine_domain_answerkey"
     },
     {
       "relation": "imports_from",
@@ -10816,9 +10980,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "src_ui_character_cssfallbackruntime_ts",
-      "confidence_score": 1.0
+      "target": "src_ui_character_cssfallbackruntime_ts"
     },
     {
       "relation": "imports",
@@ -10827,9 +10991,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterruntime_characterruntimekind",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterruntimekind"
     },
     {
       "relation": "imports",
@@ -10838,9 +11002,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_characterruntime_characterstageinput",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterstageinput"
     },
     {
       "relation": "contains",
@@ -10848,9 +11012,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_rendercssfallbackruntime",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_rendercssfallbackruntime"
     },
     {
       "relation": "contains",
@@ -10858,9 +11022,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_rendermotioncatalog",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_rendermotioncatalog"
     },
     {
       "relation": "contains",
@@ -10868,9 +11032,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_renderproductionpuppet",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_renderproductionpuppet"
     },
     {
       "relation": "contains",
@@ -10878,9 +11042,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_renderlayersheetdefs",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_renderlayersheetdefs"
     },
     {
       "relation": "contains",
@@ -10888,9 +11052,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_mouthlayerfor",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_mouthlayerfor"
     },
     {
       "relation": "contains",
@@ -10898,9 +11062,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_renderlayershape",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_renderlayershape"
     },
     {
       "relation": "contains",
@@ -10908,9 +11072,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_escapehtml",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_escapehtml"
     },
     {
       "relation": "contains",
@@ -10918,9 +11082,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_cssfallbackruntime_ts",
-      "target": "character_cssfallbackruntime_escapeattr",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_escapeattr"
     },
     {
       "relation": "calls",
@@ -10929,9 +11093,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_rendercssfallbackruntime",
-      "target": "character_cssfallbackruntime_escapeattr",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_escapeattr"
     },
     {
       "relation": "calls",
@@ -10940,9 +11104,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_rendercssfallbackruntime",
-      "target": "character_cssfallbackruntime_rendermotioncatalog",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_rendermotioncatalog"
     },
     {
       "relation": "calls",
@@ -10951,9 +11115,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_rendercssfallbackruntime",
-      "target": "character_cssfallbackruntime_renderproductionpuppet",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_renderproductionpuppet"
     },
     {
       "relation": "imports",
@@ -10962,9 +11126,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_cssfallbackruntime_rendercssfallbackruntime",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_rendercssfallbackruntime"
     },
     {
       "relation": "calls",
@@ -10973,9 +11137,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_renderproductionpuppet",
-      "target": "character_cssfallbackruntime_mouthlayerfor",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_mouthlayerfor"
     },
     {
       "relation": "calls",
@@ -10984,9 +11148,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_renderproductionpuppet",
-      "target": "character_cssfallbackruntime_escapeattr",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_escapeattr"
     },
     {
       "relation": "calls",
@@ -10995,9 +11159,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_renderproductionpuppet",
-      "target": "character_cssfallbackruntime_renderlayersheetdefs",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_renderlayersheetdefs"
     },
     {
       "relation": "calls",
@@ -11006,9 +11170,9 @@
       "source_file": "src/ui/character/cssFallbackRuntime.ts",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_cssfallbackruntime_escapeattr",
-      "target": "character_cssfallbackruntime_escapehtml",
-      "confidence_score": 1.0
+      "target": "character_cssfallbackruntime_escapehtml"
     },
     {
       "relation": "imports_from",
@@ -11017,9 +11181,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "src_engine_domain_ts",
-      "confidence_score": 1.0
+      "target": "src_engine_domain_ts"
     },
     {
       "relation": "imports",
@@ -11028,9 +11192,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "engine_domain_answerkey",
-      "confidence_score": 1.0
+      "target": "engine_domain_answerkey"
     },
     {
       "relation": "contains",
@@ -11038,9 +11202,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_characterruntimekind",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterruntimekind"
     },
     {
       "relation": "contains",
@@ -11048,9 +11212,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_characterstageinput",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterstageinput"
     },
     {
       "relation": "contains",
@@ -11058,9 +11222,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_characterruntimeadapter",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_characterruntimeadapter"
     },
     {
       "relation": "contains",
@@ -11068,9 +11232,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_selectcharacterruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_selectcharacterruntime"
     },
     {
       "relation": "contains",
@@ -11078,9 +11242,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_rendercharacterruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_rendercharacterruntime"
     },
     {
       "relation": "contains",
@@ -11088,9 +11252,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_cssfallbackruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_cssfallbackruntime"
     },
     {
       "relation": "contains",
@@ -11098,20 +11262,9 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_ui_character_characterruntime_ts",
-      "target": "character_characterruntime_createunavailableruntime",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ui/character/characterRuntime.ts",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "character_characterruntime_selectcharacterruntime",
-      "target": "character_characterruntime_createunavailableruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_createunavailableruntime"
     },
     {
       "relation": "calls",
@@ -11120,9 +11273,20 @@
       "source_file": "src/ui/character/characterRuntime.ts",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "character_characterruntime_rendercharacterruntime",
-      "target": "character_characterruntime_selectcharacterruntime",
-      "confidence_score": 1.0
+      "target": "character_characterruntime_selectcharacterruntime"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ui/character/characterRuntime.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "character_characterruntime_selectcharacterruntime",
+      "target": "character_characterruntime_createunavailableruntime"
     },
     {
       "relation": "imports_from",
@@ -12303,9 +12467,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_food_akinator"
     },
     {
       "relation": "contains",
@@ -12333,9 +12497,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "target": "feat_production_ux_runtime_wave_readme",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme"
     },
     {
       "relation": "contains",
@@ -12343,9 +12507,9 @@
       "source_file": "README.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "target": "feat_production_ux_runtime_wave_readme_22",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_22"
     },
     {
       "relation": "contains",
@@ -12353,9 +12517,9 @@
       "source_file": "README.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "target": "feat_production_ux_runtime_wave_readme_30",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_30"
     },
     {
       "relation": "contains",
@@ -12363,9 +12527,9 @@
       "source_file": "README.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "target": "feat_production_ux_runtime_wave_readme_37",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_37"
     },
     {
       "relation": "contains",
@@ -12373,9 +12537,9 @@
       "source_file": "README.md",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "target": "feat_production_ux_runtime_wave_readme_52",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_52"
     },
     {
       "relation": "contains",
@@ -12383,9 +12547,9 @@
       "source_file": "README.md",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_food_akinator",
-      "target": "feat_production_ux_runtime_wave_readme_repository_artifact_policy",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_repository_artifact_policy"
     },
     {
       "relation": "contains",
@@ -12393,9 +12557,9 @@
       "source_file": "README.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_30",
-      "target": "feat_production_ux_runtime_wave_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -12403,9 +12567,9 @@
       "source_file": "README.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_37",
-      "target": "feat_production_ux_runtime_wave_readme_codeblock_2",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_codeblock_2"
     },
     {
       "relation": "contains",
@@ -12413,9 +12577,9 @@
       "source_file": "README.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "feat_production_ux_runtime_wave_readme_37",
-      "target": "feat_production_ux_runtime_wave_readme_codeblock_3",
-      "confidence_score": 1.0
+      "target": "feat_production_ux_runtime_wave_readme_codeblock_3"
     },
     {
       "relation": "contains",
@@ -16053,5 +16217,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1029417981a77b62cbcf4c730debb08f11cbc6fb"
+  "built_at_commit": "89396f07292e18e243d351f32bf8ccb3833c878f"
 }

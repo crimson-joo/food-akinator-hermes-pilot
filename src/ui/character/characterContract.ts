@@ -51,7 +51,7 @@ export const cueLabel: Record<string, string> = {
   ask: '질문 중 · 단서를 비추는 시간',
   answerAccepted: '단서 기록 · 메모장에 잉크가 번지는 시간',
   thinking: '추리 중 · 향과 단서가 도는 시간',
-  confident: '감이 왔어요 · 접시를 앞으로 내미는 시간',
+  confident: '결정 단서 · 접시를 앞으로 내미는 시간',
   surprised: '놀람 · 성급함을 인정하는 시간',
   recover: '회복 중 · 후보를 다시 정렬하는 시간',
   reveal: '접시 공개 · 한 메뉴를 선언하는 시간',

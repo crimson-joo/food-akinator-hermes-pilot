@@ -232,7 +232,7 @@ function askingSession(
     copy: recovery
       ? { headlineKo: '좋아요, 그건 빼고 다시 볼게요.', helperKo: currentQuestion.textKo }
       : status === 'confident'
-        ? { headlineKo: '큰 갈래는 잡혔어요.', helperKo: currentQuestion.textKo }
+        ? { headlineKo: '마지막 결정 단서를 잠그는 중이에요.', helperKo: currentQuestion.textKo }
         : { headlineKo: currentQuestion.textKo },
     canAnswer: true,
     canConfirmGuess: false,

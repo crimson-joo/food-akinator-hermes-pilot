@@ -104,6 +104,7 @@ export function renderApp(model: UiModel): string {
   }
   if (model.rejectedCandidateIds?.length) attrs.push(`data-rejected-candidate-ids="${escapeAttr(model.rejectedCandidateIds.join(','))}"`);
   if (uiState === 'recovering') attrs.push(`data-recovery-beat="${model.recoveryBeat ?? 'surprise'}"`);
+  if (uiState === 'answerAccepted' || uiState === 'thinking') attrs.push('aria-busy="true"');
   if (uiState === 'guessing' && session?.guess) attrs.push(`data-guess-candidate-id="${escapeAttr(session.guess.candidate.id)}"`);
   if (uiState === 'revealed' && session?.guess) attrs.push(`data-result-candidate-id="${escapeAttr(session.guess.candidate.id)}"`);
 
@@ -147,7 +148,7 @@ ${renderQuestion(model.session, true, model.lastAnswer)}`;
   if (model.phase === 'thinking') {
     return `<p class="eyebrow">보글이 메모장을 보는 중</p>
 <h2>흠… 단서를 맞춰보는 중이에요.</h2>
-<p class="helper">${progressCopy(model.session)}</p>
+<p class="helper">${reasoningBridgeCopy(model.session, model.lastAnswer)}</p>
 <div class="interaction-feedback thinking-feedback" data-interaction-feedback="thinking" data-reaction-motion="thinking-scan"><strong>단서들을 다시 섞어보는 중이에요.</strong><span>질문이 점점 구체적으로 좁혀질 거예요.</span></div>
 ${renderAnswerButtons(true, model.lastAnswer)}`;
   }
@@ -227,25 +228,44 @@ function renderRejectedChips(names: string[] = [], beat: RecoveryBeat = 'surpris
 
 function renderClueProgress(session?: EngineSession): string {
   if (!session) return '';
+  const stage = progressStage(session);
   const tone = progressTone(session);
   const label = progressCopy(session);
-  const filledDots = tone === 'confident' ? 4 : tone === 'mid' ? 3 : 2;
+  const filledDots = stage === 'lock' ? 4 : stage === 'fork' || stage === 'guardrail' ? 3 : 2;
   const dots = Array.from({ length: 4 }, (_, index) => `<span class="clue-dot${index < filledDots ? ' active' : ''}" aria-hidden="true"></span>`).join('');
-  return `<div class="clue-progress" aria-label="단서 진행" data-progress-tone="${tone}"><span class="clue-progress-label">${label}</span><span class="clue-dots">${dots}</span></div>`;
+  return `<div class="clue-progress" aria-label="단서 진행" data-progress-tone="${tone}" data-progress-stage="${stage}"><span class="clue-progress-label">${label}</span><span class="clue-dots">${dots}</span></div>`;
+}
+
+function progressStage(session?: EngineSession): 'orienting' | 'narrowing' | 'fork' | 'guardrail' | 'lock' | 'recovery' {
+  if (!session) return 'orienting';
+  if (session.characterCue === 'recover' || session.currentQuestion?.role === 'recovery_disambiguation') return 'recovery';
+  if (session.guess || session.currentQuestion?.role === 'signature_discriminator' || session.currentQuestion?.role === 'reveal_check') return 'lock';
+  if (session.currentQuestion?.role === 'false_path_guardrail') return 'guardrail';
+  if (session.currentQuestion?.role === 'sibling_elimination') return 'fork';
+  if (session.currentQuestion?.role === 'family_lock') return 'narrowing';
+  return 'orienting';
 }
 
 function progressTone(session?: EngineSession): 'early' | 'mid' | 'confident' {
-  if (!session) return 'early';
-  if (session.guess || session.turn >= 5) return 'confident';
-  if (session.turn >= 3) return 'mid';
+  const stage = progressStage(session);
+  if (stage === 'lock') return 'confident';
+  if (stage === 'fork' || stage === 'guardrail' || stage === 'recovery' || stage === 'narrowing') return 'mid';
   return 'early';
 }
 
 function progressCopy(session?: EngineSession): string {
-  const tone = progressTone(session);
-  if (tone === 'confident') return '감이 왔어요.';
-  if (tone === 'mid') return '후보가 둘로 갈리네요.';
-  return '큰 갈래는 잡혔어요.';
+  const stage = progressStage(session);
+  if (stage === 'recovery') return '빗나간 접시는 빼고 다시 맞춰보고 있어요.';
+  if (stage === 'lock') return '마지막 결정 단서를 잠그는 중이에요.';
+  if (stage === 'guardrail') return '성급한 추측을 막는 안전 단서를 확인해요.';
+  if (stage === 'fork') return '비슷한 후보 둘의 갈림길을 비교하고 있어요.';
+  if (stage === 'narrowing') return '후보 묶음을 한 식탁 안으로 좁히고 있어요.';
+  return '처음엔 입맛의 큰 방향을 열어볼게요.';
+}
+
+function reasoningBridgeCopy(session?: EngineSession, answer?: AnswerKey): string {
+  const prefix = answer ? `${answerLabel[answer]} 답변을 반영해서, ` : '';
+  return `${prefix}${progressCopy(session)}`;
 }
 
 function escapeHtml(value: string): string {
