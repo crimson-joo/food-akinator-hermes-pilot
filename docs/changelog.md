@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-06-01 — Production character runtime path specified
+
+- Decided the next production character runtime path: Rive state machine first, Lottie authored clips as secondary fallback, CSS/SVG fallback only for controlled-demo/failure fallback unless explicitly accepted by the user.
+- Added Builder-ready architecture spec at `.hermes/runs/t_bf84dad2/architecture-production-runtime-spec.md` covering runtime boundary, asset manifest, state-machine inputs, failure modes, QA gates, and RED-first test targets.
+- Updated canonical architecture, character rig, QA, and release docs so full production remains blocked until authored runtime evidence or explicit fallback acceptance.
+
+## 2026-06-01 — Production UX/runtime wave reconciled
+
+- Recorded the production UX/runtime remediation wave as local candidate QA PASS but public live production gate FAIL because GitHub Pages remained stale relative to the remediation branch.
+- Preserved the distinction between controlled-demo release sync and full public production readiness: even after branch deployment, full launch still requires Rive/Lottie/equivalent runtime or explicit user fallback acceptance.
+- Indexed QA evidence under `.hermes/runs/t_4bc01116/` and updated canonical QA/release/autoplan docs for the next Kanban loop.
+
 ## 2026-06-01 — Public docs aligned with live demo / production-blocked state
 
 - Updated README from the stale “no app implementation” research-foundation state to the current live controlled-demo state.

@@ -149,3 +149,43 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - Demo browser dataset은 이제 `src/data/food-knowledge-base.ts`의 canonical `foodKnowledgeBase`를 사용한다. 이전 `src/ui/app.ts` 내부 3-candidate toy fixture는 제거되었고, `demoDataset` export는 canonical dataset compatibility alias다.
 - Canonical data v1은 50 active candidates, 42 active questions, candidate당 20+ non-neutral attribute coverage, role/split quality tests를 가진다.
 - Production build는 `npm run build`로 `dist/`에 생성되며, `dist/`는 local generated artifact로 gitignore한다.
+
+## Production character runtime decision
+
+Source handoff: `.hermes/runs/t_bf84dad2/architecture-production-runtime-spec.md`.
+
+Decision: the next production runtime target is **Rive state machine first**, with **Lottie clips as authored-equivalent secondary fallback**, and **CSS/SVG fallback only as controlled-demo / failure fallback** unless the user explicitly accepts fallback quality for full production launch.
+
+Runtime boundary:
+
+```txt
+src/ui/character/
+  characterContract.ts
+  characterAssets.ts
+  characterRuntimeManifest.ts
+  characterRuntimeAdapter.ts
+  CharacterStage.ts
+```
+
+The exact file split may change during Builder implementation, but the invariant is stable: `src/engine/*` remains pure/synchronous, while asset loading, runtime readiness, animation playback, and fallback recovery live in the UI character boundary.
+
+Required runtime inputs remain semantic and testable:
+
+- `cue`: `idle | ask | answerAccepted | thinking | confident | surprised | recover | reveal | exhausted`
+- `answerReaction`: `yes | probably | unknown | probably_not | no | none`
+- `confidence`: `low | mid | high`
+- `reducedMotion`: boolean
+
+Runtime status must be observable through DOM/test hooks:
+
+- `data-character-runtime="rive|lottie|css-fallback"`
+- `data-runtime-status="loading|ready|failed|fallback"`
+- existing cue/expression/prop-motion hooks remain available even if the visual renderer is canvas/SVG.
+
+Production unblock requires one of:
+
+1. Rive runtime + authored `.riv` asset passes Browser/QA/perceptual gates.
+2. Lottie runtime + consistent authored clip set passes the same gates.
+3. User explicitly accepts `css-fallback` as launch quality, with the limitation recorded in release docs.
+
+Failure mode rule: if a Rive/Lottie asset is missing, malformed, or cannot bind the required state-machine inputs, the app must fail closed into a playable CSS fallback and report the failed/fallback status; it must not silently claim production runtime readiness.

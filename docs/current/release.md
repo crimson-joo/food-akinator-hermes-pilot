@@ -12,6 +12,8 @@
 - Akinator-level self-review loop 시작: Product/Engine, Design/Service, QA/Release 관점 gap review 후 canonical `foodKnowledgeBase` v1(50 candidates / 42 questions / data readiness gate)을 도입했다. 다음 major gap은 representative simulation, branch entropy, asset-backed character runtime, scene choreography다.
 - 다음 단계: 제품 iteration. Public release 전에는 perceptual QA와 최종 mascot/brand polish가 별도 product/design gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했다.
 - Evidence references: PR #21 added the Bogle motion state machine/layer-sheet contract and live smoke evidence; PR #22 added the production completion autoplan and current production-blocked verdict.
+- Production UX/runtime remediation wave: local candidate branch `feat/production-ux-runtime-wave` passed local QA/e2e/perceptual evidence, but public GitHub Pages is stale and live e2e still fails the remediated mobile safe-area and wrong-recovery beat criteria. Next release action is controlled-demo PR/deploy sync only; full production launch remains blocked by runtime/art-direction acceptance.
+- Production runtime architecture decision: Rive state machine is the recommended production path, Lottie clips are the authored-equivalent secondary path, and CSS/SVG fallback is controlled-demo/failure fallback only unless the user explicitly accepts fallback quality. Source: `.hermes/runs/t_bf84dad2/architecture-production-runtime-spec.md`.
 
 ## Release policy
 

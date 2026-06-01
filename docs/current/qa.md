@@ -93,6 +93,52 @@ PR/deploy gate에서 자동 확인하는 기준:
 - Mobile smoke: Pixel-sized viewport에서 horizontal overflow 없음, answer controls usable.
 - Browser health: page console error/pageerror 없음.
 
+
+## Production UX/runtime wave QA — 2026-06-01
+
+Current verdict: **local candidate QA PASS, live public QA FAIL because deployment is stale**. Do not declare full public production ready.
+
+Local candidate branch `feat/production-ux-runtime-wave` passed:
+
+- `npm test` — 13 files / 78 tests.
+- `npm run typecheck`.
+- `npm run build`.
+- `npm run test:e2e --if-present` — 8/8 Playwright tests.
+- Custom browser evidence: entry → asking → answerAccepted → thinking → guessing → wrong recovery surprise/remove/refocus → recovered asking → reveal, five answer reactions, `aria-busy` during processing, no visible forbidden internals, no console/page errors.
+- Mobile asking safe-area: 360/390/412px had 0 horizontal overflow, spoon right safe-area above threshold, and answer controls above 44px.
+- Reduced motion preserved `data-recovery-beat="surprise" → "remove" → "refocus"`.
+
+Live public URL status:
+
+- `npm run canary:deployed --if-present` passed baseline HTML/module/marker checks.
+- Cache-busted live Playwright e2e failed 6/8 because the public deployment did not expose the local branch fixes: `data-recovery-beat` was missing during wrong recovery and 360px mobile still had spoon safe-area failure.
+
+Evidence index:
+
+- `.hermes/runs/t_4bc01116/qa-prod-wave-report.md`
+- `.hermes/runs/t_4bc01116/browser-qa-evidence.json`
+- `.hermes/runs/t_4bc01116/progress-stage-evidence.json`
+- `.hermes/runs/t_4bc01116/screenshots/`
+
+Next QA gate: rerun live canary and live Playwright only after the remediation branch is merged/deployed, then keep full production blocked until runtime/art-direction acceptance is resolved.
+
+## Production runtime QA gate
+
+Source handoff: `.hermes/runs/t_bf84dad2/architecture-production-runtime-spec.md`.
+
+Full production remains blocked unless QA can prove one of these runtime states:
+
+1. `data-character-runtime="rive"` and `data-runtime-status="ready"` with authored `.riv` asset loaded and state-machine inputs exercised.
+2. `data-character-runtime="lottie"` and `data-runtime-status="ready"` with consistent authored clip assets loaded and cue/reaction transitions exercised.
+3. Explicit user fallback acceptance is recorded, in which case `css-fallback` may be accepted as a known launch limitation.
+
+Required evidence:
+
+- entry, ask, five answer reactions, thinking, confident/guessing, surprised, recover, reveal screenshots or equivalent browser evidence.
+- mobile 360/390/412 and reduced-motion runtime evidence.
+- asset failure probe showing malformed/missing authored runtime fails closed into playable fallback and reports failed/fallback status instead of blanking the character stage.
+- no Akinator protected identity drift: no genie/lamp/blue wizard/turban/copy/layout/pose clone.
+
 ## Browser QA
 
 필수 캡처:

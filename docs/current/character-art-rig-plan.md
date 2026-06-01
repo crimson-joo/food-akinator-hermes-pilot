@@ -64,7 +64,9 @@ Akinator 직접 접속은 Cloudflare block으로 이번 브라우저 세션에�
 
 ### 🔶추천: Rive state machine
 
-Use Rive for production-grade character acting.
+Use Rive for production-grade character acting. Architecture decision `t_bf84dad2` locks this as the next production runtime target: Rive first, Lottie as authored-equivalent secondary fallback, and CSS/SVG only as controlled-demo / failure fallback unless the user explicitly accepts fallback quality.
+
+Required runtime boundary is documented in `.hermes/runs/t_bf84dad2/architecture-production-runtime-spec.md` and summarized in `docs/current/architecture.md#production-character-runtime-decision`. The runtime must report `data-character-runtime="rive|lottie|css-fallback"` plus `data-runtime-status="loading|ready|failed|fallback"`; a missing or malformed authored asset must fail closed into playable fallback without silently claiming production readiness.
 
 Required art layers:
 

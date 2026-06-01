@@ -100,6 +100,20 @@ Escalate to user only if:
 - Public launch/marketing announcement is requested.
 - A rollback or repo settings change is required.
 
+
+## 2026-06-01 production wave reconciliation
+
+Latest wave verdict: **local candidate branch PASS / public live production gate FAIL**. The `feat/production-ux-runtime-wave` branch passed local tests, typecheck, build, Playwright e2e, custom browser evidence, mobile safe-area checks, reduced-motion recovery, five answer micro-reactions, progress-stage coverage, and wrong-recovery surprise → remove → refocus evidence.
+
+The public GitHub Pages URL remains stale relative to that branch: live Playwright e2e still fails the remediated mobile spoon safe-area and `data-recovery-beat` requirements. Treat this as a release synchronization blocker, not as proof that the branch remediation failed.
+
+Full public production remains blocked even after syncing the branch unless one of these is true:
+
+1. A real Rive/Lottie/equivalent runtime is wired behind the character stage contract, or
+2. The user explicitly accepts the current fallback/runtime-contract implementation as launch quality.
+
+Next loop should therefore separate two tracks: (a) controlled-demo release sync for the locally passing remediation branch, and (b) production-runtime/art-direction work for the full launch bar.
+
 ## Kanban graph
 
 ### Wave 1 — unblock production foundation

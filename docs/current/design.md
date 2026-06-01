@@ -252,3 +252,127 @@ Required sequence inside `data-ui-state="recovering"`:
 3. **Refocus** — `data-recovery-beat="refocus"`, `data-character-cue="recover"`, calm notebook/reframe pose, next recovery question and exactly five answer controls visible.
 
 Reduced-motion mode may shorten transitions, but the three semantic beats must remain observable through DOM state, copy, and chip treatment.
+
+## Production UX/motion spec — Akinator-like reasoning, reveal, recovery
+
+Source handoff: `.hermes/runs/t_983596ae/production-ux-motion-spec.md`.
+
+Canonical direction: **작은 식탁 추리극**. Bogle is not decorative mascot chrome; Bogle is the persistent detective-oracle host who receives every answer, records it in the notebook, prunes paths with the spoon, builds tension through the covered plate, and repairs wrong guesses through a visible recovery sequence.
+
+### Reference principles extracted
+
+- Use Akinator-like structure only: secret target, one-question rhythm, five-answer loop, character-as-inference-engine, confidence tension, staged guess, wrong recovery.
+- Do not copy Akinator protected identity: no genie/magic-lamp/blue wizard silhouette, exact pose language, exact layout, brand, copy, data, or API.
+- Borrow visual principles, not brand identity: Airbnb-like warm tactility, Notion-like warm-paper clarity, and PostHog-like personality/handmade detail. Keep Food Akinator original through Korean table, Bogle, notebook, spoon, covered plate, and warm food palette.
+
+### Answer micro-reactions
+
+Every answer click must show an immediate “Bogle heard me” acknowledgement before the next question appears.
+
+- First visible reaction: <=150ms after click/tap.
+- `answerAccepted` hold: minimum 400ms, target 600–750ms.
+- Required hooks: `data-ui-state="answerAccepted"`, `data-answer-reaction`, `data-answer-sentiment`, `data-reaction-motion`.
+- Add/keep a testable cut-in hook in the next Builder pass if missing: `data-snap="answer-accepted"` or `data-pulse="answer-accepted"`.
+- Selected answer remains locked; other answers disabled; Bogle expression/prop/surface copy all react together.
+
+| Answer | Sentiment | Required motion | Copy rule |
+|---|---|---|---|
+| `yes` | positive | approve nod / notebook check | clue sharpened direction |
+| `probably` | soft-positive | tilted nod / maybe-smirk | raise branch softly without overclaiming |
+| `unknown` | uncertain | puzzled shrug | reassure ambiguity is safe and clue is parked |
+| `probably_not` | soft-negative | skeptical narrow / branch lowered | reduce candidate family gently |
+| `no` | negative | decisive spoon prune | visibly cut off that path |
+
+### Reasoning bridges
+
+`thinking` must explain that the prior answer changed the investigation, not merely show delay.
+
+- Required hooks: `data-ui-state="thinking"`, `data-character-cue="thinking"`, `aria-busy="true"` or equivalent busy state on the changing panel.
+- Thinking duration: 450–900ms; avoid long fake waiting.
+- Copy must be role/path-aware and avoid repeated generic lines.
+- Never expose raw `q-*`, `score`, `probability`, `attribute`, `top1`, or `top3`.
+
+Recommended bridge templates:
+
+- Broad split: `큰 갈래가 하나 잡혔어요. 이제 {axisKo} 쪽으로 더 좁혀볼게요.`
+- Family lock: `{familyKo} 쪽 단서가 이어져요. 비슷한 후보끼리 갈라볼게요.`
+- Sibling elimination: `비슷한 후보가 남았어요. 차이가 잘 나는 단서로 확인할게요.`
+- Signature discriminator: `거의 왔어요. 마지막으로 결정적인 특징만 볼게요.`
+- False-path guardrail: `성급하게 맞히기 전에, 틀리기 쉬운 길부터 한 번 막아볼게요.`
+- Recovery disambiguation: `방금 지운 후보와 남은 후보를 가르는 질문으로 돌아갈게요.`
+- Unknown-heavy recovery: `애매한 단서는 보류했어요. 더 쉬운 단서로 다시 잡아볼게요.`
+
+If data is not yet available for exact `{axisKo}` / `{familyKo}`, use role-based safe templates rather than inventing factual claims.
+
+### Progress tension states
+
+Replace the repeated `큰 갈래는 잡혔어요 / 후보가 둘로 갈리네요 / 감이 왔어요` loop with named tension stages. Visual intensity should rise through notebook, steam, plate, light, and chip treatment — not through numerical probability.
+
+| Stage | Suggested trigger | Visible label | Bogle posture |
+|---|---|---|---|
+| `orienting` | turn 1–2 | `큰 갈래 탐색` | curious ask, low steam |
+| `narrowing` | turn 3–5 or family signal | `후보군 좁히는 중` | notebook check, dots 2–3 |
+| `fork` | top candidates close | `두 갈래 접전` | split spotlight / two chips |
+| `guardrail` | reveal risk before guess | `성급함 방지` | spoon blocks false path |
+| `lock` | threshold near reveal | `접시가 열리기 직전` | plate forward, golden rim |
+| `recovery` | wrong/unknown-heavy | `다시 정리 중` | calm notebook reopen |
+
+Acceptance: progress copy should not repeat the same phrase more than two consecutive turns.
+
+### Guess suspense and reveal sequence
+
+Guessing must be a theatrical pre-reveal step, not a result card.
+
+- `guessing`: `data-ui-state="guessing"`, `data-character-cue="confident"`; Bogle holds covered plate forward; copy shape `혹시… {candidateName}인가요?`; actions `맞아요` / `아니에요`.
+- Reveal sequence:
+  1. Hold 150–250ms with plate/lid suspense.
+  2. Lid lift/payoff 450–900ms with `data-character-cue="reveal"`.
+  3. Declaration: `오늘은 {candidateName} 쪽이에요.`
+  4. Reasoning receipt: 2–3 reasons tied to user-visible answer evidence where available.
+  5. Actions: restart and not-right recovery.
+
+Final reason copy rules:
+
+- Prefer `“{questionSummary}” 쪽 단서가 있어서 {candidateTrait} 후보가 강해졌어요.`
+- If exact answer evidence is unavailable, use softer seed-based copy: `{reasonSeed} 단서가 지금 흐름과 잘 맞았어요.`
+- Say `오늘 단서는 X 쪽이에요`, not `당신은 X를 좋아해요`, unless the user explicitly provided preference data.
+- Do not show internal scoring/probability/question IDs.
+
+### Wrong recovery drama
+
+Wrong guesses must become trust repair, not a restart prompt.
+
+Required sequence inside `data-ui-state="recovering"`:
+
+1. Surprise — `data-recovery-beat="surprise"`, `data-character-cue="surprised"`, 350–650ms, oops/recoil/spoon-drop, copy `앗, 제가 너무 성급했네요.`, next question not primary.
+2. Candidate removal — `data-recovery-beat="remove"`, 450–700ms, stable rejected candidate chip/list, visible crossed-off/swept treatment, copy `그 메뉴는 후보에서 뺄게요.`
+3. Refocus — `data-recovery-beat="refocus"`, `data-character-cue="recover"`, five answer controls visible with recovery question, copy `다시 단서를 좁혀볼게요.`
+
+The rejected candidate must remain visible through refocus.
+
+### Mobile and reduced-motion acceptance
+
+Mobile 360/390/412:
+
+- No horizontal overflow.
+- Bogle remains centered; spoon, notebook, plate, steam, and aura stay fully inside `data-testid="character-stage"`.
+- Keep current safe-area target: spoon bowl right breathing room >=16px at 360, >=20px at 390, >=24px at 412.
+- Answer controls remain >=44px hit height, preferred >=48px.
+- Recovery chip list wraps without covering the recovery question.
+
+Reduced motion:
+
+- All state changes remain observable through DOM hooks, copy, pose, chip treatment, light/color, and selected answer state.
+- Disable/collapse large transforms, looping particles, and repeated spark/steam animations.
+- Preserve answerAccepted → thinking, reveal, and surprise → remove → refocus semantic order.
+
+### Builder/QA acceptance
+
+Builder must implement against observable hooks, not vague polish:
+
+- `data-progress-stage="orienting|narrowing|fork|guardrail|lock|recovery"` exists when progress is shown.
+- Answer acknowledgement has `data-snap="answer-accepted"` or `data-pulse="answer-accepted"` once the next pass adds the cut-in layer.
+- `aria-live="polite"` covers bridge/recovery/reveal status copy.
+- `aria-busy="true"` or equivalent busy state covers answer processing.
+- Browser QA captures entry, asking, five answer reactions, thinking bridge, at least three progress stages, guess suspense, reveal, wrong recovery beats, mobile 360/390/412, and reduced-motion recovery/reveal.
+- Pass only if the flow reads as a character-led deduction performance, not a survey with a mascot.
