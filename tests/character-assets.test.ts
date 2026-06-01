@@ -170,4 +170,32 @@ describe('authored Concept A Lottie asset contract', () => {
     expect(new Set(layerNames).size).toBe(layerNames.length);
     expect(layerNames.filter((name) => name.startsWith('pose_'))).toHaveLength(0);
   });
+
+  it('authored marker segments animate body, face, prop, recovery, and reveal layers rather than only steam', () => {
+    const layers = new Map((bogleConceptALottie.layers ?? []).map((layer) => [layer.nm, layer]));
+    const requiredAnimatedLayers = [
+      'body_torso',
+      'head_base',
+      'brow_left',
+      'pupil_left',
+      'mouth_thinking',
+      'mouth_oops',
+      'arm_spoon_lower',
+      'spoon_bowl',
+      'note_pages',
+      'plate_lid',
+      'dish_glow',
+      'spark_1',
+    ];
+
+    for (const layerName of requiredAnimatedLayers) {
+      const layer = layers.get(layerName) as { ks?: { p?: { a?: number; k?: unknown[] }; r?: { a?: number; k?: unknown[] }; s?: { a?: number; k?: unknown[] }; o?: { a?: number; k?: unknown[] } } } | undefined;
+      expect(layer, layerName).toBeTruthy();
+      expect(layer!.ks?.p?.a, `${layerName} position`).toBe(1);
+      expect(layer!.ks?.p?.k?.length, `${layerName} position keyframes`).toBe((asset.markers ?? []).length);
+      expect(layer!.ks?.r?.a, `${layerName} rotation`).toBe(1);
+      expect(layer!.ks?.s?.a, `${layerName} scale`).toBe(1);
+      expect(layer!.ks?.o?.a, `${layerName} opacity`).toBe(1);
+    }
+  });
 });

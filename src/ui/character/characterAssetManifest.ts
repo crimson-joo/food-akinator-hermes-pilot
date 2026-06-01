@@ -14,7 +14,12 @@ export type LottieShape = {
 export type LottieLayer = {
   nm: string;
   ty: number;
-  ks?: { p?: { k?: number[] | Array<{ s?: number[] }> }; s?: { k?: number[] } };
+  ks?: {
+    o?: { k?: number | Array<{ t?: number; s?: number[] }> };
+    r?: { k?: number | Array<{ t?: number; s?: number[] }> };
+    p?: { k?: number[] | Array<{ t?: number; s?: number[] }> };
+    s?: { k?: number[] | Array<{ t?: number; s?: number[] }> };
+  };
   shapes?: LottieShape[];
 };
 export type LottieAsset = {

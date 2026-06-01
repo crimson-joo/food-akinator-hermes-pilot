@@ -158,6 +158,136 @@ describe('character runtime manifest selection', () => {
     expect(html).not.toContain('data-character-runtime="lottie"');
   });
 
+  it('renders each persistent Lottie cue with a distinct visible SVG state, not only marker metadata', () => {
+    const cues = ['idle', 'ask', 'answerAccepted', 'thinking', 'confident', 'surprised', 'recover', 'reveal'] as const;
+    const fingerprints = new Set<string>();
+
+    for (const cue of cues) {
+      const html = renderCharacterRuntime({ cue, confidence: cue === 'confident' ? 'high' : 'mid' }, characterAssetManifest);
+      expect(html).toContain('data-character-runtime="lottie"');
+      expect(html).toContain('data-runtime-status="ready"');
+      expect(html).toContain(`data-lottie-state-cue="${cue}"`);
+      const stateFingerprint = html.match(/data-lottie-state-fingerprint="([^"]+)"/)?.[1];
+      expect(stateFingerprint, cue).toBeTruthy();
+      fingerprints.add(stateFingerprint!);
+    }
+
+    expect(fingerprints.size).toBe(cues.length);
+  });
+
+  it('does not fake-ready when any persistent Lottie cue is missing a marker mapping', () => {
+    const manifest = {
+      ...characterAssetManifest,
+      preferredRuntime: 'lottie' as const,
+      runtimes: {
+        ...characterAssetManifest.runtimes,
+        rive: { ...characterAssetManifest.runtimes.rive!, status: 'missing' as const },
+        lottie: {
+          ...characterAssetManifest.runtimes.lottie!,
+          markerByCue: {
+            ...characterAssetManifest.runtimes.lottie!.markerByCue,
+            recover: undefined,
+          },
+        },
+      },
+    };
+
+    const runtime = selectCharacterRuntime(manifest);
+    const html = renderCharacterRuntime({ cue: 'recover' }, manifest);
+
+    expect(runtime.kind).toBe('css-fallback');
+    expect(runtime.status).toBe('failed');
+    expect(runtime.attemptedRuntime).toBe('lottie');
+    expect(runtime.reason).toBe('lottie-manifest-malformed');
+    expect(html).toContain('data-character-runtime="css-fallback"');
+    expect(html).not.toContain('data-runtime-status="ready"');
+  });
+
+  it('does not fake-ready when persistent Lottie cue markers are duplicated', () => {
+    const manifest = {
+      ...characterAssetManifest,
+      preferredRuntime: 'lottie' as const,
+      runtimes: {
+        ...characterAssetManifest.runtimes,
+        rive: { ...characterAssetManifest.runtimes.rive!, status: 'missing' as const },
+        lottie: {
+          ...characterAssetManifest.runtimes.lottie!,
+          markerByCue: {
+            ...characterAssetManifest.runtimes.lottie!.markerByCue,
+            ask: characterAssetManifest.runtimes.lottie!.markerByCue!.idle,
+          },
+        },
+      },
+    };
+
+    const runtime = selectCharacterRuntime(manifest);
+    const html = renderCharacterRuntime({ cue: 'ask' }, manifest);
+
+    expect(runtime.kind).toBe('css-fallback');
+    expect(runtime.status).toBe('failed');
+    expect(runtime.attemptedRuntime).toBe('lottie');
+    expect(runtime.reason).toBe('lottie-manifest-malformed');
+    expect(html).not.toContain('data-character-runtime="lottie"');
+    expect(html).not.toContain('data-runtime-status="ready"');
+  });
+
+  it('does not fake-ready when a persistent Lottie marker has a malformed segment window', () => {
+    const malformedMarkers = bogleConceptALottie.markers.map((marker) => marker.cm === characterAssetManifest.runtimes.lottie!.markerByCue!.recover
+      ? { ...marker, tm: Number.NaN, dr: 0 }
+      : marker);
+    const manifest = {
+      ...characterAssetManifest,
+      preferredRuntime: 'lottie' as const,
+      runtimes: {
+        ...characterAssetManifest.runtimes,
+        rive: { ...characterAssetManifest.runtimes.rive!, status: 'missing' as const },
+        lottie: {
+          ...characterAssetManifest.runtimes.lottie!,
+          asset: { ...bogleConceptALottie, markers: malformedMarkers },
+        },
+      },
+    } as unknown as CharacterAssetManifest;
+
+    const runtime = selectCharacterRuntime(manifest);
+    const html = renderCharacterRuntime({ cue: 'recover' }, manifest);
+
+    expect(runtime.kind).toBe('css-fallback');
+    expect(runtime.status).toBe('failed');
+    expect(runtime.attemptedRuntime).toBe('lottie');
+    expect(runtime.reason).toBe('lottie-manifest-malformed');
+    expect(html).not.toContain('data-character-runtime="lottie"');
+    expect(html).not.toContain('data-runtime-status="ready"');
+  });
+
+  it('does not fake-ready when the Lottie asset contains duplicate marker names', () => {
+    const duplicateMarkers = [
+      ...bogleConceptALottie.markers,
+      { ...bogleConceptALottie.markers[0] },
+    ];
+    const manifest = {
+      ...characterAssetManifest,
+      preferredRuntime: 'lottie' as const,
+      runtimes: {
+        ...characterAssetManifest.runtimes,
+        rive: { ...characterAssetManifest.runtimes.rive!, status: 'missing' as const },
+        lottie: {
+          ...characterAssetManifest.runtimes.lottie!,
+          asset: { ...bogleConceptALottie, markers: duplicateMarkers },
+        },
+      },
+    } as unknown as CharacterAssetManifest;
+
+    const runtime = selectCharacterRuntime(manifest);
+    const html = renderCharacterRuntime({ cue: 'recover' }, manifest);
+
+    expect(runtime.kind).toBe('css-fallback');
+    expect(runtime.status).toBe('failed');
+    expect(runtime.attemptedRuntime).toBe('lottie');
+    expect(runtime.reason).toBe('lottie-manifest-malformed');
+    expect(html).not.toContain('data-character-runtime="lottie"');
+    expect(html).not.toContain('data-runtime-status="ready"');
+  });
+
   it('does not fake-ready an available Lottie manifest when the JSON contract is malformed', () => {
     const manifest = {
       ...characterAssetManifest,

@@ -40,6 +40,7 @@ export type CharacterRuntimeSelectionOptions = {
 };
 
 const requiredRuntimeInputs = ['cue', 'answerReaction', 'confidence', 'reducedMotion'] as const;
+const persistentLottieCues = ['idle', 'ask', 'answerAccepted', 'thinking', 'confident', 'surprised', 'recover', 'reveal'] as const;
 
 export function selectCharacterRuntime(
   manifest: CharacterAssetManifest = characterAssetManifest,
@@ -58,7 +59,7 @@ export function selectCharacterRuntime(
   if (lottie?.status === 'available') {
     if (isValidLottieRuntime(lottie)) {
       if (lottie.asset) {
-        const poster = renderLottiePosterSafely(lottie, options);
+        const poster = renderLottiePosterSafely(lottie, options, 'idle');
         if (poster) return createLottieRuntime(lottie, options, poster);
         return createCssFallbackRuntime({ status: 'failed', attemptedRuntime: 'lottie', reason: 'lottie-render-failed' });
       }
@@ -97,15 +98,19 @@ function isValidLottieRuntime(runtime: LottieRuntime): boolean {
     const markerNames = new Set(asset.markers!.map((marker) => marker.cm));
     const markerByCue = runtime.markerByCue ?? {};
     const requiredLayers = runtime.requiredLayers ?? [];
-    const requiredMarkers = Object.values(markerByCue).filter((marker): marker is string => isNonEmptyString(marker));
+    const requiredMarkers = persistentLottieCues.map((cue) => markerByCue[cue]);
+    const requiredMarkerNames = requiredMarkers.filter((marker): marker is string => isNonEmptyString(marker));
     return Boolean(runtime.src?.endsWith('.lottie.json'))
       && runtime.asset.v.startsWith('5.')
       && runtime.asset.fr >= 24
       && runtime.asset.w === 320
       && runtime.asset.h === 360
       && runtime.asset.op > runtime.asset.ip
-      && requiredMarkers.length >= 6
-      && requiredMarkers.every((marker) => markerNames.has(marker))
+      && markerNames.size === asset.markers!.length
+      && requiredMarkerNames.length === persistentLottieCues.length
+      && new Set(requiredMarkerNames).size === persistentLottieCues.length
+      && requiredMarkerNames.every((marker) => markerNames.has(marker))
+      && hasValidPersistentMarkerWindows(asset, requiredMarkerNames)
       && requiredLayers.length >= 30
       && requiredLayers.every((layer) => layerNames.has(layer))
       && isNonEmptyString(runtime.layerContract);
@@ -154,7 +159,9 @@ function createLottieRuntime(
     render: (input) => {
       if (runtime.asset) {
         const marker = resolveLottieMarker(runtime, input.cue);
-        const poster = renderedPoster ?? renderLottiePosterSafely(runtime, options);
+        const poster = input.cue === 'idle' && renderedPoster
+          ? renderedPoster
+          : renderLottiePosterSafely(runtime, options, input.cue);
         if (!poster) {
           return renderCssFallbackRuntime(input, 'css-fallback', {
             status: 'failed',
@@ -162,7 +169,8 @@ function createLottieRuntime(
             reason: 'lottie-render-failed',
           });
         }
-        return `<div class="lottie-character-host" style="width:min(350px,82vw);max-width:100%;height:auto;" aria-label="입맛 탐정 보글 애니메이션" data-character-runtime="lottie" data-runtime-status="ready" data-runtime-attempted="lottie" data-runtime-reason="lottie-asset-rendered" data-lottie-src="${escapeAttr(runtime.src!)}" data-lottie-marker="${escapeAttr(marker)}" data-lottie-rendered="true" data-lottie-layer-contract="${escapeAttr(runtime.layerContract!)}" data-character-cue="${escapeAttr(input.cue)}" data-answer-reaction="${escapeAttr(input.lastAnswer ?? 'none')}" data-lottie-confidence="${input.confidence ?? 'mid'}" data-lottie-reduced-motion="${input.reducedMotion ? 'true' : 'false'}">${poster}</div>`;
+        const markerWindow = resolveLottieMarkerWindow(runtime.asset, marker);
+        return `<div class="lottie-character-host" style="width:min(350px,82vw);max-width:100%;height:auto;" aria-label="입맛 탐정 보글 애니메이션" data-character-runtime="lottie" data-runtime-status="ready" data-runtime-attempted="lottie" data-runtime-reason="lottie-asset-rendered" data-lottie-src="${escapeAttr(runtime.src!)}" data-lottie-marker="${escapeAttr(marker)}" data-lottie-marker-start="${formatNumber(markerWindow?.tm ?? 0)}" data-lottie-marker-duration="${formatNumber(markerWindow?.dr ?? 0)}" data-lottie-rendered="true" data-lottie-layer-contract="${escapeAttr(runtime.layerContract!)}" data-character-cue="${escapeAttr(input.cue)}" data-answer-reaction="${escapeAttr(input.lastAnswer ?? 'none')}" data-lottie-confidence="${input.confidence ?? 'mid'}" data-lottie-reduced-motion="${input.reducedMotion ? 'true' : 'false'}">${poster}</div>`;
       }
 
       const clip = resolveLottieClip(runtime, input.cue)!;
@@ -176,45 +184,92 @@ function resolveLottieMarker(runtime: LottieRuntime, cue: string): string {
   return runtime.markerByCue?.[cue] ?? runtime.markerByCue?.idle ?? 'idle-life-v2';
 }
 
-function renderLottiePosterSafely(runtime: LottieRuntime, options: CharacterRuntimeSelectionOptions): string | undefined {
+function renderLottiePosterSafely(runtime: LottieRuntime, options: CharacterRuntimeSelectionOptions, cue: string): string | undefined {
   if (!runtime.asset || !runtime.layerContract) return undefined;
   try {
     if (options.lottieRenderer?.canRender(runtime.asset) === false) return undefined;
+    const markerName = resolveLottieMarker(runtime, cue);
     const poster = options.lottieRenderer?.render(runtime.asset, runtime.layerContract)
-      ?? renderLottiePoster(runtime.asset, runtime.layerContract);
+      ?? renderLottiePoster(runtime.asset, runtime.layerContract, cue, markerName);
     return poster.trim().length > 0 ? poster : undefined;
   } catch {
     return undefined;
   }
 }
 
-function renderLottiePoster(asset: LottieAsset, layerContract: string): string {
+function renderLottiePoster(asset: LottieAsset, layerContract: string, cue: string, markerName: string): string {
   const layers = asset.layers ?? [];
   const layerNames = layers.map((layer) => layer.nm).join(',');
-  const renderedLayers = layers.map(renderLottieLayer).join('');
-  return `<svg class="lottie-vector-poster" style="display:block;width:100%;height:auto;max-width:100%;" viewBox="0 0 ${asset.w} ${asset.h}" role="img" aria-label="보글이 단서를 추리하는 Lottie 벡터 포스터" data-lottie-rendered-svg="true" data-lottie-renderer="inline-lottie-json" data-lottie-layer-count="${layers.length}" data-lottie-layers="${escapeAttr(layerNames)}" data-lottie-layer-contract="${escapeAttr(layerContract)}">${renderedLayers}</svg>`;
+  const marker = resolveLottieMarkerWindow(asset, markerName) ?? asset.markers?.[0];
+  const targetFrame = marker?.tm ?? asset.ip;
+  const stateFingerprint = layers
+    .map((layer) => sampledLayerTransform(layer, targetFrame))
+    .map((transform) => `${transform.layerId}:${formatNumber(transform.x)},${formatNumber(transform.y)},${formatNumber(transform.rotation)},${formatNumber(transform.scaleX)},${formatNumber(transform.scaleY)},${formatNumber(transform.opacity)}`)
+    .sort()
+    .join('|');
+  const renderedLayers = layers.map((layer) => renderLottieLayer(layer, targetFrame)).join('');
+  return `<svg class="lottie-vector-poster" style="display:block;width:100%;height:auto;max-width:100%;" viewBox="0 0 ${asset.w} ${asset.h}" role="img" aria-label="보글이 단서를 추리하는 Lottie 벡터 포스터" data-lottie-rendered-svg="true" data-lottie-renderer="inline-lottie-json" data-lottie-layer-count="${layers.length}" data-lottie-layers="${escapeAttr(layerNames)}" data-lottie-layer-contract="${escapeAttr(layerContract)}" data-lottie-state-cue="${escapeAttr(cue)}" data-lottie-state-marker="${escapeAttr(marker?.cm ?? 'missing-marker')}" data-lottie-state-start="${formatNumber(marker?.tm ?? 0)}" data-lottie-state-end="${formatNumber((marker?.tm ?? 0) + (marker?.dr ?? 0))}" data-lottie-state-fingerprint="${escapeAttr(stateFingerprint)}">${renderedLayers}</svg>`;
 }
 
-function renderLottieLayer(layer: NonNullable<LottieAsset['layers']>[number]): string {
-  const [x, y] = resolveLottiePoint(layer.ks?.p?.k, [0, 0]);
-  const [scaleX, scaleY] = resolveLottiePoint(layer.ks?.s?.k, [100, 100]);
+function renderLottieLayer(layer: NonNullable<LottieAsset['layers']>[number], targetFrame: number): string {
+  const [x, y] = resolveLottiePointAt(layer.ks?.p?.k, targetFrame, [0, 0]);
+  const [scaleX, scaleY] = resolveLottiePointAt(layer.ks?.s?.k, targetFrame, [100, 100]);
+  const rotation = resolveLottieNumberAt(layer.ks?.r?.k, targetFrame, 0);
+  const opacity = resolveLottieNumberAt(layer.ks?.o?.k, targetFrame, 100) / 100;
   const shapes = layer.shapes ?? [];
   const fill = shapes.find((shape) => shape.ty === 'fl');
   const fillColor = fill?.c?.k ? lottieColorToCss(fill.c.k, fill.o?.k ?? 100) : 'rgba(92,50,29,.24)';
   const primitive = shapes.find((shape) => shape.ty === 'el' || shape.ty === 'rc');
-  const [width, height] = resolveLottiePoint(primitive?.s?.k, [24, 24]);
-  const [offsetX, offsetY] = resolveLottiePoint(primitive?.p?.k, [0, 0]);
+  const [width, height] = resolveLottiePointAt(primitive?.s?.k, 0, [24, 24]);
+  const [offsetX, offsetY] = resolveLottiePointAt(primitive?.p?.k, 0, [0, 0]);
   const shape = primitive?.ty === 'rc'
     ? `<rect x="${formatNumber(offsetX - width / 2)}" y="${formatNumber(offsetY - height / 2)}" width="${formatNumber(width)}" height="${formatNumber(height)}" rx="${formatNumber(Math.min(width, height) * 0.18)}" fill="${escapeAttr(fillColor)}"/>`
     : `<ellipse cx="${formatNumber(offsetX)}" cy="${formatNumber(offsetY)}" rx="${formatNumber(width / 2)}" ry="${formatNumber(height / 2)}" fill="${escapeAttr(fillColor)}"/>`;
-  return `<g data-layer-id="${escapeAttr(layer.nm)}" data-lottie-layer-type="${layer.ty}" transform="translate(${formatNumber(x)} ${formatNumber(y)}) scale(${formatNumber(scaleX / 100)} ${formatNumber(scaleY / 100)})">${shape}</g>`;
+  const sx = scaleX / 100;
+  const sy = scaleY / 100;
+  return `<g data-layer-id="${escapeAttr(layer.nm)}" data-lottie-layer-type="${layer.ty}" data-lottie-state-x="${formatNumber(x)}" data-lottie-state-y="${formatNumber(y)}" data-lottie-state-rot="${formatNumber(rotation)}" transform="translate(${formatNumber(x)} ${formatNumber(y)}) rotate(${formatNumber(rotation)}) scale(${formatNumber(sx)} ${formatNumber(sy)})" opacity="${formatNumber(Math.max(0, Math.min(1, opacity)))}">${shape}</g>`;
 }
 
-function resolveLottiePoint(value: number[] | Array<{ s?: number[] }> | undefined, fallback: [number, number]): [number, number] {
-  const point: readonly unknown[] | undefined = Array.isArray(value) && typeof value[0] === 'object' ? value[0]?.s : value;
+function sampledLayerTransform(layer: NonNullable<LottieAsset['layers']>[number], targetFrame: number): { layerId: string; x: number; y: number; rotation: number; scaleX: number; scaleY: number; opacity: number } {
+  const [x, y] = resolveLottiePointAt(layer.ks?.p?.k, targetFrame, [0, 0]);
+  const [scaleX, scaleY] = resolveLottiePointAt(layer.ks?.s?.k, targetFrame, [100, 100]);
+  return {
+    layerId: layer.nm,
+    x,
+    y,
+    rotation: resolveLottieNumberAt(layer.ks?.r?.k, targetFrame, 0),
+    scaleX,
+    scaleY,
+    opacity: resolveLottieNumberAt(layer.ks?.o?.k, targetFrame, 100),
+  };
+}
+
+function resolveLottieMarkerWindow(asset: LottieAsset, markerName: string): { cm: string; tm: number; dr: number } | undefined {
+  return asset.markers?.find((marker) => marker.cm === markerName);
+}
+
+function resolveLottiePointAt(value: number[] | Array<{ t?: number; s?: number[] }> | undefined, targetFrame: number, fallback: [number, number]): [number, number] {
+  const point: readonly unknown[] | undefined = Array.isArray(value) && isKeyframeList(value) ? resolveKeyframeValue(value, targetFrame) : value;
   const x = point?.[0];
   const y = point?.[1];
   return [typeof x === 'number' && Number.isFinite(x) ? x : fallback[0], typeof y === 'number' && Number.isFinite(y) ? y : fallback[1]];
+}
+
+function resolveLottieNumberAt(value: number | Array<{ t?: number; s?: number[] }> | undefined, targetFrame: number, fallback: number): number {
+  if (typeof value === 'number') return Number.isFinite(value) ? value : fallback;
+  const resolved = Array.isArray(value) && isKeyframeList(value) ? resolveKeyframeValue(value, targetFrame)?.[0] : undefined;
+  return typeof resolved === 'number' && Number.isFinite(resolved) ? resolved : fallback;
+}
+
+function isKeyframeList(value: number[] | Array<{ t?: number; s?: number[] }>): value is Array<{ t?: number; s?: number[] }> {
+  return typeof value[0] === 'object';
+}
+
+function resolveKeyframeValue(keyframes: Array<{ t?: number; s?: number[] }>, targetFrame: number): number[] | undefined {
+  return keyframes.reduce<number[] | undefined>((current, keyframe) => {
+    if (typeof keyframe.t === 'number' && keyframe.t <= targetFrame && Array.isArray(keyframe.s)) return keyframe.s;
+    return current;
+  }, keyframes[0]?.s);
 }
 
 function lottieColorToCss(color: number[], opacity: number): string {
@@ -251,6 +306,20 @@ function isLottieAssetRenderable(asset: LottieAsset): boolean {
     && asset.markers.every((marker) => isNonEmptyString(marker.cm))
     && Array.isArray(asset.layers)
     && asset.layers.every((layer) => isNonEmptyString(layer.nm));
+}
+
+function hasValidPersistentMarkerWindows(asset: LottieAsset, markerNames: string[]): boolean {
+  return markerNames.every((markerName) => {
+    const marker = resolveLottieMarkerWindow(asset, markerName);
+    if (!marker) return false;
+    const start = marker.tm;
+    const duration = marker.dr;
+    return Number.isFinite(start)
+      && Number.isFinite(duration)
+      && duration > 0
+      && start >= asset.ip
+      && start + duration <= asset.op;
+  });
 }
 
 function isNonEmptyString(value: unknown): value is string {
