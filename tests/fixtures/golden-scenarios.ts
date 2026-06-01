@@ -310,6 +310,7 @@ export const goldenScenarios: GoldenScenario[] = [
       'q-kimchi': 'yes',
       'q-comfort-hot': 'yes',
       'q-red-sauce': 'yes',
+      'q-mixed-veg': 'no',
       'q-recovery-nonkimchi': 'no',
       'q-recovery-after-kimchi': 'yes',
       'q-soy-earthy': 'yes',

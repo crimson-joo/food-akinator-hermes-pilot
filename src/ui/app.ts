@@ -165,7 +165,7 @@ ${renderAnswerButtons(true, model.lastAnswer)}`;
 <h2>오늘은 ${escapeHtml(candidate.nameKo)} 쪽이에요.</h2>
 <p class="helper">${escapeHtml(candidate.reveal.oneLiner)}</p>
 <h3>제가 이렇게 본 이유는요.</h3>
-<ul class="reason-list">${candidate.reveal.reasonSeeds.slice(0, 3).map((reason) => `<li>${escapeHtml(reason)}</li>`).join('')}</ul>
+<ul class="reason-list">${reasonListItems(model.session.guess)}</ul>
 <div class="guess-actions"><button class="primary" data-action="restart" type="button">다시 맞혀보기</button><button class="secondary" data-action="reject-guess" type="button">아닌데요</button></div>`;
   }
   if (model.phase === 'recovering') {
@@ -205,7 +205,12 @@ ${renderQuestion(model.session, false)}`;
 function renderAnswerFeedback(answer?: AnswerKey): string {
   if (!answer) return '';
   const reaction = answerReaction[answer];
-  return `<div class="interaction-feedback answer-feedback" data-interaction-feedback="answer" data-answer-reaction="${answer}" data-answer-sentiment="${reaction.sentiment}" data-reaction-motion="${reaction.motion}"><strong>${escapeHtml(reaction.copy)}</strong><span>보글이 표정과 관절 움직임으로 이 단서를 반영하고 있어요.</span></div>`;
+  return `<div class="interaction-feedback answer-feedback" data-interaction-feedback="answer" data-answer-reaction="${answer}" data-answer-sentiment="${reaction.sentiment}" data-reaction-motion="${reaction.motion}" data-micro-reaction-beat="answer-captured"><span class="answer-reaction-badge" aria-hidden="true">${escapeHtml(answerLabel[answer])}</span><strong>${escapeHtml(reaction.copy)}</strong><span>방금 누른 답변을 크게 표시하고 있어요. 보글이 표정과 관절 움직임으로 이 단서를 반영하고 있어요.</span></div>`;
+}
+
+function reasonListItems(guess: EngineSession['guess']): string {
+  const reasons = guess?.answerTrace?.length ? guess.answerTrace : guess?.reasonSeeds ?? [];
+  return reasons.slice(0, 4).map((reason) => `<li data-reason-source="${guess?.answerTrace?.length ? 'answer-trail' : 'candidate-seed'}">${escapeHtml(reason)}</li>`).join('');
 }
 
 function renderQuestion(session: EngineSession | undefined, disabled: boolean, selected?: AnswerKey): string {
@@ -238,7 +243,8 @@ function renderClueProgress(session?: EngineSession): string {
 
 function progressStage(session?: EngineSession): 'orienting' | 'narrowing' | 'fork' | 'guardrail' | 'lock' | 'recovery' {
   if (!session) return 'orienting';
-  if (session.characterCue === 'recover' || session.currentQuestion?.role === 'recovery_disambiguation') return 'recovery';
+  const hasRejectedCandidate = session.rejectedCandidateIds.length > 0;
+  if (hasRejectedCandidate && (session.characterCue === 'recover' || session.currentQuestion?.role === 'recovery_disambiguation')) return 'recovery';
   if (session.guess || session.currentQuestion?.role === 'signature_discriminator' || session.currentQuestion?.role === 'reveal_check') return 'lock';
   if (session.currentQuestion?.role === 'false_path_guardrail') return 'guardrail';
   if (session.currentQuestion?.role === 'sibling_elimination') return 'fork';
@@ -308,6 +314,9 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 .clue-progress { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 20px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.58); color: var(--muted); font-weight: 900; }
 .clue-dots { display: inline-flex; gap: 7px; } .clue-dot { width: 10px; height: 10px; border-radius: 999px; background: rgba(123,75,40,.22); } .clue-dot.active { background: var(--gochu); box-shadow: 0 0 0 5px rgba(217,61,39,.10); }
 .interaction-feedback { margin: 16px 0 18px; padding: 13px 15px; border: 1px solid rgba(103,57,30,.20); border-radius: 20px; background: rgba(255,255,255,.66); box-shadow: 0 10px 24px rgba(75,38,15,.08); display: grid; gap: 4px; }
+.answer-feedback { grid-template-columns: auto 1fr; align-items: center; column-gap: 12px; }
+.answer-feedback span:not(.answer-reaction-badge) { grid-column: 2; }
+.answer-reaction-badge { grid-row: 1 / span 2; display: inline-grid; place-items: center; min-width: 56px; min-height: 56px; padding: 8px 10px; border-radius: 18px; color: #fff; background: linear-gradient(135deg, var(--gochu), var(--gochu-dark)); box-shadow: 0 12px 26px rgba(217,61,39,.25); font-weight: 950; }
 .interaction-feedback strong { font-size: 1.02rem; } .interaction-feedback span { color: var(--muted); font-size: .9rem; line-height: 1.55; }
 [data-answer-sentiment='positive'] .answer-feedback { background: linear-gradient(135deg, rgba(244,255,237,.82), rgba(255,248,226,.86)); border-color: rgba(47,125,70,.26); }
 [data-answer-sentiment='soft-positive'] .answer-feedback { background: linear-gradient(135deg, rgba(255,250,226,.88), rgba(255,239,213,.84)); }
@@ -415,7 +424,7 @@ h3 { margin: 24px 0 10px; font-size: 1.06rem; }
 @keyframes oops-recoil { 0% { transform: translateX(0) rotate(0); } 55% { transform: translateX(-16px) rotate(-7deg); } 100% { transform: translateX(-8px) rotate(-4deg); } }
 @keyframes recovery-reset { 0% { transform: rotate(-5deg); } 100% { transform: rotate(.5deg); } }
 @keyframes lid-reveal { 0% { transform: translateX(-50%); } 100% { transform: translateX(-50%) translateY(-54px) rotate(-14deg); } }
-@media (max-width: 820px) { .app-shell { grid-template-columns: 1fr; padding: 16px 12px 28px; } .oracle-theater { min-height: 410px; } .oracle-host { width: min(300px, 82vw); height: 330px; } .answer-grid { grid-template-columns: 1fr; } .clue-progress { align-items: flex-start; flex-direction: column; } h1 { font-size: clamp(31px, 10vw, 44px); } }
+@media (max-width: 820px) { .app-shell { grid-template-columns: 1fr; min-height: 100svh; padding: 10px 10px 16px; gap: 10px; align-content: start; } .oracle-theater { min-height: 210px; padding: 10px; border-radius: 24px; } .oracle-host { width: min(210px, 70vw); height: 230px; } .lottie-character-host { width: min(210px, 70vw) !important; } .state-label { margin-top: 8px; font-size: .82rem; } .reduced-motion-note { display: none; } .dialogue-card { padding: 14px; border-radius: 24px; } .answer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 12px; } .answer-grid .answer:nth-child(3) { grid-column: 1 / -1; } .answer { min-height: 44px; padding: 8px 12px; } .clue-progress { align-items: flex-start; flex-direction: column; gap: 6px; margin-bottom: 10px; padding: 9px 10px; } .helper, .small-help { line-height: 1.45; } h1 { font-size: clamp(31px, 10vw, 44px); } h2 { margin: 6px 0 10px; font-size: clamp(22px, 7vw, 30px); } .turn-label, .eyebrow { margin-bottom: 6px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } [data-reduced-motion-note] { display: inline; } .oracle-host { transform: none !important; } }
 </style>`;
 }

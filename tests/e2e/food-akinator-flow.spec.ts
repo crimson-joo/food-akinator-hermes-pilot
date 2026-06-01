@@ -109,7 +109,7 @@ test('mobile asking stage keeps the spoon bowl inside safe area at 360, 390, and
   ];
 
   for (const item of cases) {
-    await page.setViewportSize({ width: item.width, height: 844 });
+    await page.setViewportSize({ width: item.width, height: 640 });
     await page.goto(appUrl);
     await page.getByRole('button', { name: '시작하기' }).click();
     await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', 'asking');
@@ -124,11 +124,14 @@ test('mobile asking stage keeps the spoon bowl inside safe area at 360, 390, and
       const spoonRect = spoonBowl.getBoundingClientRect();
       return {
         overflow: document.documentElement.scrollWidth - window.innerWidth,
+        viewportHeight: window.innerHeight,
         stageLeft: stageRect.left,
         stageRight: stageRect.right,
         spoonLeft: spoonRect.left,
         spoonRight: spoonRect.right,
         spoonRightSafeArea: stageRect.right - spoonRect.right,
+        firstAnswerTop: Math.min(...answerButtons.map((button) => button.getBoundingClientRect().top)),
+        lastAnswerBottom: Math.max(...answerButtons.map((button) => button.getBoundingClientRect().bottom)),
         minAnswerHeight: Math.min(...answerButtons.map((button) => button.getBoundingClientRect().height)),
       };
     });
@@ -137,6 +140,8 @@ test('mobile asking stage keeps the spoon bowl inside safe area at 360, 390, and
     expect(geometry.spoonLeft, `${item.width}px spoon left`).toBeGreaterThanOrEqual(geometry.stageLeft);
     expect(geometry.spoonRight, `${item.width}px spoon right`).toBeLessThanOrEqual(geometry.stageRight);
     expect(geometry.spoonRightSafeArea, `${item.width}px spoon right safe area`).toBeGreaterThanOrEqual(item.safeArea);
+    expect(geometry.firstAnswerTop, `${item.width}px answer controls should start on first screen`).toBeLessThan(geometry.viewportHeight);
+    expect(geometry.lastAnswerBottom, `${item.width}px full answer set should be reachable on first screen`).toBeLessThanOrEqual(geometry.viewportHeight + 1);
     expect(geometry.minAnswerHeight, `${item.width}px answer height`).toBeGreaterThanOrEqual(44);
   }
 
