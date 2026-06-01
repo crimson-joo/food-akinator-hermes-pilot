@@ -116,7 +116,9 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 - `src/engine/session.ts`는 `startSession()`, `submitAnswer()`, `submitGuessFeedback()` 순수 동기 API를 제공한다.
 - session snapshot은 `status`, `characterCue`, `turn`, `currentQuestion`, 고정 5답변 `answerOptions`, `guess`, `rejectedCandidateIds`, `topCandidate`, `copy`, UI action 가능 여부를 포함한다.
 - reveal은 기본값 `minRevealTurn: 5`, `confidenceThreshold: 0.72`, `marginThreshold: 0.18`, `softCapTurn: 10`, `softCapConfidence: 0.55`, `hardCapTurn: 14`, `maxUnknownBeforeExhausted: 5`를 사용한다.
+- reveal guess는 `answerTrace`를 포함해 UI가 사용자의 실제 답변 trail에서 answer-traceable rationale을 렌더할 수 있게 한다. visible copy는 score/probability/topN/raw id를 노출하지 않는다.
 - 오답 feedback은 현재 guess candidate를 `rejectedCandidateIds`에 한 번만 추가하고, 같은 후보를 다음 reveal/top candidate에서 제외하며 low-risk `recovery_disambiguation` 질문을 우선한다.
+- selector는 `rejectedCandidateIds`가 없으면 `recovery_disambiguation` 질문/빗나간 접시 계열 회복 카피가 사전 노출되지 않도록 gate한다.
 - all-unknown/flat evidence는 내부 점수나 가짜 확신을 노출하지 않고 `exhausted` + `characterCue: exhausted`로 종료한다.
 - MVP 엔진 cue는 `ask`, `confident`, `reveal`, `recover`, `exhausted`를 실제 snapshot으로 보장한다. `thinking`/`surprised`의 시간 기반 전환은 UI scaffold presentation layer에서 semantic metadata로 표현한다.
 
@@ -143,10 +145,11 @@ UI에는 확률 숫자보다 캐릭터 mood/copy로 표시한다.
 
 현재 UI scaffold는 Vite entrypoint `index.html`에서 `src/ui/app.ts`를 로드하는 로컬-only browser app이다.
 
-- `renderApp(model)`은 테스트 가능한 pure renderer로, `data-ui-state`, `data-character-cue`, `data-answer-key`, `data-question-id`, `data-guess-candidate-id`, `data-result-candidate-id`, `data-rejected-candidate-ids` QA hook을 출력한다.
+- `renderApp(model)`은 테스트 가능한 pure renderer로, `data-ui-state`, `data-character-cue`, `data-answer-key`, `data-question-id`, `data-guess-candidate-id`, `data-result-candidate-id`, `data-rejected-candidate-ids`, `data-reason-source="answer-trail"`, `data-recovery-beat` QA hook을 출력한다.
 - `src/ui/character/CharacterStage.ts`, `characterRuntime.ts`, `characterAssetManifest.ts`, and `cssFallbackRuntime.ts`. The manifest keeps `preferredRuntime: 'rive'` and the adapter can select load-proven `rive`, secondary load-proven `lottie`, or playable `css-fallback`. Missing assets expose `data-runtime-status="fallback"`; malformed manifests or failed/absent authored runtime asset probes fail closed to CSS with `data-runtime-status="failed"` and `data-runtime-reason`, so syntactically valid manifest strings cannot silently claim production runtime readiness.
-- `mountApp(root)`은 presentation transition만 관리한다: answer click → `answerAccepted` → `thinking` → engine `submitAnswer()` 결과를 `asking` 또는 `guessing`으로 매핑한다. Hardcoded answer/recovery timing now lives in `src/ui/motionScheduler.ts` as fake-clock-testable plans (`700ms`, `1550ms`, `520/1040/1760ms`).
+- `mountApp(root)`은 presentation transition만 관리한다: answer click → `answerAccepted` dedicated beat → `thinking` → engine `submitAnswer()` 결과를 `asking` 또는 `guessing`으로 매핑한다. Hardcoded answer/recovery timing now lives in `src/ui/motionScheduler.ts` as fake-clock-testable plans (`700ms`, `1550ms`, `520/1040/1760ms`).
 - Engine은 `thinking`/`surprised` timer를 갖지 않는다. UI가 transient state로 suspense와 wrong reaction을 표현한 뒤 session API 결과를 소비한다.
+- Wrong recovery presentation은 `surprise` → `remove` → `refocus` three-beat DOM sequence로 렌더되며, `remove` beat는 다음 질문을 섞지 않고 rejected chip/cross-off를 우선 보여준다.
 - Demo browser dataset은 이제 `src/data/food-knowledge-base.ts`의 canonical `foodKnowledgeBase`를 사용한다. 이전 `src/ui/app.ts` 내부 3-candidate toy fixture는 제거되었고, `demoDataset` export는 canonical dataset compatibility alias다.
 - Canonical data v1은 50 active candidates, 42 active questions, candidate당 20+ non-neutral attribute coverage, role/split quality tests를 가진다.
 - Production build는 `npm run build`로 `dist/`에 생성되며, `dist/`는 local generated artifact로 gitignore한다.

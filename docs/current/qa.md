@@ -4,7 +4,7 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
-현재 판정: controlled demo / alpha smoke는 가능하지만, full public production launch는 여전히 blocked다. PR #24가 merge/deploy/live canary를 통과하면서 public URL에서 Lottie authored-equivalent runtime이 `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"`, `data-lottie-rendered="true"`, 8개 marker-state fingerprint로 검증되었다. 이제 production blocker는 배포 전 runtime 증명이 아니라 user-perceived intelligence, reasoning bridge, answer-tied progress tension, suspense/reveal payoff, 3-beat wrong recovery, mobile/perceptual quality, representative simulation/live QA gate다.
+현재 판정: controlled demo / alpha는 PR #25 production-feel wave까지 포함해 live-canary PASS다. PR #24는 public URL에서 Lottie authored-equivalent runtime을 검증했고, PR #25는 deployed live probe에서 desktop/mobile 360/390/412/reduced-motion, answerAccepted dedicated beat, wrong recovery surprise → remove → refocus, answer-trace reveal, console/page error 0을 검증했다. Full public production launch는 아직 blocked다. 남은 blocker는 representative simulation / branch entropy / reasoning quality across more paths / first-guess turn budget / final production review 및 운영자 승인이다.
 
 현재 threshold/golden UI pilot의 자동화/live smoke QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check, GitHub Pages live canary, Pixel 7 크기 mobile viewport smoke를 포함한다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. Perceptual polish와 최종 mascot/brand는 아직 별도 product/design gate로 남아 있다.
 
@@ -120,7 +120,19 @@ Recent evidence references:
 - PR #21 live/demo evidence: Bogle motion state machine, production layer sheet hooks, main CI, Pages deploy, scripted canary, browser DOM/console smoke.
 - PR #22 evidence: production completion autoplan and explicit production-blocked verdict in `docs/current/autoplan-kanban.md`.
 - PR #24 evidence: live Lottie canary verified public URL runtime markers (`lottie`, `ready`, rendered asset, 8/8 distinct fingerprints) with CI/deploy success.
+- PR #25 evidence: production-feel wave passed local QA and deployed live canary. Evidence includes PR CI, main CI, Pages deploy, workflow canary/live e2e 8/8, webhook delivery, and independent cache-busted live probe with desktop/mobile 360/390/412/reduced-motion, answerAccepted dedicated beat, wrong recovery surprise → remove → refocus, answer-trace reveal, and zero console/page errors.
 - `t_2c0c169f` live baseline browser/perceptual QA evidence: `.hermes/runs/t_2c0c169f/qa-baseline-report.md` and `.hermes/runs/t_2c0c169f/browser-qa-evidence.json`.
+
+## Production-feel wave QA gate — 2026-06-01
+
+PR #25 resolved the scoped production-feel blockers from the previous baseline for controlled demo/alpha:
+
+- Local QA evidence: `.hermes/runs/t_4dade37a/qa-prod-feel-gate-report.md`.
+- Release/live evidence: `.hermes/runs/t_d4d6b5dd/orchestrator-release-recovery/release-closeout.md` and `.hermes/runs/t_d4d6b5dd/orchestrator-release-recovery/live-probe/`.
+- Automated gates: `npm test` 13 files / 97 tests, `npm run typecheck`, `npm run build`, `npm run test:e2e` 8/8, PR CI, main CI, Pages deploy, live Playwright e2e 8/8, deployed production-feel probe overall PASS.
+- Browser/perceptual checks: desktop, mobile 360/390/412, and reduced-motion all passed with console/page errors 0, no horizontal overflow, all answer controls first viewport, answerAccepted dedicated beat, wrong recovery three beats, and answer-trace reveal rationale.
+
+Full public production launch is still not declared from this QA note alone. Remaining full-launch QA scope: representative 20-food scenario simulation, branch entropy/reasoning quality across broader paths, first-guess turn budget, final production review, and explicit operator approval.
 
 ## Baseline browser/perceptual QA gate — 2026-06-01
 
@@ -134,14 +146,12 @@ Validated against `https://crimson-joo.github.io/food-akinator-hermes-pilot/` wi
 - Mobile horizontal overflow was 0px at 360/390/412 entry and asking.
 - Forbidden visible internals (`score`, `probability`, `top1`, `top3`, `attribute`, `clue:`, raw `q-*`) were not observed.
 
-Production-blocking observations after PR #24 live Lottie:
+Production-blocking observations after PR #24 live Lottie, with PR #25 status:
 
 - Lottie authored-equivalent runtime is live-verified on the public URL, so the prior deploy/runtime-readiness blocker is cleared for the controlled demo.
 - The CSS fallback remains required as a fail-closed path for missing/malformed authored assets; production QA must continue checking truthful `failed`/`fallback` metadata paths.
-- The product still needs stronger proof that the user experiences Bogle as actively reasoning, not merely asking a polished adaptive survey.
-- Reasoning bridge/progress tension/reveal reasons must tie visible clues to the user's actual answers without leaking score/probability/id internals.
-- 360px mobile screenshot shows a visual clipping risk: the spoon prop is pressed against / appears cut by the right stage edge even though measured horizontal overflow is 0.
-- Wrong recovery has rejected-candidate copy/chip, but production target still needs a clearer 3-beat surprise → removal → refocus moment.
+- PR #25 improves proof that Bogle actively reasons by adding answer-trace reveal rationale, dedicated answerAccepted beat, and three-beat wrong recovery; these are now controlled-demo/live-canary PASS.
+- Remaining full-launch proof is broader than this scoped wave: representative simulation, branch entropy, reasoning quality across more paths, first-guess turn budget, final production review, and explicit operator approval.
 
 ### Minimal UI scaffold DOM checks
 

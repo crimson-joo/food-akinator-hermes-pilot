@@ -2,7 +2,7 @@
 
 ## 현재 release 상태
 
-- 현재 public URL은 controlled demo / alpha로만 취급한다. PR #24 merge 이후 main CI, GitHub Pages deploy, cache-busted live Lottie canary가 통과했으며 public URL은 `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"`를 노출한다. 단, full public production launch는 여전히 production-blocked이며 남은 Akinator-like intelligence/reasoning/perceptual/mobile/recovery gate까지 통과해야 한다.
+- 현재 public URL은 controlled demo / alpha로 취급하며, PR #25 production-feel wave까지 merge/deploy/live canary PASS 상태다. PR #24는 public URL에서 Lottie authored-equivalent runtime(`data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"`)을 검증했고, PR #25는 PR CI → squash merge → main CI → Pages deploy → workflow canary/live e2e → independent cache-busted production-feel live probe를 통과했다. 단, full public production launch는 아직 production-blocked이며 representative simulation / branch entropy / broader reasoning-quality / first-guess turn budget / final production review 및 운영자 승인까지 통과해야 한다.
 - 로컬 엔진 foundation 구현 있음: domain validation, candidate scoring, adaptive selector MVP, threshold/reveal/wrong-recovery session state machine, golden scenario fixture, minimal browser UI scaffold.
 - adaptive selector pilot local gate: PASS. Initial unknown turn-4 high reveal-risk blocker는 remediation/re-review/QA rerun으로 해결됨.
 - threshold/golden UI pilot local gate: PASS. Session threshold/reveal/wrong-recovery, golden scenarios, sanitized UI error copy, minimal browser flow QA가 통과됨.
@@ -10,9 +10,9 @@
 - main 배포 완료: PR #5 merge 후 PR #6에서 live smoke base URL 문제를 수정했고, 이후 main CI, GitHub Pages deploy, scripted canary, live Playwright smoke가 통과했다.
 - Builder gate 통과: 직접 플레이 5회 + product/design/architecture/QA synthesis 완료.
 - Akinator-level self-review loop 시작: Product/Engine, Design/Service, QA/Release 관점 gap review 후 canonical `foodKnowledgeBase` v1(50 candidates / 42 questions / data readiness gate)을 도입했다. 다음 major gap은 representative simulation, branch entropy, asset-backed character runtime, scene choreography다.
-- 다음 단계: 제품 iteration. Public release 전에는 user-perceived intelligence, reasoning bridge/progress tension, suspense/reveal payoff, 3-beat wrong recovery, mobile/perceptual QA, final production review가 별도 product/design/QA gate로 계속 필요함. Mobile viewport smoke는 live Playwright 기준 통과했지만 visual safe-area 품질 기준은 아직 남아 있다.
+- 다음 단계: production completion loop의 다음 증거 수집. PR #25로 reasoning bridge/reveal rationale/wrong recovery/mobile first-screen blocker는 controlled demo/live-canary 기준 해결됐지만, public release 전에는 representative simulation, branch entropy, broader reasoning quality, first-guess turn budget, final production review가 별도 product/design/QA gate로 계속 필요함. Mobile 360/390/412 first-screen answerability와 3-beat recovery는 PR #25 live probe 기준 통과했다.
 - Lottie authored-runtime: PR #24 added repo-local `src/ui/character/assets/bogle-concept-a.lottie.json` and wires `CharacterStage` to report `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-runtime-reason="lottie-asset-rendered"` only after manifest validation plus rendered marker-state output. Missing/malformed/duplicate-marker/renderer failure paths fail closed to playable `css-fallback` with truthful failed/fallback metadata. Main deploy/live canary now confirms this path on the public URL for controlled demo/alpha; it does not approve full public production launch by itself.
-- Evidence references: PR #21 added the Bogle motion state machine/layer-sheet contract and live smoke evidence; PR #22 added the production completion autoplan and current production-blocked verdict; PR #24 added live-verified Lottie authored-equivalent runtime evidence.
+- Evidence references: PR #21 added the Bogle motion state machine/layer-sheet contract and live smoke evidence; PR #22 added the production completion autoplan and current production-blocked verdict; PR #24 added live-verified Lottie authored-equivalent runtime evidence; PR #25 added production-feel reasoning/reveal/recovery/mobile evidence with deployed live canary PASS.
 
 ## Release policy
 
