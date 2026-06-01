@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-06-01 — Representative simulation quality gate live PASS / full launch still BLOCKED
+
+- PR #27 merged/deployed the representative simulation quality gate: 32 cases covering 20 canonical targets, 4 mixed-uncertainty paths, 4 unknown-heavy paths, and 4 rejected-guess recovery paths.
+- Evidence passed for the gate itself: focused representative simulation test, full `npm test` 13 files / 100 tests, typecheck, build, local e2e 8/8, PR CI, main CI, Pages deploy, deployed canary, and independent live Playwright 8/8.
+- Controlled demo / alpha remains PASS because the report is honest, leak-free, and separates controlled-demo success from full-launch failure.
+- Full public production launch remains BLOCKED: exact first/final guess are 95% and top3 at first stop is 100%, but median first guess turn is 9, max first guess turn is 15, early branch entropy is below target, unique prefix4 paths are 8, and rejected-guess recovery success is 0%.
+- Next blocker loop should target first-guess turn budget, early branch entropy/prefix diversity, and rejected-guess exact-final recovery before any final production launch review.
+
 ## 2026-06-01 — Production-feel reasoning/reveal/recovery/mobile wave live PASS
 
 - PR #25 merged/deployed the production-feel wave: answer-trace reveal rationale, `recovery_disambiguation` gating before rejected guesses, dedicated `answerAccepted` micro-reaction, wrong recovery surprise → remove → refocus, and 360/390/412 mobile first-screen answerability.

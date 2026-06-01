@@ -5,6 +5,7 @@ Repo HEAD at synthesis: `6bcef0f` / PR #21
 Docs alignment baseline: `0db5df7` / PR #22 autoplan merged to `main`
 Live Lottie runtime baseline: `2e94ac0` / PR #24 merged and deployed
 Production-feel wave baseline: `fa060d6` / PR #25 merged and deployed
+Simulation-quality gate baseline: `ac12f4a` / PR #27 merged and deployed
 Live URL: https://crimson-joo.github.io/food-akinator-hermes-pilot/
 Board: `food-akinator-rebuild`
 
@@ -16,13 +17,15 @@ Bring Food Akinator from a technically deployed character/inference prototype to
 
 **Not ready for full public production launch.**
 
-Current state is acceptable as a controlled public demo / alpha. PR #25 resolved the scoped production-feel blockers for reasoning/reveal/recovery/mobile first-screen behavior and passed local QA, PR CI, merge/deploy, live e2e, webhook, and independent cache-busted live probe. Full production launch remains blocked by:
+Current state is acceptable as a controlled public demo / alpha. PR #25 resolved the scoped production-feel blockers and PR #27 shipped an honest representative simulation quality gate with local QA, PR CI, merge/deploy, live smoke/canary, and independent live Playwright evidence. Full production launch remains blocked by the gate results:
 
-1. Representative simulation / branch entropy / reasoning-quality evidence is not yet production-grade across a broader 20-food path matrix.
-2. First-guess turn budget and answer-trace rationale quality need validation beyond the deterministic probe paths.
-3. Final production review + live QA gate must explicitly approve full public launch rather than scoped wave readiness.
-4. Operator/public-launch approval has not been requested or granted.
-5. Release-manager profile GitHub auth drift should be fixed before relying on routine release automation without orchestrator recovery.
+1. First-guess turn budget is over full-launch target: median 9, max 15.
+2. Early branch entropy is below target at turns 1–2: 0.881 / 1.395.
+3. Prefix diversity is still narrow: unique prefix4 paths 8.
+4. Rejected-guess recovery exact-final success is 0% under the current semantics.
+5. Final production review + live QA gate must explicitly approve full public launch rather than scoped wave readiness.
+6. Operator/public-launch approval has not been requested or granted.
+7. Release-manager profile GitHub auth drift should be fixed before relying on routine release automation without orchestrator recovery.
 
 ## Review synthesis
 
@@ -58,7 +61,8 @@ Blocking findings / current status:
 
 - PR #24 cleared the prior `css-fallback`-only runtime blocker on the public URL for controlled demo/alpha.
 - PR #25 reviewer/QA/release evidence cleared the scoped production-feel blockers for answer-trace reveal, recovery gating, three-beat wrong recovery, answerAccepted beat, and mobile first-screen answerability.
-- Full production launch remains blocked until a broader production/reference-product gate covers representative simulation, branch entropy, reasoning quality across more paths, first-guess turn budget, and explicit launch approval.
+- PR #27 reviewer/QA/release evidence added the representative simulation quality gate and proved it live; the gate itself blocks full launch on first-guess turn budget, early branch entropy, prefix diversity, and rejected-guess recovery success.
+- Full production launch remains blocked until those metrics pass, then final production review/live QA and explicit launch approval pass.
 
 ### QA Lead
 
@@ -79,8 +83,8 @@ QA risks:
 
 Documentation/evidence status:
 
-- README/current docs/changelog/Graphify now need PR #25 reconciliation after release closeout.
-- PR #25 evidence should be promoted only as durable truth: controlled demo/alpha production-feel PASS, not full public launch approval.
+- README/current docs/changelog/Graphify now include PR #27 simulation-quality release closeout.
+- PR #25 and PR #27 evidence should be promoted only as durable truth: controlled demo/alpha PASS and honest full-launch blocker evidence, not full public launch approval.
 - Graphify may show one-commit self-reference drift after graph-containing commits; record freshness explicitly rather than looping forever.
 
 ## Auto-resolved decisions
@@ -111,13 +115,24 @@ Escalate to user only if:
 
 ### Wave 2 — production feel and proof after live Lottie
 
-Status: scoped implementation/review/QA/release completed by PR #25 for controlled demo/alpha.
+Status: scoped implementation/review/QA/release completed by PR #25 and PR #27 for controlled demo/alpha.
 
-5. `PROD-REASONING`: Implement reasoning bridge, answer-tied progress tension, stronger suspense/reveal rationale, and representative simulation evidence. ✅ scoped reasoning/reveal implemented; broader representative simulation remains.
+5. `PROD-REASONING`: Implement reasoning bridge, answer-tied progress tension, stronger suspense/reveal rationale, and representative simulation evidence. ✅ PR #25 implemented scoped reasoning/reveal; PR #27 added representative simulation/report gate.
 6. `PROD-RECOVERY-MOBILE`: Implement 3-beat wrong recovery and mobile character safe-area polish. ✅ controlled-demo/live probe PASS.
-7. `QA-PRODUCTION-GATE`: Full live QA against Akinator-like acceptance criteria, including perceptual/mobile/reduced-motion evidence. ✅ scoped production-feel live QA PASS; full-launch QA still requires broader simulation/reasoning gate.
-8. `REVIEW-PRODUCTION-GATE`: Strict production review and release readiness decision. ✅ code/product-contract PASS for the wave; not a full public launch approval.
-9. `LIB-RETRO`: Reconcile docs, Graphify, changelog, run artifacts, and reusable lessons. Current card reconciles PR #25.
+7. `QA-PRODUCTION-GATE`: Full live QA against Akinator-like acceptance criteria, including perceptual/mobile/reduced-motion evidence. ✅ scoped production-feel and simulation-gate QA PASS; full-launch QA remains blocked by failed metrics.
+8. `REVIEW-PRODUCTION-GATE`: Strict production review and release readiness decision. ✅ code/product-contract PASS for the waves; not a full public launch approval.
+9. `LIB-RETRO`: Reconcile docs, Graphify, changelog, run artifacts, and reusable lessons. ✅ PR #25/PR #27 state reconciled.
+
+### Wave 3 — simulation-quality blocker loop
+
+Recommended next loop before any full public production launch candidate:
+
+10. `ARCH-SIM-QUALITY-WAVE2`: specify metric-improvement strategy for first-guess turn budget, early entropy/prefix diversity, and recovery success.
+11. `BUILD-SIM-QUALITY-WAVE2`: TDD implementation of the smallest selector/data/recovery improvements needed to move those metrics without leaking internals or copying protected IP.
+12. `REVIEW-SIM-QUALITY-WAVE2`: verify metric honesty, no full-launch overclaim, code/test quality, and non-copy boundary.
+13. `QA-SIM-QUALITY-WAVE2`: rerun representative simulation + browser/mobile/reduced-motion/live gates; declare full-launch candidate only if all thresholds pass.
+14. `RELEASE-SIM-QUALITY-WAVE2`: if QA/Reviewer approve, run routine PR/CI/merge/deploy/live canary.
+15. `LIB-SIM-QUALITY-WAVE2`: reconcile docs/Graphify/changelog and final launch verdict.
 
 ## Acceptance criteria for production launch
 
@@ -127,7 +142,7 @@ Status: scoped implementation/review/QA/release completed by PR #25 for controll
 - Guess suspense and reveal are staged before the result text dominates.
 - Wrong recovery explains candidate removal and asks a discriminating follow-up.
 - Final reasons cite user answer evidence, not generic tags alone.
-- First guess generally happens within 8–12 questions or explains why it needs more.
+- Representative simulation full-launch candidate passes: first-guess median/max within budget, early branch entropy above threshold, unique prefix4 diversity above threshold, rejected-guess recovery success above threshold, rationale coverage/leak-free/unknown-heavy graceful behavior preserved.
 - Mobile 360/390/412 and reduced-motion QA pass.
 - README/docs/changelog/release/QA evidence are current.
 - CI, Pages deploy, live canary, Reviewer, and QA Lead gates pass.
@@ -139,5 +154,7 @@ Status: scoped implementation/review/QA/release completed by PR #25 for controll
 - PR #24: Lottie authored-equivalent runtime merged/deployed/live canary PASS on the public URL.
 - PR #25: production-feel reasoning/reveal/recovery/mobile wave merged/deployed/live canary PASS. Evidence: `.hermes/runs/t_4dade37a/qa-prod-feel-gate-report.md`, `.hermes/runs/t_d4d6b5dd/orchestrator-release-recovery/release-closeout.md`, and `.hermes/runs/t_d4d6b5dd/orchestrator-release-recovery/live-probe/`.
 - Live cache-busted canary used for PR #25: public URL with production-feel probe PASS for desktop/mobile 360/390/412/reduced-motion, answerAccepted dedicated beat, wrong recovery three beats, answer-trace reveal, console/page error 0.
+- PR #27: representative simulation quality gate merged/deployed/live canary PASS. Evidence: `.hermes/runs/t_c72bfb98/test-simulation-quality-report.md`, `.hermes/runs/t_635d31d8/qa-sim-final-gate-report.md`, and `.hermes/runs/t_627cc872/orchestrator-release-recovery-closeout.md`.
+- Current simulation metrics: 32 cases, exact first/final guess 95%, top3 at first stop 100%, median first guess turn 9, max 15, entropy turn1/2/3 0.881/1.395/2.490, unique prefix4 8, rationale coverage 100%, unknown-heavy graceful 100%, recovery success 0%, leak-free true.
 - Local screenshot inspected: `/Users/crimson/.hermes/cache/screenshots/browser_screenshot_0680642bc7d842cd89a97cd013d4e4e9.png`
 - Current Graphify outputs: `graphify-out/GRAPH_REPORT.md`, `graphify-out/graph.json`, `graphify-out/graph.html`

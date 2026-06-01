@@ -6,19 +6,21 @@ Live demo: https://crimson-joo.github.io/food-akinator-hermes-pilot/
 
 ## 현재 상태
 
-- 상태: controlled public demo / alpha 가능. PR #25 production-feel wave가 merge/deploy/live canary까지 통과했습니다.
-- 풀 public production launch: 아직 blocked. 이번 wave는 reasoning/reveal/recovery/mobile 체감 blocker를 줄였지만, full launch 선언은 대표 시뮬레이션/분기 엔트로피/최종 production review 및 운영자 승인 전까지 하지 않습니다.
-- 현재 앱: Vite 기반 브라우저 앱, canonical `foodKnowledgeBase` v1, adaptive selector, answer-trace reveal/wrong-recovery session loop, `CharacterStage` runtime boundary, live-verified Lottie authored-equivalent Bogle runtime, mobile first-screen answerability, answerAccepted micro-reaction, 3-beat wrong recovery를 포함합니다.
+- 상태: controlled public demo / alpha 가능. PR #27 simulation-quality gate wave까지 merge/deploy/live canary PASS입니다.
+- 풀 public production launch: 아직 blocked. PR #27은 대표 시뮬레이션을 정직한 gate로 제품화했지만, full-launch 기준 자체는 first-guess turn budget, early branch entropy, prefix diversity, rejected-guess recovery success에서 실패했습니다.
+- 현재 앱: Vite 기반 브라우저 앱, canonical `foodKnowledgeBase` v1, adaptive selector, answer-trace reveal/wrong-recovery session loop, `CharacterStage` runtime boundary, live-verified Lottie authored-equivalent Bogle runtime, mobile first-screen answerability, answerAccepted micro-reaction, 3-beat wrong recovery, representative simulation report/gate를 포함합니다.
 - 최근 근거:
   - PR #21: Bogle motion state machine + production layer sheet contract.
   - PR #22: production completion autoplan 및 production-blocked verdict 정리.
   - PR #24: Lottie authored-equivalent runtime merge/deploy/live canary PASS (`data-character-runtime="lottie"`, `data-runtime-status="ready"`).
   - PR #25: production-feel reasoning/reveal/recovery/mobile wave merge/deploy/live canary PASS. Live probe에서 desktop/mobile 360/390/412/reduced-motion, answerAccepted dedicated beat, wrong recovery surprise → remove → refocus, answer-trace reveal, console/page error 0을 확인했습니다.
+  - PR #27: representative simulation quality gate merge/deploy/live canary PASS. 32-case report는 controlled demo/alpha를 PASS로 분리하고 full-launch candidate를 BLOCKED로 기록합니다: exact first/final guess 95%, top3 at first stop 100%, median first guess turn 9, max 15, early entropy 0.881/1.395, unique prefix4 8, recovery success 0%.
 - 다음 production blocker:
-  1. representative simulation / branch entropy / reasoning quality gate를 production-grade로 확대.
-  2. 더 다양한 메뉴/답변 path에서 answer-trace rationale 품질과 첫 guess turn budget 검증.
-  3. final production review + live QA gate를 full launch 승인 기준으로 다시 수행.
-  4. release-manager 프로필 GitHub auth drift 정리.
+  1. first-guess turn budget 개선: median 9와 max 15를 full-launch 목표 안으로 낮추기.
+  2. early branch entropy와 prefix diversity 개선: turn 1–2 entropy와 unique prefix4 path를 높이기.
+  3. rejected-guess recovery success 개선: 현재 0%인 exact-final recovery를 full-launch 기준으로 끌어올리기.
+  4. 개선 후 final production review + live QA gate를 full launch 승인 기준으로 다시 수행.
+  5. release-manager 프로필 GitHub auth drift 정리.
 
 ## 제품 원칙
 
