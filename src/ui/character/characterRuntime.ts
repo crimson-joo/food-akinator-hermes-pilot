@@ -25,26 +25,47 @@ export type CharacterRuntimeAdapter = CharacterRuntimeRenderMeta & {
   render(input: CharacterStageInput): string;
 };
 
+export type CharacterRuntimeAssetLoader = {
+  canLoad(src: string, kind: Exclude<CharacterRuntimeKind, 'css-fallback'>): boolean;
+};
+
+export type CharacterRuntimeSelectionOptions = {
+  assetLoader?: CharacterRuntimeAssetLoader;
+};
+
 const requiredRuntimeInputs = ['cue', 'answerReaction', 'confidence', 'reducedMotion'] as const;
 
-export function selectCharacterRuntime(manifest: CharacterAssetManifest = characterAssetManifest): CharacterRuntimeAdapter {
+export function selectCharacterRuntime(
+  manifest: CharacterAssetManifest = characterAssetManifest,
+  options: CharacterRuntimeSelectionOptions = {},
+): CharacterRuntimeAdapter {
   const rive = manifest.runtimes.rive;
   if (rive?.status === 'available') {
-    if (isValidRiveRuntime(rive)) return createRiveRuntime(rive);
+    if (isValidRiveRuntime(rive)) {
+      if (isLoadableAsset(rive.src, 'rive', options)) return createRiveRuntime(rive);
+      return createCssFallbackRuntime({ status: 'failed', attemptedRuntime: 'rive', reason: 'rive-asset-load-failed' });
+    }
     return createCssFallbackRuntime({ status: 'failed', attemptedRuntime: 'rive', reason: 'rive-manifest-malformed' });
   }
 
   const lottie = manifest.runtimes.lottie;
   if (lottie?.status === 'available') {
-    if (isValidLottieRuntime(lottie)) return createLottieRuntime(lottie);
+    if (isValidLottieRuntime(lottie)) {
+      if (isLoadableLottieRuntime(lottie, options)) return createLottieRuntime(lottie);
+      return createCssFallbackRuntime({ status: 'failed', attemptedRuntime: 'lottie', reason: 'lottie-asset-load-failed' });
+    }
     return createCssFallbackRuntime({ status: 'failed', attemptedRuntime: 'lottie', reason: 'lottie-manifest-malformed' });
   }
 
   return createCssFallbackRuntime({ status: 'fallback', attemptedRuntime: 'rive', reason: 'rive-asset-missing' });
 }
 
-export function renderCharacterRuntime(input: CharacterStageInput, manifest: CharacterAssetManifest = characterAssetManifest): string {
-  return selectCharacterRuntime(manifest).render(input);
+export function renderCharacterRuntime(
+  input: CharacterStageInput,
+  manifest: CharacterAssetManifest = characterAssetManifest,
+  options: CharacterRuntimeSelectionOptions = {},
+): string {
+  return selectCharacterRuntime(manifest, options).render(input);
 }
 
 type RiveRuntime = NonNullable<CharacterAssetManifest['runtimes']['rive']>;
@@ -60,6 +81,20 @@ function isValidRiveRuntime(runtime: RiveRuntime): boolean {
 function isValidLottieRuntime(runtime: LottieRuntime): boolean {
   const clips = Object.values(runtime.clips).filter(Boolean);
   return clips.length > 0 && clips.every((src) => src!.startsWith('/assets/') && src!.endsWith('.json'));
+}
+
+function isLoadableLottieRuntime(runtime: LottieRuntime, options: CharacterRuntimeSelectionOptions): boolean {
+  return Object.values(runtime.clips)
+    .filter((src): src is string => Boolean(src))
+    .every((src) => isLoadableAsset(src, 'lottie', options));
+}
+
+function isLoadableAsset(
+  src: string,
+  kind: Exclude<CharacterRuntimeKind, 'css-fallback'>,
+  options: CharacterRuntimeSelectionOptions,
+): boolean {
+  return options.assetLoader?.canLoad(src, kind) === true;
 }
 
 function createRiveRuntime(runtime: RiveRuntime): CharacterRuntimeAdapter {

@@ -27,7 +27,7 @@ describe('character runtime manifest selection', () => {
     expect(html).not.toContain('broken-rive');
   });
 
-  it('selects the Rive adapter only when a local .riv asset and required state-machine inputs are manifest-valid', () => {
+  it('fails closed when an available Rive manifest points at an absent authored asset', () => {
     const manifest = {
       ...characterAssetManifest,
       runtimes: {
@@ -44,6 +44,39 @@ describe('character runtime manifest selection', () => {
     const runtime = selectCharacterRuntime(manifest);
     const html = renderCharacterRuntime({ cue: 'thinking', confidence: 'high' }, manifest);
 
+    expect(runtime.kind).toBe('css-fallback');
+    expect(runtime.status).toBe('failed');
+    expect(runtime.attemptedRuntime).toBe('rive');
+    expect(runtime.reason).toBe('rive-asset-load-failed');
+    expect(html).toContain('data-character-runtime="css-fallback"');
+    expect(html).toContain('data-runtime-status="failed"');
+    expect(html).toContain('data-runtime-attempted="rive"');
+    expect(html).toContain('data-runtime-reason="rive-asset-load-failed"');
+    expect(html).not.toContain('data-runtime-status="ready"');
+    expect(html).not.toContain('data-character-runtime="rive"');
+  });
+
+  it('selects the Rive adapter only when a local .riv asset, required inputs, and loader probe succeed', () => {
+    const manifest = {
+      ...characterAssetManifest,
+      runtimes: {
+        ...characterAssetManifest.runtimes,
+        rive: {
+          src: '/assets/character/bogle-runtime-v1.riv',
+          stateMachineName: 'BogleRuntime',
+          inputs: ['cue', 'answerReaction', 'confidence', 'reducedMotion'] as const,
+          status: 'available' as const,
+        },
+      },
+    };
+
+    const runtime = selectCharacterRuntime(manifest, { assetLoader: { canLoad: () => true } });
+    const html = renderCharacterRuntime(
+      { cue: 'thinking', lastAnswer: 'no', confidence: 'high', reducedMotion: true },
+      manifest,
+      { assetLoader: { canLoad: () => true } },
+    );
+
     expect(runtime.kind).toBe('rive');
     expect(runtime.status).toBe('ready');
     expect(html).toContain('data-character-runtime="rive"');
@@ -51,7 +84,9 @@ describe('character runtime manifest selection', () => {
     expect(html).toContain('data-rive-src="/assets/character/bogle-runtime-v1.riv"');
     expect(html).toContain('data-rive-state-machine="BogleRuntime"');
     expect(html).toContain('data-rive-input-cue="thinking"');
+    expect(html).toContain('data-rive-input-answer-reaction="no"');
     expect(html).toContain('data-rive-input-confidence="high"');
+    expect(html).toContain('data-rive-input-reduced-motion="true"');
   });
 
   it('fails closed to playable css fallback when an available Rive manifest is malformed', () => {
@@ -83,7 +118,7 @@ describe('character runtime manifest selection', () => {
     expect(html).not.toContain('data-character-runtime="rive"');
   });
 
-  it('can choose a manifest-valid Lottie adapter as the secondary authored runtime', () => {
+  it('fails closed when an available Lottie manifest clip cannot be loaded', () => {
     const manifest = {
       ...characterAssetManifest,
       runtimes: {
@@ -102,6 +137,41 @@ describe('character runtime manifest selection', () => {
 
     const runtime = selectCharacterRuntime(manifest);
     const html = renderCharacterRuntime({ cue: 'ask', lastAnswer: 'probably' }, manifest);
+
+    expect(runtime.kind).toBe('css-fallback');
+    expect(runtime.status).toBe('failed');
+    expect(runtime.attemptedRuntime).toBe('lottie');
+    expect(runtime.reason).toBe('lottie-asset-load-failed');
+    expect(html).toContain('data-character-runtime="css-fallback"');
+    expect(html).toContain('data-runtime-status="failed"');
+    expect(html).toContain('data-runtime-attempted="lottie"');
+    expect(html).toContain('data-runtime-reason="lottie-asset-load-failed"');
+    expect(html).not.toContain('data-character-runtime="lottie"');
+  });
+
+  it('can choose a loadable manifest-valid Lottie adapter as the secondary authored runtime', () => {
+    const manifest = {
+      ...characterAssetManifest,
+      runtimes: {
+        ...characterAssetManifest.runtimes,
+        rive: { ...characterAssetManifest.runtimes.rive!, status: 'missing' as const },
+        lottie: {
+          clips: {
+            idle: '/assets/character/lottie/idle.json',
+            ask: '/assets/character/lottie/ask.json',
+            thinking: '/assets/character/lottie/thinking.json',
+          },
+          status: 'available' as const,
+        },
+      },
+    };
+
+    const runtime = selectCharacterRuntime(manifest, { assetLoader: { canLoad: () => true } });
+    const html = renderCharacterRuntime(
+      { cue: 'ask', lastAnswer: 'probably' },
+      manifest,
+      { assetLoader: { canLoad: () => true } },
+    );
 
     expect(runtime.kind).toBe('lottie');
     expect(runtime.status).toBe('ready');

@@ -141,7 +141,7 @@ Required DOM hooks:
   - `data-current-prop-motion`
   - `data-answer-reaction` when applicable
 
-Current implementation note: `CharacterStage` now has a manifest/adapter boundary that can select `rive`, `lottie`, or `css-fallback`. The checked-in manifest still marks Rive/Lottie assets as missing, so the live controlled-demo path must expose `data-character-runtime="css-fallback"` + `data-runtime-status="fallback"`; this is not a production visual-quality unlock.
+Current implementation note: `CharacterStage` now has a manifest/adapter boundary that can select `rive`, `lottie`, or `css-fallback`, but `ready` is fail-closed behind an authored asset load probe. A manifest that only says `status: 'available'` is insufficient: absent/404/unloadable `.riv` or Lottie assets report CSS fallback with `data-runtime-status="failed"` and an explicit reason. The checked-in manifest still marks Rive/Lottie assets as missing, so the live controlled-demo path must expose `data-character-runtime="css-fallback"` + `data-runtime-status="fallback"`; this is not a production visual-quality unlock.
 
 ## Acceptance criteria
 
