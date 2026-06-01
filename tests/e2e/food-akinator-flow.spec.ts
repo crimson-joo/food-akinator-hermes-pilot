@@ -57,9 +57,10 @@ test('minimal scaffold supports entry → adaptive answers → wrong recovery �
   await expect(page.locator('.app-shell')).toHaveAttribute('data-ui-state', 'entry');
   await expectNoForbiddenVisibleMarkers(page);
   await expect(page.locator('[data-testid="character-stage"]')).toHaveAttribute('data-character-cue', 'idle');
-  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-character-runtime', 'css-fallback');
-  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-runtime-status', 'fallback');
-  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-runtime-attempted', 'rive');
+  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-character-runtime', 'lottie');
+  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-runtime-status', 'ready');
+  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-runtime-attempted', 'lottie');
+  await expect(page.locator('[data-testid="character-stage"] [data-character-runtime]')).toHaveAttribute('data-lottie-rendered', 'true');
   await expect(page.getByRole('heading', { name: '오늘 뭐 먹을지 제가 맞혀볼게요.' })).toBeVisible();
 
   await page.getByRole('button', { name: '시작하기' }).click();

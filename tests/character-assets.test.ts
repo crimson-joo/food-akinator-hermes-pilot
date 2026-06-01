@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import bogleConceptALottie from '../src/ui/character/assets/bogle-concept-a.lottie.json' with { type: 'json' };
 import { animationStateMachine, canonicalCharacterConcept, characterConcepts, productionLayerSheet, productionRigLayers, productionStateActing, riveLayerBreakdown, riveStateInputs } from '../src/ui/character/characterAssets.js';
 
 describe('canonical Bogle source art contract', () => {
@@ -108,5 +109,65 @@ describe('canonical Bogle source art contract', () => {
     expect(animationStateMachine.states.reveal.timeline.map((step) => step.layerId)).toEqual(expect.arrayContaining(['plate_lid', 'lid_knob', 'dish_glow', 'spark_1']));
     expect(animationStateMachine.answerReactions.no).toEqual(expect.objectContaining({ clipName: 'prune-swipe', emotionalBeat: 'decisive rejection' }));
     expect(animationStateMachine.answerReactions.unknown).toEqual(expect.objectContaining({ clipName: 'puzzled-shrug', emotionalBeat: 'safe uncertainty' }));
+  });
+});
+
+
+describe('authored Concept A Lottie asset contract', () => {
+  const asset = bogleConceptALottie as {
+    v: string;
+    fr: number;
+    ip: number;
+    op: number;
+    w: number;
+    h: number;
+    markers?: Array<{ cm: string; tm: number; dr: number }>;
+    layers?: Array<{ nm: string; ty: number }>;
+  };
+
+  it('ships one repo-local Lottie JSON with named reasoning-state markers', () => {
+    expect(asset.v).toMatch(/^5\./);
+    expect(asset.fr).toBeGreaterThanOrEqual(24);
+    expect(asset.w).toBe(320);
+    expect(asset.h).toBe(360);
+    expect(asset.op).toBeGreaterThan(asset.ip);
+    expect(asset.markers?.map((marker) => marker.cm)).toEqual([
+      'idle-life-v2',
+      'ask-spoon-point-v2',
+      'answer-ink-capture-v2',
+      'thinking-scan-v2',
+      'confidence-lock-v2',
+      'oops-recoil-v2',
+      'reframe-reset-v2',
+      'lid-reveal-payoff-v2',
+    ]);
+    expect(asset.markers?.every((marker) => marker.dr >= 12)).toBe(true);
+  });
+
+  it('preserves stable Concept A rig layer names instead of unrelated pose swaps', () => {
+    const layerNames = asset.layers?.map((layer) => layer.nm) ?? [];
+    expect(layerNames).toEqual(expect.arrayContaining([
+      'body_torso',
+      'head_base',
+      'brow_left',
+      'brow_right',
+      'pupil_left',
+      'pupil_right',
+      'mouth_smile',
+      'mouth_oops',
+      'mouth_reveal',
+      'arm_spoon_lower',
+      'spoon_bowl',
+      'note_pages',
+      'note_ink_check',
+      'plate_lid',
+      'lid_knob',
+      'dish_glow',
+      'steam_1',
+      'steam_2',
+      'spark_1',
+    ]));
+    expect(new Set(layerNames).size).toBe(layerNames.length);
+    expect(layerNames.filter((name) => name.startsWith('pose_'))).toHaveLength(0);
   });
 });
