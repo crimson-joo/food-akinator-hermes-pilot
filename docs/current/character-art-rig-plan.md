@@ -175,7 +175,7 @@ Decision:
 5. Generate/commission canonical character source art. ✅ first source-art board generated
 6. Convert Concept A into simplified vector/transparent layer exports. ✅ inline SVG layer rig v1 now exposes 50+ individually addressable `data-layer-id` parts with pivots, z-order, vector roles, and state transforms in `src/ui/character/characterAssets.ts`.
 7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API. ✅ PR #24 wires a repo-local Lottie authored-equivalent runtime behind `CharacterStage` and verifies it live; external `.riv` authoring can still replace it later without changing app logic.
-8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal. ✅ PR #24 CI/deploy/live canary passed for the controlled demo; broader production QA remains required for intelligence/perceptual/mobile/recovery quality.
+8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal. ✅ PR #24 CI/deploy/live canary passed for the controlled demo; PR #25 additionally passed production-feel local QA and deployed live probe for answerAccepted, answer-trace reveal, 3-beat wrong recovery, mobile 360/390/412, and reduced motion. Broader production QA remains required for representative simulation, branch entropy, reasoning quality, and full-launch approval.
 9. Add production vector layer-sheet metadata and multi-beat animation state-machine hooks. ✅ `productionLayerSheet` and `animationStateMachine` now encode source-art quality bar, non-copy boundary, layer export groups, clip names, timings, easing, and per-layer motion beats.
 
 ## Production inline vector rig v2 — layer sheet + motion state machine

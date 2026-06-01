@@ -79,4 +79,4 @@ v0는 “추천 리스트”가 아니라 **한 메뉴를 추리해 선언하는
 - canonical `foodKnowledgeBase`는 active candidate 50개와 active question 42개를 제공한다.
 - 각 후보는 20개 이상 non-neutral active attributes와 3개 이상 reveal reason seed를 가진다.
 - 질문은 broad split, family lock, sibling elimination, signature discriminator, false-path guardrail, recovery disambiguation role을 모두 포함한다.
-- PR #24로 Lottie authored-equivalent runtime은 live-verified 되었지만, 계속 남은 큰 다음 단계는 20개 대표 음식 scenario simulation, branch entropy 검증, reasoning bridge/progress tension, answer-tied reveal rationale, 3-beat wrong recovery, mobile/perceptual production QA다.
+- PR #24로 Lottie authored-equivalent runtime은 live-verified 되었고, PR #25로 answer-trace reveal rationale, recovery_disambiguation gating, answerAccepted micro-reaction, 3-beat wrong recovery, 360/390/412 mobile first-screen answerability가 local QA와 deployed live probe에서 PASS했다. 계속 남은 큰 다음 단계는 20개 대표 음식 scenario simulation, branch entropy 검증, 다양한 path의 reasoning quality/first-guess turn budget, final production review/live QA를 full-launch 기준으로 다시 수행하는 것이다.

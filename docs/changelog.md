@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-06-01 — Production-feel reasoning/reveal/recovery/mobile wave live PASS
+
+- PR #25 merged/deployed the production-feel wave: answer-trace reveal rationale, `recovery_disambiguation` gating before rejected guesses, dedicated `answerAccepted` micro-reaction, wrong recovery surprise → remove → refocus, and 360/390/412 mobile first-screen answerability.
+- Builder/Reviewer/QA evidence passed: `npm test` 13 files / 97 tests, `npm run typecheck`, `npm run build`, `npm run test:e2e` 8/8, static internal-marker leak checks, local production-feel browser probe, and code/product-contract review.
+- Release evidence passed: PR CI, squash merge to main, main CI, GitHub Pages deploy, workflow canary/live Playwright e2e, Hermes webhook delivery, and independent cache-busted production-feel live probe.
+- Controlled demo / alpha remains OK and is stronger after this wave; full public production launch remains blocked pending representative simulation / branch entropy / broader reasoning-quality / first-guess turn-budget evidence, final production review/live QA, and operator approval.
+- Release note: `release-manager` profile lacked GitHub PR/API auth, so Orchestrator/default recovered the routine release; fix that auth drift before relying on the release-manager profile for unattended PR/deploy work.
+
 ## 2026-06-01 — Live-verified Lottie authored-equivalent runtime
 
 - Added repo-local `src/ui/character/assets/bogle-concept-a.lottie.json` and wired the character runtime to a truthful Lottie-ready path.
