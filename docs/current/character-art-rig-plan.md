@@ -141,7 +141,7 @@ Required DOM hooks:
   - `data-current-prop-motion`
   - `data-answer-reaction` when applicable
 
-Current implementation note: `CharacterStage` now has a manifest/adapter boundary that can select `rive`, `lottie`, or `css-fallback`, but `ready` is fail-closed behind an authored asset load probe. A manifest that only says `status: 'available'` is insufficient: absent/404/unloadable `.riv` or Lottie assets report CSS fallback with `data-runtime-status="failed"` and an explicit reason. The checked-in manifest still marks Rive/Lottie assets as missing, so the live controlled-demo path must expose `data-character-runtime="css-fallback"` + `data-runtime-status="fallback"`; this is not a production visual-quality unlock.
+Current implementation note: `CharacterStage` has a manifest/adapter boundary that can select `rive`, `lottie`, or `css-fallback`, and `ready` is fail-closed behind an authored asset load probe. A manifest that only says `status: 'available'` is insufficient: absent/404/unloadable `.riv` or Lottie assets report CSS fallback with `data-runtime-status="failed"` and an explicit reason. PR #24 now ships a repo-local Lottie authored-equivalent asset that is live-verified on the public URL with `data-character-runtime="lottie"`, `data-runtime-status="ready"`, and rendered marker-state output; CSS fallback remains required for failure paths but is no longer the current controlled-demo runtime.
 
 ## Acceptance criteria
 
@@ -174,8 +174,8 @@ Decision:
 4. Keep CSS fallback but rename it honestly as fallback, not final art. ✅
 5. Generate/commission canonical character source art. ✅ first source-art board generated
 6. Convert Concept A into simplified vector/transparent layer exports. ✅ inline SVG layer rig v1 now exposes 50+ individually addressable `data-layer-id` parts with pivots, z-order, vector roles, and state transforms in `src/ui/character/characterAssets.ts`.
-7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API. ⏳ production web fallback now mirrors the target state-machine contract; external `.riv` authoring can replace the inline SVG without changing app logic.
-8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal. ⏳ automated and live QA required after merge.
+7. Build Rive or Lottie rig and wire it behind the same `CharacterStage` API. ✅ PR #24 wires a repo-local Lottie authored-equivalent runtime behind `CharacterStage` and verifies it live; external `.riv` authoring can still replace it later without changing app logic.
+8. Run browser QA against entry → answer → thinking → guess → wrong recovery → reveal. ✅ PR #24 CI/deploy/live canary passed for the controlled demo; broader production QA remains required for intelligence/perceptual/mobile/recovery quality.
 9. Add production vector layer-sheet metadata and multi-beat animation state-machine hooks. ✅ `productionLayerSheet` and `animationStateMachine` now encode source-art quality bar, non-copy boundary, layer export groups, clip names, timings, easing, and per-layer motion beats.
 
 ## Production inline vector rig v2 — layer sheet + motion state machine

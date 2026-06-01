@@ -117,6 +117,9 @@ describe('premium culinary oracle UI', () => {
     expect(accepted).toContain('data-answer-reaction="unknown"');
     expect(accepted).toContain('모르겠으면 괜찮아요');
     expect((accepted.match(/disabled/g) ?? []).length).toBeGreaterThanOrEqual(5);
+    expect(accepted).toContain('data-micro-reaction-beat="answer-captured"');
+    expect(accepted).toContain('class="answer-reaction-badge"');
+    expect(accepted).toContain('방금 누른 답변을 크게 표시하고 있어요.');
     expect(accepted).toContain('aria-busy="true"');
     expect(thinking).toContain('data-ui-state="thinking"');
     expect(thinking).toContain('data-character-cue="thinking"');
@@ -153,6 +156,19 @@ describe('premium culinary oracle UI', () => {
     expect(html).toContain('data-progress-stage="guardrail"');
     expect(html).toContain('아니요 답변을 반영해서, 성급한 추측을 막는 안전 단서를 확인해요.');
     expect(visibleHtml).not.toMatch(/큰 갈래는 잡혔어요|후보가 둘로 갈리네요|감이 왔어요/);
+  });
+
+  it('does not show rejected-dish recovery progress before an actual rejected guess exists', () => {
+    const session = {
+      ...sessionWithQuestionRole('recovery_disambiguation'),
+      characterCue: 'ask' as const,
+      rejectedCandidateIds: [],
+    };
+    const html = renderApp({ phase: 'asking', session });
+
+    expect(html).not.toContain('data-progress-stage="recovery"');
+    expect(html).not.toContain('빗나간 접시는 빼고 다시 맞춰보고 있어요.');
+    expect(html).toContain('data-progress-stage="orienting"');
   });
 
   it('does not let stale rejected candidates override the active question progress stage', () => {
@@ -244,8 +260,9 @@ describe('premium culinary oracle UI', () => {
     expect(guessing).toContain('아니에요');
     expect(revealed).toContain('data-result-candidate-id="kimchi-jjigae"');
     expect(revealed).toContain('제가 이렇게 본 이유는요.');
-    expect(revealed).toContain('국물');
-    expect(revealed).toContain('김치');
+    expect(revealed).toContain('국물이 당긴다고 답한 단서');
+    expect(revealed).toContain('매콤한 쪽이라고 답한 단서');
+    expect(revealed).toContain('data-reason-source="answer-trail"');
     expect(recovering).toContain('data-character-cue="surprised"');
     expect(recovering).toContain('제외됨: 김치찌개');
     expect(error).toContain('단서가 잠깐 엉켰어요. 다시 시도해볼게요.');
@@ -332,6 +349,7 @@ function fakeGuessingSession(): EngineSession {
     guess: {
       candidate,
       reasonSeeds: candidate.reveal.reasonSeeds,
+      answerTrace: ['국물이 당긴다고 답한 단서', '매콤한 쪽이라고 답한 단서', '밥이 떠오른다고 답한 단서'],
     },
     canAnswer: false,
     canConfirmGuess: true,

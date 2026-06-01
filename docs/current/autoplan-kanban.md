@@ -3,6 +3,7 @@
 Updated: 2026-06-01
 Repo HEAD at synthesis: `6bcef0f` / PR #21
 Docs alignment baseline: `0db5df7` / PR #22 autoplan merged to `main`
+Live Lottie runtime baseline: `2e94ac0` / PR #24 merged and deployed
 Live URL: https://crimson-joo.github.io/food-akinator-hermes-pilot/
 Board: `food-akinator-rebuild`
 
@@ -16,12 +17,12 @@ Bring Food Akinator from a technically deployed character/inference prototype to
 
 Current state is acceptable as a controlled public demo / alpha, but production launch is blocked by:
 
-1. Character runtime is still `css-fallback`, not real Rive/Lottie or equivalent authored motion runtime.
-2. User perception is still closer to a polished survey than a character who is actively narrowing the answer.
-3. Reveal and wrong-recovery moments work functionally but lack enough dramatic payoff and trust recovery.
-4. README/docs/evidence are not fully aligned with the live product state.
-5. Visual/perceptual QA evidence and screenshot indexing are not yet production-grade.
-6. `app.ts` still carries app shell, character SVG, CSS, timing, and event orchestration in one large file.
+1. User perception may still be closer to a polished adaptive survey than a character who is actively narrowing the answer.
+2. Reasoning bridge/progress tension must visibly connect prior answers to the next clue without exposing internal score/id data.
+3. Reveal and wrong-recovery moments work functionally but need stronger payoff, answer-tied rationale, and 3-beat trust recovery.
+4. Mobile/perceptual QA still needs production-grade evidence for safe-area composition and state readability.
+5. Representative simulation / branch entropy / reasoning quality evidence is not yet production-grade.
+6. Final production review + live QA gate has not approved full public launch.
 
 ## Review synthesis
 
@@ -55,10 +56,10 @@ P0 architecture gaps:
 
 Blocking findings:
 
-- Runtime remains `css-fallback`.
-- README is stale and still implies app implementation is not present.
-- Perceptual QA / screenshot regression is missing.
-- App renderer is too monolithic for production asset replacement.
+- PR #24 cleared the prior `css-fallback`-only runtime blocker on the public URL for controlled demo/alpha.
+- Perceptual/mobile QA and screenshot regression remain below the full-production bar.
+- User-perceived intelligence/reasoning bridge/reveal rationale/wrong recovery still require an integrated production-feel wave.
+- Full production launch remains blocked until Reviewer + QA Lead approve the deployed artifact against the production/reference-product bar.
 
 ### QA Lead
 
@@ -109,17 +110,17 @@ Escalate to user only if:
 3. `PROD-UX`: Add reasoning bridges, progress tension, answer-specific visible reactions, reveal suspense, and answer-tied final reasons.
 4. `QA-EVIDENCE`: Build browser screenshot/perceptual QA evidence suite for key states and mobile/reduced-motion.
 
-### Wave 2 — real production character runtime
+### Wave 2 — production feel and proof after live Lottie
 
-5. `ART-RIVE-SPIKE`: Rive/Lottie feasibility spike for Concept A with real state-machine asset contract.
-6. `BUILD-RUNTIME`: Implement `rive | lottie | css-fallback` runtime adapter behind `CharacterStage`.
-7. `QA-PRODUCTION-GATE`: Full live QA against Akinator-like acceptance criteria.
+5. `PROD-REASONING`: Implement reasoning bridge, answer-tied progress tension, stronger suspense/reveal rationale, and representative simulation evidence.
+6. `PROD-RECOVERY-MOBILE`: Implement 3-beat wrong recovery and mobile character safe-area polish.
+7. `QA-PRODUCTION-GATE`: Full live QA against Akinator-like acceptance criteria, including perceptual/mobile/reduced-motion evidence.
 8. `REVIEW-PRODUCTION-GATE`: Strict production review and release readiness decision.
 9. `LIB-RETRO`: Reconcile docs, Graphify, changelog, run artifacts, and reusable lessons.
 
 ## Acceptance criteria for production launch
 
-- Character runtime is no longer only `css-fallback`, or the user explicitly accepts fallback as launch quality.
+- Character runtime is live-verified as Lottie authored-equivalent or a later approved runtime; fallback paths remain truthful and fail closed.
 - Entry, ask, answerAccepted, thinking, confident, surprised, recover, reveal are visually distinct in browser screenshots.
 - Five answer reactions are perceptibly different within 300–600ms.
 - Guess suspense and reveal are staged before the result text dominates.
@@ -134,6 +135,7 @@ Escalate to user only if:
 
 - PR #21: https://github.com/crimson-joo/food-akinator-hermes-pilot/pull/21
 - PR #22: https://github.com/crimson-joo/food-akinator-hermes-pilot/pull/22
-- Live cache-busted canary used: https://crimson-joo.github.io/food-akinator-hermes-pilot/?v=1780244268797
+- PR #24: Lottie authored-equivalent runtime merged/deployed/live canary PASS on the public URL.
+- Live cache-busted canary used for PR #24: public URL with Lottie markers `data-character-runtime="lottie"`, `data-runtime-status="ready"`, `data-lottie-rendered="true"`.
 - Local screenshot inspected: `/Users/crimson/.hermes/cache/screenshots/browser_screenshot_0680642bc7d842cd89a97cd013d4e4e9.png`
 - Current Graphify outputs: `graphify-out/GRAPH_REPORT.md`, `graphify-out/graph.json`, `graphify-out/graph.html`

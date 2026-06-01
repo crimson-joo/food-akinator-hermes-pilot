@@ -18,6 +18,7 @@ export type RevealPolicy = {
 export type RevealGuess = {
   candidate: Candidate;
   reasonSeeds: string[];
+  answerTrace: string[];
 };
 
 export type EngineSession = {
@@ -261,13 +262,43 @@ function pickNextQuestion(input: BuildInput, candidateScores: CandidateScore[]) 
   });
 }
 
+const ANSWER_TRACE_LABEL: Record<AnswerKey, string> = {
+  yes: '그렇다고 답한 단서',
+  probably: '아마 그렇다고 답한 단서',
+  unknown: '애매해서 보류한 단서',
+  probably_not: '아마 아니라고 답한 단서',
+  no: '아니라고 답한 단서',
+};
+
+function answerTraceCopy(answer: AnsweredQuestion, questions: Question[]): string | null {
+  if (answer.answer === 'unknown') return null;
+  const question = questions.find((item) => item.id === answer.questionId);
+  if (!question) return null;
+  const text = question.textKo.replace(/[?？.。!！]/g, '');
+  const positive = answer.answer === 'yes' || answer.answer === 'probably';
+  if (text.includes('국물')) return positive ? '국물이 당긴다고 답한 단서' : '국물 쪽은 아니라고 답한 단서';
+  if (text.includes('매콤')) return positive ? '매콤한 쪽이라고 답한 단서' : '매콤한 쪽은 아니라고 답한 단서';
+  if (text.includes('밥')) return positive ? '밥이 떠오른다고 답한 단서' : '밥 중심은 아니라고 답한 단서';
+  if (text.includes('김치')) return positive ? '김치 단서가 맞다고 답한 단서' : '김치 단서는 아니라고 답한 단서';
+  return `${text} — ${ANSWER_TRACE_LABEL[answer.answer]}`;
+}
+
+function buildAnswerTrace(input: BuildInput, candidate: Candidate): string[] {
+  const trace = input.answers
+    .map((answer) => answerTraceCopy(answer, input.dataset.questions))
+    .filter((copy): copy is string => Boolean(copy));
+  const merged = [...trace, ...candidate.reveal.reasonSeeds.map((reason) => `${reason} 흐름`)];
+  return Array.from(new Set(merged)).slice(0, 4);
+}
+
 function revealed(
   input: BuildInput,
   candidateScores: CandidateScore[],
   probabilities: ProbabilityScore[],
   candidate: Candidate,
 ): EngineSession {
-  const helperKo = candidate.reveal.reasonSeeds.slice(0, 3).join(', ');
+  const answerTrace = buildAnswerTrace(input, candidate);
+  const helperKo = answerTrace.slice(0, 3).join(', ');
   return {
     status: 'revealed',
     characterCue: 'reveal',
@@ -280,7 +311,7 @@ function revealed(
     unknownStreak: input.unknownStreak,
     totalUnknownCount: input.totalUnknownCount,
     topCandidate: candidate,
-    guess: { candidate, reasonSeeds: candidate.reveal.reasonSeeds },
+    guess: { candidate, reasonSeeds: candidate.reveal.reasonSeeds, answerTrace },
     rankingPreview: probabilities.map(({ score, probability }) => ({
       candidateId: score.candidate.id,
       nameKo: score.candidate.nameKo,

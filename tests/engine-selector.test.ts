@@ -168,7 +168,7 @@ describe('adaptive question selector', () => {
       questions: [
         question('q-start', { clarity: 3 }),
         question('q-risky', { role: 'signature_discriminator', revealRisk: 3, clarity: 3, cost: 1 }),
-        question('q-safe', { role: 'recovery_disambiguation', revealRisk: 0, clarity: 3, cost: 1 }),
+        question('q-safe', { role: 'false_path_guardrail', revealRisk: 0, clarity: 3, cost: 1 }),
       ],
       answers: [{ questionId: 'q-start', answer: 'unknown' }],
       turn: 4,
@@ -256,7 +256,7 @@ describe('adaptive selector Korean food scenario pilot', () => {
     question('q-spicy', { role: 'family_lock', axis: 'taste', clarity: 2, revealRisk: 1, cost: 2 }),
     question('q-rice', { role: 'sibling_elimination', clarity: 2, revealRisk: 1, cost: 2 }),
     question('q-red-soup-kimchi', { role: 'signature_discriminator', clarity: 3, revealRisk: 3, cost: 4 }),
-    question('q-hot-clear', { role: 'recovery_disambiguation', clarity: 3, revealRisk: 0, cost: 1 }),
+    question('q-hot-clear', { role: 'false_path_guardrail', clarity: 3, revealRisk: 0, cost: 1 }),
   ];
 
   function pick(answers: AnsweredQuestion[], turn: number): string | undefined {

@@ -134,6 +134,21 @@ describe('engine session state machine', () => {
     expect(session.copy.helperKo).not.toMatch(/score|probability|q-/i);
   });
 
+  it('builds reveal reasoning from the public answer trail instead of only candidate seed copy', () => {
+    let session = startSession(dataset());
+    for (let index = 0; index < 5; index += 1) {
+      session = answerCurrent(session, 'yes');
+    }
+
+    expect(session.status).toBe('revealed');
+    expect(session.guess?.answerTrace).toEqual(expect.arrayContaining([
+      '국물이 당긴다고 답한 단서',
+      '매콤한 쪽이라고 답한 단서',
+    ]));
+    expect(session.copy.helperKo).toContain('국물이 당긴다고 답한 단서');
+    expect(session.copy.helperKo).not.toMatch(/score|probability|candidateId|q-/i);
+  });
+
   it('uses soft cap reveal only when turn and confidence thresholds are met', () => {
     const questions = Array.from({ length: 11 }, (_, index) => question(`q-soft-${index + 1}`, { role: index === 0 ? 'broad_split' : 'family_lock', revealRisk: 0 }));
     const candidates = [
@@ -189,6 +204,26 @@ describe('engine session state machine', () => {
     expect(recovered.topCandidate?.id).not.toBe('kimchi-jjigae');
     expect(recovered.currentQuestion?.id).toBe('q-recovery');
     expect(recovered.currentQuestion?.revealRisk).toBeLessThanOrEqual(1);
+  });
+
+  it('does not ask recovery-disambiguation questions before a guess has actually been rejected', () => {
+    const questions = [
+      question('q-opening', { role: 'broad_split', clarity: 3, cost: 0, textKo: '큰 방향이 애매한가요?' }),
+      question('q-safe-next', { role: 'family_lock', clarity: 2, revealRisk: 0, textKo: '가벼운 식사 쪽인가요?' }),
+      question('q-recovery-only', { role: 'recovery_disambiguation', clarity: 3, revealRisk: 0, textKo: '방금 후보를 빼고 다시 볼까요?' }),
+    ];
+    const candidates = [
+      candidate('a', { 'q-opening': 1, 'q-safe-next': 0.4, 'q-recovery-only': 1 }),
+      candidate('b', { 'q-opening': -1, 'q-safe-next': -0.4, 'q-recovery-only': -1 }),
+    ];
+    const data = dataset(candidates, questions);
+
+    const afterUnknown = submitAnswer(startSession(data), { questionId: 'q-opening', answer: 'unknown' }, data);
+
+    expect(afterUnknown.rejectedCandidateIds).toEqual([]);
+    expect(afterUnknown.currentQuestion?.id).toBe('q-safe-next');
+    expect(afterUnknown.currentQuestion?.role).not.toBe('recovery_disambiguation');
+    expect(afterUnknown.characterCue).not.toBe('recover');
   });
 
   it('all-unknown path never repeats questions and terminates gracefully', () => {

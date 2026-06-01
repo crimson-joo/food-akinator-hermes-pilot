@@ -8,16 +8,17 @@ Live demo: https://crimson-joo.github.io/food-akinator-hermes-pilot/
 
 - 상태: controlled public demo / alpha 가능.
 - 풀 public production launch: 아직 blocked.
-- 현재 앱: Vite 기반 브라우저 앱, canonical `foodKnowledgeBase` v1, adaptive selector, reveal/wrong-recovery session loop, inline SVG/CSS Bogle character fallback을 포함합니다.
+- 현재 앱: Vite 기반 브라우저 앱, canonical `foodKnowledgeBase` v1, adaptive selector, reveal/wrong-recovery session loop, `CharacterStage` runtime boundary, live-verified Lottie authored-equivalent Bogle runtime을 포함합니다.
 - 최근 근거:
   - PR #21: Bogle motion state machine + production layer sheet contract.
   - PR #22: production completion autoplan 및 production-blocked verdict 정리.
+  - PR #24: Lottie authored-equivalent runtime merge/deploy/live canary PASS (`data-character-runtime="lottie"`, `data-runtime-status="ready"`).
 - 다음 production blocker:
-  1. Rive/Lottie 또는 동등한 authored runtime behind `CharacterStage`.
-  2. Akinator-like 추리감 강화: reasoning bridge, progress tension, suspense/reveal payoff, wrong-recovery explanation.
-  3. perceptual/screenshot QA와 mobile/reduced-motion evidence 확대.
-  4. docs/evidence/review gate를 production launch 기준으로 정렬.
-  5. app shell/character/runtime/timing boundary 분리.
+  1. Akinator-like 추리감 강화: reasoning bridge, answer-tied progress tension, suspense/reveal payoff, wrong-recovery explanation.
+  2. product/perceptual QA: “설문”이 아니라 캐릭터 주도 추리 게임처럼 느껴지는지 reference-product bar로 검증.
+  3. mobile visual safe-area와 3-beat wrong-recovery staging evidence 확대.
+  4. representative simulation / branch entropy / reasoning quality gate.
+  5. final production review + live QA gate before any full public launch declaration.
 
 ## 제품 원칙
 

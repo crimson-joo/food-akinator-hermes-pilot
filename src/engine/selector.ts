@@ -40,7 +40,12 @@ export function rankNextQuestions(context: SelectorContext): QuestionSelection[]
     return [];
   }
 
-  const eligibleQuestions = getEligibleQuestions(context.questions, context.answers, context.turn);
+  const eligibleQuestions = getEligibleQuestions(
+    context.questions,
+    context.answers,
+    context.turn,
+    (context.rejectedCandidateIds?.length ?? 0) > 0,
+  );
   if (eligibleQuestions.length === 0) {
     return [];
   }
@@ -82,10 +87,12 @@ function getActiveCandidates(context: SelectorContext): Candidate[] {
   return context.candidates.filter((candidate) => candidate.status === 'active' && !rejected.has(candidate.id));
 }
 
-function getEligibleQuestions(questions: Question[], answers: AnsweredQuestion[], turn: number): Question[] {
+function getEligibleQuestions(questions: Question[], answers: AnsweredQuestion[], turn: number, hasRejectedCandidates: boolean): Question[] {
   const answeredIds = new Set(answers.map((answer) => answer.questionId));
   const activeUnanswered = questions.filter(
-    (question) => question.status === 'active' && !answeredIds.has(question.id),
+    (question) => question.status === 'active'
+      && !answeredIds.has(question.id)
+      && (hasRejectedCandidates || question.role !== 'recovery_disambiguation'),
   );
   const lastAnswerWasUnknown = answers.at(-1)?.answer === 'unknown';
 
@@ -203,6 +210,11 @@ function policyBonus(
     if (question.role === 'recovery_disambiguation') {
       value += UNKNOWN_RECOVERY_ROLE_BONUS;
       reasons.push('unknownRecovery');
+    }
+
+    if (question.role === 'false_path_guardrail') {
+      value += UNKNOWN_RECOVERY_ROLE_BONUS;
+      reasons.push('unknownGuardrail');
     }
   }
 
