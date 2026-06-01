@@ -1,9 +1,9 @@
 import type { AnswerKey } from '../../engine/domain.js';
 import { RIG_LAYER_CONTRACT, answerReaction, cueContract, animationNames, expressionNames } from './characterContract.js';
 import { animationStateMachine, productionLayerSheet, productionRigLayers, productionStateActing, type ProductionLayerTransform } from './characterAssets.js';
-import type { CharacterRuntimeKind, CharacterStageInput } from './characterRuntime.js';
+import type { CharacterRuntimeKind, CharacterRuntimeRenderMeta, CharacterStageInput } from './characterRuntime.js';
 
-export function renderCssFallbackRuntime(input: CharacterStageInput, runtimeKind: CharacterRuntimeKind = 'css-fallback'): string {
+export function renderCssFallbackRuntime(input: CharacterStageInput, runtimeKind: CharacterRuntimeKind = 'css-fallback', runtimeMeta: CharacterRuntimeRenderMeta = { status: 'fallback' }): string {
   const cue = input.cue;
   const contract = cueContract[cue] ?? cueContract.ask!;
   const lastAnswer = input.lastAnswer;
@@ -13,7 +13,8 @@ export function renderCssFallbackRuntime(input: CharacterStageInput, runtimeKind
   const propMotion = reaction?.motion ?? contract.propMotion;
   const acting = productionStateActing[cue] ?? productionStateActing.ask!;
   const clip = animationStateMachine.states[cue as keyof typeof animationStateMachine.states] ?? animationStateMachine.states.ask;
-  return `<div class="oracle-host" aria-hidden="true" data-character-runtime="${runtimeKind}" data-reduced-motion="${reducedMotion}" data-rig-layer-contract="${RIG_LAYER_CONTRACT}" data-character-cue="${cue}" data-silhouette="${contract.silhouette}" data-expression="${contract.expression}" data-current-expression="${expression}" data-prop-motion="${contract.propMotion}" data-current-prop-motion="${propMotion}" data-stage-tone="${contract.stageTone}" data-joint-rig="shoulder-elbow-wrist" data-puppet-format="inline-svg-layer-rig" data-layer-sheet="${productionLayerSheet.assetKind}" data-art-quality="${productionLayerSheet.qualityBar}" data-source-concept-id="${productionLayerSheet.sourceConceptId}" data-motion-state="${cue}" data-motion-clip="${clip.name}" data-motion-duration-ms="${clip.durationMs}" data-emotion="${acting.emotion}" data-confidence-tone="${acting.confidenceTone}" data-thought-process="${escapeAttr(acting.thoughtProcessCopy)}" data-visible-signals="${escapeAttr(acting.visibleSignals.join('|'))}">
+  const statusAttrs = `data-runtime-status="${escapeAttr(runtimeMeta.status)}"${runtimeMeta.attemptedRuntime ? ` data-runtime-attempted="${escapeAttr(runtimeMeta.attemptedRuntime)}"` : ''}${runtimeMeta.reason ? ` data-runtime-reason="${escapeAttr(runtimeMeta.reason)}"` : ''}`;
+  return `<div class="oracle-host" aria-hidden="true" data-character-runtime="${runtimeKind}" ${statusAttrs} data-reduced-motion="${reducedMotion}" data-rig-layer-contract="${RIG_LAYER_CONTRACT}" data-character-cue="${cue}" data-silhouette="${contract.silhouette}" data-expression="${contract.expression}" data-current-expression="${expression}" data-prop-motion="${contract.propMotion}" data-current-prop-motion="${propMotion}" data-stage-tone="${contract.stageTone}" data-joint-rig="shoulder-elbow-wrist" data-puppet-format="inline-svg-layer-rig" data-layer-sheet="${productionLayerSheet.assetKind}" data-art-quality="${productionLayerSheet.qualityBar}" data-source-concept-id="${productionLayerSheet.sourceConceptId}" data-motion-state="${cue}" data-motion-clip="${clip.name}" data-motion-duration-ms="${clip.durationMs}" data-emotion="${acting.emotion}" data-confidence-tone="${acting.confidenceTone}" data-thought-process="${escapeAttr(acting.thoughtProcessCopy)}" data-visible-signals="${escapeAttr(acting.visibleSignals.join('|'))}">
     ${renderMotionCatalog()}
     ${renderProductionPuppet(cue, expression)}
     <span class="oracle-aura"></span>
