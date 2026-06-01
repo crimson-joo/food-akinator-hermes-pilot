@@ -17,7 +17,9 @@ describe('premium culinary oracle UI', () => {
     expect(html).toContain('오늘 뭐 먹을지 제가 맞혀볼게요.');
     expect(html).toContain('마음속 메뉴를 하나 정하고, 보글에게 단서를 주세요.');
     expect(html).toContain('class="oracle-theater"');
-    expect(html).toContain('class="oracle-host"');
+    expect(html).toContain('class="lottie-character-host"');
+    expect(html).toContain('data-character-runtime="lottie"');
+    expect(html).toContain('data-runtime-status="ready"');
     expect(html).toContain('class="cinematic-backdrop"');
     expect(html).not.toMatch(/bogle-figure|bogle-hat|bogle-face|bogle-arm|bogle-ladle|hero-stage/);
     expect(html).not.toMatch(/추천해드릴게요|TOP 3|확률|score|probability|attribute|clue:/i);
@@ -37,38 +39,33 @@ describe('premium culinary oracle UI', () => {
     expect(buttonMatches.map((match) => match[2])).toEqual(answerLabels);
   });
 
-  it('uses a layered character rig with visible state parts, expression parts, prop parts, and atmosphere layers', () => {
+  it('uses the authored Lottie vector rig with visible state parts, prop parts, and atmosphere layers', () => {
     const session = createDemoSession();
     const html = renderApp({ phase: 'asking', session });
 
     const requiredLayers = [
-      'oracle-aura',
-      'oracle-shadow',
-      'oracle-body',
-      'oracle-head',
-      'oracle-eye left',
-      'oracle-eye right',
-      'oracle-brow left',
-      'oracle-brow right',
-      'oracle-mouth',
-      'oracle-arm spoon-arm',
-      'oracle-arm note-arm',
-      'oracle-spoon',
-      'oracle-note-card',
-      'oracle-plate-stage',
-      'oracle-lid',
-      'oracle-particle one',
-      'oracle-particle two',
-      'oracle-particle three',
+      'body_torso',
+      'head_base',
+      'brow_left',
+      'brow_right',
+      'pupil_left',
+      'pupil_right',
+      'mouth_smile',
+      'arm_spoon_lower',
+      'spoon_bowl',
+      'note_pages',
+      'plate_lid',
+      'dish_glow',
+      'steam_1',
+      'spark_1',
     ];
     for (const layer of requiredLayers) {
-      expect(html).toContain(`class="${layer}`);
+      expect(html).toContain(layer);
     }
-    expect(html).toContain('data-character-runtime="css-fallback"');
-    expect(html).toContain('data-rig-layer-contract="body-head-face-arms-props-atmosphere"');
-    expect(html).toContain('data-silhouette="lean-forward"');
-    expect(html).toContain('data-expression="curious-focus"');
-    expect(html).toContain('data-prop-motion="spoon-point"');
+    expect(html).toContain('data-character-runtime="lottie"');
+    expect(html).toContain('data-lottie-rendered="true"');
+    expect(html).toContain('data-lottie-layer-contract="concept-a-bogle-rig-v1"');
+    expect(html).toContain('data-lottie-marker="ask-spoon-point-v2"');
   });
 
   it('maps every required product state to a distinct premium silhouette, expression, prop motion, stage tone, and visible copy', () => {
@@ -100,9 +97,9 @@ describe('premium culinary oracle UI', () => {
       const html = renderApp(item.model);
       contracts.add(`${item.silhouette}/${item.expression}/${item.propMotion}/${item.stageTone}`);
       expect(html, item.name).toContain(`data-character-cue="${item.cue}"`);
-      expect(html, item.name).toContain(`data-silhouette="${item.silhouette}"`);
-      expect(html, item.name).toContain(`data-expression="${item.expression}"`);
-      expect(html, item.name).toContain(`data-prop-motion="${item.propMotion}"`);
+      expect(html, item.name).toContain('data-character-runtime="lottie"');
+      expect(html, item.name).toContain('data-lottie-rendered="true"');
+      expect(html, item.name).toContain('data-lottie-layer-contract="concept-a-bogle-rig-v1"');
       expect(html, item.name).toContain(`data-stage-tone="${item.stageTone}"`);
       expect(html, item.name).toContain(item.copy);
     }
@@ -189,67 +186,49 @@ describe('premium culinary oracle UI', () => {
     }
   });
 
-  it('exposes at least ten named animations, ten expressions, and a visible joint rig for articulated motion', () => {
+  it('exposes named Lottie markers and authored layers for articulated motion', () => {
     const html = renderApp({ phase: 'entry' });
-    const animations = [...html.matchAll(/data-animation-name="([^"]+)"/g)].map((match) => match[1]);
-    const expressions = [...html.matchAll(/data-expression-name="([^"]+)"/g)].map((match) => match[1]);
+    const lottieLayers = html.match(/data-lottie-layers="([^"]+)"/)?.[1]?.split(',') ?? [];
     const keyframes = [...html.matchAll(/@keyframes ([a-z0-9-]+)/g)].map((match) => match[1]);
 
-    expect(new Set(animations).size).toBeGreaterThanOrEqual(10);
-    expect(new Set(expressions).size).toBeGreaterThanOrEqual(10);
+    expect(html).toContain('data-lottie-marker="idle-life-v2"');
+    expect(html).toContain('data-lottie-src="src/ui/character/assets/bogle-concept-a.lottie.json"');
+    expect(new Set(lottieLayers).size).toBeGreaterThanOrEqual(50);
+    expect(lottieLayers).toEqual(expect.arrayContaining(['body_torso', 'head_base', 'brow_left', 'brow_right', 'pupil_left', 'pupil_right', 'arm_spoon_lower', 'spoon_bowl', 'note_pages', 'plate_lid', 'dish_glow', 'steam_1', 'spark_1']));
     expect(new Set(keyframes).size).toBeGreaterThanOrEqual(10);
-    expect(html).toContain('data-joint-rig="shoulder-elbow-wrist"');
-    expect(html).toContain('class="oracle-joint shoulder left"');
-    expect(html).toContain('class="oracle-joint elbow left"');
-    expect(html).toContain('class="oracle-joint wrist left"');
-    expect(html).toContain('class="oracle-joint shoulder right"');
-    expect(html).toContain('class="oracle-joint elbow right"');
-    expect(html).toContain('class="oracle-joint wrist right"');
-    expect(animations).toEqual(expect.arrayContaining(['idle-breath', 'blink-gaze', 'spoon-point', 'approve-nod', 'maybe-tilt', 'puzzled-shrug', 'narrow-away', 'prune-swipe', 'thinking-scan', 'confidence-rise', 'oops-recoil', 'recovery-reset', 'lid-reveal']));
-    expect(expressions).toEqual(expect.arrayContaining(['warm-blink', 'curious-focus', 'focused-smile', 'soft-smile', 'maybe-smirk', 'puzzled-open', 'skeptical-narrow', 'decisive-prune', 'narrow-thinking', 'spark-confidence', 'oops-open', 'calm-detective', 'bright-payoff']));
   });
 
-  it('renders the production puppet as separate vector layers with state-specific transforms and visible thought status', () => {
+  it('renders the authored Lottie as one shared vector asset with state-specific markers and visible thought status', () => {
     const session = createDemoSession();
     const thinking = renderApp({ phase: 'thinking', session, lastAnswer: 'probably_not' });
     const reveal = renderApp({ phase: 'revealed', session: fakeGuessingSession() });
-    const layerMatches = [...thinking.matchAll(/data-layer-id="([^"]+)"/g)].map((match) => match[1]);
+    const layerMatches = thinking.match(/data-lottie-layers="([^"]+)"/)?.[1]?.split(',') ?? [];
 
-    expect(thinking).toContain('data-puppet-format="inline-svg-layer-rig"');
-    expect(thinking).toContain('data-emotion="deep-analysis"');
-    expect(thinking).toContain('data-confidence-tone="blocked-but-working"');
-    expect(thinking).toContain('data-thought-process="단서가 잠깐 엇갈려요. 메모장과 향의 흐름을 다시 맞춰보고 있어요."');
-    expect(thinking).toContain('data-visible-signals="narrowed eyes|note scan line|spiraling steam|pulled-in shoulders"');
-    expect(layerMatches.length).toBeGreaterThanOrEqual(34);
+    expect(thinking).toContain('data-character-runtime="lottie"');
+    expect(thinking).toContain('data-runtime-status="ready"');
+    expect(thinking).toContain('data-lottie-marker="thinking-scan-v2"');
+    expect(thinking).toContain('data-lottie-confidence="mid"');
+    expect(thinking).toContain('data-lottie-rendered-svg="true"');
+    expect(layerMatches.length).toBeGreaterThanOrEqual(50);
     expect(new Set(layerMatches).size).toBe(layerMatches.length);
     expect(layerMatches).toEqual(expect.arrayContaining(['head_base', 'brow_left', 'brow_right', 'pupil_left', 'mouth_thinking', 'arm_spoon_lower', 'spoon_bowl', 'note_pages', 'note_ink_check', 'plate_lid', 'steam_1']));
-    expect(thinking).toMatch(/data-layer-id="head_base"[^>]+style="[^"]*--tx:-2px;--ty:6px;--rot:4deg/);
-    expect(thinking).toMatch(/data-layer-id="note_pages"[^>]+data-vector-role="active-clue-scan"/);
-    expect(reveal).toContain('data-emotion="payoff-joy"');
-    expect(reveal).toMatch(/data-layer-id="plate_lid"[^>]+--ty:-42px;--rot:-18deg/);
+    expect(reveal).toContain('data-lottie-marker="lid-reveal-payoff-v2"');
   });
 
-  it('renders the upgraded vector layer sheet and motion state-machine hooks into the visible SVG puppet', () => {
+  it('renders Lottie marker hooks and the visible SVG poster for the upgraded vector asset', () => {
     const session = createDemoSession();
     const thinking = renderApp({ phase: 'thinking', session, lastAnswer: 'probably_not' });
     const reveal = renderApp({ phase: 'revealed', session: fakeGuessingSession() });
 
-    expect(thinking).toContain('data-layer-sheet="brand-vector-layer-sheet"');
-    expect(thinking).toContain('data-art-quality="public-beta-minimum"');
-    expect(thinking).toContain('data-source-concept-id="concept-a"');
-    expect(thinking).toContain('<defs data-layer-sheet-defs="bogle-v2">');
-    expect(thinking).toContain('id="bogle-skin-warmth"');
-    expect(thinking).toContain('id="bogle-dish-glow"');
-    expect(thinking).toContain('data-motion-state="thinking"');
-    expect(thinking).toContain('data-motion-clip="thinking-scan-v2"');
-    expect(thinking).toContain('data-motion-duration-ms="1180"');
-    expect(thinking).toMatch(/data-layer-id="steam_1"[^>]+data-motion-beat-count="3"/);
-    expect(thinking).toMatch(/data-layer-id="note_pages"[^>]+data-motion-beat-count="3"/);
-    expect(thinking).toMatch(/data-layer-id="head_base"[^>]+data-motion-beat-count="3"/);
-    expect(reveal).toContain('data-motion-clip="lid-reveal-payoff-v2"');
-    expect(reveal).toMatch(/data-layer-id="dish_glow"[^>]+data-motion-beat-count="3"/);
-    expect(reveal).toContain('@keyframes puppet-thinking-breath');
-    expect(reveal).toContain('@keyframes puppet-reveal-spark');
+    expect(thinking).toContain('data-lottie-layer-contract="concept-a-bogle-rig-v1"');
+    expect(thinking).toContain('data-lottie-marker="thinking-scan-v2"');
+    expect(thinking).toContain('data-lottie-rendered-svg="true"');
+    expect(thinking).toContain('aria-label="보글이 단서를 추리하는 Lottie 벡터 포스터"');
+    expect(thinking).toContain('head_base');
+    expect(thinking).toContain('steam_1');
+    expect(thinking).toContain('note_pages');
+    expect(reveal).toContain('data-lottie-marker="lid-reveal-payoff-v2"');
+    expect(reveal).toContain('dish_glow');
   });
 
   it('renders guessing, reveal, wrong recovery, and safe errors without internal scoring leakage', () => {

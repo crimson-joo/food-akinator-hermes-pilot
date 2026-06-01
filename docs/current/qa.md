@@ -4,7 +4,7 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
-현재 판정: controlled demo / alpha smoke는 가능하지만, full public production launch는 blocked다. PR #21 이후 live canary와 DOM/console smoke는 통과했으나, PR #22 autoplan 기준 production gate는 Rive/Lottie/equivalent runtime, Akinator-like reasoning/reveal/recovery UX, perceptual screenshot evidence, mobile/reduced-motion coverage, Reviewer + QA production gates가 남아 있다.
+현재 판정: controlled demo / alpha smoke는 가능하지만, full public production launch는 release/deploy/live canary 전까지 blocked다. PR #21 이후 live canary와 DOM/console smoke는 통과했고, `feat/lottie-authored-asset`의 Lottie authored-equivalent runtime 후보는 local Reviewer/QA gate에서 `data-character-runtime="lottie"`, `data-runtime-status="ready"`, 8개 marker-state fingerprint, mobile/reduced-motion/recovery/reveal evidence를 통과했다. 다음 판정은 PR CI, main deploy, cache-busted live canary가 public URL에서 같은 runtime/visible marker-state를 증명해야 한다.
 
 현재 threshold/golden UI pilot의 자동화/live smoke QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check, GitHub Pages live canary, Pixel 7 크기 mobile viewport smoke를 포함한다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. Perceptual polish와 최종 mascot/brand는 아직 별도 product/design gate로 남아 있다.
 
@@ -135,8 +135,8 @@ Validated against `https://crimson-joo.github.io/food-akinator-hermes-pilot/` wi
 
 Production-blocking observations:
 
-- Character runtime is still `css-fallback` in every captured state, not Rive/Lottie/equivalent.
-- Current visual quality is acceptable only as fallback demo evidence; production still requires authored/runtime-backed character acting or explicit user acceptance of fallback quality.
+- Current main/live URL must not be called upgraded until the Lottie authored-runtime PR is merged and cache-busted live canary observes `data-character-runtime="lottie"`, `data-runtime-status="ready"`, rendered Lottie asset, and distinct marker-state fingerprints.
+- The CSS fallback remains required as a fail-closed path for missing/malformed authored assets; it is no longer the target runtime for the Lottie candidate branch.
 - 360px mobile screenshot shows a visual clipping risk: the spoon prop is pressed against / appears cut by the right stage edge even though measured horizontal overflow is 0.
 - Wrong recovery has rejected-candidate copy/chip, but production target still needs a clearer 3-beat surprise → removal → refocus moment.
 

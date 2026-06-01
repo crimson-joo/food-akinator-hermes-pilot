@@ -133,10 +133,15 @@ Required DOM hooks:
   - `data-stage-tone`
 - host:
   - `data-character-runtime="rive|lottie|css-fallback"`
+  - `data-runtime-status="ready|fallback|failed"`
+  - `data-runtime-attempted="rive|lottie"` when the authored runtime is missing or malformed and the CSS fallback is taking over
+  - `data-runtime-reason` with a precise fail-closed reason such as `rive-asset-missing`, `rive-manifest-malformed`, or `lottie-manifest-malformed`
   - `data-rig-layer-contract="body-head-face-arms-props-atmosphere"`
   - `data-current-expression`
   - `data-current-prop-motion`
   - `data-answer-reaction` when applicable
+
+Current implementation note: `CharacterStage` now has a manifest/adapter boundary that can select `rive`, `lottie`, or `css-fallback`, but `ready` is fail-closed behind an authored asset load probe. A manifest that only says `status: 'available'` is insufficient: absent/404/unloadable `.riv` or Lottie assets report CSS fallback with `data-runtime-status="failed"` and an explicit reason. The checked-in manifest still marks Rive/Lottie assets as missing, so the live controlled-demo path must expose `data-character-runtime="css-fallback"` + `data-runtime-status="fallback"`; this is not a production visual-quality unlock.
 
 ## Acceptance criteria
 
