@@ -27,6 +27,8 @@ const ROLE_FOLLOWUP_BONUS = 0.12;
 const UNKNOWN_CLARITY_BONUS = 0.03;
 const UNKNOWN_RECOVERY_ROLE_BONUS = 0.6;
 const ANSWER_ALIGNED_FOLLOWUP_BONUS = 0.45;
+const SOFT_NEGATIVE_TEXTURE_SPLIT_BONUS = 0.35;
+const CRISPY_CONTEXT_FOLLOWUP_BONUS = 0.28;
 
 const FOLLOWUP_ROLES = new Set<QuestionRole>([
   'signature_discriminator',
@@ -57,6 +59,7 @@ export function rankNextQuestions(context: SelectorContext): QuestionSelection[]
 
   const lastAnswer = context.answers.at(-1);
   const lastAnswerWasUnknown = lastAnswer?.answer === 'unknown';
+  const lastQuestion = lastAnswer ? context.questions.find((question) => question.id === lastAnswer.questionId) : undefined;
   const topCandidate = weightedCandidates.reduce((top, current) => current.weight > top.weight ? current : top).candidate;
   const plausibleCandidateCount = weightedCandidates.length;
 
@@ -71,6 +74,8 @@ export function rankNextQuestions(context: SelectorContext): QuestionSelection[]
         context.answers.length > 0,
         (context.rejectedCandidateIds?.length ?? 0) > 0,
         topCandidate,
+        lastAnswer,
+        lastQuestion,
       ),
       index,
     }))
@@ -140,6 +145,8 @@ function scoreQuestion(
   hasAnswers: boolean,
   hasRejectedCandidates: boolean,
   topCandidate: Candidate,
+  lastAnswer?: AnsweredQuestion,
+  lastQuestion?: Question,
 ): QuestionSelection {
   const split = weightedVariance(question.id, weightedCandidates);
   const policy = policyBonus(
@@ -150,6 +157,8 @@ function scoreQuestion(
     hasAnswers,
     hasRejectedCandidates,
     topCandidate,
+    lastAnswer,
+    lastQuestion,
   );
   const costPenalty = COST_PENALTY * Math.max(0, question.cost);
   const score = split + policy.value - costPenalty;
@@ -178,6 +187,8 @@ function policyBonus(
   hasAnswers: boolean,
   hasRejectedCandidates: boolean,
   topCandidate: Candidate,
+  lastAnswer?: AnsweredQuestion,
+  lastQuestion?: Question,
 ): { value: number; reasons: string[] } {
   let value = 0;
   const reasons: string[] = [];
@@ -195,6 +206,21 @@ function policyBonus(
   if (turn <= 3 && hasAnswers && (topCandidate.attributes[question.id] ?? 0) > 0.5) {
     value += ANSWER_ALIGNED_FOLLOWUP_BONUS;
     reasons.push('answerAlignedFollowup');
+  }
+
+  if (
+    turn <= 3
+    && lastQuestion?.id === 'q-broth'
+    && (lastAnswer?.answer === 'probably_not' || lastAnswer?.answer === 'no')
+    && question.id === 'q-crispy'
+  ) {
+    value += SOFT_NEGATIVE_TEXTURE_SPLIT_BONUS;
+    reasons.push('softNegativeTextureSplit');
+  }
+
+  if (turn <= 4 && lastQuestion?.id === 'q-crispy' && question.id === 'q-delivery-night') {
+    value += CRISPY_CONTEXT_FOLLOWUP_BONUS;
+    reasons.push('crispyContextFollowup');
   }
 
   if (hasRejectedCandidates && question.role === 'recovery_disambiguation') {

@@ -270,10 +270,11 @@ const ANSWER_TRACE_LABEL: Record<AnswerKey, string> = {
   no: '아니라고 답한 단서',
 };
 
-function answerTraceCopy(answer: AnsweredQuestion, questions: Question[]): string | null {
+function answerTraceCopy(answer: AnsweredQuestion, questions: Question[], candidate: Candidate): string | null {
   if (answer.answer === 'unknown') return null;
   const question = questions.find((item) => item.id === answer.questionId);
   if (!question) return null;
+  if (isCandidateMismatchedClue(answer, question, candidate)) return reconciledTraceCopy(question);
   const text = question.textKo.replace(/[?？.。!！]/g, '');
   const positive = answer.answer === 'yes' || answer.answer === 'probably';
   if (text.includes('국물')) return positive ? '국물이 당긴다고 답한 단서' : '국물 쪽은 아니라고 답한 단서';
@@ -283,9 +284,25 @@ function answerTraceCopy(answer: AnsweredQuestion, questions: Question[]): strin
   return `${text} — ${ANSWER_TRACE_LABEL[answer.answer]}`;
 }
 
+function isCandidateMismatchedClue(answer: AnsweredQuestion, question: Question, candidate: Candidate): boolean {
+  const answerValue = ANSWER_VALUES[answer.answer];
+  const candidateValue = candidate.attributes[question.id] ?? 0;
+  return Math.abs(answerValue) >= 0.5 && Math.abs(candidateValue) >= 0.6 && answerValue * candidateValue < 0;
+}
+
+function reconciledTraceCopy(question: Question): string {
+  const text = question.textKo.replace(/[?？.。!！]/g, '');
+  if (text.includes('면')) return '면 단서는 약했지만 다른 단서가 더 강했어요.';
+  if (text.includes('국물')) return '국물 단서는 약했지만 다른 단서가 더 강했어요.';
+  if (text.includes('밥')) return '밥 단서는 약했지만 다른 단서가 더 강했어요.';
+  if (text.includes('매콤')) return '매콤함 단서는 약했지만 다른 단서가 더 강했어요.';
+  if (text.includes('김치')) return '김치 단서는 약했지만 다른 단서가 더 강했어요.';
+  return '엇갈린 단서는 약하게 보고, 더 강한 단서로 결론을 냈어요.';
+}
+
 function buildAnswerTrace(input: BuildInput, candidate: Candidate): string[] {
   const trace = input.answers
-    .map((answer) => answerTraceCopy(answer, input.dataset.questions))
+    .map((answer) => answerTraceCopy(answer, input.dataset.questions, candidate))
     .filter((copy): copy is string => Boolean(copy));
   const merged = [...trace, ...candidate.reveal.reasonSeeds.map((reason) => `${reason} 흐름`)];
   return Array.from(new Set(merged)).slice(0, 4);

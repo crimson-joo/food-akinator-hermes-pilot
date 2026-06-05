@@ -54,7 +54,7 @@ describe('representative simulation quality gate', () => {
     expect(suite.thresholds.fullLaunchCandidate.failedCriteria.length).toBeGreaterThan(0);
     expect(suite.thresholds.fullLaunchCandidate.failedCriteria).toEqual(
       expect.arrayContaining([
-        expect.stringMatching(/first guess|max first guess|p90|entropy|rationale|unknown|recovery|false confidence/i),
+        expect.stringMatching(/recovery|first guess|max first guess|p90|entropy|rationale|unknown|false confidence/i),
       ]),
     );
     expect(suite.thresholds.fullLaunchCandidate.thresholds).toEqual(FULL_LAUNCH_CANDIDATE_THRESHOLDS);

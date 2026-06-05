@@ -4,7 +4,7 @@
 
 기능 테스트 통과만으로 완료 금지. 이 제품은 perceptual/product QA가 ship gate다.
 
-현재 판정: controlled demo / alpha는 PR #27 simulation-quality gate wave까지 포함해 live-canary PASS다. PR #24는 public URL에서 Lottie authored-equivalent runtime을 검증했고, PR #25는 deployed live probe에서 desktop/mobile 360/390/412/reduced-motion, answerAccepted dedicated beat, wrong recovery surprise → remove → refocus, answer-trace reveal, console/page error 0을 검증했다. PR #27은 32-case representative simulation/report gate, deployed canary, independent live Playwright 8/8까지 통과했다. Full public production launch는 아직 blocked다. 남은 blocker는 first-guess turn budget, early branch entropy, prefix diversity, rejected-guess recovery success, final production review 및 운영자 승인이다.
+현재 판정: controlled demo / alpha는 PR #27 simulation-quality gate wave까지 포함해 live-canary PASS다. PR #24는 public URL에서 Lottie authored-equivalent runtime을 검증했고, PR #25는 deployed live probe에서 desktop/mobile 360/390/412/reduced-motion, answerAccepted dedicated beat, wrong recovery surprise → remove → refocus, answer-trace reveal, console/page error 0을 검증했다. Wave3 local gate는 first-guess turn budget, answer-aware branch entropy, prefix diversity를 개선했지만 rejected-guess recovery success가 아직 full-launch threshold 미달이다. Full public production launch는 계속 blocked다.
 
 현재 threshold/golden UI pilot의 자동화/live smoke QA gate는 PASS다. 검증 범위는 `npm test`, `npm run typecheck`, `npm run build`, focused CLI golden acceptance probe, Vite browser flow(entry → asking → answerAccepted/thinking → guessing → wrong recovery → reveal), console/assets/layout desktop check, GitHub Pages live canary, Pixel 7 크기 mobile viewport smoke를 포함한다. Release automation bootstrap 이후 PR/deploy gate는 Playwright e2e와 post-deploy scripted canary를 포함한다. Perceptual polish와 최종 mascot/brand는 아직 별도 product/design gate로 남아 있다.
 
@@ -133,7 +133,7 @@ PR #25 resolved the scoped production-feel blockers from the previous baseline f
 - Automated gates: `npm test` 13 files / 97 tests, `npm run typecheck`, `npm run build`, `npm run test:e2e` 8/8, PR CI, main CI, Pages deploy, live Playwright e2e 8/8, deployed production-feel probe overall PASS.
 - Browser/perceptual checks: desktop, mobile 360/390/412, and reduced-motion all passed with console/page errors 0, no horizontal overflow, all answer controls first viewport, answerAccepted dedicated beat, wrong recovery three beats, and answer-trace reveal rationale.
 
-Full public production launch is still not declared from this QA note alone. PR #27 now provides representative simulation evidence, but that evidence blocks launch until first-guess turn budget, early branch entropy, prefix diversity, and rejected-guess recovery success meet the full-launch thresholds, followed by final production review and explicit operator approval.
+Full public production launch is still not declared from this QA note alone. Wave3 local evidence improves first-guess turn budget, answer-aware early branch entropy, prefix diversity, and rationale coverage, but rejected-guess recovery success remains below the full-launch threshold. Remaining launch gates include honest recovery remediation, reviewer check, PR/release/deploy, live browser/canary, perceptual QA, docs closeout, and explicit operator approval.
 
 ## Baseline browser/perceptual QA gate — 2026-06-01
 
@@ -152,7 +152,7 @@ Production-blocking observations after PR #24 live Lottie, with PR #25 status:
 - Lottie authored-equivalent runtime is live-verified on the public URL, so the prior deploy/runtime-readiness blocker is cleared for the controlled demo.
 - The CSS fallback remains required as a fail-closed path for missing/malformed authored assets; production QA must continue checking truthful `failed`/`fallback` metadata paths.
 - PR #25 improves proof that Bogle actively reasons by adding answer-trace reveal rationale, dedicated answerAccepted beat, and three-beat wrong recovery; these are now controlled-demo/live-canary PASS.
-- Remaining full-launch proof after PR #27 is no longer “missing simulation”; it is failed simulation quality thresholds: median/max first-guess turn, early branch entropy, prefix diversity, and rejected-guess recovery success, plus final production review and explicit operator approval.
+- Remaining full-launch proof after Wave3 is narrowed to honest rejected-guess recovery success plus reviewer/release/live/perceptual validation on the shipped artifact and final operator approval.
 
 ### Minimal UI scaffold DOM checks
 
