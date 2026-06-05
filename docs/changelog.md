@@ -85,7 +85,7 @@ Notes:
 - Canonical remediation path: `t_26ede10d` + HEAD `c5f1981`.
 - Duplicate remediation card `t_43ed9e23` is coordination noise for the same blocker.
 - Graphify output freshness can churn on graph-only commits; decide a repo policy before release automation.
-# 2026-06-06 — production-pass wave3 local simulation honesty gate
+## 2026-06-06 — production-pass wave3 local simulation honesty gate
 
 - Improved representative simulation first-guess budget and answer-aware branch/prefix metrics locally, while keeping full-launch-candidate BLOCKED because rejected-guess recovery success remains below threshold.
 - Added a stricter representative simulation policy for the quality suite: soft cap turn 7, soft cap confidence 0.5, hard cap turn 10, without changing the public default session policy.
@@ -95,3 +95,11 @@ Notes:
 - Local evidence: `npm test -- --run` 13 files / 100 tests PASS, `npm run typecheck` PASS, `npm run build` PASS, `npm run test:e2e` 8/8 PASS after installing the missing shared Playwright Chromium browser.
 - Launch status remains not production PASS until reviewer, PR/release/deploy, live canary/browser QA, perceptual QA, docs closeout, and operator approval complete.
 
+
+## 2026-06-06 — production-pass wave4 stable-target recovery gate
+
+- Improved rejected-guess recovery simulation so hidden target/intent remains stable across pre-rejection ambiguity, wrong first guess rejection, recovery question, and exact final target reveal.
+- Fixed representative recovery report ordering: recovery questions are appended chronologically instead of being unshifted ahead of pre-rejection questions.
+- Updated recovery test assertions to verify the first recovery question at `firstGuessTurn - 1`, exact final target success, and no repeat of the rejected first guess.
+- Representative simulation full-launch candidate now passes locally: exact first guess 95%, top3 100%, median/p90/max first guess turn 8/11/11, answer-aware entropy 2.161/3.071/3.984, prefix4 17, recovery success 100%, leak-free.
+- Production status still requires PR CI, main CI, deploy, live canary/browser QA, perceptual QA, and final operator closeout before declaring PRODUCTION PASS.
