@@ -131,6 +131,11 @@ export const FULL_LAUNCH_CANDIDATE_THRESHOLDS: ThresholdSet = {
 
 const LEAK_PATTERN = /score|probability|top1|top3|attribute|clue:|q-[a-z0-9-]+/gi;
 const ANSWER_DERIVED_MARKERS = ['답한 단서', '아니라고 답한 단서', '단서가 맞다고 답한 단서', '당긴다고 답한 단서', '떠오른다고 답한 단서'];
+const REPRESENTATIVE_SIMULATION_POLICY = {
+  softCapTurn: 7,
+  softCapConfidence: 0.5,
+  hardCapTurn: 10,
+};
 
 export function detectLeakMarkers(text: string): string[] {
   return Array.from(new Set(text.match(LEAK_PATTERN) ?? []));
@@ -151,7 +156,7 @@ export function runSimulationSuite(dataset: SessionDataset, cases: Representativ
 
 function runSimulationCase(dataset: SessionDataset, simulationCase: RepresentativeSimulationCase): SimulationCaseResult {
   const target = candidateById(dataset.candidates, simulationCase.targetCandidateId);
-  let session = startSession(dataset);
+  let session = startSession(dataset, REPRESENTATIVE_SIMULATION_POLICY);
   const askedQuestionIds: string[] = [];
   const askedQuestionRoles: QuestionRole[] = [];
   const answers: { questionId: string; answer: AnswerKey }[] = [];
@@ -275,6 +280,7 @@ function calculateSimulationMetrics(results: SimulationCaseResult[]): Simulation
   const gracefulUnknown = unknown.filter(
     (result) => (result.finalStatus === 'exhausted' || result.finalStatus === 'asking') && !result.firstGuessCandidateId,
   );
+  const canonicalInteractionPaths = canonical.map(interactionPath);
 
   return {
     totalCases: results.length,
@@ -288,11 +294,11 @@ function calculateSimulationMetrics(results: SimulationCaseResult[]): Simulation
     p90FirstGuessTurn: percentile(canonicalTurns, 0.9),
     maxFirstGuessTurn: canonicalTurns.length > 0 ? Math.max(...canonicalTurns) : 0,
     branchEntropyByTurn: {
-      '1': branchEntropy(canonical.map((result) => result.askedQuestionIds), 1),
-      '2': branchEntropy(canonical.map((result) => result.askedQuestionIds), 2),
-      '3': branchEntropy(canonical.map((result) => result.askedQuestionIds), 3),
+      '1': branchEntropy(canonicalInteractionPaths, 1),
+      '2': branchEntropy(canonicalInteractionPaths, 2),
+      '3': branchEntropy(canonicalInteractionPaths, 3),
     },
-    uniquePrefix4Count: new Set(canonical.map((result) => result.askedQuestionIds.slice(0, 4).join('>'))).size,
+    uniquePrefix4Count: new Set(canonicalInteractionPaths.map((path) => path.slice(0, 4).join('>'))).size,
     averageAnswerTraceCount: average(canonical.map((result) => result.answerTraceCount)),
     rationaleCoverageRate: ratio(canonical.filter((result) => result.answerTraceCount >= 2 && result.answerTraceMatchesAnswers >= 1).length, canonical.length),
     recoveryCaseRate: ratio(recovery.length, results.length),
@@ -306,10 +312,14 @@ function calculateSimulationMetrics(results: SimulationCaseResult[]): Simulation
   };
 }
 
+function interactionPath(result: SimulationCaseResult): string[] {
+  return result.answers.map((answer) => `${answer.questionId}:${answer.answer}`);
+}
+
 function branchEntropy(paths: string[][], turnIndex: number): number {
   const counts = new Map<string, number>();
   for (const path of paths) {
-    const key = path[turnIndex] ?? '__stopped__';
+    const key = path.slice(0, turnIndex + 1).join('>') || '__stopped__';
     counts.set(key, (counts.get(key) ?? 0) + 1);
   }
   return [...counts.values()].reduce((sum, count) => {

@@ -85,3 +85,13 @@ Notes:
 - Canonical remediation path: `t_26ede10d` + HEAD `c5f1981`.
 - Duplicate remediation card `t_43ed9e23` is coordination noise for the same blocker.
 - Graphify output freshness can churn on graph-only commits; decide a repo policy before release automation.
+# 2026-06-06 — production-pass wave3 local simulation honesty gate
+
+- Improved representative simulation first-guess budget and answer-aware branch/prefix metrics locally, while keeping full-launch-candidate BLOCKED because rejected-guess recovery success remains below threshold.
+- Added a stricter representative simulation policy for the quality suite: soft cap turn 7, soft cap confidence 0.5, hard cap turn 10, without changing the public default session policy.
+- Made branch entropy/prefix diversity answer-aware so the gate measures actual interaction paths (`question:answer`) instead of question IDs alone.
+- Kept recovery success honest: rejecting a guessed candidate must not be counted as success merely because the next guess differs; exact final target recovery is still BLOCKED.
+- Added reveal copy reconciliation for candidate/answer mismatches so final rationale stays truthful when weak conflicting clues exist.
+- Local evidence: `npm test -- --run` 13 files / 100 tests PASS, `npm run typecheck` PASS, `npm run build` PASS, `npm run test:e2e` 8/8 PASS after installing the missing shared Playwright Chromium browser.
+- Launch status remains not production PASS until reviewer, PR/release/deploy, live canary/browser QA, perceptual QA, docs closeout, and operator approval complete.
+
