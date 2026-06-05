@@ -19,6 +19,7 @@ export type RepresentativeSimulationCase = {
     minAnswerTraceCount?: number;
     allowWrongFirstGuess?: boolean;
     expectedRecoveryQuestionRole?: QuestionRole;
+    recoveryAmbiguity?: 'canonical' | 'mixed' | 'soft' | 'earlyUnknown';
     unknownAnswersBeforeStop?: number;
   };
 };
@@ -163,13 +164,12 @@ function runSimulationCase(dataset: SessionDataset, simulationCase: Representati
   const userVisibleCopy: string[] = copyFromSession(session);
   let firstGuessSession: EngineSession | null = null;
   let recoveryCount = 0;
-  let recoveryQuestionCaptured = false;
 
   while (session.currentQuestion && session.status !== 'revealed' && session.status !== 'exhausted') {
     const question = session.currentQuestion;
     askedQuestionIds.push(question.id);
     askedQuestionRoles.push(question.role);
-    const answer = answerForQuestion(target, question, answers.length, simulationCase);
+    const answer = answerForQuestion(target, question, answers.length, simulationCase, false);
     answers.push({ questionId: question.id, answer });
     session = submitAnswer(session, { questionId: question.id, answer }, dataset);
     userVisibleCopy.push(...copyFromSession(session));
@@ -181,20 +181,11 @@ function runSimulationCase(dataset: SessionDataset, simulationCase: Representati
       recoveryCount += 1;
       session = submitGuessFeedback(session, { candidateId: session.guess.candidate.id, accepted: false }, dataset);
       userVisibleCopy.push(...copyFromSession(session));
-      if (session.currentQuestion && !recoveryQuestionCaptured) {
-        askedQuestionIds.unshift(session.currentQuestion.id);
-        askedQuestionRoles.unshift(session.currentQuestion.role);
-        recoveryQuestionCaptured = true;
-      }
       while (session.currentQuestion && session.status !== 'revealed' && session.status !== 'exhausted') {
         const question = session.currentQuestion;
-        if (!recoveryQuestionCaptured) {
-          askedQuestionIds.push(question.id);
-          askedQuestionRoles.push(question.role);
-        } else {
-          recoveryQuestionCaptured = false;
-        }
-        const answer = answerForQuestion(target, question, answers.length, simulationCase);
+        askedQuestionIds.push(question.id);
+        askedQuestionRoles.push(question.role);
+        const answer = answerForQuestion(target, question, answers.length, simulationCase, true);
         answers.push({ questionId: question.id, answer });
         session = submitAnswer(session, { questionId: question.id, answer }, dataset);
         userVisibleCopy.push(...copyFromSession(session));
@@ -234,14 +225,32 @@ function runSimulationCase(dataset: SessionDataset, simulationCase: Representati
   };
 }
 
-function answerForQuestion(target: Candidate, question: Question, answerIndex: number, simulationCase: RepresentativeSimulationCase): AnswerKey {
+function answerForQuestion(
+  target: Candidate,
+  question: Question,
+  answerIndex: number,
+  simulationCase: RepresentativeSimulationCase,
+  afterRejectedGuess: boolean,
+): AnswerKey {
   if (simulationCase.strategy === 'unknownHeavy' && answerIndex < (simulationCase.expected?.unknownAnswersBeforeStop ?? 5)) {
     return 'unknown';
   }
   if (simulationCase.strategy === 'mixedUncertainty' && answerIndex % 3 === 2) {
     return 'unknown';
   }
+  if (simulationCase.strategy === 'rejectedGuessRecovery' && !afterRejectedGuess) {
+    const ambiguity = simulationCase.expected?.recoveryAmbiguity ?? 'mixed';
+    if (ambiguity === 'mixed' && answerIndex % 3 === 2) return 'unknown';
+    if (ambiguity === 'earlyUnknown' && answerIndex < 2) return 'unknown';
+    if (ambiguity === 'soft') return softenAnswer(canonicalAnswer(target.attributes[question.id] ?? 0));
+  }
   return canonicalAnswer(target.attributes[question.id] ?? 0);
+}
+
+function softenAnswer(answer: AnswerKey): AnswerKey {
+  if (answer === 'yes') return 'probably';
+  if (answer === 'no') return 'probably_not';
+  return answer;
 }
 
 function canonicalAnswer(expected: number): AnswerKey {

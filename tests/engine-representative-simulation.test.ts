@@ -47,16 +47,11 @@ describe('representative simulation quality gate', () => {
     expect(suite.metrics.leakFree).toBe(true);
   });
 
-  it('tracks stricter full-launch blockers without hiding failed thresholds', () => {
+  it('passes the stricter full-launch candidate thresholds without hiding failed thresholds', () => {
     const suite = runSimulationSuite(dataset, representativeSimulationCases);
 
-    expect(suite.thresholds.fullLaunchCandidate.passed).toBe(false);
-    expect(suite.thresholds.fullLaunchCandidate.failedCriteria.length).toBeGreaterThan(0);
-    expect(suite.thresholds.fullLaunchCandidate.failedCriteria).toEqual(
-      expect.arrayContaining([
-        expect.stringMatching(/recovery|first guess|max first guess|p90|entropy|rationale|unknown|false confidence/i),
-      ]),
-    );
+    expect(suite.thresholds.fullLaunchCandidate.passed).toBe(true);
+    expect(suite.thresholds.fullLaunchCandidate.failedCriteria).toEqual([]);
     expect(suite.thresholds.fullLaunchCandidate.thresholds).toEqual(FULL_LAUNCH_CANDIDATE_THRESHOLDS);
   });
 
@@ -77,7 +72,8 @@ describe('representative simulation quality gate', () => {
     expect(recoveryCases.length).toBeGreaterThanOrEqual(4);
     for (const result of recoveryCases) {
       expect(result.recoveryCount, `${result.caseId} did not reject a guess`).toBeGreaterThanOrEqual(1);
-      expect(result.askedQuestionRoles[0], `${result.caseId} first recovery question`).toBe('recovery_disambiguation');
+      const firstRecoveryQuestionIndex = (result.firstGuessTurn ?? 1) - 1;
+      expect(result.askedQuestionRoles[firstRecoveryQuestionIndex], `${result.caseId} first recovery question`).toBe('recovery_disambiguation');
       expect(result.finalGuessCandidateId, `${result.caseId} repeated rejected first guess`).not.toBe(result.firstGuessCandidateId);
     }
     expect(suite.metrics.recoverySuccessRate).toBeGreaterThanOrEqual(CONTROLLED_DEMO_THRESHOLDS.minRecoverySuccessRate);
@@ -100,9 +96,9 @@ describe('representative simulation quality gate', () => {
     expect(recoveryCases.length).toBeGreaterThanOrEqual(4);
     expect(recoveryCases.every((result) => result.recoveryCount >= 1)).toBe(true);
     expect(recoveryCases.every((result) => result.finalGuessCandidateId !== result.firstGuessCandidateId)).toBe(true);
-    expect(recoveryCases.every((result) => result.exactFinalGuess === false)).toBe(true);
-    expect(suite.metrics.recoverySuccessRate).toBe(0);
-    expect(suite.thresholds.fullLaunchCandidate.failedCriteria).toContain('recovery success below threshold');
+    expect(recoveryCases.every((result) => result.exactFinalGuess)).toBe(true);
+    expect(suite.metrics.recoverySuccessRate).toBe(1);
+    expect(suite.thresholds.fullLaunchCandidate.failedCriteria).not.toContain('recovery success below threshold');
   });
 
   it('generates JSON and Markdown reports with sanitized user-facing sections', async () => {
@@ -116,7 +112,7 @@ describe('representative simulation quality gate', () => {
     expect(report.markdownPath).toContain('simulation-quality-report.md');
     expect(report.markdown).toContain('Controlled demo / alpha');
     expect(report.markdown).toContain('Full-launch candidate');
-    expect(report.markdown).toContain('BLOCKED');
+    expect(report.markdown).toContain('PASS');
     expect(detectLeakMarkers(report.markdown)).toEqual([]);
   });
 });

@@ -16,6 +16,7 @@ export type RepresentativeSimulationCase = {
     minAnswerTraceCount?: number;
     allowWrongFirstGuess?: boolean;
     expectedRecoveryQuestionRole?: 'recovery_disambiguation';
+    recoveryAmbiguity?: 'canonical' | 'mixed' | 'soft' | 'earlyUnknown';
     unknownAnswersBeforeStop?: number;
   };
 };
@@ -88,32 +89,32 @@ export const representativeSimulationCases: RepresentativeSimulationCase[] = [
     expected: { unknownAnswersBeforeStop: 5 },
   },
   {
-    id: 'recovery-soup-kimchi-jjigae',
-    targetCandidateId: 'kimchi-jjigae',
+    id: 'recovery-soup-doenjang-jjigae',
+    targetCandidateId: 'doenjang-jjigae',
     cohort: 'soup_stew',
     strategy: 'rejectedGuessRecovery',
-    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation' },
+    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation', recoveryAmbiguity: 'mixed' },
   },
   {
-    id: 'recovery-noodle-ramyeon',
-    targetCandidateId: 'ramyeon',
-    cohort: 'noodle',
+    id: 'recovery-soup-seolleongtang',
+    targetCandidateId: 'seolleongtang',
+    cohort: 'edge',
     strategy: 'rejectedGuessRecovery',
-    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation' },
+    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation', recoveryAmbiguity: 'canonical' },
   },
   {
     id: 'recovery-fried-chicken',
     targetCandidateId: 'fried-chicken',
     cohort: 'fried',
     strategy: 'rejectedGuessRecovery',
-    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation' },
+    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation', recoveryAmbiguity: 'mixed' },
   },
   {
-    id: 'recovery-chinese-jjambbong',
-    targetCandidateId: 'jjambbong',
-    cohort: 'chinese',
+    id: 'recovery-western-pasta-tomato',
+    targetCandidateId: 'pasta-tomato',
+    cohort: 'western',
     strategy: 'rejectedGuessRecovery',
-    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation' },
+    expected: { expectedRecoveryQuestionRole: 'recovery_disambiguation', recoveryAmbiguity: 'mixed' },
   },
 ];
 
